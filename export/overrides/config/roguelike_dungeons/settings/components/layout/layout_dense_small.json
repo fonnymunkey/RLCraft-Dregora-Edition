@@ -1,0 +1,7 @@
+{
+  "name": "layout:dense_small",
+  "inherit": [
+    "layout:size_small",
+    "layout:scatter_small"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "ShivLoot",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_red",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_green",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_bronze",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_gray",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_blue",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_white",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_sapphire",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:dragonscales_silver",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "$iceandfire"
+}

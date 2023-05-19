@@ -1,0 +1,52 @@
+{
+	"forge_marker": 1,
+    "variants": {
+		"normal": [
+      {
+        "model": "contenttweaker:bone_pile_0"
+      },
+      {
+        "model": "contenttweaker:bone_pile_0",
+        "y": 90
+      },
+      {
+        "model": "contenttweaker:bone_pile_0",
+        "y": 180
+      },
+      {
+        "model": "contenttweaker:bone_pile_0",
+        "y": 270
+      },
+	  {
+        "model": "contenttweaker:bone_pile_1"
+      },
+      {
+        "model": "contenttweaker:bone_pile_1",
+        "y": 90
+      },
+      {
+        "model": "contenttweaker:bone_pile_1",
+        "y": 180
+      },
+      {
+        "model": "contenttweaker:bone_pile_1",
+        "y": 270
+      },
+	  {
+        "model": "contenttweaker:bone_pile_2"
+      },
+      {
+        "model": "contenttweaker:bone_pile_2",
+        "y": 90
+      },
+      {
+        "model": "contenttweaker:bone_pile_2",
+        "y": 180
+      },
+      {
+        "model": "contenttweaker:bone_pile_2",
+        "y": 270
+      }
+    ]
+    }
+}

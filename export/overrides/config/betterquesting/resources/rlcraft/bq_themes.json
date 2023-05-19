@@ -1,0 +1,2002 @@
+[
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Standard Grey",
+    "themeID": "rlcraft:theme1",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 40, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 24, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 24, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 48, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Standard Blue",
+    "themeID": "rlcraft:theme2",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 40, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 24, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 24, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 48, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Standard Green",
+    "themeID": "rlcraft:theme3",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 40, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 24, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 24, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 48, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Standard Gold",
+    "themeID": "rlcraft:theme4",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 40, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 24, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 24, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 48, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Standard Red",
+    "themeID": "rlcraft:theme5",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 104, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 40, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 40, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 24, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 32, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 80, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 0, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 24, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 48, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 56, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 56, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Bricks",
+    "themeID": "rlcraft:theme6",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 208, 24, 24],
+        "padding": [3, 3, 3, 3],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 232, 24, 24],
+        "padding": [3, 3, 3, 3],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 232, 24, 24],
+        "padding": [3, 3, 3, 3],
+        "sliceMode": 1
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 168, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [32, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 152, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 150, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 150, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 150, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 208, 24, 24],
+        "padding": [3, 3, 3, 3],
+        "sliceMode": 1
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 152, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 176, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [0, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [24, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:light",
+    "themeName": "RL Purplicious",
+    "themeID": "rlcraft:theme7",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 168, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [80, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 152, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 152, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 176, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [48, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [72, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:dark",
+    "themeName": "RL Gold Rush",
+    "themeID": "rlcraft:theme8",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 168, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [128, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 152, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 152, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 176, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [96, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [120, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:light",
+    "themeName": "RL Orange Gems",
+    "themeID": "rlcraft:theme9",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 168, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [176, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 152, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 152, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 176, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [144, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [168, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  },
+  {
+    "themeParent": "bq_standard:light",
+    "themeName": "RL Blue Gems",
+    "themeID": "rlcraft:theme10",
+    "textures":
+    {
+      "betterquesting:panel_main":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:btn_normal_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:btn_normal_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 232, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 168, 8, 16],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_v_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [224, 168, 8, 16],
+        "padding": [3, 4, 3, 4],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 152, 16, 8],
+        "padding": [1, 1, 1, 1],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:scroll_h_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 160, 16, 8],
+        "padding": [4, 3, 4, 3],
+        "sliceMode": 2
+      },
+      "betterquesting:item_frame":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 208, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:aux_frame_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 128, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:panel_inner":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 152, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 1
+      },
+      "betterquesting:tooltip_bg":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 176, 8, 8],
+        "padding": [2, 2, 2, 2],
+        "sliceMode": 1
+      },
+      "betterquesting:quest_norm_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_norm_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [192, 184, 24, 24],
+        "padding": [8, 8, 8, 8],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_0":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_1":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_2":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      },
+      "betterquesting:quest_main_3":
+      {
+        "textureType": "betterquesting:texture_sliced",
+        "atlas": "rlcraft:textures/gui/rltheme1.png",
+        "bounds": [216, 184, 24, 24],
+        "padding": [11, 11, 11, 11],
+        "sliceMode": 2
+      }
+    }
+  }
+]

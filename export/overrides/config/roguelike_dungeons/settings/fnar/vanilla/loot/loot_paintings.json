@@ -1,0 +1,29 @@
+{
+  "name": "fnar:loot_paintings",
+  "lootRules": [
+    {
+      "level": [3],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"American Gothic\",Lore:[\"But what does it /mean/?.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Last Supper\",Lore:[\"Allegedly.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Creation of Adam\",Lore:[\"Two dudes touching tips.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Mona Lisa\",Lore:[\"She's smiling! Is that good?\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Scream\",Lore:[\"We all scream for ice cream.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Girl with a Pearl Earring\",Lore:[\"Absolutely stunning.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Starry Night\",Lore:[\"They say he was on drugs.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Portrait of a Man\",Lore:[\"He looks really lonely.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Piglet\",Lore:[\"It looks like a child painted this. How is this art?\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"!!??\",Lore:[\"It's a picture of your mum??\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Dogs Playing Poker\",Lore:[\"It is what it is.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Shivaxi's Baby Photo\",Lore:[\"Wasn't he cute as a hatchling? n_n\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Photograph of Fnar\",Lore:[\"What does Fnar mean anyway?\"]}}"}, "weight": 1},
+
+        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"Streaming for beginners\",Lore:[\"A practical guide to getting famous on Twitch\"]}}"}, "weight": 1}
+      ]
+    }
+  ]
+}

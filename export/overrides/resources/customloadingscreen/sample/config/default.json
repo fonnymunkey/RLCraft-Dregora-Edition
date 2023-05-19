@@ -1,0 +1,25 @@
+{
+	"renders":[
+		"sample/dirt_background",
+		"sample/horizontal_stripe",
+        {
+            "image": {
+                "parent": "sample/bottom_bar",
+                "colour": "0xFF_11_44_CC"
+            }
+        }
+
+	],
+	"functions":[
+		
+	],
+	"factories":[
+		
+	],
+	"actions":[
+		
+	],
+	"variables":{
+		
+	}
+}

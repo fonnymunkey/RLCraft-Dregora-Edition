@@ -1,0 +1,8 @@
+{
+  "name": "builtin:dungeon_swamp_no_loot",
+  // does not spawn
+  "exclusive": false,
+  "inherit": ["builtin:swamp"],
+  // remove the loot, so that extending dungeons (dungeons that inherit this setting) can supply their own loot
+  "overrides": ["LOOTRULES"]
+}

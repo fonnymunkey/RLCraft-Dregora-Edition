@@ -1,0 +1,13 @@
+{
+  "name": "rlcraft:loot_qualitytools",
+  "requires": ["qualitytools"],
+  "lootRules": [
+    {
+      "level": [1,2,3], "type": "ARMOUR", "each": false, "quantity": 2,
+      "loot": [
+        {"data" : {"name" : "qualitytools:emerald_ring"}, "weight" : 2},
+        {"data" : {"name" : "qualitytools:emerald_amulet"}, "weight" : 1}
+      ]
+    }
+  ]
+}

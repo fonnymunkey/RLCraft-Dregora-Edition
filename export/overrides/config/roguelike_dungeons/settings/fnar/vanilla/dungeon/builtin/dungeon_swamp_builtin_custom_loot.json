@@ -1,0 +1,8 @@
+{
+  "name": "fnar:dungeon_swamp_builtin_custom_loot",
+  "exclusive": true,
+  "inherit": [
+    "builtin:dungeon_swamp_no_loot",
+    "rlcraft:loot"
+  ]
+}

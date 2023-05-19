@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        "k",
+        "s",
+        "f"
+    ],
+    "key":
+    {
+        "k":
+        {
+            "item": "minecraft:flint"
+        },
+        "s":
+        {
+            "item": "minecraft:bone"
+        },
+        "f":
+        {
+            "item": "minecraft:feather"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:arrowbone",
+        "count": 4
+    }
+}

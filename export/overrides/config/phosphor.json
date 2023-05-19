@@ -1,0 +1,5 @@
+{
+  "enable_illegal_thread_access_warnings": false,
+  "enable_phosphor": true,
+  "show_patreon_message": false
+}

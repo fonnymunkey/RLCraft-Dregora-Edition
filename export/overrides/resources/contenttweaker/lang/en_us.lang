@@ -1,0 +1,11 @@
+item.contenttweaker.example_item.name=Example Item
+item.contenttweaker.steel_alloy.name=Steel Alloy
+item.contenttweaker.steel_nugget.name=Steel Nugget
+item.contenttweaker.neptunium_nugget.name=Neptunium Nugget
+item.contenttweaker.glacier_cream.name=Glacier Cream
+item.contenttweaker.blood_tear.name=Blood Tear
+item.contenttweaker.sentient_core.name=Sentient Core
+block.contenttweaker.bone_pile.name=Bone Pile
+tile.contenttweaker.bone_pile.name=Bone Pile
+fluid.carrot_juice=Carrot Soup
+attribute.name.xat.entityMagic.regen=Mana Regeneration

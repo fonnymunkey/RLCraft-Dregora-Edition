@@ -1,0 +1,7 @@
+{
+  "parent": "sample/text_sub_status",
+  "position": {
+    "y": "-60"
+  },
+  "colour": "0xFF_5E_9C_FF"
+}

@@ -1,0 +1,2574 @@
+{
+  "Electric Eel": {
+    "fishId": "Electric Eel",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 21,
+    "description": "a snake-like fish that shocks it\u0027s prey",
+    "minFishTime": 1000,
+    "maxFishTime": 1200,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 5,
+    "maxWeight": 20,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": true,
+    "rarity": 5,
+    "minDeepLevel": 2,
+    "maxDeepLevel": 25,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "JUNGLE"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": true,
+    "scalingItem": "minecraft:glowstone_dust",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Halibut": {
+    "fishId": "Halibut",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 27,
+    "description": "a large brown fish that hides by laying on the seafloor",
+    "minFishTime": 1800,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 10,
+    "maxWeight": 100,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 50,
+    "maxDeepLevel": 100,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Bagrid": {
+    "fishId": "Bagrid",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 33,
+    "description": "a small catfish species common in arid enviroments",
+    "minFishTime": 1200,
+    "maxFishTime": 1400,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 5,
+    "maxWeight": 10,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 60,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "DRY",
+      "SANDY"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Muskellunge": {
+    "fishId": "Muskellunge",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 4,
+    "description": "a large aggressive silvery fish",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 10,
+    "maxWeight": 40,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 6,
+    "minDeepLevel": 20,
+    "maxDeepLevel": 80,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Brown Trout": {
+    "fishId": "Brown Trout",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 5,
+    "description": "a common, medium sized brown fish",
+    "minFishTime": 1200,
+    "maxFishTime": 1600,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 10,
+    "maxWeight": 20,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 12,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 50,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER",
+      "SWAMP",
+      "MOUNTAIN",
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Shark": {
+    "fishId": "Shark",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 13,
+    "description": "a very large predator",
+    "minFishTime": 2000,
+    "maxFishTime": 2400,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 500,
+    "maxWeight": 800,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 1,
+    "minDeepLevel": 100,
+    "maxDeepLevel": 150,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 45,
+    "eatingFrequency": 16,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        9,
+        10,
+        15,
+        16,
+        26
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Rainbow Trout": {
+    "fishId": "Rainbow Trout",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 29,
+    "description": "a decent-sized irridescent fish",
+    "minFishTime": 1200,
+    "maxFishTime": 1400,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 1,
+    "maxWeight": 10,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 30,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 120,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD",
+      "RIVER"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Bluegill": {
+    "fishId": "Bluegill",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 0,
+    "description": "a small yellow and blue fish",
+    "minFishTime": 800,
+    "maxFishTime": 1000,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 2,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 50,
+    "minDeepLevel": 2,
+    "maxDeepLevel": 25,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 9,
+    "eatingFrequency": 4,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER",
+      "SWAMP"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Boulti": {
+    "fishId": "Boulti",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 32,
+    "description": "a small fish known as the mango fish",
+    "minFishTime": 1200,
+    "maxFishTime": 1400,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 2,
+    "maxWeight": 6,
+    "time": "day",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 60,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "DRY",
+      "SANDY"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Red Grouper": {
+    "fishId": "Red Grouper",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 9,
+    "description": "a decently sized reddish-brown ray-finned fish",
+    "minFishTime": 1400,
+    "maxFishTime": 1800,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 4,
+    "minWeight": 15,
+    "maxWeight": 25,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 30,
+    "minDeepLevel": 40,
+    "maxDeepLevel": 80,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Piranha": {
+    "fishId": "Piranha",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 20,
+    "description": "a small vicious predator fish",
+    "minFishTime": 400,
+    "maxFishTime": 800,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 1,
+    "maxWeight": 3,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 10,
+    "minDeepLevel": 5,
+    "maxDeepLevel": 20,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "JUNGLE"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:mutton": [
+        0
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:porkchop": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:chicken": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:beef": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rabbit": [
+        0
+      ]
+    }
+  },
+  "Capitaine": {
+    "fishId": "Capitaine",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 31,
+    "description": "a very large fish known as the water elephant",
+    "minFishTime": 2200,
+    "maxFishTime": 2400,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 80,
+    "maxWeight": 200,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 8,
+    "minDeepLevel": 50,
+    "maxDeepLevel": 125,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 45,
+    "eatingFrequency": 16,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "DRY",
+      "SANDY"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Leech": {
+    "fishId": "Leech",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 19,
+    "description": "a parasitic insect that feeds on blood",
+    "minFishTime": 400,
+    "maxFishTime": 800,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 6,
+    "minWeight": 1,
+    "maxWeight": 1,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 1,
+    "maxDeepLevel": 5,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 5,
+    "eatingFrequency": 2,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "SWAMP",
+      "WET"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 30,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": false,
+    "defaultFillet": false,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "minecraft:mutton": [
+        0
+      ],
+      "minecraft:porkchop": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:chicken": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:beef": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rabbit": [
+        0
+      ]
+    }
+  },
+  "Chinook Salmon": {
+    "fishId": "Chinook Salmon",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 28,
+    "description": "a very large salmon species",
+    "minFishTime": 1800,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 40,
+    "maxWeight": 80,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 16,
+    "minDeepLevel": 25,
+    "maxDeepLevel": 100,
+    "minYLevel": 55,
+    "maxYLevel": 120,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Red Shrooma": {
+    "fishId": "Red Shrooma",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 35,
+    "description": "a strange fish covered in red fungal growth",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 10,
+    "maxWeight": 30,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 40,
+    "minDeepLevel": 15,
+    "maxDeepLevel": 50,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "MUSHROOM"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": true,
+    "scalingItem": "minecraft:red_mushroom",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Brown Shrooma": {
+    "fishId": "Brown Shrooma",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 36,
+    "description": "a strange fish covered in brown fungal growth",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 10,
+    "maxWeight": 30,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 60,
+    "minDeepLevel": 15,
+    "maxDeepLevel": 50,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "MUSHROOM"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": true,
+    "scalingItem": "minecraft:brown_mushroom",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Catfish": {
+    "fishId": "Catfish",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 6,
+    "description": "a large, widemouthed fish with whisker-like barbels",
+    "minFishTime": 1600,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 4,
+    "minWeight": 20,
+    "maxWeight": 50,
+    "time": "night",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 4,
+    "minDeepLevel": 5,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER",
+      "SWAMP"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Tambaqui": {
+    "fishId": "Tambaqui",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 22,
+    "description": "a large freshwater fish similiar in appearance to the piranha",
+    "minFishTime": 1600,
+    "maxFishTime": 1800,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 4,
+    "minWeight": 15,
+    "maxWeight": 40,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 10,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "JUNGLE"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:apple": [
+        0
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:melon": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Polar Cod": {
+    "fishId": "Polar Cod",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 24,
+    "description": "a large cold-dwelling fish",
+    "minFishTime": 1800,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 30,
+    "maxWeight": 80,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 8,
+    "minDeepLevel": 40,
+    "maxDeepLevel": 80,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Pollock": {
+    "fishId": "Pollock",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 25,
+    "description": "a decent-sized silvery fish often used for food",
+    "minFishTime": 1200,
+    "maxFishTime": 1600,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 10,
+    "maxWeight": 20,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 30,
+    "minDeepLevel": 20,
+    "maxDeepLevel": 100,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Goldfish": {
+    "fishId": "Goldfish",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 37,
+    "description": "an invasive freshwater fish with shiny gold scales",
+    "minFishTime": 600,
+    "maxFishTime": 800,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 1,
+    "maxWeight": 1,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 3,
+    "maxDeepLevel": 30,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "RIVER",
+      "PLAINS",
+      "FOREST",
+      "DRY",
+      "SANDY",
+      "JUNGLE"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": true,
+    "scalingItem": "minecraft:gold_nugget",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": false,
+    "defaultFillet": false,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "minecraft:apple": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:melon": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Swordfish": {
+    "fishId": "Swordfish",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 12,
+    "description": "a large fish with a large pointed bill",
+    "minFishTime": 2200,
+    "maxFishTime": 2600,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 50,
+    "maxWeight": 200,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 3,
+    "minDeepLevel": 80,
+    "maxDeepLevel": 130,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        9,
+        10,
+        15,
+        16,
+        26
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Bass": {
+    "fishId": "Bass",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 3,
+    "description": "a decently sized black and green fish",
+    "minFishTime": 1200,
+    "maxFishTime": 1600,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 5,
+    "maxWeight": 10,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 20,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 140,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER",
+      "SWAMP",
+      "MOUNTAIN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Tautog": {
+    "fishId": "Tautog",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 30,
+    "description": "a small, black fish with powerful crushing jaws",
+    "minFishTime": 1200,
+    "maxFishTime": 1400,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 1,
+    "maxWeight": 5,
+    "time": "day",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 40,
+    "minDeepLevel": 5,
+    "maxDeepLevel": 40,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD",
+      "BEACH"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Turtle": {
+    "fishId": "Turtle",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 18,
+    "description": "a small reptile with a hard shell for protection",
+    "minFishTime": 800,
+    "maxFishTime": 1200,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 5,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 4,
+    "minDeepLevel": 1,
+    "maxDeepLevel": 15,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "SWAMP",
+      "WET"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 30,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": false,
+    "defaultFillet": false,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Arctic Salmon": {
+    "fishId": "Arctic Salmon",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 10,
+    "description": "a large, silvery-red fish known for their taste",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 10,
+    "maxWeight": 40,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 8,
+    "minDeepLevel": 40,
+    "maxDeepLevel": 80,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH",
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Carp": {
+    "fishId": "Carp",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 7,
+    "description": "a large, brown, invasive fish",
+    "minFishTime": 1800,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 30,
+    "maxWeight": 50,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 2,
+    "minDeepLevel": 30,
+    "maxDeepLevel": 80,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Frog": {
+    "fishId": "Frog",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 17,
+    "description": "a small amphibian with good jumping capability",
+    "minFishTime": 600,
+    "maxFishTime": 1000,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 1,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 8,
+    "minDeepLevel": 1,
+    "maxDeepLevel": 15,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 9,
+    "eatingFrequency": 4,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "SWAMP",
+      "WET"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 30,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": false,
+    "filletItem": "aquaculture:food",
+    "filletItemMetadata": 7,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Giant Squid": {
+    "fishId": "Giant Squid",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 15,
+    "description": "a very large fleshy sea-organism with long tentacles",
+    "minFishTime": 2200,
+    "maxFishTime": 2400,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 50,
+    "maxWeight": 200,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 2,
+    "minDeepLevel": 80,
+    "maxDeepLevel": 130,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": true,
+    "scalingItem": "minecraft:dye",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        9,
+        10,
+        15,
+        16,
+        26
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Arapaima": {
+    "fishId": "Arapaima",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 23,
+    "description": "a very large, sleek, freshwater fish that has to breath surface air occasionaly",
+    "minFishTime": 1800,
+    "maxFishTime": 2200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 100,
+    "maxWeight": 200,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 4,
+    "minDeepLevel": 25,
+    "maxDeepLevel": 75,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 45,
+    "eatingFrequency": 16,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "JUNGLE"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:apple": [
+        0
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:melon": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Jellyfish": {
+    "fishId": "Jellyfish",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 16,
+    "description": "a gelatinous sea-organism with venomous tentacles",
+    "minFishTime": 1400,
+    "maxFishTime": 1800,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 10,
+    "maxWeight": 100,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 5,
+    "minDeepLevel": 50,
+    "maxDeepLevel": 100,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": true,
+    "scalingItem": "minecraft:slime_ball",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": false,
+    "defaultFillet": false,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Tuna": {
+    "fishId": "Tuna",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 11,
+    "description": "a very large blue-finned fish",
+    "minFishTime": 2200,
+    "maxFishTime": 2600,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 2,
+    "minWeight": 50,
+    "maxWeight": 300,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 2,
+    "minDeepLevel": 80,
+    "maxDeepLevel": 130,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 30,
+    "eatingFrequency": 11,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        9,
+        10,
+        15,
+        16,
+        26
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Whale": {
+    "fishId": "Whale",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 14,
+    "description": "a massive sea-dwelling mammal",
+    "minFishTime": 2800,
+    "maxFishTime": 3200,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 1,
+    "minWeight": 1000,
+    "maxWeight": 1500,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 1,
+    "minDeepLevel": 120,
+    "maxDeepLevel": 150,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 60,
+    "eatingFrequency": 21,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": false,
+    "filletItem": "aquaculture:food",
+    "filletItemMetadata": 2,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        9,
+        10,
+        15,
+        16,
+        26
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Herring": {
+    "fishId": "Herring",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 26,
+    "description": "a small, silvery fish that travels in large schools",
+    "minFishTime": 1200,
+    "maxFishTime": 1600,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 1,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 60,
+    "minDeepLevel": 20,
+    "maxDeepLevel": 60,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 12,
+    "eatingFrequency": 5,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Synodontis": {
+    "fishId": "Synodontis",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 34,
+    "description": "a yellow catfish covered in black spots",
+    "minFishTime": 800,
+    "maxFishTime": 1000,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 2,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 80,
+    "minDeepLevel": 5,
+    "maxDeepLevel": 30,
+    "minYLevel": 55,
+    "maxYLevel": 100,
+    "maxLightLevel": 16,
+    "reproductionTime": 12,
+    "eatingFrequency": 5,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "DRY",
+      "SANDY"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:beetroot_seeds": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:wheat_seeds": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:pumpkin_seeds": [
+        0
+      ],
+      "minecraft:melon_seeds": [
+        0
+      ]
+    }
+  },
+  "Perch": {
+    "fishId": "Perch",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 1,
+    "description": "a long, rounded fish with rough scales",
+    "minFishTime": 800,
+    "maxFishTime": 1000,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 2,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 40,
+    "minDeepLevel": 2,
+    "maxDeepLevel": 25,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 9,
+    "eatingFrequency": 4,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "PLAINS",
+      "FOREST",
+      "RIVER",
+      "SWAMP"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 10,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Gar": {
+    "fishId": "Gar",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 2,
+    "description": "a long, armored fish with elongated jaws filled with sharp teeth",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 10,
+    "maxWeight": 40,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 10,
+    "minDeepLevel": 30,
+    "maxDeepLevel": 60,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "RIVER",
+      "SWAMP"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": true,
+    "scalingItem": "minecraft:flint",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "aquaculture:fish": [
+        0,
+        1,
+        17
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ],
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:spider_eye": [
+        0
+      ]
+    }
+  },
+  "Blowfish": {
+    "fishId": "Blowfish",
+    "itemId": "aquaculture:fish",
+    "itemMetaData": 8,
+    "description": "a small, brown, boney fish that inflates when threatened",
+    "minFishTime": 1100,
+    "maxFishTime": 1500,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 5,
+    "maxWeight": 12,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 6,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 30,
+    "minYLevel": 55,
+    "maxYLevel": 90,
+    "maxLightLevel": 16,
+    "reproductionTime": 12,
+    "eatingFrequency": 5,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "RIVER",
+      "SWAMP"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": true,
+    "scalingItem": "minecraft:arrow",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "aquaculture:fish": [
+        19,
+        37
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "aquaculture:food": [
+        0,
+        1
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  }
+}

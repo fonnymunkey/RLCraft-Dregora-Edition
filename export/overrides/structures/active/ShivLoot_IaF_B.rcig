@@ -1,0 +1,87 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "ShivLoot",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:shiny_scales",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_blue",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_bronze",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_deepblue",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_green",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_purple",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_red",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 24,
+      "max": 64,
+      "item": {
+        "id": "iceandfire:sea_serpent_scales_teal",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "$iceandfire"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "rlcraft:dungeon_base",
+  "exclusive": false,
+  "requires": [
+    "iceandfire",
+    "locks",
+    "mujmajnkraftsbettersurvival",
+    "notreepunching",
+    "potioncore",
+    "qualitytools",
+    "simpledifficulty",
+    "spartanweaponry",
+    "trumpetskeleton",
+    "wolfarmor",
+    "waystones"
+  ],
+  "inherit": [
+    "layout:dense_small",
+    "segments:generic",
+    "rlcraft:rooms",
+    "rlcraft:loot"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        " k ",
+        "ksk",
+        " f "
+    ],
+    "key":
+    {
+        "k":
+        {
+            "item": "minecraft:flint"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "f":
+        {
+            "item": "minecraft:feather"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:arrowpiercing",
+        "count": 4
+    }
+}

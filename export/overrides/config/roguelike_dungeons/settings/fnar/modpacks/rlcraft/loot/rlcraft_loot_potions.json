@@ -1,0 +1,130 @@
+{
+  "name": "rlcraft:loot_potions",
+  "requires": [
+    "mujmajnkraftsbettersurvival",
+    "potioncore",
+    "simpledifficulty"
+  ],
+  "exclusive": false,
+  "lootRules": [
+    {
+      "level": [0,1,2,3,4], "type": "POTIONS", "each": true, "quantity": 2,
+      "loot": [
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"mujmajnkraftsbettersurvival:decay\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"mujmajnkraftsbettersurvival:long_decay\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"mujmajnkraftsbettersurvival:strong_decay\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:antidote\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:archery\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:broken_armor\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:broken_armor\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:burst\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:climb\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:cure\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:diamond_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:explode\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:explode\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:fire\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:flight\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:health_boost\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:iron_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:klutz\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:klutz\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:launch\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:launch\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:levitation\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:lightning\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:lightning\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_antidote\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_archery\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_broken_armor\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:long_broken_armor\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_diamond_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_health_boost\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_iron_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_klutz\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:long_klutz\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_magic_focus\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_magic_inhibition\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:long_magic_inhibition\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_purity\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_reach\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_recoil\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_repair\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_solid_core\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:long_step_up\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:magic_focus\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:magic_inhibition\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:magic_inhibition\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:purity\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:reach\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:recoil\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:repair\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:revival\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:slow_fall\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:solid_core\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:step_up\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_archery\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_broken_armor\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_burst\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_diamond_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_explode\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:strong_explode\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_fire\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:strong_fire\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_health_boost\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_iron_skin\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_klutz\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:strong_klutz\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_launch\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_levitation\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_magic_focus\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_magic_inhibition\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_reach\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_recoil\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_repair\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_slow_fall\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_step_up\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_teleport\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:strong_vulnerable\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:teleport\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:teleport_surface\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"potioncore:vulnerable\"}"}, "weight": 1},
+		{"data": {"name": "minecraft:splash_potion", "nbt": "{Potion: \"potioncore:vulnerable\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"simpledifficulty:cold_resist_type\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"simpledifficulty:heat_resist_type\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"simpledifficulty:long_cold_resist_type\"}"}, "weight": 1},
+        {"data": {"name": "minecraft:potion", "nbt": "{Potion: \"simpledifficulty:long_heat_resist_type\"}"}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0], "type": "POTIONS", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [1], "type": "POTIONS", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [2], "type": "POTIONS", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [3], "type": "POTIONS", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [4], "type": "POTIONS", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    }
+  ]
+}

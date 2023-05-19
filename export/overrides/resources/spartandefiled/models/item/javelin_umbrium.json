@@ -1,0 +1,14 @@
+{
+    "parent":"spartanweaponry:item/javelin_wood",
+    "textures": {
+        "layer0":"spartandefiled:items/javelin_umbrium"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "empty": 1
+            },
+            "model": "spartanweaponry:item/javelin_empty"
+        }
+    ]
+}

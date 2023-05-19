@@ -1,0 +1,102 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "classyhats:item/caddycap",
+		"particle": "classyhats:item/caddycap"
+	},
+	"elements": [
+		{
+			"from": [3, 1, 10],
+			"to": [13, 4, 11],
+			"faces": {
+				"north": {"uv": [0, 8, 5, 9.5], "texture": "#0"},
+				"east": {"uv": [4, 9.5, 4.5, 11], "texture": "#0"},
+				"south": {"uv": [9, 5, 14, 6.5], "texture": "#0"},
+				"west": {"uv": [4.5, 9.5, 5, 11], "texture": "#0"},
+				"up": {"uv": [15, 0.5, 10, 0], "texture": "#0"},
+				"down": {"uv": [15, 0.5, 10, 1], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 1, 1],
+			"to": [12, 4, 2],
+			"faces": {
+				"north": {"uv": [9, 6.5, 13, 8], "texture": "#0"},
+				"east": {"uv": [10, 3, 10.5, 4.5], "texture": "#0"},
+				"south": {"uv": [9, 8, 13, 9.5], "texture": "#0"},
+				"west": {"uv": [5, 10, 5.5, 11.5], "texture": "#0"},
+				"up": {"uv": [14, 1.5, 10, 1], "texture": "#0"},
+				"down": {"uv": [14, 1.5, 10, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [4, 0, -1],
+			"to": [12, 1, 2],
+			"faces": {
+				"north": {"uv": [10, 2, 14, 2.5], "texture": "#0"},
+				"east": {"uv": [10, 4.5, 11.5, 5], "texture": "#0"},
+				"south": {"uv": [10, 2.5, 14, 3], "texture": "#0"},
+				"west": {"uv": [5.5, 10, 7, 10.5], "texture": "#0"},
+				"up": {"uv": [4, 11, 0, 9.5], "texture": "#0"},
+				"down": {"uv": [13, 9.5, 9, 11], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 0, 2],
+			"to": [13, 5, 10],
+			"faces": {
+				"north": {"uv": [5, 0, 10, 2.5], "texture": "#0"},
+				"east": {"uv": [5, 5, 9, 7.5], "texture": "#0"},
+				"south": {"uv": [5, 2.5, 10, 5], "texture": "#0"},
+				"west": {"uv": [5, 7.5, 9, 10], "texture": "#0"},
+				"up": {"uv": [5, 4, 0, 0], "texture": "#0"},
+				"down": {"uv": [5, 4, 0, 8], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 6.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 6.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 135, 0],
+			"translation": [0, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 135, 0],
+			"translation": [0, 8.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [35, -135, 0],
+			"translation": [-1, 4.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"translation": [0, 13.5, 3.75],
+			"scale": [1.63, 1.63, 1.93]
+		},
+		"fixed": {
+			"translation": [0, 5.5, 0],
+			"scale": [1, 1, 0.8]
+		}
+	},
+	"groups": [
+		{
+			"name": "caddycap",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "RLCraft_Loot_Ammo",
+  "items": [
+    {
+      "weight": 2.0475566387176514,
+      "min": 8,
+      "max": 20,
+      "item": {
+        "id": "minecraft:arrow",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.9013646841049194,
+      "min": 6,
+      "max": 18,
+      "item": {
+        "id": "spartanweaponry:bolt",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "$spartanweaponry"
+}

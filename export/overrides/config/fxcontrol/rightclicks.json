@@ -1,0 +1,29 @@
+[
+ {
+   "bothhandsitem": "minecraft:dye@15",
+   "block": [ "betternether:black_apple_seed", "rustic:aloe_vera", "rustic:blood_orchid", "rustic:chamomile", "rustic:cohosh", "rustic:deathstalk_mushroom", "rustic:horsetail", "rustic:mooncap_mushroom", "rustic:wind_thistle", "rustic:cloudsbluff", "rustic:core_root", "rustic:ginseng", "rustic:marsh_mallow", "rustic:wildberry_bush", "rustic:grape_leaves", "rustic:grape_stem" ],
+   "result": "deny"
+ },
+ {
+   "bothhandsitem": "minecraft:torch",
+   "block": [ "mcwbridges:most1", "mcwbridges:most2", "mcwbridges:oak_log_bridge_middle", "mcwbridges:oak_log_bridge_end", "mcwbridges:birch_log_bridge_end", "mcwbridges:birch_log_bridge_middle", "mcwbridges:acacia_log_bridge_end", "mcwbridges:acacia_log_bridge_middle", "mcwbridges:spruce_log_bridge_end", "mcwbridges:spruce_log_bridge_middle", "mcwbridges:jungle_log_bridge_end", "mcwbridges:jungle_log_bridge_middle", "mcwbridges:dark_oak_log_bridge_end", "mcwbridges:dark_oak_log_bridge_middle", "mcwbridges:rope_oak_bridge", "mcwbridges:rope_oak_bridge_end", "mcwbridges:rope_birch_bridge", "mcwbridges:rope_birch_bridge_end", "mcwbridges:rope_spruce_bridge", "mcwbridges:rope_spruce_bridge_end", "mcwbridges:rope_jungle_bridge", "mcwbridges:rope_jungle_bridge_end", "mcwbridges:rope_acacia_bridge", "mcwbridges:rope_acacia_bridge_end", "mcwbridges:rope_dark_oak_bridge", "mcwbridges:rope_dark_oak_bridge_end", "mcwbridges:stone_brick_bridge", "mcwbridges:stone_brick_bridge_end", "mcwbridges:brick_bridge", "mcwbridges:brick_bridge_end", "mcwbridges:sandstone_bridge", "mcwbridges:sandstone_bridge_end", "mcwbridges:orange_sandstone_bridge", "mcwbridges:orange_sandstone_bridge_end", "mcwbridges:mossy_stone_brick_bridge", "mcwbridges:mossy_stone_brick_bridge_end", "mcwbridges:bamboo_bridge_end", "mcwbridges:dry_bamboo_bridge", "mcwbridges:dry_bamboo_bridge_end" ],
+   "result": "deny"
+ },
+ {
+   "bothhandsitem": "minecraft:torch",
+   "block": [ "mcwbridges:bamboo_bridge" ],
+   "message": "CW",
+   "result": "deny"
+ },
+ {
+   "bothhandsitem": "minecraft:redstone_torch",
+   "block": [ "mcwbridges:oak_rail_bridge_end", "mcwbridges:spruce_rail_bridge", "mcwbridges:spruce_rail_bridge_end", "mcwbridges:birch_rail_bridge", "mcwbridges:birch_rail_bridge_end", "mcwbridges:jungle_rail_bridge", "mcwbridges:jungle_rail_bridge_end", "mcwbridges:acacia_rail_bridge", "mcwbridges:acacia_rail_bridge_end", "mcwbridges:dark_oak_rail_bridge", "mcwbridges:dark_oak_rail_bridge_end" ],
+   "result": "deny"
+ },
+ {
+   "bothhandsitem": "minecraft:redstone_torch",
+   "block": [ "mcwbridges:oak_rail_bridge" ],
+   "message": "www.twitch.tv/shivaxi",
+   "result": "deny"
+ }
+]

@@ -1,0 +1,42 @@
+{
+  "name": "rlcraft:loot",
+  "exclusive": false,
+  "requires": [
+    "iceandfire",
+    "locks",
+    "mujmajnkraftsbettersurvival",
+    "notreepunching",
+    "potioncore",
+    "qualitytools",
+    "simpledifficulty",
+    "spartanweaponry",
+    "trumpetskeleton",
+    "wolfarmor",
+    "waystones"
+  ],
+  "inherit": [
+    "rlcraft:loot_all",
+    "rlcraft:loot_armour",
+    "rlcraft:loot_blocks",
+    "rlcraft:loot_brewing",
+    "rlcraft:loot_enchanting",
+    "rlcraft:loot_food",
+    "rlcraft:loot_music",
+    "rlcraft:loot_ore",
+    "rlcraft:loot_potions",
+    "rlcraft:loot_reward",
+    "rlcraft:loot_smith",
+    "rlcraft:loot_Starter",
+    "rlcraft:loot_supplies",
+    "rlcraft:loot_tools",
+
+    "rlcraft:loot_iceandfire",
+    "rlcraft:loot_qualitytools",
+
+    "fnar:loot",
+    "locks:loot",
+    "notreepunching:loot",
+    "spartanweaponry:loot",
+    "wolfarmor:loot"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "world_height"
+              }
+            },
+            {
+              "type": "average",
+              "ray": {
+                "up": false,
+                "destExpression": "blocks:movement \u0026 !is:foliage"
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": -38
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 0,
+                "weight": 0.999924
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "Crater Spawn",
+    "description": [
+      "Spawns structure 38 above structure base."
+    ]
+  }
+}

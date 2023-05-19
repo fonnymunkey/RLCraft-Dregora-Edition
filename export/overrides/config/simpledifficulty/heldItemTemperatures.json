@@ -1,0 +1,50 @@
+{
+  "realistictorches:torch_lit": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 1.0
+    }
+  ],
+  "rustic:candle_gold": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 1.0
+    }
+  ],
+  "minecraft:magma": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 3.0
+    }
+  ],
+  "minecraft:blaze_rod": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 2.0
+    }
+  ],
+  "minecraft:torch": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 1.0
+    }
+  ],
+  "rustic:candle": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "temperature": 1.0
+    }
+  ]
+}

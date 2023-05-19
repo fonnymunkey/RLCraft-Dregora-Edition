@@ -1,0 +1,24 @@
+{
+  "name": "fnar:loot",
+  "inherit": [
+    "fnar:loot_all",
+    "fnar:loot_armour",
+    "fnar:loot_blocks",
+    "fnar:loot_brewing",
+    "fnar:loot_enchanting",
+    "fnar:loot_food",
+    "fnar:loot_ore",
+    "fnar:loot_other",
+    "fnar:loot_potions",
+    "fnar:loot_starter",
+    "fnar:loot_supplies",
+    "fnar:loot_tools",
+    "fnar:loot_treasure",
+    "fnar:loot_weapons",
+
+    "fnar:loot_trading_cards",
+	"fnar:loot_paintings",
+
+    "fnar:loot_tables_rewards"
+  ]
+}

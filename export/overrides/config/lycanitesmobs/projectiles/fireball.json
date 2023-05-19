@@ -1,0 +1,46 @@
+{
+  "name": "fireball",
+  "loadDefault": false,
+  "width": 1.0,
+  "height": 1.0,
+  "scale": 2.0,
+  "damage": 10,
+  "pierce": 3,
+  "knockbackChance": 0.5,
+  "effectDuration": 1,
+  "effectAmplifier": 1,
+  "velocity": 2.0,
+  "weight": 0,
+  "lifetime": 100,
+  "elements": [
+    "lightning",
+    "fire"
+  ],
+  "behaviours": [
+    {
+      "type": "fireProjectiles",
+      "projectileName": "fireballspark",
+      "tickRate": 1,
+      "impactCount": 10,
+	  "velocity": 0.25
+    },
+    {
+      "type": "explosion",
+      "radius": 3,
+      "mode": "break"
+    }
+  ],
+  "waterproof": true,
+  "lavaproof": true,
+  "cutGrass": false,
+  "impactSound": false,
+  "ripper": false,
+  "pierceBlocks": false,
+  "glow": true,
+  "burningEffect": true,
+  "particleCount": 2,
+  "particleType": "largesmoke",
+  "waterParticleType": "bubble",
+  "animationFrames": 3,
+  "rollSpeed": 2
+}

@@ -1,0 +1,35 @@
+{
+  "name": "amalgalich",
+  "type": "event",
+  "enabled": true,
+  "loadDefault": false,
+  "channel": "boss",
+  "duration": 600,
+  "conditions": [
+    {
+      "type": "world",
+      "dimensionIds": [
+        111
+      ],
+      "dimensionListType": "whitelist"
+    }
+  ],
+  "levelBoostMax": 0,
+  "triggers": [
+    {
+      "type": "altar",
+      "altarName": "AmalgalichAltar"
+    }
+  ],
+  "effects": [
+    {
+      "type": "structure",
+      "structureBuilderName": "amalgalich",
+      "eventTicksMax": 600
+    },
+    {
+      "type": "world",
+      "dayTime": 20000
+    }
+  ]
+}

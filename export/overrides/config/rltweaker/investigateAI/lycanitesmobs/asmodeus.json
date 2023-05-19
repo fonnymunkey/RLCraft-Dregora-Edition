@@ -1,0 +1,33 @@
+{
+  "priority": 3,
+  "entries": [
+    {
+      "executeOnAttacked": true,
+      "executeOnCalled": false,
+      "healthThreshold": 1.0,
+      "executionChance": 0.0,
+      "movementSpeed": 1.0,
+      "verticalOffsetBase": 0.0,
+      "verticalOffsetScale": 0.0,
+      "verticalOffsetMax": 0.0,
+      "horizontalOffsetBase": 0.0,
+      "horizontalOffsetScale": 0.25,
+      "horizontalOffsetMax": 20.0,
+      "callForHelpEntries": [
+        {
+          "entityNames": [
+			"lycanitesmobs:trite",
+			"lycanitesmobs:astaroth",
+			"lycanitesmobs:grell",
+			"lycanitesmobs:spectre"
+          ],
+          "verticalRange": 32.0,
+          "horizontalRange": 32.0,
+          "requiresVision": true,
+          "ignoreParentInCombat": true,
+          "ignoreParentChanceTestFailed": true
+        }
+      ]
+    }
+  ]
+}

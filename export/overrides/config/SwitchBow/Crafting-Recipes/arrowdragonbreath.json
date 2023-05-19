@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        "k",
+        "s",
+        "f"
+    ],
+    "key":
+    {
+        "k":
+        {
+            "item": "minecraft:dragon_breath"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "f":
+        {
+            "item": "minecraft:feather"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:arrowdragonbreath",
+        "count": 4
+    }
+}

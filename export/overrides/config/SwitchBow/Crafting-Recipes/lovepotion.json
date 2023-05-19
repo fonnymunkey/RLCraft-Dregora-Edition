@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        "sss",
+        "kgk",
+        "www"
+    ],
+    "key":
+    {
+        "s":
+        {
+            "item": "minecraft:wheat_seeds"
+        },
+        "k":
+        {
+            "item": "minecraft:carrot"
+        },
+        "g":
+        {
+            "item": "minecraft:glass_bottle"
+        },
+        "w":
+        {
+            "item": "minecraft:wheat"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:lovepotion",
+        "count": 3
+    }
+}

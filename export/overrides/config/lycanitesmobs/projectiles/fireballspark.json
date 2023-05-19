@@ -1,0 +1,36 @@
+{
+  "name": "fireballspark",
+  "loadDefault": false,
+  "noChargeItem": true,
+  "width": 0.25,
+  "height": 0.25,
+  "scale": 0.25,
+  "damage": 2,
+  "pierce": 1,
+  "knockbackChance": 0,
+  "effectDuration": 5,
+  "effectAmplifier": 1,
+  "velocity": 0.1,
+  "weight": 0,
+  "lifetime": 10,
+  "elements": [
+    "fire"
+  ],
+  "behaviours": [
+    {
+      "type": "placeBlocks",
+      "block": "minecraft:fire",
+      "radius": 1,
+      "height": 1
+    }
+  ],
+  "waterproof": false,
+  "lavaproof": true,
+  "cutGrass": true,
+  "impactSound": false,
+  "ripper": true,
+  "pierceBlocks": false,
+  "glow": true,
+  "animationFrames": 3,
+  "rollSpeed": 4
+}

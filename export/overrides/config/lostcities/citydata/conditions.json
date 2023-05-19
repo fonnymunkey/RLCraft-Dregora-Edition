@@ -1,0 +1,117 @@
+[
+  {
+    "type": "condition",
+    "name": "easymobs",
+    "values": [
+      {
+        "factor": 1,
+        "value": "srparasites:sim_human"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:sim_villager"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:rupter"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "mediummobs",
+    "values": [
+      {
+        "factor": 1,
+        "value": "srparasites:grunt"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_yelloweye"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_manducater"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "hardmobs",
+    "values": [
+      {
+        "factor": 1,
+        "value": "srparasites:sim_enderman"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_summoner"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "ultramobs",
+    "values": [
+      {
+        "factor": 1,
+        "value": "srparasites:sim_bigspider"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_arachnida"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_reeker"
+      },
+	  {
+        "factor": 1,
+        "value": "srparasites:pri_longarms"
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "name": "chestloot",
+    "values": [
+      {
+        "factor": 50,
+        "value": "loottweaker:lostcityhighrise",
+        "range": "5,100"
+      },
+      {
+        "factor": 50,
+        "value": "loottweaker:lostcityground",
+        "range": "0,3"
+      },
+      {
+        "factor": 50,
+        "value": "loottweaker:lostcitybasement",
+        "range": "-100,-1"
+      },
+      {
+        "factor": 69420,
+        "value": "loottweaker:lostcitysubway",
+        "inpart": "rail_dungeon1"
+      },
+      {
+        "factor": 69420,
+        "value": "loottweaker:lostcitysubway",
+        "inpart": "rail_dungeon2"
+      },
+      {
+        "factor": 5,
+        "value": "loottweaker:lostcityrare"
+      },
+      {
+        "factor": 30,
+        "value": "loottweaker:lostcityuncommon"
+      },
+      {
+        "factor": 50,
+        "value": "loottweaker:lostcitycommon"
+      }
+    ]
+  }
+]

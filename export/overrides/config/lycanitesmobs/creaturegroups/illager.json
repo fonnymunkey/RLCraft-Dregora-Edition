@@ -1,0 +1,16 @@
+{
+    "name": "illager",
+    "loadDefault": false,
+    "hunt": [],
+    "pack": [],
+    "wary": [],
+    "flee":  [],
+    "ignore": [],
+    "default": "retaliate",
+    "entityIds": [
+        "minecraft:vindication_illager",
+		"minecraft:evocation_illager",
+		"minecraft:illusion_illager",
+		"minecraft:witch"
+    ]
+}

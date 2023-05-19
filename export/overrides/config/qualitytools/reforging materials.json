@@ -1,0 +1,2599 @@
+[
+  {
+    "comment": "This file contains custom reforging materials. By default, you can reforge
+                a tool with its repair item (like iron ingots for an iron sword), but some
+                items don't have a repair item, like bows. This adds items to reforge those.
+                It can also add an item for 'any', which will work for any item that can't be
+                reforged otherwise. For more info about how to add materials, visit:
+                https://bitbucket.org/Tmtravlr/qualitytools/wiki/Home",
+    "tool": "any",
+    "material": {
+        "item": "minecraft:nether_star"
+    }
+  },
+  {
+    "tool": {
+        "item": "baubles:ring"
+    },
+    "material": {
+        "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:bow"
+    },
+    "material": {
+        "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+        "item": "mujmajnkraftsbettersurvival:itemcrossbow"
+    },
+    "material": {
+        "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:fishing_rod"
+    },
+    "material": {
+        "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:wooden_hoe"
+    },
+    "material": {
+        "ore_dict": "plankWood"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:stone_hoe"
+    },
+    "material": {
+        "ore_dict": "cobblestone"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:iron_hoe"
+    },
+    "material": {
+        "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:shears"
+    },
+    "material": {
+        "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:iron_horse_armor"
+    },
+    "material": {
+        "ore_dict": "ingotIron"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:golden_hoe"
+    },
+    "material": {
+        "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:golden_horse_armor"
+    },
+    "material": {
+        "ore_dict": "ingotGold"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:diamond_hoe"
+    },
+    "material": {
+        "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:diamond_horse_armor"
+    },
+    "material": {
+        "ore_dict": "gemDiamond"
+    }
+  },
+  {
+    "tool": {
+        "item": "qualitytools:emerald_ring"
+    },
+    "material": {
+        "ore_dict": "gemEmerald"
+    }
+  },
+  {
+    "tool": {
+        "item": "qualitytools:emerald_amulet"
+    },
+    "material": {
+        "ore_dict": "gemEmerald"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_metal_helmet"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_metal_chestplate"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_metal_leggings"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_metal_boots"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:silver_sword"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:silver_shovel"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:silver_pickaxe"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:silver_axe"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:silver_hoe"
+    },
+    "material": {
+        "ore_dict": "ingotSilver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_red_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_red_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_red_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_red_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_bronze_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_bronze_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_bronze_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_bronze_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_green_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_green_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_green_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_green_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_gray_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_gray"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_gray_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_gray"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_gray_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_gray"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_gray_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_gray"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_blue_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_blue_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_blue_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_blue_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_white_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_white"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_white_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_white"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_white_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_white"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_white_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_white"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_sapphire_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_sapphire"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_sapphire_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_sapphire"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_sapphire_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_sapphire"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_sapphire_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_sapphire"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_helmet"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_silver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_silver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_leggings"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_silver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:armor_silver_boots"
+    },
+    "material": {
+        "item": "iceandfire:dragonscales_silver"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_sword"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_shovel"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_pickaxe"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_axe"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_hoe"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_sword_fire"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_sword_ice"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:dragonbone_bow"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_blue_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_bronze_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_deepblue_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_deepblue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_green_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_purple_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_purple"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_red_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_teal_Helmet"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_teal"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_blue_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_bronze_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_deepblue_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_deepblue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_green_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_purple_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_purple"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_red_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_teal_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_teal"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_blue_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_bronze_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_deepblue_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_deepblue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_green_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_purple_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_purple"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_red_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_teal_leggings"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_teal"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_blue_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_blue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_bronze_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_bronze"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_deepblue_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_deepblue"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_green_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_green"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_purple_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_purple"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_red_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_red"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:tide_teal_boots"
+    },
+    "material": {
+        "item": "iceandfire:sea_serpent_scales_teal"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_fire_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_ice_dragonbone"
+    },
+    "material": {
+        "item": "iceandfire:dragonbone"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_jungle"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_desert"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_helmet"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_leggings"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_boots"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_helmet"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_chestplate"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_leggings"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_boots"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_sword"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_sword_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_shovel"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_pickaxe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_axe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_desert_hoe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_sword"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_sword_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_shovel"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_pickaxe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_axe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "iceandfire:myrmex_jungle_hoe"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_sword"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_shovel"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_pickaxe"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_axe"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_hoe"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_helmet"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_chestplate"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_leggings"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "aquaculture:neptunium_boots"
+    },
+    "material": {
+        "item": "aquaculture:loot",
+		"meta": 1
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_arrow"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_arrow_moderate"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_arrow_heavy"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_bolt"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_bolt_moderate"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanweaponry:quiver_bolt_heavy"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "toolbelt:belt"
+    },
+    "material": {
+        "item": "minecraft:leather"
+    }
+  },
+  {
+    "tool": {
+        "item": "potionfingers:ring"
+    },
+    "material": {
+        "item": "minecraft:gold_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:amuletcross"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:shieldcobalt"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:shieldobsidian"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:shieldankh"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "defiledlands:scarlite_ring"
+    },
+    "material": {
+        "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "defiledlands:phytoprostasia_amulet"
+    },
+    "material": {
+        "item": "defiledlands:umbrium_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:sea_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:amuletsinempty"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:amuletsingluttony"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:amuletsinpride"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:amuletsinwrath"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:ender_tiara"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:poison_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketobsidianskull"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:dragons_eye"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "minecraft:totem_of_undying"
+    },
+    "material": {
+        "ore_dict": "gemEmerald"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketbrokenheart"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketankhcharm"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketmixeddragonscale"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketblackdragonscale"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketapple"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketvitamins"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:ringoverclocking"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketshulkerheart"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:ringfreeaction"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketmagiclenses"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketbezoar"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "bountifulbaubles:trinketballoon"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:shock_pendant"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:flame_pendant"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },  
+  {
+    "tool": {
+        "item": "artifacts:thorn_pendant"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:ultimate_pendant"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:panic_necklace"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:whoopie_cushion"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:bottled_cloud"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:bottled_fart"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:magma_stone"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:feral_claws"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:power_glove"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:mechanical_glove"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:fire_gauntlet"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:drinking_hat"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:star_cloak"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:pocket_piston"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:antidote_vessel"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:bubble_wrap"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:sacrificial_amulet"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "artifacts:lucky_clover"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:explosion_pickaxe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:gamble_pickaxe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:vein_pickaxe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:hasty_pickaxe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:obsidian_harvester"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:bound_pickaxe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:bound_axe"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "forgottenitems:bound_shovel"
+    },
+    "material": {
+        "item": "minecraft:obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:glow_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:fairy_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:dwarf_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:titan_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:goblin_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:elf_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:faelis_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:dragon_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:wither_ring"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:weightless_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:inertia_null_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:greater_inertia_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:polarized_stone"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:damage_shield"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:arcing_orb"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:teddy_bear"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "xat:faelis_claw"
+    },
+    "material": {
+        "item": "xat:glowing_ingot"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_jungle_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_jungle_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:katana_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:greatsword_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longsword_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:saber_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:rapier_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:dagger_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:spear_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:pike_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:lance_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:halberd_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:warhammer_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:hammer_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_axe_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:throwing_knife_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:longbow_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:crossbow_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:javelin_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:battleaxe_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:boomerang_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  },
+  {
+    "tool": {
+        "item": "spartanfire:mace_desert_venom"
+    },
+    "material": {
+        "item": "iceandfire:myrmex_desert_chitin"
+    }
+  }
+]

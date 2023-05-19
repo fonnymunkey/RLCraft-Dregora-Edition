@@ -1,0 +1,27 @@
+{
+  "name": "rlcraft:loot_iceandfire",
+  "requires": ["iceandfire"],
+  "lootRules": [
+    {
+      "level": [1,2,3], "each": false, "type": "WEAPONS", "quantity": 1, "loot": [
+        {"data": {"name": "iceandfire:silver_sword"}}
+      ]
+    },
+    {
+      "level": [1,2,3], "each": false, "type": "ARMOUR", "quantity": 1, "loot": [
+        {"data": {"name": "iceandfire:armor_silver_metal_helmet"}},
+        {"data": {"name": "iceandfire:armor_silver_metal_chestplate"}},
+        {"data": {"name": "iceandfire:armor_silver_metal_leggings"}},
+        {"data": {"name": "iceandfire:armor_silver_metal_boots"}}
+      ]
+    },
+    {
+      "level": [1,2,3], "each": false, "type": "TOOLS", "quantity": 1, "loot": [
+        {"data": {"name": "iceandfire:silver_hoe"}},
+        {"data": {"name": "iceandfire:silver_axe"}},
+        {"data": {"name": "iceandfire:silver_shovel"}},
+        {"data": {"name": "iceandfire:silver_pickaxe"}}
+      ]
+    }
+  ]
+}

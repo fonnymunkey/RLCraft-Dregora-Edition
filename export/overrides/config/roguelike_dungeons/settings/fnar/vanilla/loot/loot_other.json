@@ -1,0 +1,34 @@
+{
+  "name": "fnar:loot_other",
+  "lootRules": [
+    {
+      "level": [0, 1, 2, 3, 4],
+      "type": "MUSIC",
+      "each": true,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:record_cat"}, "weight": 1},
+        {"data": {"name": "minecraft:record_13"}, "weight": 1},
+        {"data": {"name": "minecraft:record_blocks"}, "weight": 1},
+        {"data": {"name": "minecraft:record_chirp"}, "weight": 1},
+        {"data": {"name": "minecraft:record_far"}, "weight": 1},
+        {"data": {"name": "minecraft:record_mall"}, "weight": 1},
+        {"data": {"name": "minecraft:record_mellohi"}, "weight": 1},
+        {"data": {"name": "minecraft:record_stal"}, "weight": 1},
+        {"data": {"name": "minecraft:record_strad"}, "weight": 1},
+        {"data": {"name": "minecraft:record_ward"}, "weight": 1},
+        {"data": {"name": "minecraft:record_11"}, "weight": 1},
+        {"data": {"name": "minecraft:record_wait"}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0, 1, 2, 3, 4],
+      "type": "SMITH",
+      "each": true,
+      "quantity": 1,
+      "loot": [
+        {"data": {"type": "specialty", "equipment": "sword", "quality": "iron", "level": 1}, "weight": 1}
+      ]
+    }
+  ]
+}

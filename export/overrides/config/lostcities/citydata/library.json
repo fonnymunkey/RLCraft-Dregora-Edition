@@ -1,0 +1,3618 @@
+[
+	{
+		"type": "building",
+		"name": "center00",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "center00_1"
+			},
+			{
+				"top": false,
+				"part": "center00_2"
+			},
+			{
+				"top": false,
+				"part": "center00_3"
+			},
+			{
+				"top": true,
+				"part": "top_center00_1"
+			},
+			{
+				"top": true,
+				"part": "top_center00_2"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "center11",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "center11_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping00",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"preferslonely": 0.9,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping00_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping00_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping00_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping00_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping01",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"preferslonely": 0.9,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping01_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping01_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping01_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping01_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping01_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping01_in_3"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_1"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping10",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping10_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping10_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping10_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping10_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping10_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping10_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping10_in_3"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_1"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_2"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping11",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping11_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping11_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping11_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping11_r1"
+			},
+			{
+				"top": true,
+				"part": "shopping11_top"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping11_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping11_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping11_in_3"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_1"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_2"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping_open00",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"preferslonely": 0.9,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping_open00_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping_open00_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping_open00_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping00_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping_open01",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"preferslonely": 0.9,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping_open01_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping_open01_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping_open01_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping01_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping01_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping01_in_3"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_1"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping01_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping_open10",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping_open10_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping_open10_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping_open10_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping10_r1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping10_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping10_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping10_in_3"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_1"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_2"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping10_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "shopping_open11",
+		"filler": "#",
+		"maxcellars": 0,
+		"minfloors": 4,
+		"maxfloors": 6,
+		"parts": [
+			{
+				"floor": 0,
+				"part": "shopping_open11_0"
+			},
+			{
+				"floor": 1,
+				"part": "shopping_open11_1"
+			},
+			{
+				"floor": 2,
+				"part": "shopping_open11_2"
+			},
+			{
+				"top": false,
+				"range": "3,100",
+				"part": "shopping11_r1"
+			},
+			{
+				"top": true,
+				"part": "shopping11_top"
+			}
+		],
+		"parts2": [
+			{
+				"floor": 0,
+				"part": "shopping11_in_1"
+			},
+			{
+				"floor": 0,
+				"part": "shopping11_in_2"
+			},
+			{
+				"floor": 0,
+				"part": "shopping11_in_3"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_1"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_2"
+			},
+			{
+				"top": false,
+				"range": "2,100",
+				"part": "shopping11_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "town00",
+		"filler": "#",
+		"parts": [
+			{
+				"cellar": true,
+				"part": "town00_c"
+			},
+			{
+				"top": false,
+				"ground": true,
+				"cellar": false,
+				"part": "town00_0"
+			},
+			{
+				"top": false,
+				"ground": false,
+				"cellar": false,
+				"part": "town00_1"
+			},
+			{
+				"top": true,
+				"part": "top_center00_1"
+			},
+			{
+				"top": true,
+				"part": "top_center00_2"
+			}
+		],
+		"parts2": [
+			{
+				"top": false,
+				"part": "town00_in_1"
+			},
+			{
+				"top": false,
+				"part": "town00_in_2"
+			},
+			{
+				"top": false,
+				"part": "town00_in_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "town01",
+		"filler": "#",
+		"parts": [
+			{
+				"cellar": true,
+				"part": "town01_c"
+			},
+			{
+				"top": false,
+				"ground": true,
+				"cellar": false,
+				"part": "town01_0"
+			},
+			{
+				"top": false,
+				"ground": false,
+				"cellar": false,
+				"part": "town01_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"top": false,
+				"part": "town01_in_1"
+			},
+			{
+				"top": false,
+				"part": "town_in_1"
+			},
+			{
+				"top": false,
+				"part": "town_in_2"
+			},
+			{
+				"top": false,
+				"part": "town_in_3"
+			},
+			{
+				"top": false,
+				"part": "town_in_4"
+			},
+			{
+				"top": false,
+				"part": "town_in_5"
+			},
+			{
+				"top": false,
+				"part": "town_in_6"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "town10",
+		"filler": "#",
+		"parts": [
+			{
+				"cellar": true,
+				"part": "town10_c"
+			},
+			{
+				"top": false,
+				"ground": true,
+				"cellar": false,
+				"part": "town10_0"
+			},
+			{
+				"top": false,
+				"ground": false,
+				"cellar": false,
+				"part": "town10_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"top": false,
+				"part": "town_in_1"
+			},
+			{
+				"top": false,
+				"part": "town_in_2"
+			},
+			{
+				"top": false,
+				"part": "town_in_3"
+			},
+			{
+				"top": false,
+				"part": "town_in_4"
+			},
+			{
+				"top": false,
+				"part": "town_in_5"
+			},
+			{
+				"top": false,
+				"part": "town_in_6"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "town11",
+		"filler": "#",
+		"parts": [
+			{
+				"cellar": true,
+				"part": "town11_c"
+			},
+			{
+				"top": false,
+				"ground": true,
+				"cellar": false,
+				"part": "town11_0"
+			},
+			{
+				"top": false,
+				"ground": false,
+				"cellar": false,
+				"part": "town11_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		],
+		"parts2": [
+			{
+				"top": false,
+				"part": "town_in_1"
+			},
+			{
+				"top": false,
+				"part": "town_in_2"
+			},
+			{
+				"top": false,
+				"part": "town_in_3"
+			},
+			{
+				"top": false,
+				"part": "town_in_4"
+			},
+			{
+				"top": false,
+				"part": "town_in_5"
+			},
+			{
+				"top": false,
+				"part": "town_in_6"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "building1",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "building1_1"
+			},
+			{
+				"top": false,
+				"part": "building1_2"
+			},
+			{
+				"top": false,
+				"part": "building1_3"
+			},
+			{
+				"top": false,
+				"part": "building1_4"
+			},
+			{
+				"top": false,
+				"part": "building1_5"
+			},
+			{
+				"top": false,
+				"part": "building1_6"
+			},
+			{
+				"top": false,
+				"part": "building1_7"
+			},
+			{
+				"top": false,
+				"part": "building1_8"
+			},
+			{
+				"top": false,
+				"part": "building1_9"
+			},
+			{
+				"top": true,
+				"part": "top1x1_1"
+			},
+			{
+				"top": true,
+				"part": "top1x1_2"
+			},
+			{
+				"top": true,
+				"part": "top1x1_3"
+			},
+			{
+				"top": true,
+				"part": "top1x1_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_5"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "center10",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "center10_1"
+			},
+			{
+				"top": false,
+				"part": "center10_2"
+			},
+			{
+				"top": false,
+				"part": "center10_3"
+			},
+			{
+				"top": false,
+				"part": "center10_4"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "building2",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "building2_1"
+			},
+			{
+				"top": false,
+				"part": "building2_2"
+			},
+			{
+				"top": false,
+				"part": "building2_3"
+			},
+			{
+				"top": false,
+				"part": "building2_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_1"
+			},
+			{
+				"top": true,
+				"part": "top1x1_2"
+			},
+			{
+				"top": true,
+				"part": "top1x1_3"
+			},
+			{
+				"top": true,
+				"part": "top1x1_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_5"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "building3",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "building3_1"
+			},
+			{
+				"top": false,
+				"part": "building3_2"
+			},
+			{
+				"top": false,
+				"part": "building3_3"
+			},
+			{
+				"top": false,
+				"part": "building3_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_1"
+			},
+			{
+				"top": true,
+				"part": "top1x1_2"
+			},
+			{
+				"top": true,
+				"part": "top1x1_3"
+			},
+			{
+				"top": true,
+				"part": "top1x1_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_5"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "building4",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "building4_1"
+			},
+			{
+				"top": false,
+				"part": "building4_2"
+			},
+			{
+				"top": false,
+				"part": "building4_3"
+			},
+			{
+				"top": false,
+				"part": "building4_4"
+			},
+			{
+				"top": true,
+				"part": "top4_1"
+			},
+			{
+				"top": true,
+				"part": "top4_2"
+			},
+			{
+				"top": true,
+				"part": "top4_3"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "building5",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "building5_1"
+			},
+			{
+				"top": false,
+				"part": "building5_2"
+			},
+			{
+				"top": false,
+				"part": "building5_3"
+			},
+			{
+				"top": false,
+				"part": "building5_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_2"
+			},
+			{
+				"top": true,
+				"part": "top1x1_3"
+			},
+			{
+				"top": true,
+				"part": "top1x1_4"
+			},
+			{
+				"top": true,
+				"part": "top1x1_5"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "center01",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "center01_1"
+			},
+			{
+				"top": false,
+				"part": "center01_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_1"
+			},
+			{
+				"top": true,
+				"part": "top_center_2"
+			},
+			{
+				"top": true,
+				"part": "top_center_3"
+			},
+			{
+				"top": true,
+				"part": "top_center_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "library00",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "library00_1"
+			},
+			{
+				"top": true,
+				"part": "top_library00_1"
+			},
+			{
+				"top": true,
+				"part": "top_library00_2"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "library11",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "library11_1"
+			},
+			{
+				"top": false,
+				"part": "library11_2"
+			},
+			{
+				"top": true,
+				"part": "top_library_1"
+			},
+			{
+				"top": true,
+				"part": "top_library_2"
+			},
+			{
+				"top": true,
+				"part": "top_library_3"
+			},
+			{
+				"top": true,
+				"part": "top_library_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "library10",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "library10_1"
+			},
+			{
+				"top": false,
+				"part": "library10_2"
+			},
+			{
+				"top": false,
+				"part": "library10_3"
+			},
+			{
+				"top": false,
+				"part": "library10_4"
+			},
+			{
+				"top": false,
+				"part": "library10_5"
+			},
+			{
+				"top": true,
+				"part": "top_library_1"
+			},
+			{
+				"top": true,
+				"part": "top_library_2"
+			},
+			{
+				"top": true,
+				"part": "top_library_3"
+			},
+			{
+				"top": true,
+				"part": "top_library_4"
+			}
+		]
+	},
+	{
+		"type": "building",
+		"name": "library01",
+		"filler": "#",
+		"parts": [
+			{
+				"top": false,
+				"part": "library01_1"
+			},
+			{
+				"top": false,
+				"part": "library01_2"
+			},
+			{
+				"top": false,
+				"part": "library01_3"
+			},
+			{
+				"top": true,
+				"part": "top_library_1"
+			},
+			{
+				"top": true,
+				"part": "top_library_2"
+			},
+			{
+				"top": true,
+				"part": "top_library_3"
+			},
+			{
+				"top": true,
+				"part": "top_library_4"
+			}
+		]
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_config",
+		"streetblocks": {
+			"width": 8
+		}
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_common",
+		"inherit": "citystyle_config",
+		"streetblocks": {
+			"border": "y",
+			"wall": "w",
+			"street": "S",
+			"streetbase": "b",
+			"streetvariant": "B"
+		},
+		"parkblocks": {
+			"elevation": "x"
+		},
+		"corridorblocks": {
+			"roof": "x",
+			"glass": "+"
+		},
+		"railblocks": {
+			"railmain": "y"
+		},
+		"sphereblocks": {
+			"glass": "Z",
+			"border": "9",
+			"inner": "b"
+		},
+		"buildings": [
+			{
+				"factor": 0.4,
+				"building": "building1"
+			},
+			{
+				"factor": 0.4,
+				"building": "building2"
+			},
+			{
+				"factor": 0.2,
+				"building": "building3"
+			},
+			{
+				"factor": 0.2,
+				"building": "building4"
+			},
+			{
+				"factor": 0.3,
+				"building": "building5"
+			}
+		],
+		"multibuildings": [
+			{
+				"factor": 0.3,
+				"multibuilding": "multi1"
+			},
+			{
+				"factor": 0.3,
+				"multibuilding": "multi2"
+			},
+			{
+				"factor": 0.2,
+				"multibuilding": "multi3"
+			},
+			{
+				"factor": 0.2,
+				"multibuilding": "multi4"
+			},
+			{
+				"factor": 0.1,
+				"multibuilding": "multi5"
+			},
+			{
+				"factor": 0.1,
+				"multibuilding": "library"
+			},
+			{
+				"factor": 0.1,
+				"multibuilding": "center"
+			},
+			{
+				"factor": 0.08,
+				"multibuilding": "townhall"
+			},
+			{
+				"factor": 0.0,
+				"multibuilding": "shopping"
+			},
+			{
+				"factor": 0.0,
+				"multibuilding": "shopping_open"
+			}
+		],
+		"bridges": [
+			{
+				"factor": 1,
+				"bridge": "bridge_open"
+			},
+			{
+				"factor": 1,
+				"bridge": "bridge_covered"
+			}
+		],
+		"fronts": [
+			{
+				"factor": 1,
+				"front": "building_front1"
+			},
+			{
+				"factor": 1,
+				"front": "building_front2"
+			},
+			{
+				"factor": 1,
+				"front": "building_front3"
+			}
+		],
+		"stairs": [
+			{
+				"factor": 1,
+				"stair": "stairs1"
+			},
+			{
+				"factor": 1,
+				"stair": "stairs2"
+			},
+			{
+				"factor": 1,
+				"stair": "stairsnormal"
+			},
+			{
+				"factor": 1,
+				"stair": "stairsbig"
+			}
+		],
+		"fountains": [
+			{
+				"factor": 1,
+				"fountain": "fountain1"
+			},
+			{
+				"factor": 1,
+				"fountain": "fountain2"
+			},
+			{
+				"factor": 1,
+				"fountain": "fountain3"
+			}
+		],
+		"parks": [
+			{
+				"factor": 1,
+				"park": "park_pool"
+			},
+			{
+				"factor": 1,
+				"park": "park_plants"
+			},
+			{
+				"factor": 1,
+				"park": "park_trees"
+			},
+			{
+				"factor": 1,
+				"park": "park_plants_pillars"
+			},
+			{
+				"factor": 0.8,
+				"park": "park_fountain1"
+			},
+			{
+				"factor": 0.8,
+				"park": "park_fountain2"
+			},
+			{
+				"factor": 0.3,
+				"park": "park_building"
+			},
+			{
+				"factor": 0.3,
+				"park": "park_building2"
+			}
+		],
+		"raildungeons": [
+			{
+				"factor": 1,
+				"dungeon": "rail_dungeon1"
+			},
+			{
+				"factor": 1,
+				"dungeon": "rail_dungeon2"
+			}
+		]
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_desert",
+		"style": "desert",
+		"inherit": "citystyle_common"
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_standard",
+		"style": "standard",
+		"inherit": "citystyle_common"
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_chisel_desert",
+		"style": "desert_chisel",
+		"inherit": "citystyle_common"
+	},
+	{
+		"type": "citystyle",
+		"name": "citystyle_chisel_standard",
+		"style": "standard_chisel",
+		"inherit": "citystyle_common"
+	},
+	{
+		"type": "multibuilding",
+		"name": "library",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"library00",
+				"library01"
+			],
+			[
+				"library10",
+				"library11"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "center",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"center00",
+				"center01"
+			],
+			[
+				"center10",
+				"center11"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "townhall",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"town00",
+				"town01"
+			],
+			[
+				"town10",
+				"town11"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "shopping",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"shopping00",
+				"shopping01"
+			],
+			[
+				"shopping10",
+				"shopping11"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "shopping_open",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"shopping_open00",
+				"shopping_open01"
+			],
+			[
+				"shopping_open10",
+				"shopping_open11"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "multi3",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"building3",
+				"building3"
+			],
+			[
+				"building3",
+				"building3"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "multi4",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"building4",
+				"building4"
+			],
+			[
+				"building4",
+				"building4"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "multi5",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"building5",
+				"building5"
+			],
+			[
+				"building5",
+				"building5"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "multi2",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"building2",
+				"building2"
+			],
+			[
+				"building2",
+				"building2"
+			]
+		]
+	},
+	{
+		"type": "multibuilding",
+		"name": "multi1",
+		"dimx": 2,
+		"dimz": 2,
+		"buildings": [
+			[
+				"building1",
+				"building1"
+			],
+			[
+				"building1",
+				"building1"
+			]
+		]
+	},
+	{
+		"type": "palette",
+		"name": "rails",
+		"palette": [
+			{
+				"char": "k",
+				"block": "minecraft:rail"
+			},
+			{
+				"char": "e",
+				"block": "minecraft:rail@1"
+			},
+			{
+				"char": "j",
+				"block": "minecraft:rail@2"
+			},
+			{
+				"char": "q",
+				"block": "minecraft:rail@6"
+			},
+			{
+				"char": "s",
+				"block": "minecraft:rail@7"
+			},
+			{
+				"char": "r",
+				"block": "minecraft:rail@8"
+			},
+			{
+				"char": "n",
+				"block": "minecraft:rail@9"
+			},
+			{
+				"char": "m",
+				"block": "minecraft:golden_rail@8"
+			},
+			{
+				"char": "E",
+				"block": "minecraft:golden_rail@13"
+			},
+			{
+				"char": "H",
+				"block": "minecraft:golden_rail@12"
+			},
+			{
+				"char": "f",
+				"block": "minecraft:golden_rail@9"
+			},
+			{
+				"char": "i",
+				"block": "minecraft:golden_rail@10"
+			}
+		]
+	},
+	{
+		"type": "palette",
+		"name": "common",
+        "palette": [
+            {
+                "char": "1",
+                "block": "minecraft:mob_spawner",
+                "mob": "easymobs"
+            },
+            {
+                "char": "2",
+                "block": "minecraft:mob_spawner",
+                "mob": "mediummobs"
+            },
+            {
+                "char": "3",
+                "block": "minecraft:mob_spawner",
+                "mob": "hardmobs"
+            },
+            {
+                "char": "4",
+                "block": "minecraft:mob_spawner",
+                "mob": "ultramobs"
+            },
+            {
+                "char": "h",
+                "block": "betternether:cincinnasite_lantern"
+            },
+            {
+                "char": "g",
+                "block": "minecraft:redstone_torch@5"
+            },
+            {
+                "char": "[",
+                "block": "minecraft:oak_stairs@1"
+            },
+            {
+                "char": "]",
+                "block": "minecraft:oak_stairs@0"
+            },
+            {
+                "char": "{",
+                "block": "minecraft:oak_stairs@3"
+            },
+            {
+                "char": "}",
+                "block": "minecraft:oak_stairs@2"
+            },
+            {
+                "char": "9",
+                "blocks": [
+                    {
+                        "random": 32,
+                        "block": "minecraft:stained_hardened_clay@9"
+                    },
+                    {
+                        "random": 32,
+                        "block": "minecraft:stained_hardened_clay@7"
+                    },
+                    {
+                        "random": 32,
+                        "block": "minecraft:concrete@9"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:concrete@7"
+                    }
+                ]
+            },
+            {
+                "char": "Y",
+                "block": "minecraft:stained_glass"
+            },
+            {
+                "char": "Z",
+                "blocks": [
+                    {
+                        "random": 32,
+                        "block": "minecraft:glass"
+                    },
+                    {
+                        "random": 32,
+                        "block": "minecraft:stained_glass@7"
+                    },
+                    {
+                        "random": 32,
+                        "block": "minecraft:stained_glass@11"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:stained_glass@3"
+                    }
+                ]
+            },
+            {
+                "char": "p",
+                "blocks": [
+                    {
+                        "random": 30,
+                        "block": "minecraft:red_flower"
+                    },
+                    {
+                        "random": 30,
+                        "block": "minecraft:yellow_flower"
+                    },
+                    {
+                        "random": 15,
+                        "block": "minecraft:sapling"
+                    },
+                    {
+                        "random": 15,
+                        "block": "minecraft:sapling@1"
+                    },
+                    {
+                        "random": 15,
+                        "block": "minecraft:sapling@2"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:sapling@4"
+                    }
+                ]
+            },
+            {
+                "char": "K",
+                "blocks": [
+                    {
+                        "random": 64,
+                        "block": "minecraft:red_flower"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:yellow_flower"
+                    }
+                ]
+            },
+            {
+                "char": "!",
+                "blocks": [
+                    {
+                        "random": 15,
+                        "block": "minecraft:diamond_block"
+                    },
+                    {
+                        "random": 20,
+                        "block": "minecraft:gold_block"
+                    },
+                    {
+                        "random": 15,
+                        "block": "minecraft:emerald_block"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:iron_block"
+                    }
+                ]
+            },
+            {
+                "char": "F",
+                "blocks": [
+                    {
+                        "random": 25,
+                        "block": "minecraft:furnace"
+                    },
+                    {
+                        "random": 20,
+                        "block": "minecraft:crafting_table"
+                    },
+                    {
+                        "random": 7,
+                        "block": "minecraft:brewing_stand"
+                    },
+                    {
+                        "random": 6,
+                        "block": "minecraft:anvil"
+                    },
+                    {
+                        "random": 5,
+                        "block": "minecraft:cauldron"
+                    },
+                    {
+                        "random": 2,
+                        "block": "minecraft:enchanting_table"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:web"
+                    }
+                ]
+            },
+            {
+                "char": "%",
+                "blocks": [
+                    {
+                        "random": 40,
+                        "block": "minecraft:web"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:air"
+                    }
+                ]
+            },
+			{
+                "char": "*",
+                "blocks": [
+                    {
+                        "random": 32,
+                        "block": "contenttweaker:bone_pile"
+                    },
+                    {
+                        "random": 1000,
+                        "block": "minecraft:flower_pot"
+                    }
+                ]
+            },
+            {
+                "char": "l",
+                "block": "minecraft:ladder@2"
+            },
+            {
+                "char": "-",
+                "block": "minecraft:wooden_pressure_plate"
+            },
+            {
+                "char": ".",
+                "block": "minecraft:fence"
+            },
+            {
+                "char": "L",
+                "block": "minecraft:bookshelf"
+            },
+            {
+                "char": "W",
+                "block": "minecraft:water"
+            },
+            {
+                "char": "C",
+                "block": "minecraft:chest",
+                "loot": "chestloot"
+            },
+            {
+                "char": "G",
+                "block": "minecraft:grass"
+            },
+            {
+                "char": "D",
+                "block": "minecraft:dirt"
+            },
+            {
+                "char": " ",
+                "block": "minecraft:air"
+            },
+            {
+                "char": ";",
+                "block": "minecraft:gravel"
+            },
+            {
+                "char": "~",
+                "block": "minecraft:command_block"
+            },
+            {
+                "char": "T",
+                "block": "minecraft:torch"
+            }
+        ]
+	},
+	{
+		"type": "part",
+		"name": "building_front1",
+		"xsize": 2,
+		"zsize": 16,
+		"slices": [
+			[
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"__",
+				"  ",
+				"  ",
+				"  "
+			]
+		],
+		"meta": []
+	},
+	{
+		"type": "part",
+		"name": "building_front2",
+		"xsize": 3,
+		"zsize": 16,
+		"slices": [
+			[
+				"   ",
+				"   ",
+				"   ",
+				"## ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"## ",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				" w ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				" w ",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				" w ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				"   ",
+				" w ",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"   ",
+				"   ",
+				"   "
+			]
+		],
+		"meta": []
+	},
+	{
+		"type": "part",
+		"name": "building_front3",
+		"xsize": 3,
+		"zsize": 16,
+		"slices": [
+			[
+				"   ",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"  #",
+				"   ",
+				"   ",
+				"aa#",
+				"   ",
+				"   ",
+				"   "
+			],
+			[
+				"   ",
+				"   ",
+				"   ",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"___",
+				"   ",
+				"   ",
+				"   "
+			]
+		],
+		"meta": []
+	},
+	{
+		"type": "part",
+		"name": "stairsbig",
+		"xsize": 6,
+		"zsize": 12,
+		"meta": [
+			{
+				"key": "z1",
+				"integer": 4
+			},
+			{
+				"key": "z2",
+				"integer": 11
+			}
+		],
+		"slices": [
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxxxx",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxxx"
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxxx_",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxxx_"
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxx_ ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxxx_ "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxx_  ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xxx_  "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xx_   ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"xx_   "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"x_    ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"x_    "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"_     ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"_     "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "stairsnormal",
+		"xsize": 6,
+		"zsize": 11,
+		"meta": [
+			{
+				"key": "z1",
+				"integer": 5
+			},
+			{
+				"key": "z2",
+				"integer": 10
+			}
+		],
+		"slices": [
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxxxx",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxx/",
+				"xxxxxx"
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxxx_",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxx/ ",
+				"xxxxx_"
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxxx_ ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxx/  ",
+				"xxxx_ "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xxx_  ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xx/   ",
+				"xxx_  "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"xx_   ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"x/    ",
+				"xx_   "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"x_    ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"/     ",
+				"x_    "
+			],
+			[
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"_     ",
+				"      ",
+				"      ",
+				"      ",
+				"      ",
+				"_     "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "stairs1",
+		"xsize": 2,
+		"zsize": 13,
+		"meta": [
+			{
+				"key": "z1",
+				"integer": 0
+			},
+			{
+				"key": "z2",
+				"integer": 2
+			}
+		],
+		"slices": [
+			[
+				"  ",
+				"  ",
+				" w",
+				" T",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"==",
+				"__"
+			],
+			[
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"==",
+				"__",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"==",
+				"__",
+				"  ",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  ",
+				"==",
+				"__",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				" w",
+				"==",
+				"__",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  "
+			],
+			[
+				"__",
+				"__",
+				"__",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "stairs2",
+		"xsize": 2,
+		"zsize": 16,
+		"meta": [
+			{
+				"key": "z1",
+				"integer": 13
+			},
+			{
+				"key": "z2",
+				"integer": 15
+			}
+		],
+		"slices": [
+			[
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"==",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" T",
+				" w",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"==",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"==",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"==",
+				"  ",
+				"  ",
+				" w",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"==",
+				" w",
+				"  ",
+				"  "
+			],
+			[
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"  ",
+				"__",
+				"__",
+				"__"
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "bridge_open",
+		"xsize": 16,
+		"zsize": 16,
+		"meta": [
+			{
+				"key": "support",
+				"char": "v"
+			}
+		],
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"                ",
+				"vvvvvvvvvvvvvvvv",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"vvvvvvvvvvvvvvvv",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"wwwwvwwwwwwwvwww",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"wwwwvwwwwwwwvwww",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "bridge_covered",
+		"xsize": 16,
+		"zsize": 16,
+		"meta": [
+			{
+				"key": "support",
+				"char": "v"
+			}
+		],
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"                ",
+				"vvvvvvvvvvvvvvvv",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"vvvvvvvvvvvvvvvv",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"wwwwvwwwwwwwvwww",
+				"    T       T   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    T       T   ",
+				"wwwwvwwwwwwwvwww",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"    w       w   ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"vvvvvvvvvvvvvvvv",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"SSSSSSSSSSSSSSSS",
+				"vvvvvvvvvvvvvvvv",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "fountain1",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      ####      ",
+				"      #WW#      ",
+				"      #WW#      ",
+				"      ####      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      T  T      ",
+				"                ",
+				"                ",
+				"      T  T      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "fountain2",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"       ##       ",
+				"      #WW#      ",
+				"     #WWWW#     ",
+				"     #WWWW#     ",
+				"      #WW#      ",
+				"       ##       ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      T  T      ",
+				"                ",
+				"                ",
+				"      T  T      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "fountain3",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      ####      ",
+				"      #WW#      ",
+				"      #WW#      ",
+				"      ####      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      :  :      ",
+				"                ",
+				"                ",
+				"      :  :      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"      :  :      ",
+				"                ",
+				"                ",
+				"      :  :      ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"     T####T     ",
+				"      #  #      ",
+				"      #  #      ",
+				"     T####T     ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_pool",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				" ______________ ",
+				" _SSSSSSSSSSSS_ ",
+				" _SGGGGGGGGGGS_ ",
+				" _SGGGGGGGGGGS_ ",
+				" _SGGGGWWWGGGS_ ",
+				" _SGGGGWWGGGGS_ ",
+				" _SGGGWWWWWGGS_ ",
+				" _SGGGGWWWGGGS_ ",
+				" _SGGGGGWWGGGS_ ",
+				" _SGGGGGGGGGGS_ ",
+				" _SGGGGGGGGGGS_ ",
+				" _SGGGGGGGGGGS_ ",
+				" _SSSSSSSSSSSS_ ",
+				" ______________ ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"    p           ",
+				"   T       pT   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"         p      ",
+				"     p          ",
+				"   T      p T   ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_trees",
+		"xsize": 16,
+		"zsize": 16,
+		"palette": [
+			{
+				"char": "P",
+				"blocks": [
+					{
+						"random": 32,
+						"block": "minecraft:sapling"
+					},
+					{
+						"random": 32,
+						"block": "minecraft:sapling@1"
+					},
+					{
+						"random": 32,
+						"block": "minecraft:sapling@2"
+					},
+					{
+						"random": 1000,
+						"block": "minecraft:sapling@4"
+					}
+				]
+			}
+		],
+		"slices": [
+			[
+				"                ",
+				"                ",
+				"  _____  _____  ",
+				"  _SSS_  _SSS_  ",
+				"  _SDS_  _SDS_  ",
+				"  _SSS_  _SSS_  ",
+				"  _____  _____  ",
+				"                ",
+				"                ",
+				"  _____  _____  ",
+				"  _SSS_  _SSS_  ",
+				"  _SDS_  _SDS_  ",
+				"  _SSS_  _SSS_  ",
+				"  _____  _____  ",
+				"                ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"   TP      PT   ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"   TP      PT   ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_plants",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				" T        p   T ",
+				"                ",
+				"     p       p  ",
+				"                ",
+				"    p           ",
+				"                ",
+				"        p   p   ",
+				"   p            ",
+				"                ",
+				"                ",
+				"           p    ",
+				"      p         ",
+				"                ",
+				" T            T ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_plants_pillars",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				" w        p   w ",
+				"                ",
+				"     p       p  ",
+				"                ",
+				"    p           ",
+				"                ",
+				"        p   p   ",
+				"   p            ",
+				"                ",
+				"                ",
+				"           p    ",
+				"      p         ",
+				"                ",
+				" w            w ",
+				"                "
+			],
+			[
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                "
+			],
+			[
+				"                ",
+				"Tw            wT",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"Tw            wT",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_fountain1",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				" wwww      wwww ",
+				" w     p p  p w ",
+				" wp  p        w ",
+				" w           pw ",
+				"       p   p    ",
+				"  p    ##       ",
+				"      #WW#  p   ",
+				"    p #WW#      ",
+				"       ##       ",
+				"  p       p     ",
+				" w    p     p w ",
+				" w            w ",
+				" w p     p    w ",
+				" wwwwp     wwww ",
+				"                "
+			],
+			[
+				"                ",
+				" w  T      T  w ",
+				"                ",
+				"                ",
+				" T            T ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				" T            T ",
+				"                ",
+				"                ",
+				" w  T      T  w ",
+				"                "
+			],
+			[
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_fountain2",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				" wwww      wwww ",
+				" w     p p  p w ",
+				" w   p        w ",
+				" w           pw ",
+				"           p    ",
+				"  p    ###      ",
+				"      #WWW# p   ",
+				"    p #WWW#     ",
+				"      #WWW#     ",
+				"  p    ###p     ",
+				" w    p     p w ",
+				" w            w ",
+				" w p     p    w ",
+				" wwwwp     wwww ",
+				"                "
+			],
+			[
+				"                ",
+				" w  w      w  w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"       wTw      ",
+				"      w   w     ",
+				"        W       ",
+				"      w   w     ",
+				"       wTw      ",
+				" w            w ",
+				"                ",
+				"                ",
+				" w  w      w  w ",
+				"                "
+			],
+			[
+				"                ",
+				" w  w      w  w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"                ",
+				"        W       ",
+				"                ",
+				"                ",
+				"  w           w ",
+				"                ",
+				"                ",
+				" w  w      w  w ",
+				"                "
+			],
+			[
+				"                ",
+				" ____      ____ ",
+				" _            _ ",
+				" _            _ ",
+				" _            _ ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				" _            _ ",
+				" _            _ ",
+				" _            _ ",
+				" ____      ____ ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_building",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				"      x  x      ",
+				"                ",
+				"   x        x   ",
+				"                ",
+				"                ",
+				" x            x ",
+				"                ",
+				"                ",
+				" x            x ",
+				"                ",
+				"                ",
+				"   x        x   ",
+				"                ",
+				"      x  x      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"      T  T      ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" wT          Tw ",
+				"                ",
+				"                ",
+				" wT          Tw ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"      T  T      ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      ____      ",
+				"    ________    ",
+				"   __________   ",
+				"  ____________  ",
+				"  ____________  ",
+				" ______________ ",
+				" ______________ ",
+				" ______________ ",
+				" ______________ ",
+				"  ____________  ",
+				"  ____________  ",
+				"   __________   ",
+				"    ________    ",
+				"      ____      ",
+				"                "
+			]
+		]
+	},
+	{
+		"type": "part",
+		"name": "park_building2",
+		"xsize": 16,
+		"zsize": 16,
+		"slices": [
+			[
+				"                ",
+				"      x  x      ",
+				"                ",
+				"   x        x   ",
+				"                ",
+				"                ",
+				" x            x ",
+				"                ",
+				"                ",
+				" x            x ",
+				"                ",
+				"                ",
+				"   x        x   ",
+				"                ",
+				"      x  x      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"      T  T      ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" wT          Tw ",
+				"                ",
+				"                ",
+				" wT          Tw ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"      T  T      ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      w  w      ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				" w            w ",
+				"                ",
+				"                ",
+				"   w        w   ",
+				"                ",
+				"      w  w      ",
+				"                "
+			],
+			[
+				"                ",
+				"      ____      ",
+				"    ________    ",
+				"   ___uuuu___   ",
+				"  ___uuuuuu___  ",
+				"  __uuuuuuuu__  ",
+				" __uuuuuuuuuu__ ",
+				" __uuuuuuuuuu__ ",
+				" __uuuuuuuuuu__ ",
+				" __uuuuuuuuuu__ ",
+				"  __uuuuuuuu__  ",
+				"  ___uuuuuu___  ",
+				"   ___uuuu___   ",
+				"    ________    ",
+				"      ____      ",
+				"                "
+			],
+			[
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"       __       ",
+				"      ____      ",
+				"     ______     ",
+				"     ______     ",
+				"      ____      ",
+				"       __       ",
+				"                ",
+				"                ",
+				"                ",
+				"                ",
+				"                "
+			]
+		],
+		"meta": []
+	},
+	{
+		"type": "worldstyle",
+		"name": "standard",
+		"outsidestyle": "outside",
+		"citystyles": [
+			{
+				"factor": 0.5,
+				"citystyle": "citystyle_standard"
+			},
+			{
+				"factor": 9,
+				"biomes": [
+					"desert",
+					"desert_hills",
+					"mesa",
+					"mesa_rock",
+					"mesa_clear_rock"
+				],
+				"citystyle": "citystyle_desert"
+			}
+		]
+	},
+	{
+		"type": "worldstyle",
+		"name": "chisel",
+		"outsidestyle": "outside_chisel",
+		"citystyles": [
+			{
+				"factor": 0.5,
+				"citystyle": "citystyle_chisel_standard"
+			},
+			{
+				"factor": 9,
+				"biomes": [
+					"desert",
+					"desert_hills",
+					"mesa",
+					"mesa_rock",
+					"mesa_clear_rock"
+				],
+				"citystyle": "citystyle_chisel_desert"
+			}
+		]
+	}
+]

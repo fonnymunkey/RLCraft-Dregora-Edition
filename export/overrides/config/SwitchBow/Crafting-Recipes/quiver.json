@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        "lsl",
+        "lkl",
+        " l "
+    ],
+    "key":
+    {
+        "l":
+        {
+            "item": "minecraft:leather"
+        },
+        "s":
+        {
+            "item": "minecraft:string"
+        },
+        "k":
+        {
+            "item": "minecraft:chest"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:quiver",
+        "count": 1
+    }
+}

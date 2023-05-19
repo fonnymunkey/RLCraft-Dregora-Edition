@@ -1,0 +1,46 @@
+{
+  "name": "rlcraft:loot_enchanting",
+  "requires": [
+    "simpledifficulty"
+  ],
+  "exclusive": false,
+  "lootRules": [
+    {
+      "level": [0,1,2,3,4], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [1], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [2], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [3], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        // {"data": {"name": "minecraft:stone", "meta":0, "min": 1, "max": 2}, "weight": 1}
+      ]
+    },
+    {
+      "level": [4], "type": "ENCHANTING", "each": true, "quantity": 1,
+      "loot": [
+        {"data": {"name": "simpledifficulty:frost_powder", "min": 0, "max": 4}, "weight": 1},
+        {"data": {"name": "simpledifficulty:frost_rod", "min": 0, "max": 4}, "weight": 1}
+      ]
+    }
+  ]
+}

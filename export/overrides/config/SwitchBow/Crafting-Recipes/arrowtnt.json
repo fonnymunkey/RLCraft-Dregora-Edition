@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        " a ",
+        "ata",
+        " a "
+    ],
+    "key":
+    {
+        "a":
+        {
+            "item": "minecraft:arrow"
+        },
+        "t":
+        {
+            "item": "minecraft:tnt"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:arrowtnt",
+        "count": 4
+    }
+}

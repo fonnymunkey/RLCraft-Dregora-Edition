@@ -1,0 +1,8 @@
+{
+  "name": "fnar:dungeon_grassland_builtin_custom_loot",
+  "exclusive": true,
+  "inherit": [
+    "builtin:dungeon_grassland_no_loot",
+    "rlcraft:loot"
+  ]
+}

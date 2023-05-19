@@ -1,0 +1,20 @@
+{
+  "name": "fnar:dungeon_forest_temple",
+  "exclusive": true,
+  "criteria": {"biomeTypes": ["FOREST", "JUNGLE"]},
+  "inherit": [
+    "rlcraft:dungeon_base",
+    "theme:forest",
+    "tower:rogue_forest",
+    "segments:inhabited_trapped_sewers",
+    "rooms:forest_temple",
+    "spawners:spiders",
+    "spawners:evil_humanoids",
+    "spawners:undead"
+  ],
+  "filters": [
+    {"name": "vine", "level": [1,2,3]},
+    {"name": "cobweb", "level": [2]},
+    {"name": "mud", "level": [3,4]}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "builtin:dungeon_ice_no_loot",
+  // does not spawn
+  "exclusive": false,
+  "inherit": ["builtin:ice"],
+  // remove the loot, so that extending dungeons (dungeons that inherit this setting) can supply their own loot
+  "overrides": ["LOOTRULES"]
+}

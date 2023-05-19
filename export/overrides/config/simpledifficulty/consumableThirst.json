@@ -1,0 +1,310 @@
+{
+  "rustic:elixir": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 4,
+      "saturation": 0.4,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:apple": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 1,
+      "saturation": 0.5,
+      "thirstyChance": 0.0
+    }
+  ],
+  "aquaculture:food": [
+    {
+      "identity": {
+        "metadata": 9
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "inspirations:potato_soup": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:rabbit_stew": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "rustic:wildberries": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 1,
+      "saturation": 0.5,
+      "thirstyChance": 0.0
+    }
+  ],
+  "betternether:black_apple": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 2,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "rustic:fluid_bottle": [
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"oliveoil\"}}"
+      },
+      "amount": 2,
+      "saturation": 0.1,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"ironberryjuice\"}}"
+      },
+      "amount": 2,
+      "saturation": 8.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"wildberryjuice\"}}"
+      },
+      "amount": 6,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"grapejuice\"}}"
+      },
+      "amount": 6,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"applejuice\"}}"
+      },
+      "amount": 6,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"alewort\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"honey\"}}"
+      },
+      "amount": 4,
+      "saturation": 3.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"ale\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"cider\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"ironwine\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"mead\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"wildberrywine\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Fluid:{FluidName:\"wine\"}}"
+      },
+      "amount": 5,
+      "saturation": 5.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:beetroot_soup": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:melon": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.5,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:milk_bucket": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 4,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "foodexpansion:itemcarrotseedsoup": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:mushroom_stew": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "rustic:grapes": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 1,
+      "saturation": 0.5,
+      "thirstyChance": 0.0
+    }
+  ],
+  "rustic:tomato": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 4,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "betternether:stalagnate_bowl_mushroom": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 3,
+      "saturation": 1.0,
+      "thirstyChance": 0.0
+    }
+  ],
+  "minecraft:potion": [
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Potion:\"minecraft:mundane\"}"
+      },
+      "amount": 2,
+      "saturation": 0.2,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Potion:\"minecraft:thick\"}"
+      },
+      "amount": 2,
+      "saturation": 0.2,
+      "thirstyChance": 0.0
+    },
+    {
+      "identity": {
+        "metadata": -1,
+        "nbt": "{Potion:\"minecraft:awkward\"}"
+      },
+      "amount": 2,
+      "saturation": 0.2,
+      "thirstyChance": 0.0
+    }
+  ],
+  "foodexpansion:itemcactusfruit": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 6,
+      "saturation": 2.0,
+      "thirstyChance": 0.0
+    }
+  ]
+}

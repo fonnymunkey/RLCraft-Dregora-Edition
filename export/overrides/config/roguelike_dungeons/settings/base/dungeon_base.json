@@ -1,0 +1,12 @@
+// Ideally, don't edit this file.
+// Instead, extend this base to create your own personal "base" dungeon, and customize that.
+// Then extend your "base" dungeon with all of your variants, e.g. jungle, large forest, prosperous, etc.
+{
+  "name": "base:dungeon_base",
+  "exclusive": false,
+  "inherit": [
+    "layout:dense_small",
+    "rooms:generic",
+    "segments:generic"
+  ]
+}

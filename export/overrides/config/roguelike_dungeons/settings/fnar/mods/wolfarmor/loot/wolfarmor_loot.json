@@ -1,0 +1,18 @@
+{
+  "name": "wolfarmor:loot",
+  "requires": ["wolfarmor"],
+  "lootRules": [
+    {
+      "level": [1, 2, 3, 4],
+      "each": false,
+      "type": "ARMOUR",
+      "quantity": 1,
+      "loot": [
+        {"data" : {"name" : "wolfarmor:iron_wolf_armor"}, "weight" : 8},
+        {"data" : {"name" : "wolfarmor:chainmail_wolf_armor"}, "weight" : 4},
+        {"data" : {"name" : "wolfarmor:gold_wolf_armor"}, "weight" : 4},
+        {"data" : {"name" : "wolfarmor:diamond_wolf_armor"}, "weight" : 1}
+      ]
+    }
+  ]
+}

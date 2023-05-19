@@ -1,0 +1,24 @@
+{
+  "name": "fnar:dungeon_villager_house",
+  "exclusive": true,
+  "criteria": {"biomeTypes": ["PLAINS"]},
+  "inherit": [
+    "rlcraft:dungeon_base",
+    "rooms:traps_few",
+    "rooms:undead",
+    "segments:traps_few",
+    "spawners:evil_humanoids",
+    "spawners:spiders",
+    "spawners:undead",
+    "tower:villager_house"
+  ],
+  "filters": [
+    {"level": [1, 2, 3], "name": "vine"},
+    {"level": [4], "name": "mud"}
+  ],
+  "themes": [
+    {"level": [0, 1], "base": "MINESHAFT"},
+    {"level": [2, 3], "base": "MOSSY"},
+    {"level": [4], "base": "CRYPT"}
+  ]
+}

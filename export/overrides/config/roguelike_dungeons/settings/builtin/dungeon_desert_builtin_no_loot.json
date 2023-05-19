@@ -1,0 +1,8 @@
+{
+  "name": "builtin:dungeon_desert_no_loot",
+  // does not spawn
+  "exclusive": false,
+  "inherit": ["builtin:desert"],
+  // remove the loot, so that extending dungeons (dungeons that inherit this setting) can supply their own loot
+  "overrides": ["LOOTRULES"]
+}

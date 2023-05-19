@@ -1,0 +1,726 @@
+{
+  "variants": [
+    {
+      "biomeTags": [
+        [
+          "HOT",
+          "DRY",
+          "SANDY",
+          "RARE"
+        ],
+        [
+          "MESA",
+          "RARE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:air": 0.2,
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:red_sandstone[type=smooth_red_sandstone]": 0.1,
+          "minecraft:red_sandstone[type=chiseled_red_sandstone]": 0.1,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05
+        },
+        "defaultBlock": "minecraft:red_sandstone[type=red_sandstone]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:red_sandstone[type=smooth_red_sandstone]": 0.1,
+          "minecraft:red_sandstone[type=chiseled_red_sandstone]": 0.1,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05,
+          "minecraft:sand[variant=red_sand]": 0.3
+        },
+        "defaultBlock": "minecraft:red_sandstone[type=red_sandstone]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.1,
+          "minecraft:red_sandstone[type=smooth_red_sandstone]": 0.2,
+          "minecraft:red_sandstone[type=chiseled_red_sandstone]": 0.2,
+          "minecraft:red_sandstone[type=red_sandstone]": 0.5
+        },
+        "defaultBlock": "minecraft:red_sandstone[type=red_sandstone]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.1,
+          "minecraft:red_sandstone[type=smooth_red_sandstone]": 0.2,
+          "minecraft:red_sandstone[type=chiseled_red_sandstone]": 0.2,
+          "minecraft:red_sandstone[type=red_sandstone]": 0.5
+        },
+        "defaultBlock": "minecraft:red_sandstone[type=red_sandstone]"
+      },
+      "mainBlock": "minecraft:red_sandstone[type=red_sandstone]",
+      "supportBlock": "minecraft:fence[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:stone_slab2[half=bottom,variant=red_sandstone]",
+      "gravelBlock": "minecraft:sand[variant=red_sand]",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab2[half=top,variant=red_sandstone]",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0.1,
+      "snowChance": 0.0,
+      "cactusChance": 0.1,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "SNOWY",
+          "RARE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:snow": 0.1,
+          "minecraft:air": 0.1
+        },
+        "defaultBlock": "minecraft:packed_ice"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:snow": 0.1
+        },
+        "defaultBlock": "minecraft:packed_ice"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:packed_ice": 0.9,
+          "minecraft:snow": 0.1
+        },
+        "defaultBlock": "minecraft:packed_ice"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:packed_ice": 0.9,
+          "minecraft:snow": 0.1
+        },
+        "defaultBlock": "minecraft:packed_ice"
+      },
+      "mainBlock": "minecraft:packed_ice",
+      "supportBlock": "minecraft:packed_ice",
+      "slabBlock": "minecraft:packed_ice",
+      "gravelBlock": "minecraft:snow",
+      "stoneWallBlock": "minecraft:packed_ice",
+      "stoneSlabBlock": "minecraft:packed_ice",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0.05,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 2,
+      "replacementRate": 0.95
+    },
+    {
+      "biomeTags": [
+        [
+          "MESA"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+		  "minecraft:hardened_clay": 0.4,
+		  "minecraft:stained_hardened_clay[color=silver]": 0.2,
+          "minecraft:stained_hardened_clay[color=orange]": 0.2,
+		  "minecraft:stained_hardened_clay[color=white]": 0.1
+        },
+        "defaultBlock": "minecraft:hardened_clay"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:log2[variant=dark_oak,axis=none]":0.65,
+		  "quark:bark_dark_oak_stairs[facing=north]":0.0225,
+		  "quark:bark_dark_oak_stairs[facing=east]":0.0225,
+		  "quark:bark_dark_oak_stairs[facing=west]":0.0225,
+		  "quark:bark_dark_oak_stairs[facing=south]":0.0225,
+		  "quark:bark_dark_oak_slab":0.045,
+		  "quark:carved_wood[variant=carved_dark_oak_wood]":0.1
+        },
+        "defaultBlock": "minecraft:log2[variant=dark_oak,axis=none]"
+      },
+      "brickSelector": {
+        "entries": {
+          "quark:jasper[variant=stone_jasper_smooth]": 0.8,
+          "quark:world_stone_pavement[variant=stone_jasper_pavement]": 0.1,
+          "quark:world_stone_bricks[variant=stone_jasper_bricks]": 0.1
+        },
+        "defaultBlock": "minecraft:planks[variant=dark_oak]"
+      },
+      "legSelector": {
+        "entries": {
+          "quark:carved_wood[variant=carved_dark_oak_wood]": 1.0
+        },
+        "defaultBlock": "quark:carved_wood[variant=carved_dark_oak_wood]"
+      },
+      "mainBlock": "minecraft:planks[variant=dark_oak]",
+      "supportBlock": "minecraft:dark_oak_fence[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:wooden_slab[half=bottom,variant=dark_oak]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
+      "minY": 50,
+      "maxY": 50,
+      "vineChance": 0,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 1
+    },
+    {
+      "biomeTags": [
+        [
+          "JUNGLE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:mossy_cobblestone": 0.1,
+          "minecraft:air": 0.2,
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=chiseled_stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=mossy_stonebrick]": 0.2
+        },
+        "defaultBlock": "minecraft:planks[variant=jungle]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:mossy_cobblestone": 0.1,
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=chiseled_stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05,
+          "minecraft:stonebrick[variant=mossy_stonebrick]": 0.2
+        },
+        "defaultBlock": "minecraft:planks[variant=jungle]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.25,
+          "minecraft:stonebrick[variant=chiseled_stonebrick]": 0.25,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.25,
+          "minecraft:stonebrick[variant=mossy_stonebrick]": 0.25
+        },
+        "defaultBlock": "minecraft:planks[variant=jungle]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:log[axis=y,variant=jungle]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=jungle]"
+      },
+      "mainBlock": "minecraft:planks[variant=jungle]",
+      "supportBlock": "minecraft:jungle_fence[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:wooden_slab[half=bottom,variant=jungle]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0.6,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "SNOWY"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:snow": 0.325,
+          "minecraft:packed_ice": 0.325,
+		  "minecraft:ice":0.05,
+		  "quark:biome_cobblestone[variant=icy_stone]":0.1,
+		  "quark:icy_stone_stairs[facing=north,half=top]":0.005,
+		  "quark:icy_stone_stairs[facing=east,half=top]":0.005,
+		  "quark:icy_stone_stairs[facing=west,half=top]":0.005,
+		  "quark:icy_stone_stairs[facing=south,half=top]":0.005,
+		  "quark:icy_stone_stairs[facing=north,half=bottom]":0.005,
+		  "quark:icy_stone_stairs[facing=east,half=bottom]":0.005,
+		  "quark:icy_stone_stairs[facing=west,half=bottom]":0.005,
+		  "quark:icy_stone_stairs[facing=south,half=bottom]":0.005
+        },
+        "defaultBlock": "quark:biome_cobblestone[variant=icy_stone]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:planks[variant=spruce]":0.65,
+		  "minecraft:spruce_stairs[facing=north]":0.0225,
+		  "minecraft:spruce_stairs[facing=east]":0.0225,
+		  "minecraft:spruce_stairs[facing=west]":0.0225,
+		  "minecraft:spruce_stairs[facing=south]":0.0225,
+		  "minecraft:wooden_slab[variant=spruce]":0.045,
+		  "quark:carved_wood[variant=carved_spruce_wood]":0.1
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:snow": 0.5,
+          "minecraft:packed_ice": 0.5
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:log[axis=y,variant=spruce]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "mainBlock": "quark:biome_brick[variant=icy_stone_brick]",
+      "supportBlock": "quark:icy_stone_brick_wall[east=false,north=false,south=false,west=false]",
+      "slabBlock": "quark:icy_stone_brick_slab[half=bottom]",
+      "gravelBlock": "minecraft:snow",
+      "stoneWallBlock": "minecraft:snow",
+      "stoneSlabBlock": "minecraft:snow",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0,
+      "snowChance": 0.4,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 1
+    },
+    {
+      "biomeTags": [
+        [
+          "COLD",
+          "CONIFEROUS",
+          "FOREST"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:air":0.01,
+		  "minecraft:monster_egg":0.05,
+		  "minecraft:dirt":0.035,
+		  "minecraft:dirt[variant=coarse_dirt]":0.035,
+		  "minecraft:cobblestone":0.035,
+		  "minecraft:mossy_cobblestone":0.025,
+		  "minecraft:gravel":0.01,
+		  "minecraft:stone[variant=andesite]":0.25,
+		  "notreepunching:cobblestone/andesite":0.035,
+		  "minecraft:stone_stairs[facing=north,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=north,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=bottom]":0.005,
+		  "minecraft:tnt[explode=true]": 0.0015,
+		  "minecraft:tnt": 0.001,
+		  "minecraft:coal_ore": 0.005,
+		  "minecraft:iron_ore": 0.005,
+		  "minecraft:gold_ore": 0.003,
+		  "minecraft:diamond_ore": 0.0005,
+		  "minecraft:emerald_ore": 0.0005,
+		  "minecraft:redstone_ore": 0.003,
+		  "iceandfire:silver_ore": 0.002
+        },
+        "defaultBlock": "minecraft:stone"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:planks[variant=spruce]":0.65,
+		  "minecraft:spruce_stairs[facing=north]":0.0225,
+		  "minecraft:spruce_stairs[facing=east]":0.0225,
+		  "minecraft:spruce_stairs[facing=west]":0.0225,
+		  "minecraft:spruce_stairs[facing=south]":0.0225,
+		  "minecraft:wooden_slab[variant=spruce]":0.045,
+		  "minecraft:dirt":0.05,
+		  "minecraft:dirt[variant=coarse_dirt]":0.05,
+		  "quark:carved_wood[variant=carved_spruce_wood]":0.1
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "brickSelector": {
+        "entries": {
+          "quark:iron_plate": 0.7,
+          "quark:iron_plate[variant=rusty_iron_plate]": 0.15,
+          "quark:world_stone_pavement[variant=stone_andesite_pavement]": 0.15
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:log[axis=y,variant=spruce]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=spruce]"
+      },
+      "mainBlock": "minecraft:planks[variant=spruce]",
+      "supportBlock": "minecraft:spruce_fence[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:wooden_slab[half=bottom,variant=spruce]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0.05,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.05,
+      "legVariant": 1,
+      "replacementRate": 1.0
+    },
+    {
+      "biomeTags": [
+        [
+          "HOT",
+          "DRY",
+          "SANDY"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:air":0.01,
+		  "minecraft:sandstone[type=sandstone]": 0.15,
+		  "minecraft:sandstone[type=smooth_sandstone]": 0.15,
+		  "minecraft:sandstone[type=chiseled_sandstone]": 0.15,
+		  "quark:sandstone_new[variant=sandstone_bricks]": 0.15,
+		  "quark:sandstone_new[variant=sandstone_smooth]": 0.15,
+		  "minecraft:sandstone_stairs[facing=north,half=top]":0.005,
+		  "minecraft:sandstone_stairs[facing=east,half=top]":0.005,
+		  "minecraft:sandstone_stairs[facing=west,half=top]":0.005,
+		  "minecraft:sandstone_stairs[facing=south,half=top]":0.005,
+		  "minecraft:sandstone_stairs[facing=north,half=bottom]":0.005,
+		  "minecraft:sandstone_stairs[facing=east,half=bottom]":0.005,
+		  "minecraft:sandstone_stairs[facing=west,half=bottom]":0.005,
+		  "minecraft:sandstone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=north,half=top]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=east,half=top]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=west,half=top]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=south,half=top]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=north,half=bottom]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=east,half=bottom]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=west,half=bottom]":0.005,
+		  "quark:sandstone_bricks_stairs[facing=south,half=bottom]":0.005,
+		  "minecraft:tnt[explode=true]": 0.0015,
+		  "minecraft:tnt": 0.001,
+		  "minecraft:coal_ore": 0.005,
+		  "minecraft:iron_ore": 0.005,
+		  "minecraft:gold_ore": 0.003,
+		  "minecraft:diamond_ore": 0.0005,
+		  "minecraft:emerald_ore": 0.0005,
+		  "minecraft:redstone_ore": 0.003,
+		  "iceandfire:silver_ore": 0.002
+        },
+        "defaultBlock": "minecraft:sandstone[type=sandstone]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:planks[variant=birch]":0.6,
+		  "minecraft:sand": 0.1,
+		  "minecraft:birch_stairs[facing=north]":0.0225,
+		  "minecraft:birch_stairs[facing=east]":0.0225,
+		  "minecraft:birch_stairs[facing=west]":0.0225,
+		  "minecraft:birch_stairs[facing=south]":0.0225,
+		  "minecraft:wooden_slab[variant=birch]":0.045,
+		  "quark:carved_wood[variant=carved_birch_wood]":0.1
+        },
+        "defaultBlock": "minecraft:planks[variant=birch]"
+      },
+      "brickSelector": {
+        "entries": {
+          "quark:soul_sandstone[variant=soul_sandstone]": 0.3,
+		  "quark:soul_sandstone[variant=smooth_soul_sandstone]": 0.3,
+		  "quark:soul_sandstone[variant=chiseled_soul_sandstone]": 0.3,
+		  "quark:soul_sandstone_stairs[facing=north]": 0.025,
+		  "quark:soul_sandstone_stairs[facing=east]": 0.025,
+		  "quark:soul_sandstone_stairs[facing=west]": 0.025,
+		  "quark:soul_sandstone_stairs[facing=south]": 0.025
+        },
+        "defaultBlock": "quark:soul_sandstone[variant=soul_sandstone]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:sandstone[type=sandstone]": 0.5,
+          "minecraft:sandstone[type=chiseled_sandstone]": 0.2,
+          "minecraft:sandstone[type=smooth_sandstone]": 0.2
+        },
+        "defaultBlock": "minecraft:sandstone[type=sandstone]"
+      },
+      "mainBlock": "minecraft:red_sandstone[type=red_sandstone]",
+      "supportBlock": "quark:red_sandstone_wall[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:stone_slab[half=bottom,variant=sandstone]",
+      "gravelBlock": "minecraft:sand[variant=sand]",
+      "stoneWallBlock": "quark:sandstone_wall[east=false,north=false,south=false,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=sandstone]",
+      "minY": 17,
+      "maxY": 50,
+      "vineChance": 0,
+      "snowChance": 0.0,
+      "cactusChance": 0.05,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 1
+    },
+    {
+      "biomeTags": [
+        [
+          "SAVANNA"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:air":0.01,
+		  "minecraft:monster_egg":0.05,
+		  "minecraft:cobblestone":0.035,
+		  "minecraft:gravel":0.01,
+		  "minecraft:stone[variant=andesite]":0.25,
+		  "notreepunching:cobblestone/andesite":0.035,
+		  "minecraft:stone_stairs[facing=north,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=north,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=bottom]":0.005,
+		  "minecraft:tnt[explode=true]": 0.0015,
+		  "minecraft:tnt": 0.001,
+		  "minecraft:coal_ore": 0.005,
+		  "minecraft:iron_ore": 0.005,
+		  "minecraft:gold_ore": 0.003,
+		  "minecraft:diamond_ore": 0.0005,
+		  "minecraft:emerald_ore": 0.0005,
+		  "minecraft:redstone_ore": 0.003,
+		  "iceandfire:silver_ore": 0.002
+        },
+        "defaultBlock": "minecraft:stone"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:log2[variant=acacia,axis=none]": 0.8,
+		  "minecraft:planks[variant=acacia]": 0.075,
+		  "minecraft:acacia_stairs[facing=north]": 0.005,
+		  "minecraft:acacia_stairs[facing=east]": 0.005,
+		  "minecraft:acacia_stairs[facing=west]": 0.005,
+		  "minecraft:acacia_stairs[facing=south]": 0.005,
+		  "minecraft:wooden_slab[variant=acacia]": 0.005
+        },
+        "defaultBlock": "minecraft:log2[variant=acacia,axis=none]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:red_sandstone[type=smooth_red_sandstone]": 0.3,
+		  "minecraft:planks[variant=acacia]": 0.2,
+		  "quark:custom_bookshelf[variant=bookshelf_acacia]": 0.05,
+		  "quark:sandstone_new[variant=red_sandstone_bricks]": 0.2,
+		  "quark:sandstone_new[variant=red_sandstone_smooth]": 0.2
+        },
+        "defaultBlock": "minecraft:red_sandstone[type=smooth_red_sandstone]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:log2[axis=y,variant=acacia]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=acacia]"
+      },
+      "mainBlock": "minecraft:planks[variant=acacia]",
+      "supportBlock": "minecraft:acacia_fence[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:wooden_slab[half=bottom,variant=acacia]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 1
+    },
+    {
+      "biomeTags": [
+        [
+          "MUSHROOM"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:brown_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:red_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:brown_mushroom_block[variant=stem]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[variant=all_outside]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:mycelium[snowy=false]": 1.0
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[variant=all_outside]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:brown_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:red_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:brown_mushroom_block[variant=stem]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[variant=all_outside]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:brown_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:red_mushroom_block[variant=all_outside]": 0.33333,
+          "minecraft:brown_mushroom_block[variant=stem]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[variant=all_outside]"
+      },
+      "mainBlock": "minecraft:red_mushroom_block[variant=all_outside]",
+      "supportBlock": "minecraft:brown_mushroom_block[variant=stem]",
+      "slabBlock": "minecraft:brown_mushroom_block[variant=all_outside]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:brown_mushroom_block[variant=stem]",
+      "stoneSlabBlock": "minecraft:brown_mushroom_block[variant=stem]",
+      "minY": 17,
+      "maxY": 37,
+      "vineChance": 0.25,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.4,
+      "legVariant": 2,
+      "replacementRate": 0.95
+    }
+  ],
+  "defaultVariant": {
+    "biomeTags": [],
+    "mainSelector": {
+      "entries": {
+          "minecraft:air":0.01,
+		  "minecraft:monster_egg":0.05,
+		  "minecraft:cobblestone":0.035,
+		  "minecraft:gravel":0.01,
+		  "minecraft:stone[variant=andesite]":0.25,
+		  "notreepunching:cobblestone/andesite":0.035,
+		  "minecraft:stone_stairs[facing=north,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=top]":0.005,
+		  "minecraft:stone_stairs[facing=north,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=east,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=west,half=bottom]":0.005,
+		  "minecraft:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_stairs[facing=south,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=top]":0.005,
+		  "quark:stone_andesite_stairs[facing=north,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=east,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=west,half=bottom]":0.005,
+		  "quark:stone_andesite_stairs[facing=south,half=bottom]":0.005,
+		  "minecraft:tnt[explode=true]": 0.0015,
+		  "minecraft:tnt": 0.001,
+		  "minecraft:coal_ore": 0.005,
+		  "minecraft:iron_ore": 0.005,
+		  "minecraft:gold_ore": 0.003,
+		  "minecraft:diamond_ore": 0.0005,
+		  "minecraft:emerald_ore": 0.0005,
+		  "minecraft:redstone_ore": 0.003,
+		  "iceandfire:silver_ore": 0.002
+      },
+      "defaultBlock": "minecraft:stone"
+    },
+    "floorSelector": {
+      "entries": {
+		"minecraft:planks[variant=oak]": 0.65,
+		"minecraft:oak_stairs[facing=north]":0.0225,
+		"minecraft:oak_stairs[facing=east]":0.0225,
+		"minecraft:oak_stairs[facing=west]":0.0225,
+		"minecraft:oak_stairs[facing=south]":0.0225,
+		"minecraft:wooden_slab[variant=oak]": 0.045,
+		"quark:carved_wood":0.1
+      },
+      "defaultBlock": "minecraft:planks[variant=oak]"
+    },
+    "brickSelector": {
+      "entries": {
+        "minecraft:brick_block": 0.7,
+		"minecraft:stone[variant=granite]": 0.125,
+		"minecraft:stone[variant=smooth_granite]": 0.125
+      },
+      "defaultBlock": "minecraft:brick_block"
+    },
+    "legSelector": {
+      "entries": {
+        "minecraft:log[axis=y,variant=oak]": 1.0
+      },
+      "defaultBlock": "minecraft:planks[variant=oak]"
+    },
+    "mainBlock": "minecraft:planks[variant=oak]",
+    "supportBlock": "minecraft:fence[east=false,north=false,south=false,west=false]",
+    "slabBlock": "minecraft:wooden_slab[half=bottom,variant=oak]",
+    "gravelBlock": "minecraft:gravel",
+    "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+    "stoneSlabBlock": "minecraft:stone_slab[half=top,variant=stone_brick]",
+    "minY": 17,
+    "maxY": 37,
+    "vineChance": 0.01,
+    "snowChance": 0.0,
+    "cactusChance": 0.0,
+    "deadBushChance": 0.0,
+    "mushroomChance": 0.0,
+    "legVariant": 1,
+    "replacementRate": 1
+  }
+}

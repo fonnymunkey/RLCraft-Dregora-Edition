@@ -1,0 +1,14 @@
+{
+  "minecraft:stick": [
+    {
+      "input": {
+        "id": "minecraft:air",
+        "metadata": 0
+      },
+      "output": {
+        "id": "minecraft:air",
+        "metadata": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+# ========================================================================
+entity.archvile.name=Archvile (Apollyon)
+entity.archvile.description=Malicious demons that rule of areas of the nether, Archvile enjoy the smell of their victim's burning flesh and enjoy watching other demons tear their victims apart!
+entity.archvile.habitat=Archvile live within the depths of the Nether.
+entity.archvile.combat=Archvile prefer to avoid combat themselves, instead they will strengthen any nearby demons and they will slowly engulf their target in flames.
+# ========================================================================
+entity.behemoth.name=Behemoth (Behemophet)
+entity.behemoth.description=Tall demonic monstrosities, Behemoth are powerful demons bent on destruction.
+entity.behemoth.habitat=Behemoth can be found in the Nether and will also invade through unprotected portals if they are large enough.
+entity.behemoth.combat=These demons lob balls of Hellfire, a green flame created by tearing apart souls, not only do these flames burn, but they wither as well.
+# ========================================================================
+entity.beholder.name=Beholder (Naxiris)
+entity.beholder.description=Large hostile masses of eyes and tentacles with an eternal hunger for magic energy!
+entity.beholder.habitat=Beholder can be found in the mountains as they like high up places and dwell in large caves and ruins and come out at night.
+entity.beholder.combat=These Aberrations create powerful Arcane Storms that they blast from their mouths, these attacks then release deadly lasers in all directions and can be explosive on impact.
+# ========================================================================
+entity.belph.name=Belph (Belphegor)
+entity.belph.description=Small but dangerous demons with a one track mind bent on killing and eating.
+entity.belph.habitat=These demons can be found in the Nether and will invade through portals.
+entity.belph.combat=Belph throw balls of Doomfire, a flame made from Nether Magic, that burn an unnatural red.
+# ========================================================================
+entity.cacodemon.name=Cacodemon (Malwrath)
+entity.cacodemon.description=Large floating abominations of life. Cacodemon like to bully Ghasts for their delicious tears. Can be tamed as a flying pet.
+entity.cacodemon.habitat=These demons fly around the fiery skies of the Nether.
+entity.cacodemon.combat=Cacodemon spit large balls of Demonic Lightning, while not actually electrical, these are balls of explosive Nether energy that will wither on impact and release smaller Demonic Sparks in all direction.
+# ========================================================================
+entity.djinn.name=Djinn (Zephyr)
+entity.djinn.description=Proud Air Elementals that guard the skies from those that they think shouldn't be up there!
+entity.djinn.habitat=Being Air Elementals, these creatures commonly manifest high up in the sky.
+entity.djinn.combat=Djinn unleash deadly whirlwind rings that inflict the levitation debuff on impact.
+# ========================================================================
+entity.dweller.name=Dweller (Ningen)
+entity.dweller.description=Water bound amphibians that can sliver onto land for a small period of time, they must return to the water when they get too dry as they can die if on land for too long. They are fast and deadly in the water and can survive on land during rain.
+entity.dweller.habitat=These creatures can be found in the waters of swamps, dark forests and jungles.
+entity.dweller.combat=Dweller have a poisonous scratch and excel when in water, on land they can be defeated easily unless it is raining.
+# ========================================================================
+entity.gorger.name=Gorger (Umibas)
+entity.gorger.description=Huge magma worms that swim through molten lava, they can also survive on land and can burrow into soft ground like dirt.
+entity.gorger.habitat=These creatures can be found in large bodies of lava.
+entity.gorger.combat=Gorgers attack by release several balls of lava everywhere, while these attacks are powerful, they are inaccurate leaving them open.
+# ========================================================================
+entity.lobber.name=Lobber (Cherufe)
+entity.lobber.description=Large lava brutes, Lobber are incredibly powerful creatures.
+entity.lobber.habitat=These golems are found in lava lakes.
+entity.lobber.combat=Lobber are named for their attacks where they lob large balls of magma at their victims, this very quickly begins to flood the area with temporary lava.
+# ========================================================================
+entity.lurker.name=Lurker (Ostimien)
+entity.lurker.description=Lurker are able to completely blend in with their environment. They bite with a chaotic venom and once their victims are inflicted, they will hide, letting the poison do the work. Can be tamed as excellent pets, also great as Creeper guards!
+entity.lurker.habitat=These creatures can be found in forests and swamps but avoid cold areas.
+entity.lurker.combat=Lurker bites will both poison and blind, after biting the Lurker will flee and attempt to hide allowing the poison to do it's work, they will attack again if the poison wears off.
+# ========================================================================
+entity.pinky.name=Pinky (Kathoga) 
+entity.pinky.description=Gluttonous beasts that especially love to devour live animals. Can be farmed and bred using live large animals. Baby Pinky can be tamed and when matured, can be used as battle mounts.
+entity.pinky.habitat=Pinky roam the Nether looking for anything to eat.
+entity.pinky.combat=These demons are incredibly aggressive but will prioritize bigger juicier prey which ca be used to pure them.
+# ========================================================================
+entity.quillbeast.name=Quillbeast (Brucha)
+entity.quillbeast.description=Large rodents with razor sharp quills on their back, they are easily threatened and will fire these quills from afar.
+entity.quillbeast.habitat=These beasts can be found in plains, savannas and forests.
+entity.quillbeast.combat=quillbeast attack with their deadly quills that also cut through long grass.
+# ========================================================================
+# entity.strider.name=Strider (Deioneus)
+# entity.strider.description=These giant amphibious creatures somewhat resemble a shrimp, they are feared for their dreadful tentacle claws from which they ensnare and consume their victims.
+# entity.strider.habitat=These creatures are usually found in large lakes or rivers.
+# entity.strider.combat=Strider will pickup their victims and slowly drain the life out of them, they are also fast when in the water or if it raining.
+# ========================================================================
+entity.tarantula.name=Tarantula (Lycosa)
+entity.tarantula.description=Poisonous jumping spiders that leave behind a trail of temporary sticky green webbing.
+entity.tarantula.habitat=Tarantula can be found in jungles and swamps.
+entity.tarantula.combat=These spiders have a poisonous bite and jump frequently, it is important to be wary of their sticky green webs.
+# ========================================================================
+entity.zephyr.name=Zephyr (Raidra)
+entity.zephyr.description=Fierce Electric Elementals with a powerful electric field around them. Cinders and Zephyr Elementals can fuse to create powerful Raidra.
+entity.zephyr.habitat=Being Electric Elementals, Zephyr manifest from electric weather such as thunderstorms, they can also rarely manifest during regular rainstorms as well.
+entity.zephyr.combat=Zephyr will shock any foe close to them and direct attacks from them cause paralysis.
+# ========================================================================
+item.raidrablade.name= Zephyr (Raidra) Blade
+item.zephyrcloud.name=Djinn (Zephyr) Cloud
+item.apollyonclaw.name=Archvile (Apollyon) Claw
+item.behemophethand.name=Behemoth (Behemophet) Hand
+item.naxiriseye.name=Beholder (Naxiris) Eye
+item.belphegorarm.name=Belph (Belphegor) Arm
+item.malwratheye.name=Cacodemon (Malwrath) Eye
+item.bruchaquill.name=Quillbeast (Brucha) Quill
+item.cherufecore.name=Lobber (Cherufe) Core
+# item.deioneusheart.name=Strider (Deioneus) Heart
+# ========================================================================
+
+item.raw_pinky_meat.name=Raw Pinky (Kathoga) Meat
+item.raw_pinky_meat.description=A pork-like meat. Withering demonic energy pulses through this meat, it must be cleansed by fire.
+#
+item.cooked_pinky_meat.name=Cooked Pinky (Kathoga) Meat
+item.cooked_pinky_meat.description=A pork-like meat. Tastes like very rich, salty beef. Provides strength.
+# ========================================================================
+item.ironrod.name=Steel Rod
+item.ironhilt.name=Steel Guard
+item.ironpaxel.name=Steel Paxel
+item.ironpikejoint.name=Steel Pike Joint
+item.ironaxehead.name=Steel Axe Head
+item.woodenrod.name=Hard Wood Rod
+item.woodenhilt.name=Hard Wood Hilt
+item.woodenpaxel.name=Hard Wood Paxel
+# ========================================================================
+tile.veswax.description=A tough waxy substance dripping with honey.
+
+entity.fireball=Fireball
+
+boss.block.protection.place=The presence of a powerful force prevents you from placing this block.
+boss.block.protection.break=The presence of a powerful force prevents you from destroying that block.
+boss.damage.protection.range=That being is too powerful to be damaged from this range.

@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "weight": 0.4518207609653473,
+      "block": "minecraft:stone",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.35995304584503174,
+      "block": "minecraft:stone",
+      "metadata": 5,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.07009906321763992,
+      "block": "minecraft:cobblestone",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.14805258810520172,
+      "block": "minecraft:stained_hardened_clay",
+      "metadata": 9,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Stone Mix",
+    "description": [
+      "Replaces default stone with a mix of stone, cobble, andesite and cyan terracotta."
+    ]
+  }
+}

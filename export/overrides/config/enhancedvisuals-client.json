@@ -1,0 +1,389 @@
+{
+  "general": {
+    "doEffectsInCreative": false,
+    "waterSubstractFactor": 10,
+    "enableDamageDebug": false
+  },
+  "handlers": {
+    "explosion": {
+      "enabled": true,
+      "opacity": 1.0,
+      "dust": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.25,
+          "max": 1
+        }
+      },
+      "dustDuration": {
+        "min": 100,
+        "max": 300
+      },
+      "dustAmount": {
+        "min": 0,
+        "minValue": 0,
+        "max": 20,
+        "maxValue": 30
+      },
+      "maxExplosionVolume": 0.1,
+      "explosionSoundTime": {
+        "min": 0,
+        "minValue": 50,
+        "max": 20,
+        "maxValue": 200
+      },
+      "blur": {
+        "disabled": false,
+        "opacity": 0.5
+      },
+      "maxBlur": {
+        "min": 0,
+        "minValue": 50,
+        "max": 10,
+        "maxValue": 100
+      },
+      "explosionBlurTime": {
+        "min": 0,
+        "minValue": 10,
+        "max": 20,
+        "maxValue": 20
+      }
+    },
+    "potion": {
+      "enabled": true,
+      "opacity": 1.0,
+      "duration": {
+        "min": 20,
+        "max": 20
+      },
+      "potion": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      }
+    },
+    "sand": {
+      "enabled": true,
+      "opacity": 0.5,
+      "duration": {
+        "min": 25,
+        "max": 100
+      },
+      "sprintModifier": 1.5,
+      "sand": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.25,
+          "max": 0.5
+        }
+      }
+    },
+    "splash": {
+      "enabled": true,
+      "opacity": 1.0,
+      "duration": {
+        "min": 12,
+        "max": 12
+      },
+      "intensity": {
+        "min": 10,
+        "max": 10
+      },
+      "blur": {
+        "disabled": false,
+        "opacity": 1.0
+      }
+    },
+    "damage": {
+      "enabled": true,
+      "opacity": 0.75,
+      "damaged": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      },
+      "hitEffectIntensity": 0.75,
+      "hitDuration": {
+        "min": 1,
+        "max": 10
+      },
+      "splatter": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.25,
+          "max": 1
+        }
+      },
+      "impact": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.1,
+          "max": 0.5
+        }
+      },
+      "slash": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.2,
+          "max": 1
+        }
+      },
+      "pierce": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.25,
+          "max": 1
+        }
+      },
+      "bloodDuration": {
+        "min": 50,
+        "max": 200
+      },
+      "fire": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.2,
+          "max": 0.8
+        }
+      },
+      "fireSplashes": 3,
+      "fireDuration": {
+        "min": 50,
+        "max": 200
+      },
+      "drownSplashes": 4,
+      "drownDuration": {
+        "min": 30,
+        "max": 60
+      },
+      "waterDrown": {
+        "disabled": false,
+        "opacity": 0.5,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.2,
+          "max": 1
+        },
+        "red": 0,
+        "green": 150,
+        "blue": 255,
+        "alpha": 255
+      },
+      "lightningSplashes": 3,
+      "lightningDuration": {
+        "min": 10,
+        "max": 15
+      },
+      "lightning": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 1,
+          "max": 2
+        },
+        "red": 255,
+        "green": 255,
+        "blue": 255,
+        "alpha": 255
+      },
+      "freezeSplashes": 4,
+      "freezeDuration": {
+        "min": 10,
+        "max": 15
+      },
+      "freeze": {
+        "disabled": false,
+        "opacity": 0.75,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 1.5,
+          "max": 2.5
+        },
+        "red": 160,
+        "green": 190,
+        "blue": 255,
+        "alpha": 255
+      },
+      "flyIntoWallSplashes": 2,
+      "flyIntoWallDuration": {
+        "min": 100,
+        "max": 200
+      },
+      "flyIntoWall": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.5,
+          "max": 1
+        },
+        "red": 255,
+        "green": 255,
+        "blue": 255,
+        "alpha": 255
+      },
+      "heatSplashes": 15,
+      "heatDuration": {
+        "min": 10,
+        "max": 15
+      },
+      "heat": {
+        "disabled": false,
+        "opacity": 0.75,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.2,
+          "max": 0.4
+        },
+        "red": 255,
+        "green": 255,
+        "blue": 255,
+        "alpha": 255
+      },
+      "effectSplashes": 4,
+      "effectDuration": {
+        "min": 10,
+        "max": 15
+      },
+      "parasites": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 0.1,
+          "max": 0.4
+        },
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 255
+      },
+      "wither": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0,
+        "scale": {
+          "min": 1.5,
+          "max": 2.5
+        },
+        "red": 0,
+        "green": 0,
+        "blue": 0,
+        "alpha": 255
+      },
+      "tunnelDuration": {
+        "min": 20,
+        "max": 40
+      },
+      "tunnel": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      },
+      "healthScaler": {
+        "min": 0,
+        "minValue": 3,
+        "max": 12,
+        "maxValue": 1.5
+      },
+      "damageScale": 1.0,
+      "damageBlackList": []
+    },
+    "slender": {
+      "enabled": true,
+      "opacity": 1.0,
+      "defaultIntensity": 0,
+      "maxIntensity": 0.3,
+      "distanceFactor": 10,
+      "slender": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 40
+      }
+    },
+    "saturation": {
+      "enabled": true,
+      "opacity": 1.0,
+      "fadeFactor": 0.005,
+      "saturation": {
+        "min": 0,
+        "minValue": 0,
+        "max": 5,
+        "maxValue": 1
+      },
+      "desaturate": {
+        "disabled": false,
+        "opacity": 1.0
+      }
+    },
+    "heartbeat": {
+      "enabled": true,
+      "opacity": 1.0,
+      "useHealthPercentage": true,
+      "maxHealth": 6,
+      "maxHealthPercentage": 0.3,
+      "heartbeatIntensity": 5.0,
+      "heartbeatDuration": 4,
+      "minHeartbeatLength": 10,
+      "heartbeatTimeFactor": 75.0,
+      "heartbeatVolume": 0.3,
+      "lowhealth": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      },
+      "blur": {
+        "disabled": false,
+        "opacity": 1.0
+      }
+    },
+    "simple-thirst": {
+      "enabled": true,
+      "opacity": 1.0,
+      "defaultIntensity": 0,
+      "maxIntensity": 6,
+      "fadeFactor": 0.03,
+      "thirstLevel": {
+        "min": 0,
+        "max": 6
+      },
+      "focus": {
+        "disabled": false,
+        "opacity": 1.0
+      }
+    },
+    "simple-temperature": {
+      "enabled": true,
+      "opacity": 1.0,
+      "defaultIntensity": 0,
+      "mediumIntensity": 0.1,
+      "maxIntensity": 0.2,
+      "fadeFactor": 0.005,
+      "freeze": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      },
+      "heat": {
+        "disabled": false,
+        "opacity": 1.0,
+        "animationSpeed": 0
+      }
+    }
+  }
+}
