@@ -1,1 +1,23 @@
-[]
+[
+	{
+		"__comment" : "Cancel DynamicTreeOverride",
+		"select": { "name": "openterraingenerator:.*" },
+		"apply": {
+			"cancelvanilla": false
+		}
+	},
+	{
+		"__comment" : "Cancel DynamicTreeOverride",
+		"select": { "name": "minecraft:.*" },
+		"apply": {
+			"cancelvanilla": false
+		}
+	},
+	{
+		"__comment" : "Cancel DynamicTreeOverride",
+		"select": { "name": "traverse:.*" },
+		"apply": {
+			"cancelvanilla": false
+		}
+	}
+]

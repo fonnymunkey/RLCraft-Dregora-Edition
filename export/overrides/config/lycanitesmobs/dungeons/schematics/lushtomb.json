@@ -14,7 +14,8 @@
       "dimensionListType": "whitelist",
       "biomeTags": [
         "jungle",
-        "swamp"
+        "swamp",
+        "-canyon"
       ],
       "biomeTagListType": "whitelist"
     }

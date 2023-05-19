@@ -1786,6 +1786,9 @@ lycanitesmobs:mobevent.eruption
 lycanitesmobs:mobevent.asmodeus
 lycanitesmobs:mobevent.bladeflurry
 lycanitesmobs:mobevent.cinderfall
+biomesoplenty:entity.biomesoplenty.wasp.ambient
+biomesoplenty:entity.biomesoplenty.wasp.hurt
+biomesoplenty:records.wanderer
 callablehorses:whistle
 familiarfauna:entity.familiarfauna.deer.hurt
 familiarfauna:entity.familiarfauna.deer.dead

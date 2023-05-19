@@ -1,5 +1,115 @@
 {
   "variants": [
+      {
+      "biomeTags": [
+        [
+          "HOT",
+          "DEAD"
+        ],
+        [
+          "DEAD"
+        ],
+        [
+          "CANYON"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:cobblestone": 0.5,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05
+        },
+        "defaultBlock": "minecraft:planks[variant=dark_oak]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:planks[variant=dark_oak]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=dark_oak]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.5,
+          "minecraft:cobblestone": 0.5
+        },
+        "defaultBlock": "minecraft:cobblestone"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.5,
+          "minecraft:cobblestone": 0.5
+        },
+        "defaultBlock": "minecraft:cobblestone"
+      },
+      "mainBlock": "minecraft:cobblestone",
+      "supportBlock": "minecraft:iron_bars[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:stone_slab2[half=bottom,variant=stonebrick]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab2[half=top,variant=stonebrick]",
+      "minY": 1,
+      "maxY": 1,
+      "vineChance": 0.0,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 0.9
+    },
+    {
+      "biomeTags": [
+        [
+          "CANYON",
+          "HOT",
+          "MESA",
+          "SPARSE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.05,
+          "minecraft:cobblestone": 0.5,
+          "minecraft:stonebrick[variant=cracked_stonebrick]": 0.05
+        },
+        "defaultBlock": "minecraft:planks[variant=dark_oak]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:planks[variant=dark_oak]": 1.0
+        },
+        "defaultBlock": "minecraft:planks[variant=dark_oak]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.5,
+          "minecraft:cobblestone": 0.5
+        },
+        "defaultBlock": "minecraft:cobblestone"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stonebrick[variant=stonebrick]": 0.5,
+          "minecraft:cobblestone": 0.5
+        },
+        "defaultBlock": "minecraft:cobblestone"
+      },
+      "mainBlock": "minecraft:cobblestone",
+      "supportBlock": "minecraft:iron_bars[east=false,north=false,south=false,west=false]",
+      "slabBlock": "minecraft:stone_slab2[half=bottom,variant=stonebrick]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:cobblestone_wall[east=false,north=false,south=false,up=false,variant=cobblestone,west=false]",
+      "stoneSlabBlock": "minecraft:stone_slab2[half=top,variant=stonebrick]",
+      "minY": 4,
+      "maxY": 4,
+      "vineChance": 0.0,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 0.9
+    },
     {
       "biomeTags": [
         [

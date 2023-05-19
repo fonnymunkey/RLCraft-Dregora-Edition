@@ -16,7 +16,8 @@
         "sandy",
         "wasteland",
         "mesa",
-        "-cold"
+        "-cold",
+        "-canyon"
       ],
       "biomeTagListType": "whitelist"
     }

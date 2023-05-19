@@ -25,6 +25,7 @@ minecraft:glowing
 minecraft:levitation
 minecraft:luck
 minecraft:unluck
+biomesoplenty:curse
 elenaidodge:forceful
 elenaidodge:feeble
 elenaidodge:can_dodge

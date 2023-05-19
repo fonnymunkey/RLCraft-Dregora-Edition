@@ -1,0 +1,51 @@
+{
+  "name": "bopcrop",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 1,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreCollision": true,
+  "ignoreLightLevel": true,
+  "ignoreGroupLimit": true,
+  "ignoreForgeCanSpawnEvent": true,
+  "conditions": [],
+  "triggers": [
+    {
+      "type": "block",
+      "blocks": [
+        "biomesoplenty:plant_1",
+        "biomesoplenty:plant_0",
+        "biomesoplenty:double_plant:1"
+      ],
+      "chance": 0.001
+    }
+  ],
+  "locations": [
+    {
+      "type": "base",
+      "rangeMin": [
+        0,
+        0,
+        0
+      ],
+      "rangeMax": [
+        0,
+        0,
+        0
+      ],
+      "sorting": "random"
+    }
+  ],
+  "mobSpawns": [
+    {
+      "mobId": "lycanitesmobs:spriggan",
+      "weight": 8
+    },
+    {
+      "mobId": "lycanitesmobs:triffid",
+      "weight": 2
+    }
+  ]
+}
