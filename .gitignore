@@ -1,2 +1,11 @@
 
 *.jar
+export/overrides/config/fantasticlib/reference/recipes.txt
+export/overrides/config/fantasticlib/reference/potion_types.txt
+export/overrides/config/fantasticlib/reference/players.txt
+export/overrides/config/fantasticlib/reference/oredict.txt
+export/overrides/config/fantasticlib/reference/items.txt
+export/overrides/config/fantasticlib/reference/entities.txt
+export/overrides/config/fantasticlib/reference/blockstates.txt
+export/overrides/config/fantasticlib/reference/blocks.txt
+export/overrides/config/jei/worldSettings.cfg
