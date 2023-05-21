@@ -1,0 +1,151 @@
+#FIXED ISSUES --------------------------------------------------------------------------------
+
+Fixed:
+- add compass & loot to center
+- Hatchet log->planks compat for dead logs & giant flower stem
+- Berry - give thirst (simpledifficulty)
+- Doors crafting needs to be 2 doors, not 3 (bop) - ADDDED TO DREGORA.ZS
+- extend day from 10 to 20 minutes (Already Set?) - increased to 25 minutes.
+- add bop and dynamic trees bop blocks to goblin climbable blocks
+- make sure skill requirements are correct (example: saplings) 
+- made kelp drop aquaculture:food:0 & made aquaculture:food:0 cookable -> kelp & made kelp a fuel source
+- tested portal mob spawning (they don't)
+- Entity spawn in bop:blue_fire
+- check vein mining (titan, vein pick, tunneling, lycanite tool) for new blocks (mostly to make sure it doesn't crash)
+- lilypads break with boat
+- lycanites now spawn from blocks
+- nymph spawn from flowers
+- Fixed mob spawning in Dregora_CorruptedBloodForest, City of Blight, Atomic City, Lair of the Thing
+- fixed up the hexagonal slices to properly represent the areas
+- Ships dont spawn on beach any longer ( CustomStructure(Exotic_Pillager-Ship_Random,0.0) )
+- decreased amount of defiled trees in Lair of the Thing border biome
+- Removed the city biomegroup & placed each type of city in their designated temperature zone biome groups. (Minimized chance of ice next to jungle or desert cities)
+- Fixed random spawnpoint (for OTG V9.5 R1)
+- rename biomesoplenty kelp to dried seaweed
+- lower bamboo burn time to 200 ticks & added dead leaves as fuel for 100 ticks.
+- added blocks in mineshaft bottom area under floating rails.
+- add cursed fire to viking village corrupted
+- add fire subsistute to viking village friendly (prevent spreading, perhaps remove fire & keep magma)
+- Fixed Viking Biome odd spawn, missing viking structures, fire issues and size issues.
+- DT trees don't always fall with leaves (FM2 fixed in mixing and pr to DT)
+- Fixed Mobs issues for Tundra, Lair of the Thing, crimson peak biomes & bloodforest biomes.
+- removed village spawn in corrupted flower plains
+- added missing Dregora_DryDunesBorderCompat to the biome list
+- Fix deathworm spawns, remove deserts with solid blocks.
+- add content to dispensers & droppers in cities
+
+#TODO LIST ----------------------------------------------------------------------------
+
+Dregora:
++ add villagers (gem traders)
++ test if ice and fire mobs and stonelings (and probably other mobs) spawn in bop and dragora biomes
++ nerf sleeper sword to be worse then dragon sword & decrease durability to 1 (also put more enchantments on it so it cant be enchanted further)
++ test multiplayer spawns
++ rubberbanding issues, seemingly somewhere in forests, keep an eye out for this issue using /tps
++ add biomesoplenty:gem to fromimage biomes
++ remove bop bushes & replace for rustic ones
++ fix random encounters
++ weird color blending is half(ish) intended, most is murky, the rest is default color for compatibility reasons with ocean stuff. Can improve this a bit down the line)
+
+RLCraft:
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ add lightning spawns to center (using lycanite?) to create a atmosphere - activate in a radius every x ticks & activate on pressure plate at random spot
++ exclusion zone around 0,0 (colission issues)
++ add recipes (bop gems) to swords
++ replace some wither skeleton with swords for wither skeletons with bows
++ remove recipes added by bop (the ones that don't need to exist) 
++ check for level up xp dupes with new recipes
++ look at bop issues page for bugs and dupes
++ check the end + nether, BOP alters these in some ways
++ BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
++ Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
++ Still need to click through options to enable Dregora on world creation (Should be default/only option)
++ BoP poison/lycanite poison looks the same (unless we figured out that BoP poison doesnt spawn/doesnt exist)
++ check that increased day time doesnt cause bugs
++ Bop shouldn't spawn with dregora, think I also removed bop poison from bop configs. Also disable bucket click on bop with craft tweaker should be easy, added that to list
++ Infernal mob in viking village always same type (likely a quirk that rarely happens and isn't really a big issue)
+
+
+NLBlackHeavenNL found issues (some need double checking & discussing with Heaven) ----------------------------------------------------
+
++ Fix Netherrack bank AIR export
++ Replace cauldron air to solid block
++ Fix Deathworm spawns (Cold Desert etc)
++ Fix floating flesh blocks in water Atomic city / Desert City Creek biome
++ Dregora_OceanClear spawns in trench **DC VERSION FOR NOW**
++ Remove Poison Ivy in Boreal Forest
++ Preferably remove ravines in trench (lava flow bugs)
++ Defiled_Altar_Big BO4 stairs inside bugged rotation (mostly Modded stairs)
++ blacklist ruins from spawning in trenches
++ Add Creepers with speed boost to Dregora Mineshafts
++ Fix some tree branches floating randomly in air
++ Structures generating in air Recurrent in Dregora_FrozenMudMountainSlope including villages
++ Cold Desert biome could occasionally use a dead tree
++ Dregora Mineshafts hub need 15 more foundation blocks
++ Ravine depth Y 14
++ Doomlike dungeons bedrock level for extra DOOM
++ Add Waystone custom structure to Villages / Outposts
++ possibly remove all beds in city structures
++ make boobytrap cave sections and generate them everywhere
++ double check corrupted biomes for spawns (e.g. toxic spawn too)
++ too many pixies in general biomes, check what is going on
++ Remove Guardians from natural spawns
++ fix trolls in trench spawn issue
++ fix dragon chasm in trench issue
+
+
+#GEM TRADERS --------------------------------------------------------------------------------------------------------------------
+
+Todo's:
++ remove recipe(s): biomesoplenty:gem:6 biomesoplenty:gem_block:6 biomesoplenty:gem_ore:6
++ replace biomesoplenty:gem_ore:6 with iceandfire:sapphire_ore
++ add sapphire ore to congealed biomes
++ make gem trading outposts (Woodland, Plains, Savanna, Jungle, Desert)
++ add gem trading outposts to biomes
+
+AMBER (7) - forest
+SAPPHIRE (6) - ocean, mangrove & congealed biomes
+MALACHITE (5) - swamp, mountains, ominous woods, mutated forests, shrublands
+TANZANITE (4) - dead and cold regions
+TOPAZ (3) - jungle and lush regions
+PERIDOT (2) - plains
+RUBY (1) - desert, savanna, mountain
+AMETHYST (0) - end
+
+Villager Buys:
+minecraft:end_crystal -> 25x emerald
+scalinghealth:crystalshard -> 10x emerald
+minecraft:diamond -> 5x emerald
+biomesoplenty:crystal_shard -> 2x emerald
+quark:crystal -> 2x emerald
+realistictorches:glowstone_crystal -> 2x emerald
+
+
+1x SAPPHIRE = 10x emerald
+1x AMETHYST = 5x emerald
+1x SCARLITE = 3x emerald
+1x RUBY = 1x emerald
+1x TOPAZ = 1x emerald
+1x AMBER = 1x emerald
+1x PERIDOT = 1x emerald
+1x TANZANITE = 1x emerald
+1x MALACHITE = 1x emerald
+
+Stats can be;
++maxHealth
++knockbackResistance
++movementSpeed
++attackDamage
++armor
++armorToughness
++attackSpeed
++luck
+
+1x SAPPHIRE + 50 emerald + Sword = SAPPHIRE Embedded Sword (+ stat) 
+1x AMETHYST + 50 emerald + Sword = AMETHYST Embedded Sword (+ stat)
+1x RUBY + 50 emerald + Sword = RUBY Embedded Sword (+ stat)
+1x TOPAZ + 50 emerald + Sword = TOPAZ Embedded Sword (+ stat)
+1x AMBER + 50 emerald + Sword = AMBER Embedded Sword (+ stat)
+1x PERIDOT + 50 emerald + Sword = PERIDOT Embedded Sword (+ stat)
+1x TANZANITE + 50 emerald + Sword = TANZANITE Embedded Sword (+ stat)
+1x MALACHITE + 50 emerald + Sword = MALACHITE Embedded Sword (+ stat)
