@@ -1,0 +1,8 @@
+{
+  "name": "builtin:dungeon_forest_no_loot",
+  // does not spawn
+  "exclusive": false,
+  "inherit": ["builtin:forest"],
+  // remove the loot, so that extending dungeons (dungeons that inherit this setting) can supply their own loot
+  "overrides": ["LOOTRULES"]
+}

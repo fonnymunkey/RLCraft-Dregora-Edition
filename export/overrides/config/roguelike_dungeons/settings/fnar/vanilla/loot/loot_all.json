@@ -1,0 +1,99 @@
+{
+  "name": "fnar:loot_all",
+  "lootRules": [
+    {
+      "level": [0, 1, 2, 3, 4],
+      "loot": [
+        {"data": {"name": "minecraft:brown_mushroom"}, "weight": 10},
+        {"data": {"name": "minecraft:bone"}, "weight": 10},
+        {"data": {"name": "minecraft:bowl"}, "weight": 10},
+        {"data": {"name": "minecraft:brick"}, "weight": 10},
+        {"data": {"name": "minecraft:clay_ball"}, "weight": 10},
+        {"data": {"name": "minecraft:coal", "meta": 1}, "weight": 10},
+        {"data": {"name": "minecraft:deadbush"}, "weight": 10},
+        {"data": {"name": "minecraft:flint"}, "weight": 10},
+        {"data": {"name": "minecraft:dye", "meta": 15}, "weight": 10},
+        {"data": {"name": "minecraft:egg"}, "weight": 10},
+        {"data": {"name": "minecraft:feather"}, "weight": 10},
+        {"data": {"name": "minecraft:glass_bottle"}, "weight": 10},
+        {"data": {"name": "minecraft:leather"}, "weight": 10},
+        {"data": {"name": "minecraft:leather_boots"}, "weight": 10},
+        {"data": {"name": "minecraft:leaves"}, "weight": 10},
+        {"data": {"name": "minecraft:netherbrick"}, "weight": 10},
+        {"data": {"name": "minecraft:painting"}, "weight": 10},
+        {"data": {"name": "minecraft:paper"}, "weight": 10},
+        {"data": {"name": "minecraft:poisonous_potato"}, "weight": 10},
+        {"data": {"name": "minecraft:red_flower"}, "weight": 10},
+        {"data": {"name": "minecraft:red_mushroom"}, "weight": 10},
+        {"data": {"name": "minecraft:reeds"}, "weight": 10},
+        {"data": {"name": "minecraft:rabbit_hide"}, "weight": 10},
+        {"data": {"name": "minecraft:rotten_flesh"}, "weight": 10},
+        {"data": {"name": "minecraft:slime_ball"}, "weight": 10},
+        {"data": {"name": "minecraft:snowball"}, "weight": 10},
+        {"data": {"name": "minecraft:stick"}, "weight": 10},
+        {"data": {"name": "minecraft:string"}, "weight": 10},
+        {"data": {"name": "minecraft:tripwire_hook"}, "weight": 10},
+        {"data": {"name": "minecraft:vine"}, "weight": 10},
+        {"data": {"name": "minecraft:web"}, "weight": 10},
+        {"data": {"name": "minecraft:wheat_seeds"}, "weight": 10},
+        {"data": {"name": "minecraft:yellow_flower"}, "weight": 10},
+
+        {"data": {"name": "minecraft:book"}, "weight": 5},
+        {"data": {"name": "minecraft:fire_charge"}, "weight": 5},
+        {"data": {"name": "minecraft:flower_pot"}, "weight": 5},
+        {"data": {"name": "minecraft:prismarine_shard"}, "weight": 5},
+        {"data": {"name": "minecraft:rabbit_foot"}, "weight": 5},
+        {"data": {"name": "minecraft:skull", "meta": 0}, "weight": 5},
+        {"data": {"name": "minecraft:waterlily"}, "weight": 5}
+      ],
+      "each": true,
+      "quantity": 4
+    },
+    {
+      "level": [0, 1, 2, 3, 4],
+      "each": false,
+      "quantity": 2,
+      "loot": [
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": \"unbreaking\"}]}"}, "weight": 1},
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": \"sharpness\"}]}"}, "weight": 1},
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": \"protection\"}]}"}, "weight": 1},
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": \"efficiency\"}]}"}, "weight": 1}
+      ]
+    },
+
+    {
+      "level": [0,1,2,3,4],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"type": "enchanted_book", "ench": 5}, "weight": 16},
+        {"data": {"type": "enchanted_book", "ench": 10}, "weight": 8},
+        {"data": {"type": "enchanted_book", "ench": 15}, "weight": 4},
+        {"data": {"type": "enchanted_book", "ench": 20}, "weight": 2},
+        {"data": {"type": "enchanted_book", "ench": 30}, "weight": 1}
+      ]
+    },
+    {
+      "level": [3,4],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"type": "enchanted_book", "ench": 15}, "weight": 4},
+        {"data": {"type": "enchanted_book", "ench": 20}, "weight": 2},
+        {"data": {"type": "enchanted_book", "ench": 30}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0,1,2,3,4],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"type": "specialty", "level": 0}, "weight": 16},
+        {"data": {"type": "specialty", "level": 1}, "weight": 8},
+        {"data": {"type": "specialty", "level": 2}, "weight": 4},
+        {"data": {"type": "specialty", "level": 3}, "weight": 2},
+        {"data": {"type": "specialty", "level": 4}, "weight": 1}
+      ]
+    }
+  ]
+}

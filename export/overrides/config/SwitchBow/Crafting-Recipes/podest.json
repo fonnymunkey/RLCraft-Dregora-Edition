@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        "sps",
+        " o ",
+        "ooo"
+    ],
+    "key":
+    {
+        "s":
+        {
+            "item": "minecraft:prismarine_shard"
+        },
+        "p":
+        {
+            "item": "minecraft:prismarine_crystals"
+        },
+        "o":
+        {
+            "item": "minecraft:obsidian"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:podest",
+        "count": 1
+    }
+}

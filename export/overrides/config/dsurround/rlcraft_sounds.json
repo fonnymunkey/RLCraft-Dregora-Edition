@@ -1,0 +1,181 @@
+{
+	"biomes": [
+		{
+			"conditions": "biome.isNether",
+			"_comment": "RLCraft Nether Ambience",
+			"soundReset": true,
+			"aurora": false,
+			"sounds": [
+				{
+					"sound": "dsurround:dimension.nether",
+					"volume": 2.5
+				}
+			]
+		}
+	],
+	"blocks": [
+		{
+			"blocks": [
+				"minecraft:waterlily"
+			],
+			"effects": [
+				{
+					"effect": "firefly",
+					"conditions": "weather.isNotRaining && (diurnal.isNight || diurnal.isSunset) && !(biome.isHot || weather.canWaterFreeze)",
+					"chance": 10
+				}
+			]
+		}
+	],
+	"items": {
+		"LEATHER": [
+			"simpledifficulty:wool_helmet",
+			"simpledifficulty:wool_chestplate",
+			"simpledifficulty:wool_leggings",
+			"simpledifficulty:wool_boots",
+			"iceandfire:forest_troll_leather_helmet",
+			"iceandfire:forest_troll_leather_chestplate",
+			"iceandfire:forest_troll_leather_leggings",
+			"iceandfire:forest_troll_leather_boots",
+			"iceandfire:frost_troll_leather_helmet",
+			"iceandfire:frost_troll_leather_chestplate",
+			"iceandfire:frost_troll_leather_leggings",
+			"iceandfire:frost_troll_leather_boots",
+			"iceandfire:mountain_troll_leather_helmet",
+			"iceandfire:mountain_troll_leather_chestplate",
+			"iceandfire:mountain_troll_leather_leggings",
+			"iceandfire:mountain_troll_leather_boots",
+			"srparasites:armor_helm",
+			"srparasites:armor_chest",
+			"srparasites:armor_pants",
+			"srparasites:armor_boots",
+			"srparasites:armor_helm_sentient",
+			"srparasites:armor_chest_sentient",
+			"srparasites:armor_pants_sentient",
+			"srparasites:armor_boots_sentient"
+		],
+		"CHAIN": [
+			"defiledlands:scale_helmet",
+			"defiledlands:scale_chestplate",
+			"defiledlands:scale_leggings",
+			"defiledlands:scale_boots",
+			"defiledlands:scale_golden_helmet",
+			"defiledlands:scale_golden_chestplate",
+			"defiledlands:scale_golden_leggings",
+			"defiledlands:scale_golden_boots",
+			"iceandfire:tide_blue_helmet",
+			"iceandfire:tide_blue_chestplate",
+			"iceandfire:tide_blue_leggings",
+			"iceandfire:tide_blue_boots",
+			"iceandfire:tide_bronze_helmet",
+			"iceandfire:tide_bronze_chestplate",
+			"iceandfire:tide_bronze_leggings",
+			"iceandfire:tide_bronze_boots",
+			"iceandfire:tide_deepblue_helmet",
+			"iceandfire:tide_deepblue_chestplate",
+			"iceandfire:tide_deepblue_leggings",
+			"iceandfire:tide_deepblue_boots",
+			"iceandfire:tide_green_helmet",
+			"iceandfire:tide_green_chestplate",
+			"iceandfire:tide_green_leggings",
+			"iceandfire:tide_green_boots",
+			"iceandfire:tide_purple_helmet",
+			"iceandfire:tide_purple_chestplate",
+			"iceandfire:tide_purple_leggings",
+			"iceandfire:tide_purple_boots",
+			"iceandfire:tide_red_helmet",
+			"iceandfire:tide_red_chestplate",
+			"iceandfire:tide_red_leggings",
+			"iceandfire:tide_red_boots",
+			"iceandfire:tide_teal_helmet",
+			"iceandfire:tide_teal_chestplate",
+			"iceandfire:tide_teal_leggings",
+			"iceandfire:tide_teal_boots"
+		],
+		"PLATE": [
+			"defiledlands:umbrium_helmet",
+			"defiledlands:umbrium_chestplate",
+			"defiledlands:umbrium_leggings",
+			"defiledlands:umbrium_boots",
+			"iceandfire:myrmex_desert_helmet",
+			"iceandfire:myrmex_desert_chestplate",
+			"iceandfire:myrmex_desert_leggings",
+			"iceandfire:myrmex_desert_boots",
+			"iceandfire:myrmex_jungle_helmet",
+			"iceandfire:myrmex_jungle_chestplate",
+			"iceandfire:myrmex_jungle_leggings",
+			"iceandfire:myrmex_jungle_boots",
+			"iceandfire:deathworm_yellow_helmet",
+			"iceandfire:deathworm_yellow_chestplate",
+			"iceandfire:deathworm_yellow_leggings",
+			"iceandfire:deathworm_yellow_boots",
+			"iceandfire:deathworm_white_helmet",
+			"iceandfire:deathworm_white_chestplate",
+			"iceandfire:deathworm_white_leggings",
+			"iceandfire:deathworm_white_boots",
+			"iceandfire:deathworm_red_helmet",
+			"iceandfire:deathworm_red_chestplate",
+			"iceandfire:deathworm_red_leggings",
+			"iceandfire:deathworm_red_boots",
+			"forgottenitems:golem_helmet",
+			"forgottenitems:golem_chestplate",
+			"forgottenitems:golem_leggings",
+			"forgottenitems:golem_boots"
+		],
+		"CRYSTAL": [
+			"simpledifficulty:ice_helmet",
+			"simpledifficulty:ice_chestplate",
+			"simpledifficulty:ice_leggings",
+			"simpledifficulty:ice_boots"
+		],
+		"POTION": [
+			"simpledifficulty:canteen",
+			"simpledifficulty:iron_canteen",
+			"simpledifficulty:dragon_canteen",
+			"rustic:fluid_bottle",
+			"rustic:elixir",
+			"simpledifficulty:juice",
+			"bountifulbaubles:potionrecall",
+			"bountifulbaubles:potionwormhole",
+			"xat:dwarf_stout",
+			"switchbow:lovepotion",
+			"lycanitesmobs:immunizer"
+		],
+		"BOOK": [
+			"minecraft:written_book",
+			"minecraft:knowledge_book",
+			"bountifulbaubles:modifierbook",
+			"inspirations:books",
+			"rustic:book",
+			"xpbook:xp_book",
+			"variedcommodities:book",
+			"antiqueatlas:empty_antique_atlas",
+			"antiqueatlas:antique_atlas",
+			"minecraft:paper",
+			"minecraft:map",
+			"minecraft:filled_map",
+			"iceandfire:manuscript",
+			"iceandfire:bestiary",
+			"levelup2:respecbook",
+			"variedcommodities:vcrecipes_book"
+		],
+		"AXE": [
+			"minecraft:iron_axe",
+			"iceandfire:myrmex_desert_axe",
+			"spartandefiled:hammer_umbrium",
+			"com.mujmajnkraft.bettersurvival.items.ItemHammer",
+			"com.mujmajnkraft.bettersurvival.items.ItemBattleAxe"
+		],
+		"SWORD": [
+			"com.mujmajnkraft.bettersurvival.items.ItemDagger",
+			"com.mujmajnkraft.bettersurvival.items.ItemNunchaku"
+		],
+		"TOOL": [
+			"com.mujmajnkraft.bettersurvival.items.ItemSpear",
+			"com.oblivioussp.spartanweaponry.item.ItemCrossbow",
+			"switchbow:switchcrossbow"
+		],
+		"BOW": [
+		]
+	}
+}

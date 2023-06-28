@@ -1,0 +1,19 @@
+{
+  "parent": "builtin/image",
+  "image": "loadingscreen:options_background2.png",
+  "position_type": "CENTER",
+  "offset_pos": "CENTER",
+  "colour": "0xFF_40_40_40",
+  "position": {
+    "x": "0",
+    "y": "0",
+    "width": "1920",
+    "height": "1080"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "2",
+    "height": "2"
+  }
+}

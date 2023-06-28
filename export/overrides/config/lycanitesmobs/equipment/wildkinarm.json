@@ -1,0 +1,102 @@
+{
+  "itemName": "wildkinarm",
+  "loadDefault": false,
+  "slotType": "pike",
+  "dropMobId": "lycanitesmobs:wildkin",
+  "dropChance": 0.1,
+  "levelMin": 1,
+  "levelMax": 3,
+  "elements": [
+    "earth"
+  ],
+  "features": [
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 40,
+      "count": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 30,
+      "count": 9,
+      "bonusDamage": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 16,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 30,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "projectileName": "boulderblast",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 2
+    },
+	{
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 4,
+      "damageKnockback": 2,
+      "damageCooldown": 2,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+	  "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 6,
+      "damageKnockback": 3,
+      "damageCooldown": 3,
+      "damageRange": 1,
+      "damageSweep": 360
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "damageAmount": 8,
+      "damageKnockback": 4,
+      "damageCooldown": 4,
+      "damageRange": 1,
+      "damageSweep": 360
+    }
+  ]
+}

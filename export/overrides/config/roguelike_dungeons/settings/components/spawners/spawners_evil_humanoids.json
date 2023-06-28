@@ -1,0 +1,25 @@
+{
+  "name": "spawners:evil_humanoids",
+  "spawners": [
+    {"level": [0, 1, 2, 3, 4], "potentials": [{"name": "minecraft:evocation_illager"}]},
+	{"level": [0, 1, 2, 3, 4], "potentials": [{"name": "minecraft:vindication_illager", "nbt": "{HandItems:[{id:\"minecraft:iron_axe\",Count:1},{}]}"}]},
+    {"level": [0, 1, 2, 3, 4], "potentials": [{"name": "minecraft:witch"}]},
+    {"level": [0, 1, 2, 3, 4], "potentials": [{"name": "minecraft:vex"}]},
+    {
+      "level": [0, 1, 2, 3, 4],
+      "potentials": [
+        {"name": "minecraft:evocation_illager"},
+		{"name": "minecraft:vindication_illager", "nbt": "{HandItems:[{id:\"minecraft:iron_axe\",Count:1},{}]}"},
+        {"name": "minecraft:illusion_illager", "nbt": "{HandItems:[{id:\"minecraft:bow\",Count:1},{}]}"},
+        {"name": "minecraft:witch"}
+      ]
+    },
+    {
+      "level": [0, 1, 2, 3, 4],
+      "potentials": [
+        {"weight": 1, "name": "minecraft:illusion_illager", "nbt": "{HandItems:[{id:\"minecraft:bow\",Count:1},{}]}"},
+        {"weight": 1, "name": "minecraft:vex"}
+      ]
+    }
+  ]
+}

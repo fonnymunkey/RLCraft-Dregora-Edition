@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        " sf",
+        "sef",
+        " sf"
+    ],
+    "key":
+    {
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "f":
+        {
+            "item": "minecraft:string"
+        },
+        "e":
+        {
+            "item": "minecraft:ender_eye"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:switchbow",
+        "count": 1
+    }
+}

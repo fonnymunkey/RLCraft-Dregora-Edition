@@ -1,0 +1,7 @@
+{
+    "projectile.fireball":
+	{
+        "category": "hostile",
+        "sounds": [{"name": "lycanitesmobs:projectile/fireball", "stream": false}]
+	}
+}

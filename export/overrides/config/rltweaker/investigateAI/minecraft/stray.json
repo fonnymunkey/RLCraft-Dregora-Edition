@@ -1,0 +1,45 @@
+{
+  "priority": 3,
+  "entries": [
+    {
+      "executeOnAttacked": true,
+      "executeOnCalled": false,
+      "healthThreshold": 1.0,
+      "executionChance": 0.66,
+      "movementSpeed": 1.25,
+      "verticalOffsetBase": 0.0,
+      "verticalOffsetScale": 0.0,
+      "verticalOffsetMax": 0.0,
+      "horizontalOffsetBase": 0.0,
+      "horizontalOffsetScale": 0.25,
+      "horizontalOffsetMax": 20.0,
+      "callForHelpEntries": [
+        {
+          "entityNames": [
+            "minecraft:stray",
+			"minecraft:skeleton"
+          ],
+          "verticalRange": 4.0,
+          "horizontalRange": 8.0,
+          "requiresVision": true,
+          "ignoreParentInCombat": true,
+          "ignoreParentChanceTestFailed": true
+        }
+      ]
+    },
+    {
+      "executeOnAttacked": false,
+      "executeOnCalled": true,
+      "healthThreshold": 1.0,
+      "executionChance": 0.66,
+      "movementSpeed": 1.25,
+      "verticalOffsetBase": 0.0,
+      "verticalOffsetScale": 0.0,
+      "verticalOffsetMax": 0.0,
+      "horizontalOffsetBase": 0.0,
+      "horizontalOffsetScale": 0.25,
+      "horizontalOffsetMax": 20.0,
+      "callForHelpEntries": []
+    }
+  ]
+}

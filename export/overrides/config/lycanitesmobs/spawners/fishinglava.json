@@ -1,0 +1,54 @@
+{
+  "name": "fishinglava",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 1,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreLightLevel": true,
+  "ignoreForgeCanSpawnEvent": true,
+  "conditions": [],
+  "triggers": [
+    {
+      "type": "fishing",
+      "chance": 0.05
+    }
+  ],
+  "locations": [
+    {
+      "type": "block",
+      "rangeMin": [
+        0,
+        0,
+        0
+      ],
+      "rangeMax": [
+        2,
+        2,
+        2
+      ],
+      "sorting": "near",
+      "limit": 1,
+      "blocks": [
+        "minecraft:lava"
+      ],
+      "listType": "whitelist",
+      "solidGround": false
+    }
+  ],
+  "mobSpawns": [
+    {
+      "mobId": "lycanitesmobs:cephignis",
+      "weight": 16
+    },
+    {
+      "mobId": "lycanitesmobs:salamander",
+      "weight": 4
+    },
+    {
+      "mobId": "lycanitesmobs:afrit",
+      "weight": 4
+    }
+  ]
+}

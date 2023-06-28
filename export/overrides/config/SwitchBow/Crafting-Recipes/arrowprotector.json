@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "activ": "true",
+    "pattern":
+    [
+        " p ",
+        "isi",
+        " f "
+    ],
+    "key":
+    {
+        "p":
+        {
+            "item": "minecraft:pumpkin"
+        },
+        "i":
+        {
+            "item": "minecraft:iron_ingot"
+        },
+        "s":
+        {
+            "item": "minecraft:stick"
+        },
+        "f":
+        {
+            "item": "minecraft:feather"
+        }
+    },
+    "result":
+    {
+        "item": "switchbow:arrowprotector",
+        "count": 4
+    }
+}

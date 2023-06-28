@@ -1,0 +1,39 @@
+{
+  "name": "notreepunching:loot",
+  "requires": ["notreepunching"],
+  "lootRules": [
+    {
+      "level": [0], "each": false, "type": "TOOLS", "quantity": 2, "loot": [
+        {"data" : {"name" : "notreepunching:knife/flint"}, "weight" : 10},
+
+        {"data" : {"name" : "notreepunching:knife/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:mattock/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:saw/iron"}, "weight" : 1}
+    ]
+    },
+    {
+      "level": [1, 2, 3], "each": false, "type": "TOOLS", "quantity": 2, "loot": [
+        {"data" : {"name" : "notreepunching:knife/flint"}, "weight" : 1},
+
+        {"data" : {"name" : "notreepunching:knife/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:mattock/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:saw/iron"}, "weight" : 1},
+
+        {"data" : {"name" : "notreepunching:knife/gold"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:mattock/gold"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:saw/gold"}, "weight" : 1}
+      ]
+    },
+    {
+      "level": [4], "each": false, "type": "TOOLS", "quantity": 1, "loot": [
+        {"data" : {"name" : "notreepunching:knife/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:mattock/iron"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:saw/iron"}, "weight" : 1},
+
+        {"data" : {"name" : "notreepunching:knife/diamond"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:mattock/diamond"}, "weight" : 1},
+        {"data" : {"name" : "notreepunching:saw/diamond"}, "weight" : 1}
+      ]
+    }
+  ]
+}

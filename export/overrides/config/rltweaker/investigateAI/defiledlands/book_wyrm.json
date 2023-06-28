@@ -1,0 +1,30 @@
+{
+  "priority": 3,
+  "entries": [
+    {
+      "executeOnAttacked": true,
+      "executeOnCalled": true,
+      "healthThreshold": 1.0,
+      "executionChance": 0.5,
+      "movementSpeed": 1.0,
+      "verticalOffsetBase": 0.0,
+      "verticalOffsetScale": 0.0,
+      "verticalOffsetMax": 0.0,
+      "horizontalOffsetBase": 0.0,
+      "horizontalOffsetScale": 0.25,
+      "horizontalOffsetMax": 20.0,
+      "callForHelpEntries": [
+        {
+          "entityNames": [
+            "defiledlands:book_wyrm"
+          ],
+          "verticalRange": 4.0,
+          "horizontalRange": 8.0,
+          "requiresVision": true,
+          "ignoreParentInCombat": true,
+          "ignoreParentChanceTestFailed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+# Global Options for the Ruins mod
+#
+# tries_per_chunk is the number of times, per chunk, that the generator will
+#     attempt to create a ruin.
+#
+# chance_to_spawn is the chance, out of 100, that a ruin will be generated per
+#     try in this chunk.  This may still fail if the ruin does not have a
+#     suitable place to generate.
+#
+# specific_<biome name> is the chance, out of 100, that a ruin spawning in the
+#     specified biome will be chosen from the biome specific folder.  If not,
+#     it will choose a generic ruin from the folder of the same name.
+#
+tries_per_chunk_normal=6
+chance_to_spawn_normal=10
+tries_per_chunk_nether=6
+chance_to_spawn_nether=10
+#
+# prevent a message from being logged every time a ruin is built
+disableRuinSpawnCoordsLogging=true
+#
+# minimum distance a template must have from instances of itself
+templateInstancesMinDistance=256
+#
+# minimum distance a template must have from any other template
+anyRuinsMinDistance=64
+#
+# min/max distances overworld templates can have from world spawn (0 = no limit)
+anySpawnMinDistance=0
+anySpawnMaxDistance=0
+#
+# allow displaying a block's data by hitting it with a stick
+enableStick=false
+#
+# dimension IDs whitelisted for ruins spawning, add custom dimensions IDs here as needed
+allowedDimensions=0,1,-1
+#
+# make /parseruin rule IDs line up nicely in template files
+# note: overworld (i.e., dimension 0) setting applies to all dimensions
+enableFixedWidthRuleIds=false
+#
+# tileentity blocks, those (nonvanilla)blocks which cannot function without storing their nbt data, full name as stick dictates, seperated by commata
+teblocks=
+
+specific_mutated_ice_flats=75
+specific_frozen_ocean=75
+specific_snowy_coniferous_forest=75
+specific_mutated_mesa=75
+specific_temperate_rainforest=75
+specific_woodlands=75
+specific_hills_defiled=75
+specific_redwood_taiga_hills=75
+specific_taiga=75
+specific_taiga_hills=75
+specific_badlands=75
+specific_canyon=75
+specific_desert_defiled=75
+specific_jungle_edge=75
+specific_savanna=75
+specific_redwood_taiga=75
+specific_void=75
+specific_autumnal_wooded_hills=75
+specific_extreme_hills_with_trees=75
+specific_glacier=75
+specific_desert_hills=75
+specific_beaches=75
+specific_mutated_mesa_clear_rock=75
+specific_ice_plains_defiled=75
+specific_mesa_clear_rock=75
+specific_jungle_hills=75
+specific_mushroom_island_shore=75
+specific_savanna_rock=75
+specific_forest_tenebra=75
+specific_frozen_river=75
+specific_mountainous_desert=75
+specific_forest=75
+specific_lush_hills=75
+specific_mutated_extreme_hills=75
+specific_autumnal_woods=75
+specific_deep_ocean=75
+specific_extreme_hills=75
+specific_rocky_plains=75
+specific_smaller_extreme_hills=75
+specific_mutated_savanna_rock=75
+specific_mini_jungle=75
+specific_rocky_plateau=75
+specific_birch_forested_hills=75
+specific_desert=75
+specific_hell=75
+specific_stone_beach=75
+specific_river=75
+specific_mutated_redwood_taiga=75
+specific_green_swamp=75
+specific_cold_beach=75
+specific_thicket=75
+specific_roofed_forest=75
+specific_mesa_rock=75
+specific_ice_mountains=75
+specific_mutated_forest=75
+specific_mutated_extreme_hills_with_trees=75
+specific_mutated_roofed_forest=75
+specific_sky=75
+specific_mutated_jungle=75
+specific_plains_defiled=75
+specific_mushroom_island=75
+specific_mutated_swampland=75
+specific_arid_highland=75
+specific_mutated_birch_forest_hills=75
+specific_plains=75
+specific_meadow=75
+specific_mutated_savanna=75
+specific_mutated_redwood_taiga_hills=75
+specific_birch_forest_hills=75
+specific_mutated_desert=75
+specific_cliffs=75
+specific_forest_hills=75
+specific_glacier_spikes=75
+specific_mesa=75
+specific_mutated_mesa_rock=75
+specific_crag_cliffs=75
+specific_ice_flats=75
+specific_taiga_cold_hills=75
+specific_mutated_taiga_cold=75
+specific_glacier=75
+specific_jungle=75
+specific_mutated_jungle_edge=75
+specific_desert_shrubland=75
+specific_birch_forest=75
+specific_ocean=75
+specific_swampland=75
+specific_forested_hills=75
+specific_mutated_plains=75
+specific_taiga_cold=75
+specific_swamp_defiled=75
+specific_red_desert=75
+specific_forest_vilespine=75
+specific_mutated_taiga=75
+specific_mutated_birch_forest=75

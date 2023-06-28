@@ -1,0 +1,25 @@
+{
+
+  "boss.hurt": {
+    "category": "hostile",
+    "sounds": [
+      "playerbosses:hurt1",
+	  "playerbosses:hurt2",
+      "playerbosses:hurt3"
+    ]
+  },
+  "boss.death": {
+    "category": "hostile",
+    "sounds": [
+      "playerbosses:death"
+    ]
+  },
+  "boss.ambient": {
+    "category": "hostile",
+    "sounds": [
+      "playerbosses:ambient1",
+      "playerbosses:ambient2",
+      "playerbosses:ambient3"
+    ]
+  }
+}

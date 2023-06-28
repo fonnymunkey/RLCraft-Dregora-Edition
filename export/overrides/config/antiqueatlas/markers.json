@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "data": {
+    "antiqueatlas:Example": {
+      "__comment": [
+        "Any of these values can be ommited. The mod will either use the default value or if it is already been registered it will keep the existing values",
+        "This example entry is never parsed, and if modified, will not persist"
+      ],
+      "textures": [
+        "List of icons at different resolutions",
+        "[Default: `antiqueatlas:textures/gui/markers/red_x_small.png`]"
+      ],
+      "size": "[Default: 2] The width and height of the marker, in tiles (a chunk at 1x zoom)",
+      "clipMin": "[Default: -1000] The minimum zoom, -1 is 1/2x, -2 is 1/4x, ...",
+      "clipMax": "[Default:  1000] The maximum zoom, 0 is 1x, 1 is 2x, ...",
+      "alwaysShow": "[Default: false] True if the marker should appear regardless of whether hide markers is on",
+      "isTile": "[Default: false] True if the marker should scale with the map",
+      "isTechnical": "[Default: false] True if user should not be able to place the marker on the map",
+      "centerX": "[Default: 0.5] The point in the image that should be at the location of the marker (0-1)",
+      "centerY": "[Default: 0.5] The point in the image that should be at the location of the marker (0-1)"
+    },
+    "antiqueatlas:anvil": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/anvil.png"
+      ]
+    },
+    "antiqueatlas:bed": {},
+    "antiqueatlas:book": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/book.png"
+      ]
+    },
+    "antiqueatlas:cave": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/cave.png"
+      ]
+    },
+    "antiqueatlas:defiled": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/defiled.png"
+      ]
+    },
+    "antiqueatlas:diamond": {},
+    "antiqueatlas:dragon_blue": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dragon_blue.png"
+      ]
+    },
+    "antiqueatlas:dragon_gold": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dragon_gold.png"
+      ]
+    },
+    "antiqueatlas:dragon_green": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dragon_green.png"
+      ]
+    },
+    "antiqueatlas:dragon_red": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dragon_red.png"
+      ]
+    },
+    "antiqueatlas:dungeon": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/dungeon.png"
+      ]
+    },
+    "antiqueatlas:end_city": {},
+    "antiqueatlas:end_city_far": {},
+    "antiqueatlas:farm": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/farm.png"
+      ]
+    },
+    "antiqueatlas:google": {},
+    "antiqueatlas:nether_portal": {},
+    "antiqueatlas:pickaxe": {},
+    "antiqueatlas:red_x_large": {},
+    "antiqueatlas:red_x_small": {},
+    "antiqueatlas:ruins": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/ruins.png"
+      ]
+    },
+    "antiqueatlas:scroll": {},
+    "antiqueatlas:ship": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/ship.png"
+      ]
+    },
+    "antiqueatlas:skull": {},
+    "antiqueatlas:sword": {},
+    "antiqueatlas:tomb": {},
+    "antiqueatlas:tower": {},
+    "antiqueatlas:tracks": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/tracks.png"
+      ]
+    },
+    "antiqueatlas:unknown_marker": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/unknown_marker.png"
+      ]
+    },
+    "antiqueatlas:village": {},
+    "antiqueatlas:waystone": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/waystone.png"
+      ]
+    },
+    "antiqueatlas:wizardtower": {
+      "textures": [
+        "antiqueatlas:textures/gui/markers/wizardtower.png"
+      ]
+    }
+  }
+}

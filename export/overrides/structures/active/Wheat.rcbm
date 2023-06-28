@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "block": "minecraft:wheat",
+      "metadata": 7,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:wheat",
+      "metadata": 6,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:wheat",
+      "metadata": 5,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.930936872959137,
+      "block": "minecraft:wheat",
+      "metadata": 4,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.8448008894920349,
+      "block": "minecraft:wheat",
+      "metadata": 3,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.7651624083518982,
+      "block": "minecraft:wheat",
+      "metadata": 2,
+      "tileEntity": "null"
+    },
+    {
+      "weight": 0.691646158695221,
+      "block": "minecraft:wheat",
+      "metadata": 1,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Wheat",
+    "description": [
+      "Randomly aged wheat."
+    ]
+  }
+}

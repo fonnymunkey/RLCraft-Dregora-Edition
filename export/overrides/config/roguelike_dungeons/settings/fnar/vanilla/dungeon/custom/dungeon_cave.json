@@ -1,0 +1,13 @@
+{
+  "name": "fnar:dungeon_cave",
+  "exclusive": true,
+  "inherit": [
+    "rlcraft:dungeon_base",
+    "tower:hole",
+    "theme:cave",
+
+    "filter:muddy",
+    "filter:viney"
+  ],
+  "criteria": {"biomeTypes": ["FOREST", "MESA", "JUNGLE"]}
+}

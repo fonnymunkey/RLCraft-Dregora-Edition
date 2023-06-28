@@ -1,0 +1,4 @@
+<root>
+   <chest class="rustic.common.tileentity.ContainerCabinetDouble" row_size="9" large_chest="false"/>
+   <chest class="noppes.vc.containers.ContainerCrate" row_size="9" large_chest="false"/> <!-- Chests to show the sorting modes buttons on -->
+</root>

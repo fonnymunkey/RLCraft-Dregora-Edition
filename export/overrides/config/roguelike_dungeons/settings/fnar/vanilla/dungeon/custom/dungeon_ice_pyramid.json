@@ -1,0 +1,12 @@
+{
+  "name": "fnar:dungeon_ice_pyramid",
+  "exclusive": true,
+  "criteria": {"biomeTypes": ["SNOWY"]},
+  "inherit": [
+    "rlcraft:dungeon_base",
+    "rooms:undead",
+    "segments:undead",
+    "theme:ice",
+    "tower:ice_pyramid"
+  ]
+}

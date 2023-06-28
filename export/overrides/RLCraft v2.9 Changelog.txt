@@ -1,0 +1,1308 @@
+RLCraft v2.9 - Quests, Hats, Cave Update, Nether Update, Update Update I Literally Can't Remember Everything We Updated Because We Updated So Much !@#$ Holy %^&* Update
+
+This update has been over a year in the making, thank you to everyone who's been waiting so patiently, to the awesome RLCraft communities, all the folks helping test things, report bugs, everyone who worked on RLCraft (credited at the end of this changelog) making this update possible, and to my sponsor Bisect Hosting who, without, I wouldn't of had the time to work on RLCraft so much.  I really hope you enjoy this update, there is a lot...and I mean a LOT of new stuff, changed stuff, reworked and overhauled stuff...and should theoretically be a whole new beast for you to conquer.  Enjoy!
+
+IMPORTANT INFO:
+
+    - 2.8.2 Worlds are NOT compatible with 2.9.  If you attempt to update an old world, you will likely run into issues, crashes, and quests not working.
+    - USE LATEST FORGE - Due to the recent Log4j exploit found in Java, you will want to use the Forge version ending in 2860 or later!  We recommend latest Forge currently
+    - Command blocks must be enabled in server.properties, otherwise villages/structures won’t work
+    - IF USING OPTIFINE you can no longer use the E3 version, 2.9 will need version G5 or later.
+    - Better Foliage has been updated with shader support.  If your leaves/grass are not waving with your shaders, press F8, go to Shader Configuration, and add 100 to the beginning of the Grass and Leaves block ID, so it should look like 10018 and 10031 (Sildur's currently needs this)
+    - The default allocated 3GB's of RAM should still be perfectly fine for 2.9.  You should not allocate more than 4GB's for your client, as this ends up causing Java garbage collection to go wonky (very scientific I know)
+
+===========================================
+The TLDR List of major changes and updates:
+===========================================
+
+    - Updated to latest Forge to patch Log4j exploit
+    - Quests! Over 340 quests for you to explore...or not!  Completely optional :) (alt title: for the completionists out there!)
+    - Tough as Nails replaced with our own mod Simple Difficulty (Rough Life...ha get it?) bringing tons of features and enhancements to drinking and thirst, HUD elements, temperature mechanics, and more
+    - Taming system, mounts, pets, and saddles completely overhauled
+    - Spartan Weaponry received a full rebalance of all weapons, including melee, ranged, and throwing
+    - Armor received a full rebalance in how damage reduction is applied to locations and how that reduction is scaled between different tiers of armor
+    - All new underground generation revamping caves, caverns, mineshafts, vanilla dungeons, underground biomes, and more...
+    - Running into a wall too fast may hurt :)
+    - A lot of structures overhauled and revamped
+    - Battletowers reworked a ton, new spawn conditions, battletower golem AI overhauled, many more fixes.
+    - Lost City dimension completely overhauled
+    - Boss progression revamped
+    - Locks! That BattleTower loot might be a little harder to get into now >:)
+    - Fishing completely overhauled and reworked fishing mechanics and loot!
+    - All new parkour mechanics in the forms of new agility skills and new enchantments
+    - Nether overhaul, all new sub biomes with new plants and foliage variety + unique structures, building blocks, and unique resources
+    - New enchantments, plus many other enchantments reworked
+    - New mobs, mob reworks, new models and animations for many mobs
+    - Villages pimped out
+    - Many dungeon's reworked
+    - Antique Atlas revamped with all new textures and icons
+    - All new (and old) race rings, now only found in Lost Cities
+    - CARPET ON STAAAAAAAAAIRS!!!
+
+    - This changelog is likely incomplete, because after working over a year on this, I literally cannot remember every single thing we've done for 2.9...but it was a hell of a lot lol, so here's what I remember =P
+
+============
+Server Info:
+============
+
+    - Many performance fixes for servers, to the point where 2.9 server's should no longer require frequent restarts for clearing RAM/cache (restarts still recommended of course just in case but we ran a 2.9 server for 2 weeks straight with no restarts and zero issues, so i think that says somethin' at least =P massive credit to Charles for a ton of the insane performance fixes)
+
+    Server.Properties Settings:
+    - NEW: Server's MUST enable "enable-command-block".  Set this to TRUE in your server.properties or structures won't generate correctly and villager spawns will be missing.
+    - "allow-flight" must be TRUE for flying mounts, fairy ring, and more, or the server will wrongly kick players.
+    - "max-tick-time" must be -1 (that's negative 1) for large structures generating and for pregenning worlds.
+    - "difficulty" should be 3 (Hard) for the correct balance and features RLCraft is centered around.
+    
+
+
+======
+Added:
+======
+
+    - Better Questing!
+    - Classy Hats! To go with Quests of course :)
+    - Simple Difficulty! (ROUGH LIFE) Our replacement mod for Tough As Nails
+    - Quark!  New mobs, underground biomes, building blocks, tons of features and quality of life improvements
+    - YUNG's Better Caves!  All new cave and cavern generation
+    - YUNG's Better Mineshafts!  All new enhanced mineshaft generation, biome specific themes
+    - Better Nether
+    - Scape and r->>ERROR: INFORMATION REDACTED<<<
+    - Locks!
+    - Dynamic Trees for Defiled Lands
+    - SetBonus!  You'll have to experiment to see what armor sets give special bonuses
+    - Charm!
+    - Inspirations!
+    - Rustic!
+    - Fishing Made Better!
+    - Bountiful!
+    - Entity Culling
+    - Particle Culling
+    - RealBench! (oh yeah, it's back)
+    - Roguelike Dungeons - Fnar's Edition
+    - Macaw's Bridges
+    - Better Nether! Complete overhaul of the nether with new sub biomes and features!
+    - Callable Horses
+    - Shield Break!  Timed blocking and better shield mechanics
+    - Controlling
+    - Elenai Dodge
+    - Spartan HUD
+    - Astikor Carts
+    - Bed Break Begone
+    - Collision Damage
+    - Content Tweaker
+    - Giant Pla->>ERROR: INFORMATION REDACTED<<<
+    - Goo->>ERROR: INFORMATION REDACTED<<<
+    - MmmMmmMmmMmm
+    - Pigstep...yes we did
+    - New Dynamic Trees Traverse compatibility patch
+    - YUNG's Law
+    - Toast Control
+    - Fx Control!
+    - In Control!
+    - Mixin Compat
+    - Mixin Bootstrap
+    - Added LUM (Better Nether emissives), Animated Emissives for Ice n Fire flamed/iced weapons (including Spartan Weaponry), 
+    - And of course new structures!  Including a few special structures from the community!
+
+========
+Removed:
+========
+
+    - Removed Tough As Nails (This has been replaced with our own mod made specifically for RLCraft called Rough Life (aka Simple Difficulty)
+    - Removed Lost Souls (no longer needed)
+    - Removed Baubles HUD (replaced by Spartan HUD)
+    - Removed old Dynamic Trees Traverse compat patch (Replaced by the newer version of this mod)
+    - Removed Roguelike Dungeons (replaced by Roguelike Dungeons - Fnar's Edition)
+    - Removed Swing Through Grass (caused exploit)
+    - Removed Campfire (no longer needed)
+    - Removed Campfire Spit (no longer needed)
+    - Removed Dragon Steel :)
+    - Removed Herobrine
+
+==================
+Updates & Changes:
+==================
+
+Simple Difficulty (Rough Life):
+
+    - This now replaces Tough As Nails
+    - New UI overhaul with new animations for temperature globe indicator
+    - New models and textures for all items and blocks
+    - Outer ring of temperature globe indicates ambient temperature around you, inner circle of temperature globe indicates temperature of you the player
+    - Going in shade now slightly cools you off (you're welcome)
+    - Holding items in your hands can heat you up (for example, torches and magma blocks)
+    - Heat sources can stack now up to a limit of +3 heat, for example 1 fire source block adds +5 heat to the player, plus more heat for every extra fire block there is nearby, stopping at +8 heat in total.
+    - Dirty water now has a small chance of giving you parasites!  Better filter that water :)
+    - New Iron Canteen! Has 6 uses.
+    - New Dragon Skull Canteen!  Crafted with dragon skull and dragon heart, has 8 uses, and auto-purifies dirty water.
+    - Potions now refill thirst.
+    - Many edibles like apples and watermelon can now refill a little thirst
+    - Soups and stews refill a decent portion of thirst!
+    - Juices and purified water are stackable up to 8!
+    - Campfire spit now included, holds up to 8 food items and provides XP now
+    - New Frost Rods and Frost Powder added, used for potions and heating/cooling coils, dropped from Frost Lycanite Mobs
+    - Healing salve now requires Aloe Vera (rustic)
+    - Jelled slime armor as been replaced with the new ice armor (made with ice chunks)
+    - Lowered chance for mobs to drop bandage and healing items from 1 in 10 to 1 in 25
+
+Lycanites:
+
+    New Features:
+    - New Tameable Mob: Necrovore
+    - New Summonable Mob: Tpumpkyn
+    - New Farmable Mob: Bobeko (replaces the Yeti)
+    - New Tameable Mob: Balayang (replaces the Manticore)
+    - New Mountable Mob: Grell
+    - New Summonable Mob: Vorach
+    - New Summonable Mob: Grigori
+    - Remastered Mob: Ignibus
+    - New Mob Event: Aberrant Assimilation
+    - New Models: Maka, Maka Alpha, Jouste, Jouste Alpha, Arisaur, Yale, Aspid, Vespid, Vespid Queen
+    - New equipment parts!
+    - Crafted equipment now has sharpness and mana!
+    - New Block Added: Equipment Station - For repairing crafted equipment and recharging their mana
+    - New Dungeon and Block Theme Added: The Ashen Mausoleum
+    - Several new animated Charge Item Textures.
+    - Many new projectiles have enhanced effects
+    - Several new Spawn Egg Item Textures.
+    - Vespid Hive Building is finally back and has been upgraded! Vespid Hives now produce Honey and the Vespid Queen can become friendly if you feed her enough insect treats where her swarm will no longer attack you... mostly...
+    - Soul Contracts added for trading Soulbound Pets!
+
+    Lycanite Boss and Boss Progression Rebalance:
+	
+    Rahovart:
+    - Base Health decreased to 3000 (from 4000)
+    - Defense increased to 4 (from 2)
+    - Armor will remain 0
+    - Experience drop decreased to 4000 (from 10000)
+    - Nether Star drops decreased 1-2 (from 1-8)
+    - Demonic Soul Cube requires Biotite to craft
+    - Drops Demonic Hearts on death
+    - Rahovart's Arena can now only be summoned in the Nether.
+
+    Asmodeus:
+    - The Asmodeus boss fight has been improved and is now more difficult due to a new hitscan attack and minion changes.
+    - Base Health will remain 4000
+    - Defense increased to 4 (from 2)
+    - Armor increased to 10 (from 0)
+    - Experience drop decreased to 8000 (from 10000)
+    - Nether Star drops decreased 1-3 (from 1-8)
+    - Aberrant Soulcube requires Demonic Hearts to craft
+    - Drops Corrupted Skulls on death
+    - Asmodeus's Arena can now only be summoned in the End and at least 500 blocks away from the exit portal.
+
+    Amalgalich:
+    - BaseHealth increased to 5000 (from 4000)
+    - Defense increased to 4 (from 2)
+    - Armor increased to 20 (from 0)
+    - Experience drop increased to 12000 (from 10000)
+    - Nether Star drops decreased 1-4 (from 1-8)
+    - Removed Beast Soulstone drop
+    - Removed Aberration Soulstone drop
+    - Undead Soulcube requires Corrupted Skulls to craft
+    - Amalgalich's Arena can now only be summoned in the Lost Cities.
+	
+    Lycanite Taming Revamp:
+    - Rank 2 knowledge is now required to tame and summon creatures
+    - Rank 2 knowledge is now obtained by killing (25 knowledge), feeding (50 knowledge) , breeding (200 knowledge), or using the Soulgazer on creatures (100 knowledge).
+    - 1000 knowledge of a creature must be reached to obtain Rank 2 knowledge
+    - Rank 1 knowledge is still obtained by discovering the creature initially
+    - Knowledge cannot be obtained from already tamed mounts/pets
+    - Each creature requires a varying amount of Reputation to tame once Rank 2 Knowledge is obtained
+    - Creatures become friendly after gaining enough reputation.  Reputation can be lost by attacking the creature, in which case they will become hostile again
+    - Various Treat item crafting recipes have been adjusted and rebalanced.
+    - Added creature type saddles, for example, a Roc, being an Avian creature, will require an Avian saddle
+
+    Lycanite Forges building requirements increased:
+    - Level 1 Forge = 12 Building (from 6)
+    - Level 2 Forge = 18 Building (from 12)
+    - Level 3 Forge = 24 Building (from 18)
+
+    Lycanite Creature Balance Changes:
+    - Lycanite Mob armor and defense reworked, the following mobs now have natural armor: Asmodeus, Amalgalich, Aegis, Archvile, Calpod, Clink, Concapede, Crusk, Geonach, Erepede, Eyewig, Geken, Gorger, Gorgomite, Herma, Ignibus, Khalk, Krake, Lobber, Lurker, Morock, Quetzodracl, Roa, Salamander, Serpix, Sutiramu, Vapula, Volcan, Vorach, Xaphan, Zoataur
+    - Blaze Rod and Blaze Powder drops rebalanced, removed from many creatures like tremors and xaphans where it didn't make sense
+    - Frost Rod and Frost Powder added to many frost Lycanite mobs
+    - Ender Pearl drops rebalanced as well, removed from things like Wraamon
+    - Bone drops removed from many mobs where it didn't make sense
+    - All other drops from Lycanite Mobs got a full rebalance
+    - A couple mob's health rebalanced like the Argus that now has 50 health (was 20)
+    - Summon costs for creatures were rebalanced
+    - Bag sizes for mounts/pets were rebalanced
+	
+    In Depth Lycanite Mob Changes:
+
+    Abaia:
+    - summoning cost: 4 → 1
+    - glowstone drop: 1-8 → 1-6
+
+    Aegis:
+    - defense: 3 → 2
+    - armor: 0 → 8
+    - damage: 4 → 3
+    - summoning cost: 4 → 2
+
+    Afrit:
+    - changed drop: blaze rod → blaze powder
+
+    Archville:
+    - armor:0 → 4
+    - summoning cost: 6 → 5
+
+    Argus:
+    - health: 20 → 50
+    - damage: 4 → 8
+    - summoncost: 2 → 5
+
+    Arix:
+    - now drops frost powder: 1-2 25%
+
+    Aspid:
+    - removed from mushroom island
+    - spawn weight decreased: 16 → 12
+
+    Banshee:
+    - health: 25 → 20
+    - soul sand drop: 1-6 100% → 1-3 50%
+    - removed ender pearl drop
+    - added soul powder (quark): 1-1 5%
+    - ender eye drop: 10% → 5%
+
+    Behemoth:
+    - spawn weight reduced: 4 → 2
+    - health: 40 → 100
+    - defense: 2 → 3
+    - speed: 24 → 28
+    - skull drop: 25% → 20%
+
+    Beholder:
+    - element: removed gravity, added arcane
+    - ghast tear drop: 25% → 20%
+    - gunpowder drop: 1-3 50% → 1-4 75%
+    - glowstone drop: 4-16 → 2-6
+    - ender eye drop: 1-2 → 1-1
+
+    Calpod:
+    - armor: 0 → 4
+
+    Cinder:
+    - summoning cost: 2 → 3
+
+    Clink:
+    - armor:0 → 4
+    - element: gravity → arcane
+
+    Cockatrice:
+    - element: removed gravity, added arcane
+    - prismarine crystal drop: 75% → 50%
+
+    Conba:
+    - added spawn: animal
+    - element: gravity → arcane
+
+    Concapede:
+    - creature type: arthropod → insect
+    - spawn weight: 1 → 4
+    - armor: 0 → 4
+
+    Crusk:
+    - defense: 3 → 2
+    - armor: 0 → 8
+
+    Cryptkeeper:
+    - element: gravity → arcane
+
+    Darkling:
+    - creature type: arthropod → insect
+    - ender pearl drop: 100% → 10%
+
+    Dawon:
+    - element: gravity → arcane
+
+    Djinn:
+    - summoning cost: 2 → 3
+    - feather drop: 50% → 25%
+    - removed chorus fruit drop
+    - added cloudsbluff (rustic) drop: 1-4 5%
+
+    Eechetik:
+    - slime balls drop: 100% → 50%
+    - brown mushroom drop: 1-1 100% → 1-2 75%
+    - red mushroom drop: 2-3 100% → 1-3 75%
+
+    Epion:
+    - spawner: added "sky_deadly"
+    - element: void → shadow
+
+    Erepede:
+    - armor: 0 → 4
+    - element: gravity → arcane
+
+    Ettin:
+    - creature type: brute → anthronian
+
+    Eyewig:
+    - creature type: arthropod → insect
+    - armor: 0 → 4
+
+    Frostweaver:
+    - creature type: arthropod → arachnid
+
+    Geist:
+    - removed ender pearl drop
+
+    Geken:
+    - creature type: beast → reptile
+    - armor: 0 → 8
+    - added drop: algae(aquaculture) 1-3 100%
+
+    Geonach:
+    - defense: 3 → 2
+    - armor: 0 → 8
+    - summoning cost: 2 → 3
+
+    Gorger:
+    - defense: 3 → 2
+    - armor: 0 → 8
+
+    Gorgomite:
+    - creature type: arthropod → insect
+    - armor: 0 → 4
+
+    Grue:
+    - ender pearl: 1-2 → 1-1
+    - obsidian: 50% → 25%
+
+    Herma:
+    - creature type: arthropod → aquatic
+    - defense: 3 → 2
+    - armor: 0 → 8
+
+    Ignibus:
+    - defense: 3 → 2
+    - armor: 0 → 12
+    - changed drop: scorch fire charge → prime ember charge
+
+    Ika:
+    - creature type: aquatic → worm
+
+    Ioray:
+    - speed: 36 → 42
+
+    Jengu:
+    - speed: 22 → 36
+    - summoning cost: 2 → 3
+
+    Jouste.
+    - creature type: arthropod → insect
+    - armor: 0 → 4
+
+    Jouste alpha:
+    - creature type: arthropod → insect
+    - armor: 0 → 4
+
+    Khalk:
+    - creature type: beast → reptile
+    - spawn weight: 1 → 2
+    - defense: 5 → 4
+    - armor: 0 → 16
+
+    Krake:
+    - armor: 0 → 4
+
+    Lobber:
+    - creature typo: brute → golem
+    - defense: 3 → 2
+    - armor: 0 → 8
+    - removed blaze powder drop
+    - added blaze rod drop: 1-2 20%
+
+    Lurker:
+    - creature type: arthropod → insect
+    - armor: 0 → 4
+    - element: removed shadow, added chaos
+
+    Maug:
+    - changed drop: leather → frosty fur
+
+    Morock:
+    - armor: 0 → 8
+    - removed bone drop
+    - prismarine shard drop: 6-12 → 4-12
+    - prismarine crystal drop: 3-6 → 2-4
+
+    Pixen:
+    - removed spawner: "snowy"
+    - glowstone drop: 1-8 → 1-4
+
+    Quetzodracl
+    - armor:0 → 8
+    - prismarine shard drop: 6-12 → 4-12
+    - prismarine crystal drop: 3-6 → 2-4
+
+    Raiko:
+    - bone drop: 1-3 → 1-2
+    - added drop: fish bones (aquaculture) 1-1 5% 
+
+    Reaper:
+    - reduced spawnGroupMax: 3 → 1
+    - summoning cost: 6 → 4
+    - can naturally spawn in Spooky biomes now
+
+    Reiver:
+    - added frost rod drop: 1-1 10%
+
+    Roc:
+    - bone drop: 1-3 → 1-2
+
+    Salamander:
+    - creature type: beast → amphibian
+    - armor: 0 → 4
+    - removed blaze rod drop
+
+    Serpix:
+    - defense: 3 → 2
+    - armor: 0 → 8
+    - added frost powder drop: 3-6 100%
+
+    Shade:
+    - ender pearl drop: 100% → 50%
+
+    Spectre:
+    - ender pearl drop: 100% → 50%
+    - ender eye drop: 50% → 25%
+    - chorus fruit drop: 1-10 → 1-6
+
+    Sutiramu:
+    - creature type: arthropod → arachnid
+    - armor:0 → 4
+    - element: removed gravity, added arcane
+
+    Sylph:
+    - removed glowstone drop
+    - added silver nugget drop: 1-4 50% 
+
+    Tarantula:
+    - creature type: arthropod → arachnid
+
+    Thresher:
+    - creature type: aquatic → reptile
+
+    Tremor:
+    - firework charge drop: 1-1 → 1-2
+    - removed blaze powder and blaze rod drops
+
+    Triffid:
+    - changed drop: log → vine 
+
+    Troll:
+    - creature type: brute → arthronian
+    - spawn weight: 4 → 5
+    - summoning cost: 6 → 4
+    - changed drop: log → stone
+    - removed bone and leather drops
+
+    Uvaraptor:
+    - bone drop: 1-3 → 1-2
+
+    Vapula:
+    - defense: 3 → 2
+    - armor: 0 → 8
+    - element: gravity → arcane
+
+    Ventoraptor:
+    - bone drop: 1-3 → 1-2
+
+    Vespid:
+    - element type: arthropod → insect
+    - spawn weight: 8 → 2
+    - spawn group minimum: 3 → 1
+    - spawn group maximum: 6 → 5
+    - spawns in light: false → true
+    - clay drop: 1-16 → 1-8
+    - propolis drop: 1-4 → 1-3
+    - veswax drop: 1-4 → 1-3
+
+    Vespid queen: 
+    - Creature type: arthropod → insect
+    - spawn weight: 2 → 1
+
+    Volcan:
+    - spawn weight: 8 → 4
+    - armor: 0 → 4
+    - damage: 2 → 4
+
+    Wendigo:
+    - added frost rod drop: 1-2 20%
+    - removed frosty fur drop
+    - added bone drop: 1-3 100%
+
+    Wildkin:
+    - creature type: brute → arthronian
+
+    Wisp:
+    - glowstone drop: 100% → 75%
+
+    Wraamon:
+    - removed ender pearl and rabbit meat drops
+    - chorus fruit drop: 1-3 50% → 1-2 20%
+
+    Xaphan:
+    - armor: 0 → 4
+    - slime ball drop: 1-2 100% → 1-3 50%
+    - bone drop: 100% → 50%
+    - removed blaze rod drop
+
+    Bobeko (old Yeti):
+    - no longer summonable
+    - frosty fur drop: 1-2 25% → 1-3 100%
+
+    Zephyr:
+    - glowstone drop: 1-8 → 1-6
+    - gunpowder drop: 1-3 → 1-4
+
+    Zoataur:
+    - defense: 4 → 3
+    - armor: 0 → 12
+    - removed bone and leather drops
+    - prismarine shard drop: 6-12 → 4-12
+    - prismarine crystal drop: 3-6 → 2-4
+
+	
+    More Tweaks:
+    - Soulstones now requires magic skill: 8 (to match summoning staffs)
+    - Iron Paxel replaced with Steel Paxel and uses Steel ingots to craft
+    - Lowered spawn chance of Djinn
+    - Concapede will spawn in all Jungle type biomes
+    - Fixed Uvaraptor not spawning in all Jungle type biomes
+    - Fixed Ventoraptors not spawning in all Plains type biomes
+    - Fixed Reapers not spawning naturally in Spooky type biomes
+    - Fixed Pixen not spawning in all Forest type biomes, removed Pixen's from Snowy type biomes
+    - Removed Lycanite Staves (replaced with new lycanite mob parts)
+    - Acid now creates Diorite when mixing with water.
+    - Poison now creates Andesite when mixing with water.
+    - Acid now destroys items.
+    - Mobs spawned from Lava, Acid, Poison and Ooze will no longer drop items unless they are dealt player damage in some form.
+    - Overhauled how tamed pets credit their owners when getting kills and dealing damage.
+    - Removed the speed boost pets get when following their owner as it was making for buggy looking behavior.
+    - Overhauled the loot tables of each dungeon.
+    - The dungeon crystal light blocks now all have a subtle animation.
+    - The Soulgazer will now display a tooltip and durability bar to reflect a player's study cooldown time.
+    - Several item descriptions have been updated.
+    - Mobs hunting other mobs will now path less frequently to help server performance.
+    - Area harvesting with Equipment will no longer mass destroy blocks that have Block Entities like Chests, Furnaces, etc.
+    - Lycanite mobs should no longer attack vindicators, illusioners, or evokers
+    - Quills and Aether charges added to Order element group
+    - Aegis now take double damage when in attack mode.
+    - Bag sizes of various pets and mounts have been changed.
+    - Jengu now move at double speed in water, 1.5X when in rain.
+    - Improved the spawning accuracy of the fishing spawner.
+    - Mycelium is no longer craftable
+    - Undead soulstone can now be used to get pets
+    - Halved the amount of xp needed for leveling equipment parts
+    - Added new projectile particles and animations
+    -Lycanite Mob Equipment Parts rebalance (some parts are new but got some changes):
+Spriggan Heart summoning cooldown changed to level 1: 15 second cooldown, level 2: 10 second cooldown, level 3: 5 second cooldown
+Darkling Skull leech duration changed to level 1: 1 second, level 2: 1.5 seconds, level 3: 2 seconds
+Grue Claw level 3 invisibility buff lowered to 3 seconds (from 4)
+Reaper Claw spectral bolt projectile cooldown now level 1: 3 seconds, level 2: 2 seconds, level 3: 1 second
+Banshee Eye fear effect duration now level 1: 1 second, level 2: 2 seconds, level 3: 3 seconds
+Xaphan spine: effect duration now: level 1: 1s, level 2: 2s, level 3: 3s; effect strength: lv1 and 2: 1, level 3: 2
+Ioray stinger: projectile cooldown change: level 1: 6s, level 2: 4s, level 3: 2s
+Apollyon claw strength duration changed: lv1: 1s; lv: 2s, lv:3s
+Argus tail effect duration: lv1: 1s, lv2: 2s, lv3:3s. Projectile cooldown: 1s
+Clink scythe: projectile cooldown: 0.25s
+Conba butt: projectile cooldown: level 1: 1.2s
+Stryder heart: projectile cooldown: level 1: 1.2s
+Eyewig eye: projectile cooldown: level 1: 1.2s
+Gamma sphere: projectile cooldown: level 1: 2.25s, level 2: 1.5s, level 3 :0.75s
+Lacedon head: weight effect duration: lv1: 3s, lv3: 5s
+Remobra wing: poison strength: lv3: 2
+Serpix mandible: projectile cooldown: lv1: 0.75s, lv2: 0.5s, lv3: 0.25s
+Spriggan root: poison duration: level2: 3.5s, level3: 4s
+Ventoraptor skull: effect duration: level 2: 2.5s, level 3: 3s
+Vespid stinger: level 1: poison strength: 1 duration: 3s; levels 2 and 3: poison strength: 2
+Warg skull: effect duration: level 3: 1s
+Wendigo antler: projectile cooldown: lv1: 1.5s; lv2: 1s; lv3: 0.5s
+Djinn cloud: effect duration lv3: 2s
+    - Spectre's from Void (void spawner) now respects light levels
+
+	
+    Fixes:
+    - Fixed a bug where pressing the dismount and sneak keys at the same time could result in players becoming stuck.
+    - Fixed a crash caused by laser projectiles in some cases.
+    - Fixed a crash when parsing certain configs when the client is set to certain languages.
+    - Fixed a client side memory leak, this takes a long time to become significant.
+    - Fixed server-side crash caused by Spriggan Heart when used with no Summoning Sets.
+    - Large Mob movement performance optimisations, this should help reduce their impact on servers.
+    - Fixed Concapede Behaviour.
+    - Fixed the Darkness spawner spawning mobs in too high a light level.
+    - Fixed mounts/pets dealing more damage when holding certain weapons
+    - Fixed mounts/pets/summons not being attacked back when attacking other mobs (especially vanilla mobs)
+    - Fixed dupe bug with acid and water creating infinite gravel
+    - Looting enchants should work on Lycanite Mobs now
+    - Removed charges + bottle = bottle o'enchanting
+    - Fixed items that are inside containers being deleted when the container block is broken
+    - Fixed dupe using lycanites pets inventory
+    - Fixed mounted combat
+    - Shields no longer block projectiles 360º
+    - Shields no longer block projectiles that are not supposed to be able to be blocked (ex. Wisp Lightball, as this passes through everything, so don't get hit!)
+    - Fixed Vespid Hives
+    - Fixed several memory leaks
+    - Fixed boss altars removing bedrock
+    - Fixed many projectiles having "ripper" quality meaning they passed through shields and hit you anyway and were unblockable.  Fixes not being able to block projectiles from: Reaper, Xapahans, Grell, Cinders, Reavers, Astaroths, Quill Beasts, and Serpix's
+    - Prime Ember, Aetherwave, Lightball, and Throwing Scythe's will still have "ripper", these are fired from: Sylphs, Clinks, Wisps, and Ignibus
+
+
+Armor Rebalance!:
+    - Armor has been rescaled accordingly so Dragon armor, Tide Guardian armor, and Golem armor no longer all hit the 80% damage reduction cap.  Previously, there was no difference between these armors because they gave you SO much armor, exceeding the reduction cap.
+    - Every armor/armor toughness multiplier and offset for Head, Body, Legs, and Feet locations (First Aid) have been modified and rebalanced
+
+    Stats (Multiplier = armor point multiplier per location, Offset = starting armor points:
+   - Toughness Multiplier is now 1.0 (was 3.0) across all locations
+   - Head Armor Multiplier is now 4.0 (was 6.0)
+   - Head Armor Offset is now 3.0 (was 1.0)
+   - Chest Armor Multiplier is now 2.0 (was 2.5)
+   - Chest Armor Offset is now 3.0 (was 0.0)
+   - Legs Armor Multiplier is now 2.0 (was 3.0)
+   - Legs Armor Offset is now 4.0 (was 0.0)
+   - Feet Armor Multiplier is now 3.0 (was 6.0)
+   - Feet Armor Offset is now 3.0 (was 0.0)
+
+   - Overall, multipliers were lowered, so armor scales more smoothly and doesn't hit the 80% reduction cap too quickly, while offsets were raised, making early game armor like leather to armor feel exactly the same, so this mainly affects the later tier armors.
+
+    Example:
+   - RLCraft 2.8.2 Head Armor, Multiplier and Offset, was 6 + 1 giving us 7.  Now in RLCraft v2.9, it is 4 + 3, which still gives us 7, meaning Leather armor has not changed, and is still 7 armor points, but won't scale as effectively with each tier of armor as the multiplier is now only 4.
+    - "What does this mean for headshots?" Glad you asked.
+
+    Helmets in 2.8.2:
+    - Leather Helmet = 7 Locational Armor
+    - Chainmail/Iron Helmet = 13 Locational Armor
+    - Diamond Helmet = 19 Locational Armor
+    - Dragon/Tide Helmet = 25 Locational Armor
+    - Golem Helmet = 31 Locational Armor
+
+    How many arrows to the head does it take from a Skeleton to kill you in 2.8.2:
+    - Leather Helmet = 2 shots
+    - Chainmail/Iron Helmet = 3 shots
+    - Diamond Helmet = 6 shots
+    - Dragon/Tide Helmet = 8 shots
+    - Golem Helmet = 8 shots
+
+    Helmets in 2.9:
+    - Leather Helmet = 7 Locational Armor
+    - Chainmail/Iron Helmet = 11 Locational Armor
+    - Diamond Helmet = 15 Locational Armor
+    - Dragon/Tide Helmet = 19 Locational Armor
+    - Golem Helmet = 23 Locational Armor
+
+    How many arrows to the head does it take from a Skeleton to kill you in 2.9:
+    - Leather Helmet = 2 shots
+    - Chainmail/Iron Helmet = 3 shots
+    - Diamond Helmet = 4 shots
+    - Dragon/Tide Helmet = 6 shots
+    - Golem Helmet = 8 shots
+
+    - These were unenchanted with no qualities.  As you can see, the only armors that ended up changing given these testing parameters, were Diamond, Dragon and Tide Guarding armor.  Hope this helps understand the armor rebalance a bit better.
+
+Quark:
+    - All new underground biomes
+    - All new building blocks from new stone deposits including Marble, Slate, Jasper, and Limestone
+    - All new stone deposit generation
+    - Biotite added to the end dimension, only generating when Ender Dragon is defeated
+    - Dyed planks
+    - Double Doors open together
+    - Crystal Caves
+    - Blossom tree
+    - New item frames, item frames can be placed on floors now
+    - New chests
+    - Tons of new decorational blocks
+    - Ancient Tomes
+    - Ancient tomes need to be held in the offhand and right clicked to merge with the item in your main hand, as the anvil recipe is removed (RLTweaker)
+    - Crabs LEL "it's f#$*&ing RAWWW!
+    - New Archeologist can be found underground with unique trades
+    - New Mob: Stonelings, found deep underground (can be tamed with diamonds)
+    - Heart of Diamond dropped from Stonelings, used in important recipes. You can also use it on a stone block to get a tamed Stoneling!
+    - New generations like revamping vanilla dungeons, adding pirate ships, etc
+    - Animals eat food from the ground
+    - Items on the ground flash before despawning
+    - Runes to color your enchanted tools!
+    - Parrot eggs (use beetroot seeds)
+    - Chests in boats!
+    - Shear chickens for feathers
+    - Enderman >>>ERROR: INFORMATION REDACTED<<<
+    - Sheep with wool now have armor
+    - New mob: foxhound, found in the nether (can be tamed with coal)
+    - You can place blaze rods!
+
+Charm:
+    - Villages are now decorated with new blocks and interiors are much more lively
+    - Watch out!  Illusioners and Vindicators have been seen roaming in r->>>ERROR: MESSAGE LOST<<<
+    - Crates, aka mini-shulker boxes
+    - Barrels
+    - New music discs
+    - New enchantments, potions, and curses
+    - Lanterns and decorations
+    - New Mob: Spectre, don't let this ghost touch you :)
+    - Composter
+    - Abandoned crates underground you can break to get items
+    - Suspicious Soup...HMMM...
+
+Inspirations:
+    - CARPETS ON STAIRS BOI
+    - New unique bookshelves
+    - Tons of decorative items and blocks
+    - Cauldron overhaul!  Cauldrons can be used to brew some potions, stews, and soups now.  Can also be used for purifying water.
+    - Cauldrons act as early game brewing, can only brew vanilla potions, and requires double the ingredients to brew correctly.
+    - Barometer >:|
+    - and photometer!
+    - Anvil can break and smash certain blocks and items
+    - Squids can be milked to give ink using a bottle without killing them
+
+Rustic:
+    - Honey (from Vespids)
+    - Brewing and Alchemy
+    - New plants and trees
+    - Barrels, Cabinets, and more storage options
+    - Many decorational blocks, lanterns, chandeliers, etc
+    - New wine's and elixirs, alternative to brewing through the Farming skill tree (Reskillable).
+    - New crops, grapes, hot chili peppers, and tomatoes
+    - Many of the new unique rustic crops and herbs cannot be bonemealed due to how powerful they are!
+
+Astikor Carts:
+    - Carts for item and entity transportation pullable by mounts including some Lycanite mounts
+    - Can also be used for plowing
+
+Callable Horses:
+    - Allows you to summon a bound horse mount to your location without needing to soulbind like in Lycanites (warning: they are not immortal)
+
+ClassyHats:
+    - Over 100 custom-made-for-RLCraft cosmetic hats given as quest rewards
+    - Phantom prism now used to craft the Phantom thread, which can be used to turn armor invisible for cosmetic customization
+
+CollisionDamage:
+    - Oops, tripped, fell, died, git gud
+
+EntityCulling and ParticleCulling:
+   - Prevents entities and particles that can’t be seen from being rendered, greatly improving performance.
+    - Fully compatible with Optifine and Shaders
+
+Macaw’s Bridges:
+    - Bridges, bridges, bridges!
+    - Tons of custom bridges for all your building needs
+
+RealBench:
+    - The return of the king! Dupe bugs have been patched  (RLTweaker), and now RealBench has been readded
+    - Keeps crafting materials in the workbench when you leave it
+    - Renders crafting materials above the workbench in-world
+
+ShieldBreak:
+    - Shields can now only withstand up to a certain amount of damage based on their durability, after which the shield will be knocked down and given a cooldown for usage
+    - Shields are now more responsive, and actually start protecting you when the model shows it being fully raised
+    - Attacks can now be parried if the shield is raised right before it gets hit, knocking back the enemy further and ignoring the amount of damage that would have been done
+    - Weapons like axes and halberds have a chance to break the shield and cause a large cooldown on it regardless of damage or parrying
+    - Shields can no longer be held up indefinitely against very fast spammy attacks (ex. Cinder fire, Vapula crystals, Astaroth laser beams, etc.  Don't get hit!)
+
+BetterCaves:
+    - Completely revamps cave generation, resulting in large caverns, underground water and lava lakes, and various types of satisfying tunnel systems
+
+BetterMineshafts:
+    - Completely revamps mineshaft generation, new mineshaft designs, different mineshafts based on biome, and different mineshaft materials
+
+BedBreakBegone:
+    - Patches issues with beds randomly giving an obstruction message on respawning
+
+Bountiful:
+    - Village-based bounty system
+    - Bounty boards are located at villages and structures that have villagers, every so often villagers will post bounties requesting you do to something for them
+    - Various bounties will give random rewards based on the value and rarity of the bounty
+
+Locks:
+    - Chests can be randomly locked when found, though is not an indicator as to the quality of the loot inside
+    - Certain chests in specific dungeons may be always locked, chests containing a nether star will always be locked
+    - Lockpicks can be crafted and used to pick locks open.  There is a hidden mechanic that adds a bit of skill to this, but I'll leave that up to you to discover.
+    - Locks can be enchanted with various effects, have fun finding out what they do :)
+
+Elenai Dodge:
+    - New movement system, including dodging, wall jumping, and ledge grabbing (funnily enough, these same mechanics come from another mod of mine RLCoop for Unreal)
+    - All 3 new mechanics are unlocked in the Agility skill tree in Reskillable
+
+Forgotten Items:
+    - Custom remodeled and retextured Golem armor for RLCraft
+
+BetterQuesting (And BQTweaker, expansions, etc):
+    - Over 340 custom quests across 18 chapters
+    - Serves as a guide for beginners as well as a goal for completionists
+    - Rewards only cosmetic hats, does not lock any game progress behind quests, and is not required to be followed to play the pack
+    - Many custom made quest themes specifically for RLCraft
+    - Completely custom written, designed, and language-file compatible
+
+RLTweaker:
+    - Several performance tweaks and enhancements, including worldgen cleanup, collision modifications, particle threading, and a lot more I definitely already forgot lol
+    - All Zombies now break doors
+    - Mobs more reliably walk through open doors (oh no)
+    - Brings back the correct damage tilt effect from older versions of Minecraft! POG!
+    - Witches can now throw a variety of funny potions! (be careful!)
+    - Lightning is no longer a global sound!  Lightning can be heard up to 100 chunks away
+    - Ender Dragon killed sound only plays in The End now
+    - End Portal activation sound is no longer global
+    - fix lots of things omg (mod specific changes will be listed with (RLTweaker) next to them)
+
+So Many Enchantments:
+    - Advanced Protection fixed, no longer applies to body locations it is not on which caused it to stack and multiply several times over
+    - Inner Beserk fixed, now applies to the correct item
+    - Fix for advanced looting, advanced lure, and advanced luck of the sea
+    - Fix for Adept, will no longer cause mobs to drop XP that are not supposed to
+    - Fixed Rune: Arrow Piercing
+    - Fixed Reinforced sharpness
+    - Fixed Flame enchantments duration. Lesser Flame: 2s; Advanced Flame: 15s; Supreme Flame: 30s
+    - Sweeping Edge radius reworked
+    - Disabled Difficulty's Endowment (redundant enchantment for RLCraft)
+    - Disabled Combat Veterency (broken enchantment)
+    - Disabled Rune: Resurrection (broken enchantment)
+    - Disabled Subject Mathematics
+    - Removed Splitshot (this is replaced with Multishot now)
+    - Lifesteal max is now 2 (from 4)
+    - Natural Blocking max is now 2 (from 3)
+    - Swifter Slashes max is now 3 (from 5)
+    - Unsheathing max is now 1 (from 2, as 2 did nothing)
+    - Evasion max is now 1 (from 3)
+    - Parry max is now 1 (from 3)
+    - Pushing max is now 1 (from 2)
+    - Strafe max is now 4 (from 6)
+    - Empowered defense max is 2 (from 4)
+
+Better Survival:
+    - Multishot max is 4 (from 3)
+    - Added tooltip descriptions of weapons
+    - Range enchantment isn’t as powerful (RLTweaker)
+    - Adden myrmex and dragonbone nunchaku recipes
+    - Added steel weapons variants
+
+Switch Bow:
+    - Fixed a bunch of arrow exploits and bugs
+    - Lightning effect performance fixed for Lightning Storm arrows
+    - Scope enchant fixed
+    - Fixed hopper exploit
+    - Fixed burial arrows breaking blocks they shouldn't
+    - Changed recipes of some arrows such as the burial arrow, frost arrow, etc.
+
+Realistic Torches:
+    - Matchbox recipe now uses ore dictionary for any variant of wooden slabs
+    - Lit torches now last 8 hours in real time (was 4 hours)
+
+Bountiful Baubles:
+    - Added additional messages for wormhole requests (accept/decline, failure reasons, etc)
+    - Fixed weird crash with wormhole potions
+    - Fixed wormhole/recall potions behaving weirdly and glitching the player when used while on a mount
+    - Magic Mirror is now usable! (requires magic:32)
+    - Added more items to the disintegration tablet silt recipes
+
+Wolf Armor & Storage:
+    - Wolf armor can now be equipped by right clicking an unarmored wolf with the item
+    - Configuration is now synced between the client and the server
+    - Fixed an issue where wolf chest contents would remain in their inventory when the chest is removed
+    - Fixed an issue with armor rendering half values backwards in the wolf's inventory
+    - Removed the old armored wolf entity.
+
+First Aid:
+    - Armor values applied by non-armor gear (such as baubles) are now applied correctly and globally to all body parts
+    - Collateral damage now only takes armor from hit location into account (example, getting hit in the legs, but damage is transferred to chest, as leg hearts are already empty, will only take leg armor into account)
+    - Enchantments no longer protect you from absolute damage sources (example, fall damage, fire, etc)
+    - Color range on paper doll enhanced to be more accurate, red color now indicates below 25% health, and a limb that loses all hearts will now black out entirely similar to an empty heart container
+    - Recipes for healing items like bandage modified
+
+ItemPhysic:
+    - HOLY!@#$ YOU CAN NOW PICKUP ITEMS THROUGH GRAAAAAAAAASSSSSSSSSSSSSSSSSSS
+    - Fixed items not being visible on soul sand
+    - Items rotate slower when stuck in cobwebs
+    - Added several items to burn list that should now be burnable in lava
+
+Trinkets & Baubles:
+
+    New Features:
+    - New Race Rings! Dragon, Elf, Faelis, Goblin, Titan
+    - New mana system!
+    - New transformation foods and potions for the new races
+    - New baubles: Arcing Orb, Faelis Claw, Teddy Bear
+    - Arcing Orb grants dodge ability, can stun enemies, and gives you a LASER!
+    - Faelis Claw increases attack damage and causes bleeding
+    - Teddy Bear provides a buff upon sleeping, and makes player immune to fear and insomnia from Lycanites
+    - New items, Mana Candy and Mana Crystals used in crafting and restoring mana
+    - Race transformation can now be made permanent through the use of the foods
+    - Each race now has a whole new set of attributes like different speeds, health, attack damages, jump heights, and more
+    - New recipes for trinkets like the ring of enchanted eyes, wither ring, shield of honor, etc.
+
+    Changes:
+    - Dragon's Eye bauble can only be crafted now with a stage 5 fire dragon skull (and ender dragon head)
+    - Enderqueen's Crown now gives +1 reach, and has a 1 in 20 chance of spawning an endermen/ignoring damage (from 1 in 50 originally)
+    - Shield Of Honor now ignores damage every 5 hits you take (was 10), gives you Resistance 1 (does not stack), and has a 10% chance of ignoring fatal headshots (was 2%)
+    - Ring Of Enchanted Eyes now gives +1 to Luck
+    - Polarized Stone uses mana now instead of hunger
+    - Stone Of Greater Inertia now multiplies your overall speed by 1.5x (50% boost)
+    - Stone of the Sea recipe changed to use Neptunium now
+    - Poison stone recipe changed to use Bezoar now
+    - Fairy ring properly scales health now via percentage based on your max health
+    - Dwarf ring properly scales health now via percentage based on your max health
+    - Damage reduction for races like Fairy ring now works properly
+    - Poison stone bonus reduced from 100% to 50%
+    - Stone of the sea no longer stacks with depth strider
+    - Permanent races from race foods are not lost on death
+    - Removed restoration potion and added restoration serum
+
+Set Bonus:
+    >>>INFORMATION REDACTED<<<
+    - Sorry!  The information you seek seems to have been deleted...guess you'll just have to find out on your own :)
+
+Level Up Reloaded:
+    - Stealth has been reworked! (RLTweaker)
+    - Stealth now also works on lycanites mobs (not bosses) (RLTweaker)
+    - Pimped out the treasure skill in level up with more items in loot tables for digging
+    - Fixed crafting xp dupes
+    - Fixed some tooltips having the wrong percentage
+    - Wood Cutting skill now has 20 levels and has been made much cheaper since this was learned to only be doing 4% per level
+
+Mo'Bends:
+    - New update enhanced performance with many optimizations, overhauls all animations, and adds new ones for wolves, spiders, and more
+    - Enabled player mo'bend animations now that we made many mods with attachables compatible
+    - Caestus is now set to use the punching animation
+
+Mob Spawners:
+    - Block hardness increased from 5 to 15 (mining a mob spawner with lower tier tools will be slower, though a gold pickaxe is faster than diamond)
+    - Removed heart crystal shards and some healing items as drops from mob spawners when mined
+    - Slightly adjusted and rebalanced other drops
+    - Fixed squid ink accidentally dropping from mob spawners (lel)
+
+Battletowers:
+    - Loot rebalance, ender pearls, xp bottles, and xp books, diamonds, emeralds, and diamond gear have been adjusted to account for double roll chances
+    - Spawn rate decreased slightly from 700 to 800 blocks apart
+    - Generation fix for towers so they no longer spawn in a predictable pattern (RLTweaker)
+    - Battletower Golem fires a new projectile that destroys blocks, and leaves a fire trail when flying near blocks (custom Lycanites Mobs projectile by Shivaxi) (RLTweaker)
+    - Battletowers no longer show up in the lost cities (RLTweaker)
+    - Battletower Golem's new projectile can paralyze a player temporarily from a direct hit (Lycanites Mobs + RLTweaker)
+    - Battletower Golem can no longer drown (RLTweaker)
+    - Battletower Golem can’t stay in boats (RLTweaker)
+    - Fixed Battletower Golem storing momentum/velocity when not active (aka fishing pole exploit) (RLTweaker)
+    - Battletower Golem is heavier and will be harder to yeet off of towers (but not impossible) (RLTweaker)
+    - Battletower Golem AI much more aggressive now, fixed randomly losing targets (RLTweaker)
+    - Fix for exploding towers damaging players who weren't near due to conflict with infernal mobs (RLTweaker)
+    - Battletower Golem can no longer be hurt by anvils or other falling blocks (RLTweaker)
+    - Battletower Golem can no longer suffocate in blocks (RLTweaker)
+    - Battletower Golem can no longer be pushed by pistons (RLTweaker)
+    - Battletower Golem can no longer be harmed by Lycanites Mobs fluids (RLTweaker)
+    - Battletower Golem is no longer pickable with a quetzodracl
+
+Grappling Hook:
+    - Grappling hook weight, speed, and length adjusted and rebalanced
+    - Several fixes and improvements to the mod and mechanics
+    - Grappling Hook will no longer magically protect you from all fall damage
+    - Grappling Hook no longer works in Lycanite boss arena's
+    - Grappling Hook no longer grapples mobs
+    - New enchantments added, double jump, wall running, and sliding
+    - Enchantments fixed on Grappling Hooks
+
+Advanced Hook Launchers:
+    - Added maximum weight of mobs that can be hooked
+    - Web hook can no longer attach to mobs
+
+Reskillable:
+    - Golden Osmosis now only requires 6 skill points to unlock, and magic requirement lowered to 12
+    - Dodge, Wall Jump, and Ledge Grab traits added under agility
+    - Clicking on an unlocked trait will lock it and give you a refund (RLTweaker)
+
+Spartan Weaponry Rebalance!:
+
+(base damage represents that item at wood tier)
+(damage multiplier means how much damage is added per material upgrade)
+
+    MELEE:
+    - Rapier base damage now 1.5 (was 2.5) and Unarmored Damage Bonus 100% (was 200%)
+    - Saber base damage now 3.0 (was 4.5) and Chest Damage Bonus 50% (was 100%)
+    - Katana base damage now 4.5 (was 3.5) and Chest Damage Bonus 50% (was 100%)
+    - Longsword base damage now 7.5 (was 4.5) and attack speed 1.3 (was 1.4)
+    - Greatsword base damage now 4.5 (was 6.0) and damage multiplier 1.5 (was 2.0) and attack speed 1.2 (was 1.4)
+    - Halberd base damage now 7.5 (was 6.5) and damage multiplier 1.5 (was 2.5)
+    - Hammer base damage now 7.5 (was 6.0) and damage multiplier 0.5 (was 1.0) and attack speed 0.9 (was 0.8)
+    - Glaive base damage now 5.0 (was 4.0) and damage multiplier 2.0 (was 1.0)
+    - Javelin base damage now 1.0 (was 1.5) and damage multiplier 2.0 (was 0.5)
+    - Mace base damage now 3.5 (was 4.0) and damage multiplier now 1.5 (was 1.0)
+    - Pike base damage now 5.0 (was 4.0) and damage multiplier now 1.5 (was 0.5)
+    - Quarterstaff base damage now 5.5 (was 1.5) and damage multiplier 0.5 (was 1.0) and attack speed 2.0 (was 1.4)
+    - Spear base damage is now 5.0 (was 4.5) and damage multiplier now 0.75 (was 0.5)
+    - Warhammer base damage now 6.0 (was 4.0) and damage multiplier 1.5 (was 1.0)
+    - Dagger base damage now 2.0 (was 2.5)
+    - Lance base damage now 2.0 (was 4.0) and Riding Damage Bonus 200% (was 100%)
+    - Battleaxe base damage now 7 (was 5.0)
+
+    RANGED:
+    - Wooden arrow base damage now 1.0 (was 0.2) and range multiplier 0.75 (was 1.5)
+    - Iron arrow base damage now 2.5 (3.0) and range multiplier 1.0 (was 0.75)
+    - Diamond arrow base damage now 3.0 (was 3.5)
+    - Bolt base damage now 1.5 base damage (was 4.0) and range multiplier 2.0 (was 1.0)
+    - Diamond bolt base damage now 2.0 (was 5.0) and range multiplier 2.5 (was 1.25)
+    - Arrow rebalance, Wooden arrow base damage now 1 (from 0.5), Iron arrow base damage now 3 (from 2) and Diamond arrow base damage now 4 (from 3), this fixes Iron arrows accidentally doing less damage than normal arrows
+    - Wooden arrows now only need wood, sticks, and paper to craft, making them much easier to obtain very early game
+
+Range increases speed of arrow/bolt which affects damage, so while base damages may look low, range was raised, giving bolts sniper-like speed and precision, and a decent damage buff.
+
+    More Spartan Weaponry Changes:
+    - Throwing weapons have been overhauled to have a combination of ammo, durability and still be enchantable!
+    - Two Handed weapons now have a set damage reduction if trying to dual wield or having a shield or another item in offhand.
+    - Two Handed 1 is now a 25% reduction in damage
+    - Two Handed 2 is now a 50% reduction in damage
+    - Saber, Rapier, and Katana will no longer apply bonus damage to mobs with enough natural armor (All Dragons from Ice & Fire, bosses, and Lycanite Mobs with armor now, listed under Lycanite Mob changes above)
+    - New enchantments for throwable weapons and crossbows:
+Return (backported from vanilla's Loyalty) - Causes Throwing Weapons to return to the player after landing on the ground - Max Levels: 3
+Hydrodynamic (backported from Spartan Weaponry 2.x) - Allows Throwing Weapons to work better underwater. Incompatible with Incendiary - Max Levels: 1
+Supercharge [NEW] - Reduces charging time with Throwing Weapons - Max Levels: 2
+Expanse [NEW] - Increases total ammo capacity for Throwing Weapons - Max Levels: 2   
+Rapid Load (backported from vanilla's Quick Charge) - Decreases Crossbow loading time - Max Levels: 3
+Spreadshot (backported from vanilla's Multishot) - Fires two extra Crossbow bolts in a spread around the original bolt - Max Levels: 1
+Sharpshooter [NEW] - Reduces aiming time with Crossbows - Max Levels: 2
+
+    - Crossbows can now be enchanted with other enchantments from Better survival and SME
+    - Daggers now have a backstab bonus
+    - Changed quarterstaff recipe
+    - Added, uniformed and re-did a ton of smelting recipes
+    - Added Steel Weapons and Shields
+    - Fixed sweeping on Greatsword (used to only work on one side, now sweeps full area)
+    - Sweep damage bonuses (like on Greatsword) now work with enchantments (aka sharpness)
+    - Fixed Warhammer armor piercing
+
+
+Fishing overhaul!
+    - All fish from vanilla, Aqua Culture, and Advanced Fishing have now been merged under one loot pool (don't need different fishing poles now)
+    - New fishing minigame!  Arrows keys are used to adjust line tension in order to catch your fish.  Different fish can act differently and sporadically based on the type of fish, weight and size of the fish, etc
+    - Fishing poles are now modular!  Different bobbers, reels, and hooks can drastically change how you fish (this maked vanilla fishing rods unusable, but can be used as a part for the new fishing rods)
+    - All fish are biome specific, dimension specific, and even height specific (yes there's underground fish now)
+    - Certain fish will only be catchable at certain times of the day or night or if it is raining or not
+    - Scaling recipes added for many fish to procure items from fish
+    - Filleting fish is now based on weight in terms of how many fish slices they can be cut up into
+    - Fish can be transported and bred now
+    - New fish tracker tool
+    - New bait box block (used for fish breeding)
+    - Removed Aquaculture enchantments (no longer needed with new fishing mechanics and parts)
+    - Lava fishing and Void fishing added (replaces Blazing Fishing Rod. This rod is now unusable)
+    - New mob spawns added for fishing in Lava and fishing in the Void (Lycanites)
+
+Doomlike Dungeons:
+    - New update includes uber awesome generation technique to not cascade your mom
+    - Boss rooms now have taller ceilings (this fixes some bosses not able to spawn)
+    - Boss rooms made larger so bosses can properly spawn now
+    - Tweaked loot tables slightly
+    - Replaced Quillbeast spawners in doomlike dungeons with Jabberwock and Warg spawners
+
+Structures:
+    - Fixed certain structures always spawning with the same villager and villager trades
+    - Adjusted wheat farm in RLCraft_PlainsWindmill
+    - Added waystone and bounty board to RLCraft_SmallTown
+    - Added bounty board to RLCraft_FriendlyOutpost
+    - Added a new boss to the RLCraft_MegaBattleTower, find out and have fun :)
+    - Added structures from Top 10 donation marathon stream
+    - Rebalanced loot in several Ruins structures, including sunken ships, floating platform, ocean castle (both on water and sky variants), and more
+    - Rebalanced loot pools that affect many Recurrent Complex structures like 4Towers, College of Evil, Friendly Outpost, Mega Battle Tower, Plains City, Ocean City, and more
+    - Added some new decorations to Ocean Castle structure
+    - Removed glowstone and nether wart from Underwater Base structure, replaced with new Quark lanterns
+    - Added unique rare loot to elemental structures from Ruins (ever notice that one tiny island in the sky?  Might have something now related to the Air element =) )
+    - Added waystone and bounty board to Plains City, Island/Ocean city, and Plains Town
+    - Fixed villager trading exploit found in Ice City
+    - Several new secret structures added...no I'm not telling you what they are, they're secret of course :)
+
+Antique Atlas:
+    - Added all new colored tiles and textures for the atlas
+    - Added new textures to support defiled lands and traverse biomes
+    - Added new icons
+    - Disabled auto marking of villages and nether portals due to OVERFLOW INTEGER
+
+Enhanced Visuals:
+    - All new visual effects for new damage types including: lightning, collision damage, parasites, wither, etc.
+
+Disenchanter:
+    - Disenchanting table now made with Golden Book Wyrm Scales
+    - Disenchanting table now requires Magic 24 to use (Reskillable)
+    - Enchanted books now get "destroyed" on an enchanting table (normal book gets returned)
+    - Other items that don't have durability but can be disenchanted will now be destroyed properly
+
+Better Nether!:
+    - All new sub-biomes
+    - New vegetation and nether plants
+    - New decorational blocks
+    - New ore, Cincinnasite (use it to craft Steel)
+    - New generations and features throughout the Nether
+    - Respawner statue!
+
+Lost Cities:
+    - Revamped rooms in buildings to add new decorations and more
+    - Revamped loot in lost cities, for each section of the cities, having unique loot based on its location in the city
+    - Portal to the lost cities no longer uses emerald blocks, now it uses  >>>ERROR: INFORMATION LOST. PLEASE SEE QUESTS IN GAME FOR MORE ASSISTANCE<<<
+    - >>>ERROR: MALFUNCTION 1337<<< ...have overtaken the Lost Cities!  Whatever you do do not->>>ERROR: TRANSMISSION LOST<<<
+
+Potion Rings:
+    - Some ring recipes changed such as the resistance ring
+    - Resistance effect level modified
+    - There have been some reports about players finding rings that are not in the JEI, what could they be?
+
+Potions:
+    - Potions are now stackable up to 8 (as are juices)
+    - Mundane potions cannot be crafted with redstone anymore
+    - Thick potions cannot be crafted with glowstone anymore
+    - Thicks potions are now crafted with Bone Mushroom Spores (found on bone reefs in The Nether only)
+
+    New Potion Recipes:
+    - Potion Of Health Boost: Gives extra hearts - Crafted with Heart Containers in Thick Potion
+    - Potion Of Levitation: Levitation effect - Crafted with Feathers in Mundane Potion
+    - Potion Of Feather Falling: Slow falling effect - Crafted with Feathers  in Thick Potion
+    - Potion Of Wings: Gives creative flight - Crafted with Pixie Dust (from Familiar Fauna, not Ice And Fire) in Thick Potion
+    - Potion Of Mending: Repairs currently equipped items slowly - Crafted with Dragon Hearts in Thick Potion
+    - Potion Of Knock Up: Launches player/mob into air - Crafted with Rabbit Foot in Mundane Potion
+    - Potion Of Detonation: Causes explosion at effected player/mob - Crafted with Dynamite (Spartan Weaponry) in Mundane Potion
+    - Potion Of Thundering: Causes lightning strike at effected player/mob - Crafted with Electric Eel (Aqua Culture) in Thick Potion
+    - Potion Of Spontaneous Combustion: Sets effected player/mob on fire - Crafted with Ember Charge (Lycanites) in Thick Potion
+    - Potion Of Guarding (Iron Skin): Gives extra armor - Crafted with Dragon Flesh in Thick Potion
+    - Potion Of Diamond Skin: Gives extra armor toughness - Crafted with Block Of Diamond (may change later?) in Thick Potion
+    - Potion Of Spines: Gives effected player/mob a thorns like effect - Crafted with Vile Spine in Thick Potion
+    - Potion Of Spiders: Allows climbing up walls (become spiderman) - Crafted with Cobweb in Thick Potion
+    - Potion Of High Step: Step up blocks without jumping - Crafted with Rabbit Foot in Thick Potion
+    - Potion Of Immovability: Effected player/mob cannot be knocked back - Crafted with Obsidian Bream (Advanced Fishing) in Thick Potion
+    - Potion Of Cure: Cures all negative status effects - Crafted with Immunizer (Lycanites) in Thick Potion
+    - Potion Of Poison Antidote: Effected player/mob cannot be poisoned - Crafted with Immunizer (Lycanites) in Mundane Potion
+    - Potion Of Concussion: Cause mobs around you to explode without taking explosion damage yourself - Crafted with Blastem Fruit in Thick Potion
+    - Potion Of True Shot: Extra projectile damage - Crafted with Skeleton Skull in Thick Potion
+    - Potion Of Fumbling (Klutz): Reduced projectile damage (splash one of these on a skeleton lel) - Crafted with Skeleton Skull in Mundane Potion
+    - Potion Of Wither Purity: Cannot be withered - Crafted with Wither Skeleton Skull in Thick Potion
+    - Potion Of Long Arms: Extra reach when attacking - Crafted with Crab Leg in Thick Potion
+    - Potion Of Penetration: Reduced armor - Crafted with Sea Serpent Fang in Mundane Potion
+    - Potion Of Magic Focus: Extra magic damage - Crafted with Dragon Blood in Thick Potion
+    - Potion Of Magic Inhibition: Reduced magic damage - Crafted with Fermented Spider Eye in Mundane Potion
+    - Potion Of Vulnerability: Reduced damage resistance - Crafted with Totem Of Undying in Mundane Potion
+    - Potion Of Scattering: Random teleportation - Crafted with Ender Pearl in Thick Potion
+    - Potion Of Escape: Teleports to surface if underground - Crafted with Eye Of Ender in Thick Potion
+
+======================
+Bug Fixes & Minor Tweaks:
+======================
+
+    - Removed crafting recipes for ore blocks due to dupe bug
+    - Fixed an FPS stutter issue caused by Sound Filters
+    - Fixed Bow not requiring agility anymore.
+    - Fixed rare bug with particles dying after an extended amount of time
+    - Fixed memory leak with Lost Cities causing major lag/stuttering (RLTweaker)
+    - Vespids now spawn in light
+    - Vespid spawn weight reduced to 4 (was 8)
+    - Concapede spawn weight is now 4 (from 1) and will spawn in all Jungle type biomes
+    - Fixed Uvaraptor not spawning in all Jungle type biomes
+    - Fixed Ventoraptors not spawning in all Plains type biomes
+    - Fixed Reapers not spawning naturally in Spooky type biomes
+    - Fixed Pixen not spawning in all Forest type biomes, removed Pixen's from Snowy type biomes
+    - Chance to spawn wraamon from Chorus Trees reduced to 5% (from 20%)
+    - Removed level requirements for dragon pet armor
+    - Skeletons, Zombies, and Creepers now have the same small chance that Wither Skeletons have to drop their head
+    - Toolbelt no longer requires levels to use
+    - Xaphan farms no longer work (get rekt)
+    - Removed Dwarf and Fairy ring as potential loot in Doomlike Dungeons, Mega Battle Towers and Shivaxi Monument, slight tweak/rebalance to boss chest loot (for Doomlike Dungeons)
+    - Varied Commodities Pedestals are now craftable
+    - Warp Stone is now craftable
+    - Surface rocks will mostly be normal stone rocks due to changes with how Andesite/Diorite/Granite spawn
+    - Bone Spore Mushrooms now give XP when harvested
+    - Slightly increased chance weight of fishing up Neptune's Bounty with AquaCulture fishing
+    - Slightly lowered the chance you should run into a dragon skeleton in deserts/snow biomes
+    - Changed the amount of percentage gain from each Fortune level for the gamble pickaxe from 10% to 5% (you can get Fortune 4 from using the new ancient tomes, making the maximum duplication chance 50%)
+    - Removed skill requirements for hook shots (they could be used regardless lel)
+    - Gold Battleaxe got a super omega nerf for being super omega OP (forgot skill requirements cuz typo lel)
+    - Aspids no longer spawn on mushroom islands
+    - Vanilla shield now requires 12 defense, as the vanilla shield, round shield, and big shield are the only shields that can use the Better Survival enchantments
+    - Fixed right clicking on item frames with a weapon in off-hand deleting your off-hand weapon
+    - Deathworms and Myrmex now stand still while players are far away, to fix chunk loading problems (AIReducer)
+    - Moved overlay text up a little bit and gave it a drop shadow (RLTweaker)
+    - Fix for enchantments spawning that shouldn't (RLTweaker)
+    - Fix for containers not closing when players are far away (RLTweaker)
+    - Fix for some mobs destroying blocks they really shouldn’t (RLTweaker)
+    - Fix for hoppers pulling from and inserting into blocks they really shouldn’t (RLTweaker)
+    - Fix for lightning being so loud that it can be heard almost everywhere (RLTweaker)
+    - Fix for broadcasted sounds being heard everywhere (RLTweaker)
+    - Even more fixes for mobs building up speed for 12 hours and transporting to parallel universes (RLTweaker)
+    - Fix for a lot of anvil dupes (RLTweaker)
+    - Aquaculture biomes aren’t bugged now (RLTweaker)
+    - Neptune’s Bounty can give you ingots now (RLTweaker)
+    - Miner’s ring doesn’t dupe anymore (RLTweaker)
+    - Tunneling enchantment doesn’t break chests (RLTweaker)
+    - Carry On can’t make glitched chests anymore (RLTweaker)
+    - Fix for hippocampus inventory being broken (RLTweaker)
+    - Fix for gorgons resurrecting players in a glitched state (RLTweaker)
+    - Fix for waystone scrolls crashing the game (RLTweaker)
+    - Fix for level up skills being used by pets (RLTweaker)
+    - Fix for myrmex queens creating like a billion hives when being carried around (RLTweaker)
+    - Fix for myrmex queens having the wrong type of trades (RLTweaker)
+    - Fixes for various clever Ice and Fire dupes (RLTweaker)
+    - Fix for gorgons getting distracted by player statues and punching them (they still stare menacingly though) (RLTweaker)
+    - Fix for spawner control crashing sometimes (RLTweaker)
+    - Fix for waystone names getting messed up because of RLTweaker, lmao (RLTweaker)
+    - Various other fixes and tweaks for mods that got added in this version (RLTweaker)
+    - Fixed red death worm armor not being able to have liners
+    - Fishing spear is now unusable. Can be turned into a sea serpent fang
+    - Snow Real Magic: now works with rocks and tall grass and accumulation
+    - Fix for deathworm xp exploit (RLTweaker)
+    - Added blocks that have a right click interaction or GUI window when interacting with them that still do the animation to the fancy block particles blacklist
+    - Random crit chance lowered to 20% chance (was 30%)
+    - Sirene spawns slightly reduced
+    - Dragon bones now stack up to 16 (from 8)
+    - Return Scrolls and Bound Scrolls no longer set your spawn
+    - Fixed crash using Return Scroll and Bound Scrolls in Lost Cities (RLTweaker)
+    - Steel has been enabled, custom alloy can be crafted then smelted to create steel ingots
+    - Added reforging materials to myrmex stinger weapons (material: jungle/desert myrmex chitin)
+    - Added repairing material to Spartan’s obsidian shields (material: obsidian)
+    - Fixed player xp drop: players now drop 30% of their xp on death with a maximum of 1000 xp
+    - Changed recipes for cooling and heating goo
+    - Fixed an issue where sound filters caused your game to stutter
+    - Snow Villages rarity increased
+    - Snow Villagers no longer trade Sapphires for Snow (wtf ice n fire)
+    - Atlas's no longer auto mark Villages due to a super awesome fun time memory leak :)
+    - Spartan Shields will now only take damage from direct entity sources (mobs, arrows, etc) while blocking and not indirect damage sources such as Lava and Cacti
+    - Fixed Blindness making mobs have a 2 block sight range, now only reduces mob vision by 50%
+    - Bosses, dragons, endermen, krakes (already blind kek), and shadow mobs can no longer be given blindness
+    - Added recipe for myrmex resin glass
+
+====================
+MASSIVE THANK YOU!!!
+====================
+
+RLCraft v2.9 would not have been possible without the following people who spent countless hours, time and effort, helping and working on RLCraft, from their own sheer passion, even changing their mods specifically for RLCraft, massive massive thank you <3
+
+Charles445 (RLCraft team and dev of RLTweaker, SimpleDifficulty, and AIReducer, rewrote/ported/fixed Locks, Bountiful, SoManyEnchantments, etc.)
+Fonnymunkey (RLCraft team and dev of CollisionDamage, BBB, ShieldBreak, BQTweaker and expansions, rewrote FishingMadeBetter)
+Icebelly (RLCraft team, the epic structure guy)
+Artsy (Artist for Simple Difficulty (Rough Life), new Antique Atlas textures/icons, new Enhanced Visual effects, animated Lycanite charges and saddles, Hats, Locks and UI elements, Quest Themes, FishingMadeBetter textures, and Trinkets & Baubles rings and items)
+Hoonts (Artist for Simple Difficulty (Rough Life), Locks, Quest Themes, Crystal Heart textures, and various texture tweaks)
+Emerald (Artist for new logos and dragon loading animation)
+GoldenAlpharex (Official Wiki Expert)
+TwilightStar (Original art featured in a few Quest Book entries)
+Titan (RLCraft team)
+Xcube (RLCraft team, dev of ISeeDragons)
+Rayquazafallout (RLCraft team, insane tester, help with many configs)
+Ichttt (Dev of First Aid)
+Xzero (Dev of Trinkets & Baubles)
+Lycanite (Dev of Lycanites Mobs)
+Melonslise (Dev of Locks)
+ObliviousSpartan (Dev of Spartan Weaponry, Spartan HUD, and Spartan Shields)
+Ejektaflex (Dev of Bountiful)
+Meldexun (Dev of Entity Culling)
+Bl4ckscor3 (Dev of Particle Culling, XP Tome, and Sit)
+Yyon (Dev of Grappling Hook)
+Tschipp (Dev of Forgotten Items, Carry On, and Callable Horses)
+GoblinBob (Dev of Mo'Bends)
+Fnar (Dev of Roguelike Dungeons - Fnar's Edition)
+WhiteDraco (Dev of Switch Bow)
+Yung (Creator of Better Caves, Better Mineshafts, and YUNG's Law)
+Harleyoc1 (Dev of Dynamic Trees)
+ShelterRin (Dev of So Many Enchantments)
+Noppes (Dev of Varied Commodities)
+Cursed1nferno (Dev of Bountiful Baubles)
+Elenai (Dev of Elenai Dodge)
+EnderLanky (Dev of Advanced Hook Launchers)
+CreativeMD (Dev of Enhanced Visuals and Item Physics)
+Macaw (Dev of Macaw's Bridges)
+TheAwesomeGem (Dev of Fishing Made Better)
+Dhanatry & Cephelo (S&R Parasites Team)
+Jared (Dev of Crafttweaker)
+Paulevs (Creator of LUM resource pack)
+Snownee (Dev of Snow Real Magic!)
+Phantom_Fantasia (Original questbook concept)

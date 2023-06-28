@@ -1,0 +1,23 @@
+{
+  "name": "segments:inhabited_trapped_sewers",
+  "inherit": [
+    "segments:generic"
+  ],
+  "segments": [
+    {"level": [0,1,2,3,4], "type": "CELL", "weight": 2},
+
+    {"level": [0,1,2,3,4], "type": "BOOKS", "weight": 2},
+    {"level": [0,1,2,3,4], "type": "FLOWERS", "weight": 2},
+    {"level": [0,1,2,3,4], "type": "SPAWNER", "weight": 10},
+
+    {"level": [1,3],   "type": "ARROW", "weight": 1},
+    {"level": [2,4], "type": "ARROW", "weight": 5},
+    {"level": [1,3],   "type": "SILVERFISH", "weight": 2},
+    {"level": [2,4], "type": "SILVERFISH", "weight": 2},
+
+    {"level": 3, "type": "SEWER", "weight": 5},
+    {"level": 3, "type": "SEWERARCH", "weight": 5},
+    {"level": 3, "type": "SEWERDOOR", "weight": 5},
+    {"level": 3, "type": "SEWERDRAIN", "weight": 5}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+    "parent": "spartanweaponry:item/throwing_axe_wood",
+    "textures": {
+        "layer0": "spartandefiled:items/throwing_axe_umbrium"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "empty": 1
+            },
+            "model": "spartanweaponry:item/throwing_axe_empty"
+        }
+    ]
+}

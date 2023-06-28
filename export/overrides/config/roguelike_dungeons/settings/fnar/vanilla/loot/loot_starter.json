@@ -1,0 +1,46 @@
+{
+  "name": "fnar:loot_starter",
+  "lootRules": [
+    {
+      "level": [0,1,2,3,4], "type": "STARTER", "each": true, "quantity": 1,
+      "loot": [
+        {"data": {"type": "specialty", "equipment": "helmet", "level": 1}, "weight": 1},
+        {"data": {"type": "specialty", "equipment": "chest", "level": 1}, "weight": 1},
+        {"data": {"type": "specialty", "equipment": "legs", "level": 1}, "weight": 1},
+        {"data": {"type": "specialty", "equipment": "feet", "level": 1}, "weight": 1}
+      ]
+    },
+
+    {"level": [0, 1, 2, 3, 4], "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"name": "minecraft:torch", "min": 16, "max": 64}, "weight": 1}]},
+    {"level": [0, 1, 2, 3, 4], "type": "STARTER", "each": true, "quantity": 8, "loot": [
+      {"data": {"name": "minecraft:bread"}},
+      {"data": {"name": "minecraft:coal", "min": 1, "max": 4}},
+      {"data": {"name": "minecraft:stick", "min": 16, "max": 16}},
+      {"data": {"name": "minecraft:torch", "min": 8, "max": 8}},
+      {"data": {"name": "minecraft:iron_ingot"}},
+      {"data": {"type": "mixture", "name": "coffee"}},
+      {"data": {"name": "minecraft:flint_and_steel" }}
+    ]},
+
+    {"level": 0, "type": "STARTER", "each": true, "quantity": 2, "loot": [
+      {"data": {"type": "tool", "level": 0}, "weight": 2},
+      {"data": {"type": "tool", "level": 1}, "weight": 1}
+    ]},
+    {"level": 0, "type": "STARTER", "each": true, "quantity": 2, "loot": [
+      {"data": {"type": "weapon", "level": 0}, "weight": 2},
+      {"data": {"type": "weapon", "level": 1}, "weight": 1}
+    ]},
+
+    {"level": 1, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "tool", "level": 1}}]},
+    {"level": 1, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "weapon", "level": 1}}]},
+
+    {"level": 2, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "tool", "level": 2}}]},
+    {"level": 2, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "weapon", "level": 2}}]},
+
+    {"level": 3, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "tool", "level": 3}}]},
+    {"level": 3, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "weapon", "level": 3}}]},
+
+    {"level": 4, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "tool", "level": 4}}]},
+    {"level": 4, "type": "STARTER", "each": true, "quantity": 1, "loot": [{"data": {"type": "weapon", "level": 4}}]}
+  ]
+}

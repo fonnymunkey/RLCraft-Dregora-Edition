@@ -1,0 +1,18 @@
+[
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": "MOUNTAIN",
+    "result": "allow"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "result": "deny"
+  },
+  {
+    "dimension": 111,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  }
+]

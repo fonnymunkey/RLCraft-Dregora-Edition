@@ -1,0 +1,486 @@
+{
+  "groups:9": {
+    "0:10": {
+      "name:8": "Moo",
+      "weight:3": 2,
+      "ID:3": 0,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:cow_leather_head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:cow_leather_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "2:10": {
+          "weight:3": 1,
+          "ID:3": 2,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:cow_leather_legs",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "3:10": {
+          "weight:3": 1,
+          "ID:3": 3,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:cow_leather_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "1:10": {
+      "name:8": "Otherworldly Weapons",
+      "weight:3": 2,
+      "ID:3": 1,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:musket",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "variedcommodities:bullet",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:holyhandgrenade",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "2:10": {
+      "name:8": "What sorcery is this?",
+      "weight:3": 2,
+      "ID:3": 2,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "rlmixins:scarlite_helmet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "rlmixins:scarlite_chestplate",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "2:10": {
+          "weight:3": 1,
+          "ID:3": 2,
+          "items:9": {
+            "0:10": {
+              "id:8": "rlmixins:scarlite_leggings",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "3:10": {
+          "weight:3": 1,
+          "ID:3": 3,
+          "items:9": {
+            "0:10": {
+              "id:8": "rlmixins:scarlite_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "3:10": {
+      "name:8": "X407 Set",
+      "weight:3": 2,
+      "ID:3": 3,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:x407_head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:x407_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "2:10": {
+          "weight:3": 1,
+          "ID:3": 2,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:x407_legs",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "3:10": {
+          "weight:3": 1,
+          "ID:3": 3,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:x407_boots",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "4:10": {
+      "name:8": "You\u0027re A Wizard",
+      "weight:3": 2,
+      "ID:3": 4,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:wizard_head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:wizard_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "2:10": {
+          "weight:3": 1,
+          "ID:3": 2,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:wizard_pants",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "3:10": {
+          "weight:3": 1,
+          "ID:3": 3,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:wooden_staff",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "variedcommodities:mana",
+              "Count:3": 64,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "5:10": {
+      "name:8": "Ninja Set",
+      "weight:3": 2,
+      "ID:3": 5,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:ninja_head",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "1:10": {
+          "weight:3": 1,
+          "ID:3": 1,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:ninja_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        },
+        "2:10": {
+          "weight:3": 1,
+          "ID:3": 2,
+          "items:9": {
+            "0:10": {
+              "id:8": "variedcommodities:ninja_legs",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "6:10": {
+      "name:8": "Blessing",
+      "weight:3": 2,
+      "ID:3": 6,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "minecraft:nether_star",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "7:10": {
+      "name:8": "SORRY NOTHING",
+      "weight:3": 1,
+      "ID:3": 7,
+      "rewards:9": {
+        "0:10": {
+          "weight:3": 1,
+          "ID:3": 0,
+          "items:9": {
+            "0:10": {
+              "id:8": "artifacts:sacrificial_amulet",
+              "Count:3": 1,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "minecraft:experience_bottle",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

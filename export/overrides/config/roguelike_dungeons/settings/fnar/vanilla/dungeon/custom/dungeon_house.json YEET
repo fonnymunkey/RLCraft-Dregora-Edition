@@ -1,0 +1,10 @@
+{
+  "name": "fnar:dungeon_house",
+  "exclusive": true,
+  "criteria": {"biomeTypes": ["FOREST", "JUNGLE"]},
+  "inherit": [
+    "rlcraft:dungeon_base",
+    "theme:forest",
+    "tower:house_house"
+  ]
+}

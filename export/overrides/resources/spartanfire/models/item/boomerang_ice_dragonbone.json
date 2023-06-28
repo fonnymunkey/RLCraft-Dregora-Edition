@@ -1,0 +1,14 @@
+{
+    "parent": "spartanweaponry:item/boomerang_wood",
+    "textures": {
+        "layer0": "spartanfire:items/boomerang_ice_dragon"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "empty": 1
+            },
+            "model": "spartanweaponry:item/boomerang_empty"
+        }
+    ]
+}

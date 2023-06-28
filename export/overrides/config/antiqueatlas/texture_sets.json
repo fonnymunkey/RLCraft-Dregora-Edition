@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "data": {
+    "DL_DESERT": [
+      "antiqueatlas:textures/gui/tiles/dl_sand.png",
+      "antiqueatlas:textures/gui/tiles/dl_sand2.png",
+      "antiqueatlas:textures/gui/tiles/dl_sand3.png"
+    ],
+    "DL_HILLS": [
+      "antiqueatlas:textures/gui/tiles/dl_forest_hills.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest_hills2.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest_hills3.png"
+    ],
+    "DL_ICE": [
+      "antiqueatlas:textures/gui/tiles/dl_snow1.png",
+      "antiqueatlas:textures/gui/tiles/dl_snow2.png",
+      "antiqueatlas:textures/gui/tiles/dl_snow3.png",
+      "antiqueatlas:textures/gui/tiles/dl_snow4.png",
+      "antiqueatlas:textures/gui/tiles/dl_snow5.png",
+      "antiqueatlas:textures/gui/tiles/dl_snow6.png"
+    ],
+    "DL_PLAINS": [
+      "antiqueatlas:textures/gui/tiles/dl_grass.png",
+      "antiqueatlas:textures/gui/tiles/dl_grass2.png",
+      "antiqueatlas:textures/gui/tiles/dl_grass3.png"
+    ],
+    "DL_SWAMP": [
+      "antiqueatlas:textures/gui/tiles/dl_swamp.png",
+      "antiqueatlas:textures/gui/tiles/dl_swamp2.png",
+      "antiqueatlas:textures/gui/tiles/dl_swamp3.png",
+      "antiqueatlas:textures/gui/tiles/dl_swamp4.png",
+      "antiqueatlas:textures/gui/tiles/dl_swamp5.png",
+      "antiqueatlas:textures/gui/tiles/dl_swamp6.png"
+    ],
+    "DL_TENEBRA": [
+      "antiqueatlas:textures/gui/tiles/dl_forest.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest2.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest3.png"
+    ],
+    "DL_VILESPINE": [
+      "antiqueatlas:textures/gui/tiles/dl_forest.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest2.png",
+      "antiqueatlas:textures/gui/tiles/dl_forest3.png"
+    ],
+    "TEST": [
+      "antiqueatlas:textures/gui/tiles/test.png",
+      "antiqueatlas:textures/gui/tiles/test.png"
+    ],
+    "T_AUTUMN": [
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest.png",
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest2.png",
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest3.png"
+    ],
+    "T_AUTUMN_HILLS": [
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills.png",
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills2.png",
+      "antiqueatlas:textures/gui/tiles/t_autumn_forest_hills3.png"
+    ],
+    "T_CANYON": [
+      "antiqueatlas:textures/gui/tiles/t_canyon.png",
+      "antiqueatlas:textures/gui/tiles/t_canyon2.png",
+      "antiqueatlas:textures/gui/tiles/t_canyon3.png"
+    ],
+    "T_CRAG": [
+      "antiqueatlas:textures/gui/tiles/t_crag_mountains.png",
+      "antiqueatlas:textures/gui/tiles/t_crag_mountains2.png",
+      "antiqueatlas:textures/gui/tiles/t_crag_mountains3.png",
+      "antiqueatlas:textures/gui/tiles/t_crag_mountains4.png"
+    ],
+    "T_RED_DESERT": [
+      "antiqueatlas:textures/gui/tiles/t_red_sand.png",
+      "antiqueatlas:textures/gui/tiles/t_red_sand2.png",
+      "antiqueatlas:textures/gui/tiles/t_red_sand3.png"
+    ],
+    "T_ROCKY_PLATEAU": [
+      "antiqueatlas:textures/gui/tiles/plateau_grass.png",
+      "antiqueatlas:textures/gui/tiles/plateau_grass2.png",
+      "antiqueatlas:textures/gui/tiles/plateau_grass3.png",
+      "antiqueatlas:textures/gui/tiles/plateau_trees.png",
+      "antiqueatlas:textures/gui/tiles/plateau_trees_low.png"
+    ],
+    "bridge_coveredx": [
+      "antiquecities:textures/gui/tiles/bridge_coveredx.png"
+    ],
+    "bridge_coveredxoccluded": [
+      "antiquecities:textures/gui/tiles/bridge_coveredxoccluded.png"
+    ],
+    "bridge_coveredz": [
+      "antiquecities:textures/gui/tiles/bridge_coveredz.png"
+    ],
+    "bridge_coveredzoccluded": [
+      "antiquecities:textures/gui/tiles/bridge_coveredzoccluded.png"
+    ],
+    "bridge_openx": [
+      "antiquecities:textures/gui/tiles/bridge_openx.png"
+    ],
+    "bridge_openxoccluded": [
+      "antiquecities:textures/gui/tiles/bridge_openxoccluded.png"
+    ],
+    "bridge_openz": [
+      "antiquecities:textures/gui/tiles/bridge_openz.png"
+    ],
+    "bridge_openzoccluded": [
+      "antiquecities:textures/gui/tiles/bridge_openzoccluded.png"
+    ],
+    "buildingfloor1": [
+      "antiquecities:textures/gui/tiles/buildingfloor1.png"
+    ],
+    "buildingfloor1occluded": [
+      "antiquecities:textures/gui/tiles/buildingfloor1occluded.png"
+    ],
+    "buildingfloor2": [
+      "antiquecities:textures/gui/tiles/buildingfloor2.png"
+    ],
+    "buildingfloor2occluded": [
+      "antiquecities:textures/gui/tiles/buildingfloor2occluded.png"
+    ],
+    "buildingfloor3": [
+      "antiquecities:textures/gui/tiles/buildingfloor3.png"
+    ],
+    "buildingfloor3occluded": [
+      "antiquecities:textures/gui/tiles/buildingfloor3occluded.png"
+    ],
+    "buildingfloor4": [
+      "antiquecities:textures/gui/tiles/buildingfloor4.png"
+    ],
+    "buildingfloor4occluded": [
+      "antiquecities:textures/gui/tiles/buildingfloor4occluded.png"
+    ],
+    "buildingtall": [
+      "antiquecities:textures/gui/tiles/buildingtall.png"
+    ],
+    "buildingtalloccluded": [
+      "antiquecities:textures/gui/tiles/buildingtalloccluded.png"
+    ],
+    "buildingtallroof": [
+      "antiquecities:textures/gui/tiles/buildingtallroof.png"
+    ],
+    "fountain": [
+      "antiquecities:textures/gui/tiles/fountain.png"
+    ],
+    "fountainoccluded": [
+      "antiquecities:textures/gui/tiles/fountainoccluded.png"
+    ],
+    "highwayintersection": [
+      "antiquecities:textures/gui/tiles/highwayintersection.png"
+    ],
+    "highwayintersectionoccluded": [
+      "antiquecities:textures/gui/tiles/highwayintersectionoccluded.png"
+    ],
+    "highwayx": [
+      "antiquecities:textures/gui/tiles/highwayx.png"
+    ],
+    "highwayxoccluded": [
+      "antiquecities:textures/gui/tiles/highwayxoccluded.png"
+    ],
+    "highwayz": [
+      "antiquecities:textures/gui/tiles/highwayz.png"
+    ],
+    "highwayzoccluded": [
+      "antiquecities:textures/gui/tiles/highwayzoccluded.png"
+    ],
+    "park": [
+      "antiquecities:textures/gui/tiles/park.png"
+    ],
+    "parkoccluded": [
+      "antiquecities:textures/gui/tiles/parkoccluded.png"
+    ],
+    "ruinfloor1": [
+      "antiquecities:textures/gui/tiles/ruinfloor1.png"
+    ],
+    "ruinfloor1occluded": [
+      "antiquecities:textures/gui/tiles/ruinfloor1occluded.png"
+    ],
+    "ruinfloor2": [
+      "antiquecities:textures/gui/tiles/ruinfloor2.png"
+    ],
+    "ruinfloor2occluded": [
+      "antiquecities:textures/gui/tiles/ruinfloor2occluded.png"
+    ],
+    "ruinfloor3": [
+      "antiquecities:textures/gui/tiles/ruinfloor3.png"
+    ],
+    "ruinfloor3occluded": [
+      "antiquecities:textures/gui/tiles/ruinfloor3occluded.png"
+    ],
+    "ruinfloor4": [
+      "antiquecities:textures/gui/tiles/ruinfloor4.png"
+    ],
+    "ruinfloor4occluded": [
+      "antiquecities:textures/gui/tiles/ruinfloor4occluded.png"
+    ],
+    "street": [
+      "antiquecities:textures/gui/tiles/street.png"
+    ],
+    "streetoccluded": [
+      "antiquecities:textures/gui/tiles/streetoccluded.png"
+    ],
+    "trainrampleft": [
+      "antiquecities:textures/gui/tiles/trainrampleft.png"
+    ],
+    "trainrampleftoccluded": [
+      "antiquecities:textures/gui/tiles/trainrampleftoccluded.png"
+    ],
+    "trainrampright": [
+      "antiquecities:textures/gui/tiles/trainrampright.png"
+    ],
+    "trainramprightoccluded": [
+      "antiquecities:textures/gui/tiles/trainramprightoccluded.png"
+    ],
+    "trainstationopen": [
+      "antiquecities:textures/gui/tiles/trainstationopen.png"
+    ],
+    "trainstationopenoccluded": [
+      "antiquecities:textures/gui/tiles/trainstationopenoccluded.png"
+    ],
+    "trainstationroofed": [
+      "antiquecities:textures/gui/tiles/trainstationroofed.png"
+    ],
+    "trainstationroofedoccluded": [
+      "antiquecities:textures/gui/tiles/trainstationroofedoccluded.png"
+    ]
+  }
+}

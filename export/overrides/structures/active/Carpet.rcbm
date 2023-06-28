@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "block": "minecraft:carpet",
+      "metadata": 0,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 1,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 2,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 3,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 4,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 5,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 6,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 7,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 8,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 9,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 10,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 11,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 12,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 13,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 14,
+      "tileEntity": "null"
+    },
+    {
+      "block": "minecraft:carpet",
+      "metadata": 15,
+      "tileEntity": "null"
+    }
+  ],
+  "metadata": {
+    "title": "Carpet",
+    "description": [
+      "16 colors of carpet"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "locks:loot",
+  "requires": ["locks"],
+  "lootRules": [
+    {
+      "level": [0],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 9},
+        {"data": {"name": "locks:wood_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [1],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 8},
+        {"data": {"name": "locks:wood_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:iron_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [2],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 8},
+        {"data": {"name": "locks:iron_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:gold_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [3],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 7},
+        {"data": {"name": "locks:iron_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:gold_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:steel_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [4],
+      "each": false,
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 7},
+        {"data": {"name": "locks:gold_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:steel_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:diamond_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0,1,2,3,4],
+      "each": true,
+      "type": "STARTER",
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "locks:wood_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:iron_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    },
+    {
+      "level": [0,1,2,3,4],
+      "each": true,
+      "type": "SUPPLIES",
+      "quantity": 1,
+      "loot": [
+        {"data": {"name": "minecraft:stick"}, "weight": 3},
+        {"data": {"name": "locks:wood_lock_pick", "min": 1, "max": 8}, "weight": 1},
+        {"data": {"name": "locks:iron_lock_pick", "min": 1, "max": 8}, "weight": 1}
+      ]
+    }
+  ]
+}

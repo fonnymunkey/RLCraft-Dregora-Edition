@@ -1,0 +1,230 @@
+{
+  "Red Salmon": {
+    "fishId": "Red Salmon",
+    "itemId": "minecraft:fish",
+    "itemMetaData": 1,
+    "description": "a decent sized red fish with a hooked jaw",
+    "minFishTime": 1000,
+    "maxFishTime": 1400,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 4,
+    "minWeight": 2,
+    "maxWeight": 8,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 60,
+    "minYLevel": 55,
+    "maxYLevel": 120,
+    "maxLightLevel": 16,
+    "reproductionTime": 15,
+    "eatingFrequency": 6,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH",
+      "COLD",
+      "RIVER",
+      "WATER",
+      "MOUNTAIN"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Pufferfish": {
+    "fishId": "Pufferfish",
+    "itemId": "minecraft:fish",
+    "itemMetaData": 3,
+    "description": "a small, yellow, thorny fish that inflates when threatened",
+    "minFishTime": 1200,
+    "maxFishTime": 1600,
+    "minErrorVariance": 2,
+    "maxErrorVariance": 4,
+    "minWeight": 8,
+    "maxWeight": 14,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 6,
+    "minDeepLevel": 10,
+    "maxDeepLevel": 30,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 12,
+    "eatingFrequency": 5,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": true,
+    "scalingItem": "minecraft:arrow",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": true,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Cod": {
+    "fishId": "Cod",
+    "itemId": "minecraft:fish",
+    "itemMetaData": 0,
+    "description": "a large grey-green stout bodied fish with a large head and long chin barbel",
+    "minFishTime": 1600,
+    "maxFishTime": 2000,
+    "minErrorVariance": 1,
+    "maxErrorVariance": 3,
+    "minWeight": 10,
+    "maxWeight": 40,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 20,
+    "minDeepLevel": 40,
+    "maxDeepLevel": 100,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 20,
+    "eatingFrequency": 8,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "COLD"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 20,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": true,
+    "defaultFillet": true,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": true,
+    "baitItemMap": {
+      "minecraft:fish": [
+        2
+      ],
+      "minecraft:spider_eye": [
+        0
+      ],
+      "minecraft:rotten_flesh": [
+        0
+      ]
+    }
+  },
+  "Clownfish": {
+    "fishId": "Clownfish",
+    "itemId": "minecraft:fish",
+    "itemMetaData": 2,
+    "description": "a bright orange fish with white stripes and black edges",
+    "minFishTime": 600,
+    "maxFishTime": 800,
+    "minErrorVariance": 3,
+    "maxErrorVariance": 5,
+    "minWeight": 1,
+    "maxWeight": 1,
+    "time": "any",
+    "liquid": "water",
+    "rainRequired": false,
+    "thunderRequired": false,
+    "rarity": 15,
+    "minDeepLevel": 5,
+    "maxDeepLevel": 25,
+    "minYLevel": 55,
+    "maxYLevel": 80,
+    "maxLightLevel": 16,
+    "reproductionTime": 9,
+    "eatingFrequency": 4,
+    "trackable": true,
+    "biomeBlacklist": false,
+    "dimensionBlacklist": true,
+    "biomeTagList": [
+      "OCEAN",
+      "BEACH"
+    ],
+    "dimensionList": [
+      -1,
+      1
+    ],
+    "timeOutsideOfWater": 15,
+    "allowScaling": false,
+    "scalingItem": "",
+    "scalingItemMetadata": 0,
+    "scalingUseWeight": false,
+    "allowFillet": false,
+    "defaultFillet": false,
+    "filletItem": "",
+    "filletItemMetadata": 0,
+    "filletUseWeight": false,
+    "baitItemMap": {
+      "minecraft:carrot": [
+        0
+      ],
+      "minecraft:potato": [
+        0
+      ],
+      "minecraft:beetroot": [
+        0
+      ]
+    }
+  }
+}

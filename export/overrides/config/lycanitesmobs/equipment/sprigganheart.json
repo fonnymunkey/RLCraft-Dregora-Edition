@@ -1,0 +1,74 @@
+{
+  "itemName": "sprigganheart",
+  "loadDefault": false,
+  "slotType": "jewel",
+  "dropMobId": "lycanitesmobs:spriggan",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 3,
+  "elements": [
+    "arbour"
+  ],
+  "features": [
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "summoningseed",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown":300,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "summoningseed",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 200,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "projectileName": "summoningseed",
+      "projectileTrigger": "primary",
+      "projectilePattern": "simple",
+      "cooldown": 100,
+      "count": 1,
+      "bonusDamage": 4
+    },
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "lifedrain",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "lifedrain",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 1
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "projectileName": "lifedrain",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 2
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "bluefire",
+  "type": "spawner",
+  "enabled": true,
+  "loadDefault": false,
+  "mobCountMin": 1,
+  "mobCountMax": 3,
+  "ignoreDimensions": true,
+  "ignoreBiomes": true,
+  "ignoreLightLevel": true,
+  "dropsRequirePlayerDamage": true,
+  "conditions": [],
+  "triggers": [
+    {
+      "type": "world",
+      "chance": 0.25,
+      "tickRate": 600
+    }
+  ],
+  "locations": [
+    {
+      "type": "block",
+      "rangeMin": [
+        16,
+        0,
+        16
+      ],
+      "rangeMax": [
+        32,
+        32,
+        32
+      ],
+      "sorting": "random",
+      "blocks": [
+        "biomesoplenty:blue_fire"
+      ],
+      "listType": "whitelist"
+    }
+  ],
+  "mobSpawns": [
+    {
+      "mobId": "lycanitesmobs:arix",
+      "weight": 10
+    }
+  ]
+}

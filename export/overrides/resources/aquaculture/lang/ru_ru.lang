@@ -1,0 +1,126 @@
+itemGroup.Aquaculture=Aquaculture
+
+# Enchantments
+enchantment.aquacultureAppealing=Привлечение
+enchantment.aquacultureBarbedHook=Колючий крючок
+enchantment.aquacultureDoubleHook=Двойной крючок
+enchantment.aquacultureFastCast=Быстрый бросок
+enchantment.aquacultureHeavyLine=Тяжелая леска
+enchantment.aquacultureLongCast=Длинный бросок
+enchantment.aquacultureMagnetic=Магнетизм
+enchantment.aquacultureShortCast=Короткий бросок
+
+# Rod
+item.fishingRod.name=Деревянная удочка
+item.IronFishingRod.name=Железная удочка
+item.GoldFishingRod.name=Золотая удочка
+item.DiamondFishingRod.name=Алмазная удочка
+item.AdminFishingRod.name=Удочка администратора
+
+item.Seaweed.name=Морская капуста
+item.Algae.name=Водоросли
+
+# Food
+item.RawWhaleSteak.name=Сырой китовый стейк
+item.RawFishFillet.name=Сырое рыбное филе
+item.CookedFishFillet.name=Приготовленное рыбное филе
+item.CookedWhaleSteak.name=Приготовленный китовый стейк
+item.Whaleburger.name=Приготовленный китовый бургер
+item.FrogLegs.name=Ножки лягушки
+item.CookedFrogLegs.name=Приготовленные ножки лягушки
+item.TurtleSoup.name=Черепаховый суп
+item.Sushi.name=Суши
+
+# Misc Items
+item.Driftwood.name=Коряга
+item.TinCan.name=консервная банка
+item.MessageInABottle.name=Сообщение в бутылке
+item.Box.name=Коробка
+item.Lockbox.name=Закрытая коробка
+item.TreasureChest.name=Сундук с сокровищами
+
+item.NeptuniumIngot.name=Нептуниевый слиток
+item.NeptunesBounty.name=Подарок Нептуна
+item.NeptuniumPickaxe.name=Нептуниевая кирка
+item.NeptuniumShovel.name=Нептуниевая лопата
+item.NeptuniumAxe.name=Нептуниевый топор
+item.NeptuniumHoe.name=Нептуниевая мотыга
+item.NeptuniumSword.name=Нептуниевый меч
+item.NeptuniumHelmet.name=Нептуниевый шлем
+item.NeptuniumChestplate.name=Нептуниевая кираса
+item.NeptuniumLeggings.name=Нептуниевые поножи
+item.NeptuniumBoots.name=Нептуниевые ботинки
+
+# Fish
+item.Fish.name=Рыба
+item.Fish.Bluegill.name=Синежаберный солнечник
+item.Fish.Perch.name=Окунь
+item.Fish.Gar.name=Щука
+item.Fish.Bass.name=Басс
+item.Fish.Muskellunge.name=Щука-маскинонг
+item.Fish.Brown_Trout.name=Кумжа
+item.Fish.Catfish.name=Сом
+item.Fish.Carp.name=Карп
+item.Fish.Blowfish.name=Иглобрюх
+item.Fish.Red_Grouper.name=Красный групер
+item.Fish.Salmon.name=Сёмга
+item.Fish.Tuna.name=Тунец
+item.Fish.Swordfish.name=Меченос
+item.Fish.Shark.name=Акула
+item.Fish.Whale.name=Кит
+item.Fish.Squid.name=Кальмар
+item.Fish.Jellyfish.name=Медуза
+item.Fish.Frog.name=Лягушка
+item.Fish.Turtle.name=Черепаха
+item.Fish.Leech.name=Пиявка
+item.Fish.Pirahna.name=Пиранья
+item.Fish.Electric_Eel.name=Электрический угорь
+item.Fish.Tambaqui.name=Бурый паку
+item.Fish.Arapaima.name=Арапаима
+item.Fish.Cod.name=Треска
+item.Fish.Pollock.name=Сайд
+item.Fish.Herring.name=Сельд
+item.Fish.Halibut.name=Палтус
+item.Fish.Pink_Salmon.name=Горбуша
+item.Fish.Rainbow_Trout.name=Микижа
+item.Fish.Blackfish.name=Чёрная рыба
+item.Fish.Capitaine.name=Хогфиш
+item.Fish.Boulti.name=Нил Тиляпии
+item.Fish.Bagrid.name=Косатковый сом
+item.Fish.Syndontis.name=Сундонтис
+item.Fish.Red_Shrooma.name=Красный гриб
+item.Fish.Brown_Shrooma.name=Коричневый гриб
+item.Fish.Goldfish.name=Золотая рыбка
+item.Fish.Fish_Bones.name=Рыбные кости
+
+# Message in a bottle
+aquaculture.message=ОШИБКА! Рыба убегает!
+aquaculture.message1=Где я могу найти рыбу?
+aquaculture.message2=Доктор сказал, что я должен закупоривать свои чувства в бутылку.
+aquaculture.message3=Помогите! Я в ловушке на фабрике, которая производит "Сообщения в бутылке"!
+aquaculture.message4=Мой дом был разграблен, пришлите припасы!
+aquaculture.message5=Эй! Сюда! Я кажется вижу тебя!
+aquaculture.message6=Ха-ха, теперь Вы мусорите!
+aquaculture.message7=Собственность крипер-колы.
+aquaculture.message8=Внимание: Опасность удушья, храните в недоступном для детей месте.
+aquaculture.message9=Если Вы получили это, это сообщение из будущего, не ешьте свиную отбивную.
+aquaculture.message10=Admit one, Davy Jones' Locker.
+aquaculture.message11=9.17 N 19.89 E
+aquaculture.message12=Нептуний существует, я говорю Вам! Я не выдумываю!
+aquaculture.message13=Увеличьте Вашу удочку всего за 19.95 золота! С гарантией!
+aquaculture.message14=Что за рыболлургия? Какая-то реакция на рыбу?
+aquaculture.message15=ГАМБУРГЕРЫ С КИТОМ! 2x хлеба + Китовый стейк! Расскажите об этом!
+aquaculture.message16=С тех пор, как я пришёл на берег вещи перестали быть одинаковыми, потому что, когда я ступил на берег, я полностью проиграл ..
+aquaculture.message17=Нажмите Alt-F4, чтобы получить бесплатные алмазы!
+aquaculture.message18=О, я получил прекрасную связку кокосов..
+aquaculture.message19=Я присоединился к племени каннибалов, чтобы кушать новых людей.
+aquaculture.message20=Столько места ДЛЯ ВЕСЕЛЬЯ!
+aquaculture.message21=Дорогой Shadowclaimer, добавьте анобтаниум гипер-алмазы, которые наделены мгновенной скоростью добычи. С уважением, все.
+aquaculture.message22=Дорогой Shadowclaimer, когда выйдет версия 1.X? С уважением, все.
+aquaculture.message23=Уважаемые фанаты, привет! С уважением, Shadowclaimer.
+aquaculture.message24=Shadowclaimer <3's Nhira
+aquaculture.message25=Null Pointer Exception: Aquaculture.MessageInABottle (String) cannot be null.
+aquaculture.message26=I grind up diamond armor every morning and eat it for fast. - mDiyo
+aquaculture.message27=-Сообщение волшебным образом исчезает из Вашей руки.-
+aquaculture.message28=Посмотрите на меня, а теперь в Ваш инвентарь и снова на меня, это сообщение теперь сделано из алмазов! Неа, я просто шучу, всё ещё из бумаги.
+aquaculture.message29=Фиолетовый: RY

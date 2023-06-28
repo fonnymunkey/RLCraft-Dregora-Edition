@@ -1,0 +1,8 @@
+{
+  "name": "fnar:dungeon_ice_builtin_custom_loot",
+  "exclusive": true,
+  "inherit": [
+    "builtin:dungeon_ice_no_loot",
+    "rlcraft:loot"
+  ]
+}

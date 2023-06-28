@@ -1,0 +1,8 @@
+{
+  "name": "fnar:dungeon_jungle_builtin_custom_loot",
+  "exclusive": true,
+  "inherit": [
+    "builtin:dungeon_jungle_no_loot",
+    "rlcraft:loot"
+  ]
+}

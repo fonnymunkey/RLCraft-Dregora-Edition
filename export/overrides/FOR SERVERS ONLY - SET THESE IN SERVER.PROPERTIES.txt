@@ -1,0 +1,60 @@
+Please set the following in your server.properties files when it generates, for stability and compatibility:
+
+allow-flight=true
+difficulty=3
+max-tick-time=-1
+enable-command-block=true
+
+=========================
+
+enable-command-block MUST be TRUE for villagers to spawn correctly in generated structures.
+
+allow flight needs to be true for things like mounts that fly and fairy ring, or the server will kick players using those.
+
+difficulty needs to be 3 for hard difficulty mode and the difficulty RLCraft is balanced around.
+
+max-tick-time need to be -1 for big structures that generate (AND FOR PREGENNING AS WELL) as these structures take take some time to generate, and this prevents forge from thinking the server crashed and auto shutting it down.
+
+view-distance should be 10 for full compatibility, but if you get performance issues with many players, lower this to 8 or even 6, but shouldn't go below that
+
+=========================
+
+YOU SHOULD PREGEN YOUR WORLD IF YOU PLAN TO RUN A SERVER WITH MORE THAN 10 PLAYERS:
+
+How to Pre-generate a 10k block radius (Square) world:
+
+Download: https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator
+Place that jar in your mods folder (Server mods folder if a server).
+
+Run these commands (In console if a server, in game if singleplayer):
+
+/pregen utils setPriority pregenerator
+/pregen timepertick 250
+/pregen gen startradius square 0 0 b10000
+
+Once finished, restart your game or server.
+
+You can additionally use this command, to pause pregen automatically when players are online, if you'd like to keep your server active with constant pregen, without interrupting players.
+
+/pregen utils setPlayerLimit 1
+
+=========================
+
+IF UPDATING A 2.9 OR 2.9.1c WORLD TO 2.9.2
+
+Please run the following commands in your server console to update quests and loot tables:
+
+    /bq_admin default load
+    /bqs_loot default load
+
+Note that JEI will incorrectly show enchantment applications, but enchantments will still work fine and only apply to things they're actually allowed to, despite whatever JEI shows.  There is no fix for this except starting a new world.
+
+IF USING SPONGEFORGE:  You must disable "Entity Tracker Desync" and "Outdated Chunk Data" in the rlmixins.cfg, as SpongeForge already implements the same/similar patches and will crash.
+
+IF USING OPENJ9:  If you are using OpenJ9 and are getting crashes with RecurrentComplex, downgrade RecurrentComplex to version 1.4.8.2.  Latest Recurrent Complex currently has issues with OpenJ9, but will still work if you downgrade it to version 1.4.8.2.  The only issues will be that some of the new Nether/End city structure parts will be rotated incorrectly.  2.9.2 clients can still join servers with downgraded versions, without changing their own version, as they're backwards compatible.
+
+=========================
+
+Automatic restarts can be helpful, though RLCraft v2.9+ is MUCH better about cache and garbage collection than 2.8.2 was, and frequent restarts are no longer needed or required
+
+It is recommended to occasionally delete the Village.dat file in your world folder for very large servers with tons of players that have been running a long time (several months if not longer) as this file can get too big and begin to memory leak, causing big lag spikes and timeouts.  This likely won't be an issue for the majority of people.

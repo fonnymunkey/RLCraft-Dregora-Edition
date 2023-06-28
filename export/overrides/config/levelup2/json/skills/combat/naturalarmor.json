@@ -1,0 +1,16 @@
+{
+  "levels": [
+    11,
+    23,
+    37,
+    43,
+    51
+  ],
+  "prerequisites": [
+    "levelup:shieldblock"
+  ],
+  "column": 4,
+  "row": 1,
+  "enabled": true,
+  "active": true
+}

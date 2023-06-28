@@ -1,0 +1,98 @@
+{
+  "itemName": "frostweaverleg",
+  "loadDefault": false,
+  "slotType": "blade",
+  "dropMobId": "lycanitesmobs:frostweaver",
+  "dropChance": 0.05,
+  "levelMin": 1,
+  "levelMax": 3,
+  "elements": [
+    "frost"
+  ],
+  "features": [
+    {
+      "featureType": "projectile",
+      "levelMax": 1,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 30,
+      "count": 1,
+      "bonusDamage": 2
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 2,
+      "levelMax": 2,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 20,
+      "count": 1,
+      "bonusDamage": 5
+    },
+    {
+      "featureType": "projectile",
+      "levelMin": 3,
+      "projectileName": "frostweb",
+      "projectileTrigger": "secondary",
+      "projectilePattern": "simple",
+      "cooldown": 10,
+      "count": 1,
+      "bonusDamage": 12
+    },
+	{
+      "featureType": "damage",
+      "levelMax": 1,
+      "damageAmount": 3,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 90
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 2,
+      "levelMax": 2,
+      "damageAmount": 4,
+      "damageKnockback": 0,
+      "damageCooldown": 1,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+    {
+      "featureType": "damage",
+      "levelMin": 3,
+      "damageAmount": 5,
+      "damageKnockback": 0,
+      "damageCooldown": 0.75,
+      "damageRange": 1,
+      "damageSweep": 180
+    },
+	{
+      "featureType": "effect",
+      "levelMax": 1,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 20,
+      "effectStrength": 1
+    },
+	{
+      "featureType": "effect",
+      "levelMin": 2,
+      "levelMax": 2,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 1
+    },
+	{
+      "featureType": "effect",
+      "levelMin": 3,
+      "effectType": "minecraft:slowness",
+      "effectTarget": "target",
+      "effectDuration": 40,
+      "effectStrength": 2
+    }
+  ]
+}

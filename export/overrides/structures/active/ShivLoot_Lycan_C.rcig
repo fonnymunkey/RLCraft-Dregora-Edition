@@ -1,0 +1,127 @@
+{
+  "version": 2,
+  "inventoryGeneratorID": "ShivLoot",
+  "items": [
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:dragontreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:aviantreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:demontreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:aberrationtreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:anthroniantreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:amphibiantreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:wormtreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:beasttreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:aquatictreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:reptiletreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:insecttreat",
+        "damage": 0,
+        "count": 1
+      }
+    },
+    {
+      "weight": 1.0,
+      "min": 64,
+      "max": 64,
+      "item": {
+        "id": "lycanitesmobs:imptreat",
+        "damage": 0,
+        "count": 1
+      }
+    }
+  ],
+  "dependencyExpression": "$lycanitesmobs"
+}

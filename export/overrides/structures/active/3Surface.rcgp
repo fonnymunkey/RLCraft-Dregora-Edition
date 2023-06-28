@@ -1,0 +1,47 @@
+{
+  "data": {
+    "factors": [
+      {
+        "type": "limit",
+        "factor": {
+          "priority": 1.0,
+          "rays": [
+            {
+              "type": "dynpos",
+              "ray": {
+                "type": "world_height"
+              }
+            },
+            {
+              "type": "average",
+              "ray": {
+                "weight": 0.0,
+                "up": false,
+                "destExpression": "blocks:movement \u0026 !is:foliage"
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": -1
+              }
+            },
+            {
+              "type": "move",
+              "ray": {
+                "distance": 0,
+                "weight": 0.999924
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "title": "-1 Surface",
+    "description": [
+      "Sets structure -1 below average surface"
+    ]
+  }
+}

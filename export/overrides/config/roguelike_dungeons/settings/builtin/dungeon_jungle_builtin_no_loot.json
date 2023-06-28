@@ -1,0 +1,8 @@
+{
+  "name": "builtin:dungeon_jungle_no_loot",
+  // does not spawn
+  "exclusive": false,
+  "inherit": ["builtin:jungle"],
+  // remove the loot, so that extending dungeons (dungeons that inherit this setting) can supply their own loot
+  "overrides": ["LOOTRULES"]
+}

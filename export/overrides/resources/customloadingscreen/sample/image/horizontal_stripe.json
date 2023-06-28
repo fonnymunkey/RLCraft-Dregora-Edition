@@ -1,0 +1,19 @@
+{
+  "parent": "builtin/image",
+  "image": "loadingscreen:rlcraft.png",
+  "position_type": "TOP_LEFT",
+  "offset_pos": "TOP_LEFT",
+  "colour": "0xFF_FF_FF_FF",
+  "position": {
+    "x": "10",
+    "y": "10",
+    "width": "198",
+    "height": "40"
+  },
+  "texture": {
+    "x": "0",
+    "y": "0",
+    "width": "1",
+    "height": "1"
+  }
+}
