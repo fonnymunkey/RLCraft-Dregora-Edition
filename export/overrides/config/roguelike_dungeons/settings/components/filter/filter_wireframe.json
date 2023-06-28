@@ -1,4 +1,0 @@
-{
-  "name": "filter:wireframe",
-  "filters": [{"level": [0, 1, 2, 3, 4], "name": "wireframe"}]
-}

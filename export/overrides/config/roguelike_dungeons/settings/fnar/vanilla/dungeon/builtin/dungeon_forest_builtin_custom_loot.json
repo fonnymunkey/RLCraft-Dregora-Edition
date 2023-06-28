@@ -1,8 +1,0 @@
-{
-  "name": "fnar:dungeon_forest_builtin_custom_loot",
-  "exclusive": true,
-  "inherit": [
-    "builtin:dungeon_forest_no_loot",
-    "rlcraft:loot"
-  ]
-}

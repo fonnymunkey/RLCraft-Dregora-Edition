@@ -1,8 +1,0 @@
-{
-  "name": "fnar:dungeon_base",
-  "exclusive": false,
-  "inherit": [
-    "base:dungeon_base",
-    "fnar:loot"
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "name": "fnar:loot_tables_rewards",
-
-  "lootTables": [
-    {"type": "REWARD", "table": "minecraft:chests/simple_dungeon"},
-    {"level": 3, "type": "REWARD", "table": "minecraft:chests/simple_dungeon"},
-    {"level": 4, "type": "REWARD", "table": "minecraft:chests/simple_dungeon"}
-  ]
-}
