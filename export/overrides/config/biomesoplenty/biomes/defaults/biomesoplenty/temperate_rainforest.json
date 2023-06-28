@@ -1,11 +1,24 @@
 {
+<<<<<<< HEAD
   "canGenerateRivers": true,
   "beachBiomeLocation": "biomesoplenty:gravel_beach",
   "skyColor": -1,
+=======
+  "enableRain": true,
+  "canGenerateRivers": true,
+  "beachBiomeLocation": "biomesoplenty:gravel_beach",
+  "rainfall": 1.2,
+  "skyColor": -1,
+  "guiColour": 12311907,
+>>>>>>> da1a5ba (Initial V1.8 Commit)
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
   "variationBelow": 25.0,
   "variationAbove": 55.0,
+<<<<<<< HEAD
+=======
+  "waterColor": 16777215,
+>>>>>>> da1a5ba (Initial V1.8 Commit)
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -28,8 +41,15 @@
     }
   },
   "fogColor": -1,
+<<<<<<< HEAD
   "canGenerateVillages": false,
   "canSpawnInBiome": true,
+=======
+  "temperature": 0.75,
+  "canGenerateVillages": false,
+  "canSpawnInBiome": true,
+  "enableSnow": false,
+>>>>>>> da1a5ba (Initial V1.8 Commit)
   "generators": {
     "cattail": {
       "with": {
@@ -102,6 +122,7 @@
       "enable": true
     },
     "poison_ivy": {
+<<<<<<< HEAD
       "with": {
         "block": "biomesoplenty:plant_0",
         "properties": {
@@ -110,6 +131,8 @@
       },
       "generationAttempts": 16,
       "amountPerChunk": 0.1,
+=======
+>>>>>>> da1a5ba (Initial V1.8 Commit)
       "enable": true
     },
     "flax": {

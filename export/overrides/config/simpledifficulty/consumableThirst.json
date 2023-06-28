@@ -69,6 +69,16 @@
       "thirstyChance": 0.0
     }
   ],
+  "biomesoplenty:berries": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 1,
+      "saturation": 0.5,
+      "thirstyChance": 0.0
+    }
+  ],
   "betternether:black_apple": [
     {
       "identity": {

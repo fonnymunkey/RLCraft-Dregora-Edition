@@ -1,0 +1,282 @@
+RLCraft v2.9.1c - QoL and Performance Update
+
+2.9.1 b and c hotfix (again...sorry!), fixes baubles and enchantments that effect jump not working, fixes fishing proficiency in levelup breaking with new Fishing Made Better update, fixes filleting stacking issue, fixes crashes with gambling pickaxe:
+ 
+(From initial 2.9 release) This update has been over a year in the making, thank you to everyone who's been waiting so patiently, to the awesome RLCraft communities, all the folks helping test things, report bugs, everyone who worked on RLCraft (credited at the end of this changelog) making this update possible, and to my sponsor Bisect Hosting who, without, I wouldn't of had the time to work on RLCraft so much.  I really hope you enjoy this update, there is a lot...and I mean a LOT of new stuff, changed stuff, reworked and overhauled stuff...and should theoretically be a whole new beast for you to conquer.  Enjoy!
+
+To see all the initial v2.9 changes, please check https://www.curseforge.com/minecraft/modpacks/rlcraft/files/3575903
+
+2.9.1 Changes Below:
+
+===============
+IMPORTANT INFO:
+===============
+
+    - 2.9 Worlds ARE compatible with 2.9.1
+    - 2.8.2 Worlds are NOT compatible with 2.9.  If you attempt to update an old world, you will likely run into issues, crashes, and quests not working.
+    - USE LATEST FORGE - Due to the recent Log4j exploit found in Java, you will want to use the Forge version ending in 2860 or later!  We recommend latest Forge currently
+    - Command blocks must be enabled in server.properties, otherwise villages/structures won’t work
+    - IF USING OPTIFINE you can no longer use the E3 version, 2.9 will need version G5 or later.
+    - Better Foliage has been updated with shader support.  If your leaves/grass are not waving with your shaders, press F8, go to Shader Configuration, and add 100 to the beginning of the Grass and Leaves block ID, so it should look like 10018 and 10031 (Sildur's currently needs this)
+    - The default allocated 3GB's of RAM should still be perfectly fine for 2.9.  You should not allocate more than 4GB's for your client, as this ends up causing Java garbage collection to go wonky (very scientific I know)
+
+============
+Server Info:
+============
+
+    - Many performance fixes for servers, to the point where 2.9 server's should no longer require frequent restarts for clearing RAM/cache (restarts still recommended of course just in case but we ran a 2.9 server for 2 weeks straight with no restarts and zero issues, so i think that says somethin' at least =P massive credit to Charles for a ton of the insane performance fixes)
+
+    Server.Properties Settings:
+    - NEW: Server's MUST enable "enable-command-block".  Set this to TRUE in your server.properties or structures won't generate correctly and villager spawns will be missing.
+    - "allow-flight" must be TRUE for flying mounts, fairy ring, and more, or the server will wrongly kick players.
+    - "max-tick-time" must be -1 (that's negative 1) for large structures generating and for pregenning worlds.
+    - "difficulty" should be 3 (Hard) for the correct balance and features RLCraft is centered around.
+
+=============
+Mods Updated:
+=============
+
+    - Anvil Patch (Lawful)
+    - BedBreakBegone
+    - BQTweaker
+    - CreativeCore
+    - CraftTweaker
+    - Doomlike Dungeons
+    - Fishing Made Better
+    - Lycanite Mobs
+    - Particle Culling
+    - RLTweaker
+    - Simple Difficulty (Rough Life)
+    - Spartan Weaponry
+    - Trinkets & Baubles
+    - Varried Commodities
+    - Wolf Armor & Storage
+
+======
+Added:
+======
+
+    - 2 new structures!  Rare nether portal structures courtesy of Chiom and Felix from the building competition!
+    - 17 new hats!  Courtesy of Artsy, these hats will only be rewarded through village bounties!
+    - Spartan Defiled (new spartan weapons made of umbrium!)
+    - Better Suffocation Overlay (fix rendering with head/camera clipping inside certain blocks)
+
+========
+Removed:
+========
+
+    - Baco Difficulty (no longer needed)
+    - Removed InControl (unused)
+
+=======================
+Main Updates & Changes:
+=======================
+
+BedBreakBegone:
+
+    - Rewrote to replace both bed and non-bed spawning, not just bed spawning, so stuff like Waystones should respawn properly
+
+Better Survival:
+
+    - Removed myrmex weapons due to broken behaviour (already crafted myrmex weapons are unusable)
+
+Dynamic Trees:
+
+    - Fixed incorrect check causing leaves to force chunk loading (huge performance improvement)
+    - Fixed tree potions consuming the entire stack upon use
+
+Fishing Made Better:
+
+    - Fishing line will no longer snap automatically over a long period of time
+    - Fixed default reproduction time config making fish take forever to reproduce
+    - Added 1m forgiveness buffer when reeling in loot so lag shouldn't delete items
+    - Added End dimension blacklist to 2 lava fish in default config to prevent them from showing up in The End
+    - Added additional debug info in fish tracker when in creative mode
+    - Reworked baitbox to properly require and use bait based on average weight and not total population
+    - Added tooltip to baitbox to clarify function
+    - Modified reel in speed based on weight to fix issues with heavier fish being uncatchable/annoying
+    - Increased default reel speeds of all reels
+    - Performance fixes, added handshake logic to reduce amount of packets required to sync server and client when fishing succeeds/fails/ends etc, cleanup of some imports/warnings in logs
+
+Lycanites:
+
+    - HUGE performance boost! Models now rendered using VBOs and your GPU, significantly improving performance when rendering many Lycanite mobs at a time (mob events should be smooth as butter now :) )
+    - Removed credit from summoning pedestal, this way they can't be used for AFK farms anymore, so mobs killed by summoned mobs from the summoning pedestal no longer count as player kills
+    - Summoning pedestal now only lasts for 20 seconds with 1 redstone (was 60 seconds per 1 redstone)
+    - Summoning pedestal portal and particles effect will turn off once the summoning pedestal runs out of redstone charge
+    - Summoning pedestal particles animation changed
+    - Lycanite mobs can spawn on snow layers again yay!
+    - Wooden Paxel renamed to Hard Wood Paxel, as it is the equivalent of stone tools, not wood
+    - Vespid Stinger lvl 3 now deals Penetration lvl 2 for 2 seconds (was lvl 3 for 3 seconds)
+    - Xaphan Spine lvl 3 now deals Penetration lvl 3 (was lvl 2)
+    - Xaphan Spine lvl 2 now deals Penetration lvl 2 (was lvl 1)
+    - Ettin club drop chance 5% → 10%
+    - Tweaked underground spawner: mobCountMin: 8 → 6; tickRate: 800 → 900; limit: 32 → 24 (essentially underground mob spawns should be toned down a bit)
+    - Ereped drill and ettin club now do damage
+    - Reaper claw and Clink Scythe now throw projectiles with primary attack instead of secondary
+    - Belphegor arm now throws projectiles with secondary attack instead of primary
+    - Shovel parts now work on snow
+    - Fixed darklings not spawning during Amalgalich battle
+    - Summoning staffs work in the Lost Cities now
+    - Beastiary’s summoning page now has a message about needing rank 2
+    - All equipment parts can now be crafted into something
+    - Fixed skylus issue
+    - Fixed offhand soulstone removing main hand item
+    - Aegis attack you if you attack iron golems
+    - Fixed soul contracts
+
+RLTweaker:
+
+    General:
+    - Pathfinding Chunk Cache Fix: Stops ghost chunkloading when creating pathfinding chunk caches
+    - Mob speed cap now 2048 (was 48) This should fix Morock randomly stopping when flying too fast
+    - Motion checker now checks all entities instead of just mobs (speed cap)
+    - Fixed Iron Berry and Iron Berry Juice causing you to fly sky high
+	
+	Battle Towers:
+    - Enforce Tower Destruction Config: Prevents clients from changing the tower destruction config
+    - Remove Unloaded Tower Destroyers: Removes tower destroyers from unloaded worlds
+
+    Better Survival:
+    - Replace Combo Handler: Replaces the blindness and combo handler entirely for performance
+    - Replace Enchantment Handler: Replaces the enchantment handler entirely for performance
+
+    Charm:
+    - Disable Magnetic Enchantment: Option to disable the effect of Magnetic without unregistering it to avoid packet issues. Use this if the enchantment is broken.
+    - Fix Charged Emerald Crash: Fix charged emeralds crashing when being fired from a dispenser. (thanks Rainy Afternoon)
+
+    Dynamic Surroundings:
+    - Environment Service Delay: Delay the environment service for village detection so it runs every second instead of every tick
+
+    Ruins:
+    - Remove RUINSTRIGGER Functionality: Removes the command block RUINSTRIGGER feature, as nothing used it and it causes issues with player chunkloading
+
+    Serene Seasons:
+    - Replace Random Update Handler: (requires patch chunkTicks) Replaces the random update handler with a faster alternative for performance.
+
+    Spawner Control:
+    - Remove World Ticks: Removes world ticks, which are used to create smoke particles and remove obsolete spawners, to save performance.
+
+    Patches:
+    - chunkTicks: Enables features for ticking chunk blocks
+    - serverCompatibility: Attempt to be compatible with alternative server software
+
+    The effects of the serverCompatibility setting are listed below
+
+    CatServer:
+    - Charm beacon fix
+    - Disenchanter crash fix
+    - LootTweaker fix
+    - Realbench patch fix
+
+    Mohist:
+    - Charm beacon fix
+    - LibrarianLib crash fix
+    - LootTweaker fix
+    - Realbench patch fix
+
+    Sponge:
+    - LootTweaker fix
+    - Pathfinding Chunk Cache patch is skipped if sponge is detected (skipped regardless of the serverCompatibility setting)
+
+
+Simple Difficulty (Rough Life):
+
+    - Inspirations Cauldron compatibility, can now drink from cauldrons, fixes for canteens used on cauldrons
+    - Tile entities are now separate heat calculations by default (heater + campfire will work now)
+    - Using campfires no longer removes items while in creative
+    - Renamed Cloth armor to Wool armor as some players got confused if this actually warmed you up or not
+
+Spartan Weaponry:
+
+    - Fixed Throwing Weapon items disappearing when the projectile despawns (meaning trees will stop eating them now lel)
+    - Reduced the xp cost for replacing enchanted throwing weapon ammo from 2 levels per enchantment level to 1 level. This should prevent the possibility of replacing ammo for a heavily enchanted throwing weapon being too expensive to work in the Anvil.
+
+Trinkets & Baubles:
+
+    - Re-added the ability to assign multiple keys to the T&B Keybinds.
+    - Added a button to toggle the "Always Show Mana Bar" option in the Race Gui.
+    - Changed the Dragons Eye Growl sound to be in the Player sound Category, instead of the "Record" Category
+    - The Teddy Bear now doesn't require empty hands to give the sleeping bonus, but not required being equipped as a bauble when sleeping
+
+Wolf Armor & Storage:
+
+    - Added Mo'Bends compatibility!
+
+==========================
+Minor Bug Fixes & Changes:
+==========================
+
+    - Disabled version checker on Reborncore
+    - Disabled default config check in Reborncore
+    - Disabled seasonal hats from Reborncore as they broke with Mo'Bends
+    - Lock smelting recipes reduced to 3 nuggets each (was 4)
+    - Roofed Forests have higher chances to spawn spooky things :)
+    - Particle Culling update should fix rare shader conflict with particles suddenly being culled indefinitely after a long time
+    - Lowered weight of Vineyard spawn in villages
+    - Lowered weight of RLCraft_cryo_bit structure, removed Mountain spawns, only spawns in Hills now
+    - Can no longer CarryOn parasite mobs (oops)
+    - Living Greataxe & Scythe now deal 15 damage (was 12), Sentient Greataxe and Scythe now deal 20 damage (was 17)
+    - Fixed small placement animation issue with Fancy Block Particles on Furnaces
+    - Saddle renamed to "Basic Saddle"
+    - Grapes only give half thirst droplet upon consuming (was 1 full droplet)
+    - Performance fix (again) for Deathworm AI
+    - Blacklisted Cabinets from CarryOn due to glitched block state bug
+    - Skirts are now smeltable good lord you're welcome >:|
+    - Fixed Chainmail Skirt not having a level requirement
+    - Removed Gold Feather Ingot and Iron Feather Ingot, unused item
+    - Fixed stair recipes for defiledlands stairs
+    - Added charm crates and bookshelves to the hopper/dropper blacklist due to bug/exploit
+    - Minecarts with chests no longer give xp from the Level up crafting skill
+    - Changed/fixed the Lunar Grue altar image from the quest book
+    - Removed gold/iron ingot + feather recipe
+    - Fixed recipe conflict with mossy stone brick stairs and slabs
+    - Blacklisted weapon racks, tall lamps, banners and saplings (dynamic trees) from carry on for causing ghost blocks/dupes
+    - Fixed missing custom painting loot in Roguelike Dungeons
+    - Fixed heart crystal ore and cincinnasite ore not having smelting recipes
+
+====================
+MASSIVE THANK YOU!!!
+====================
+
+RLCraft v2.9 would not have been possible without the following people who spent countless hours, time and effort, helping and working on RLCraft, from their own sheer passion, even changing their mods specifically for RLCraft, massive massive thank you <3
+
+Charles445 (RLCraft team and dev of RLTweaker, SimpleDifficulty, and AIReducer, rewrote/ported/fixed Locks, Bountiful, SoManyEnchantments, etc.)
+Fonnymunkey (RLCraft team and dev of CollisionDamage, BBB, ShieldBreak, BQTweaker and expansions, rewrote FishingMadeBetter)
+Icebelly (RLCraft team, the epic structure guy)
+Artsy (Artist for Simple Difficulty (Rough Life), new Antique Atlas textures/icons, new Enhanced Visual effects, animated Lycanite charges and saddles, Hats, Locks and UI elements, Quest Themes, FishingMadeBetter textures, and Trinkets & Baubles rings and items)
+Hoonts (Artist for Simple Difficulty (Rough Life), Locks, Quest Themes, Crystal Heart textures, and various texture tweaks)
+Emerald (Artist for new logos and dragon loading animation)
+GoldenAlpharex (Official Wiki Expert)
+TwilightStar (Original art featured in a few Quest Book entries)
+Titan (RLCraft team)
+Xcube (RLCraft team, dev of ISeeDragons)
+Rayquazafallout (RLCraft team, insane tester, help with many configs)
+Ichttt (Dev of First Aid)
+Xzero (Dev of Trinkets & Baubles)
+Lycanite (Dev of Lycanites Mobs)
+Melonslise (Dev of Locks)
+ObliviousSpartan (Dev of Spartan Weaponry, Spartan HUD, and Spartan Shields)
+Ejektaflex (Dev of Bountiful)
+Meldexun (Dev of Entity Culling)
+Bl4ckscor3 (Dev of Particle Culling, XP Tome, and Sit)
+Yyon (Dev of Grappling Hook)
+Tschipp (Dev of Forgotten Items, Carry On, and Callable Horses)
+GoblinBob (Dev of Mo'Bends)
+Fnar (Dev of Roguelike Dungeons - Fnar's Edition)
+WhiteDraco (Dev of Switch Bow)
+Yung (Creator of Better Caves, Better Mineshafts, and YUNG's Law)
+Harleyoc1 (Dev of Dynamic Trees)
+ShelterRin (Dev of So Many Enchantments)
+Noppes (Dev of Varied Commodities)
+Cursed1nferno (Dev of Bountiful Baubles)
+Elenai (Dev of Elenai Dodge)
+EnderLanky (Dev of Advanced Hook Launchers)
+CreativeMD (Dev of Enhanced Visuals and Item Physics)
+Macaw (Dev of Macaw's Bridges)
+TheAwesomeGem (Dev of Fishing Made Better)
+Dhanatry & Cephelo (S&R Parasites Team)
+Jared (Dev of Crafttweaker)
+Paulevs (Creator of LUM resource pack)
+Snownee (Dev of Snow Real Magic!)
+Phantom_Fantasia (Original questbook concept)

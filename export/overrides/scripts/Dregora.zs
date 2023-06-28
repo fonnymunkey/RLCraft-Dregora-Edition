@@ -32,6 +32,13 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 });
 
 
+<<<<<<< HEAD
+=======
+//fix BOP error unregistered item:
+recipes.remove(<notreepunching:saw_planks_7>);
+recipes.addShaped("dregora19", <biomesoplenty:planks_0:0> * 4, [[<ore:toolSaw>], [<biomesoplenty:log_0:4>]]);
+
+>>>>>>> da1a5ba (Initial V1.8 Commit)
 // Make BOP logs skinable using hatchet - If true, NTP will add its own log->plank and plank->stick recipes and remove old versions
 recipes.addShapeless("dregora17",<minecraft:stick>*8,[<biomesoplenty:log_4:4>]);
 recipes.addShapeless("dregora18",<minecraft:stick>*8,[<biomesoplenty:log_4:5>]);
