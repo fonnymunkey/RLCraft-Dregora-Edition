@@ -1,7 +1,7 @@
 # RLCraft-Dregora-Edition
  Repository for tracking the development of RLCraft: Dregora Edition
 
- RLCraft is created by Shivaxi, and is currently on version 2.9.2d.
+ RLCraft is created by Shivaxi, and is currently on version 2.9.3.
 
  RLCraft: Dregora Edition is a spinoff of RLCraft integrating Dregora, a world and structure gen mod created by NLBlackEagle, along with many other changes to create a fresh new experience for both old and new RLCraft players.
 
