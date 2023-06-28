@@ -17,7 +17,7 @@ spawnMaxDistance=0
 
 
 rule1=0,100,preserveBlock
-rule2=0,100,minecraft:stained_hardened_clay-9
+rule2=0,100,quark:iron_plate-1
 rule3=0,100,minecraft:farmland-7
 rule4=0,100,minecraft:water-0
 rule5=0,100,minecraft:dirt-0

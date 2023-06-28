@@ -15,7 +15,7 @@ spawnMaxDistance=0
 
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stained_hardened_clay-9
-rule3=0,100,quark:iron_plate-0
+rule3=0,100,quark:iron_plate-1
 rule4=0,100,minecraft:grass-0
 rule5=0,100,minecraft:grass-0
 rule6=0,100,minecraft:sea_lantern-0
@@ -59,7 +59,7 @@ rule43=0,100,minecraft:oak_stairs-6
 rule44=0,100,minecraft:quartz_stairs-6
 rule45=0,100,Skull:1:10-1
 rule46=0,100,minecraft:oak_stairs-5
-rule47=0,100,minecraft:diamond_block-0
+rule47=0,100,minecraft:LAPIS_BLOCK-0
 rule48=0,100,minecraft:brewing_stand-0
 rule49=0,100,minecraft:leaves-0
 rule50=0,100,minecraft:wooden_slab-8
@@ -70,7 +70,7 @@ rule54=0,100,minecraft:quartz_stairs-3
 rule55=0,100,minecraft:wooden_door-9
 rule56=0,100,minecraft:wooden_door-8
 rule57=0,100,minecraft:stone_slab-15
-rule58=0,100,CommandBlock:RUINSTRIGGER /summon minecraft:villager ~ ~-2 ~ {Profession:1,CustomName:Scientist,CustomNameVisible:1,Health:40,Attributes:[{Name:"generic.maxHealth",Base:40}]}:@-0
+rule58=0,100,minecraft:air
 
 layer
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1

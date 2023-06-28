@@ -55,7 +55,7 @@ rule36=0,100,minecraft:oak_stairs-0
 rule37=0,100,minecraft:stone_slab-0
 rule38=0,100,MobSpawner:Zombie,MobSpawner:Husk,MobSpawner:Silverfish
 rule39=0,100,minecraft:oak_stairs-1
-rule40=0,100,quark:iron_plate-0
+rule40=0,100,quark:iron_plate-1
 
 layer
 1,1,1,1,1,1,1,1,1,1,1

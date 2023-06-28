@@ -1,14 +1,9 @@
 {
-<<<<<<< HEAD
-=======
   "enableRain": false,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "wallBlock": {
     "block": "biomesoplenty:flesh",
     "properties": {}
   },
-<<<<<<< HEAD
-=======
   "rainfall": 0.0,
   "skyColor": -1,
   "guiColour": 11091006,
@@ -19,38 +14,21 @@
   },
   "hasBiomeEssence": false,
   "waterColor": 16777215,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "fillerBlock": {
     "block": "biomesoplenty:flesh",
     "properties": {}
   },
-<<<<<<< HEAD
-  "skyColor": -1,
-=======
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "topBlock": {
     "block": "biomesoplenty:flesh",
     "properties": {}
   },
   "fogColor": -1,
-<<<<<<< HEAD
-  "fogDensity": 1.0,
-  "roofTopBlock": {
-    "block": "minecraft:netherrack",
-    "properties": {}
-  },
-  "hasBiomeEssence": false,
-=======
   "temperature": 2.0,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "roofFillerBlock": {
     "block": "minecraft:netherrack",
     "properties": {}
   },
-<<<<<<< HEAD
-=======
   "enableSnow": false,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "generators": {
     "hive": {
       "maxRadius": 9,

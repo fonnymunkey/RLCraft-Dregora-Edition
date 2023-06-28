@@ -1,22 +1,14 @@
 {
-<<<<<<< HEAD
-  "canGenerateRivers": false,
-  "skyColor": 3687520,
-=======
   "enableRain": true,
   "canGenerateRivers": false,
   "rainfall": 0.6,
   "skyColor": 3687520,
   "guiColour": 4145489,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "fogDensity": 0.175,
   "hasBiomeEssence": true,
   "variationBelow": 5.0,
   "variationAbove": 10.0,
-<<<<<<< HEAD
-=======
   "waterColor": 1973030,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -40,15 +32,10 @@
     }
   },
   "fogColor": 3882316,
-<<<<<<< HEAD
-  "canGenerateVillages": false,
-  "canSpawnInBiome": false,
-=======
   "temperature": 0.6,
   "canGenerateVillages": false,
   "canSpawnInBiome": false,
   "enableSnow": false,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "generators": {
     "glowshrooms": {
       "with": {
@@ -172,17 +159,6 @@
       "generators": {}
     },
     "poison_ivy": {
-<<<<<<< HEAD
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "poisonivy"
-        }
-      },
-      "generationAttempts": 16,
-      "amountPerChunk": 0.1,
-=======
->>>>>>> da1a5ba (Initial V1.8 Commit)
       "enable": true
     },
     "grass": {

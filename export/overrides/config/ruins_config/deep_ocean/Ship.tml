@@ -12,7 +12,7 @@ preserve_plants=1
 
 rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stained_hardened_clay-7,stained_hardened_clay-12,stained_hardened_clay-15,minecraft:stained_hardened_clay-7,stained_hardened_clay-12,stained_hardened_clay-15,preserveBlock,preserveBlock,preserveBlock
-rule3=0,100,quark:iron_plate-0,preserveBlock
+rule3=0,100,quark:iron_plate-1,preserveBlock
 rule4=0,100,minecraft:stained_hardened_clay-7,stained_hardened_clay-12,stained_hardened_clay-15
 rule5=0,50,minecraft:stained_hardened_clay-7,stained_hardened_clay-12,stained_hardened_clay-15
 rule6=0,50,minecraft:stained_hardened_clay-7,stained_hardened_clay-12,stained_hardened_clay-15

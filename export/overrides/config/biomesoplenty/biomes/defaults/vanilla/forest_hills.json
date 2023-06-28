@@ -85,17 +85,6 @@
       "enable": true
     },
     "poison_ivy": {
-<<<<<<< HEAD
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "poisonivy"
-        }
-      },
-      "generationAttempts": 32,
-      "amountPerChunk": 0.25,
-=======
->>>>>>> da1a5ba (Initial V1.8 Commit)
       "enable": true
     },
     "flax": {

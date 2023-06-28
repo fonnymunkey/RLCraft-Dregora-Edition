@@ -1,22 +1,14 @@
 {
-<<<<<<< HEAD
-  "canGenerateRivers": false,
-  "skyColor": -1,
-=======
   "enableRain": false,
   "canGenerateRivers": false,
   "rainfall": 0.0,
   "skyColor": -1,
   "guiColour": 5919808,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "fogDensity": 0.5,
   "hasBiomeEssence": true,
   "variationBelow": 1.0,
   "variationAbove": 5.0,
-<<<<<<< HEAD
-=======
   "waterColor": 13390080,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "seaFloorBlock": {
     "block": "biomesoplenty:dried_sand",
     "properties": {}
@@ -31,15 +23,10 @@
     "properties": {}
   },
   "fogColor": 14409153,
-<<<<<<< HEAD
-  "canGenerateVillages": false,
-  "canSpawnInBiome": false,
-=======
   "temperature": 2.0,
   "canGenerateVillages": false,
   "canSpawnInBiome": false,
   "enableSnow": false,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "generators": {
     "glowshrooms": {
       "with": {

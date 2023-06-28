@@ -1,24 +1,15 @@
 {
-<<<<<<< HEAD
-  "canGenerateRivers": true,
-  "beachBiomeLocation": "minecraft:beaches",
-  "skyColor": -1,
-=======
   "enableRain": true,
   "canGenerateRivers": true,
   "beachBiomeLocation": "minecraft:beaches",
   "rainfall": 1.0,
   "skyColor": -1,
   "guiColour": 8970560,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "fogDensity": 1.0,
   "hasBiomeEssence": true,
   "variationBelow": 10.0,
   "variationAbove": 25.0,
-<<<<<<< HEAD
-=======
   "waterColor": 6160128,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "seaFloorBlock": {
     "block": "minecraft:dirt",
     "properties": {
@@ -41,15 +32,10 @@
     }
   },
   "fogColor": -1,
-<<<<<<< HEAD
-  "canGenerateVillages": false,
-  "canSpawnInBiome": false,
-=======
   "temperature": 1.0,
   "canGenerateVillages": false,
   "canSpawnInBiome": false,
   "enableSnow": false,
->>>>>>> da1a5ba (Initial V1.8 Commit)
   "generators": {
     "glowshrooms": {
       "with": {
@@ -195,17 +181,6 @@
       "enable": true
     },
     "poison_ivy": {
-<<<<<<< HEAD
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "poisonivy"
-        }
-      },
-      "generationAttempts": 16,
-      "amountPerChunk": 0.1,
-=======
->>>>>>> da1a5ba (Initial V1.8 Commit)
       "enable": true
     },
     "flower_lily": {
