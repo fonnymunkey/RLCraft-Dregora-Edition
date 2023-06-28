@@ -32,13 +32,24 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 });
 
 
-<<<<<<< HEAD
-=======
-//fix BOP error unregistered item:
-recipes.remove(<notreepunching:saw_planks_7>);
-recipes.addShaped("dregora19", <biomesoplenty:planks_0:0> * 4, [[<ore:toolSaw>], [<biomesoplenty:log_0:4>]]);
+// Remove BOP non-used and double recipes:
+recipes.remove(<biomesoplenty:berries>);
+recipes.remove(<biomesoplenty:plant_0:5>);
+recipes.remove(<biomesoplenty:gem:6>);
+recipes.remove(<biomesoplenty:gem_block:6>);
+recipes.remove(<biomesoplenty:terrestrial_artifact>);
 
->>>>>>> da1a5ba (Initial V1.8 Commit)
+// Re-add bop Terrestrial Arrifact recipe but with iceandfire sapphire.
+recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
+ [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
+  [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
+  [<biomesoplenty:gem:4>,<minecraft:emerald>,null]]);
+
+
+//fix BOP error unregistered item:
+//recipes.remove(<notreepunching:saw_planks_7>);
+//recipes.addShaped("dregora19", <biomesoplenty:planks_0:0> * 4, [[<ore:toolSaw>], [<biomesoplenty:log_0:4>]]);
+
 // Make BOP logs skinable using hatchet - If true, NTP will add its own log->plank and plank->stick recipes and remove old versions
 recipes.addShapeless("dregora17",<minecraft:stick>*8,[<biomesoplenty:log_4:4>]);
 recipes.addShapeless("dregora18",<minecraft:stick>*8,[<biomesoplenty:log_4:5>]);
