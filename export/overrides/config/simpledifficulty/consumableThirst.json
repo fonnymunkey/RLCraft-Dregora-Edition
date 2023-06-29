@@ -238,6 +238,16 @@
       "thirstyChance": 0.0
     }
   ],
+  "foodexpansion:itemmelonsalad": [
+    {
+      "identity": {
+        "metadata": -1
+      },
+      "amount": 9,
+      "saturation": 1.5,
+      "thirstyChance": 0.0
+    }
+  ],
   "rustic:grapes": [
     {
       "identity": {

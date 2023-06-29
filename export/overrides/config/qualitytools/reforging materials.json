@@ -1918,6 +1918,14 @@
   },
   {
     "tool": {
+        "item": "bountifulbaubles:trinketluckyhorseshoe"
+    },
+    "material": {
+        "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
         "item": "artifacts:shock_pendant"
     },
     "material": {
