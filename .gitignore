@@ -1,2 +1,5 @@
-
+.idea/*
 *.jar
+export/overrides/config/fantasticlib/reference/
+export/overrides/config/jei/worldSettings.cfg
+export/overrides/mods/memory_repo/
