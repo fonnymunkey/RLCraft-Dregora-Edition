@@ -15,7 +15,8 @@
       "biomeTags": [
         "spooky",
         "mountain",
-        "swamp"
+        "swamp",
+        "-canyon"
       ],
       "biomeTagListType": "whitelist"
     }

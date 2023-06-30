@@ -1,1 +1,8 @@
-[]
+[
+	{
+		"__comment":"OTG Override",
+		"dim": 0,
+		"active": false,
+		"files": ["worldgen/worldgen.json", "worldgen.json"]
+	}
+]

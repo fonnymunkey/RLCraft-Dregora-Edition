@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "biometype": "MOUNTAIN",
+    "result": "allow"
+  },
+  {
+    "dimension": 0,
+    "mob": "lycanitesmobs:yale",
+    "result": "deny"
+  },
+  {
+    "dimension": 111,
+    "mod": "lycanitesmobs",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:if_troll", "iceandfire:firedragon", "iceandfire:icedragon" ],
+    "biome": ["Dregora_Trench", "Dregora_TrenchDeep", "Dregora_TrenchDeepBridge", "Dregora_TrenchDeepRiver", "Dregora_TrenchDeepRiverBridge", "Dregora_TrenchInnerBorderFromImage", "Dregora_TrenchInnerBorderRandom", "Dregora_TrenchIslands", "Dregora_TrenchOutterBorderFromImage", "Dregora_TrenchOutterBorderRandom", "Dregora_TrenchOutterBorderSlope" ],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mob": ["iceandfire:firedragon", "iceandfire:icedragon", "iceandfire:amphithere"],
+    "biome": ["City of Blight"],
+    "result": "deny"
+  }
+]

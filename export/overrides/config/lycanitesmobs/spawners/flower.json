@@ -33,7 +33,9 @@
       "sorting": "random",
       "blocks": [
         "minecraft:red_flower",
-        "minecraft:yellow_flower"
+        "minecraft:yellow_flower",
+        "biomesoplenty:flower_0",
+        "biomesoplenty:flower_1"
       ],
       "blockCost": 8,
       "listType": "whitelist"

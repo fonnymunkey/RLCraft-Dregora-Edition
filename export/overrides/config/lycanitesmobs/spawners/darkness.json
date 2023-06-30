@@ -66,6 +66,10 @@
       "blocks": [
         "minecraft:air",
         "minecraft:tall_grass",
+        "biomesoplenty:plant_0:0",
+        "biomesoplenty:plant_0:1",
+        "biomesoplenty:plant_0:7",
+        "biomesoplenty:plant_0:8",
         "minecraft:water"
       ],
       "listType": "whitelist",

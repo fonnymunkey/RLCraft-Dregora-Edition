@@ -1,0 +1,76 @@
+Fixed/Changed/Added:
+
+
+Dregora To Do:
++ swamp trader zombie needs water block not air
++ fix heaven encounters too op in some cases
++ add flying brigade to each biomegroup type
++ bop berry bush in Orchard
+
+RLCraft TO Do:
++ test lycanite events
+
+Postponed due to OTG:
++ Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
+
+Removed from ToDo for various reasons, may be revisited later.
++ BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
++ Remove 90% (GARDENS) Ruins and recurrent structures from Trench / Trench border
++ Structures generating in air Recurrent in Dregora_FrozenMudMountainSlope including villages
++ add lightning spawns to center (using lycanite?) to create a atmosphere - activate in a radius every x ticks & activate on pressure plate at random spot
++ replace some wither skeleton with swords for wither skeletons with bows (no withers anymore, ghouls now)
++ weird color blending is half(ish) intended, most is murky, the rest is default color for compatibility reasons with ocean stuff. Can improve this a bit down the line)
++ too many pixies in general biomes, (This is per default?)
++ Infernal mob in viking village always same type (non-issue)
++ Dregora_LushMesaCompat DLD spawn issue
++ Fix floating flesh blocks in water Atomic city / Desert City Creek biome
++ Preferably remove ravines in trench (lava flow bugs)
++ add recipes (bop gems) to swords
++ decrease amount of chests in corrupted graves
++ Defiled Lands Biome remove pixie villages replace with Vex Villages
+
+Future Todo:
++ Dregora_CorruptedJungleHillBorderIsle does not spawn
++ Dregora_CorruptedJungleHillHole does not spawn
++ Creeper spawner trap fast spawning
++ Ornamental pillars with loot in center
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ make boobytrap cave sections and generate them everywhere
++ Add Waystone custom structure to Villages / Outposts
++ Custom Dragon nests **FUTURE**
++ Add Creepers with speed boost to Dregora Mineshafts
++ Add Lycanite Battletowers **Future**
++ Add Parasite Battlehive? **Future**
++ Add Defiled Lands Battle tower **Future**
++ Add Nether Battletower **Future**
++ Add Nether Fortress **Future**
++ Add End Battletower **Future**
++ Add Biome Themed Battletowers **Future**
++ add biome shadow savanna (in a shadow update)
++ add viking village but with savanna blocks & a stingin tribe
++ add biome shadow swamp (in a shadow update)
++ add rotten down viking village with upwards vines, kind of like valheim
++ add biome shadow peaks (in a shadow update)
++ add big letter bo3 mountain peaks to mountains
+
+
+
+Trader Outposts Concept:
+
+Villager Buys:
+minecraft:end_crystal -> 25x emerald
+scalinghealth:crystalshard -> 10x emerald
+minecraft:diamond -> 5x emerald
+biomesoplenty:crystal_shard -> 2x emerald
+quark:crystal -> 2x emerald
+realistictorches:glowstone_crystal -> 2x emerald
+
+1x SAPPHIRE = 10x emerald
+1x AMETHYST = 5x emerald
+1x SCARLITE = 3x emerald
+1x RUBY = 1x emerald
+1x TOPAZ = 1x emerald
+1x AMBER = 1x emerald
+1x PERIDOT = 1x emerald
+1x TANZANITE = 1x emerald
+1x MALACHITE = 1x emerald
