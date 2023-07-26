@@ -6,11 +6,20 @@ Dregora To Do:
 + fix heaven encounters too op in some cases
 + add flying brigade to each biomegroup type
 + bop berry bush in Orchard
++ Reformat all dregora biome names to be more descriptive
++ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
++ make boobytrap cave sections and generate them everywhere
++ Outposts spawn with players (Should increase overall rarity but add a 5-10% spawn chance to structure rather then 100%)
++ Outposts have minable waystones
++ Ornamental pillars with loot in center
++ remove log cascading chunk gen reporting
+
 
 RLCraft TO Do:
-+ test lycanite events
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ test & maybe add some additional lycanite events
 
-Postponed due to OTG:
+OTG:
 + Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
 
 Removed from ToDo for various reasons, may be revisited later.
@@ -51,26 +60,3 @@ Future Todo:
 + add biome shadow swamp (in a shadow update)
 + add rotten down viking village with upwards vines, kind of like valheim
 + add biome shadow peaks (in a shadow update)
-+ add big letter bo3 mountain peaks to mountains
-
-
-
-Trader Outposts Concept:
-
-Villager Buys:
-minecraft:end_crystal -> 25x emerald
-scalinghealth:crystalshard -> 10x emerald
-minecraft:diamond -> 5x emerald
-biomesoplenty:crystal_shard -> 2x emerald
-quark:crystal -> 2x emerald
-realistictorches:glowstone_crystal -> 2x emerald
-
-1x SAPPHIRE = 10x emerald
-1x AMETHYST = 5x emerald
-1x SCARLITE = 3x emerald
-1x RUBY = 1x emerald
-1x TOPAZ = 1x emerald
-1x AMBER = 1x emerald
-1x PERIDOT = 1x emerald
-1x TANZANITE = 1x emerald
-1x MALACHITE = 1x emerald
