@@ -14,7 +14,7 @@ uniqueMinDistance=0
 spawnMinDistance=0
 spawnMaxDistance=0
 
-rule1=0,100,minecraft:preserveBlock
+rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stone_slab-4
 rule3=0,100,minecraft:brick_block-0,brick_block-0,brick_block-0,brick_block-0,brick_block-0,preserveBlock
 rule4=0,100,minecraft:brick_stairs-2

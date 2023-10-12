@@ -14,7 +14,7 @@ uniqueMinDistance=1000
 spawnMinDistance=500
 spawnMaxDistance=0
 
-rule1=0,100,minecraft:preserveBlock
+rule1=0,100,preserveBlock
 rule2=0,100,minecraft:double_stone_slab-0
 rule3=0,100,minecraft:stone_slab-0
 rule4=0,100,minecraft:vine-8

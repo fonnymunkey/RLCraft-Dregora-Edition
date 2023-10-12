@@ -1,26 +1,184 @@
 Fixed/Changed/Added:
+- Fixed Outposts spawn with players (Fixed WeightedBranches being regular Branches causing the outposts to be more common then intended.)
+- Removed corrupted biome group and placed all biomes in simmilar groups
+- Outposts fixed minable waystones
+- Fix missing dispenser loottable links in skyscrapers
+- Further increase rarity of village structures
+- remove most to all diamonds from chest loot
+- remove mushroom cows from most biomes
+- verify each chest is working
+- remove most to all diamond_ore blocks from stuctures
+- Loottables make gold tools mostly improved versions
+- Add emerald to all mountain biomes
+- Remove Wastelands Oasis
+- removed river biomes mirroring themselves
+- Fixed nullpointer crash LayerMixRiver & Generating stronghold feature
+- Removed 14 biomes, Wasteland Oasis, Wasteland Oasis Edge and Wasteland Oasis Dungeon, Dregora_RFHotSpotMountain, Dregora_RFHotSpotMountainTOP, Dregora_RFBigMountainSlope, Dregora_RFMountainOceanBorder, Dregora_ForestBirchDungeon, Dregora_ForestDenseDungeon, Dregora_ForestFantasyDungeon, Dregora_ForestMixedDungeon, Dregora_ForestPineDungeon, Mystic Moor Grove, Dregora_ShrublandFen
+- Changed Atomic City Skycolor to 420e3e & replaced red sand for defiled sand
+- replaced biome names
+- Fixed Wicked Plains & green peaks spawning in random mode? (around Ashen Blood peaks?)
+- Fixed The Green Abbys (Surrounds Defiled Hills)
+- Fixed Rainforest Mountains (In or next to Mangrove)
+- Fixed Brushland (Surrounds Dregora_LushMesaCompat)
+- Fixed Corrupted Shadow Forest ( Caniverous Forest spawns as river? )
+- Fixed Dead Shores (spawns in wasteland?)
+- Replaced STATIONARY_WATER for BIOMESOPLENTY:BLOOD in Shadow Forest
+- Fixed Sandy Fungal spawning instead of Xeric Shrubland
+- Updated flower island to be a bit more colorfull and contain more resources
+- improved the flat tropical island (make more rocky and bigger)
+- added beach boulders to white beach
+- added boulders to several rivers & beaches
+- Added Traps in biomes:
+    #MinesCrate Default CustomObject(RLD_Trap_Mine,RLD_Trap_MineCrate,RLD_Trap_MineProximity)
+    Wasteland, Quagmire, Heath, Hot Steppe, Defiled Rainforest, Defiled Snow Plains, Nuclear Ruins, Ruins of Blight, Lair of the Thing, JotunnHeim, Traverse Badlands, Traverse Rocky Plains, Dregora_DryDunesCompat, Corrupted Viking Realm, Lair of the Thing Border, Land of Pillars, Forged Lands of Tranquillity, Dead Wastelands, Blood Stained Plains, Traverse Desert Shrubland
 
+    #MinesCrate Ashen CustomObject(RLD_CGravelTrap_Quicksand,RLD_CGravelTrap_Spawner,RLD_CGravelTrap_Water)
+    Ashlands, Traverse Ashen Hills, Dregora_DrySavannaCompat
 
-Dregora To Do:
+    #MinesCrate Defiled CustomObject(RLD_DSandTrap_QuickSand,RLD_DSandTrap_Spawner,RLD_DSandTrap_Water)
+    Defiled Desert
+
+    #MinesCrate Gravel CustomObject(RLD_GravelTrap_QuickGravel,RLD_GravelTrap_Spawner,RLD_GravelTrap_Water)
+    Quagmire, Ruins of Blight, Traverse Badlands, Traverse Rocky Plains, Corrupted Shadow Forest, Land of Pillars
+
+    #MinesCrate Sand CustomObject(RLD_SandTrap_Quicksand,RLD_SandTrap_Spawner,RLD_SandTrap_Water)
+    Dregora_DryDunesCompat, Dead Wastelands
+
+    #MinesCrate Snowy CustomObject(RLD_SnowTrap_Quicksand,RLD_SnowTrap_Spawner,RLD_SnowTrap_Water)
+    Defiled Snow Plains, Lair of the Thing, JotunnHeim
+
+    #MinesCrate White Sand CustomObject(RLD_WSandTrap_Quicksand,RLD_WSandTrap_Spawner,RLD_WSandTrap_Water)
+    Dregora_SaltPlains, Traverse Desert Shrubland
+- Added Warning signs on biome edges:
+    Dregora_SaltPlainsBorder, Wasteland Edge, Steppe Edge, Traverse Badlands Edge, Dregora_DryDunesBorderCompat, Dregora_DrySavannaBorderCompat, Ashen Blood Peaks Edge, Traverse Ashen Hills Border, Ashlands Edge, Flower Field, Traverse Rocky Plains Border, Dregora_CorruptedFlowerPlainsBorder, Corrupted Forest Border, Dregora_CorruptedCherryBorder, Dregora_CorruptedPineForestBorder, Dregora_CorruptedBloodForestBorder, JotunnHeim Edge, Viking Border, Lair of the Thing Border, Quagmire Edge, Defiled Snow Plains Border
+- make dregora biome pretty names
+- fixed chests in skyscrapers being empty 30% of the time
+- Removed PHC objects from biomes
+- Fixed error unknown attribute generic.attackSpeed for random Encounters
+- Should have fixed blight surter being able to starve
+- fixed missing resource table dregora:rlcraft/loot_bundles/stone_weapons
+- fixed Invalid biome name Dregora_DeadSwampCompat Dregora_ShrublandCompat in biome group TemperateBiomes
+- fixed Dregora_FrozenTaiga and Dregora_FrozenTaigaForest having volatility differences
+- Could not reproduce Dregora_DryDunesBorder spawning ice trolls, perhaps this was due to the BiomeBit Error in OTG or something else already solved?
+- improved Special road end randomizers so they don't block interiors as often
+- Added Traps & Warnings to biomes: Dregora_SaltPlains, DregoraSaltPlainsBorder
+- Fixed OTG issue for OTG v9.5-R2 which caused some biomes to overwrite with other biomes & a few crashes.
+- Make Origin islands mimic more of alpha terrain
+- reworked encounter system to spawn on command for testing purposes
+- cyclops cave empty chests issue fixed
+- Sponge no longer generates through bedrock in ocean
+- Added biome Traverse Ashen Hills Border to smooth out the main biome (and offer a biome to put up danger warnings)
+- Fixed Traverse Rocky Plateau having water removed between layer 41 and 80
+- changed BiomeWetness: 0.0 to 0.8 for Dregora_DryAshBeach
+- changed BiomeTemperature: 0.6 to 0.8 for Dregora_DryDirtlands
+- Fixed Dregora_DrySavannaCompat not being added to worldconfig.ini and therefor not spawning.
+- removed river biome Dregora_DrySavannaCompat from biome Dregora_DryMesaBorderCompat
+- Increased size of Flower Field and added Flower Field Border
+- removed RLD_Trap_MineCrate and RLD_Trap_MineProximity from traps
+- Added Cyclop dens to Grasslands, increased sheep spawn & increased biome size from 4 to 2 (where 0 is biggest and 9 is smallest)
+- Added biome Flower Creek (to fix waterlevels in Flower Fields)
+
+Dregora todo:
++ Remove no_loot chests
++ Fix villager outposts spawning in water and make them rarer again
++ Add Dragons to flower fields and make people teleport down if in biome and walking over a certain flower (make flower circles)
++ entity issue: minecraft:minecraft:skeleton_horse
++ Alpines & AlpsLow really need some fixing
++ Dregora_SaltPlainsBorder has volatility issue with Dregora_SaltPlains
++ add silverfish rocks & ores
++ Encounter ( Shadow Forest ) doesn't appear to spawn
++ Hot Steppe needs river go through (not under)
++ Add Rainforest Island
++ Add Marble and Basalt islands
++ Tropical rainforest as island
++ Viking islands & villages
++ Mining Islands (Make super rocky and add quarries)
++ Quagmire Plains need more trees.
++ memefy the grand tree
++ add cartographer village with mayor SomeNutzGuy
++ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
++ fix frost trolls& pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
++ Make skyscraper single biomes different, add more cobwebs & way more destruction
++ check DW - Dust Plains for bamboo
++ check [D-Bop] Woodland.bc for border issues
++ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has
++ change [DW] Wasteland Plateau to be something else
++ Miningtown & JungleCaves lore have no structure to spawn in
++ Add house with villager named Simp, a lot of flowers + Nimphs
++ Redo underground dragon bones, add gold n such.
++ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons)
++ Add Ancient Coins to loottables for trading special items with villager chiefs & add villager chief
++ make slate mine layer in bruh biomes(and make it harder to mine)
++ villager hint trader
++ make tunnel bunker dungeon
++ make tunnel break in underworld biome
++ make tunnel longer
++ Add lightning to spawn with charged emerald?
++ Fix some of the Dregora performance issues (remove resources from biomes)
++ Add Drunken Villager Boss to Bruh Biome
++ Add cliff boulder idea to ocean islands
++ re-check trench broken by canyon issue
++ remake and evaluate entities from the 3 dungeons
++ bruh biome add leaveless forest
++ redo lootchests (and add cursed branch loottable for in certain areas)
++ make herobrine a bruh entity boss & super strong
 + swamp trader zombie needs water block not air
 + fix heaven encounters too op in some cases
 + add flying brigade to each biomegroup type
 + bop berry bush in Orchard
-+ Reformat all dregora biome names to be more descriptive
 + Add dracula castle with 25 village houses and add to bruh biome with wine cellars
 + make boobytrap cave sections and generate them everywhere
-+ Outposts spawn with players (Should increase overall rarity but add a 5-10% spawn chance to structure rather then 100%)
-+ Outposts have minable waystones
 + Ornamental pillars with loot in center
 + remove log cascading chunk gen reporting
 
 
-RLCraft TO Do:
+RLCraft Done:
+- Changed configs to properly reflect new biome names
+- Fixed Ruins error causing log spam
+
+RLCraft todo:
++ Add flower teleportation circles to Flower Field
++ Finetune Ruins to biomes
++ remove big ruins mod tower
++ Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
++ Add Bop items, ores to legendary tooltips (maybe also cursed weapons?)
++ Burial Arrow config
++ Trinkers and Baunbles climable blocks
++ check infernal spawns always same type, up the rarity and check
++ Error loading entity with ID 'abyssalcraft:evilsheep'
++ increase difficulty of city biomes & bruh biomes to 1.5x
++ Check BiomeFinder, make sure it properly works
++ Fix structures: P_Crater (X),
++ Hot Spring Bucket, make it do damage instead of heal and add to sulfuric biomes?
++ Add lvl 26 summoned blight keppel to a particular nasty environment
++ remove 90% of all structures in ice area
++ add end battle towers (crystals inside + guardian spawner)
++ fix chat.villager_golem.0 issue
++ fix [atomicstryker.ruins.common.RuinTemplateRule:doSpecialBlock:749]: Ruins Mod could not determine what to spawn for [minecraft:preserveBlock] in Ruin template:
++ add screens in menu
++ add screen in loading screen (shiv but at dregora landscape)
++ Blacklist Battletowers from trench biomes and make them rarer
++ carryon chest on battle towers & other cheese methods, make golems stronger & invulnerable to arrows
++ use incontrol to add spawn rule for additional flying entities if player is above Y100
++ Make macaw bridges use bamboo
++ Remove hotsprings (again) they still spawn for somee reason?
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ test & maybe add some additional lycanite events
++ Add mob farm entity culling mechanism through incontrol, if exeeds animal x then spawn grim reapers
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + test & maybe add some additional lycanite events
 
-OTG:
+
+OTG Done:
+- Fix An Unknown error occured while attempting to perform this command
+- Fix Crash LayerMixing for OTG
+
+OTG todo:
++ Test all presets enmasse with the biomebits update
++ WriteWithoutComments does not work any more, perhaps due to the biomebits update?
 + Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
++ Fix Issue with SpongeForge deleting chunks of villages and such on multiplayer only (not singleplayer)
+
 
 Removed from ToDo for various reasons, may be revisited later.
 + BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
@@ -37,6 +195,7 @@ Removed from ToDo for various reasons, may be revisited later.
 + add recipes (bop gems) to swords
 + decrease amount of chests in corrupted graves
 + Defiled Lands Biome remove pixie villages replace with Vex Villages
+
 
 Future Todo:
 + Dregora_CorruptedJungleHillBorderIsle does not spawn

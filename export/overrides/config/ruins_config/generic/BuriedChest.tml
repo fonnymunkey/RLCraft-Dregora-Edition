@@ -15,7 +15,7 @@ spawnMinDistance=0
 spawnMaxDistance=0
 
 rule1=0,100,ChestGenHook:chests/simple_dungeon:9-4,ChestGenHook:chests/spawn_bonus_chest:9-4,ChestGenHook:chests/village_blacksmith:9-4,ChestGenHook:chests/abandoned_mineshaft:9-4,ChestGenHook:chests/jungle_temple:9-4
-rule2=0,100,minecraft:preserveBlock
+rule2=0,100,preserveBlock
 
 layer
 1
