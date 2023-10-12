@@ -15,7 +15,7 @@ uniqueMinDistance=0
 spawnMinDistance=0
 spawnMaxDistance=0
 
-rule1=0,100,minecraft:preserveBlock
+rule1=0,100,preserveBlock
 rule2=0,100,minecraft:monster_egg-4,monster_egg-2,monster_egg-2,monster_egg-2,monster_egg-3,stonebrick-2,stonebrick-1,stonebrick-0,stonebrick-0,stonebrick-0
 rule3=0,100,minecraft:stone_slab-5
 rule4=0,100,minecraft:wooden_slab-0

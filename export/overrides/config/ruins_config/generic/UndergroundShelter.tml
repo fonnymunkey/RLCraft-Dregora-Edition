@@ -15,7 +15,7 @@ spawnMinDistance=0
 spawnMaxDistance=0
 
 rule1=0,100,minecraft:monster_egg-1,stonebrick-0,stonebrick-0
-rule2=0,100,minecraft:preserveBlock
+rule2=0,100,preserveBlock
 rule3=0,100,minecraft:fence-0
 rule4=0,100,minecraft:bed-0
 rule5=0,100,minecraft:bed-8

@@ -14,7 +14,7 @@ uniqueMinDistance=200
 spawnMinDistance=0
 spawnMaxDistance=0
 
-rule1=0,100,minecraft:preserveBlock
+rule1=0,100,preserveBlock
 rule2=0,100,minecraft:stone-6,stone-6,stone-6,stone-6,stone-6,preserveBlock
 rule3=0,100,minecraft:stone-6
 rule4=0,100,minecraft:planks-1
