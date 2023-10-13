@@ -77,14 +77,19 @@ Fixed/Changed/Added:
 - removed RLD_Trap_MineCrate and RLD_Trap_MineProximity from traps
 - Added Cyclop dens to Grasslands, increased sheep spawn & increased biome size from 4 to 2 (where 0 is biggest and 9 is smallest)
 - Added biome Flower Creek (to fix waterlevels in Flower Fields)
+- Replaced the no_loot chests for AIR
+- Added Dragons to FF
+- Fixed villager outposts spawning in water and made them rarer again
+- fixed entity issue: minecraft:minecraft:skeleton_horse
+- fixed Dregora_SaltPlainsBorder volatility issue with Dregora_SaltPlains
 
 Dregora todo:
-+ Remove no_loot chests
-+ Fix villager outposts spawning in water and make them rarer again
-+ Add Dragons to flower fields and make people teleport down if in biome and walking over a certain flower (make flower circles)
-+ entity issue: minecraft:minecraft:skeleton_horse
++ Add Lightning Dragon roost to viking lands
++ Fix all them herbs: https://github.com/cadaverous-eris/Rustic/wiki/Herbs Except Aloe Vera, Core Root, Horsetail
++ asses and add mushrooms: rustic:mooncap_mushroom, rustic:deathstalk_mushroom, quark:glowshroom, rustic:wind_thistle, rustic:core_root, rustic:ginseng, rustic:marsh_mallow, rustic:cloudbuff, rustic:cohosh, rustic:horsetail
++ add biomesoplenty:flower_0:0 to fungal biomes & quark:leaf_carpet:7
++ Add Glowshrooms and additional mushrooms to fungal biomes
 + Alpines & AlpsLow really need some fixing
-+ Dregora_SaltPlainsBorder has volatility issue with Dregora_SaltPlains
 + add silverfish rocks & ores
 + Encounter ( Shadow Forest ) doesn't appear to spawn
 + Hot Steppe needs river go through (not under)
@@ -95,7 +100,8 @@ Dregora todo:
 + Mining Islands (Make super rocky and add quarries)
 + Quagmire Plains need more trees.
 + memefy the grand tree
-+ add cartographer village with mayor SomeNutzGuy
++ add new underground villages (simple bunker style) - Zombie village and regular village variants
++ add cartographer village with mayor SomeNutzGuy as underground village variant
 + make librarians with catographer trades (purely to troll people with texture packs) Libtographer
 + fix frost trolls& pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
 + Make skyscraper single biomes different, add more cobwebs & way more destruction
@@ -135,8 +141,14 @@ Dregora todo:
 RLCraft Done:
 - Changed configs to properly reflect new biome names
 - Fixed Ruins error causing log spam
+- Increased Stymphalian Bird Flight height from 80 to 100
+- Increased Dragon Flight height from 128 to 156
 
 RLCraft todo:
++ Install Copper & Lightning & configure config
++ Blacklist Dragon Biomes: Ravenous Jungle
++ Rename BOP Glowshrooms to Gleamshrooms
++ Add additional steps in boss battle recipes to make exploration more relevant (Add certain items to bruh biome battletowers?)
 + Add flower teleportation circles to Flower Field
 + Finetune Ruins to biomes
 + remove big ruins mod tower
@@ -174,7 +186,7 @@ OTG Done:
 - Fix Crash LayerMixing for OTG
 
 OTG todo:
-+ Test all presets enmasse with the biomebits update
++ Test all presets enmasse with the biomebits update (and possibly find a way to make biomegroupsbit smaller whilst adding a bit to biomebits
 + WriteWithoutComments does not work any more, perhaps due to the biomebits update?
 + Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
 + Fix Issue with SpongeForge deleting chunks of villages and such on multiplayer only (not singleplayer)
