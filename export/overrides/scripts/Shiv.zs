@@ -1548,7 +1548,7 @@ recipes.addShaped("lolarecipe75",<spartanweaponry:arrow_wood>*4,
   [<minecraft:paper>]]);
 
 recipes.addShaped("lolarecipe76",<simpledifficulty:dragon_canteen>,
- [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>],
+ [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>|<iceandfire:dragon_skull:2>],
   [<simpledifficulty:iron_canteen:*>],
   [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>]]);
 

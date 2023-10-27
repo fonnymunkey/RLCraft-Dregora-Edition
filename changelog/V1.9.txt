@@ -82,17 +82,44 @@ Fixed/Changed/Added:
 - Fixed villager outposts spawning in water and made them rarer again
 - fixed entity issue: minecraft:minecraft:skeleton_horse
 - fixed Dregora_SaltPlainsBorder volatility issue with Dregora_SaltPlains
+- Changed PLAINS tag for Viking Realm and Corrupted Viking Realm to FOREST tag
+- Added biomes Viking Hills Border & Viking Hills Border F
+- Changed Viking Realm & Corrupted Viking Realm to be more volatile
+- Add Lightning Dragon roost to viking lands
+- Wasteland Summit River set to Wasteland Mountain to make sure river edges have a smoothy slope.
+- Changed Deep Polluted Ocean to fully inherit from deep ocean
+- Fixed Volcanic Beach having air layer
+- Removed biomes Dregora_CorruptedJungleHillBorderIsle and Dregora_CorruptedJungleHillHole as they did not spawn and were not needed.
+- Add Herobrine to Alpha Island (Origin)
+- check heaven encounters too op in some cases (This did not require fixing)
+- redid lootchests (and add cursed branch loot table)
+- made herobrine harder (200% health & swapped axe for 10x totem of undying) It's a beast now.
+- swamp trader zombie needs water block not air
+- Adjusted Alpines & AlpsLow terrain generation to be cleaner.
+- fixed bop berry bushes, hot springs and liquid poison generating where it should not.
+- added rustic berry bushes to biome Orchard
+- Fixed all herbs: https://github.com/cadaverous-eris/Rustic/wiki/Herbs Except Aloe Vera, Core Root, Horsetail
+- Added all rustic herbs to their designated biome types.
+- Added Quark Glowshrooms to Fungal Biomes
+- added biomesoplenty:flower_0:0 to fungal biomes & quark:leaf_carpet:7
+- Overgrown Cliffs had water issue caused by enlarging Deep ocean isles, reverted deep ocean isles change to solve the issue.
+- Make Wasteland Singular Skyscraper biomes rarer
+- Add Dregora_DeadSwamp as isle to Lone Skyscraper Biomes
+- Make skyscraper single biomes different, add more destruction
+- Changed single skyscrapers into ruined skyscrapers, added block randomizers, holes in walls and removed all organic blocks.
 
 Dregora todo:
-+ Add Lightning Dragon roost to viking lands
-+ Fix all them herbs: https://github.com/cadaverous-eris/Rustic/wiki/Herbs Except Aloe Vera, Core Root, Horsetail
-+ asses and add mushrooms: rustic:mooncap_mushroom, rustic:deathstalk_mushroom, quark:glowshroom, rustic:wind_thistle, rustic:core_root, rustic:ginseng, rustic:marsh_mallow, rustic:cloudbuff, rustic:cohosh, rustic:horsetail
-+ add biomesoplenty:flower_0:0 to fungal biomes & quark:leaf_carpet:7
-+ Add Glowshrooms and additional mushrooms to fungal biomes
-+ Alpines & AlpsLow really need some fixing
++ Add leaves to skyscrapers in Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland + full city biomes and add more destruction.
++ Add Mycelium Caverns under several biomes (and populate with fungi including glowshrooms)
++ make lush (forest) biomes bigger
 + add silverfish rocks & ores
 + Encounter ( Shadow Forest ) doesn't appear to spawn
 + Hot Steppe needs river go through (not under)
++ villager hint trader
++ fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
++ change [DW] Wasteland Plateau to be something else
++ check DW - Dust Plains for bamboo
++ check [D-Bop] Woodland.bc for border issues
 + Add Rainforest Island
 + Add Marble and Basalt islands
 + Tropical rainforest as island
@@ -103,40 +130,26 @@ Dregora todo:
 + add new underground villages (simple bunker style) - Zombie village and regular village variants
 + add cartographer village with mayor SomeNutzGuy as underground village variant
 + make librarians with catographer trades (purely to troll people with texture packs) Libtographer
-+ fix frost trolls& pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
-+ Make skyscraper single biomes different, add more cobwebs & way more destruction
-+ check DW - Dust Plains for bamboo
-+ check [D-Bop] Woodland.bc for border issues
-+ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has
-+ change [DW] Wasteland Plateau to be something else
++ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
 + Miningtown & JungleCaves lore have no structure to spawn in
 + Add house with villager named Simp, a lot of flowers + Nimphs
-+ Redo underground dragon bones, add gold n such.
 + Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons)
-+ Add Ancient Coins to loottables for trading special items with villager chiefs & add villager chief
++ Add Ancient Coins (Battle Coins, add small description) to loottables (new battletowers) for trading special items with villager chiefs & add villager chief
 + make slate mine layer in bruh biomes(and make it harder to mine)
-+ villager hint trader
++ Fix some of the Dregora performance issues (remove resources from biomes)
 + make tunnel bunker dungeon
 + make tunnel break in underworld biome
 + make tunnel longer
-+ Add lightning to spawn with charged emerald?
-+ Fix some of the Dregora performance issues (remove resources from biomes)
 + Add Drunken Villager Boss to Bruh Biome
 + Add cliff boulder idea to ocean islands
 + re-check trench broken by canyon issue
 + remake and evaluate entities from the 3 dungeons
 + bruh biome add leaveless forest
-+ redo lootchests (and add cursed branch loottable for in certain areas)
-+ make herobrine a bruh entity boss & super strong
-+ swamp trader zombie needs water block not air
-+ fix heaven encounters too op in some cases
 + add flying brigade to each biomegroup type
-+ bop berry bush in Orchard
-+ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
-+ make boobytrap cave sections and generate them everywhere
 + Ornamental pillars with loot in center
-+ remove log cascading chunk gen reporting
-
++ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
++ Cyclops Colonies, Ant Colonies
++ Display percentage unpacking Dregora so people do not force quit any more.
 
 RLCraft Done:
 - Changed configs to properly reflect new biome names
@@ -145,6 +158,10 @@ RLCraft Done:
 - Increased Dragon Flight height from 128 to 156
 
 RLCraft todo:
++ Transform all floating things into crashed things on the ground when applicable or remove.
++ Add all Canyon tag biomes to iceandfire blacklist
++ Make Ethereal Tree/spectral garden patches for within the END
++ Apparently Journey map doesn't wipe deaths on a new world
 + Install Copper & Lightning & configure config
 + Blacklist Dragon Biomes: Ravenous Jungle
 + Rename BOP Glowshrooms to Gleamshrooms
@@ -186,6 +203,7 @@ OTG Done:
 - Fix Crash LayerMixing for OTG
 
 OTG todo:
++ Bonus Chests do not spawn with radius spawn
 + Test all presets enmasse with the biomebits update (and possibly find a way to make biomegroupsbit smaller whilst adding a bit to biomebits
 + WriteWithoutComments does not work any more, perhaps due to the biomebits update?
 + Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
@@ -193,6 +211,7 @@ OTG todo:
 
 
 Removed from ToDo for various reasons, may be revisited later.
++ Redo underground dragon bones, add gold n such.
 + BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
 + Remove 90% (GARDENS) Ruins and recurrent structures from Trench / Trench border
 + Structures generating in air Recurrent in Dregora_FrozenMudMountainSlope including villages
@@ -210,8 +229,8 @@ Removed from ToDo for various reasons, may be revisited later.
 
 
 Future Todo:
-+ Dregora_CorruptedJungleHillBorderIsle does not spawn
-+ Dregora_CorruptedJungleHillHole does not spawn
++ Add lightning to spawn with charged emerald? (Can do with 0,0 structure revamp)
++ re-doing the 0,0 structure to be a dungeon with a portal at the end leading to a new dungeon with a portal at the end (and so on) with branching teleport areas connecting different areas together
 + Creeper spawner trap fast spawning
 + Ornamental pillars with loot in center
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
