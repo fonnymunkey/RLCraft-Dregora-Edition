@@ -19,5 +19,12 @@
 		"apply": {
 			"cancelvanilla": false
 		}
+	},
+	{
+		"__comment" : "Cancel DynamicTreeOverride",
+		"select": { "name": "biomesoplenty:.*" },
+		"apply": {
+			"cancelvanilla": false
+		}
 	}
 ]

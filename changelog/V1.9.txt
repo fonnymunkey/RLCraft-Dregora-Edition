@@ -107,57 +107,149 @@ Fixed/Changed/Added:
 - Add Dregora_DeadSwamp as isle to Lone Skyscraper Biomes
 - Make skyscraper single biomes different, add more destruction
 - Changed single skyscrapers into ruined skyscrapers, added block randomizers, holes in walls and removed all organic blocks.
+- Added lattices to skyscrapers in Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland + full city biomes and add more destruction.
+- Added additional blockcheck to warning signs so they dont spawn on top of trees any longer.
+- Fixed a image-to-map issue at x4451 z14717 where a wrong hexcolor was used.
+- Increased size of Cherry Blossom Grove from 5 to 1.
+- Added Mangrove as a isle to Grasslands biome with size 6 and rarity 98
+- Increased Mangrove size from 4 to 1
+- Increased biome Chaparral from size 5 to 2.
+- Added Chaparral as a isle to Cherry Blossom Grove with size 6 and rarity 98
+- Increased biome Lush Swamp from size 4 to 1.
+- Added Lush Swamp ad a isle to Mangrove with size 7 and Rarity 97
+- Changed Rainforest size from 4 to 1
+- Changed Toxic Swamp size 4 to
+- changed Rocky Seasonal Forest size from 5 to 1 and added Woodland as isle biome with size 5 and rarity 97
+- Changed Traverse Ashen Hills from size 4 to 1
+- Changed Biome YellowStone size from 4 to 1
+- Changed Biomes Dregora_DryForestBirchCompat and Dregora_DryForestBirch sizes from 4 to 1.
+- Added the Traverse Ashen Hills biome as isle to biomes: Dregora_DryForestBirchCompat and Dregora_DryForestBirch with size 6 and rarity 97
+- Lowered all biomegroups with rarity 200 (mostly wastelands & deserts) to 190 making all other biomegroups less rare.
+- Changed Bog size from 4 to 2.
+- Changed Shield (Biome) size from 4 to 1
+- Added biome Bog Low.
+- Changed Woodland size from 5 to 1
+- Changed Dregora_DeadSwampCompat size from 5 to 2
+- make lush (forest) biomes bigger (Fen, Bayou, Bog, Shield, etc)
+- Added Fen to Dead Forest as isle with size 7 and rarity 97 and removed normal spawning.
+- Completely redid the YellowStone biome.
+- Increased amount of Troll Caverns under forests & mountains by a significant amount
+- Grove changed size 4 to 2 and added Mystic Grove as isue to Grove
+- Made Dungeons generate SMOOTH_STONE underneath (so they arent floating in caverns)
+- Fixed Dungeon01BossSpawn (using Dungeon03BossSpawn as temp fix until dungeon redo)
+- Add Mycelium Caverns under several biomes (and populate with fungi including glowshrooms)
+- Increased Encounter ( Shadow Forest ) Spawns
+- Hot Steppe needs river go through (not under) - Already fixed
+- Tweaked Plateau biome Pillars and set biome to Nuclear Swamp on edges for color effect
+- Added Flower Forests
+- added temperate forest to cherry blossom biome
+- improved [DW] Wasteland Plateau
+- Find and fix AIR,50,CHEST:5,30,CHEST:5, (empty chests generating)
+- add new loottable for coin dungeons
+- write up 5 new lorebooks for coin dungeons
+- Add Dungeons for coins hint trader
+- add coins to skyscrapers (minimal in loot)
+- add new entities to coin dungeons & skyscrapers dropping coins
+- assign coin dungeons to all CHC biomes
+- made GemTrader & Topographer name non visible
+- villager hint trader (Trades books with locations)
+- changed book of artifacts to include information on cities also having coins in them
+- salt plains added silo bunker
+- Bruh Biomes ( ~1-2 weeks )
+- Add glowcelium to mushroom islands
+- removed floating ships from random oceans (these only appear in fromimage areas now)
+- decreased tnt entities in traps
+- Viking islands & villages
+- added quarry islands
+- Added trees to Quagmire Plains.
+- Checked all biomesoplenty biomes for tree resources and removed them were no required.
+- replaced 1843 instances of biomesoplenty:poison for lycanitesmobs:poison
+- Make Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland loot better
+- Added scuronotte to defiled land biomes & improved vilespine spawning
+- added armor stands to underground villages
+- updated loottables readme
+- fixed bone_only loottable typo (dregorarl: instead of dregora:)
+- added toilet contents to toilets in underground villages
+- Write 3 remaining lore books & check all lore + maintenance lore is good + chest contents in underground villages
+- added underground villages to random mode biomes & remove the possibility to spawn in CANYON type biomes
 
 Dregora todo:
-+ Add leaves to skyscrapers in Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland + full city biomes and add more destruction.
-+ Add Mycelium Caverns under several biomes (and populate with fungi including glowshrooms)
-+ make lush (forest) biomes bigger
-+ add silverfish rocks & ores
-+ Encounter ( Shadow Forest ) doesn't appear to spawn
-+ Hot Steppe needs river go through (not under)
-+ villager hint trader
-+ fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
-+ change [DW] Wasteland Plateau to be something else
-+ check DW - Dust Plains for bamboo
-+ check [D-Bop] Woodland.bc for border issues
-+ Add Rainforest Island
-+ Add Marble and Basalt islands
-+ Tropical rainforest as island
-+ Viking islands & villages
-+ Mining Islands (Make super rocky and add quarries)
-+ Quagmire Plains need more trees.
-+ memefy the grand tree
-+ add new underground villages (simple bunker style) - Zombie village and regular village variants
-+ add cartographer village with mayor SomeNutzGuy as underground village variant
-+ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
-+ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
-+ Miningtown & JungleCaves lore have no structure to spawn in
++ Display percentage unpacking Dregora so people do not force quit any more.
++ Add Bruh Biomes
++ add flying brigade to each biomegroup type
++ Create new Battletower
++ add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 + Add house with villager named Simp, a lot of flowers + Nimphs
-+ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons)
-+ Add Ancient Coins (Battle Coins, add small description) to loottables (new battletowers) for trading special items with villager chiefs & add villager chief
-+ make slate mine layer in bruh biomes(and make it harder to mine)
 + Fix some of the Dregora performance issues (remove resources from biomes)
-+ make tunnel bunker dungeon
 + make tunnel break in underworld biome
 + make tunnel longer
 + Add Drunken Villager Boss to Bruh Biome
-+ Add cliff boulder idea to ocean islands
-+ re-check trench broken by canyon issue
 + remake and evaluate entities from the 3 dungeons
-+ bruh biome add leaveless forest
-+ add flying brigade to each biomegroup type
++ Cyclops Colonies (underground biome with blood n stuff in prairie?).
++ Check OTG Errors at startup
+Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
+
+
+Potential Hotfix tasks:
++ fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
+
+Village of Memes ideas:
++ add cartographer village with mayor SomeNutzGuy as underground village variant
++ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
++ I have a better RLCraft, coded in 4 days!
++ Supreme Book X librarian
++ Sussyberians
++ Book: Definitely better RLCraft
+
+Backlog:
++ Add DregoraRL (pre-packed to github)
++ Make village RLCraft style (Add RLCraft content into the underground village)
++ make tunnel bunker dungeon
++ Add Nether portals
++ re-check trench broken by canyon issue
++ Parasite biome spooky forest?
++ Make dungeon entity Remnant of Blight, Withness of Blight
 + Ornamental pillars with loot in center
-+ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
-+ Cyclops Colonies, Ant Colonies
++ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
++ Miningtown & JungleCaves lore have no structure to spawn in
 + Display percentage unpacking Dregora so people do not force quit any more.
+
+Bruh Biome Ideas:
++ Remake Mistlands In minecraft
++ Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
+  the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
+  all sorts of dragons flying around
++ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
++ Bruh Biome with pretty purple water & black fog (See if I can remove a non-virtual biome somewhere)
++ Lattice as Iron Spikes
++ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
++ make slate mine layer in bruh biomes(and make it harder to mine)
++ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons)
++ Add Ancient Coins (Battle Coins, add small description) to loottables (new battletowers) for trading special items with villager chiefs & add villager chief
++ Dark Fog in Bruh Biomes
++ Giant holes in Bruh Biome
 
 RLCraft Done:
 - Changed configs to properly reflect new biome names
 - Fixed Ruins error causing log spam
 - Increased Stymphalian Bird Flight height from 80 to 100
 - Increased Dragon Flight height from 128 to 156
+- Allowed vanilla tree resources to be spawned in biomesoplenty biomes through the Dynamictree mod.
+
 
 RLCraft todo:
++ killing zombie spawns a zombie skeleton
++ blacklist Dragons from Viking Island, Viking Beach, Redwood Forest (And all other dense forests?)
++ blacklist myrmex bases from cities?
++ make all ruins structures (modern) look actually ruined
++ make enchantment table use wither skull
++ Desert Temple from Ruins?
++ Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
++ Blacklist dragon, ropguelike and doomlike dungeons from CANYON and RIVER biomes and add all FromImage Dungeon Biomes too
++ memefy the grand tree
++ CraftTweaker /crafttweaker conflict reference to RLC and fix issues
++ Change the ruins loottables to not be as OP
++ remove the big ruins tower from ruins.
 + Transform all floating things into crashed things on the ground when applicable or remove.
 + Add all Canyon tag biomes to iceandfire blacklist
 + Make Ethereal Tree/spectral garden patches for within the END
@@ -171,7 +263,7 @@ RLCraft todo:
 + remove big ruins mod tower
 + Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
 + Add Bop items, ores to legendary tooltips (maybe also cursed weapons?)
-+ Burial Arrow config
++ Burial Arrow config Dynamic Trees and liquids
 + Trinkers and Baunbles climable blocks
 + check infernal spawns always same type, up the rarity and check
 + Error loading entity with ID 'abyssalcraft:evilsheep'
@@ -203,6 +295,7 @@ OTG Done:
 - Fix Crash LayerMixing for OTG
 
 OTG todo:
++ Make dimension teleportation to any dimension work.
 + Bonus Chests do not spawn with radius spawn
 + Test all presets enmasse with the biomebits update (and possibly find a way to make biomegroupsbit smaller whilst adding a bit to biomebits
 + WriteWithoutComments does not work any more, perhaps due to the biomebits update?
@@ -211,6 +304,8 @@ OTG todo:
 
 
 Removed from ToDo for various reasons, may be revisited later.
++ Add cliff boulder idea to ocean islands
++ add silverfish rocks & ores (Yeah, people just wont ever go underground any more if I did this)
 + Redo underground dragon bones, add gold n such.
 + BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
 + Remove 90% (GARDENS) Ruins and recurrent structures from Trench / Trench border
