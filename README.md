@@ -9,3 +9,8 @@
  1. Add the contents of `export` to an archive named `RLCraft-Dregora-Edition`.
  2. In the Curseforge Launcher, click `+ Create Custom Profile`, then `Import`, then select the archive file.
  3. Once installed, check `mods/non-manifest.txt` for any other jar files that need to be fetched, and install those.
+
+# DregoraRL-1.12.2 Worldpacker
+  Repository for developing the worldpacker used as a intermediate between OTG and Presets such as DregoraRL.
+  These contain the loot_tables and will eventually also contain the sourcefiles for DregoraRL and other presets made by NLBlackEagle.
+  https://github.com/NLBlackEagle/WorldPacker/tree/DregoraRL-1.12.2
