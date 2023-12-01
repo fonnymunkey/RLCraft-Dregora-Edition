@@ -112,15 +112,7 @@
       "generators": {}
     },
     "berry_bushes": {
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "berrybush"
-        }
-      },
-      "generationAttempts": 32,
-      "amountPerChunk": 0.1,
-      "enable": true
+      "enable": false
     },
     "blue_milk_caps": {
       "with": {

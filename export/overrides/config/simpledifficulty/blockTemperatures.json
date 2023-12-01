@@ -1,10 +1,4 @@
 {
-  "biomesoplenty:blue_fire": [
-    {
-      "properties": {},
-      "temperature": -5.0
-    }
-  ],
   "lycanitesmobs:rabbitooze": [
     {
       "properties": {},
@@ -71,6 +65,12 @@
     {
       "properties": {},
       "temperature": 12.5
+    }
+  ],
+  "biomesoplenty:blue_fire": [
+    {
+      "properties": {},
+      "temperature": -5.0
     }
   ],
   "minecraft:magma": [

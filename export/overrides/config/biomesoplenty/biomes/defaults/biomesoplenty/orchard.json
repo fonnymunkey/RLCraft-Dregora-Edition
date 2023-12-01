@@ -100,15 +100,7 @@
       "generators": {}
     },
     "berry_bushes": {
-      "with": {
-        "block": "biomesoplenty:plant_0",
-        "properties": {
-          "variant": "berrybush"
-        }
-      },
-      "generationAttempts": 8,
-      "amountPerChunk": 0.4,
-      "enable": true
+      "enable": false
     },
     "peridot": {
       "minHeight": 4,

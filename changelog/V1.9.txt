@@ -172,23 +172,29 @@ Fixed/Changed/Added:
 - added toilet contents to toilets in underground villages
 - Write 3 remaining lore books & check all lore + maintenance lore is good + chest contents in underground villages
 - added underground villages to random mode biomes & remove the possibility to spawn in CANYON type biomes
+- added corruption failsafe (people exiting whilst unpacking) it now should just re-unpack if someone has a corrupted installation.
 
 Dregora todo:
-+ Display percentage unpacking Dregora so people do not force quit any more.
-+ Add Bruh Biomes
+
+Dimension tasks:
++ disable bed exploding
++ add portal generation
++ add flesh biome
++ add stalagtites & mites
++ make parasites spawn in dimension
++ upload Underworld to curseforge and add to DregoraRL - RLCraft pack
++ Add Underworld as required dependency to DregoraRL
++ Add DregoraRL as required dependency to Underworld
+
++ Rarify the villages (Don't always spawn on player spawn)
 + add flying brigade to each biomegroup type
++ Add Bruh Biomes
 + Create new Battletower
 + add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 + Add house with villager named Simp, a lot of flowers + Nimphs
 + Fix some of the Dregora performance issues (remove resources from biomes)
-+ make tunnel break in underworld biome
-+ make tunnel longer
-+ Add Drunken Villager Boss to Bruh Biome
-+ remake and evaluate entities from the 3 dungeons
-+ Cyclops Colonies (underground biome with blood n stuff in prairie?).
 + Check OTG Errors at startup
 Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
-
 
 Potential Hotfix tasks:
 + fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
@@ -202,6 +208,12 @@ Village of Memes ideas:
 + Book: Definitely better RLCraft
 
 Backlog:
++ Fix crystals breaking through bedrock
++ Add Drunken Villager Boss to Bruh Biome
++ remake and evaluate entities from the 3 dungeons
++ Cyclops Colonies (underground biome with blood n stuff in prairie?).
++ make tunnel break in underworld biome
++ make tunnel longer
 + Add DregoraRL (pre-packed to github)
 + Make village RLCraft style (Add RLCraft content into the underground village)
 + make tunnel bunker dungeon
@@ -235,9 +247,23 @@ RLCraft Done:
 - Increased Stymphalian Bird Flight height from 80 to 100
 - Increased Dragon Flight height from 128 to 156
 - Allowed vanilla tree resources to be spawned in biomesoplenty biomes through the Dynamictree mod.
-
+- updated srparasites to 1.9.12 as this version fixed parasite spawners not working whilst evolution is enabled
+- Configured SRParasites v1.12.2
+- Mirrored new settings for ice&fire lightning where needed
+- added dimension 3 to recomplex blacklist
+- Configured vertical stack dimensions
+- Disabled lycanite spawning in dimension 3 (Underneath)
+- Disabled dragon spawning in dimension 3
+- Disabled battletower spawning in dimension 3 through rltweaker
+- Removed environmental sounds being played in dimension 3
+- Updated manifest.json to include vertical stack dimensions
+- removed RTG from manifest & cleaned up config file
+- Made parasites spawn naturally in Underneath
+- added and configured vertical dimension stack mod
 
 RLCraft todo:
++ lost cities spawn doesn't work any more?
++ update ice & fire and make sure it works in the modpack.
 + killing zombie spawns a zombie skeleton
 + blacklist Dragons from Viking Island, Viking Beach, Redwood Forest (And all other dense forests?)
 + blacklist myrmex bases from cities?
@@ -295,53 +321,4 @@ OTG Done:
 - Fix Crash LayerMixing for OTG
 
 OTG todo:
-+ Make dimension teleportation to any dimension work.
-+ Bonus Chests do not spawn with radius spawn
-+ Test all presets enmasse with the biomebits update (and possibly find a way to make biomegroupsbit smaller whilst adding a bit to biomebits
-+ WriteWithoutComments does not work any more, perhaps due to the biomebits update?
-+ Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
-+ Fix Issue with SpongeForge deleting chunks of villages and such on multiplayer only (not singleplayer)
-
-
-Removed from ToDo for various reasons, may be revisited later.
-+ Add cliff boulder idea to ocean islands
-+ add silverfish rocks & ores (Yeah, people just wont ever go underground any more if I did this)
-+ Redo underground dragon bones, add gold n such.
-+ BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
-+ Remove 90% (GARDENS) Ruins and recurrent structures from Trench / Trench border
-+ Structures generating in air Recurrent in Dregora_FrozenMudMountainSlope including villages
-+ add lightning spawns to center (using lycanite?) to create a atmosphere - activate in a radius every x ticks & activate on pressure plate at random spot
-+ replace some wither skeleton with swords for wither skeletons with bows (no withers anymore, ghouls now)
-+ weird color blending is half(ish) intended, most is murky, the rest is default color for compatibility reasons with ocean stuff. Can improve this a bit down the line)
-+ too many pixies in general biomes, (This is per default?)
-+ Infernal mob in viking village always same type (non-issue)
-+ Dregora_LushMesaCompat DLD spawn issue
-+ Fix floating flesh blocks in water Atomic city / Desert City Creek biome
-+ Preferably remove ravines in trench (lava flow bugs)
-+ add recipes (bop gems) to swords
-+ decrease amount of chests in corrupted graves
-+ Defiled Lands Biome remove pixie villages replace with Vex Villages
-
-
-Future Todo:
-+ Add lightning to spawn with charged emerald? (Can do with 0,0 structure revamp)
-+ re-doing the 0,0 structure to be a dungeon with a portal at the end leading to a new dungeon with a portal at the end (and so on) with branching teleport areas connecting different areas together
-+ Creeper spawner trap fast spawning
-+ Ornamental pillars with loot in center
-+ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
-+ make boobytrap cave sections and generate them everywhere
-+ Add Waystone custom structure to Villages / Outposts
-+ Custom Dragon nests **FUTURE**
-+ Add Creepers with speed boost to Dregora Mineshafts
-+ Add Lycanite Battletowers **Future**
-+ Add Parasite Battlehive? **Future**
-+ Add Defiled Lands Battle tower **Future**
-+ Add Nether Battletower **Future**
-+ Add Nether Fortress **Future**
-+ Add End Battletower **Future**
-+ Add Biome Themed Battletowers **Future**
-+ add biome shadow savanna (in a shadow update)
-+ add viking village but with savanna blocks & a stingin tribe
-+ add biome shadow swamp (in a shadow update)
-+ add rotten down viking village with upwards vines, kind of like valheim
-+ add biome shadow peaks (in a shadow update)
++ OTG merge at the 20th of December

@@ -102,7 +102,7 @@
       },
       "generationAttempts": 8,
       "amountPerChunk": 0.4,
-      "enable": true
+      "enable": false
     },
     "peridot": {
       "minHeight": 4,
