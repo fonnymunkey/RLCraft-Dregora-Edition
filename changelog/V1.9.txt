@@ -179,15 +179,18 @@ Fixed/Changed/Added:
 
 Dregora todo:
 
-Dimension tasks:
+Important:
++ Config reference I&F RLMixings, enabling DregoraRL options
 
+Dimension tasks:
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
 + Add DregoraRL as required dependency to Underworld
 
-
++ neptinium is radioactive
 + convert all ruins structures to OTG structures
-+ add 5 new lore for parasite dimension
++ Add flying entities to DregoraRL (15 for each biome group)
++ decrease cactus spawn in cactus land
 + Rarify the villages (Don't always spawn on player spawn)
 + add flying brigade to each biomegroup type
 + Add Bruh Biomes
@@ -210,6 +213,11 @@ Village of Memes ideas:
 + Book: Definitely better RLCraft
 
 Backlog:
++ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
++ Add hexagonal cities when more skyscrapers are in the game
++ add 5 new lore for parasite dimension
++ Add gold deposits in rivers
++ Add dragon den to special dragon biome guaranteed bo4.
 + Add Bridgepilings for river biomes
 + Fix crystals breaking through bedrock
 + Add Drunken Villager Boss to Bruh Biome
@@ -245,8 +253,8 @@ Bruh Biome Ideas:
 + Giant holes in Bruh Biome
 
 RLCraft Done:
+- Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
 - Add tier "skill issue" to weapon tiers
-- make villager say skill issue
 - Changed configs to properly reflect new biome names
 - Fixed Ruins error causing log spam
 - Increased Stymphalian Bird Flight height from 80 to 100
@@ -269,6 +277,9 @@ RLCraft Done:
 - rebalanced srparasites for lost cities & underneath dimensions
 
 RLCraft todo:
++ Pet armour is called horse Armour in DregoraRL
++ convert ruins end & nether structures to recurrent complex structures.
++ add battle coins to golem armor crafting recipe
 + update ice & fire and make sure it works in the modpack.
 + killing zombie spawns a zombie skeleton
 + blacklist Dragons from Viking Island, Viking Beach, Redwood Forest (And all other dense forests?)
