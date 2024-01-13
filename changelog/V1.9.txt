@@ -176,24 +176,37 @@ Fixed/Changed/Added:
 - added dimension Underneath
 - added additional rarity variable to village bunkers
 - fixed file structure overwrite mayhem (big internal mistake)
+- Made defiled land biomes less rare.
+- Add big worm to bruh biome
+- make all bo3's into bo4's for ruins
+- Added Brutal Biome Grey Abyss
 
 Dregora todo:
 
 Important:
 + Config reference I&F RLMixings, enabling DregoraRL options
++ Brutal Towers
++ iNCREASE .2 HEALTH DAMAGE IN Brutal Biomes
 
 Dimension tasks:
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
 + Add DregoraRL as required dependency to Underworld
 
-+ neptinium is radioactive
 + convert all ruins structures to OTG structures
++ Remove leaves from oceans
++ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
+down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
++ add lore to underneath ( 5 books )
++ fix all DoReplaceBlocks: false in ruins (check each structure)
++ Make nuclear powerplant actually spawn
++ add generic dungeons to all biomes
++ add generi contents to all inventories (cabin, crate, weapon rack, bookshelf, barrel, pots)
++ neptinium is radioactive
 + Add flying entities to DregoraRL (15 for each biome group)
 + decrease cactus spawn in cactus land
 + Rarify the villages (Don't always spawn on player spawn)
 + add flying brigade to each biomegroup type
-+ Add Bruh Biomes
 + Create new Battletower
 + add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 + Add house with villager named Simp, a lot of flowers + Nimphs
@@ -213,6 +226,11 @@ Village of Memes ideas:
 + Book: Definitely better RLCraft
 
 Backlog:
++ Katsu's sword
++ Soka's Sword
++ Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
++ The value "" is not valid for the setting HeightOffset in maintenance_shaft_bottom on line 69: Incorrect number: 
++ Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
 + Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
 + Add hexagonal cities when more skyscrapers are in the game
 + add 5 new lore for parasite dimension
@@ -251,6 +269,7 @@ Bruh Biome Ideas:
 + Add Ancient Coins (Battle Coins, add small description) to loottables (new battletowers) for trading special items with villager chiefs & add villager chief
 + Dark Fog in Bruh Biomes
 + Giant holes in Bruh Biome
++ Frozen Bruh biome type angry wolf & angry bear
 
 RLCraft Done:
 - Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
@@ -277,7 +296,11 @@ RLCraft Done:
 - rebalanced srparasites for lost cities & underneath dimensions
 
 RLCraft todo:
-+ Pet armour is called horse Armour in DregoraRL
++ Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abbys
++ Disable quark generation in grey abbys?
++ Psstt, rumor has it Kotlin is backporting jenny, I can't wait! - What in Kotlin's Ketchup?!
++ Haunted Nights, make dying entities have .25 chance to spawn a new entity
++ Pet armour is called horse Armour in DregoraRL?
 + convert ruins end & nether structures to recurrent complex structures.
 + add battle coins to golem armor crafting recipe
 + update ice & fire and make sure it works in the modpack.

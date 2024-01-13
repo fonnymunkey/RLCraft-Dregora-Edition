@@ -26,5 +26,11 @@
     "mob": ["iceandfire:firedragon", "iceandfire:icedragon", "iceandfire:amphithere"],
     "biome": ["Ruins of Blight"],
     "result": "deny"
+  },
+  {
+    "mob": "minecraft:wolf",
+    "angry": true,
+    "random": 0.5,
+    "result": "default"
   }
 ]
