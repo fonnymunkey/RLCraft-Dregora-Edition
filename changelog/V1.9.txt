@@ -180,38 +180,61 @@ Fixed/Changed/Added:
 - Add big worm to bruh biome
 - make all bo3's into bo4's for ruins
 - Added Brutal Biome Grey Abyss
+- Made nuclear powerplant spawn
 
 Dregora todo:
 
 Important:
++ lower difficulty and/or make end_portals only generate at specific spots
++ Entities suffocate in trench biomes
++ decrease or increase temperature by 0.2
++ make rivers globally cool
++ Fix waystone pre-filled name
++ change charm crates to sealed charm crates
 + Config reference I&F RLMixings, enabling DregoraRL options
 + Brutal Towers
-+ iNCREASE .2 HEALTH DAMAGE IN Brutal Biomes
++ Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
 
 Dimension tasks:
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
 + Add DregoraRL as required dependency to Underworld
++ add lore to underneath ( 5 books )
 
+Ruins Tasks:
 + convert all ruins structures to OTG structures
-+ Remove leaves from oceans
++ fix all DoReplaceBlocks: false in ruins (check each structure)
++ add general contents to all inventories (cabin, crate, weapon rack, bookshelf, barrel, pots)
+
+/setblock ~ ~-1 ~ charm:crate 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ charm:barrel 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ charm:bookshelf_chest 0 false {lootTable:"dregora:rlcraft/containers/books"}
+/setblock ~ ~-1 ~ notreepunching:ceramic_large_vessel 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ rustic:vase 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ quark:custom_chest 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ rustic:barrel 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
+/setblock ~ ~-1 ~ rustic:cabinet 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
+
+Brutal Biome Task:
 + add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
 down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
-+ add lore to underneath ( 5 books )
-+ fix all DoReplaceBlocks: false in ruins (check each structure)
-+ Make nuclear powerplant actually spawn
++ Create new Battletower
+
++ Fix lag in underworld (bo3check)
++ make memorial for puffik 2022-2024
++ add all crates into sealed crates
++ Add kotlin to gem traders selling tickets, hints and stuff
++ Remove leaves kelp from oceans
 + add generic dungeons to all biomes
-+ add generi contents to all inventories (cabin, crate, weapon rack, bookshelf, barrel, pots)
-+ neptinium is radioactive
 + Add flying entities to DregoraRL (15 for each biome group)
-+ decrease cactus spawn in cactus land
++ decrease cactus spawns in cactus land
 + Rarify the villages (Don't always spawn on player spawn)
 + add flying brigade to each biomegroup type
-+ Create new Battletower
 + add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 + Add house with villager named Simp, a lot of flowers + Nimphs
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + Check OTG Errors at startup
++ File cleanup, remove .zip files
 Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
 
 Potential Hotfix tasks:
@@ -296,6 +319,8 @@ RLCraft Done:
 - rebalanced srparasites for lost cities & underneath dimensions
 
 RLCraft todo:
++ add recipe button for all woods from bop
++ make bamboo smelt 1 item
 + Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abbys
 + Disable quark generation in grey abbys?
 + Psstt, rumor has it Kotlin is backporting jenny, I can't wait! - What in Kotlin's Ketchup?!
