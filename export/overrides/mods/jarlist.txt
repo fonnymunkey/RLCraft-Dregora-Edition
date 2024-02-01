@@ -20,7 +20,7 @@ BetterMineshaftsForge-1.12.2-2.2.1
 betternether-0.1.8.6
 BetterQuesting-3.5.329
 BetterTabs-1.0.4
-better_survival-1.5.3
+better_survival-1.5.3_infedit
 BlockOverlayFix-1.12.2-1.0.0
 Bloodmoon-MC1.12.2-1.5.3
 BNBGamingLib-1.12.2-2.17.6
@@ -62,6 +62,7 @@ EntityCulling-1.12.2-6.4.2
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.047
+FermiumBooter-1.0.0
 firstaid-1.6.22
 FishingMadeBetter-1.12.2-2.2.6
 foamfix-0.10.15-1.12.2
@@ -76,13 +77,12 @@ GlobalGameRules-1.12.2-2.2.7
 GooglyEyes-1.12.2-7.1.1
 grapplemod-1.12.2-v12.3
 HelpFixer-1.12.1-1.5.18
-iceandfire-1.7.1-1.12.2
+iceandfire-2.0.0-1.12.2_pre
 iChunUtil-1.12.2-7.2.2
 incontrol-1.12-3.9.18
 InfernalMobs-1.12.2
 Inspirations-1.12.2-0.2.9
 InventoryTweaks-1.64+dev.151
-ISeeDragons-1.2.1
 ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
@@ -129,9 +129,9 @@ RenderLib-1.12.2-1.3.3
 Reskillable-1.12.2-1.13.0
 ResourceLoader-MC1.12.1-1.5.3
 RLArtifacts-1.1.2
-RLCombat-1.12.2-2.0.8
-RLMixins-1.2.15
-RLTweaker-1.12.2-0.5.12
+RLCombat-1.12.2-2.1.0
+RLMixins-1.3.0
+RLTweaker-1.12.2-0.5.13_infedit
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.4
 roughTweaks0.2.4-1.12.2
 RTG-1.12.2-6.1.0.0-snapshot.1
@@ -149,7 +149,7 @@ SoManyEnchantments-0.5.5
 SoundFilters-0.12.1_for_1.12
 spark-forge
 spartandefiled-1.0
-spartanfire_rlcraft-1.1.0
+spartanfire_rlcraft-1.2.0
 SpartanHUDBaubles-1.12.2-1.0.0
 SpartanShields-1.12.2-1.5.5
 SpartanWeaponry-1.12.2-1.5.3
@@ -162,7 +162,7 @@ tnt_utilities-mc1.12-1.2.3
 Toast Control-1.12.2-1.8.1
 ToolBelt-1.12.2-1.9.14
 Traverse-1.12.2-1.6.0-69
-Trinkets and Baubles-32.4
+Trinkets and Baubles-32.4_infedit
 trumpetskeleton-1.12-1.0.2.1
 tschipplib-1.12.2-1.1.7
 tumbleweed-1.12-0.4.7

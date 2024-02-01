@@ -56,49 +56,51 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
   }
 });
 
+//TODO: Deprecate these with localizator									
 <rustic:chili_pepper_seeds>.addTooltip("Fertile Seasons:");
 <rustic:chili_pepper_seeds>.addTooltip(format.yellow(" Summer"));
 <rustic:tomato_seeds>.addTooltip("Fertile Seasons:");
 <rustic:tomato_seeds>.addTooltip(format.yellow(" Summer"));
 <rustic:tomato_seeds>.addTooltip(format.gold(" Autumn"));
-
 <minecraft:fishing_rod:*>.displayName = "Ancient Fishing Rod";
-<minecraft:fishing_rod:*>.addTooltip(format.darkRed("Only used for crafting!"));
 <advanced-fishing:blazing_fishing_pole:*>.displayName = "Ancient Lava Fishing Rod";
-<advanced-fishing:blazing_fishing_pole:*>.addTooltip(format.darkRed("Only used for crafting!"));
 <iceandfire:fishing_spear:*>.displayName = "Ancient Fishing Spear";
-<iceandfire:fishing_spear:*>.addTooltip(format.darkRed("Only used for crafting!"));
-
 <simpledifficulty:heater>.displayName = "Heating Coil";
 <simpledifficulty:chiller>.displayName = "Cooling Coil";
 <simpledifficulty:wool_helmet:*>.displayName = "Wool Hood";
 <simpledifficulty:wool_chestplate:*>.displayName = "Wool Coat";
 <simpledifficulty:wool_leggings:*>.displayName = "Wool Leggings";
 <simpledifficulty:wool_boots:*>.displayName = "Wool Boots";
-
-<armorunder:auto_chestplate_liner>.addTooltip(format.darkRed(" Destroyed upon removal!"));
-<armorunder:auto_leggings_liner>.addTooltip(format.darkRed(" Destroyed upon removal!"));
-
 <notreepunching:rock/basalt>.displayName = "Basalt Rock";
 <notreepunching:cobblestone/basalt>.displayName = "Basalt Cobblestone";
-
 <betternether:bone_block>.displayName = "Smooth Bone Block";
-
 <bountifulbaubles:reforger>.displayName = "Baubles Reforging Station";
-
-<minecraft:fish:0>.displayName = "River Fish";
-<minecraft:fish:1>.displayName = "Mountain Fish";
-<minecraft:fish:2>.displayName = "Tropical Fish";
-<minecraft:fish:3>.displayName = "Ocean Fish";
-<minecraft:cooked_fish:0>.displayName = "Cooked River Fish";
-<minecraft:cooked_fish:1>.displayName = "Cooked Mountain Fish";
-
-<quark:ancient_tome:*>.addTooltip(format.gold("Use in off-hand to apply to matching enchanted item"));
-
-<rlmixins:cleansing_talisman>.addTooltip(format.gold("Craft with any enchanted book to convert the book's enchantment to Curse Break"));
-
 <bountifulbaubles:ringiron>.displayName = "Holy Ring";
-<bountifulbaubles:amuletsinwrath>.addTooltip(format.darkPurple("A trophy lost to time, reminiscent of another world."));
+<variedcommodities:heart>.displayName = "Demonic Heart";
+<variedcommodities:skull>.displayName = "Corrupted Skull";
+<minecraft:saddle>.displayName = "Basic Saddle";
+
+<minecraft:fishing_rod:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
+<advanced-fishing:blazing_fishing_pole:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
+<iceandfire:fishing_spear:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
+<armorunder:auto_chestplate_liner>.addTooltip(game.localize("tooltip.scripts.ozzyliner.destroys", "en_us"));
+<armorunder:auto_leggings_liner>.addTooltip(game.localize("tooltip.scripts.ozzyliner.destroys", "en_us"));
+game.setLocalization("en_us", "item.fish.cod.raw.name", "River Fish");
+<minecraft:fish:0>.displayName = game.localize("item.fish.cod.raw.name", "en_us");
+game.setLocalization("en_us", "item.fish.salmon.raw.name", "Mountain Fish");
+<minecraft:fish:1>.displayName = game.localize("item.fish.salmon.raw.name", "en_us");
+game.setLocalization("en_us", "item.fish.clownfish.raw.name", "Tropical Fish");
+<minecraft:fish:2>.displayName = game.localize("item.fish.clownfish.raw.name", "en_us");
+game.setLocalization("en_us", "item.fish.pufferfish.raw.name", "Ocean Fish");
+<minecraft:fish:3>.displayName = game.localize("item.fish.pufferfish.raw.name", "en_us");
+game.setLocalization("en_us", "item.fish.cod.cooked.name", "Cooked River Fish");
+<minecraft:cooked_fish:0>.displayName = game.localize("item.fish.cod.cooked.name", "en_us");
+game.setLocalization("en_us", "item.fish.salmon.cooked.name", "Cooked Mountain Fish");
+<minecraft:cooked_fish:1>.displayName = game.localize("item.fish.salmon.cooked.name", "en_us");
+
+<quark:ancient_tome:*>.addTooltip(game.localize("tooltip.quark:ancient_tome", "en_us"));
+<rlmixins:cleansing_talisman>.addTooltip(game.localize("tooltip.rlmixins:cleansing_talisman", "en_us"));
+<bountifulbaubles:amuletsinwrath>.addTooltip(game.localize("tooltip.bountifulbaubles:amuletsinwrath", "en_us"));
 
 //<locks:wood_lock>.addTooltip(format.green("Blast Resistance: Weak"));
 //<locks:iron_lock>.addTooltip(format.green("Blast Resistance: Average"));
@@ -106,12 +108,10 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
 //<locks:steel_lock>.addTooltip(format.green("Blast Resistance: Strong"));
 //<locks:diamond_lock>.addTooltip(format.green("Blast Resistance: Supreme"));
 
-<variedcommodities:heart>.displayName = "Demonic Heart";
-<variedcommodities:heart>.addTooltip(format.green("One of many hearts dropped by Rahovart, still beating with demonic energy."));
-<variedcommodities:skull>.displayName = "Corrupted Skull";
-<variedcommodities:skull>.addTooltip(format.green("One of many skulls dropped by Asmodeus, the lost souls inside can still be heard screaming."));
+<variedcommodities:heart>.addTooltip(game.localize("tooltip.variedcommodities:heart", "en_us"));
+<variedcommodities:skull>.addTooltip(game.localize("tooltip.variedcommodities:skull", "en_us"));
 
-<minecraft:saddle>.displayName = "Basic Saddle";
+//END Deprecate these with localizator
 
 //stupid dupe bug lmaoooooooooooooooooo
 
@@ -885,7 +885,7 @@ brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:flight"}), <mine
 brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: "potioncore:flight"}), <minecraft:dragon_breath>, <minecraft:lingering_potion>.withTag({Potion: "potioncore:flight"}));
 
 //Potion Of Mending
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>, <minecraft:potion>.withTag({Potion: "potioncore:repair"}));
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>, <minecraft:potion>.withTag({Potion: "potioncore:repair"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:repair"}), <minecraft:glowstone_dust>, <minecraft:potion>.withTag({Potion: "potioncore:strong_repair"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:repair"}), <minecraft:redstone>, <minecraft:potion>.withTag({Potion: "potioncore:long_repair"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:repair"}), <minecraft:gunpowder>, <minecraft:splash_potion>.withTag({Potion: "potioncore:repair"}));
@@ -925,7 +925,7 @@ brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: "potioncore:fire"}), 
 brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: "potioncore:strong_fire"}), <minecraft:dragon_breath>, <minecraft:lingering_potion>.withTag({Potion: "potioncore:strong_fire"}));
 
 //Potion Of Guarding (Iron Skin)
-brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <iceandfire:fire_dragon_flesh>|<iceandfire:ice_dragon_flesh>, <minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}));
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <iceandfire:fire_dragon_flesh>|<iceandfire:ice_dragon_flesh>|<iceandfire:lightning_dragon_flesh>, <minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}), <minecraft:glowstone_dust>, <minecraft:potion>.withTag({Potion: "potioncore:strong_iron_skin"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}), <minecraft:redstone>, <minecraft:potion>.withTag({Potion: "potioncore:long_iron_skin"}));
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "potioncore:iron_skin"}), <minecraft:gunpowder>, <minecraft:splash_potion>.withTag({Potion: "potioncore:iron_skin"}));
@@ -1250,9 +1250,9 @@ recipes.addShaped("lolarecipe25",<xat:wither_ring>,
   [<xat:glowing_ingot>,<variedcommodities:ingot_steel>,<xat:glowing_ingot>]]);
 
 recipes.addShaped("lolarecipe25a",<xat:poison_stone>,
- [[<xat:glowing_ingot>,<minecraft:fermented_spider_eye>,<xat:glowing_ingot>],
-  [<minecraft:fermented_spider_eye>,<bountifulbaubles:trinketbezoar>,<minecraft:fermented_spider_eye>],
-  [<xat:glowing_ingot>,<minecraft:fermented_spider_eye>,<xat:glowing_ingot>]]);
+ [[<xat:glowing_ingot>,<iceandfire:hydra_fang>,<xat:glowing_ingot>],
+  [<iceandfire:hydra_fang>,<bountifulbaubles:trinketbezoar>,<iceandfire:hydra_fang>],
+  [<xat:glowing_ingot>,<iceandfire:hydra_fang>,<xat:glowing_ingot>]]);
 
 recipes.addShaped("lolarecipe25b",<xat:sea_stone>,
  [[<minecraft:prismarine_crystals>,<xat:glowing_ingot>,<minecraft:prismarine_crystals>],
@@ -1414,7 +1414,7 @@ recipes.addShaped("lolarecipe49",<potionfingers:ring:1>.withTag({Quality: {}, ef
   [null, <minecraft:blaze_powder>, null]]);
 
 recipes.addShaped("lolarecipe50",<potionfingers:ring:1>.withTag({Quality: {}, effect: "minecraft:regeneration"}),
- [[<minecraft:nether_star>, <minecraft:ghast_tear>, null],
+ [[<iceandfire:hydra_heart>, <minecraft:ghast_tear>, null],
   [<minecraft:ghast_tear>, <potionfingers:ring>, <minecraft:ghast_tear>],
   [null, <minecraft:ghast_tear>, null]]);
 
@@ -1471,8 +1471,8 @@ recipes.addShapeless("lolarecipe59",<variedcommodities:trading_block>,[<minecraf
 
 recipes.addShaped("lolarecipe60",<xat:damage_shield>,
  [[<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>],
-  [<quark:biotite>,<minecraft:dragon_egg>|<iceandfire:dragonegg_red>|<iceandfire:dragonegg_green>|<iceandfire:dragonegg_bronze>|<iceandfire:dragonegg_gray>|<iceandfire:dragonegg_blue>|<iceandfire:dragonegg_white>|<iceandfire:dragonegg_sapphire>|<iceandfire:dragonegg_silver>,<quark:biotite>],
-  [<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>]]);
+  [<quark:biotite>,<minecraft:dragon_egg>|<iceandfire:dragonegg_red>|<iceandfire:dragonegg_green>|<iceandfire:dragonegg_bronze>|<iceandfire:dragonegg_gray>|<iceandfire:dragonegg_blue>|<iceandfire:dragonegg_white>|<iceandfire:dragonegg_sapphire>|<iceandfire:dragonegg_silver>|<iceandfire:dragonegg_amethyst>|<iceandfire:dragonegg_electric>|<iceandfire:dragonegg_black>|<iceandfire:dragonegg_copper>,<quark:biotite>],
+  [<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>]]);																					
   
 recipes.addShaped("lolarecipe61",<bountifulbaubles:spectralsilt>,
  [[<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>],
@@ -1546,11 +1546,11 @@ recipes.addShaped("lolarecipe75",<spartanweaponry:arrow_wood>*4,
  [[<ore:plankWood>],
   [<minecraft:stick>],
   [<minecraft:paper>]]);
-
+  
 recipes.addShaped("lolarecipe76",<simpledifficulty:dragon_canteen>,
- [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>],
+ [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>|<iceandfire:dragon_skull:2>],
   [<simpledifficulty:iron_canteen:*>],
-  [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>]]);
+  [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>]]);
 
 recipes.addShaped("lolarecipe77",<quark:iron_plate>*8,
  [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
