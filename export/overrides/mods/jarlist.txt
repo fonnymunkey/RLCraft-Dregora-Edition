@@ -24,7 +24,7 @@ better_survival-1.5.3
 BlockOverlayFix-1.12.2-1.0.0
 Bloodmoon-MC1.12.2-1.5.3
 BNBGamingLib-1.12.2-2.17.6
-Born In A Barn V1.8-1.12-1.1
+Born In A Barn 1.8-1.12-1.2
 Bountiful Baubles-1.12.2-0.1.8
 Bountiful-1.12.2-2.2.3
 BQTweaker-1.3.5
@@ -44,8 +44,8 @@ Controlling-3.0.12.2
 CoralReef-2.5-1.12.2
 corpsecomplex-1.12.2-1.0.12.0
 craftablechainmail-1.0
-CraftTweaker2-1.12-4.1.20.687
-CreativeCore_v1.10.70_mc1.12.2
+CraftTweaker2-1.12-4.1.20.698
+CreativeCore_v1.10.71_mc1.12.2
 CustomMainMenu-MC1.12.2-2.0.9.1
 defiledlands-1.12.2-1.4.3
 disenchanter[1.12]1.8
@@ -58,7 +58,7 @@ DynamicTreesTraverse-1.12.2-2.1
 ElenaiDodge-1.12.2-2.1
 EnchantmentDescriptions-1.12.2-1.1.20
 EnhancedVisuals_v1.4.4_mc1.12.2
-EntityCulling-1.12.2-6.3.1
+EntityCulling-1.12.2-6.4.2
 FamiliarFauna-1.12.2-1.0.11
 FancyBlockParticles-1.12.x-2.4.1
 FantasticLib-1.12.2.047
@@ -86,9 +86,9 @@ ISeeDragons-1.2.1
 ItemPhysic_Full_1.4.37_mc1.12.2
 itlt-1.12.x-1.0.4
 IvToolkit-1.3.3-1.12
-jei_1.12.2-4.16.1.302
+jei_1.12.2-4.16.1.1004
 Kiwi-1.12.2-0.5.3.32
-LegendaryTooltips-1.12.2-1.1.9
+LegendaryTooltips-1.12.2-1.1.10
 Level Up! 2-1.1.23-1.12
 librarianlib-1.12.2-4.22
 llibrary-1.7.20-1.12.2
@@ -113,19 +113,19 @@ OreLib-1.12.2-3.6.0.1
 particleculling-1.12.2-v1.4.1
 phosphor-1.12.2-0.2.6+build50-universal
 pigstep-1.12
-Placebo-1.12.2-1.6.0
+Placebo-1.12.2-1.6.1
 playerbosses-1.12.2-1.1.0
 PortalDupeBegone-1.0.0
 PotionCore-1.9_for_1.12.2
 PotionFingers-r1.0-8
 QualityTools-1.0.7_for_1.12.2
 Quark-r1.6-179
-ReachFix-1.12.2-1.0.8
+ReachFix-1.12.2-1.0.9
 RealBench-1.12.2-1.3.3
 RealisticTorches-1.12.2-2.1.2
 RebornCore-1.12.2-3.19.5-universal
-RecurrentComplex-1.4.8.4
-RenderLib-1.12.2-1.2.8
+RecurrentComplex-1.4.8.5
+RenderLib-1.12.2-1.3.3
 Reskillable-1.12.2-1.13.0
 ResourceLoader-MC1.12.1-1.5.3
 RLArtifacts-1.1.2
@@ -173,5 +173,5 @@ WolfArmorAndStorage-3.8.1+1.12.2.alpha.1-SNAPSHOT-signed
 XPFromHarvest-1.12.2-1.2.0
 xptome-1.12.2-v1.1.6
 YungsLaw-1.12.2-1.0.4
-[___MixinCompat-0.8___]
+[___MixinCompat-1.1-1.12.2___]
 _MixinBootstrap-1.1.0
