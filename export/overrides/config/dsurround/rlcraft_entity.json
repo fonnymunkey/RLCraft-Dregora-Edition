@@ -1,0 +1,41 @@
+{
+        "biomes":[
+        ],
+        "blocks":[
+        ],
+        "items": {
+        },
+        "dimensions":[
+        ],
+        "acoustics": {
+        },
+        "primitiveAcoustics": {
+        },
+        "footsteps":{
+        },
+        "forgeMappings":[
+        ],
+        "variators": {
+        },
+        "entities": {
+			"minecraft:villager": {
+				"effects": "bow,swing,footprint,breath,chat"
+			},
+			"minecraft:skeleton": {
+				"effects": "bow,swing,footprint,chat",
+				"variator": "skeleton"
+			},
+			"minecraft:zombie": {
+				"effects": "bow,swing,footprint,chat"
+			},
+			"minecraft:witch": {
+				"effects": "footprint,breath,chat"
+			},
+			"minecraft:squid": {
+				"effects": "chat"
+			},
+			"minecraft:pig": {
+				"effects": "chat"
+			}
+        }
+}

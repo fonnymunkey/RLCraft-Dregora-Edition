@@ -56,63 +56,6 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
   }
 });
 
-//TODO: Deprecate these with localizator									
-<rustic:chili_pepper_seeds>.addTooltip("Fertile Seasons:");
-<rustic:chili_pepper_seeds>.addTooltip(format.yellow(" Summer"));
-<rustic:tomato_seeds>.addTooltip("Fertile Seasons:");
-<rustic:tomato_seeds>.addTooltip(format.yellow(" Summer"));
-<rustic:tomato_seeds>.addTooltip(format.gold(" Autumn"));
-<minecraft:fishing_rod:*>.displayName = "Ancient Fishing Rod";
-<advanced-fishing:blazing_fishing_pole:*>.displayName = "Ancient Lava Fishing Rod";
-<iceandfire:fishing_spear:*>.displayName = "Ancient Fishing Spear";
-<simpledifficulty:heater>.displayName = "Heating Coil";
-<simpledifficulty:chiller>.displayName = "Cooling Coil";
-<simpledifficulty:wool_helmet:*>.displayName = "Wool Hood";
-<simpledifficulty:wool_chestplate:*>.displayName = "Wool Coat";
-<simpledifficulty:wool_leggings:*>.displayName = "Wool Leggings";
-<simpledifficulty:wool_boots:*>.displayName = "Wool Boots";
-<notreepunching:rock/basalt>.displayName = "Basalt Rock";
-<notreepunching:cobblestone/basalt>.displayName = "Basalt Cobblestone";
-<betternether:bone_block>.displayName = "Smooth Bone Block";
-<bountifulbaubles:reforger>.displayName = "Baubles Reforging Station";
-<bountifulbaubles:ringiron>.displayName = "Holy Ring";
-<variedcommodities:heart>.displayName = "Demonic Heart";
-<variedcommodities:skull>.displayName = "Corrupted Skull";
-<minecraft:saddle>.displayName = "Basic Saddle";
-
-<minecraft:fishing_rod:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
-<advanced-fishing:blazing_fishing_pole:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
-<iceandfire:fishing_spear:*>.addTooltip(game.localize("tooltip.scripts.onlycrafting","en_us"));
-<armorunder:auto_chestplate_liner>.addTooltip(game.localize("tooltip.scripts.ozzyliner.destroys", "en_us"));
-<armorunder:auto_leggings_liner>.addTooltip(game.localize("tooltip.scripts.ozzyliner.destroys", "en_us"));
-game.setLocalization("en_us", "item.fish.cod.raw.name", "River Fish");
-<minecraft:fish:0>.displayName = game.localize("item.fish.cod.raw.name", "en_us");
-game.setLocalization("en_us", "item.fish.salmon.raw.name", "Mountain Fish");
-<minecraft:fish:1>.displayName = game.localize("item.fish.salmon.raw.name", "en_us");
-game.setLocalization("en_us", "item.fish.clownfish.raw.name", "Tropical Fish");
-<minecraft:fish:2>.displayName = game.localize("item.fish.clownfish.raw.name", "en_us");
-game.setLocalization("en_us", "item.fish.pufferfish.raw.name", "Ocean Fish");
-<minecraft:fish:3>.displayName = game.localize("item.fish.pufferfish.raw.name", "en_us");
-game.setLocalization("en_us", "item.fish.cod.cooked.name", "Cooked River Fish");
-<minecraft:cooked_fish:0>.displayName = game.localize("item.fish.cod.cooked.name", "en_us");
-game.setLocalization("en_us", "item.fish.salmon.cooked.name", "Cooked Mountain Fish");
-<minecraft:cooked_fish:1>.displayName = game.localize("item.fish.salmon.cooked.name", "en_us");
-
-<quark:ancient_tome:*>.addTooltip(game.localize("tooltip.quark:ancient_tome", "en_us"));
-<rlmixins:cleansing_talisman>.addTooltip(game.localize("tooltip.rlmixins:cleansing_talisman", "en_us"));
-<bountifulbaubles:amuletsinwrath>.addTooltip(game.localize("tooltip.bountifulbaubles:amuletsinwrath", "en_us"));
-
-//<locks:wood_lock>.addTooltip(format.green("Blast Resistance: Weak"));
-//<locks:iron_lock>.addTooltip(format.green("Blast Resistance: Average"));
-//<locks:gold_lock>.addTooltip(format.green("Blast Resistance: Weak"));
-//<locks:steel_lock>.addTooltip(format.green("Blast Resistance: Strong"));
-//<locks:diamond_lock>.addTooltip(format.green("Blast Resistance: Supreme"));
-
-<variedcommodities:heart>.addTooltip(game.localize("tooltip.variedcommodities:heart", "en_us"));
-<variedcommodities:skull>.addTooltip(game.localize("tooltip.variedcommodities:skull", "en_us"));
-
-//END Deprecate these with localizator
-
 //stupid dupe bug lmaoooooooooooooooooo
 
 recipes.remove(<minecraft:coal_ore>);
@@ -1467,12 +1410,7 @@ recipes.addShaped("lolarecipe57",<xat:glowing_ingot>,
  [[<xat:glowing_powder>,<xat:glowing_powder>],
   [<xat:glowing_powder>,<xat:glowing_powder>]]);
 
-recipes.addShapeless("lolarecipe59",<variedcommodities:trading_block>,[<minecraft:crafting_table>,<minecraft:crafting_table>]);
-
-recipes.addShaped("lolarecipe60",<xat:damage_shield>,
- [[<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>],
-  [<quark:biotite>,<minecraft:dragon_egg>|<iceandfire:dragonegg_red>|<iceandfire:dragonegg_green>|<iceandfire:dragonegg_bronze>|<iceandfire:dragonegg_gray>|<iceandfire:dragonegg_blue>|<iceandfire:dragonegg_white>|<iceandfire:dragonegg_sapphire>|<iceandfire:dragonegg_silver>|<iceandfire:dragonegg_amethyst>|<iceandfire:dragonegg_electric>|<iceandfire:dragonegg_black>|<iceandfire:dragonegg_copper>,<quark:biotite>],
-  [<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>]]);																					
+recipes.addShapeless("lolarecipe59",<variedcommodities:trading_block>,[<minecraft:crafting_table>,<minecraft:crafting_table>]);																				
   
 recipes.addShaped("lolarecipe61",<bountifulbaubles:spectralsilt>,
  [[<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>,<bountifulbaubles:flare_red>],
@@ -1546,11 +1484,6 @@ recipes.addShaped("lolarecipe75",<spartanweaponry:arrow_wood>*4,
  [[<ore:plankWood>],
   [<minecraft:stick>],
   [<minecraft:paper>]]);
-  
-recipes.addShaped("lolarecipe76",<simpledifficulty:dragon_canteen>,
- [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>|<iceandfire:dragon_skull:2>],
-  [<simpledifficulty:iron_canteen:*>],
-  [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>]]);
 
 recipes.addShaped("lolarecipe77",<quark:iron_plate>*8,
  [[<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
