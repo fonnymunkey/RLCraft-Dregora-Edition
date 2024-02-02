@@ -1,9 +1,8 @@
-* text eol=crlf
-*.jks binary
-*.ogg binary
-*.jpg binary
-*.rcst binary
-*.schematic binary
+* text eol=lf
+*.bat text eol=crlf
+*.patch text eol=lf
+*.java text eol=lf
+*.gradle text eol=crlf
 *.png binary
 *.gif binary
 *.exe binary
@@ -12,3 +11,9 @@
 *.lzma binary
 *.zip binary
 *.pyd binary
+*.cfg text eol=lf
+*.jks binary
+*.ogg binary
+*.jpg binary
+*.rcst binary
+*.schematic binary
