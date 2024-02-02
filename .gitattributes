@@ -1,19 +1,2 @@
-* text eol=lf
-*.bat text eol=crlf
-*.patch text eol=lf
-*.java text eol=lf
-*.gradle text eol=crlf
-*.png binary
-*.gif binary
-*.exe binary
-*.dll binary
-*.jar binary
-*.lzma binary
-*.zip binary
-*.pyd binary
-*.cfg text eol=lf
-*.jks binary
-*.ogg binary
-*.jpg binary
-*.rcst binary
-*.schematic binary
+# Auto detect text files and perform LF normalization
+* text=auto
