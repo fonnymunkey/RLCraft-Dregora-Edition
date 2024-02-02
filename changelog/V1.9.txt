@@ -1,3 +1,6 @@
+Possible false/positives:
+- Entities suffocate in trench biomes? ( Could not find, already fixed? )
+
 Fixed/Changed/Added:
 - Fixed Outposts spawn with players (Fixed WeightedBranches being regular Branches causing the outposts to be more common then intended.)
 - Removed corrupted biome group and placed all biomes in simmilar groups
@@ -181,48 +184,27 @@ Fixed/Changed/Added:
 - make all bo3's into bo4's for ruins
 - Added Brutal Biome Grey Abyss
 - Made nuclear powerplant spawn
+- changed charm crates to sealed charm crates
+- Fixed waystonea pre-filled name in outposts
+- converted all ruins structures to OTG structures
+- fix all DoReplaceBlocks: false in ruins (check each structure)
+- add general contents to all inventories (crate, barrel, pots)
+- fixed chess texture issue in gorgon temple & increased chance for better loot.
+- decreased temperature in various biomes.
+- make rivers globally cool
+- changed all crates to 10% crate and if fail 100% sealed crate.
 
 Dregora todo:
-
-Important:
 + lower difficulty and/or make end_portals only generate at specific spots
-+ Entities suffocate in trench biomes
-+ decrease or increase temperature by 0.2
-+ make rivers globally cool
-+ Fix waystone pre-filled name
-+ change charm crates to sealed charm crates
-+ Config reference I&F RLMixings, enabling DregoraRL options
 + Brutal Towers
-+ Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
-
-Dimension tasks:
-+ upload Underworld to curseforge and add to DregoraRL - RLCraft pack
-+ Add Underworld as required dependency to DregoraRL
-+ Add DregoraRL as required dependency to Underworld
-+ add lore to underneath ( 5 books )
-
-Ruins Tasks:
-+ convert all ruins structures to OTG structures
-+ fix all DoReplaceBlocks: false in ruins (check each structure)
-+ add general contents to all inventories (cabin, crate, weapon rack, bookshelf, barrel, pots)
-
-/setblock ~ ~-1 ~ charm:crate 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ charm:barrel 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ charm:bookshelf_chest 0 false {lootTable:"dregora:rlcraft/containers/books"}
-/setblock ~ ~-1 ~ notreepunching:ceramic_large_vessel 0 false {lootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ rustic:vase 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ quark:custom_chest 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ rustic:barrel 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
-/setblock ~ ~-1 ~ rustic:cabinet 0 false {LootTable:"dregora:rlcraft/containers/simple_loot"}
-
-Brutal Biome Task:
-+ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
-down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
-+ Create new Battletower
-
++ add cartographer village with mayor SomeNutzGuy as underground village variant
++ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
++ I have a better RLCraft, coded in 4 days!
++ Supreme Book X librarian
++ Sussyberians in catrographer village
++ Book: Definitely better RLCraft
 + Fix lag in underworld (bo3check)
 + make memorial for puffik 2022-2024
-+ add all crates into sealed crates
 + Add kotlin to gem traders selling tickets, hints and stuff
 + Remove leaves kelp from oceans
 + add generic dungeons to all biomes
@@ -237,21 +219,29 @@ down just before the blight occured and the fabric of space and time collapsed i
 + File cleanup, remove .zip files
 Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
 
+Dimension tasks:
++ upload Underworld to curseforge and add to DregoraRL - RLCraft pack
++ Add Underworld as required dependency to DregoraRL
++ Add DregoraRL as required dependency to Underworld
++ add lore to underneath ( 5 books )
+
+Brutal Biome Task:
++ Make mini-bosses always champions
++ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
+down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
++ Create new Battletower
+
 Potential Hotfix tasks:
 + fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
 
-Village of Memes ideas:
-+ add cartographer village with mayor SomeNutzGuy as underground village variant
-+ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
-+ I have a better RLCraft, coded in 4 days!
-+ Supreme Book X librarian
-+ Sussyberians
-+ Book: Definitely better RLCraft
-
 Backlog:
++ Add brutal coins to underworld in specially designed structures
++ make ac heaters in future bunkers with special bedrock blocks which require a late game key
++ Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
 + Katsu's sword
 + Soka's Sword
 + Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
++ curse of binding on items in 0,0 chest should be curse of possession and an additional enchant as to make the possession curse not obtainable
 + The value "" is not valid for the setting HeightOffset in maintenance_shaft_bottom on line 69: Incorrect number: 
 + Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
 + Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
@@ -280,6 +270,7 @@ Backlog:
 
 Bruh Biome Ideas:
 + Remake Mistlands In minecraft
++ Spiders Den Brutal Biome with only spiders in all sizes.
 + Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
   the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
   all sorts of dragons flying around
@@ -319,6 +310,13 @@ RLCraft Done:
 - rebalanced srparasites for lost cities & underneath dimensions
 
 RLCraft todo:
++ Config reference I&F RLMixings, enabling DregoraRL options
++ Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
++ Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
++ change blood tear description to mention: Remnants of Dreadnauts and Overlords
++ Add new bedrock blocks to non-demo dragon list
++ Make everything above y110 higher difficulty
++ Tooltips for BOP & DynamicTrees Bop items
 + add recipe button for all woods from bop
 + make bamboo smelt 1 item
 + Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abbys
@@ -372,13 +370,13 @@ RLCraft todo:
 + Blacklist Battletowers from trench biomes and make them rarer
 + carryon chest on battle towers & other cheese methods, make golems stronger & invulnerable to arrows
 + use incontrol to add spawn rule for additional flying entities if player is above Y100
-+ Make macaw bridges use bamboo
 + Remove hotsprings (again) they still spawn for somee reason?
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + test & maybe add some additional lycanite events
 + Add mob farm entity culling mechanism through incontrol, if exeeds animal x then spawn grim reapers
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + test & maybe add some additional lycanite events
++ Make macaw bridges use bamboo
 
 
 OTG Done:
