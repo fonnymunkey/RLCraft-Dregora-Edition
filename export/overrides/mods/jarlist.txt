@@ -15,7 +15,6 @@ Baubles-1.12-1.5.2
 BedBreakBegone-1.0.2
 betterbiomeblend-1.12.2-1.1.7-forge
 bettercaves-1.12.2-2.0.4
-BetterFoliage-MC1.12-2.3.3
 BetterMineshaftsForge-1.12.2-2.2.1
 betternether-0.1.8.6
 BetterQuesting-3.5.329
@@ -132,7 +131,8 @@ Reskillable-1.12.2-1.13.0
 ResourceLoader-MC1.12.1-1.5.3
 RLArtifacts-1.1.2
 RLCombat-1.12.2-2.1.0
-RLMixins-1.3.1
+RLFoliage-MC1.12-2.4.0
+RLMixins-1.3.2
 RLTweaker-1.12.2-0.5.13_infedit
 RoguelikeDungeonsFnarEdition-1.12.2-2.4.4
 roughTweaks0.2.4-1.12.2

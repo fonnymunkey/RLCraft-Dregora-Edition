@@ -86,7 +86,6 @@ key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
 key_keybind.baublesinventory:47
-key_key.betterfoliage.gui:66
 key_key.betterquesting.quests:41
 key_Hat Inventory:0
 key_key.mount.dismount:34
@@ -106,6 +105,7 @@ key_Kill Particles:0
 key_Blacklist Block:76
 key_keybinds.show_wounds:35
 key_neat.keybind.toggle:0
+key_key.betterfoliage.gui:66
 key_Difficulty Meter - Show:49
 key_Difficulty Meter - Show Always:49:SHIFT
 key_key.xat.trinket_gui.desc:0
