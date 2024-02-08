@@ -1,5 +1,7 @@
 Possible false/positives:
 - Entities suffocate in trench biomes? ( Could not find, already fixed? )
+- Cactus land lag cause not found, perhaps this was due to falling sand?
+- fixed frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
 
 Fixed/Changed/Added:
 - Fixed Outposts spawn with players (Fixed WeightedBranches being regular Branches causing the outposts to be more common then intended.)
@@ -193,97 +195,92 @@ Fixed/Changed/Added:
 - decreased temperature in various biomes.
 - make rivers globally cool
 - changed all crates to 10% crate and if fail 100% sealed crate.
+- Made strongholds only generate at 10.000+ blocks from spawn
+- Fixed a crash caused by replaceblocks mechanism trying to replace stationary_water in a bo4 within the corrupted flower biome.
+- Remove fake leaves kelp from oceans
+- removed most nitwit villagers from tribal villages.
+- decreased amount of villagers in tribal villages.
+- Fixed waterlevel border issue in cherry blossom biomes
+- Made the Villager outposts rarer.
+- make librarians with catographer trades (purely to troll people with texture packs) Libtographer
+- Added kotlin to easter egg village selling tickets, hints and stuff
+- added cartographer village with mayor SomeNutzGuy as underground village variant
+- added skeletons with different hats and if they die they drop a map among other cartographer items
+- Sussyberians in catrographer village
+- add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
+- Decreases morock spawns in Grey Abyss biomes
+- added entity Brutal Merchant to Gemtrader outposts.
+
 
 Dregora todo:
-+ lower difficulty and/or make end_portals only generate at specific spots
-+ Brutal Towers
-+ add cartographer village with mayor SomeNutzGuy as underground village variant
-+ make librarians with catographer trades (purely to troll people with texture packs) Libtographer
-+ I have a better RLCraft, coded in 4 days!
-+ Supreme Book X librarian
-+ Sussyberians in catrographer village
-+ Book: Definitely better RLCraft
-+ Fix lag in underworld (bo3check)
-+ make memorial for puffik 2022-2024
-+ Add kotlin to gem traders selling tickets, hints and stuff
-+ Remove leaves kelp from oceans
-+ add generic dungeons to all biomes
-+ Add flying entities to DregoraRL (15 for each biome group)
-+ decrease cactus spawns in cactus land
-+ Rarify the villages (Don't always spawn on player spawn)
-+ add flying brigade to each biomegroup type
-+ add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 + Add house with villager named Simp, a lot of flowers + Nimphs
-+ Fix some of the Dregora performance issues (remove resources from biomes)
++ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
++ curse of binding on items in 0,0 chest should be curse of possession and an additional enchant as to make the possession curse not obtainable
++ Katsu's sword
++ Soka's Sword
++ Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
 + Check OTG Errors at startup
++ remake and evaluate entities from the 3 dungeons
++ Add flying entities to DregoraRL (15 for each biome group)
++ add flying brigade to each biomegroup type
++ Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
-Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
++ remove minecart tnt, or add persistent?
++ The value "" is not valid for the setting HeightOffset in maintenance_shaft_bottom on line 69: Incorrect number:
++ Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
 
 Dimension tasks:
++ Fix lag in underworld (bo3check)
++ add lore to underneath ( 5 books )
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
 + Add DregoraRL as required dependency to Underworld
-+ add lore to underneath ( 5 books )
+
 
 Brutal Biome Task:
-+ Make mini-bosses always champions
 + add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
++ Brutal Towers
++ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
++ Make mini-bosses always champions
 down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
-+ Create new Battletower
-
-Potential Hotfix tasks:
-+ fix frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
++ make memorial for puffik 2022-2024 in Battletower
 
 Backlog:
++ Lattice as Iron Spikes (Brutal Biome )
++ Add dracula castle with 25 village houses and add to bruh biome with wine cellars (Brutal Biome )
++ make slate mine layer in bruh biomes(and make it harder to mine) (Brutal Biome )
++ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons) (Brutal Biome )
++ Dark Fog in Bruh Biomes (Brutal Biome )
++ Frozen Bruh biome type angry wolf & angry bear (Brutal Biome )
++ Remake Mistlands In minecraft (Brutal Biome )
++ Spiders Den Brutal Biome with only spiders in all sizes. (Brutal Biome )
++ Bruh Biome with pretty purple water & black fog (See if I can remove a non-virtual biome somewhere) (Brutal Biome)
++ Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
+  the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
+  all sorts of dragons flying around (Brutal Biome)
 + Add brutal coins to underworld in specially designed structures
 + make ac heaters in future bunkers with special bedrock blocks which require a late game key
-+ Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
-+ Katsu's sword
-+ Soka's Sword
 + Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
-+ curse of binding on items in 0,0 chest should be curse of possession and an additional enchant as to make the possession curse not obtainable
-+ The value "" is not valid for the setting HeightOffset in maintenance_shaft_bottom on line 69: Incorrect number: 
 + Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
-+ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
 + Add hexagonal cities when more skyscrapers are in the game
-+ add 5 new lore for parasite dimension
 + Add gold deposits in rivers
 + Add dragon den to special dragon biome guaranteed bo4.
 + Add Bridgepilings for river biomes
 + Fix crystals breaking through bedrock
 + Add Drunken Villager Boss to Bruh Biome
-+ remake and evaluate entities from the 3 dungeons
 + Cyclops Colonies (underground biome with blood n stuff in prairie?).
 + make tunnel break in underworld biome
 + make tunnel longer
 + Add DregoraRL (pre-packed to github)
-+ Make village RLCraft style (Add RLCraft content into the underground village)
 + make tunnel bunker dungeon
 + Add Nether portals
 + re-check trench broken by canyon issue
 + Parasite biome spooky forest?
-+ Make dungeon entity Remnant of Blight, Withness of Blight
++ Make dungeon entity Remnant of Blight, Witness of Blight
 + Ornamental pillars with loot in center
 + suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
 + Miningtown & JungleCaves lore have no structure to spawn in
 + Display percentage unpacking Dregora so people do not force quit any more.
-
-Bruh Biome Ideas:
-+ Remake Mistlands In minecraft
-+ Spiders Den Brutal Biome with only spiders in all sizes.
-+ Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
-  the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
-  all sorts of dragons flying around
-+ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
-+ Bruh Biome with pretty purple water & black fog (See if I can remove a non-virtual biome somewhere)
-+ Lattice as Iron Spikes
-+ Add dracula castle with 25 village houses and add to bruh biome with wine cellars
-+ make slate mine layer in bruh biomes(and make it harder to mine)
-+ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons)
-+ Add Ancient Coins (Battle Coins, add small description) to loottables (new battletowers) for trading special items with villager chiefs & add villager chief
-+ Dark Fog in Bruh Biomes
-+ Giant holes in Bruh Biome
-+ Frozen Bruh biome type angry wolf & angry bear
 
 RLCraft Done:
 - Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
@@ -308,15 +305,22 @@ RLCraft Done:
 - added and configured vertical dimension stack mod
 - enabled evolution for spawner-less spawning in underneath
 - rebalanced srparasites for lost cities & underneath dimensions
+- rename variedcommodities:orb-4 -> Aberrant Orb
+- rename variedcommodities:orb-1 -> Demon Orb
+- rename variedcommodities:orb-2 -> Shadow Orb
+- Altered barrier block items dropped on mining.
+- blacklist barrier blocks (non-craftable, remove reciple)
 
 RLCraft todo:
++ Tooltips for BOP, DynamicTrees Bop & Unblocked Items such as the variedcommodities artifact
++ Add Underworld Archievement: Hide, run, seek and find the portal in black enshrined.
++ C&L Hydra needs to be configured per biome
 + Config reference I&F RLMixings, enabling DregoraRL options
 + Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
 + Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
 + change blood tear description to mention: Remnants of Dreadnauts and Overlords
 + Add new bedrock blocks to non-demo dragon list
 + Make everything above y110 higher difficulty
-+ Tooltips for BOP & DynamicTrees Bop items
 + add recipe button for all woods from bop
 + make bamboo smelt 1 item
 + Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abbys
@@ -377,7 +381,6 @@ RLCraft todo:
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + test & maybe add some additional lycanite events
 + Make macaw bridges use bamboo
-
 
 OTG Done:
 - Fix An Unknown error occured while attempting to perform this command

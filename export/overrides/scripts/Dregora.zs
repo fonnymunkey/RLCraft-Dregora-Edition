@@ -1,9 +1,13 @@
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.BlockHarvestDropsEvent;
+import crafttweaker.event.BlockBreakEvent;
 import crafttweaker.event.IBlockEvent;
 import crafttweaker.item.WeightedItemStack;
 import crafttweaker.block.IBlock;
 import crafttweaker.item.IItemStack;
+import crafttweaker.event.IEventCancelable;
+import crafttweaker.event.IEventHasResult;
+import crafttweaker.event.IEventPositionable;
 
 // use /ct syntax to validate scripts
 
@@ -31,6 +35,31 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
+events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
+    if ( blockDrops.block has <dimstack:bedrock:7>.asBlock() ){
+        blockDrops.drops = [
+
+        <notreepunching:rock/stone>.weight(1.0),
+        <notreepunching:rock/stone>.weight(0.5),
+        <notreepunching:rock/stone>.weight(0.3),
+        <notreepunching:rock/basalt>.weight(0.5),
+        <notreepunching:rock/basalt>.weight(0.3),
+        <notreepunching:flint_shard>.weight(0.3),
+        <notreepunching:flint_shard>.weight(0.3),
+        <simpledifficulty:magma_chunk>.weight(0.3),
+        <simpledifficulty:magma_chunk>.weight(0.3),
+        <rustic:dust_tiny_iron>.weight(0.1),
+        <rustic:dust_tiny_iron>.weight(0.1)
+
+        ] as WeightedItemStack[];
+    }
+});
+
+//events.onBlockBreak(function(blockBreaks as BlockBreakEvent){
+//    if ( blockBreaks.block has <dimstack:bedrock:7>.asBlock() ){
+//        Particle effect?
+//    }
+//});
 
 // Remove BOP non-used and double recipes:
 recipes.remove(<biomesoplenty:berries>);
@@ -39,12 +68,81 @@ recipes.remove(<biomesoplenty:gem:6>);
 recipes.remove(<biomesoplenty:gem_block:6>);
 recipes.remove(<biomesoplenty:terrestrial_artifact>);
 
+//Add New trading system items description & lore
+
+<variedcommodities:coin_gold>.displayName = "Ancient Coins";
+<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:ancient_coin>.displayName = "Brutal Coins";
+<variedcommodities:ancient_coin>.addTooltip(format.gold("The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in Outposts."));
+<variedcommodities:lead_pipe>.displayName = "Ancient Artifact";
+<variedcommodities:lead_pipe>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:crowbar>.displayName = "Ancient Artifact";
+<variedcommodities:crowbar>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:hammer>.displayName = "Ancient Artifact";
+<variedcommodities:hammer>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:wrench>.displayName = "Ancient Artifact";
+<variedcommodities:wrench>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:pipe_wrench>.displayName = "Ancient Artifact";
+<variedcommodities:pipe_wrench>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+
+//Add the Tool Used Description for Barrier Blocks:
+<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an Brutal Artifact equipped in offhand."));
+
+//Give Brutal Artifact it's name:
+<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Key§r §4‡";
+<variedcommodities:artifact>.addTooltip(format.gold("Gain the ability to destroy Theta barrier blocks when equipped in off-hand"));
+
+// Give the Orbs for Lycanites Summons a better name.
+<variedcommodities:orb:1>.clearTooltip();
+<variedcommodities:orb:5>.clearTooltip();
+<variedcommodities:orb:6>.clearTooltip();
+
+<variedcommodities:orb:1>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7277" + "1)");
+<variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
+<variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
+<variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
+<variedcommodities:orb:1>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
+<variedcommodities:orb:5>.addTooltip("Aberrant " + <variedcommodities:orb>.displayName + " (#" + "7277" + "5)");
+<variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
+<variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
+<variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
+<variedcommodities:orb:5>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
+<variedcommodities:orb:6>.addTooltip("Shadow " + <variedcommodities:orb>.displayName + " (#" + "7277" + "6)");
+<variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
+<variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
+<variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
+<variedcommodities:orb:6>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
 // Re-add bop Terrestrial Arrifact recipe but with iceandfire sapphire.
 recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
  [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
   [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
   [<biomesoplenty:gem:4>,<minecraft:emerald>,null]]);
 
+// Remove Lycanite Summoners:
+recipes.remove(<lycanitesmobs:soulcubeaberrant>);
+recipes.remove(<lycanitesmobs:soulcubeundead>);
+recipes.remove(<lycanitesmobs:soulcubedemonic>);
+
+// Re-add Amalgalich Summoner
+recipes.addShaped("dregora21",<lycanitesmobs:soulcubeundead>,
+ [[<variedcommodities:orb:6>,<variedcommodities:skull>,<variedcommodities:orb:6>],
+  [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
+  [<variedcommodities:orb:6>,<variedcommodities:skull>,<variedcommodities:orb:6>]]);
+
+// Re-add Asmodeus Summoner
+recipes.addShaped("dregora22",<lycanitesmobs:soulcubeaberrant>,
+ [[<variedcommodities:orb:5>,<quark:biotite>,<variedcommodities:orb:5>],
+  [<quark:biotite>,<lycanitesmobs:soulstone_aberration>,<quark:biotite>],
+  [<variedcommodities:orb:5>,<quark:biotite>,<variedcommodities:orb:5>]]);
+
+// Re-add Rahovart Summoner
+recipes.addShaped("dregora23",<lycanitesmobs:soulcubedemonic>,
+ [[<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>],
+  [<variedcommodities:heart>,<lycanitesmobs:soulstone_demon>,<variedcommodities:heart>],
+  [<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>]]);
 
 //fix BOP error unregistered item:
 //recipes.remove(<notreepunching:saw_planks_7>);

@@ -409,9 +409,9 @@ recipes.remove(<simpledifficulty:chiller>);
 recipes.remove(<simpledifficulty:spit>);
 recipes.remove(<simpledifficulty:campfire>);
 
-recipes.remove(<lycanitesmobs:soulcubedemonic>);
-recipes.remove(<lycanitesmobs:soulcubeaberrant>);
-recipes.remove(<lycanitesmobs:soulcubeundead>);
+//recipes.remove(<lycanitesmobs:soulcubedemonic>); REPLACED BY Dregora.zs
+//recipes.remove(<lycanitesmobs:soulcubeaberrant>); REPLACED BY Dregora.zs
+//recipes.remove(<lycanitesmobs:soulcubeundead>); REPLACED BY Dregora.zs
 recipes.remove(<lycanitesmobs:equipment_station>);
 recipes.remove(<lycanitesmobs:woodenpaxel>);
 recipes.remove(<lycanitesmobs:ironpaxel>);
@@ -1527,20 +1527,20 @@ recipes.addShaped("lolarecipe71b",<simpledifficulty:campfire>,
   [<ore:logWood>,<ore:logWood>,<ore:logWood>],
   [<ore:cobblestone>,<ore:cobblestone>,<ore:cobblestone>]]);
 
-recipes.addShaped("lolarecipe72",<lycanitesmobs:soulcubedemonic>,
- [[<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>],
-  [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
-  [<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>]]);
+//recipes.addShaped("lolarecipe72",<lycanitesmobs:soulcubedemonic>, REPLACED BY Dregora.zs
+// [[<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>],
+//  [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
+//  [<lycanitesmobs:demonstone>,<quark:biotite>,<lycanitesmobs:demonstone>]]);
 
-recipes.addShaped("lolarecipe73",<lycanitesmobs:soulcubeaberrant>,
- [[<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>],
-  [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
-  [<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>]]);
+//recipes.addShaped("lolarecipe73",<lycanitesmobs:soulcubeaberrant>, REPLACED BY Dregora.zs
+// [[<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>],
+//  [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
+//  [<lycanitesmobs:aberrantstone>,<variedcommodities:heart>,<lycanitesmobs:aberrantstone>]]);
 
-recipes.addShaped("lolarecipe74",<lycanitesmobs:soulcubeundead>,
- [[<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>],
-  [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
-  [<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>]]);
+//recipes.addShaped("lolarecipe74",<lycanitesmobs:soulcubeundead>, REPLACED BY Dregora.zs
+// [[<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>],
+//  [<variedcommodities:skull>,<lycanitesmobs:soulstone_undead>,<variedcommodities:skull>],
+//  [<lycanitesmobs:shadowstone>,<variedcommodities:skull>,<lycanitesmobs:shadowstone>]]);
 
 recipes.addShaped("lolarecipe75",<spartanweaponry:arrow_wood>*4,
  [[<ore:plankWood>],
