@@ -210,42 +210,54 @@ Fixed/Changed/Added:
 - add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
 - Decreases morock spawns in Grey Abyss biomes
 - added entity Brutal Merchant to Gemtrader outposts.
-
+- added NymphHouse as a rare structure to Lavender Fields
+- Changed 0,0 loottable items to have curse of posession along with curse of binding (binding does not work but fills the first slot)
+- Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
+- fixed and slightly tweaked the entities for dungeon 01,02,03 and fixed bugs causing chests to be empty.
+- Changed mine trap to not contain tnt minecarts
+- fixed typo in miner entity for mineshafts
+- Added the herbalist structure
+- Flower field below needs more dragons + better caves
+- Ball of mud = Bal of shit in toilet
+- all loottables mainhand/offhand added double entries for main & offhand slots
+- fixed loottable issues with spartanfire swords
 
 Dregora todo:
-+ Add house with villager named Simp, a lot of flowers + Nimphs
-+ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
-+ curse of binding on items in 0,0 chest should be curse of possession and an additional enchant as to make the possession curse not obtainable
-+ Katsu's sword
-+ Soka's Sword
-+ Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
-+ Check OTG Errors at startup
-+ remake and evaluate entities from the 3 dungeons
++ Patriot potion
++ Better Bas Pot
++ Frauk potion
++ check why time is stagnant
++ decrease amount of ruin spawns
++ remove sand spire from ruins spawn queue
++ fix toilet loot uncraftable potion no effect
++ make and add herbalist trader
++ make herbalist chest randomized loot
++ Brutal Towers
++ make memorial for puffik 2022-2024 in Battletower
 + Add flying entities to DregoraRL (15 for each biome group)
 + add flying brigade to each biomegroup type
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
-+ remove minecart tnt, or add persistent?
-+ The value "" is not valid for the setting HeightOffset in maintenance_shaft_bottom on line 69: Incorrect number:
-+ Issue: [18:06:20] [Server thread/WARN]: Invalid NBT tag for mob in EntityFunction: {CustomName:Miner,ActiveEffects:[{Id:11,Amplifier:0,Duration:2147483647},{Id:12,Amplifier:0,Duration:2147483647}]CustomNameVisible:0,Attributes:[{Name:"generic.knockbackResistance",Base:0.2f}],HandItems:[{id:"minecraft:iron_pickaxe",Count:1},{}],ArmorItems:[{id:"minecraft:leather_boots",tag:{display:{color:2824977}},Count:1},{},{},{id:"minecraft:iron_helmet",Count:1,tag:{display:{Name:"Minor Miner's Cap"},ench:[{id:0,lvl:1}]}}],ArmorDropChances:[0F,0F,0F,0.1F]}. Skipping mob.
++ Make mini-bosses always champions
++ Check OTG Errors at startup
 
 Dimension tasks:
 + Fix lag in underworld (bo3check)
-+ add lore to underneath ( 5 books )
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
 + Add DregoraRL as required dependency to Underworld
++ Shaders causes bug due to fog or night world
 
-
-Brutal Biome Task:
-+ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
-+ Brutal Towers
-+ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
-+ Make mini-bosses always champions
-down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
-+ make memorial for puffik 2022-2024 in Battletower
 
 Backlog:
++ Potion of eagle eyes
++ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
+down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
++ Katsu's sword
++ Soka's Sword
++ Brutal biome dracula's castle add kruimel in basement tunnels
++ add lore to underneath ( 5 books )
++ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
 + Lattice as Iron Spikes (Brutal Biome )
 + Add dracula castle with 25 village houses and add to bruh biome with wine cellars (Brutal Biome )
 + make slate mine layer in bruh biomes(and make it harder to mine) (Brutal Biome )
@@ -264,6 +276,7 @@ Backlog:
 + Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
 + Add hexagonal cities when more skyscrapers are in the game
 + Add gold deposits in rivers
++ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
 + Add dragon den to special dragon biome guaranteed bo4.
 + Add Bridgepilings for river biomes
 + Fix crystals breaking through bedrock
@@ -281,6 +294,7 @@ Backlog:
 + suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
 + Miningtown & JungleCaves lore have no structure to spawn in
 + Display percentage unpacking Dregora so people do not force quit any more.
++ Add smoke particle effect to barrier block being destroyed
 
 RLCraft Done:
 - Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
@@ -310,81 +324,76 @@ RLCraft Done:
 - rename variedcommodities:orb-2 -> Shadow Orb
 - Altered barrier block items dropped on mining.
 - blacklist barrier blocks (non-craftable, remove reciple)
+- Tooltips for BOP, DynamicTrees Bop & Unblocked Items such as the variedcommodities artifact
+- change blood tear description to mention: Remnants of Dreadnauts and Overlords
+- Removed hotsprings (again) they still spawned due to a typo
+- Add additional steps in boss battle recipes to make exploration more relevant (brutal coins/brutal towers)
+- Rebalanced the ruins loottables to not be as OP
+- CraftTweaker 2 add desc to biome purifier that it can bhe bought from herbalists
+- remove biomesoplenty:jar_filled (block recipe)
+- removed biome finder (block recipe)
+- biomesoplenty:plant_1:8 -> plant fiber
+- magic fire pot bop blu fire -> lvl 8 magic required
+- add biome essence description so people know what it does
+- remove poison ivy from recipes JEI
+- add new recipes for biomes o plenty biome finder ingredients
+- make bamboo smelt 1 item
+- Make macaw bridges use bamboo
+- Blacklisted Battletowers from trench biomes and make them rarer
+- Renames BOP Glowshrooms to Gleamshrooms (Both mushroom as terrarium)
+- Add description and legendary tooltip: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set
+- make enchantment table use wither skull
 
 RLCraft todo:
-+ Tooltips for BOP, DynamicTrees Bop & Unblocked Items such as the variedcommodities artifact
-+ Add Underworld Archievement: Hide, run, seek and find the portal in black enshrined.
++ Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
++ Add Quest: Hide, run, seek and find the portal in black enshrined.
 + C&L Hydra needs to be configured per biome
 + Config reference I&F RLMixings, enabling DregoraRL options
 + Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
 + Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
-+ change blood tear description to mention: Remnants of Dreadnauts and Overlords
 + Add new bedrock blocks to non-demo dragon list
 + Make everything above y110 higher difficulty
-+ add recipe button for all woods from bop
-+ make bamboo smelt 1 item
-+ Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abbys
-+ Disable quark generation in grey abbys?
-+ Psstt, rumor has it Kotlin is backporting jenny, I can't wait! - What in Kotlin's Ketchup?!
-+ Haunted Nights, make dying entities have .25 chance to spawn a new entity
-+ Pet armour is called horse Armour in DregoraRL?
-+ convert ruins end & nether structures to recurrent complex structures.
-+ add battle coins to golem armor crafting recipe
++ Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
++ Disable quark generation in grey abyss?
++ Haunted Nights, make dying entities have .25 chance to spawn a new entity using crafttweaker
 + update ice & fire and make sure it works in the modpack.
 + killing zombie spawns a zombie skeleton
 + blacklist Dragons from Viking Island, Viking Beach, Redwood Forest (And all other dense forests?)
 + blacklist myrmex bases from cities?
-+ make all ruins structures (modern) look actually ruined
-+ make enchantment table use wither skull
-+ Desert Temple from Ruins?
-+ Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
 + Blacklist dragon, ropguelike and doomlike dungeons from CANYON and RIVER biomes and add all FromImage Dungeon Biomes too
-+ memefy the grand tree
-+ CraftTweaker /crafttweaker conflict reference to RLC and fix issues
-+ Change the ruins loottables to not be as OP
-+ remove the big ruins tower from ruins.
-+ Transform all floating things into crashed things on the ground when applicable or remove.
 + Add all Canyon tag biomes to iceandfire blacklist
-+ Make Ethereal Tree/spectral garden patches for within the END
-+ Apparently Journey map doesn't wipe deaths on a new world
 + Install Copper & Lightning & configure config
 + Blacklist Dragon Biomes: Ravenous Jungle
-+ Rename BOP Glowshrooms to Gleamshrooms
-+ Add additional steps in boss battle recipes to make exploration more relevant (Add certain items to bruh biome battletowers?)
-+ Add flower teleportation circles to Flower Field
-+ Finetune Ruins to biomes
-+ remove big ruins mod tower
 + Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
-+ Add Bop items, ores to legendary tooltips (maybe also cursed weapons?)
 + Burial Arrow config Dynamic Trees and liquids
-+ Trinkers and Baunbles climable blocks
-+ check infernal spawns always same type, up the rarity and check
++ Check Trinkers and Baunbles climable blocks (add bop blocks)
 + Error loading entity with ID 'abyssalcraft:evilsheep'
-+ increase difficulty of city biomes & bruh biomes to 1.5x
-+ Check BiomeFinder, make sure it properly works
++ increase difficulty of city biomes to 1.1 and bruh biomes to 1.5-1.8
 + Fix structures: P_Crater (X),
-+ Hot Spring Bucket, make it do damage instead of heal and add to sulfuric biomes?
-+ Add lvl 26 summoned blight keppel to a particular nasty environment
 + remove 90% of all structures in ice area
-+ add end battle towers (crystals inside + guardian spawner)
-+ fix chat.villager_golem.0 issue
-+ fix [atomicstryker.ruins.common.RuinTemplateRule:doSpecialBlock:749]: Ruins Mod could not determine what to spawn for [minecraft:preserveBlock] in Ruin template:
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
-+ Blacklist Battletowers from trench biomes and make them rarer
 + carryon chest on battle towers & other cheese methods, make golems stronger & invulnerable to arrows
 + use incontrol to add spawn rule for additional flying entities if player is above Y100
-+ Remove hotsprings (again) they still spawn for somee reason?
-+ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
-+ test & maybe add some additional lycanite events
 + Add mob farm entity culling mechanism through incontrol, if exeeds animal x then spawn grim reapers
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
-+ test & maybe add some additional lycanite events
-+ Make macaw bridges use bamboo
 
-OTG Done:
+RLCraft Backlog:
++ hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
++ Theta barriers need 48 mining
++ honeycomb empty honey needs same recipies as HoneyComb
++ beehive drop change in rustic?
++ memefy the grand tree
++ Transform all floating things into crashed things on the ground when applicable or remove.
++ Make Ethereal Tree/spectral garden patches for within the END
++ Add flower teleportation circles to Flower Field
++ convert ruins end & nether structures to recurrent complex structures.
++ add battle coins to golem armor crafting recipe
++ test & maybe add some additional lycanite events
++ add end battle towers (crystals inside + guardian spawner)
++ Hot Spring Bucket, make it do damage instead of heal and add to sulfuric biomes?
+
+
+OTG Done: (awaiting public release)
 - Fix An Unknown error occured while attempting to perform this command
 - Fix Crash LayerMixing for OTG
-
-OTG todo:
-+ OTG merge at the 20th of December

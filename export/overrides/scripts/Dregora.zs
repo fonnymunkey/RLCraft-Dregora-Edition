@@ -13,8 +13,33 @@ import crafttweaker.event.IEventPositionable;
 
 print("Dregora Script starting!");
 
-//Make ice and fire think dried_sand is a sand - does not work
-//<ore:sand>.add(<biomesoplenty:dried_sand>);
+// Tell people where to get a biome purifier.
+<srparasites:biomepurifier>.addTooltip(format.gold("Obtainable at most Herborists, rarely found at their overgrown cabin in plains and flower fields."));
+
+// Remove macaw bamboo bridge recipe
+recipes.remove(<mcwbridges:bamboo_bridge>);
+recipes.remove(<mcwbridges:dry_bamboo_bridge>);
+
+// Re-add macaw dry bamboo bridge recipe
+recipes.addShaped("dregora27",<mcwbridges:dry_bamboo_bridge>,
+ [[null,null,null],
+  [<biomesoplenty:plant_1:5>,<minecraft:string>,<biomesoplenty:plant_1:5>],
+  [<biomesoplenty:bamboo>,<biomesoplenty:bamboo>,<biomesoplenty:bamboo>]]);
+
+// Re-add macaw bamboo bridge recipe
+recipes.addShaped("dregora26",<mcwbridges:bamboo_bridge>,
+ [[null,null,null],
+  [<biomesoplenty:bamboo>,<minecraft:string>,<biomesoplenty:bamboo>],
+  [<biomesoplenty:bamboo>,<biomesoplenty:bamboo>,<biomesoplenty:bamboo>]]);
+
+// Remove Enchantment table & add wither skulls to it:
+recipes.remove(<minecraft:enchanting_table>);
+
+// Re-add Enchantment table
+recipes.addShaped("dregora24",<minecraft:enchanting_table>,
+ [[null,<minecraft:book>,null],
+  [<minecraft:diamond>,<minecraft:skull:1>,<minecraft:diamond>],
+  [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
 
 //Harvesting Tooltips:
 <biomesoplenty:plant_1:11>.addTooltip("Harvest with shears.");
@@ -22,7 +47,7 @@ print("Dregora Script starting!");
 <biomesoplenty:plant_1:3>.addTooltip("Harvest with shears.");
 
 //Lower Bamboo Fuel time & add dried leaves as fuel.
-furnace.setFuel(<biomesoplenty:bamboo>, 200);
+furnace.setFuel(<biomesoplenty:bamboo>, 100);
 furnace.setFuel(<biomesoplenty:plant_0:0>, 100);
 
 // Aquaculture seaweed dropped from kelp, can be baked to become kelp and kelp can be used as a fuel source to smelt 2 items. (Same-ish as 1.16.5)
@@ -55,25 +80,80 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
+//Replace the Biome essence with randomized nbt data for data-less biome essence
+events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
+    if ( blockDrops.block has <biomesoplenty:biome_block>.asBlock() ){
+        blockDrops.drops = [
+
+        <biomesoplenty:biome_essence>.weight(1.0),
+
+        ] as WeightedItemStack[];
+    }
+});
+
 //events.onBlockBreak(function(blockBreaks as BlockBreakEvent){
 //    if ( blockBreaks.block has <dimstack:bedrock:7>.asBlock() ){
 //        Particle effect?
 //    }
 //});
 
+// Add description to ancient sets:
+
+<variedcommodities:tuxedo_chest>.addTooltip = "Fancy Chestpiece, extremely old yet in near pristine state.";
+<variedcommodities:tuxedo_pants>.addTooltip = "Fancy Pants, extremely old yet in near pristine state.";
+<variedcommodities:tuxedo_bottom>.addTooltip = "Aged yet Fancy Trenchcoat, extremely old yet in near pristine state.";
+
+<variedcommodities:soldier_head>.addTooltip = "Sturdy Helmet, roughed up through the ages but still in near perfect condition.";
+<variedcommodities:soldier_chest>.addTooltip = "Sturdy ChestPlate, roughed up through the ages but still in near perfect condition.";
+<variedcommodities:soldier_legs>.addTooltip = "Sturdy Leggings, roughed up through the ages but still in near perfect condition.";
+<variedcommodities:soldier_bottom>.addTooltip = "Sturdy Trenchcoat, roughed up through the ages but still in near perfect condition.";
+
+//<variedcommodities:x407_head>.addTooltip = "Aged Carbon Lined Helmet, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
+//<variedcommodities:x407_chest>.addTooltip = "Aged Carbon Lined ChestPlate,, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
+//<variedcommodities:x407_legs>.addTooltip = "Aged Carbon Lined Leggings, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
+//<variedcommodities:x407_boots>.addTooltip = "Aged Carbon Lined  Boots, One was near indestructible whilst wearing the complete set., that is until the blight happened.";
+
+<variedcommodities:commissar_head>.addTooltip = "Aged decorative Cap, a leather cap lined with fine cloth.";
+<variedcommodities:commissar_chest>.addTooltip = "Aged decorative Chestpiece, a leather jack, lined with fine cloth complete with decorative elements.";
+<variedcommodities:commissar_legs>.addTooltip = "Aged decorative Pants, sturdy pants lined with fine cloth.";
+<variedcommodities:commissar_bottom>.addTooltip = "Aged decorative Trenchcoat, made to last.";
+
+<variedcommodities:infantry_helmet>.addTooltip = "Aged Equipment, still provides decent protection.";
+<variedcommodities:officer_chest>.addTooltip = "Old yet sturdy Chestplate, decorated with various emblems and signs.";
+<variedcommodities:tactical_chest>.addTooltip = "Aged Equipment, still provides decent protection.";
+<variedcommodities:tactical_head>.addTooltip = "Aged Equipment, still provides decent protection.";
+
+<variedcommodities:nanorum_head>.addTooltip = "Aged Helmet, made of advanced alloys. Provides excellent protection.";
+<variedcommodities:nanorum_chest>.addTooltip = "Aged Chestplate, made of advanced alloys. Provides excellent protection.";
+<variedcommodities:nanorum_legs>.addTooltip = "Aged Legs, made of advanced alloys. Provides excellent protection.";
+<variedcommodities:nanorum_boots>.addTooltip = "Aged Boots, made of advanced alloys. Provides excellent protection.";
+
+
+<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
+
+//Removed biome finder from BOP for it causes lag spikes.
+recipes.remove(<biomesoplenty:biome_finder>);
+
 // Remove BOP non-used and double recipes:
+recipes.remove(<biomesoplenty:plant_0:4>);
+recipes.remove(<biomesoplenty:jar_filled:0>);
+recipes.remove(<biomesoplenty:berries>);
 recipes.remove(<biomesoplenty:berries>);
 recipes.remove(<biomesoplenty:plant_0:5>);
 recipes.remove(<biomesoplenty:gem:6>);
 recipes.remove(<biomesoplenty:gem_block:6>);
 recipes.remove(<biomesoplenty:terrestrial_artifact>);
 
-//Add New trading system items description & lore
+<contenttweaker:blood_tear>.addTooltip(format.yellow("Remnants of Dreadnauts and Overlords"));
+<biomesoplenty:mushroom:3>.displayName = "Gleamshroom";
+<biomesoplenty:terradium:8>.displayName = "Gleamshroom Terrarium";
 
+//Add New trading system items description & lore
+<biomesoplenty:terrestrial_artifact>.addTooltip(format.gold("Brimming with the essence of life & purity, can be traded with most Herborist to craft biome purifiers."));
 <variedcommodities:coin_gold>.displayName = "Ancient Coins";
-<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
+<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
 <variedcommodities:ancient_coin>.displayName = "Brutal Coins";
-<variedcommodities:ancient_coin>.addTooltip(format.gold("The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in Outposts."));
+<variedcommodities:ancient_coin>.addTooltip(format.gold("The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in outposts & most Herborist rarely found in cabins situated in plains and flower fields."));
 <variedcommodities:lead_pipe>.displayName = "Ancient Artifact";
 <variedcommodities:lead_pipe>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
 <variedcommodities:crowbar>.displayName = "Ancient Artifact";
@@ -119,7 +199,7 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
  [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
   [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
-  [<biomesoplenty:gem:4>,<minecraft:emerald>,null]]);
+  [<biomesoplenty:gem:4>,<minecraft:emerald>,<biomesoplenty:biome_essence>]]);
 
 // Remove Lycanite Summoners:
 recipes.remove(<lycanitesmobs:soulcubeaberrant>);
@@ -143,6 +223,9 @@ recipes.addShaped("dregora23",<lycanitesmobs:soulcubedemonic>,
  [[<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>],
   [<variedcommodities:heart>,<lycanitesmobs:soulstone_demon>,<variedcommodities:heart>],
   [<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>]]);
+
+//make bop reed have a use, turn it into plant fibers:
+recipes.addShapeless("dregora25",<notreepunching:grass_fiber>*3,[<biomesoplenty:plant_1:8>]);
 
 //fix BOP error unregistered item:
 //recipes.remove(<notreepunching:saw_planks_7>);
