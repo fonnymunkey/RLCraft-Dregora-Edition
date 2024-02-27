@@ -8,6 +8,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.event.IEventCancelable;
 import crafttweaker.event.IEventHasResult;
 import crafttweaker.event.IEventPositionable;
+import crafttweaker.oredict.IOreDictEntry;
 
 // use /ct syntax to validate scripts
 
@@ -40,6 +41,23 @@ recipes.addShaped("dregora24",<minecraft:enchanting_table>,
  [[null,<minecraft:book>,null],
   [<minecraft:diamond>,<minecraft:skull:1>,<minecraft:diamond>],
   [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
+
+// Flax to string recipe
+recipes.addShapeless("dregora29",<minecraft:string>,[<biomesoplenty:double_plant:0>]);
+
+// BiomesoPlenty:root to quark:root
+recipes.addShapeless("dregora30",<quark:root>,[<biomesoplenty:plant_1:9>]);
+
+// Small Cactus to Cactus fruit
+recipes.addShapeless("dregora31",<biomesoplenty:plant_1:6>,[<foodexpansion:itemcactusfruit>]);
+
+// Barley to Wheat recipe
+recipes.addShapeless("dregora28",<minecraft:wheat>,[<ore:toolKnife>.transformDamage(2),<biomesoplenty:plant_1:11>]);
+
+//recipes.addShaped("dregora28",<minecraft:wheat> * 3,
+// [[<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>],
+//  [<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>],
+//  [<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>,<biomesoplenty:plant_1:11>]]);
 
 //Harvesting Tooltips:
 <biomesoplenty:plant_1:11>.addTooltip("Harvest with shears.");
@@ -99,34 +117,34 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 
 // Add description to ancient sets:
 
-<variedcommodities:tuxedo_chest>.addTooltip = "Fancy Chestpiece, extremely old yet in near pristine state.";
-<variedcommodities:tuxedo_pants>.addTooltip = "Fancy Pants, extremely old yet in near pristine state.";
-<variedcommodities:tuxedo_bottom>.addTooltip = "Aged yet Fancy Trenchcoat, extremely old yet in near pristine state.";
+<variedcommodities:tuxedo_chest>.addTooltip("Fancy Chestpiece, extremely old yet in near pristine state.");
+<variedcommodities:tuxedo_pants>.addTooltip("Fancy Pants, extremely old yet in near pristine state.");
+<variedcommodities:tuxedo_bottom>.addTooltip("Aged yet Fancy Trenchcoat, extremely old yet in near pristine state.");
 
-<variedcommodities:soldier_head>.addTooltip = "Sturdy Helmet, roughed up through the ages but still in near perfect condition.";
-<variedcommodities:soldier_chest>.addTooltip = "Sturdy ChestPlate, roughed up through the ages but still in near perfect condition.";
-<variedcommodities:soldier_legs>.addTooltip = "Sturdy Leggings, roughed up through the ages but still in near perfect condition.";
-<variedcommodities:soldier_bottom>.addTooltip = "Sturdy Trenchcoat, roughed up through the ages but still in near perfect condition.";
+<variedcommodities:soldier_head>.addTooltip("Sturdy Helmet, roughed up through the ages but still in near perfect condition.");
+<variedcommodities:soldier_chest>.addTooltip("Sturdy ChestPlate, roughed up through the ages but still in near perfect condition.");
+<variedcommodities:soldier_legs>.addTooltip("Sturdy Leggings, roughed up through the ages but still in near perfect condition.");
+<variedcommodities:soldier_bottom>.addTooltip("Sturdy Trenchcoat, roughed up through the ages but still in near perfect condition.");
 
-//<variedcommodities:x407_head>.addTooltip = "Aged Carbon Lined Helmet, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
-//<variedcommodities:x407_chest>.addTooltip = "Aged Carbon Lined ChestPlate,, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
-//<variedcommodities:x407_legs>.addTooltip = "Aged Carbon Lined Leggings, One was near indestructible whilst wearing the complete set, that is until the blight happened.";
-//<variedcommodities:x407_boots>.addTooltip = "Aged Carbon Lined  Boots, One was near indestructible whilst wearing the complete set., that is until the blight happened.";
+//<variedcommodities:x407_head>.addTooltip("Aged Carbon Lined Helmet, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
+//<variedcommodities:x407_chest>.addTooltip("Aged Carbon Lined ChestPlate,, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
+//<variedcommodities:x407_legs>.addTooltip("Aged Carbon Lined Leggings, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
+//<variedcommodities:x407_boots>.addTooltip("Aged Carbon Lined  Boots, One was near indestructible whilst wearing the complete set., that is until the blight happened.");
 
-<variedcommodities:commissar_head>.addTooltip = "Aged decorative Cap, a leather cap lined with fine cloth.";
-<variedcommodities:commissar_chest>.addTooltip = "Aged decorative Chestpiece, a leather jack, lined with fine cloth complete with decorative elements.";
-<variedcommodities:commissar_legs>.addTooltip = "Aged decorative Pants, sturdy pants lined with fine cloth.";
-<variedcommodities:commissar_bottom>.addTooltip = "Aged decorative Trenchcoat, made to last.";
+<variedcommodities:commissar_head>.addTooltip("Aged decorative Cap, a leather cap lined with fine cloth.");
+<variedcommodities:commissar_chest>.addTooltip("Aged decorative Chestpiece, a leather jack, lined with fine cloth complete with decorative elements.");
+<variedcommodities:commissar_legs>.addTooltip("Aged decorative Pants, sturdy pants lined with fine cloth.");
+<variedcommodities:commissar_bottom>.addTooltip("Aged decorative Trenchcoat, made to last.");
 
-<variedcommodities:infantry_helmet>.addTooltip = "Aged Equipment, still provides decent protection.";
-<variedcommodities:officer_chest>.addTooltip = "Old yet sturdy Chestplate, decorated with various emblems and signs.";
-<variedcommodities:tactical_chest>.addTooltip = "Aged Equipment, still provides decent protection.";
-<variedcommodities:tactical_head>.addTooltip = "Aged Equipment, still provides decent protection.";
+<variedcommodities:infantry_helmet>.addTooltip("Aged Equipment, still provides decent protection.");
+<variedcommodities:officer_chest>.addTooltip("Old yet sturdy Chestplate, decorated with various emblems and signs.");
+<variedcommodities:tactical_chest>.addTooltip("Aged Equipment, still provides decent protection.");
+<variedcommodities:tactical_head>.addTooltip("Aged Equipment, still provides decent protection.");
 
-<variedcommodities:nanorum_head>.addTooltip = "Aged Helmet, made of advanced alloys. Provides excellent protection.";
-<variedcommodities:nanorum_chest>.addTooltip = "Aged Chestplate, made of advanced alloys. Provides excellent protection.";
-<variedcommodities:nanorum_legs>.addTooltip = "Aged Legs, made of advanced alloys. Provides excellent protection.";
-<variedcommodities:nanorum_boots>.addTooltip = "Aged Boots, made of advanced alloys. Provides excellent protection.";
+<variedcommodities:nanorum_head>.addTooltip("Aged Helmet, made of advanced alloys. Provides excellent protection.");
+<variedcommodities:nanorum_chest>.addTooltip("Aged Chestplate, made of advanced alloys. Provides excellent protection.");
+<variedcommodities:nanorum_legs>.addTooltip("Aged Legs, made of advanced alloys. Provides excellent protection.");
+<variedcommodities:nanorum_boots>.addTooltip("Aged Boots, made of advanced alloys. Provides excellent protection.");
 
 
 <variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
@@ -146,7 +164,7 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 
 <contenttweaker:blood_tear>.addTooltip(format.yellow("Remnants of Dreadnauts and Overlords"));
 <biomesoplenty:mushroom:3>.displayName = "Gleamshroom";
-<biomesoplenty:terradium:8>.displayName = "Gleamshroom Terrarium";
+<biomesoplenty:terrarium:8>.displayName = "Gleamshroom Terrarium";
 
 //Add New trading system items description & lore
 <biomesoplenty:terrestrial_artifact>.addTooltip(format.gold("Brimming with the essence of life & purity, can be traded with most Herborist to craft biome purifiers."));
@@ -229,7 +247,7 @@ recipes.addShapeless("dregora25",<notreepunching:grass_fiber>*3,[<biomesoplenty:
 
 //fix BOP error unregistered item:
 //recipes.remove(<notreepunching:saw_planks_7>);
-//recipes.addShaped("dregora19", <biomesoplenty:planks_0:0> * 4, [[<ore:toolSaw>], [<biomesoplenty:log_0:4>]]);
+recipes.addShapeless("dregora19",<biomesoplenty:planks_0:0> * 4,[<ore:toolSaw>.transformDamage(4),<biomesoplenty:log_0:4>]);
 
 // Make BOP logs skinable using hatchet - If true, NTP will add its own log->plank and plank->stick recipes and remove old versions
 recipes.addShapeless("dregora17",<minecraft:stick>*8,[<biomesoplenty:log_4:4>]);

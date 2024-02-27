@@ -221,17 +221,18 @@ Fixed/Changed/Added:
 - Ball of mud = Bal of shit in toilet
 - all loottables mainhand/offhand added double entries for main & offhand slots
 - fixed loottable issues with spartanfire swords
+- remove sand spire from ruins spawn queue
+- removed trader double entries and swapped castle trader at ominous biomes for swamp trader
+- decreased amount of ruin spawns
+- made herbalist chest randomized loot
+- fixed bank in single_skyscraper spawning
+- made and added herbalist trader
+- made libraries spawn less in underground villages
 
 Dregora todo:
-+ Patriot potion
-+ Better Bas Pot
-+ Frauk potion
++ make weightedbranches for additional dragon stages & scales
++ check if bog biomes have good mob spawns
 + check why time is stagnant
-+ decrease amount of ruin spawns
-+ remove sand spire from ruins spawn queue
-+ fix toilet loot uncraftable potion no effect
-+ make and add herbalist trader
-+ make herbalist chest randomized loot
 + Brutal Towers
 + make memorial for puffik 2022-2024 in Battletower
 + Add flying entities to DregoraRL (15 for each biome group)
@@ -240,8 +241,14 @@ Dregora todo:
 + File cleanup, remove .zip files
 + Make mini-bosses always champions
 + Check OTG Errors at startup
++ Shrouds coffee potion
++ Patriot potion
++ Better Bas Pot
++ Frauk potion
 
 Dimension tasks:
++ adjust loot, less chests + better loot
++ adjust entities spawning from spawners (don't spawn on white/yellow and black concrete)
 + Fix lag in underworld (bo3check)
 + upload Underworld to curseforge and add to DregoraRL - RLCraft pack
 + Add Underworld as required dependency to DregoraRL
@@ -250,6 +257,7 @@ Dimension tasks:
 
 
 Backlog:
++ Trollander Tree with yoda at bottom
 + Potion of eagle eyes
 + Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
 down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
@@ -343,8 +351,11 @@ RLCraft Done:
 - Renames BOP Glowshrooms to Gleamshrooms (Both mushroom as terrarium)
 - Add description and legendary tooltip: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set
 - make enchantment table use wither skull
+- added recipe cactusfruit from tiny cactus
 
 RLCraft todo:
++ blacklist doomlike and roguelike and lycanite from beaches
++ block dragon spawns from Lavender Fields
 + Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
 + Add Quest: Hide, run, seek and find the portal in black enshrined.
 + C&L Hydra needs to be configured per biome
@@ -379,6 +390,7 @@ RLCraft todo:
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 
 RLCraft Backlog:
++ tiny cactus harvestable with shears
 + hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
 + Theta barriers need 48 mining
 + honeycomb empty honey needs same recipies as HoneyComb

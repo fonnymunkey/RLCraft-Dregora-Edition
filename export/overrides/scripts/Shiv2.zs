@@ -834,4 +834,14 @@ mods.inspirations.Cauldron.addFluidRecipe(<foodexpansion:itemcarrotseedsoup>, <m
 //Milk Kek
 //mods.inspirations.Cauldron.addBrewingRecipe("mujmajnkraftsbettersurvival:milk", "minecraft:thick", <minecraft:milk_bucket>);
 
+recipes.addShaped("lolarecipe60",<xat:damage_shield>,
+ [[<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>],
+  [<quark:biotite>,<minecraft:dragon_egg>|<iceandfire:dragonegg_red>|<iceandfire:dragonegg_green>|<iceandfire:dragonegg_bronze>|<iceandfire:dragonegg_gray>|<iceandfire:dragonegg_blue>|<iceandfire:dragonegg_white>|<iceandfire:dragonegg_sapphire>|<iceandfire:dragonegg_silver>|<iceandfire:dragonegg_amethyst>|<iceandfire:dragonegg_electric>|<iceandfire:dragonegg_black>|<iceandfire:dragonegg_copper>,<quark:biotite>],
+  [<xat:glowing_gem>,<quark:biotite>,<xat:glowing_gem>]]);
+
+recipes.addShaped("lolarecipe76",<simpledifficulty:dragon_canteen>,
+ [[<iceandfire:dragon_skull:0>|<iceandfire:dragon_skull:1>|<iceandfire:dragon_skull:2>],
+  [<simpledifficulty:iron_canteen:*>],
+  [<iceandfire:fire_dragon_heart>|<iceandfire:ice_dragon_heart>|<iceandfire:lightning_dragon_heart>]]);
+
 print("Script ending!");
