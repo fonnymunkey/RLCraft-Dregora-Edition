@@ -14,3 +14,7 @@
   Repository for developing the worldpacker used as a intermediate between OTG and Presets such as DregoraRL.
   These contain the loot_tables and will eventually also contain the sourcefiles for DregoraRL and other presets made by NLBlackEagle.
   https://github.com/NLBlackEagle/WorldPacker/tree/DregoraRL-1.12.2
+
+# Underneath-1.12.2 Worldpacker
+  Same as the DregoraRL Repository but for the Underneath mod.
+  https://github.com/NLBlackEagle/WorldPacker/tree/Underneath-1.12.2
