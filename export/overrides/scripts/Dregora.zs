@@ -115,6 +115,28 @@ function addPotionEffectDeadBlood(player as IPlayer){
 	}
 }
 
+//Function containing potion effects for BOP Blood.
+function addPotionEffectBopBlood(player as IPlayer){
+
+	if (player.activePotionEffects.length == 0) {
+    player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
+    player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 0));
+    player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
+	} else {
+		for p in player.activePotionEffects {
+             if !(p.effectName.matches("elenaidodge:sluggish")) {
+				player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
+			}
+             if !(p.effectName.matches("lycanitesmobs:instability")) {
+				player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 1));
+			}
+	         if !(p.effectName.matches("lycanitesmobs:aphagia")) {
+                player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 1));
+      		}
+		}
+	}
+}
+
 //Function containing potion effects for BOP Hot Spring Water.
 function addPotionEffectHotSpring(player as IPlayer){
 
@@ -172,6 +194,9 @@ events.onPlayerTick(function(event as PlayerTickEvent){
         }
         else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:hot_spring_water")) {
             addPotionEffectHotSpring(event.player);
+        }
+        else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:blood") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:blood") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:blood")) {
+            addPotionEffectBopBlood(event.player);
         }
     }
 });
