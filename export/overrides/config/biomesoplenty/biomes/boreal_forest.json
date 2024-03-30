@@ -69,7 +69,7 @@
     },
     "dead_leaf_piles": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "deadleafpile"
         }
@@ -85,7 +85,7 @@
     },
     "bushes": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "bush"
         }
@@ -135,7 +135,7 @@
     },
     "poison_ivy": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "poisonivy"
         }

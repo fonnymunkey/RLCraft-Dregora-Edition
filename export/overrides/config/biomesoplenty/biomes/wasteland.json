@@ -51,7 +51,7 @@
     },
     "dead_grass": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "deadgrass"
         }
@@ -107,7 +107,7 @@
     },
     "desertgrass": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "desertgrass"
         }

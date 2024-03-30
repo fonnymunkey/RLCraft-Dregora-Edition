@@ -44,7 +44,7 @@
     },
     "leaf_piles": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "leafpile"
         }
@@ -71,7 +71,7 @@
     },
     "clover_patches": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "cloverpatch"
         }
@@ -82,7 +82,7 @@
     },
     "berry_bushes": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "berrybush"
         }
@@ -98,7 +98,7 @@
     },
     "bushes": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "bush"
         }
@@ -132,7 +132,7 @@
     },
     "sprouts": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "sprout"
         }

@@ -9,6 +9,20 @@ import crafttweaker.event.IEventCancelable;
 import crafttweaker.event.IEventHasResult;
 import crafttweaker.event.IEventPositionable;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.event.PlayerTickEvent;
+import crafttweaker.entity.IEntity;
+import crafttweaker.world.IBlockAccess;
+import crafttweaker.world.IWorld;
+import crafttweaker.block.IBlockProperties;
+import crafttweaker.util.Position3f;
+import crafttweaker.potions.IPotion;
+import crafttweaker.potions.IPotionEffect;
+import crafttweaker.entity.IEntityLivingBase;
+import crafttweaker.player.IPlayer;
+import crafttweaker.item.IItemDefinition;
+
+
+
 
 // use /ct syntax to validate scripts
 
@@ -16,6 +30,7 @@ print("Dregora Script starting!");
 
 // Tell people where to get a biome purifier.
 <srparasites:biomepurifier>.addTooltip(format.gold("Obtainable at most Herborists, rarely found at their overgrown cabin in plains and flower fields."));
+
 
 // Remove macaw bamboo bridge recipe
 recipes.remove(<mcwbridges:bamboo_bridge>);
@@ -75,6 +90,89 @@ furnace.addRecipe(<biomesoplenty:seaweed>, <aquaculture:food:0>, 99999);
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     if ( blockDrops.block has <biomesoplenty:seaweed>.asBlock() ){
         blockDrops.drops = [<aquaculture:food:0>.weight(1.0)] as WeightedItemStack[];
+    }
+});
+
+//Function containing potion effects for SRP deadblood.
+function addPotionEffectDeadBlood(player as IPlayer){
+
+	if (player.activePotionEffects.length == 0) {
+    player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(200, 1));
+    player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 0));
+    player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 0));
+	} else {
+		for p in player.activePotionEffects {
+      if !(p.effectName.matches("potioncore:weight")) {
+				player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(200, 1));
+			}
+      if !(p.effectName.matches("minecraft:slowness")) {
+				player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 1));
+			}
+      if !(p.effectName.matches("srparasites:corrosive")) {
+				player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 1));
+			}
+		}
+	}
+}
+
+//Function containing potion effects for BOP Hot Spring Water.
+function addPotionEffectHotSpring(player as IPlayer){
+
+	if (player.activePotionEffects.length == 0) {
+    player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(100, 0));
+    player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
+    player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(100, 1));
+    player.addPotionEffect(<potion:simpledifficulty:hyperthermia>.makePotionEffect(100, 2));
+    player.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(1, 0));
+	} else {
+		for p in player.activePotionEffects {
+      if !(p.effectName.matches("minecraft:regeneration")) {
+				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(100, 0));
+			}
+      if !(p.effectName.matches("potioncore:launch")) {
+				player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
+			}
+      if !(p.effectName.matches("potioncore:explode")) {
+				player.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(1, 0));
+			}
+      if !(p.effectName.matches("minecraft:weakness")) {
+				player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(100, 1));
+			}
+      if !(p.effectName.matches("potion:simpledifficulty:hyperthermia")) {
+				player.addPotionEffect(<potion:simpledifficulty:hyperthermia>.makePotionEffect(100, 2));
+			}
+		}
+	}
+}
+
+//Listener for player in SRP deadblood / BOP Hot Spring Water
+events.onPlayerTick(function(event as PlayerTickEvent){
+
+    if (event.player.world.time % 10 != 0) {return;}
+    if (event.phase == "START") {
+
+        var position = Position3f.create(event.player.position.x, event.player.position.y, event.player.position.z).asBlockPos();
+        var position2 = Position3f.create(event.player.position.x, event.player.position.y + 1, event.player.position.z).asBlockPos();
+        var position3 = Position3f.create(event.player.position.x, event.player.position.y + 1.5, event.player.position.z).asBlockPos();
+        var position4 = Position3f.create(event.player.position.x, event.player.position.y + 10, event.player.position.z).asBlockPos();
+
+
+
+        if((event.player.isInWater) && (event.player.isRiding)) {
+            if((event.player.world.getBlockState(position).block.definition.id) == "srparasites:deadblood") {
+
+                var entityRiding = event.player.getRidingEntity();
+                event.player.removePassengers();
+                event.player.dismountRidingEntity();
+            }
+        }
+
+        if(((event.player.world.getBlockState(position).block.definition.id) == "srparasites:deadblood") || ((event.player.world.getBlockState(position2).block.definition.id) == "srparasites:deadblood") || ((event.player.world.getBlockState(position3).block.definition.id) == "srparasites:deadblood")) {
+            addPotionEffectDeadBlood(event.player);
+        }
+        else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:hot_spring_water")) {
+            addPotionEffectHotSpring(event.player);
+        }
     }
 });
 
@@ -232,15 +330,15 @@ recipes.addShaped("dregora21",<lycanitesmobs:soulcubeundead>,
 
 // Re-add Asmodeus Summoner
 recipes.addShaped("dregora22",<lycanitesmobs:soulcubeaberrant>,
- [[<variedcommodities:orb:5>,<quark:biotite>,<variedcommodities:orb:5>],
-  [<quark:biotite>,<lycanitesmobs:soulstone_aberration>,<quark:biotite>],
-  [<variedcommodities:orb:5>,<quark:biotite>,<variedcommodities:orb:5>]]);
+ [[<variedcommodities:orb:5>,<variedcommodities:heart>,<variedcommodities:orb:5>],
+  [<variedcommodities:heart>,<lycanitesmobs:soulstone_aberration>,<variedcommodities:heart>],
+  [<variedcommodities:orb:5>,<variedcommodities:heart>,<variedcommodities:orb:5>]]);
 
 // Re-add Rahovart Summoner
 recipes.addShaped("dregora23",<lycanitesmobs:soulcubedemonic>,
- [[<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>],
-  [<variedcommodities:heart>,<lycanitesmobs:soulstone_demon>,<variedcommodities:heart>],
-  [<variedcommodities:orb:1>,<variedcommodities:heart>,<variedcommodities:orb:1>]]);
+ [[<variedcommodities:orb:1>,<quark:biotite>,<variedcommodities:orb:1>],
+  [<quark:biotite>,<lycanitesmobs:soulstone_demon>,<quark:biotite>],
+  [<variedcommodities:orb:1>,<quark:biotite>,<variedcommodities:orb:1>]]);
 
 //make bop reed have a use, turn it into plant fibers:
 recipes.addShapeless("dregora25",<notreepunching:grass_fiber>*3,[<biomesoplenty:plant_1:8>]);

@@ -45,7 +45,7 @@
     },
     "leaf_piles": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "leafpile"
         }
@@ -88,7 +88,7 @@
     },
     "bushes": {
       "with": {
-        "block": "biomesoplenty:plant_0",
+        "block": "rustic:wildberry_bush",
         "properties": {
           "variant": "bush"
         }

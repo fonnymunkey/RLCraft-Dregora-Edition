@@ -228,35 +228,57 @@ Fixed/Changed/Added:
 - fixed bank in single_skyscraper spawning
 - made and added herbalist trader
 - made libraries spawn less in underground villages
+- adjust loot for UW, less chests + better loot
+- adjust entities spawning from spawners UW (don't spawn on white/yellow and black concrete)
+- Additional optimization tasks for UW (decrease spawn attempts & lower amount of blockchecks)
+- Blacklisted doomlikedungeon from beach biomes where gorgon spawns
+- changed drl to dregorarl (MODID in both MODINFO as worldpacker.java)
+- uploaded Underneath to curseforge.
+- Added DregoraRL as required dependency to Underneath
+- Adjusted underneath fog as to fix a shader bug
+- added ghosts to spawners (ruins)
+- added I&F dread entities to various cold biomes
+- Removed Gorgon spawns from Origin, Viking, White and Volcanic beaches.
+- fixed broking warning posts in biome JotunnHeim Edge (missing bottom 2 blocks)
 
 Dregora todo:
-+ make weightedbranches for additional dragon stages & scales
-+ check if bog biomes have good mob spawns
-+ check why time is stagnant
-+ Brutal Towers
-+ make memorial for puffik 2022-2024 in Battletower
++ Dregora_DeadSwampBorder has regular trees
++ Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
++ Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
++ Add Parasite Blood to lowest block in grey abyss biomes
++ randomized lightning swords
++ Ancient coins has double description
++ add second tier brutal tower? 
++ Add amulets to epic loottables
++ Check Brutal Tower Loottable with heaven
 + Add flying entities to DregoraRL (15 for each biome group)
 + add flying brigade to each biomegroup type
++ make weightedbranches for additional dragon stages & scales
++ check if bog biomes have good mob spawns
++ Check Boreal Forest no Bushes
++ make memorial for puffik 2022-2024 in Battletower
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
 + Make mini-bosses always champions
 + Check OTG Errors at startup
+
+
+Dregora extra Todo's:
++ Sealed crate auto spawns spawn eggs (make randomizer)
 + Shrouds coffee potion
 + Patriot potion
 + Better Bas Pot
 + Frauk potion
++ Dread Knight's Sword Kotlin adjustment or?
++ Lich Staff Kotlin adjustment or?
 
-Dimension tasks:
-+ adjust loot, less chests + better loot
-+ adjust entities spawning from spawners (don't spawn on white/yellow and black concrete)
-+ Fix lag in underworld (bo3check)
-+ upload Underworld to curseforge and add to DregoraRL - RLCraft pack
-+ Add Underworld as required dependency to DregoraRL
-+ Add DregoraRL as required dependency to Underworld
-+ Shaders causes bug due to fog or night world
-
+Underneath tasks:
++ None
 
 Backlog:
++ Burial arrows blacklist dimblocks
++ Backrooms biome (Brutal huge maze-like dungeon, perhaps links to another dim?)
++ fix greathall, remove lava remove fire
 + Trollander Tree with yoda at bottom
 + Potion of eagle eyes
 + Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
@@ -278,7 +300,7 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
   the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
   all sorts of dragons flying around (Brutal Biome)
-+ Add brutal coins to underworld in specially designed structures
++ Add brutal coins to Underneath in specially designed structures
 + make ac heaters in future bunkers with special bedrock blocks which require a late game key
 + Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
 + Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
@@ -303,6 +325,14 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Miningtown & JungleCaves lore have no structure to spawn in
 + Display percentage unpacking Dregora so people do not force quit any more.
 + Add smoke particle effect to barrier block being destroyed
+
+
+Potentially Add mods Backlog:
++ Spice of Life
++ Food Funk
++ https://www.curseforge.com/minecraft/mc-mods/jeid (fixed biomeID issue?)
++ NotEnoughID's add
++ Weather 2 remastered
 
 RLCraft Done:
 - Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
@@ -352,29 +382,40 @@ RLCraft Done:
 - Add description and legendary tooltip: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set
 - make enchantment table use wither skull
 - added recipe cactusfruit from tiny cactus
+- blocked dragon spawns from Lavender Fields
+- Config referenced I&F RLMixings, enabling DregoraRL options
+- updated ice & fire and made sure it works in the modpack.
+- blacklisted myrmex bases from cities?
+- Blacklisted Dragon Biomes: Ravenous Jungle
+- Added all Canyon tag biomes to iceandfire blacklist
+- blacklisted doomlike from gorgon beaches
 
 RLCraft todo:
-+ blacklist doomlike and roguelike and lycanite from beaches
-+ block dragon spawns from Lavender Fields
++ Make liquid blood give weight
++ Check RLMixing options for OTG/Dregora/BOP/etc
++ RLCraft add:
+Dread Knight's Sword level: 42 Attack
+Artifact level 42 Magic
+
++ durability silver helmet 165 -> 120
++ add parasite blacklist blocks dimstack blocks
++ blacklist lycanite effect from potion effect curse
++ make it so chorus fruit and random teleportation has a 75% to teleport you to the underworld in the parasite biome
++ add nether sound to underworld
++ make amalaglich drop variedcommodities key
++ make crafting recipe 8 Posessed Gem + key = Posessed Key
++ Add key description & make it unlock ETA barriers
++ decrease silver durability & increase dragon scale durability + add set bonus
++ C&L Hydra needs to be configured per biome
 + Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
 + Add Quest: Hide, run, seek and find the portal in black enshrined.
-+ C&L Hydra needs to be configured per biome
-+ Config reference I&F RLMixings, enabling DregoraRL options
 + Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
 + Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
-+ Add new bedrock blocks to non-demo dragon list
 + Make everything above y110 higher difficulty
 + Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
 + Disable quark generation in grey abyss?
 + Haunted Nights, make dying entities have .25 chance to spawn a new entity using crafttweaker
-+ update ice & fire and make sure it works in the modpack.
 + killing zombie spawns a zombie skeleton
-+ blacklist Dragons from Viking Island, Viking Beach, Redwood Forest (And all other dense forests?)
-+ blacklist myrmex bases from cities?
-+ Blacklist dragon, ropguelike and doomlike dungeons from CANYON and RIVER biomes and add all FromImage Dungeon Biomes too
-+ Add all Canyon tag biomes to iceandfire blacklist
-+ Install Copper & Lightning & configure config
-+ Blacklist Dragon Biomes: Ravenous Jungle
 + Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
 + Burial Arrow config Dynamic Trees and liquids
 + Check Trinkers and Baunbles climable blocks (add bop blocks)
@@ -405,7 +446,198 @@ RLCraft Backlog:
 + add end battle towers (crystals inside + guardian spawner)
 + Hot Spring Bucket, make it do damage instead of heal and add to sulfuric biomes?
 
+OTG todo:
+
+OTG Backlog:
++ fix otg entity double spawn if customstructure
++ backport 50ms check from 1.16.5 to 1.12.2 for easier performance optimization on 1.12.2
 
 OTG Done: (awaiting public release)
 - Fix An Unknown error occured while attempting to perform this command
 - Fix Crash LayerMixing for OTG
+
+List of CANYON biomes:
+
+            overworld_crystal_abyss
+            overworld_dregora_trenchdeep
+            overworld_dregora_trenchdeepbridge
+            overworld_dregora_trenchdeepriver
+            overworld_dregora_trenchdeepriverbridge
+            overworld_dregora_trenchinnerborderfromimage
+            overworld_dregora_trenchinnerborderrandom
+            overworld_dregora_trenchislands
+            overworld_dregora_trenchoutterborderfromimage
+            overworld_dregora_trenchoutterborderrandom
+            overworld_dregora_trenchoutterborderslope
+            overworld_grey_abyss_border
+            overworld_grey_abyss_clean
+            overworld_grey_abyss
+            overworld_grey_abyss_pit_border
+            overworld_grey_abyss_pit
+            overworld_crystal_bog
+            overworld_dregora_canyon_0_edge
+            overworld_dregora_canyon_0_
+            overworld_dregora_canyon_2_
+            overworld_dregora_canyon_bogm_edge
+            overworld_dregora_canyon_bogm_holeedge
+            overworld_dregora_canyon_bogm_hole
+            overworld_dregora_canyon_bogm_pillar
+            overworld_dregora_canyon_bogm_pillaredge
+            overworld_dregora_canyon_bogm_pillaredgecolorborder
+            overworld_dregora_canyon_bog_fungi_forestedge
+            overworld_dregora_canyon_bog_fungi_foresthole
+            overworld_dregora_canyon_bog_fungi_forestholeedge
+            overworld_dregora_canyon_bog_high_edge
+            overworld_dregora_canyon_bog_high_holeedge
+            overworld_dregora_canyon_bog_high_hole
+            overworld_dregora_canyon_bog_meddeeppillar
+            overworld_dregora_canyon_bog_meddeeppillaredge
+            overworld_dregora_canyon_bog_mediumdeep
+            overworld_dregora_canyon_bog_mediumdeep_edge
+            overworld_flower_fungal
+            overworld_grey_fungal
+            overworld_dregora_ice_canyon_bottom
+            overworld_dregora_ice_canyon_cliff
+            overworld_dregora_ice_canyon_cliff_solid
+            overworld_dregora_ice_canyon_edge
+            overworld_dregora_ice_canyon_forest
+            overworld_dregora_ice_canyon_lake
+            overworld_dregora_ice_canyon_lake_edge
+            overworld_dregora_ice_canyon_river
+            overworld_dregora_ice_canyon_slope
+            overworld_dregora_ice_flats_glacier_border
+            overworld_dregora_ice_flats_glacier_borderpillars
+            overworld_dregora_ice_glacier
+            overworld_dregora_ice_glacier_edge
+            overworld_dregora_ice_glacier_edge_wide
+            overworld_dregora_ice_glacier_mountain_slope
+            overworld_dregora_ice_glacier_mountain_slope_tunnel
+            overworld_dregora_ice_glacier_pillar
+            overworld_dregora_ice_volcano_caldera
+            overworld_dregora_ice_volcano_calderaedge
+            overworld_dregora_ice_volcano_calderainner
+            overworld_dregora_wastecanyonwaterstopmesa
+            overworld_dregora_wastecanyonborderriver
+            overworld_dregora_wastecanyonsulfurborder
+            overworld_dregora_wastecanyoncaveentrance
+            overworld_dregora_wastecanyonriverwaterstop
+            overworld_dregora_wastecanyonsulfurcropping
+            overworld_dregora_wastecanyoninnerborder
+            overworld_dregora_wastecanyonwaterstop
+            overworld_dregora_wastecanyonpillar
+            overworld_dregora_wastecanyonpillarmed
+            overworld_dregora_wastecanyonborder
+            overworld_dregora_wastecanyonhole
+            overworld_dregora_wastecanyoninnererode
+            overworld_dregora_wastecanyonholewaterfall
+            overworld_dregora_wastecanyonwaterstop_jungle
+            overworld_dregora_wastecanyoninnerriver
+            overworld_dregora_wastecanyonborder_jungle
+            overworld_dregora_wastecanyonriverborder
+            overworld_dregora_wastecanyonsulfurlake
+            overworld_dregora_wastecanyonriverinnerborder
+            overworld_dregora_wastecanyonpillarbordermed
+            overworld_green_abyss
+            overworld_dregora_savannacanyon
+            overworld_dregora_savannacanyondeep
+            overworld_dregora_savannacanyonmiddle
+            overworld_dregora_rfcanyonpillar
+            overworld_dregora_rfcanyon
+            overworld_dregora_rfcanyonhole
+            overworld_dregora_rfcanyonborder
+            overworld_dregora_rfcanyoninnerborder
+            overworld_dregora_rfcanyonpillarmed
+            overworld_dregora_rfcanyonpillarborder
+            overworld_dregora_rfcanyonpillar
+            overworld_dregora_rfcanyonpillarbordermed
+            overworld_dregora_rfmesapillar
+            overworld_dregora_rfmesapillarborder
+            overworld_dregora_rfoceanpillar
+            overworld_dregora_rfoceanpillarborder
+            overworld_dregora_rfoceanpillarlow
+            overworld_dregora_rfoceanpillarmed
+            overworld_dregora_rf_volcano_caldera
+            overworld_dregora_rf_volcano_calderaedge
+            overworld_dregora_rf_volcano_calderainner
+            overworld_dregora_wastecanyonborder_jungle
+            overworld_dregora_wastecanyonwaterstop_jungle
+            overworld_dregora_castleruin
+            overworld_dregora_farmstead
+            overworld_dregora_oceancitybo3
+            overworld_dregora_oceancityborder
+            overworld_dregora_piratebo3
+            overworld_dregora_plainmines
+            overworld_dregora_portwest
+            overworld_dregora_quarrybiomeislebo3
+            overworld_dregora_quarrymines
+            overworld_dregora_quarryminessurrounding
+            overworld_dregora_rfbeach_large_temple
+            overworld_dregora_rfbeach_large_temple_buffer
+            overworld_dregora_rfbigmountainedge_small_temple
+            overworld_dregora_rfbigmountainedge_small_temple_buffer
+            overworld_dregora_rfhighmountainrange_med_temple
+            overworld_dregora_rfhighmountainrange_med_temple_buffer
+            overworld_dregora_rfrainforest_large_temple
+            overworld_dregora_rfrainforest_large_temple_buffer
+            overworld_dregora_rfvillagebo3
+            overworld_dregora_spawn
+            overworld_dregora_spawnbuffer
+            overworld_dregora_spookychurchbo3
+            overworld_dregora_villageplainsislebo3
+            overworld_dregora_hexcave
+            overworld_dregora_hexcenterspawn
+            overworld_dregora_hexiceocean
+            overworld_dregora_hexmountain
+            overworld_dregora_hexnuclear
+            overworld_dregora_hexpine
+            overworld_dregora_hexplains
+            overworld_dregora_hexrainforest
+            overworld_dregora_hexwasteland
+            overworld_dregora_rfhexbeach
+            overworld_dregora_rflakeforbo4
+            overworld_dregora_rfriverborderspawn
+            overworld_dregora_trenchcenterborder
+            overworld_dregora_trenchcenterinnerborder
+            overworld_dregora_trenchcenter
+            overworld_rainforest_lake
+            overworld_dark_earth
+            overworld_dregora_quarrybiomeborder
+            overworld_dregora_quarrybiomeislebo3
+            overworld_dregora_quarryplains
+            overworld_dregora_spookyquarry
+            overworld_flower_grove_edge
+            overworld_flower_grove
+            overworld_flower_field_edge
+            overworld_flower_field
+            overworld_volcanic_island
+            overworld_lair_of_the_thing
+            overworld_nuclear_ruins
+            overworld_ruins_of_blight
+            overworld_lush_mesa_c
+            overworld_flower_forests_edge
+            overworld_flower_forests
+            overworld_quarry_border
+            overworld_quarry_island
+            overworld_ravenous_jungle
+            overworld_dregora_waterfall_lowborder_nowater
+            overworld_dregora_waterfall_bufferborder
+            overworld_dregora_waterfall_hugeborder_nowater
+            overworld_dregora_waterfall_huge
+            overworld_dregora_waterfall_extremeborder
+            overworld_dregora_waterfall_low
+            overworld_dregora_waterfall_hugeborder
+            overworld_dregora_waterfall_border_nowater
+            overworld_dregora_waterfall_extreme
+            overworld_dregora_waterfall_highborder_nowater
+            overworld_dregora_waterfall_high
+            overworld_dregora_waterfall_verrylow
+            overworld_dregora_waterfall_lowborder
+            overworld_dregora_waterfall_highborder
+            overworld_dregora_waterfall_mid
+            overworld_dregora_waterfall_buffer
+            overworld_dregora_waterfall_extremeborder_nowater
+            overworld_dregora_waterfall_verylowborder_nowater
+            overworld_dregora_waterfall_border
+            overworld_dregora_waterfall_verrylowborder
+            overworld_dregora_drysavannaplainscompat
+            overworld_dregora_drysavannaplainsbordercompat
