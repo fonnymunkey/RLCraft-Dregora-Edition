@@ -242,17 +242,18 @@ Fixed/Changed/Added:
 - fixed broking warning posts in biome JotunnHeim Edge (missing bottom 2 blocks)
 
 Dregora todo:
++ fix otg entity double spawn if customstructure
++ Sealed crate auto spawns spawn eggs (make randomizer)
 + Dregora_DeadSwampBorder has regular trees
 + Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
 + Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
 + Add Parasite Blood to lowest block in grey abyss biomes
 + randomized lightning swords
 + Ancient coins has double description
-+ add second tier brutal tower? 
++ add second tier brutal tower?
 + Add amulets to epic loottables
 + Check Brutal Tower Loottable with heaven
-+ Add flying entities to DregoraRL (15 for each biome group)
-+ add flying brigade to each biomegroup type
++ Add flying entities to DregoraRL (10 for each biome group)
 + make weightedbranches for additional dragon stages & scales
 + check if bog biomes have good mob spawns
 + Check Boreal Forest no Bushes
@@ -264,19 +265,15 @@ Dregora todo:
 
 
 Dregora extra Todo's:
-+ Sealed crate auto spawns spawn eggs (make randomizer)
 + Shrouds coffee potion
 + Patriot potion
 + Better Bas Pot
 + Frauk potion
-+ Dread Knight's Sword Kotlin adjustment or?
-+ Lich Staff Kotlin adjustment or?
 
 Underneath tasks:
 + None
 
 Backlog:
-+ Burial arrows blacklist dimblocks
 + Backrooms biome (Brutal huge maze-like dungeon, perhaps links to another dim?)
 + fix greathall, remove lava remove fire
 + Trollander Tree with yoda at bottom
@@ -391,34 +388,34 @@ RLCraft Done:
 - blacklisted doomlike from gorgon beaches
 
 RLCraft todo:
++ if player has low health add weakness and do % chance dismount
 + Make liquid blood give weight
 + Check RLMixing options for OTG/Dregora/BOP/etc
 + RLCraft add:
-Dread Knight's Sword level: 42 Attack
-Artifact level 42 Magic
-
+Dread Knight's Sword level: 14 Attack
+Artifact level 32 Magic (theta blocks)
++ Burial arrows blacklist dimblocks
 + durability silver helmet 165 -> 120
 + add parasite blacklist blocks dimstack blocks
-+ blacklist lycanite effect from potion effect curse
++ blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
 + make it so chorus fruit and random teleportation has a 75% to teleport you to the underworld in the parasite biome
 + add nether sound to underworld
 + make amalaglich drop variedcommodities key
 + make crafting recipe 8 Posessed Gem + key = Posessed Key
-+ Add key description & make it unlock ETA barriers
++ Add key description & make it unlock ETA barriers (all level 32)
 + decrease silver durability & increase dragon scale durability + add set bonus
 + C&L Hydra needs to be configured per biome
 + Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
 + Add Quest: Hide, run, seek and find the portal in black enshrined.
 + Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
 + Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
-+ Make everything above y110 higher difficulty
 + Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
 + Disable quark generation in grey abyss?
-+ Haunted Nights, make dying entities have .25 chance to spawn a new entity using crafttweaker
-+ killing zombie spawns a zombie skeleton
++ Bloodmoon, make dying entities have 10% chance to spawn a new entity using crafttweaker
++ killing zombie spawns a ghost on full moon (2% chance)
 + Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
 + Burial Arrow config Dynamic Trees and liquids
-+ Check Trinkers and Baunbles climable blocks (add bop blocks)
++ Check Trinkets and Baubles climable blocks (add bop blocks)
 + Error loading entity with ID 'abyssalcraft:evilsheep'
 + increase difficulty of city biomes to 1.1 and bruh biomes to 1.5-1.8
 + Fix structures: P_Crater (X),
@@ -426,16 +423,12 @@ Artifact level 42 Magic
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + carryon chest on battle towers & other cheese methods, make golems stronger & invulnerable to arrows
-+ use incontrol to add spawn rule for additional flying entities if player is above Y100
-+ Add mob farm entity culling mechanism through incontrol, if exeeds animal x then spawn grim reapers
-+ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ tiny cactus harvestable with shears
++ honeycomb empty honey needs same recipies as HoneyComb
 
 RLCraft Backlog:
-+ tiny cactus harvestable with shears
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
-+ Theta barriers need 48 mining
-+ honeycomb empty honey needs same recipies as HoneyComb
-+ beehive drop change in rustic?
 + memefy the grand tree
 + Transform all floating things into crashed things on the ground when applicable or remove.
 + Make Ethereal Tree/spectral garden patches for within the END
@@ -443,13 +436,15 @@ RLCraft Backlog:
 + convert ruins end & nether structures to recurrent complex structures.
 + add battle coins to golem armor crafting recipe
 + test & maybe add some additional lycanite events
+- Alien Invasion (The Nosehuggers Arrived) (darklings & trites)
+- Lycanite nether event
+- Curious bear event
+- It's boomer time!
 + add end battle towers (crystals inside + guardian spawner)
-+ Hot Spring Bucket, make it do damage instead of heal and add to sulfuric biomes?
 
 OTG todo:
 
 OTG Backlog:
-+ fix otg entity double spawn if customstructure
 + backport 50ms check from 1.16.5 to 1.12.2 for easier performance optimization on 1.12.2
 
 OTG Done: (awaiting public release)
