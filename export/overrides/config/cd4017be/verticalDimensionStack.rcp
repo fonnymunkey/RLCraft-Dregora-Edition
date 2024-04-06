@@ -85,6 +85,7 @@ INIT() {
 	!barrier_block:13 = [it("minecraft:diamond_hoe"), "axe:3", 1.5, /0, true]; !another example (makes the diamond hoe usefull)
 	!barrier_block:12 = [it("minecraft:obsidian"), "pickaxe:3", 8.0, /0, true]; !fiery bedrock as nether progression gate
 	barrier_block:7 = [it("variedcommodities:artifact"), "pickaxe:3", 4.0, /0, true];
+	barrier_block:6 = [it("variedcommodities:pendant"), "pickaxe:3", 8.0, /0, true];
 
 	!custom block layers
 	!add("basicLayer", <dimId>, <blockstate>, [<startY>, <minY>, <maxY>, <endY>]#);

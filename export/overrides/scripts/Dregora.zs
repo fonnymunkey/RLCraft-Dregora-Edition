@@ -201,6 +201,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     }
 });
 
+// On Theta Barrier Destroyed
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     if ( blockDrops.block has <dimstack:bedrock:7>.asBlock() ){
         blockDrops.drops = [
@@ -216,6 +217,27 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
         <simpledifficulty:magma_chunk>.weight(0.3),
         <rustic:dust_tiny_iron>.weight(0.1),
         <rustic:dust_tiny_iron>.weight(0.1)
+
+        ] as WeightedItemStack[];
+    }
+});
+
+// On Eta Barrier Destroyed
+events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
+    if ( blockDrops.block has <dimstack:bedrock:6>.asBlock() ){
+        blockDrops.drops = [
+
+        <notreepunching:rock/stone>.weight(1.0),
+        <notreepunching:rock/stone>.weight(0.5),
+        <notreepunching:rock/stone>.weight(0.3),
+        <notreepunching:rock/basalt>.weight(0.5),
+        <notreepunching:rock/basalt>.weight(0.3),
+        <biomesoplenty:crystal_shard>.weight(0.3),
+        <biomesoplenty:crystal_shard>.weight(0.3),
+        <defiledlands:defilement_powder>.weight(0.3),
+        <defiledlands:defilement_powder>.weight(0.3),
+        <contenttweaker:steel_nugget>.weight(0.1),
+        <contenttweaker:steel_nugget>.weight(0.1)
 
         ] as WeightedItemStack[];
     }
@@ -269,9 +291,6 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 <variedcommodities:nanorum_legs>.addTooltip("Aged Legs, made of advanced alloys. Provides excellent protection.");
 <variedcommodities:nanorum_boots>.addTooltip("Aged Boots, made of advanced alloys. Provides excellent protection.");
 
-
-<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
-
 //Removed biome finder from BOP for it causes lag spikes.
 recipes.remove(<biomesoplenty:biome_finder>);
 
@@ -307,11 +326,40 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:pipe_wrench>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
 
 //Add the Tool Used Description for Barrier Blocks:
-<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an Brutal Artifact equipped in offhand."));
+<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Artifact - Theta§r §4‡§r equipped in offhand."));
 
-//Give Brutal Artifact it's name:
-<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Key§r §4‡";
+//Add the Tool Used Description for Barrier Blocks:
+<dimstack:bedrock:6>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Pendant - Eta§r §4‡§r equipped in offhand."));
+
+//Give Theta Brutal Key it's name:
+<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Artifact - Theta§r §4‡";
 <variedcommodities:artifact>.addTooltip(format.gold("Gain the ability to destroy Theta barrier blocks when equipped in off-hand"));
+
+//Give Eta Brutal Key it's name:
+<variedcommodities:pendant>.displayName = "§4‡ §6§lBrutal Pendant - Eta§r §4‡";
+<variedcommodities:pendant>.addTooltip(format.gold("Gain the ability to destroy Eta barrier blocks when equipped in off-hand"));
+
+// Give Fire Element a better name
+<variedcommodities:element_fire>.clearTooltip();
+<variedcommodities:element_fire>.addTooltip("Auric Essence " + <variedcommodities:element_fire>.displayName + " (#" + "7295")");
+<variedcommodities:element_fire>.addTooltip(format.darkGray("variedcommodities:element_fire"));
+<variedcommodities:element_fire>.addTooltip(format.green("Essence abstracted from the purest of gold."));
+<variedcommodities:element_fire>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
+<variedcommodities:element_fire>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
+// Give the Orb for Eta barrier a better name.
+<variedcommodities:orb:0>.clearTooltip();
+<variedcommodities:orb:0>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7304" + "0)");
+<variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
+<variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
+<variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers"));
+<variedcommodities:orb:0>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
+// Crafting recipe
+recipes.addShaped("dregora20",<variedcommodities:pendant>,
+ [[<variedcommodities:orb:0>,<variedcommodities:spell_fire>,<variedcommodities:orb:0>],
+  [<variedcommodities:spell_fire>,<variedcommodities:spell_arcane>,<variedcommodities:spell_fire>],
+  [<variedcommodities:orb:0>,<variedcommodities:spell_fire>,<variedcommodities:orb:0>]]);
 
 // Give the Orbs for Lycanites Summons a better name.
 <variedcommodities:orb:1>.clearTooltip();
@@ -335,12 +383,6 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 <variedcommodities:orb:6>.addTooltip(format.blue(format.italic("Varied Commodities")));
-
-// Re-add bop Terrestrial Arrifact recipe but with iceandfire sapphire.
-recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
- [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
-  [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
-  [<biomesoplenty:gem:4>,<minecraft:emerald>,<biomesoplenty:biome_essence>]]);
 
 // Remove Lycanite Summoners:
 recipes.remove(<lycanitesmobs:soulcubeaberrant>);

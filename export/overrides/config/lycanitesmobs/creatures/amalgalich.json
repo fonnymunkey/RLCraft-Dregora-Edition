@@ -164,6 +164,12 @@
       "minAmount": 2,
       "maxAmount": 4,
       "chance": 1
+    },
+    {
+      "item": "variedcommodities:gem_ruby",
+      "minAmount": 1,
+      "maxAmount": 1,
+      "chance": 1
     }
   ],
   "sizeScale": 1,

@@ -242,6 +242,10 @@ Fixed/Changed/Added:
 - fixed broking warning posts in biome JotunnHeim Edge (missing bottom 2 blocks)
 
 Dregora todo:
++ AdvancedShelterC0R0 contained empty chest
++ [00:23:14] [Server thread/WARN]: The value "" is not valid for the setting HeightOffset in maintenance_shaft_top_offset on line 69: Incorrect number:
++ [00:23:14] [Server thread/WARN]: The value "" is not valid for the setting HeightOffset in maintenance_shaft_top on line 69: Incorrect number:
++ add variedcommodities:element_fire to brutal merchant (10 ancient coins)
 + fix otg entity double spawn if customstructure
 + Sealed crate auto spawns spawn eggs (make randomizer)
 + Dregora_DeadSwampBorder has regular trees
@@ -265,6 +269,7 @@ Dregora todo:
 
 
 Dregora extra Todo's:
++ Sealed crate auto spawns spawn eggs (make randomizer)
 + Shrouds coffee potion
 + Patriot potion
 + Better Bas Pot
@@ -332,6 +337,12 @@ Potentially Add mods Backlog:
 + Weather 2 remastered
 
 RLCraft Done:
+- Make Battletowers slightly less rare by changing min-distance from 800 to 700.
+- Added blockdrop on eta barrier destroyed
+- Removed gem_ruby, orb:0, element_fire and pendant (variedcommodities) from jei blacklist
+- Added gem_ruby to amalgalich drops
+- Added Recipe for Eta Artifact (pendant)
+- Added gem_ruby, orb:0 and element_fire from variedcommodities to tooltips
 - Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
 - Add tier "skill issue" to weapon tiers
 - Changed configs to properly reflect new biome names
@@ -374,7 +385,7 @@ RLCraft Done:
 - add new recipes for biomes o plenty biome finder ingredients
 - make bamboo smelt 1 item
 - Make macaw bridges use bamboo
-- Blacklisted Battletowers from trench biomes and make them rarer
+- Blacklisted Battletowers from trench biomes
 - Renames BOP Glowshrooms to Gleamshrooms (Both mushroom as terrarium)
 - Add description and legendary tooltip: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set
 - make enchantment table use wither skull
@@ -387,8 +398,32 @@ RLCraft Done:
 - Added all Canyon tag biomes to iceandfire blacklist
 - blacklisted doomlike from gorgon beaches
 
+
+Lycanites:
+Beholder
+Grell
+Cacodemon
+Grigori
+
+Or
+
+Srparasites:
+Primitive Vermin
+Flying Carrier
+Adapted Yelloweye
+Yelloweye
+
+
 RLCraft todo:
++ Update SRParasites Mod and see if it works
++ Cascading chunk generation detected (remove log message) from OTG
++ Check official rlcraft on death respawn in lost cities?
++ Parasites update attempt
++ all parasites outside grey abyss must automatically die
++ add brutal coins to shivaxi boss
++ If player in grey abyss biome and under sky then chance to strike lightning on player (and dismount)
 + if player has low health add weakness and do % chance dismount
++ Less health = worse FOV
 + Make liquid blood give weight
 + Check RLMixing options for OTG/Dregora/BOP/etc
 + RLCraft add:
@@ -401,7 +436,7 @@ Artifact level 32 Magic (theta blocks)
 + make it so chorus fruit and random teleportation has a 75% to teleport you to the underworld in the parasite biome
 + add nether sound to underworld
 + make amalaglich drop variedcommodities key
-+ make crafting recipe 8 Posessed Gem + key = Posessed Key
++ make crafting recipe 8 Dark Orbs + key = Posessed Key
 + Add key description & make it unlock ETA barriers (all level 32)
 + decrease silver durability & increase dragon scale durability + add set bonus
 + C&L Hydra needs to be configured per biome
@@ -427,6 +462,7 @@ Artifact level 32 Magic (theta blocks)
 + honeycomb empty honey needs same recipies as HoneyComb
 
 RLCraft Backlog:
++ Thunderstorm chance to hit player with lightning and dismount
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
 + memefy the grand tree
