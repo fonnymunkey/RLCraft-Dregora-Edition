@@ -240,18 +240,19 @@ Fixed/Changed/Added:
 - added I&F dread entities to various cold biomes
 - Removed Gorgon spawns from Origin, Viking, White and Volcanic beaches.
 - fixed broking warning posts in biome JotunnHeim Edge (missing bottom 2 blocks)
+- Checked if legendary loot drops on entity death
+- fixed typo 0,8 in blood stained plains
+- fixed typo's in maintenance_shaft_top_offset & maintenance_shaft_top Heightoffset being ""
+- AddED Parasite Blood to lowest block in grey abyss biomes
 
 Dregora todo:
 + AdvancedShelterC0R0 contained empty chest
-+ [00:23:14] [Server thread/WARN]: The value "" is not valid for the setting HeightOffset in maintenance_shaft_top_offset on line 69: Incorrect number:
-+ [00:23:14] [Server thread/WARN]: The value "" is not valid for the setting HeightOffset in maintenance_shaft_top on line 69: Incorrect number:
-+ add variedcommodities:element_fire to brutal merchant (10 ancient coins)
++ add variedcommodities:element_fire to brutal merchant (10 golden coins)
 + fix otg entity double spawn if customstructure
 + Sealed crate auto spawns spawn eggs (make randomizer)
 + Dregora_DeadSwampBorder has regular trees
 + Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
 + Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
-+ Add Parasite Blood to lowest block in grey abyss biomes
 + randomized lightning swords
 + Ancient coins has double description
 + add second tier brutal tower?
@@ -397,7 +398,16 @@ RLCraft Done:
 - Blacklisted Dragon Biomes: Ravenous Jungle
 - Added all Canyon tag biomes to iceandfire blacklist
 - blacklisted doomlike from gorgon beaches
-
+- Entities named Dismounter has dismount effect on players
+- Cascading chunk generation detected (remove log message) from OTG
+- Blacklisted iceandfire:ghost from srparasites config
+- added parasite death script for parasites outside parasite biomes
+- added Abyssal Rift to all structure blacklists
+- added BOP & Dimstack blocks to burial arrow blacklist
+- add parasite blacklist blocks dimstack blocks
+- added potion sickness as silver sickness to silver armor bonus set (as a debuff)
+- make it so chorus fruit and random teleportation potion does not work the way it is intended to work within the brutal biomes
+- added dynamic surroundings sound to underneath and abyssal biome
 
 Lycanites:
 Beholder
@@ -415,26 +425,15 @@ Yelloweye
 
 
 RLCraft todo:
-+ Update SRParasites Mod and see if it works
-+ Cascading chunk generation detected (remove log message) from OTG
 + Check official rlcraft on death respawn in lost cities?
-+ Parasites update attempt
-+ all parasites outside grey abyss must automatically die
-+ add brutal coins to shivaxi boss
-+ If player in grey abyss biome and under sky then chance to strike lightning on player (and dismount)
-+ if player has low health add weakness and do % chance dismount
-+ Less health = worse FOV
-+ Make liquid blood give weight
-+ Check RLMixing options for OTG/Dregora/BOP/etc
++ add loot tables to all boss entities in abyssal tower
++ Update SRParasites Mod and see if it works
 + RLCraft add:
 Dread Knight's Sword level: 14 Attack
 Artifact level 32 Magic (theta blocks)
-+ Burial arrows blacklist dimblocks
-+ durability silver helmet 165 -> 120
-+ add parasite blacklist blocks dimstack blocks
-+ blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
-+ make it so chorus fruit and random teleportation has a 75% to teleport you to the underworld in the parasite biome
-+ add nether sound to underworld
+
++ Add blocks from tower for certain rooms to blacklist block grief
++ Make sure entities only spawn through spawners in Abyssal Rift biome
 + make amalaglich drop variedcommodities key
 + make crafting recipe 8 Dark Orbs + key = Posessed Key
 + Add key description & make it unlock ETA barriers (all level 32)
@@ -449,7 +448,6 @@ Artifact level 32 Magic (theta blocks)
 + Bloodmoon, make dying entities have 10% chance to spawn a new entity using crafttweaker
 + killing zombie spawns a ghost on full moon (2% chance)
 + Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
-+ Burial Arrow config Dynamic Trees and liquids
 + Check Trinkets and Baubles climable blocks (add bop blocks)
 + Error loading entity with ID 'abyssalcraft:evilsheep'
 + increase difficulty of city biomes to 1.1 and bruh biomes to 1.5-1.8
@@ -462,6 +460,7 @@ Artifact level 32 Magic (theta blocks)
 + honeycomb empty honey needs same recipies as HoneyComb
 
 RLCraft Backlog:
++ blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
 + Thunderstorm chance to hit player with lightning and dismount
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
@@ -486,6 +485,17 @@ OTG Backlog:
 OTG Done: (awaiting public release)
 - Fix An Unknown error occured while attempting to perform this command
 - Fix Crash LayerMixing for OTG
+
+List of Structure Blacklist Configs:
+
+- IceAndFire
+- Recurrent Complex
+- Doomlike Dungeons
+- Roguelike Dungeons
+- Battletowers
+- RLTweaker (Battletower Dimension Blacklist)
+
+
 
 List of CANYON biomes:
 

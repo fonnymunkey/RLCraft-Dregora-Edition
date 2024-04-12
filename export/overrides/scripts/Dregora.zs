@@ -19,10 +19,17 @@ import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.player.IPlayer;
-import crafttweaker.item.IItemDefinition;
-
-
-
+import crafttweaker.event.EntityLivingDamageEvent;
+import crafttweaker.event.ILivingEvent;
+import crafttweaker.event.EntityLivingUpdateEvent;
+import crafttweaker.command.ICommandManager;
+import crafttweaker.command.ICommandSender;
+import crafttweaker.event.EntityLivingDeathDropsEvent;
+import crafttweaker.event.EntityLivingSpawnEvent;
+import crafttweaker.event.EntityLivingExtendedSpawnEvent;
+import crafttweaker.event.ProjectileImpactThrowableEvent;
+import crafttweaker.event.EntityLivingUseItemEvent.All;
+import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 
 // use /ct syntax to validate scripts
 
@@ -93,6 +100,178 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
+//Function to dismount players if hit by vex in biome "Abyssal Rift"
+events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
+
+    if (!isNull(event.damageSource.getTrueSource())){
+          if(!isNull(event.damageSource.getTrueSource().getCustomName())){
+                if(event.damageSource.getTrueSource().getCustomName() == "Dismounter"){
+                    if(event.entity.isRiding) {
+                        print(event.entity.id);
+                        event.entity.dismountRidingEntity();
+                        event.entity.removePassengers();
+                    }
+                }
+          }
+    }
+});
+
+
+//Function to give chorus fruit & teleportation potions a different effect on use
+events.onProjectileImpactThrowable(function(event as ProjectileImpactThrowableEvent){
+      if ((event.throwable.getNBT().asString() has "potioncore:teleport") || (event.throwable.getNBT().asString() has "potioncore:strong_teleport")) {
+          if (!(event.throwable.getNBT().asString() has "potioncore:teleport_spawn") || !(event.throwable.getNBT().asString() has "potioncore:teleport_surface")) {
+              var entityBase as IEntityLivingBase = event.thrower;
+
+              if (!isNull(entityBase)) {
+                  if (((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift") || ((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Parasite Biome")){
+
+                      if(!isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+
+                          if !(entityBase.world.getWorldTime() > entityBase.nbt.ForgeData.PotionCooldown){return;}
+
+                          var currentTime = entityBase.world.getWorldTime() + 10;
+                          entityBase.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 1));
+                          entityBase.addPotionEffect(<potion:potioncore:teleport_surface>.makePotionEffect(10, 0));
+                          entityBase.setNBT({PotionCooldown: currentTime});
+                          event.cancel();
+
+                      }
+                  }
+              }
+          }
+      }
+});
+
+
+
+//Function to give chorus fruit & teleportation potions a different effect on use
+events.onEntityLivingUseItemFinish(function(event as Finish){
+      if ((event.item.tag.asString() has "potioncore:teleport") || (event.item.tag.asString() has "potioncore:strong_teleport") || (event.item.definition.id has "minecraft:chorus_fruit")){
+          if (!(event.item.tag.asString() has "potioncore:teleport_spawn") || !(event.item.tag.asString() has "potioncore:teleport_surface")) {
+              var entityBase as IEntityLivingBase = event.entity;
+
+              if (((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift") || ((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Parasite Biome")){
+
+                  if(!isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+
+                      if !(entityBase.world.getWorldTime() > entityBase.nbt.ForgeData.PotionCooldown){return;}
+
+                      var currentTime = entityBase.world.getWorldTime() + 100;
+                      entityBase.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 1));
+                      entityBase.addPotionEffect(<potion:potioncore:teleport_surface>.makePotionEffect(10, 0));
+                      entityBase.setNBT({PotionCooldown: currentTime});
+
+                  }
+              }
+          }
+      }
+});
+
+
+
+// SRParasites in overworld Script Biome Whitelist
+events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
+
+    if (event.entity.world.time % 50 != 0) {return;}
+
+    if (!isNull(event.entity.definition)) {
+
+        if (!isNull(event.entity.definition.name)) {
+
+            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+
+                if !((event.entity.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift"){
+
+                    var entityBase as IEntityLivingBase = event.entity;
+                    var entityName = event.entity.definition.name;
+
+                    if ((entityName has "beckon") || (entityName has "dispatcher")) {
+
+                        if entityBase.health > 100 {
+                            entityBase.health = entityBase.health / 25;
+                        } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
+                            entityBase.health = entityBase.health / 10;
+                        } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
+                            entityBase.health = entityBase.health - 10;
+                        } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                            entityBase.health = entityBase.health - 1;
+                        } else if (entityBase.health < 1){
+                            entityBase.health = entityBase.health - 1;
+                        } else {
+                            event.entity.setDead();
+                        }
+                    } else {
+
+                        if entityBase.health > 1000 {
+                            entityBase.health = entityBase.health / 50;
+                        } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
+                            entityBase.health = entityBase.health / 10;
+                        } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
+                            entityBase.health = entityBase.health - 10;
+                        } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                            entityBase.health = entityBase.health - 1;
+                        } else if (entityBase.health < 1){
+                            entityBase.health = entityBase.health - 1;
+                        } else {
+                            event.entity.setDead();
+                        }
+
+                    }
+
+                    entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
+                    entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
+                    entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
+
+                }
+            }
+        }
+    }
+});
+
+
+// SRParasites in overworld Cancel Spawns if not in Whitelisted Biome
+events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
+
+    if (!isNull(event.entity.definition)) {
+
+        if (!isNull(event.entity.definition.name)) {
+
+            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+
+                var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
+
+                if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome")){
+
+                    event.deny();
+
+                }
+            }
+        }
+    }
+});
+
+// SRParasites in overworld Cancel loot if not in Whitelisted Biome
+events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
+
+    if (!isNull(event.entity.definition)) {
+
+        if (!isNull(event.entity.definition.name)) {
+
+            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+
+                var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
+
+                if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome")){
+
+                    event.cancel();
+
+                }
+            }
+        }
+    }
+});
+
 //Function containing potion effects for SRP deadblood.
 function addPotionEffectDeadBlood(player as IPlayer){
 
@@ -106,10 +285,10 @@ function addPotionEffectDeadBlood(player as IPlayer){
 				player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(200, 1));
 			}
       if !(p.effectName.matches("minecraft:slowness")) {
-				player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 1));
+				player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 0));
 			}
       if !(p.effectName.matches("srparasites:corrosive")) {
-				player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 1));
+				player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 0));
 			}
 		}
 	}
@@ -124,15 +303,15 @@ function addPotionEffectBopBlood(player as IPlayer){
     player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
 	} else {
 		for p in player.activePotionEffects {
-             if !(p.effectName.matches("elenaidodge:sluggish")) {
+       if !(p.effectName.matches("elenaidodge:sluggish")) {
 				player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
 			}
-             if !(p.effectName.matches("lycanitesmobs:instability")) {
-				player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 1));
+      if !(p.effectName.matches("lycanitesmobs:instability")) {
+				player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 0));
 			}
-	         if !(p.effectName.matches("lycanitesmobs:aphagia")) {
-                player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 1));
-      		}
+      if !(p.effectName.matches("lycanitesmobs:aphagia")) {
+        player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
+      }
 		}
 	}
 }
@@ -141,16 +320,13 @@ function addPotionEffectBopBlood(player as IPlayer){
 function addPotionEffectHotSpring(player as IPlayer){
 
 	if (player.activePotionEffects.length == 0) {
-    player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(100, 0));
     player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
+    player.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(1, 0));
     player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(100, 1));
     player.addPotionEffect(<potion:simpledifficulty:hyperthermia>.makePotionEffect(100, 2));
-    player.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(1, 0));
+
 	} else {
 		for p in player.activePotionEffects {
-      if !(p.effectName.matches("minecraft:regeneration")) {
-				player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(100, 0));
-			}
       if !(p.effectName.matches("potioncore:launch")) {
 				player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
 			}
@@ -173,12 +349,17 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     if (event.player.world.time % 10 != 0) {return;}
     if (event.phase == "START") {
 
+        //removes potion ghost moodals if their duration is 0
+        for p in event.player.activePotionEffects {
+            if (p.duration <= 0){
+                event.player.removePotionEffect(p.potion);
+            }
+        }
+
         var position = Position3f.create(event.player.position.x, event.player.position.y, event.player.position.z).asBlockPos();
         var position2 = Position3f.create(event.player.position.x, event.player.position.y + 1, event.player.position.z).asBlockPos();
         var position3 = Position3f.create(event.player.position.x, event.player.position.y + 1.5, event.player.position.z).asBlockPos();
-        var position4 = Position3f.create(event.player.position.x, event.player.position.y + 10, event.player.position.z).asBlockPos();
-
-
+        var position4 = Position3f.create(event.player.position.x, event.player.position.y - 1, event.player.position.z).asBlockPos();
 
         if((event.player.isInWater) && (event.player.isRiding)) {
             if((event.player.world.getBlockState(position).block.definition.id) == "srparasites:deadblood") {
@@ -192,7 +373,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
         if(((event.player.world.getBlockState(position).block.definition.id) == "srparasites:deadblood") || ((event.player.world.getBlockState(position2).block.definition.id) == "srparasites:deadblood") || ((event.player.world.getBlockState(position3).block.definition.id) == "srparasites:deadblood")) {
             addPotionEffectDeadBlood(event.player);
         }
-        else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:hot_spring_water")) {
+        else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:hot_spring_water") || ((event.player.world.getBlockState(position4).block.definition.id) == "biomesoplenty:hot_spring_water")) {
             addPotionEffectHotSpring(event.player);
         }
         else if(((event.player.world.getBlockState(position).block.definition.id) == "biomesoplenty:blood") || ((event.player.world.getBlockState(position2).block.definition.id) == "biomesoplenty:blood") || ((event.player.world.getBlockState(position3).block.definition.id) == "biomesoplenty:blood")) {
@@ -201,7 +382,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     }
 });
 
-// On Theta Barrier Destroyed
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     if ( blockDrops.block has <dimstack:bedrock:7>.asBlock() ){
         blockDrops.drops = [
@@ -217,27 +397,6 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
         <simpledifficulty:magma_chunk>.weight(0.3),
         <rustic:dust_tiny_iron>.weight(0.1),
         <rustic:dust_tiny_iron>.weight(0.1)
-
-        ] as WeightedItemStack[];
-    }
-});
-
-// On Eta Barrier Destroyed
-events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
-    if ( blockDrops.block has <dimstack:bedrock:6>.asBlock() ){
-        blockDrops.drops = [
-
-        <notreepunching:rock/stone>.weight(1.0),
-        <notreepunching:rock/stone>.weight(0.5),
-        <notreepunching:rock/stone>.weight(0.3),
-        <notreepunching:rock/basalt>.weight(0.5),
-        <notreepunching:rock/basalt>.weight(0.3),
-        <biomesoplenty:crystal_shard>.weight(0.3),
-        <biomesoplenty:crystal_shard>.weight(0.3),
-        <defiledlands:defilement_powder>.weight(0.3),
-        <defiledlands:defilement_powder>.weight(0.3),
-        <contenttweaker:steel_nugget>.weight(0.1),
-        <contenttweaker:steel_nugget>.weight(0.1)
 
         ] as WeightedItemStack[];
     }
@@ -291,6 +450,9 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 <variedcommodities:nanorum_legs>.addTooltip("Aged Legs, made of advanced alloys. Provides excellent protection.");
 <variedcommodities:nanorum_boots>.addTooltip("Aged Boots, made of advanced alloys. Provides excellent protection.");
 
+
+<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
+
 //Removed biome finder from BOP for it causes lag spikes.
 recipes.remove(<biomesoplenty:biome_finder>);
 
@@ -326,40 +488,11 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:pipe_wrench>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
 
 //Add the Tool Used Description for Barrier Blocks:
-<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Artifact - Theta§r §4‡§r equipped in offhand."));
+<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an Brutal Artifact equipped in offhand."));
 
-//Add the Tool Used Description for Barrier Blocks:
-<dimstack:bedrock:6>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Pendant - Eta§r §4‡§r equipped in offhand."));
-
-//Give Theta Brutal Key it's name:
-<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Artifact - Theta§r §4‡";
+//Give Brutal Artifact it's name:
+<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Key§r §4‡";
 <variedcommodities:artifact>.addTooltip(format.gold("Gain the ability to destroy Theta barrier blocks when equipped in off-hand"));
-
-//Give Eta Brutal Key it's name:
-<variedcommodities:pendant>.displayName = "§4‡ §6§lBrutal Pendant - Eta§r §4‡";
-<variedcommodities:pendant>.addTooltip(format.gold("Gain the ability to destroy Eta barrier blocks when equipped in off-hand"));
-
-// Give Fire Element a better name
-<variedcommodities:element_fire>.clearTooltip();
-<variedcommodities:element_fire>.addTooltip("Auric Essence " + <variedcommodities:element_fire>.displayName + " (#" + "7295")");
-<variedcommodities:element_fire>.addTooltip(format.darkGray("variedcommodities:element_fire"));
-<variedcommodities:element_fire>.addTooltip(format.green("Essence abstracted from the purest of gold."));
-<variedcommodities:element_fire>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
-<variedcommodities:element_fire>.addTooltip(format.blue(format.italic("Varied Commodities")));
-
-// Give the Orb for Eta barrier a better name.
-<variedcommodities:orb:0>.clearTooltip();
-<variedcommodities:orb:0>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7304" + "0)");
-<variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
-<variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
-<variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers"));
-<variedcommodities:orb:0>.addTooltip(format.blue(format.italic("Varied Commodities")));
-
-// Crafting recipe
-recipes.addShaped("dregora20",<variedcommodities:pendant>,
- [[<variedcommodities:orb:0>,<variedcommodities:spell_fire>,<variedcommodities:orb:0>],
-  [<variedcommodities:spell_fire>,<variedcommodities:spell_arcane>,<variedcommodities:spell_fire>],
-  [<variedcommodities:orb:0>,<variedcommodities:spell_fire>,<variedcommodities:orb:0>]]);
 
 // Give the Orbs for Lycanites Summons a better name.
 <variedcommodities:orb:1>.clearTooltip();
@@ -383,6 +516,12 @@ recipes.addShaped("dregora20",<variedcommodities:pendant>,
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 <variedcommodities:orb:6>.addTooltip(format.blue(format.italic("Varied Commodities")));
+
+// Re-add bop Terrestrial Arrifact recipe but with iceandfire sapphire.
+recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
+ [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
+  [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
+  [<biomesoplenty:gem:4>,<minecraft:emerald>,<biomesoplenty:biome_essence>]]);
 
 // Remove Lycanite Summoners:
 recipes.remove(<lycanitesmobs:soulcubeaberrant>);

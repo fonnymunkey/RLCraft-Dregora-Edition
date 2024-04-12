@@ -32,5 +32,22 @@
     "angry": true,
     "random": 0.5,
     "result": "default"
+  },
+  {
+    "dimension": 0,
+    "mod": "srparasites",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mod": "srparasites",
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
+    "mod": "srparasites",
+    "spawner": "true",
+    "biome": ["Abyssal Rift"],
+    "result": "allow"
   }
 ]
