@@ -9,39 +9,70 @@
       "sounds": [
         {
           "sound": "dsurround:theend",
-          "conditions":"MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
           "volume": 0.1
         },
         {
           "sound": "dsurround:wind",
-          "conditions":"MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
           "volume": 0.6
         },
         {
           "sound": "charm:spectre_ambient",
-          "conditions":"MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
           "volume": 1.5,
           "soundType": "spot",
-          "chance": 10
+          "chance": 50
         },
         {
           "sound": "charm:ender_resonance",
-          "conditions":"MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
           "volume": 1.5,
           "soundType": "spot",
-          "chance": 10
+          "chance": 50
         },
         {
           "sound": "srparasites:ancient.pod",
-          "conditions":"MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "conditions":"MATCH('(?i)(.*Parasite.*)', biome.name) && MATCH('(?i)(.*0.*)', dim.id)",
           "volume": 1.5,
           "soundType": "spot",
-          "chance": 10
+          "chance": 50
+        },
+        {
+          "sound": "dsurround:theend",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 0.1
+        },
+        {
+          "sound": "dsurround:wind",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 0.6
+        },
+        {
+          "sound": "charm:spectre_ambient",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 1.5,
+          "soundType": "spot",
+          "chance": 50
+        },
+        {
+          "sound": "charm:ender_resonance",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 1.5,
+          "soundType": "spot",
+          "chance": 50
+        },
+        {
+          "sound": "srparasites:ancient.pod",
+          "conditions":"!player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "volume": 1.5,
+          "soundType": "spot",
+          "chance": 50
         },
         {
           "sound": "dsurround:dimension.nether",
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
-          "volume": 0.01
+          "volume": 0.1
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
@@ -53,91 +84,126 @@
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:biome.heart",
-          "volume": 0.15,
-          "soundType": "periodic"
-        },
-        {
-          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
-          "sound": "srparasites:biome.heart",
-          "volume": 0.15,
+          "volume": 0.03,
           "soundType": "periodic"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "charm:homing",
-          "volume": 1.0,
-          "soundType": "spot",
-          "chance": 100
-        },
-        {
-          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
-          "sound": "dsurround:metalbar.metalbar_land",
-          "volume": 1.0,
-          "soundType": "spot",
-          "chance": 100
+          "volume": 0.004,
+          "soundType": "periodic"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:elvia.growl",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "minecraft:ambient.cave",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:terla.death",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:lencia.growl",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:elvia.hurt",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:aranrac.growl",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:dod.siv",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:evolution.phasesix",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
         },
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "srparasites:flesh.death",
           "volume": 0.5,
-          "soundType": "spot",
-          "chance": 100
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:theend",
+          "volume": 0.1
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:underground",
+          "volume": 1.5
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "minecraft:ambient.cave",
+          "volume": 1.5,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:ender_resonance",
+          "volume": 1.5,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:record.nether1",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:record.nether2",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:record.nether3",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:record.nether4",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "charm:above_stronghold",
+          "volume": 1.5,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "dsurround:rockfall",
+          "volume": 1.0,
+          "soundType": "spot"
         }
       ]
     }
@@ -145,18 +211,9 @@
   "dimensions": [
     {
       "dimId": 3,
-      "_comment": "Underneath Ambience",
-      "soundReset": true,
-      "seaLevel": 0,
-      "haze": false,
+      "weather": true,
       "fog": true,
-      "aurora": false,
-      "sounds": [
-        {
-          "sound": "dsurround:underground",
-          "volume": 2.5
-        }
-      ]
+      "haze": true
     }
   ],
   "items": {

@@ -60,6 +60,55 @@
     {
       "biomeTags": [
         [
+          "SPOOKY"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "srparasites:parasitestain:0": 0.5,
+          "srparasites:parasiterubble:1": 0.5,
+          "srparasites:parasiterubble:2": 0.5
+        },
+        "defaultBlock": "lycanitesmobs:ashenstonepolished"
+      },
+      "floorSelector": {
+        "entries": {
+          "srparasites:parasitestain:0": 0.2
+        },
+        "defaultBlock": "lycanitesmobs:ashenstonepolished"
+      },
+      "brickSelector": {
+        "entries": {
+          "quark:grate": 0.3
+        },
+        "defaultBlock": "iceandfire:crackled_stone"
+      },
+      "legSelector": {
+        "entries": {
+          "srparasites:parasitestain:1": 0.5,
+          "srparasites:parasiterubble:2": 0.5
+        },
+        "defaultBlock": "quark:iron_plate:1"
+      },
+      "mainBlock": "quark:iron_plate:1",
+      "supportBlock": "rustic:iron_lattice[east=false,north=false,south=false,west=false]",
+      "slabBlock": "lycanitesmobs:ashenstone_slab[half=bottom]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "quark:basalt_wall[east=false,north=false,south=false,up=false,west=false]",
+      "stoneSlabBlock": "lycanitesmobs:ashenstone_slab[half=top]",
+      "minY": 1,
+      "maxY": 1,
+      "vineChance": 0.0,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "replacementRate": 0.9
+    },
+    {
+      "biomeTags": [
+        [
           "CANYON",
           "HOT",
           "MESA",

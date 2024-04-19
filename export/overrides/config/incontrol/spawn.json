@@ -35,19 +35,26 @@
   },
   {
     "dimension": 0,
-    "mod": "srparasites",
-    "result": "deny"
+    "mod": ["lycanitesmobs", "iceandfire", "quark", "battletowers", "minecraft", "defiledlands", "familiarfauna", "charm"],
+    "biome": ["Abyssal Rift", "Parasite Biome"],
+    "spawner": true,
+    "healthmultiply": 2,
+    "damagemultiply": 2,
+    "result": "default"
   },
   {
     "dimension": 0,
     "mod": "srparasites",
-    "result": "deny"
+    "spawner": true,
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
+    "result": "default",
+    "healthmultiply": 0.5,
+    "damagemultiply": 0.5
   },
   {
     "dimension": 0,
     "mod": "srparasites",
-    "spawner": "true",
-    "biome": ["Abyssal Rift"],
-    "result": "allow"
+    "spawner": false,
+    "result": "deny"
   }
 ]

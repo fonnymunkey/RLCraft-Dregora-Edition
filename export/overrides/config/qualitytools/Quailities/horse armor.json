@@ -15,6 +15,23 @@
     ],
     "qualities": [
       {
+        "name": "Skill Issue",
+        "color": "dark_red",
+        "weight": 5,
+        "attributes": [
+          {
+            "name": "generic.armor",
+            "amount": -2.5,
+            "operation": 0
+          },
+          {
+            "name": "potioncore.magicShielding",
+            "amount": -1.5,
+            "operation": 0
+          }
+        ]
+      },
+      {
         "name": "quality.crumbling.name",
         "color": "dark_red",
         "weight": 8,

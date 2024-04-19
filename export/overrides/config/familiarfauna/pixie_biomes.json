@@ -1,5 +1,10 @@
 [
   "minecraft:mutated_forest",
   "biomesoplenty:mystic_grove",
-  "twilightforest:enchanted_forest"
+  "twilightforest:enchanted_forest",
+  "openterraingenerator:ashen_rainforest",
+  "openterraingenerator:wicked_plains",
+  "openterraingenerator:caniverous_forest",
+  "openterraingenerator:corrupted_scarlet_grove",
+  "openterraingenerator:corrupted_shadow_forest"
 ]

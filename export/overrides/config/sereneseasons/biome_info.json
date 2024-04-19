@@ -333,5 +333,10 @@
     "enable_seasonal_effects": true,
     "use_tropical_seasons": true,
     "disable_crops": false
+  },
+  "openterraingenerator:wicked_plains": {
+    "enable_seasonal_effects": false,
+    "use_tropical_seasons": true,
+    "disable_crops": false
   }
 }

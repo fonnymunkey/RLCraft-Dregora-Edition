@@ -28,6 +28,33 @@
     ],
     "qualities": [
       {
+        "name": "Skill Issue",
+        "color": "dark_red",
+        "weight": 10,
+        "attributes": [
+          {
+            "name": "generic.attackDamage",
+            "amount": -0.2,
+            "operation": 2
+          },
+          {
+            "name": "generic.attackSpeed",
+            "amount": -0.2,
+            "operation": 2
+          },
+          {
+            "name": "potioncore.digSpeed",
+            "amount": -0.2,
+            "operation": 2
+          },
+          {
+            "name": "generic.reachDistance",
+            "amount": -1.5,
+            "operation": 0
+          }
+        ]
+      },
+      {
         "name": "quality.worthless.name",
         "color": "dark_red",
         "weight": 10,

@@ -13,5 +13,15 @@
   "conquest:alder_swamp",
   "conquest:bog",
   "conquest:marsh",
-  "twilightforest:twilight_swamp"
+  "twilightforest:twilight_swamp",
+  "openterraingenerator:overworld_crystal_bog",
+  "openterraingenerator:flower_fungal",
+  "openterraingenerator:grey_fungal",
+  "openterraingenerator:rotten_fungal_plains",
+  "openterraingenerator:sandy_fungal",
+  "openterraingenerator:ancient_swamp",
+  "openterraingenerator:corrupted_shadow_forest",
+  "openterraingenerator:toxic_swamp",
+  "openterraingenerator:ancient_redwood_forest",
+  "openterraingenerator:nuclear_swamp"
 ]

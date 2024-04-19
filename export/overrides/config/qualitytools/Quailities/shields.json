@@ -24,6 +24,18 @@
     ],
     "qualities": [
       {
+          "name": "Skill Issue",
+          "color": "dark_red",
+          "weight": 10,
+          "attributes": [
+              {
+                  "name": "generic.movementSpeed",
+                  "amount": -0.2,
+                  "operation": 2
+              }
+          ]
+      },
+      {
         "name": "quality.heavy.name",
         "color": "dark_gray",
         "weight": 10,

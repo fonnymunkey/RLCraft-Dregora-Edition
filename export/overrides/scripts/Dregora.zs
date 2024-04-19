@@ -36,7 +36,7 @@ import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 print("Dregora Script starting!");
 
 // Tell people where to get a biome purifier.
-<srparasites:biomepurifier>.addTooltip(format.gold("Obtainable at most Herborists, rarely found at their overgrown cabin in plains and flower fields."));
+<srparasites:biomepurifier>.addTooltip(format.gold("Obtainable at most Herbalists, rarely found at their overgrown cabin in plains and flower fields."));
 
 
 // Remove macaw bamboo bridge recipe
@@ -181,10 +181,11 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
             if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
-                if !((event.entity.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift"){
+                var entityBase as IEntityLivingBase = event.entity;
+                var entityName = event.entity.definition.name;
+                var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name
 
-                    var entityBase as IEntityLivingBase = event.entity;
-                    var entityName = event.entity.definition.name;
+                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing") || !((EntityBiome) == "Abyssal Rift") || (entityName has "beckon") || (entityName has "dispatcher")) {
 
                     if ((entityName has "beckon") || (entityName has "dispatcher")) {
 
@@ -230,24 +231,28 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 });
 
 
-// SRParasites in overworld Cancel Spawns if not in Whitelisted Biome
+// SRParasites in overworld Cancel Spawns if not in Whitelisted Biome and From spawner
 events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
-    if (!isNull(event.entity.definition)) {
+    if (!isNull(event.spawner)){
+         if (event.spawner){
+              if (!isNull(event.entity.definition)) {
 
-        if (!isNull(event.entity.definition.name)) {
+                  if (!isNull(event.entity.definition.name)) {
 
-            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+                      if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
-                var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
+                          var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome")){
+                          if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome") || !((Biome) == "Lair of the Thing") || !((Biome) == "Nuclear Ruins") || !((Biome) == "Ruins of Blight")){
 
-                    event.deny();
+                              event.deny();
 
-                }
-            }
-        }
+                          }
+                      }
+                  }
+              }
+         }
     }
 });
 
@@ -260,13 +265,8 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 
             if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
-                var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
-
-                if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome")){
-
                     event.cancel();
 
-                }
             }
         }
     }
@@ -382,6 +382,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     }
 });
 
+// On Theta Barrier Destroyed
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     if ( blockDrops.block has <dimstack:bedrock:7>.asBlock() ){
         blockDrops.drops = [
@@ -397,6 +398,27 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
         <simpledifficulty:magma_chunk>.weight(0.3),
         <rustic:dust_tiny_iron>.weight(0.1),
         <rustic:dust_tiny_iron>.weight(0.1)
+
+        ] as WeightedItemStack[];
+    }
+});
+
+// On Eta Barrier Destroyed
+events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
+    if ( blockDrops.block has <dimstack:bedrock:6>.asBlock() ){
+        blockDrops.drops = [
+
+        <notreepunching:rock/stone>.weight(1.0),
+        <notreepunching:rock/stone>.weight(0.5),
+        <notreepunching:rock/stone>.weight(0.3),
+        <notreepunching:rock/basalt>.weight(0.5),
+        <notreepunching:rock/basalt>.weight(0.3),
+        <biomesoplenty:crystal_shard>.weight(0.3),
+        <biomesoplenty:crystal_shard>.weight(0.3),
+        <defiledlands:defilement_powder>.weight(0.3),
+        <defiledlands:defilement_powder>.weight(0.3),
+        <contenttweaker:steel_nugget>.weight(0.1),
+        <contenttweaker:steel_nugget>.weight(0.1)
 
         ] as WeightedItemStack[];
     }
@@ -450,9 +472,6 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 <variedcommodities:nanorum_legs>.addTooltip("Aged Legs, made of advanced alloys. Provides excellent protection.");
 <variedcommodities:nanorum_boots>.addTooltip("Aged Boots, made of advanced alloys. Provides excellent protection.");
 
-
-<variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
-
 //Removed biome finder from BOP for it causes lag spikes.
 recipes.remove(<biomesoplenty:biome_finder>);
 
@@ -471,11 +490,11 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <biomesoplenty:terrarium:8>.displayName = "Gleamshroom Terrarium";
 
 //Add New trading system items description & lore
-<biomesoplenty:terrestrial_artifact>.addTooltip(format.gold("Brimming with the essence of life & purity, can be traded with most Herborist to craft biome purifiers."));
+<biomesoplenty:terrestrial_artifact>.addTooltip(format.gold("Brimming with the essence of life & purity, can be traded with most Herbalist to craft biome purifiers."));
 <variedcommodities:coin_gold>.displayName = "Ancient Coins";
 <variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
 <variedcommodities:ancient_coin>.displayName = "Brutal Coins";
-<variedcommodities:ancient_coin>.addTooltip(format.gold("The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in outposts & most Herborist rarely found in cabins situated in plains and flower fields."));
+<variedcommodities:ancient_coin>.addTooltip(format.gold("The rarest of treasures, found in brutal towers surrounded by gray fog and traded for exceptional items with Topographers in outposts & most Herbalist rarely found in cabins situated in plains and flower fields."));
 <variedcommodities:lead_pipe>.displayName = "Ancient Artifact";
 <variedcommodities:lead_pipe>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
 <variedcommodities:crowbar>.displayName = "Ancient Artifact";
@@ -488,11 +507,47 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:pipe_wrench>.addTooltip(format.gold("Treasure among Topographers in Outposts, usually found in ancient structures such as maintenance shafts and cities."));
 
 //Add the Tool Used Description for Barrier Blocks:
-<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an Brutal Artifact equipped in offhand."));
+<dimstack:bedrock:7>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Artifact - Theta§r §4‡§r equipped in offhand."));
 
-//Give Brutal Artifact it's name:
-<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Key§r §4‡";
-<variedcommodities:artifact>.addTooltip(format.gold("Gain the ability to destroy Theta barrier blocks when equipped in off-hand"));
+//Add the Tool Used Description for Barrier Blocks:
+<dimstack:bedrock:6>.addTooltip(format.gold("Can be destroyed with an §4‡ §6§lBrutal Pendant - Eta§r §4‡§r equipped in offhand."));
+
+//Give Theta Brutal Key it's name:
+<variedcommodities:artifact>.displayName = "§4‡ §6§lBrutal Artifact - Theta§r §4‡";
+<variedcommodities:artifact>.addTooltip(format.gold("Gain the ability to destroy Theta barrier blocks when equipped in off-hand."));
+
+
+//Give Eta Brutal Key it's name:
+<variedcommodities:pendant>.displayName = "§4‡ §6§lBrutal Pendant - Eta§r §4‡";
+<variedcommodities:pendant>.addTooltip(format.gold("Gain the ability to destroy Eta barrier blocks when equipped in off-hand."));
+
+// Give Fire Element a better name
+<variedcommodities:element_fire>.clearTooltip();
+<variedcommodities:element_fire>.addTooltip("Auric Essence (#7295)");
+<variedcommodities:element_fire>.addTooltip(format.darkGray("variedcommodities:element_fire"));
+<variedcommodities:element_fire>.addTooltip(format.green("Essence abstracted from the purest of gold."));
+<variedcommodities:element_fire>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
+
+// Give The Ruby Gem a better name
+<variedcommodities:gem_ruby>.clearTooltip();
+<variedcommodities:gem_ruby>.addTooltip("Blood Gem (#7279)");
+<variedcommodities:gem_ruby>.addTooltip(format.darkGray("variedcommodities:gem_ruby"));
+<variedcommodities:gem_ruby>.addTooltip(format.green("This gem, magical to those who not know it's secrets feels heavy and somehow alive..."));
+<variedcommodities:gem_ruby>.addTooltip(format.gold("Extracted from Amalgalich remains."));
+
+// Give the Orb for Eta barrier a better name.
+<variedcommodities:orb:0>.clearTooltip();
+<variedcommodities:orb:0>.addTooltip("Brutal " + <variedcommodities:orb>.displayName + " (#" + "7304" + "0)");
+<variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
+<variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
+<variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers."));
+
+// Crafting recipe
+recipes.addShaped("dregora20",<variedcommodities:pendant>,
+ [[<variedcommodities:orb:0>,<variedcommodities:element_fire>,<variedcommodities:orb:0>],
+  [<variedcommodities:element_fire>,<variedcommodities:gem_ruby>,<variedcommodities:element_fire>],
+  [<variedcommodities:orb:0>,<variedcommodities:element_fire>,<variedcommodities:orb:0>]]);
+
 
 // Give the Orbs for Lycanites Summons a better name.
 <variedcommodities:orb:1>.clearTooltip();
@@ -503,25 +558,16 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
 <variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
-<variedcommodities:orb:1>.addTooltip(format.blue(format.italic("Varied Commodities")));
 
 <variedcommodities:orb:5>.addTooltip("Aberrant " + <variedcommodities:orb>.displayName + " (#" + "7277" + "5)");
 <variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
 <variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
-<variedcommodities:orb:5>.addTooltip(format.blue(format.italic("Varied Commodities")));
 
 <variedcommodities:orb:6>.addTooltip("Shadow " + <variedcommodities:orb>.displayName + " (#" + "7277" + "6)");
 <variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
-<variedcommodities:orb:6>.addTooltip(format.blue(format.italic("Varied Commodities")));
-
-// Re-add bop Terrestrial Arrifact recipe but with iceandfire sapphire.
-recipes.addShaped("dregora20",<biomesoplenty:terrestrial_artifact>,
- [[<biomesoplenty:gem:1>,<biomesoplenty:gem:3>,<biomesoplenty:gem:7>],
-  [<biomesoplenty:gem:2>,<biomesoplenty:gem:5>,<iceandfire:sapphire_gem>],
-  [<biomesoplenty:gem:4>,<minecraft:emerald>,<biomesoplenty:biome_essence>]]);
 
 // Remove Lycanite Summoners:
 recipes.remove(<lycanitesmobs:soulcubeaberrant>);

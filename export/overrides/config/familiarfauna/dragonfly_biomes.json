@@ -19,5 +19,12 @@
   "conquest:moorland",
   "twilightforest:twilight_swamp",
   "twilightforest:fire_swamp",
-  "twilightforest:twilight_stream"
+  "twilightforest:twilight_stream",
+  "openterraingenerator:ancient_rainforest",
+  "openterraingenerator:rainforest_beach",
+  "openterraingenerator:ancient_swamp",
+  "openterraingenerator:caniverous_forest",
+  "openterraingenerator:ravenous_jungle",
+  "openterraingenerator:toxic_swamp",
+  "openterraingenerator:nuclear_swamp"
 ]

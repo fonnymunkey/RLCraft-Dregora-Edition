@@ -16,6 +16,18 @@
     ],
     "qualities": [
       {
+          "name": "Skill Issue",
+          "color": "dark_red",
+          "weight": 5,
+          "attributes": [
+              {
+                  "name": "generic.luck",
+                  "amount": -1.0,
+                  "operation": 0
+              }
+          ]
+      },
+      {
         "name": "quality.unlucky.name",
         "color": "red",
         "weight": 5,

@@ -22,6 +22,18 @@
     ],
     "qualities": [
       {
+          "name": "Skill Issue",
+          "color": "dark_red",
+          "weight": 5,
+          "attributes": [
+            {
+            "name": "potioncore.projectileDamage",
+            "amount": -0.20,
+            "operation": 2
+            }
+          ]
+      },
+      {
         "name": "quality.cracked.name",
         "color": "dark_gray",
         "weight": 5,

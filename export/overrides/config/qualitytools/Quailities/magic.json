@@ -16,6 +16,18 @@
     ],
     "qualities": [
       {
+          "name": "Skill Issue",
+          "color": "dark_red",
+          "weight": 5,
+          "attributes": [
+              {
+                  "name": "potioncore.magicDamage",
+                  "amount": -0.20,
+                  "operation": 2
+              }
+          ]
+      },
+      {
         "name": "quality.inept.name",
         "color": "dark_gray",
         "weight": 5,

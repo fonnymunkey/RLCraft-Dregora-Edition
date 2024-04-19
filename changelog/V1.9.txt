@@ -244,8 +244,22 @@ Fixed/Changed/Added:
 - fixed typo 0,8 in blood stained plains
 - fixed typo's in maintenance_shaft_top_offset & maintenance_shaft_top Heightoffset being ""
 - AddED Parasite Blood to lowest block in grey abyss biomes
+- made memorial for puffik 2022-2024 in Battletower
+
+
+Underneath Done:
+- Changed spawns to biome_parasite.
+- Respawndim for Underneath is now be Underneath
+- Lowered amount of portals in Underneath
+- Added Bedrock layer at bottom
+
+Underneath todo:
+
 
 Dregora todo:
++ Add The Entities to the city biomes (rarely with altered droptable)
++ make mineshafts in canyons more common?
++ add big frozen oceans?
 + AdvancedShelterC0R0 contained empty chest
 + add variedcommodities:element_fire to brutal merchant (10 golden coins)
 + fix otg entity double spawn if customstructure
@@ -254,32 +268,25 @@ Dregora todo:
 + Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
 + Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
 + randomized lightning swords
-+ Ancient coins has double description
-+ add second tier brutal tower?
 + Add amulets to epic loottables
 + Check Brutal Tower Loottable with heaven
 + Add flying entities to DregoraRL (10 for each biome group)
 + make weightedbranches for additional dragon stages & scales
 + check if bog biomes have good mob spawns
 + Check Boreal Forest no Bushes
-+ make memorial for puffik 2022-2024 in Battletower
+
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
 + Make mini-bosses always champions
 + Check OTG Errors at startup
 
-
-Dregora extra Todo's:
+Backlog:
++ add srparasites death counter to stats screen?
 + Sealed crate auto spawns spawn eggs (make randomizer)
 + Shrouds coffee potion
 + Patriot potion
 + Better Bas Pot
 + Frauk potion
-
-Underneath tasks:
-+ None
-
-Backlog:
 + Backrooms biome (Brutal huge maze-like dungeon, perhaps links to another dim?)
 + fix greathall, remove lava remove fire
 + Trollander Tree with yoda at bottom
@@ -333,9 +340,6 @@ down just before the blight occured and the fabric of space and time collapsed i
 Potentially Add mods Backlog:
 + Spice of Life
 + Food Funk
-+ https://www.curseforge.com/minecraft/mc-mods/jeid (fixed biomeID issue?)
-+ NotEnoughID's add
-+ Weather 2 remastered
 
 RLCraft Done:
 - Make Battletowers slightly less rare by changing min-distance from 800 to 700.
@@ -408,16 +412,27 @@ RLCraft Done:
 - added potion sickness as silver sickness to silver armor bonus set (as a debuff)
 - make it so chorus fruit and random teleportation potion does not work the way it is intended to work within the brutal biomes
 - added dynamic surroundings sound to underneath and abyssal biome
+- Disabled battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
+- set dread knight sword level to 14 attack
+- made crafting recipe 8 Dark Orbs + gem_ruby + gilded coins = pendant
+- Add pendant description & make it unlock ETA barriers.
+- added dsurround sounds to the Underneath dimension
+- made sure entities only spawn through spawners in Abyssal Rift biome (/setblock ~ ~-1 ~ minecraft:mob_spawner 0 replace {SpawnData:{id:"srparasites:crux"}})
+- Add durability skill issue
+- Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
+- Increased .2 Health & Damage for all mobs on player in Brutal Biomes if they come from spawners  (overworld parasite biome)
+- renamed Herborist to Herbalist
+- Villager chat configured for Additional Entities.
+- crafttweaker make sure srparasites entities only spawn through spawner
+- decreased morocks spawns from parasite biomes
+- Added Trinkets and Baubles climable blocks for BOP and Dimstack
+- Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) added to the grappling hook config
+- increased geonach spawn frequency by 0.005
+- added wicked plains to serene seasons effects blacklist
+- configured familiar fauna biomes (deer,dragonfly,pixie,snail and turkey)
+- Added Underneath Quest
+- added -2x multiplier to incontrol special entities overworld
 
-Lycanites:
-Beholder
-Grell
-Cacodemon
-Grigori
-
-Or
-
-Srparasites:
 Primitive Vermin
 Flying Carrier
 Adapted Yelloweye
@@ -425,41 +440,23 @@ Yelloweye
 
 
 RLCraft todo:
-+ Check official rlcraft on death respawn in lost cities?
 + add loot tables to all boss entities in abyssal tower
-+ Update SRParasites Mod and see if it works
-+ RLCraft add:
-Dread Knight's Sword level: 14 Attack
-Artifact level 32 Magic (theta blocks)
-
-+ Add blocks from tower for certain rooms to blacklist block grief
-+ Make sure entities only spawn through spawners in Abyssal Rift biome
-+ make amalaglich drop variedcommodities key
-+ make crafting recipe 8 Dark Orbs + key = Posessed Key
-+ Add key description & make it unlock ETA barriers (all level 32)
-+ decrease silver durability & increase dragon scale durability + add set bonus
-+ C&L Hydra needs to be configured per biome
-+ Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
-+ Add Quest: Hide, run, seek and find the portal in black enshrined.
-+ Increase .2 Health & Damage for mobs on player in Brutal Biomes (overworld parasite biome)
-+ Make villager chat work for multiple entities, discord guide, search for: "That's really nice! I'll make sure to expand the amount of c"
-+ Disable battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
-+ Disable quark generation in grey abyss?
-+ Bloodmoon, make dying entities have 10% chance to spawn a new entity using crafttweaker
-+ killing zombie spawns a ghost on full moon (2% chance)
-+ Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) should be added to the grappling hook config
-+ Check Trinkets and Baubles climable blocks (add bop blocks)
-+ Error loading entity with ID 'abyssalcraft:evilsheep'
-+ increase difficulty of city biomes to 1.1 and bruh biomes to 1.5-1.8
-+ Fix structures: P_Crater (X),
-+ remove 90% of all structures in ice area
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
-+ carryon chest on battle towers & other cheese methods, make golems stronger & invulnerable to arrows
-+ tiny cactus harvestable with shears
-+ honeycomb empty honey needs same recipies as HoneyComb
++ Fix github issues
++ Check Underneath Quest Line
++ C&L Hydra needs to be configured per biome
+
+Optional:
++ Update SRParasites Mod to newest .19 release once it comes out
++ crafttweaker wake up player in night (multiplier check and wake morning)
++ thunder script crafttweaker lignting with armor (isMaterial)
+
+
 
 RLCraft Backlog:
++ tiny cactus harvestable with shears
++ honeycomb empty honey needs same recipies as HoneyComb
 + blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
 + Thunderstorm chance to hit player with lightning and dismount
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
