@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "moderncity_common_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/moderncity_common_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "coins_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_coins_common",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "name": "moderncity_common_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_common",
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

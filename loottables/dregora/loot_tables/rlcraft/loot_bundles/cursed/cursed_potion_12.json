@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Makes you regenerate but also levitate and be sick",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:strong_potion_sickness\",
+                display:{Name:\"Potion of Chaotic Regeneration\",Lore:[\"§9Regeneration III (0:45)\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:25,Duration:1800},{Id:10,Duration:900,Amplifier:2}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:strong_potion_sickness\",
+                display:{Name:\"Potion of Chaotic Regeneration\",Lore:[\"§9Regeneration III (0:45)\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:25,Duration:1800},{Id:10,Duration:900,Amplifier:2}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

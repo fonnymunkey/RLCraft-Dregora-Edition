@@ -1,0 +1,385 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "miningtown",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"We thought ourselves blessed when the neighboring mining locations went dark and we could ask a premium for what we dug up. This however was short lasted as we came to face the harsh truth of the rumors that had spread around.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"First we thought they were just strong stories, then we thought it was superstitious belief. We happily kept mining and weeks passed by until a particular cold night hit us by surprise after which everything changed.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The sightings of shadows is what it started with, then the disappearances and eventually the screaming from deep within the mines. It was then when we decided to band up and look for the cause in force... With 14 we went in and only 3 returned.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I am the only one remaining at the camp as everyone else fled. I just couldn\u0027t bear to leave my friends behind and decided to wait a couple more days. This marks the end of day 2 and I fear the worst but I will remain a little while longer for hope still lingers.\\\"}]\"
+                ],
+                title:\"The last resident\",
+                author:\"Chief Mullard\",
+                display:{Lore:[\"A dusty, superficially damaged book.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A76\u00A7l-------------------\u00A7r\n\u00A74Red Tainted Emeralds\u00A7r\n\u00A7l\u00A76----------------\u00A7r\n\n\u00A7lA\u00A7rs told by leaves carried by the wind, a desolate town of emeralds and gold once seemingly brimming of life and opportunities but corrupted at its core.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"This is a small story written by those who came first but never left.\n\nMany a decade ago when the mountains were still pure and untainted by human hands there was a traveler who found a glistening stone of nature.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"One event that would lead to the other and soon there stood a house of coin accompanied by tunnels leading to deep within the mountains. Filled with the stench of sweat and greed, overflowing and seeping through the rocks.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Deeper and deeper until it found and filled a chasm of wrath. The door of corruption was unlocked and in came the horrors from worlds beyond.\n\nOne night passed and empty was the house of coin. Empty were the barracks.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nEmpty was the air once filled with laughter and drunk men tales. Empty was all but the chasm deep, deep below now filled with the gold, the green and gore of humans.\n\n\n \\\"}]\"
+                ],
+                title:\"Red Tainted Emeralds\",
+                author:\"Unknown\",
+                display:{Lore:[\"A very expensive looking book.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\nBeing but a lonely miner in search of gold I considered myself lucky to stumble upon a rock of a type I had never seen before. It was a soft kind of rock that crumbled away with just a few hits of my pickaxe.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I continued mining through this rock curious to its contents but found something I would have never anticipated. The hollow sound of rocks falling down on the other side of this strange rock echoed through the tunnels as the dust settled.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A sound of metal touching metal in the distance accompanied by a high-pitched sound of some kind. The rumbling of rocks made it hard to know what was going on but as soon as the dust settled I found myself staring at the smoothest wall I had ever seen.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It wasn\u0027t just a wall though but part of a hallway  I apparently broke into.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"As i peaked around the corner my thoughts filled themselves with riches and fame like within the stories told by travelers about treasure filled temples and magical swords.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I also thought about the monsters they had to conquer to get these items and so my curiosity made me move forward into the tunnel but ever so quiet. I walked what felt like a fair distance when I arrived at a set of stairs when I heard a sound from my right.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A cold shivering moved through my back into my neck but I was able to shake off the trembling that would have followed soon after. As I retraced my steps slowly while I stared at the direction the sound came from.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A loud clang followed and my hearth sunk to my feet. Loud screeching followed and I started running like a madman. Through the tunnels and through the mines. With every step the sound grew more silent but this did not stop me from running.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Many moons later after I gathered the courage of a lifetime I packed my gear and a box of explosives. After what seemed hours of sitting in the dark and listening to the noises from up ahead, usually far away and sometimes closer, I was ready.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"As i took out my flint and steel I heard that same noise again... Did it notice me? My hands trembled and I failed the first 2 strikes. The 3rd one successfully lit up the fuse followed by yet again, that same noise but now much, much closer.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I jumped up and ran. I did not stopped to pick up my gear. I did not stopped to check the treeline for possible dangers. I did not stop to hide my trail as everything that kept me sane went overboard with that screech.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Till this day I dared not to return to that place and I feel like I can count myself the luckiest man still alive.\\\"}]\"
+                ],
+                title:\"Perfect Rocks\",
+                author:\"Dwargon the lone Miner\",
+                display:{Lore:[\"Encounter in the mountains.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I am not from yesterday, of course I heard about the stories of past and fellow miners and of course some stories are false. It will be up to you, the reader to decide whenever this is one among them or of true telling.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It usually starts with a happy thought, happy moments followed by an incident and then a bad, good or neither of those kind of ending.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"While I am not sure where this will end for us I do know that live in this mining town wasn\u0027t the live I imagined it would be. Hitting the rocks day after day after day is one hell of a nasty job. Tears of sweat that sting in my eyes, walls always surrounding me.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"walls always surrounding you. The smell of sweat and rock in the air. It\u0027s a hard way of making a living but even then we couldn\u0027t complain as we were still free to choose what we wanted. We could venture out, perhaps build a cabin and learn to hunt or die trying.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We would be free unlike our current situation. This brings me back to the stories of old where people are trapped within some complex or mines. And well yes, trapped we are, but not by rocks, not due to being lost.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Nope, the evil did not come from within this time but it came from outside. Monsters started appearing in broad daylight, chased us in the mines and here we are in our last stronghold unable to venture out for many have already tried and met their end.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"With grave eyes I look upon the future... What kind of ending will our story have?\\\"}]\"
+                ],
+                title:\"Holed Up\",
+                author:\"Oleg the Miner\",
+                display:{Lore:[\"They came from outside, not within.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Stories about rock, rich with minerals and hollow earth is what attracted us to this place and as promised we were met with a wonderous complex of caverns hard to reach due to the thick layers of sharp obsidian.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"hopeful of treasures that would be weighted we dug deeper and deeper until we found ourselves in a glorious chasm of mushrooms and magma.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Days went by and aside the usual composition of minerals we sadly didnt found anything worth while, at the very least however we\u0027ve witnessed a glorious wonder of nature.\\\"}]\"
+                ],
+                title:\"Survey of the depth\",
+                author:\"Oleg the Miner\",
+                display:{Lore:[\"A description of what lies below.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "emerald",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"The Earthern Rose\",Lore:[\"The stone bears teeth yet somehow you feel safer holding it in your off-hand.\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "More armor",
+                  "amount": {
+                    "min": -2.0,
+                    "max": -5.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armor",
+                  "name": "More armor",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 6.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "miningtown_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest_minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
+

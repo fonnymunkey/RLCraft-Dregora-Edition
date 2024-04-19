@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "fishing_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/fishing_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "fishing_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fishing_rod_wood",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:bobber_basic",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:hook_basic",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:reel_basic",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:fillet_knife_wood",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:scaling_knife_wood",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:hook_barbed",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "fishingmadebetter:bait_bucket",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

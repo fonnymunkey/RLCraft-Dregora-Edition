@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Effects Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Slow Absorbent Water Breathing\",Lore:[\"\",\"\u00A7lSigned:\u00A7r Max, the Marine Biologist\",\"\u00A7lType:\u00A7r Standard Supply Dregorian Vial\",\"\u00A7lBatch Number:\u00A7r Y-2078 A-F\",\"\u00A7lSerial Number:\u00A7r -unreadable-\"]},
+                CustomPotionEffects:[{Id:22,Duration:3600},{Id:2,Duration:3600},{Id:13,Duration:3600}],
+                CustomPotionColor:15434014
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+
+
+
+            

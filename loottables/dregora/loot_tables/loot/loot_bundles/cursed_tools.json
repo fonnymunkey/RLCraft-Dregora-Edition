@@ -1,0 +1,1040 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Weapon Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:Stone_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Stone Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Stone_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Stone Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Stone_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Stone Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Stone_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Stone Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Diamond_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Diamond Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Diamond_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Diamond Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Diamond_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Diamond Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:Diamond_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Diamond Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Iron Shovel\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Iron Axe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Iron Pickaxe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Haunted Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:70,lvl:1},{id:17,lvl:8}],HideFlags:2}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Wretched Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:21,lvl:3},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Abominable Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cursed Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:19,lvl:5}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Atrocious Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:22,lvl:5},{id:70,lvl:1}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Despicable Iron Hoe\"},ench:[{id:71,lvl:1},{id:18,lvl:1},{id:20,lvl:1},{id:22,lvl:6}],HideFlags:2}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.maxHealth","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armor","name": "armor","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.armorToughness","name": "maxHealth","amount": {"min": -0.2,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackDamage","name": "maxHealth","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "modifiers": [
+                {"attribute": "generic.luck","name": "luck","amount": {"min": -10,"max": -100},"operation": "addition","slot": ["mainhand","offhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": {"min": -0.1,"max": -0.8},"operation": "multiply_total","slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "maxHealth","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["mainhand"]}
+              ]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Explosion with Strength Troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:explode\",
+                display:{Name:\"Potion of Explosive Strength\",Lore:[\"§9Explosive Strength (0:30)\",\"\",\"§5When Applied:\",\"§9Strength: +30%\",\"§9Attack Damage: +50%\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:11,Duration:100,Amplifier:5}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:explode\",
+                display:{Name:\"Potion of Explosive Strength\",Lore:[\"§9Explosive Strength (0:30)\",\"\",\"§5When Applied:\",\"§9Strength: +30%\",\"§9Attack Damage: +50%\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:11,Duration:100,Amplifier:5}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

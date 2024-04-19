@@ -1,0 +1,715 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "medievalcity",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Once upon a time there was a fisherman and the fisherman had a son. Every early morning the boy would wake up, sometimes even before his dad. Why you may ask? Well, the boy looked up to his dad the fisherman who even procured a claw of the beasts from beyond.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"He would often say that he would become the strongest fisherman of them all and to achieve such a goal he would carry his dad\u0027s fishing road as his father took the much much lighter fishing nets.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Until one day, proud as he was he told all his friends that his dad would fish along the shorelines where monsters lurked from below the tall, gray trees and could catch him at any moment. But his dad was not afraid! He has beaten one of them before and holds the claw as proof!\\\"}]\",
+                  \"[{\\\"text\\\":\\\"His friends however were not impressed, they even stated the fisherman lied about the monsters and the claw was from a bird. Bring in a head is what his friends said. And so the kid smart as he was said that that was something he could not ask nor get. However...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"He could show them as his dad took him on his boat sometimes and he learned to sail.\n\nMoments later they stood at the docks and climbed into the boat, Monster Hunting Time! is what the kid silently announced.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"As they raised the sails Whispers came and the current took over. A last look behind them revealed dense fog rolling in over the harbor and the whispers becoming louder...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"As the villagers returned to their houses the fisherman searched the streets. Alan? Alan! is what he yelled. He started running towards the docks fearful of what he would or rather would not find.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Coughing and out of breath he stood there with his eyes wide open staring to his boat with Alan in it. He just sat there staring to the ocean. All by himself. Angry the dad asked Alan what he was thinking but the boy still just sat there.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Hey!? his dad yelled at him. No response, but as the fisherman waited for a response he could hear one thing.\n\n\nWhispers calling for him...\\\"}]\"
+                ],
+                title:\"Lurking below the trees.\",
+                author:\"The Whisperer\",
+                display:{Lore:[\"A book meant to scare children from venturing too far.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s been just a month since we finished the foundation of this city, one of many to function as a bridge between the inner and middle layer of this safe haven we call Dregora. The morale is amazing as we have not lost a single soul to the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"invaders of our newly invented world. Brick by brick we\u0027ll rebuild what was destroyed but better while giving this new world a chance the former world never had. A way to build and create without the need of nuclear reactors. Without the risk of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"an energy war ever happening again and thus we build like our very old ancestors did. With wood, stone, tears and blood. Slowly laying the foundation of a new civilization, of new strongholds and huge kingdoms, now nothing more than plans\\\"}]\",
+                  \"[{\\\"text\\\":\\\"written on paper, but soon to be realized.\\\"}]\"
+                ],
+                title:\"The Frontier\",
+                author:\"Unknown Dregorian Origin\",
+                display:{Lore:[\"A very old book.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"This book contains information on the ancient laws of Dregora in which it states several rules like we live by these days, except for a couple of differences. One, for example, would be to live in harmony and prosper, which seems awfully idealistic\\\"}]\",
+                  \"[{\\\"text\\\":\\\"for these times. However despite being a book of laws it has some interesting entries basically preventing anyone to experiment with the forces of nature, explicitly lightning.\n \\\"}]\"
+                ],
+                title:\"Forbidden Book of Laws\",
+                author:\"Ancient Lawmakers\",
+                display:{Lore:[\"Banned Book of Laws, with a very interesting scope.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Entry 1-9:\nIn the beginning Dregorians came upon our lands. The land was scorched and lifeless and darkness was over the face of the deep. And a Dregorian said, let there be light, and light there was. And a Dregorian said let there be good and the corrupted left.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Entry 1-17\nAs for the one who is weak in faith, welcome him, but not to quarrel over opinions.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Entry 3-19\nBut of the tree of the knowledge of good and evil you shall not eat, for in the day that you eat of it you shall surely die.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Entry 11-4\nAnd God saw everything that he had made, and behold, it was very good. And there was evening and there was morning, the sixth day.\\\"}]\"
+                ],
+                title:\"Ancient Book of the Church\",
+                author:\"The Dregoran\",
+                display:{Lore:[\"This Ancient book is mostly unreadable, however some can just nearly be read...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It has been months since the initial creation of this stronghold started. It\u0027s nothing like the old cities whose remnants still remain in the wastelands, yet it\u0027s a start. It surprises me how fast it all goes. Ships already started setting sail towards the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"great unknown to go and explore what remains of this world. Rumors already return telling grand tales about ice forming on the outer edges of Dregora.\n \\\"}]\"
+                ],
+                title:\"Founder\u0027s Note\",
+                author:\"Sapphiran Origin, The Sailor\",
+                display:{Lore:[\"A page from the Founders Book\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "medievalcity_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 4
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carpet",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 12
+            },
+            {
+              "function": "set_data",
+              "data": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 7,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_chicken",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:armor_stand",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crafting_table",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dark_oak_door",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_door",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:item_frame",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:trapped_chest",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:banner",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 12
+            },
+            {
+              "function": "set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 4,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 6,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 7,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 8,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 9,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 11,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 12,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 13,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 14,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_data",
+              "data": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sign",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "spinning with speed potion",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:long_spin\",
+                display:{Name:\"Potion of Bending Speed\",Lore:[\"§9Speed X (1:30)\",\"\",\"§5When Applied:\",\"§9Dig Speed: +100%\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:1,Duration:1800,Amplifier:9}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:long_spin\",
+                display:{Name:\"Potion of Bending Speed\",Lore:[\"§9Speed X (1:30)\",\"\",\"§5When Applied:\",\"§9Speed: +100%\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:1,Duration:1800,Amplifier:9}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

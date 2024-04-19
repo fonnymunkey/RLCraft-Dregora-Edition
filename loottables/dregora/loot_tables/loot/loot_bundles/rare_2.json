@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "epic Chest",
+  "pools": [
+    {
+      "name": "Rare Dungeon Chest",
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Decorated Horse Armor\",Lore:[\"Beautifully crafted and enchanted horse armor\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 15,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse"
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Magical Horse Armor\",Lore:[\"Beautifully crafted and enchanted horse armor\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse"
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Sturdy Horse Armor\",Lore:[\"Beautifully crafted and enchanted horse armor\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse"
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/rare_music",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,146 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "shipjunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/shipjunk_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "shipjunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "locks:wood_lock_pick",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "rustic:barrel",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:vase",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:lantern_wood",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "comforts:rope",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:banjo",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "inspirations:books",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_data","data": 1},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 5,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 6,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 7,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 11,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 12,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 13,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 14,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 15,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 16,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 17,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {"type": "item","name": "quark:colored_flowerpot_white","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_orange","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_magenta","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_light_blue","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_yellow","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_lime","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_pink","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_gray","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_silver","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_cyan","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_purple","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_blue","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_brown","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_green","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_red","weight": 100},
+        {"type": "item","name": "quark:colored_flowerpot_black","weight": 100},
+        {
+          "type": "item",
+          "name": "quark:candle",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_data","data": 1},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 5,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 6,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 7,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 11,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 12,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 13,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 14,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 15,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 0,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

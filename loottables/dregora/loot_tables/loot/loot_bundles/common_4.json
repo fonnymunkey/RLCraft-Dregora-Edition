@@ -1,0 +1,127 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "Common Farming Chest",
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:sapling",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 4,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_seeds",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_seeds",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 15
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
+

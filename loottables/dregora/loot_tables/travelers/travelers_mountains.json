@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_mountain_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Resourceful Mountains\",Lore:[\"x:-14881 z:-7754\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14881,z:-7754}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_mountain_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-14881 z:-7754\",Lore:[\"Vertical, down and down the shaft for at the bottom you will be met with essence of minecraft.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_mountain_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Stone Breaker\",Lore:[\"This pickaxe is super heavy, slows you down and destroys yours opponents\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 15,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": 8,
+                    "max": 15
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {"attribute": "generic.attackSpeed","name": "More Knockback","amount": {"min": -4.0,"max": -5.0},"operation": "addition","slot": ["mainhand","offhand"]},
+                {
+                  "attribute": "generic.movementSpeed ",
+                  "name": "Less Movement Speed",
+                  "amount": {
+                    "min": -0.06,
+                    "max": -0.1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armorToughness ",
+                  "name": "Less Attack Speed",
+                  "amount": {
+                    "min": -2.0,
+                    "max": -1.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "traveler_mountain_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 7
+        }
+      ]
+    }
+  ]
+}
+

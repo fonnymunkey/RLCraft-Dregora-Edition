@@ -1,0 +1,201 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "toilet_loot",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Reeking Skull \u2620\",Lore:[\"This skull deserved better...\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Stinky Skull \u2620\",Lore:[\"It reeks...\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Smelly Skull \u2622\",Lore:[\"Yugh....\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "betternether:red_mold",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Stinky Red Mold \u2620\",Lore:[\"Reeks of a dimensional fart...\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Disgusting Red Mold \u2622\",Lore:[\"It reeks of filthy corruption...\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Fleshy Mold \u2620\",Lore:[\"Brrr... Horrifying.\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:fish",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 38
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Stinky Fish Bones \u2622\",Lore:[\"Fish and Horror...\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Disgusting Fish \u26a0\",Lore:[\"Fish and Chills\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "lycanitesmobs:poopcharge",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Turd \u2622\",Lore:[\"This has gone Nuclear!\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Discharge \u203c\u2716\",Lore:[\"Yugh! Never heard of flushing!?\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "charm:suspicious_soup",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Suspicious Soup From a Ancient Toilet \u2622\",Lore:[\"Yeah...\"]}}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:brown_dye",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              
+              "tag": "{display:{Name:\"Brown Smelly Substance \u2620\",Lore:[\"Why am i even looking in here?!\u2622\u2573\u2716\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "{display:{Name:\"Brown Smelly Substance \u2622\",Lore:[\"That is disgusting!\u26a0\u2620\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "{display:{Name:\"Brown Smelly Substance \u2620\",Lore:[\"Enough toilet looting for me!\u2620\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "{display:{Name:\"Brown Smelly Substance \u2622\",Lore:[\"What else did I expect?\u203c\u2612\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "{display:{Name:\"Brown Smelly Substance \u2620\",Lore:[\"Ohh noo!\u2622\u2620 Nope, I am out!\u26a0\u2612\"]}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "advanced-fishing:fish",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 28
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Brown Fish \u2620\",Lore:[\"It came from a toilet...\"]}}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Mystery Content\",Lore:[\"Probably not Apple Juice...\"]},
+                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
+                Hideflags:32,
+                CustomPotionColor:11122688
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Apple Juice?\",Lore:[\"Looks like apple juice right?\"]},
+                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
+                Hideflags:32,
+                CustomPotionColor:11122688
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.2}],
+              "tag": "
+              {
+                display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\"]},
+                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
+                Hideflags:32,
+                CustomPotionColor:11122688
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.1}],
+              "tag": "
+              {
+                display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\",\"This one is signed by Kekistani?\"]},
+                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
+                Hideflags:32,
+                CustomPotionColor:11122688
+              }"
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

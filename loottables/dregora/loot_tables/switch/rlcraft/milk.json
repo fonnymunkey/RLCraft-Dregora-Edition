@@ -1,0 +1,115 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Infested Milk\",Lore:[\"There are bugs crawling in the milk!!!\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:10856609
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Spoiled Milk\",Lore:[\"The milk looks spoiled... Yugh.\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:13689782
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Eyeball Milk\",Lore:[\"There are Eyes in the milk!!!?\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:16777215
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Syrup Milk\",Lore:[\"Brrr Uhhll That is Disgusting!!!\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:12501694
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Poisoned Milk\",Lore:[\"This milk seems poisoned!!\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:6856299
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Moldy Milk\",Lore:[\"A green layer covers the milk.... Yeah... NOPE!\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:9424786
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Spotted Milk\",Lore:[\"Black.. Brown and Green spots in the milk?\",\"Not Drinking That!\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:11776947
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"mujmajnkraftsbettersurvival:milk\",
+                display:{Name:\"Bucket of White stuff\",Lore:[\"This can\u0027t be milk.. Can it?\"]},
+                CustomPotionEffects:[{Id:17,Duration:1800,Amplifier:9},{Id:9,Duration:1800},{Id:2,Duration:1800},{Id:18,Duration:1800}],
+                Hideflags:35,
+                CustomPotionColor:16777215
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+

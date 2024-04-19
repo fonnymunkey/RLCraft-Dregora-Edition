@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Toilet Spawns for in the City",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/rlcraft/city",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+

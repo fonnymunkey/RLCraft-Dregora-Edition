@@ -1,0 +1,152 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "Common Carpentry Chest",
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:brick_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crafting_table",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fence_gate",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_door",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:log",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:planks",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 4,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

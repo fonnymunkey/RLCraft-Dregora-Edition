@@ -1,0 +1,230 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "epic Chest",
+  "pools": [
+    {
+      "name": "Rare Mine Chest",
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:detector_rail",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_rail",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:activator_rail",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 4
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:obsidian",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:planks",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

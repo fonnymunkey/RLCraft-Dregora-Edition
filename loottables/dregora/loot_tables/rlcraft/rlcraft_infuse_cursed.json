@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Cursed Items",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_armor",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_potions",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_regular",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_tools",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_weapons",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/cursed/cursed_shields",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Chest",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:record_far",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_ward",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_cat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_13",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

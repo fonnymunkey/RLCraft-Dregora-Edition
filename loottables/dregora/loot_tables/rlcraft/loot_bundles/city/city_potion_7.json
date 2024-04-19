@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "simpledifficulty:purified_water_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Ice Tea\",Lore:[\"\u00A70\u2620\"]}
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "
+              {
+                display:{Name:\"Bottled Ice Tea\",Lore:[\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:0},{Id:17,Duration:300,Amplifier:0},{Id:15,Duration:300,Amplifier:1},{Id:10,Duration:400,Amplifier:0},{Id:9,Duration:600,Amplifier:0},{Id:4,Duration:300,Amplifier:0},{Id:2,Duration:200,Amplifier:0}],
+                CustomPotionColor:2053119,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

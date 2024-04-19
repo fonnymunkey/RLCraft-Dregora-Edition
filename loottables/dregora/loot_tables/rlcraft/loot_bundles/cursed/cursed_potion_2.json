@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Lightning Strike + Blindness & Nausia Troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:lightning\",
+                display:{Name:\"Potion of Electric Shock\",Lore:[\"§9Electric Shock (0:30)\",\"\",\"§5When Applied:\",\"§9Damage: +10%\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:15,Duration:600},{Id:9,Duration:300}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:lightning\",
+                display:{Name:\"Potion of Electric Shock\",Lore:[\"§9Electric Shock (0:30)\",\"\",\"§5When Applied:\",\"§9Damage: +10%\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:15,Duration:600},{Id:9,Duration:300}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

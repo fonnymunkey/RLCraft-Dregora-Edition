@@ -1,0 +1,268 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The tasks of the Wastelanders is as dangerous as it is vital for the survival of the shelter given to us by those who prospered before.\n\nBeyond the doors lay many dangers but our future as well and those brave enough\\\"}]\",
+                  \"[{\\\"text\\\":\\\"will be selected to travel from here to villages, outposts and shelters spread throughout the wastelands in search of knowledge, news, food and valuables which may raise our standards of living.\n\nThe most important rules for traveling to\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and from these settlements are to\n\n1. Security - always remain alert of your surroundings.\n\n2. Avoid - Avoid any life-beings. Esspecially other traveling villagers! They may be imposters.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"3. Fast - be as fast as you can be unless it becomes dark.\n\n4. Encamp - never travel at night! Always make a secure encampment.\n\nThese 4 points make up the initialism S.A.F.E.\\\"}]\"
+                ],
+                title:\"The Wastelanders Guide\",
+                author:\"Wastelanders Council\",
+                display:{Lore:[\"This book describes the task of the Wastelander within this settlement.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"--- EVACUATION ---\n\nFollow the supplied GPS coordinates to your closest shelter though the UW-APP where you will need to abandon your vehicle and follow the directions of military personel.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Upon arrival you will go down a set of stairs until you arrive at the tunnel at which you'll need to walk a few kilometers dependent on your designated shelter included in your UW-APP.\n\nProceeding calmly and listening to the local military personel is\\\"}]\",
+                  \"[{\\\"text\\\":\\\"of great importance.\n\nAt your designated shelter you will go through the blast doors which will close at the following time:\n\nWeekday: Monday\nDate: 26/04/2116\\\"}]\"
+                ],
+                title:\"Evacuation Plan\",
+                author:\"United World\",
+                display:{Lore:[\"These are copies of copies and preserve a ancient directive.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Beyond the edge of the wastelands lay the realms of no return in which few brave, some desperate but all foolish go in search of unclaimed treasure or glory.\n\nThose lands shrouded in heavy fog and silent whispers should not\\\"}]\",
+                  \"[{\\\"text\\\":\\\"be taken at face value as though dread may fill your mind upon staring into the void if one enters a worse fate awaits.\n\nIt is rumored that even till this day those who venture close can hear the screams of their predecessors.\\\"}]\"
+                ],
+                title:\"The Abbys\",
+                author:\"Unknown\",
+                generation: 1,
+                display:{Lore:[\"This book warns for a place one should avoid at all cost.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The tutors of this settlement fill the role of passing on gained knowledge through books or the words of the wastelanders.\n\nImportant for these tutors is to teach about the dangers of spreading knowledge\n\n\\\"}]\",
+                  \"[{\\\"text\\\":\\\"gained to outside trusted circles for then raiders may come and unspeakable things ensue.\n\nThe knowledge in particular often centers around artifacts and ancient documents which we should learn about but\\\"}]\",
+                  \"[{\\\"text\\\":\\\"never write down or hold in our posession for too long.\n\nThe only exception to these rules is made for the artifacts traded by the outposts for reasons debatable.\\\"}]\"
+                ],
+                title:\"The Tutors Guide\",
+                author:\"Wastelanders Council\",
+                display:{Lore:[\"This book describes the task of the tutor within this settlement.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Reclaimation day speach.\n\nToday marks our Reclaimation day for we have cleaned the corruption out of our newfound home and shall sleep sound for the doors are strong.\n\nNow we shall fix what is broken and farm what lands we have in peace.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We\u0027ve traveled under many days and survived many a nights full of terror and doom.\n\nNow it is our time to be happy if not for our sakes then for those who we lost on our way to this utopia amids the waste.\n\n19/11/6236 Saturday\\\"}]\"
+                ],
+                title:\"Reclaimation Day\",
+                author:\"Unknown\",
+                display:{Lore:[\"A copy of a copy of a old book, most pages fell out but a small note remained.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "ancient_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mall",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

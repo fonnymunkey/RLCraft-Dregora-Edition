@@ -1,0 +1,763 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "village",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Hello dear diary, it\u0027s me again! Today was a great day as I got to spend time with the smithy apprentice, he\u0027s such a nice boy. He has to see something in me doesn\u0027t he? He even made me an iron rose on which he worked for days (secretly\\\"}]\",
+                  \"[{\\\"text\\\":\\\"behind the back of the smith headmaster). I really hope he doesn\u0027t get in trouble for doing so as it was such a sweet thing to do. Oh, by the way, some weird things are going on here that I noticed on my way back home. I saw some\\\"}]\",
+                  \"[{\\\"text\\\":\\\"weird red cloaked people walking into that weird man\u0027s house. I\u0027d never seen them before so I made sure to stay hidden behind the crates on the corner of the street. I watched them carry all sorts of stuff outside and load it on their\\\"}]\",
+                  \"[{\\\"text\\\":\\\"carriage. I think I sat there for about an hour until someone poked me in the back. I don\u0027t know whether I was more scared or surprised, as when I turned around it was the weird man who lived there. He told me to be\\\"}]\",
+                  \"[{\\\"text\\\":\\\"silent and quietly follow him. On the other side of town he stopped, and then made me promise to forget what I saw, if I wanted my life to continue as it was in this town. Weird right? But alas, he\u0027s a weird person after all. Maybe there were\\\"}]\",
+                  \"[{\\\"text\\\":\\\"some people very angry at him for pulling another one of his stunts. Bye Bye Diary.\n\n \\\"}]\"
+                ],
+                title:\"Dear Diary\",
+                author:\"Esmiralda\",
+                display:{Lore:[\"A interesting page out of the diary a resident\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Often described as he who carries sticks \u0027n stones, he\u0027s our own peculiar merchant. It\u0027s rare to see him actually sell his wares as they\u0027re mostly rocks in which only he finds meaning. This rock has weird inscriptions! Do you see? I have never\\\"}]\",
+                  \"[{\\\"text\\\":\\\"seen anything like it, but if you want to unravel its secrets you\u0027ll have to buy it to take a closer look. That\u0027s his opening line, most often. However, this time he actually brought something that piqued my interest. I\u0027m one of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"the few who could identify the true nature of this device. Technically his merchandise is mostly ancient as he tries to sell rocks, but this is actually ancient and rare, as it\u0027s one of the few remaining portable interfaces\\\"}]\",
+                  \"[{\\\"text\\\":\\\"left, or as known in ancient times, a tablet. It\u0027s just like the flat stone tablets he brings, but so much more as you could store information on it. Information I would love to see, so this time around I bought it. Although for more than I was hoping.\\\"}]\"
+                ],
+                title:\"A Peculiar Merchant\",
+                author:\"Scientist\",
+                display:{Lore:[\"Precious sticks \u0027n stones.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s been several weeks and a couple gold coins further since I bought the device from the merchant. My house is currently stocked with books in which a fortune of ancient knowledge resides. They did not make a lot of sense to me but\\\"}]\",
+                  \"[{\\\"text\\\":\\\"apparently these ancients relied heavily on what can be described as lightning but not as destructive as we know it. They used it to power their machines like we use water and wind to do the same. With this knowledge I plan to build something\\\"}]\",
+                  \"[{\\\"text\\\":\\\"that does the same. Who knows, maybe I will find a way to power this device in some way...\n \\\"}]\"
+                ],
+                title:\"Ancient Device\",
+                author:\"Scientist\",
+                display:{Lore:[\"Research notes on the strange device.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Hello good sir, I leave this note as you do not seem to be here any longer. The letter has been burned as instructed by the sender if I failed to find you. If you happen to come across this note it is very urgent that you contact the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"teacher in the southern capital. He explicitly told me you are in grave danger and should act immediately as your life depends on it.\n \\\"}]\"
+                ],
+                title:\"Undelivered\",
+                author:\"Messenger\",
+                display:{Lore:[\"Message for the Scientist\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Those pesky red cloaked guys, what do they think, threatening me, the famous thief! Nevertheless they are to be considered a dangerous force, something even I can\u0027t escape from. I don\u0027t feel well about this task. Something big is happening\\\"}]\",
+                  \"[{\\\"text\\\":\\\"here which is why they approached me, of course, because I am The Thief. If you read this I will no longer be among the people, which is why I prepared this note and hid it for someone to find. Watch out for those who call themselves red. They\\\"}]\",
+                  \"[{\\\"text\\\":\\\"have been here for a long time and will still be in the future.\n\n \\\"}]\"
+                ],
+                title:\"Last note\",
+                author:\"The Thief\",
+                display:{Lore:[\"A last note from a thief.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "village_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:banner",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 4,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 6,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 7,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 8,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 9,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 11,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 12,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 13,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 14,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:egg",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:trapped_chest",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:anvil",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:armor_stand",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

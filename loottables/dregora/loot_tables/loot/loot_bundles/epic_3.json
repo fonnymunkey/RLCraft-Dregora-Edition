@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "epic Chest",
+  "pools": [
+    {
+      "name": "Epic Treasure Chest",
+      "rolls": {
+        "min": 5,
+        "max": 10
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Amulet of Protection\",Lore:[\"Holding the nugget in your off-hand makes you feel sturdy.\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:0,lvl:1}]}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "luck",
+                  "amount": {
+                    "min": 1,
+                    "max": 3
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                  "vanishing_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                  "binding_curse"
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                  "aqua_affinity",
+                  "bane_of_arthropods",
+                  "blast_protection",
+                  "binding_curse",
+                  "vanishing_curse",
+                  "depth_strider",
+                  "efficiency",
+                  "feather_falling",
+                  "fire_aspect",
+                  "fire_protection",
+                  "flame",
+                  "fortune",
+                  "frost_walker",
+                  "infinity",
+                  "knockback",
+                  "looting",
+                  "luck_of_the_sea",
+                  "lure",
+                  "power",
+                  "projectile_protection",
+                  "protection",
+                  "punch",
+                  "respiration",
+                  "sharpness",
+                  "silk_touch",
+                  "smite",
+                  "sweeping",
+                  "thorns",
+                  "unbreaking"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

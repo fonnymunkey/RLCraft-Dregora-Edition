@@ -1,0 +1,103 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "LEVEL 0 LOOT",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:pike_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:lance_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:longbow_leather",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:crossbow_leather",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:throwing_knife_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:throwing_axe_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:javelin_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:boomerang_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:battleaxe_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:mace_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.20,"max": 0.90}},
+            {"function": "enchant_with_levels","levels": 1,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
+

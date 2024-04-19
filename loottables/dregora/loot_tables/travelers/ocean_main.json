@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "always_spawn",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Travelers Compass\",Lore:[\"The compass has a inscription on the back\nFollow the pointed path and wonders await.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_castle",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_castle",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_church",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_daeroc",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_farmstead",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_greendungeon",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_iceships",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_icetemple",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_legacyspawn",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_mineshafts",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_mountains",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_origin",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_pirate",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_quarry",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_spook",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/oceans_tribal",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

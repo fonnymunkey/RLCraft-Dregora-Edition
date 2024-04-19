@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:water\"
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "
+              {
+                display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:2,Duration:300,Amplifier:3}],
+                CustomPotionColor:2053119,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:mundane\"
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:thick\"
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

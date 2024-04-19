@@ -1,0 +1,201 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "epic Chest",
+  "pools": [
+    {
+      "name": "Epic Mine Chest",
+      "rolls": {
+        "min": 5,
+        "max": 10
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Lucky Nugget\",Lore:[\"Holding the nugget in your off-hand makes you feel lucky.\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.1,
+                    "max": 0.2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace_minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 10
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

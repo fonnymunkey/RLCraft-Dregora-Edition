@@ -1,0 +1,72 @@
+{
+  "pools": [
+    {
+      "name": "brutal coin pool",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "weight": 1,
+          "type": "item",
+          "name": "variedcommodities:ancient_coin"
+        }
+      ]
+    },
+    {
+      "name": "Dragon Pool",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "iceandfire:dragon/lightning_dragon_female",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "cursed_pool",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/epic_loot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:coin_gold",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_legendary",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_daeroc_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Kingdom of Daeroc\",Lore:[\"Area Around x:-14697 z:-3491\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14697,z:-3491}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_daeroc_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-14697 z:-3491\",Lore:[\"Capital on the hill.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_daeroc_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 4
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

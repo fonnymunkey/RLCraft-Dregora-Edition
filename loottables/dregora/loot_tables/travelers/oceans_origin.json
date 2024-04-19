@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_origin_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Medieval City, ORIGIN\",Lore:[\"Area Around x:-16972 z:5231\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-16972,z:5231}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_origin_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-16972 z:5231\",Lore:[\"Stronghold in the ocean where no corrupted roam, except for those below.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

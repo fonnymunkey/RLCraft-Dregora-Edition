@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "gilded_sword_4",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Gilded Sword\",Lore:[\"The sword feels warm to the touch\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:34,lvl:1},{id:20,lvl:1},{id:17,lvl:5},{id:18,lvl:5}],HideFlags:3,RepairCost:100}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.9
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 0.0,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_base",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armor",
+                  "name": "attackSpeed",
+                  "amount": {
+                    "min": -0.01,
+                    "max": -0.1
+                  },
+                  "operation": "multiply_base",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "gilded_book_1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Yugi\u0027s Grave\"}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.1
+                  },
+                  "operation": "multiply_base",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "multiply_base",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

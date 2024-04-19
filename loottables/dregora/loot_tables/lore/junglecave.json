@@ -1,0 +1,355 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglecaves",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Cave 1AB turn 15.\nDead ends not noted.\n\nC1 - Eyes\nC2 - Dangerous\nC3 - Ruins? Corruption?\nC5 - Connection\nC8 - Burial\nC55 - Trap\n\nNo Escape in B1-187 A-881 C to 55. Book 3.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"████▒▒▒▒▒▒██████\n████▒▒▒▒▒▒██████\n█████▒▒▒▒▒██████\n██████▒▒▒▒██████\n██████▒▒▒▒▒█████\n██████▒▒▒▒▒██▒▒▒\n█████▒▒▒▒▒▒▒▒▒▒▒\n█████▒▒▒▒▒▒▒▒▒▒▒\n████▒▒▒▒▒▒▒▒▒▒▒▒\n████▒▒▒▒▒▒▒▒▒▒▒▒\n████▒▒▒▒▒▒███▒▒▒\n████▒▒▒▒▒▒█████▒\n███▒▒▒▒▒▒▒▒█████\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"█████████▒██████\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█\n██████████████▒█\n██▒▒▒▒▒▒▒▒▒▒▒▒▒█\n██▒█████████████\n▒▒▒███▒▒▒▒▒▒▒▒▒▒\n██▒███▒█████▒███\n██▒▒▒▒▒█████▒███\n██▒███████▒▒▒▒██\n██▒█▒▒▒▒▒▒▒█████\n▒▒▒█▒███▒▒██████\n████▒████▒▒▒▒▒▒▒\n████▒███████████\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"███████▒▒▒▒▒▒▒██\n███████▒▒▒▒▒▒███\n████████▒▒▒▒████\n████████▒▒▒█████\n████████▒▒▒▒████\n████▒▒▒▒▒▒▒▒████\n██▒▒▒▒▒▒▒▒▒▒████\n▒▒▒▒▒▒▒▒▒▒▒▒████\n▒▒▒▒▒▒▒▒▒▒▒▒████\n▒▒▒▒▒██▒▒▒▒▒▒▒██\n▒▒▒██▒▒▒▒▒▒▒▒▒▒▒\n██████▒▒▒▒▒▒▒▒▒▒\n██████▒▒▒▒▒▒▒▒▒▒\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"████████████░░░░\n████████░░░░░░░░\n░░░░██░░░░░░┼░██\n███░░░░░██░░░░██\n█████░░░░░░█████\n██████░░░░░█████\n███████░░░░░████\n███████░░┼░░░███\n█████░░░░░░░░░██\n██░░░░░░░██░░░██\n█░░░░░██████░░██\n░░░░████████░░░█\n░████████████░░\\\"}]\",
+                  \"[{\\\"text\\\":\\\"██▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n███▒▒▒▒▒▒▒▒▒▒▒██\n███▒▒▒▒▒▒▒▒▒▒███\n████▒▒▒▒▒▒▒▒▒███\n█████▒▒▒▒▒▒▒████\n█████▒▒▒▒▒▒▒████\n████▒▒▒▒▒▒▒█████\n████▒▒▒▒▒▒▒█████\n███▒▒▒▒▒▒▒▒▒████\n████▒▒▒▒▒▒▒▒▒███\n███▒▒▒▒▒▒▒▒▒▒███\n█▒▒▒▒▒▒▒▒▒▒▒▒▒██\n▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"████████████████\n████████████████\n███▒███████▒▒███\n███▒▒▒███▒▒▒▒███\n████████████████\n██▒██████████▒▒█\n██▒▒▒███████▒▒▒█\n██▒░▒██████▒▒█▒█\n██▒█▒▒████▒░░█▒█\n██▒▒█▒▒▒▒▒██░█▒█\n███▒██░██░█░█▒▒█\n███▒▒▒░█▒▒▒▒▒▒██\n█████▒▒▒▒███████\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"╔═══╦═══╦═══╦═══╗\n╚╗╔╗║╔══╣╔═╗╠╗╔╗║\n█║║║║╚══╣║█║║║║║║\n█║║║║╔══╣╚═╝║║║║║\n╔╝╚╝║╚══╣╔═╗╠╝╚╝║\n╚═══╩═══╩╝█╚╩═══╝\n██░░░░░░░░░░░░░░░\n██████░░██████░░█\n████░░░░░░░░░░░░█\n██░░░░░░░░░███░░█\n███░░██░░░░░░░███\n██░██░░███░░░███▒\n░░░██░░░░░███████\n\n \\\"}]\"
+                ],
+                title:\"Spelunker\u0027s Notebook\",
+                author:\"Spelunker\",
+                display:{Lore:[\"A book with illustrations and some notes. most likely written by a spelunker.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"╬╬╬╬╬╬╬╬╬╬\n╬███╬█████╬ C\n╬███╬█████╬\n╬███╬╬╬╬╬╬╬\n╬████████╬╬\n╬████████╬╬ A\n╬╬╬╬╬╬╬╬╬╬\n╬████╬████╬ 2\n╬████╬╬╬╬╬╬ 1\n╬█████████╬ 0\n╬╬╬╬╬╬╬╬╬╬  3\n╬█████████╬\n╬╬╬╬╬╬╬╬╬╬\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\n\n\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\n\n\n███████\n██░░░░█\n███████\n██░░░░█\n███████████\n█░░░░░░░░░█\n███████████\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\\\"}]\"
+                ],
+                title:\"Book of Builds\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book has it\u0027s title pressed in. The written words and illustrations have been faded over \"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\\\"}]\"
+                ],
+                title:\"Encyclopedia\",
+                author:\"unknown\",
+                display:{Lore:[\"A Dusty, blank book which title says Encyclopedia.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"###################\n   Prospect Notes\n###################\n\n1. Index\n2. Temperate\n3. Rainforest\n4. Wastelands\n5. Frozen\n6. Glossary\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lTemperate Resources\u00A7r\n-------------------\n- Diamonds (A)\n- Iron (A)\n- Emerald (A)\n- Coal (A+)\n- Gold (A-)\n- Redstone (A)\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lRainforest Resources\u00A7r\n-------------------\n- Diamonds (A-)\n- Iron (A-)\n- Emerald (A-)\n- Coal (A-)\n- Gold (A+)\n- Redstone (A)\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lWasteland Resources\u00A7r\n-------------------\n- Diamonds (A---)\n- Iron (A-)\n- Emerald (A-)\n- Coal (A-)\n- Gold (A-)\n- Redstone (A++)\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7l  Frozen Resources\u00A7r\n-------------------\n- Diamonds ??\n- Iron ??\n- Emerald ??\n- Coal ??\n- Gold ??\n- Redstone ??\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7l      Glossary\u00A7r\n-------------------\n(A) \u003d Avarage\n(A+) \u003d Above Avarage\n(A-) \u003d Below Avarage\\\"}]\"
+                ],
+                title:\"Northmen\u0027s Prospecting\",
+                author:\"Northmen\",
+                display:{Lore:[\"A detailed log about valuables. Knowledge worth knowing.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"#-#-#-#-#-#-#-#-#-#\n     Biome Notes\n#-#-#-#-#-#-#-#-#-#\n\n1. Index\n2. Introduction\n3. Temperate\n4. Hot Moist\n5. Dry Hot\n6. Dry Cold\n7. Oceanic\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lIntroduction\u00A7r\n-------------------\nIf anyone finds this book, I am D\u0027kar Origins and I am a adventurer with a interest for nature\u0027s work. Such as the Jotumheim Caves to the south or the mighty mountains to the north east.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lTemperate Climate\u00A7r\n-------------------\nI started traveling from the southern part of what we call the Highlands and ventured north. Here i saw mountains, rich in resources and ancient structures. Some of which seem to have been made from casted rock.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lHot Moist Climate\u00A7r\n-------------------\nCurrently, I find myself in the Rainforest, a moist hot climate zone rich in fresh water and a whole different climate zone below the surface that somewhat resembles a swamp.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lDry Hot Climate\u00A7r\n-------------------\nA most harsh zone with huge strangely shaped rocks that are hollow and strangely stable for their size and shape. This climate is rich when it comes to the Dregorian history but lacks everything else.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lCold Dry Climate\u00A7r\n-------------------\nCold, Barren... I didnt had much of a chance to explore any further as hordes of corrupted wandered the ice. Perhaps it is best to venture forth and forget about this place.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lOceanic Climates\u00A7r\n-------------------\nI never even dreamt about writing a oceanic climate entry. However to my suprice the oceans have a huge micro climate zone underneath the fast body of water. A whole cave system at that!\\\"}]\"
+                ],
+                title:\"Adventurer\u0027s Diary\",
+                author:\"D\u0027kar Origins\",
+                display:{Lore:[\"This book contains basic information on biomes.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglecaves_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}"
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:potion\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

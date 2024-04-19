@@ -1,0 +1,300 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"After spending over a thousand years in space we returned to Earth knowing that since the time of departure approximately 1100 years had passed. Expecting to be welcomed by a thousand voices, we were met with silence.\n\n\\\"}]\",
+                  \"[{\\\"text\\\":\\\"For a long time we came up with all manner of theories but none had prepared us for what we saw once in range of Earth: A desolate Mars-like planet with wide deserts and no communications whatsoever. What happened to the Earth?\\\"}]\"
+                ],
+                title:\"The Encounter\",
+                author:\"Navigational Officer\",
+                display:{Lore:[\"A old book, signed by the Dregorian Voyager navigational officer\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"After scanning the world, a viable spot revealed itself containing a small ocean, or perhaps a big lake. The board gathered and voted. The decision to start over on this planet was unanimous and preparations began.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Meanwhile, our scientists shocked us by announcing the actual date, accounting for time dilation due to relativity. It\u0027s now the year 6156 (give or take a couple months), close to 4000 years later! Much longer than we initially thought.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"But what happened? As an ecologist, I assure you even a hundred thousand years couldn\u0027t explain the strange creatures roaming the planet. Oddly, I note this strange new life seems diminished wherever there is water...\\\"}]\"
+                ],
+                title:\"Logbook\",
+                author:\"Ecologist\",
+                display:{Lore:[\"An old book signed by a Dregorian Ecologist\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Year 6236, 80 years after the arrival of the Dregorian Voyager and we have settled in a valley now known as Dregora. There are no traces of our green Earth reclaiming the Endlands beyond Dregora yet, but we keep our hopes up.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"All things considered, we are grateful for this small pearl of life. Beyond the edge of Dregora the biggest monsters roam in large numbers while they pop up here only sparingly. If only we still had the Dregorian Voyager slaying these would have been trivial.\\\"}]\"
+                ],
+                title:\"Soldier\u0027s Diary\",
+                author:\"Soldier\",
+                display:{Lore:[\"An old book signed by a Dregorian Soldier\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It is year 2300 or 8537 according to the ancient books from the Great Library. The deck boards of my ship, the Dregorian Voyager, creak under my feet as we ready to hoist the sail.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Today is Dregorian Founder\u0027s Day, which we celebrate in honor of the arrival. This time around it was up to me to carry on the ancient knowledge as part of our tradition.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I never took an interest in the weird structures in the wastelands, however reading the ancient books piqued my curiosity. The books told me they were once huge villages equal or greater than the size of kingdoms with millions of people living in\\\"}]\",
+                  \"[{\\\"text\\\":\\\"them with flying machines and more. It\u0027s hard to believe we once lived in such a place before the monsters arrived. It makes me question what kind of secrets and treasures still remain hidden in the lands beyond.\\\"}]\"
+                ],
+                title:\"Captain\u0027s Log\",
+                author:\"Dregorian Captain\",
+                display:{Lore:[\"An old book signed by the captain of the Dregorian Voyager\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It is now several months since I made the decision to go on a journey to the lands beyond, also known as the Endlands. So far on my journey I\u0027ve found several logbooks in ancient structures. Some of these structures are taken by the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"corrupt monsters from ancient times. It\u0027s strange to find so many logbooks within these ruins - maybe they\u0027re being collected by the evil entities guarding those places.\\\"}]\"
+                ],
+                title:\"Adventurer\u0027s Log\",
+                author:\"Khaldir Murdok\",
+                display:{Lore:[\"A lost note from Khaldir\u0027s Log.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "ancient_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mellohi",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mall",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_13",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_ward",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_blocks",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_charge",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_horse_armor",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

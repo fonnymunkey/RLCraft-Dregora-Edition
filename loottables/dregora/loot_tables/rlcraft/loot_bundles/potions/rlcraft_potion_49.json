@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "RLCraft Potions",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"potioncore:revival\"}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

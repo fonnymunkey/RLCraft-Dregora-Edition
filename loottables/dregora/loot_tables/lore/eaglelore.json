@@ -1,0 +1,324 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "eaglelore",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Not only have i seen true horrors of day past, not only have I seen humankind fall long before I sailed these waters where few venture to join the armies of what would make me. A dreaded soul with many an era\u0027s burned within my dark eyes. Here i patrol these waters\\\"}]\",
+                  \"[{\\\"text\\\":\\\"stopping them from joining the armies until the one arrives. \n\nMay you find my book, may you end my nightmare you shall surely be powerful enough to venture further, until the horizon where dead man roam the eternal wasteland.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Walk and you shall find what happened to this Earth, you shall find the truth of these lands of Dregora in which true horrors were born.\n\nVenture forth, venture deep and beyond for thou shall find the truth.\\\"}]\"
+                ],
+                title:\"My Undead Curse\",
+                author:\"- Heaven, The Wise -\",
+                display:{Lore:[\"Book of Heaven\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The wet streets reflected the mighty skyscrapers as the rain made sure to not leave a inch of dry concrete. Everyone hated it when the skies turned dark and secretly wished for an environmental control center like they had in the world cities. Being a true rebel I remember\\\"}]\",
+                  \"[{\\\"text\\\":\\\"loving the touch and feel of the rain as grumpy townsfolk mostly just complained either silently or with their expressions. Lost in thoughts i walked the streets and passed a club where young ones danced to futuristic tunes. A couple such persons ran out to the streets and\\\"}]\",
+                  \"[{\\\"text\\\":\\\"enthusiastically started dancing in the rain. And here I thought I was the madman for having the biggest smile during such weather. It was within those moments where magic became reality. And thus as I stood still to witness wonders happen I too started dancing, from\\\"}]\",
+                  \"[{\\\"text\\\":\\\"deep within only to be seen by those who would look me into the eyes as they tell true stories. And as we all danced in one moment it vanished in the next. The world snapped, swallowing the mighty skyscrapers plundering down to earth crushing those who danced on the strees and within.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It was the end of times where those born a minute earlier already passed into what became after. A gruesome day for which was no time to cry as we fled this last city on earth for all others had already fallen to the Blight. A true monster of catastrophes\\\"}]\",
+                  \"[{\\\"text\\\":\\\"illuminating the skies with a mesmerizing dancing red light. It\u0027s ironic how this light filled the skies as humankind came to the brink of extinction. Almost as if there was a reason to celebrate.\n\nSafety was found behind the doors of our most indestructible\\\"}]\",
+                  \"[{\\\"text\\\":\\\"structures designed to keep us safe from ourselves. Hidden away in the mountains where thousands managed to flee as the corruption started to leak to Earth, the world we called ours as if it was ours to give. Ha, what a Joke is what I thought long after we closed all doors leading to that\\\"}]\",
+                  \"[{\\\"text\\\":\\\"world roamed by the corrupted, feasting on each other.\n\nAnd while they feasted on the ones we loved we remained there, starving as our crops didn\u0027t grow, neither did any water flow. Months passed as we slowly dropped until it was enough and as we\\\"}]\",
+                  \"[{\\\"text\\\":\\\"opened the doors our end was met. The big feast begun where I lost my love and became hatred itself. With a few we survived, corned but alive and thought up a plan to defeat the corrupted for once and for all. Days without end we did research in the hopes finding\\\"}]\",
+                  \"[{\\\"text\\\":\\\"a weapon, how human like. For weeks we thought only about destroying until slowly but surely we learned to embrace as with the curse of the corruption came immortality in it\u0027s darkest form.\n\nThat was the last thing we as humans would ever learn and thus we\\\"}]\",
+                  \"[{\\\"text\\\":\\\"decided nobody should learn ever after as the corruption was ours to begin with. The corruption of the human mind causing the end of this green world. A world upon which the blight has been released by our most talented scientist looking for a way to take even more\\\"}]\",
+                  \"[{\\\"text\\\":\\\"while we had been given so much already. From that day and forth we would call ourselves the RedClan which vowed to destroy all technology to give the world a chance to regain it\u0027s former glory. Entire centuries passed as we created a small utopia on earth where no\\\"}]\",
+                  \"[{\\\"text\\\":\\\"humans lived until the skies cracked under the deafening noise of turbine engines. The Dregorian Voyager had seated itself in the middle of the utopia and the first thing they did was claiming it once again as if it was theirs.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"And so we watched and intervened as they crossed borders ultimately leading to another possible blight. And thus as technology was lacking the farmers and castle\u0027s of old ages returned. Ships started venturing out and cities where created using pure workforce.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A peaceful yet hard era in which humankind prospered once more until a betrayal happened where many a man fell to the wrath of a corruption originating from within our own ranks. Ships where sunk and cities fell once again. Sick of a repeating the past the tree of us left\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and had forsaken the vows we made as we traveled the seas in search for the one that would conquer us. Only then they may venture forth and find the truth about what happened that day.\\\"}]\"
+                ],
+                title:\"The world of days past\",
+                author:\"- Eagle, The Founder -\",
+                display:{Lore:[\"Book of Eagle\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"As others wrote their book for those who came after, some telling the story of now, others telling the story of past days I will look to the horizon and witness the future in which neither old or current day will return.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Neither will hatred, corruption or love as all that has a begin will have it\u0027s end.\\\"}]\"
+                ],
+                title:\"As ends bring salvation\",
+                author:\"- Sam, - The Knowledgeable -\",
+                display:{Lore:[\"Book of Sam\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "eaglelore_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_hoe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 4
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fireworks",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

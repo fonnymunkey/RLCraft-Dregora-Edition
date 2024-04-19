@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Healing\",Lore:[\"\u00A7r\u00A79Instant Health III          \u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:17,Duration:600,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:6,Duration:40,Amplifier:2},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,Amplifier:2,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:16524580,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

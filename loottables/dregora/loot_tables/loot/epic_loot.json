@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Epic Chest",
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_tools",
+          "weight": 15
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_chaos",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_potions",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_arrows",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_web",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "Epic Chest",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_1",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_2",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_3",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/epic_4",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

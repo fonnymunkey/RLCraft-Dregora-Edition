@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of Weakness\",Lore:[\"A weakness overcomes you as you wield the item.\"]}}",
+              HideFlags:3
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": -0.85,"operation": "multiply_total","slot": ["offhand","mainhand"]},
+                {"attribute": "generic.maxHealth","name": "armorToughness","amount": -0.25,"operation": "multiply_total","slot": ["offhand","mainhand"]},
+                {"attribute": "generic.attackSpeed","name": "attackSpeed","amount": -0.05,"operation": "multiply_total","slot": ["offhand","mainhand"]},
+                {"attribute": "generic.movementSpeed","name": "attackDamage","amount": -0.05,"operation": "multiply_total","slot": ["offhand","mainhand"]},
+                {"attribute": "generic.attackDamage","name": "attackDamage","amount": -0.9,"operation": "multiply_total","slot": ["offhand","mainhand"]}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

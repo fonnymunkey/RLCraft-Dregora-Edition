@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cake",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chicken",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:porkchop",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beef",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:egg",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_pie",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 15
+        }
+      ]
+    }
+  ]
+}
+

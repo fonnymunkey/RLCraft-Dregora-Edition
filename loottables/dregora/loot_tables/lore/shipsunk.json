@@ -1,0 +1,367 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "shipsunk",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Day 1:\nSeveral months have passed since we escaped the Dungeon. I keep saying \u0027we\u0027 but I think I never really left that place. My wife passed away, or at least what was left of her, as she underwent horrible moments that felt like years within that\\\"}]\",
+                  \"[{\\\"text\\\":\\\"damned place. I felt it too, staying much longer would have meant the end of me as well.\n\nSo I decided to venture out to seek meaning for all of this, a greater purpose, as I have lost faith.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Day 2:\nThere\u0027s a storm raging over the seas, the captain says it\u0027s bad and we should steer clear from this freak of nature. Something within me does not really care. It\u0027s not that I have given up on everything. No, shame would fall upon our names if I\\\"}]\",
+                  \"[{\\\"text\\\":\\\"would cowardly take my own life. Yet there is this feeling that whispers to me telling me to destroy it all.\\\"}]\"
+                ],
+                title:\"The Last Journey\",
+                author:\"Elithr\",
+                display:{Lore:[\"A bitter note.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"May fortune smile upon us.\n\nOur drinks reach high and our songs fill the nightly sky.\n\nThis may be our last feast, for we the chosen few might not return.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A great journey lies in front of us as we drink rum while sailing across the rift. A dangerous land as the old tales tell, full of ancient monsters. But with the fortune promised to us we sail brave with our precious cargo towards a small trading post.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"However, tales are tales and may not be fact so we are the wiser to worry about the foul pirates which are certain to sail on these waters. Cutthroats, murderers and all kinds of filth.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"According to the messengers they were last seen near the Frozen Tides, a northern land of ice in which the whales are being hunted. This was a month ago, approximately the time they would need to lay down an ambush in the ocean\u0027s fog\\\"}]\",
+                  \"[{\\\"text\\\":\\\"which is all too common in this area. I\u0027d rather not think about how they circle round and round their prey loaded with gold, silver and most of all rum. If there ain\u0027t no booze it ain’t worth it. Which is why we, the dogs, and even the parrots are\\\"}]\",
+                  \"[{\\\"text\\\":\\\"drifting on the seventh wave to Valhalla.\n\nHowever this time is the first time I have something that worries me even more then those nasty pirates...\n\n\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"What resides in that box which they carried on board at night before our hasty departure? What is that noise...\\\"}]\"
+                ],
+                title:\"Jinxed\",
+                author:\"Sanguine\",
+                display:{Lore:[\"The last written entry of a sailors diary.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Cold rain and strong gusts torment the sailors as they attempt to raise the sails in preperation for the coming storm. It\u0027s evening and the sun dissapeared in what probably would become a long slumber as the night would not be kind to us. \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Or so we tought because as we jelously watched the sun tuck in we storm also faded away as quickly as it had came. A fog rolled in and the sea became a mirror. Something unn atural is happening is what nobody said but everyone tought. We, all of us\\\"}]\",
+                  \"[{\\\"text\\\":\\\"were silent as our breath was taken away from us. Something was here and then it appeared, dim at first slowely growing until it was a monsterous beuty of illumination. As if a thousand silver swords were scattered along the sea bed\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Silver and gold from a thousand shipwrecks lay down below us. Nature be doomed if we let this slip and so we carried the swords on board, many light as a feather, earrings, necklaces of gold, emerald and lapis like never seen before\\\"}]\",
+                  \"[{\\\"text\\\":\\\"And as we dove down again no teasure was seen, just wood, rot and dispear as the sea became angry again. The storm was back but we were unfazed as we gained a fortune or so we tought as this entry will be my last for the treasures\\\"}]\",
+                  \"[{\\\"text\\\":\\\"were cursed, for the treasures were no treasures at all but the embodyment of rot and slumbering greed. A greed that will surely take us down before we arrive home again.\\\"}]\"
+                ],
+                title:\"Restless waves and glistering ocean floors.\",
+                author:\"Unknown\",
+                display:{Lore:[\"Greed will be their downfall.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Ship Manifest:\n\n\u00A7lOres:\u00A7r\n330 LBS Unrefined Coal Dest: Sailors Camp\n\n110 LBS Unrefined Uranium\nDest: Westport 15\n\n452 LBS Iron Ingots Dest: DawnCliff Smithy\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lPerishable:\u00A7r\n820 LBS Wheat\nDest: Port Karim\n\n256 LBS Fruit\nDest: Port Karim\n\n\u00A7lPassengers:\u00A7r\nLudwig Heathrow\nElithr Raven\\\"}]\"
+                ],
+                title:\"Dregorian\u0027s Voyager VII Manifest\",
+                author:\"Captain Hawk\",
+                display:{Lore:[\"A Manifest of a ship named after the Dregorian Voyager.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Day\u0027s pass by, day after day every one different from one another among which most forwards, others back and some like a summer breeze in which sitting at the shore seems like a timeless activity. These are the days which matter when all\\\"}]\",
+                  \"[{\\\"text\\\":\\\"time\u0027s feeling collide at a single moment in time like a calm yet powerful storm of both happiness and sorrow. Would you recognize this? If so be happy, feel warm and enjoy these moments when you are true to yourselves. True as an anchor\\\"}]\",
+                  \"[{\\\"text\\\":\\\"holding you in place when the storm hits instead of taking you to the unknown and dark places which lay in wait looking at you. Waiting until you are weak to strike you down.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Never again is what most would say but wait, stop and think for once. Feel for once as even unhappy feelings are still feelings.\n\n- Not all storms are bad -\n\n \\\"}]\"
+                ],
+                title:\"Thunder Storm\",
+                author:\"Joshua\",
+                display:{Lore:[\"Poem by Eagle\u0027s Claw.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "shipsunk_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched gunpowder\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Leather\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dark_oak_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Wheat\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Redstone Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Coal Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Gold Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Lapis Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Emerald Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Drenched Iron Ore\",Lore:[\"Very wet but still usable.\"]}}"
+            }
+          ],
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}
+

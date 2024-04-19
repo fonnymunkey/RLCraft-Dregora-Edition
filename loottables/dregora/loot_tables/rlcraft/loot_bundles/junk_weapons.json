@@ -1,0 +1,93 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "LEVEL 0 LOOT",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:dagger_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:longsword_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:katana_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:saber_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:rapier_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:greatsword_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:hammer_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:warhammer_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:spear_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:halberd_stone",
+          "weight": 1,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.05,"max": 0.20}}
+          ]
+        }
+      ]
+    }
+  ]
+}
+

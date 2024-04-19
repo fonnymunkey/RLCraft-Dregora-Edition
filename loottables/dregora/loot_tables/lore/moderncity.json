@@ -1,0 +1,475 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "moderncity",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It has been several days up top since I left the safe confines of the underground colony and despite the horrors that roam around I couldn\u0027t resist the urge to climb these massive towers which once seemed to be mighty\\\"}]\",
+                  \"[{\\\"text\\\":\\\"settlements as these structures contain remanants of beds, cabinets... living spaces I think.. Some even contain chests with valuables inside such as old grimoires containing spells and the likes.\\\"}]\"
+                ],
+                title:\"Pillars of Heaven\",
+                author:\"Scavenger\",
+                display:{Lore:[\"The journey of a scavenger and some of their findings.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Weeks had passed in the sandy waste... Not sure where I find myself in, these towers that climb higher then anything I had seen before provide for some shelter and safety... Down below are these things that.. I just can\u0027t explain.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I have tried finding my way out but I don\u0027t know where to go... When I venture out this complex of towers I find myself in the waste again without end... These unspeakable monsters... I just want to go home.. Yes just home.\\\"}]\"
+                ],
+                title:\"Wasted Earth, Bones and Death\",
+                author:\"Explorer\",
+                display:{Lore:[\"The story of a explorer gotten lost.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Locked away in the building that will become my grave... I realize this now as I am being surrounded by evil digging their way to my safe haven as the time ticks away.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"These are my last moments on this earth and I have made my peace with it...\n\nMay it be a quick end...\\\"}]\"
+                ],
+                title:\"The end of my days\",
+                author:\"Unknown\",
+                display:{Lore:[\"The final scribbles of someone unable to escape.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Tunnels, I had to run.. they are infested with those foul beasts but there are tunnels everywhere underneath connecting everything. What was this place? It seems like it was a huge settlement of sorts but without any defences..\\\"}]\",
+                  \"[{\\\"text\\\":\\\"just open space.. Does this mean there was a past without the monsters? The old viking tales also tell about such a story... Is it true then that there once was a ship that could fly and came from above? I can\u0027t imagine such things..\\\"}]\",
+                  \"[{\\\"text\\\":\\\"There is just too much, too much possibilities.. I had heard about the people clad in red and black and even had one one them following me once. Does it hold any relation to the mark in the viking\u0027s book of law?\\\"}]\",
+                  \"[{\\\"text\\\":\\\"What stories lay hidden below everything that seems? This world has more to tell then the eye meets. I wonder what.\n\nThere must hav... The writing suddently stops.\\\"}]\"
+                ],
+                title:\"Skeletons of the past\",
+                author:\"Archaeologist\",
+                display:{Lore:[\"A stained notebook by a archaeologist\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"In this chest you will find a book imbued by magic... I went through high and low to get my hands on it, chased by countless horrors up the stairs until no stairs were left and down again. The holdings of this chest\\\"}]\",
+                  \"[{\\\"text\\\":\\\"slowed me down, down so much that I can\u0027t escape the horde no more and thus I leave this for you, may you be wise and take the best of treasures or have the strength to carry it all but be quick as eyes are watching you all.\\\"}]\"
+                ],
+                title:\"The Demise of a looter\",
+                author:\"Unknown\",
+                display:{Lore:[\"The last will of a foolish person.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "moderncity_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:firework_charge",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fireworks",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 1
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 13
+        }
+      ]
+    }
+  ]
+}
+

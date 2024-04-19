@@ -1,0 +1,479 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "frozen",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Dear Peter,\n\nI know I promised to return home before Christmas but the weather does not seem to be in our favour. We fear there is a storm brewing so decided to make a detour along colder regions before we set course to our destination.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"This will add a few more weeks to our voyage for which I am sorry as I know how much you look forward to Christmas. So how about in the new year we go on a hunting trip together? Perhaps if you eat well enough, get strong and listen to your mother I\u0027ll let\\\"}]\",
+                  \"[{\\\"text\\\":\\\"you handle my bow! Once I arrive at the destination I will try to look for some gifts to bring back as well. It can\u0027t be too big because the captain would notice but perhaps some little trinkets will miss his ever watchfull eye.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"If you and your friends are planning to go sledding before my return please do be carefull as I fear this year\u0027s winter will be a harsh one. Also take care of your sister for me please you know how busy your mother is with the farm.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Tell her pa loves her and is going to bring back a nice warm scarf for both her, you and my dear.\n\n\n\n\nLove,\nYour Dad\\\"}]\"
+                ],
+                title:\"Unsend letters\",
+                author:\"Unknown\",
+                display:{Lore:[\"An frozen book. The pages are unreadable but folded inside remains a letter.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Lost at the solid white sea as we hacked away at the ice in a race against time to save the ship in a battle against what seemed like a ancient monster deadset on taking us and the ship for thropies for ever to be frozen in both time and place.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Low rumbling and growling sometimes filled the white plains around us which before moments was a calm ocean. Tormented by the idea of a hungry beast that is either the ice breaking and forming or a monster of unknown origins. Never had we heard of beasts\\\"}]\",
+                  \"[{\\\"text\\\":\\\"roaming these particular lands but sometimes people did went missing.. Lost or something else?\n\nLoud noises broke the silence, this wasn\u0027t the famillair sound of breaking ice but something much bigger and then it appeared.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A huge monster clad in white with razor sharp claws. One and then Two of the crew where slashed apart before everyone made it inside of the creaking ship as if the ship itself were afraid as well. And as soon as we turned around we saw a glimse of he bodies being dragged away.\\\"}]\"
+                ],
+                title:\"White Death\",
+                author:\"Unknown\",
+                display:{Lore:[\"A red stained frozen book of which half seems to be missing.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Day 577\n\nWe landed before the coast made of ice and gathered all the tools for our expedition. In the distance we could make out some mountains which we ventured towards in the hope for a forests or more lush environment.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It is night now, we had found a cave to shelter out the storm that formed next to the mountains. Further in seems to consist solely out of ice.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Day 579\n\nIt has been many hours, probably a day or maybe even two... Yes probably two days. We woke up and a few of us were missing on the night of day 577. As we investigated we found trails of a thing...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A beast dragging our comrades away towards the outside of the caverns. As we went back to the camp we found more trails, new ones leading towards the cave and just at that moment we heard the echo\u0027s of those who stayed behind. Screaming.. then the screams got closer,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"next to me this thing. It ripped open jackson my pall. We ran, we all ran and by some luck we did so in the same direction. Deeper and deeper within the caves.. we ran and ran until we couldn\u0027t then we slept and not all of us woke up, just a few before we\\\"}]\",
+                  \"[{\\\"text\\\":\\\"heard more screams far away. Scared we descended further and further until we made it to a forest. Underground.... how odd. We heard of tales from the jungle but would never imagine underground forests here in this frozen wasteland..\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We made a fire with the dry wood and we rested. It was a lot warmer here too.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Day 583\n\nI\u0027m the only one left... There are no beasts here.. not the white ones no. It\u0027s much worse... They move fast and just kill, then the killed stand up and kill again. It\u0027s a horror... I need help, I need to find the exit but I don\u0027t know where.\\\"}]\"
+                ],
+                title:\"Depths of Uncanny Paradise\",
+                author:\"Unknown\",
+                display:{Lore:[\"A few loose pages seem all that remains of this journal.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Day 1 - Departure, cargo hold contained fabric, coal and survival supplies such as food and tools which we are meant to deliver to a northern expedition group.\n\nDay 36 - Strange creatures were seen in the waters below, they seemed to cause...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"severe pain in the head but this was short lived.\n\nDay 84 – Weather is starting to become colder indicating we\u0027re getting closer to our destination.\n\nDay 135 - Some of the food supplies have gone missing...\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"and our tender has been stolen. None of the crew members are missing. Maybe we had a stowaway on our ship.\n\nDay 136 – The first mate, a officer and 3 more of the crew went missing. Morale is low but we sailed on.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Day 247 – We have arrived at our destination, the camp was abandoned. We will stay the night and return to homeland tomorrow.\\\"}]\"
+                ],
+                title:\"The Log\",
+                author:\"Maurice\",
+                display:{Lore:[\"The captain\u0027s logbook\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"You\u0027ve stepped on death doors, abandon all hope for those who venture without a direct means to return. White sharp clawed monsters roam the tundra\u0027s, neither they are your friend neither they are your enemy but behold what is beyond over the fiery canyons that\\\"}]\",
+                  \"[{\\\"text\\\":\\\"split the ice as true monster reign over these lands with fiery breath and floating bodies. Below the ground you may go to the comforts of the forbidden forests which lie beyond the icy glaciers but there the true horrors lurk. May you find the luck of having a ship to\\\"}]\",
+                  \"[{\\\"text\\\":\\\"return with as ours was eaten by the mighty forces of nature, envelloped by ice and dread as we were forced to abandon our vessel and sacrificed many to these threats.\\\"}]\"
+                ],
+                title:\"Survival Basics\",
+                author:\"Unknown\",
+                display:{Lore:[\"As you open the book a letter falls out.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "frozen_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_randomly",
+              "enchantments": [
+                  "frost_walker",
+                  "depth_strider",
+                  "vanishing_curse",
+                  "frost_walker",
+                  "feather_falling",
+                  "respiration",
+                  "aqua_affinity",
+                  "sweeping"
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:7,Duration:10,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:22,Duration:16,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:25,Duration:10,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:7,Duration:20,Amplifier:2},{Id:14,Duration:20,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[{Id:24,Duration:15,Amplifier:1},{Id:17,Duration:15,Amplifier:1},{Id:7,Duration:15,Amplifier:1},{Id:19,Duration:15,Amplifier:1},{Id:1,Duration:15,Amplifier:1},{Id:5,Duration:15,Amplifier:1}]}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.7
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_horse_armor",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+
+          "weight": 1
+        },
+        
+        
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ice",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

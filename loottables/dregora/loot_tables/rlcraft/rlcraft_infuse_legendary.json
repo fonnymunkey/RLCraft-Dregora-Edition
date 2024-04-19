@@ -1,0 +1,157 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Regular Loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\n\n\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understand this clue next time there will be Legendary Treasure for you.\\\"}},\\\"text\\\":\\\" \\\"}]\"
+                ],
+                title:\"Legendary Book of \u00A74Luck\",
+                author:\"Clover Hunderd\",
+                display:{Lore:[\"Can you solve its riddles and claim your treasure next time?\"]},
+                Enchantments:[{}],
+                HideFlags:1
+              }"
+            }
+          ],
+          "weight": 1,
+          "quality": -200
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\n\n\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"For you understood the clue this time there is Legendary Treasure for you.\\\"}},\\\"text\\\":\\\" \\\"}]\"
+                ],
+                title:\"Legendary Book of \u00A74Luck\",
+                author:\"Clover Hunderd\",
+                display:{Lore:[\"For you solved its riddle the treasure is yours!\"]},
+                Enchantments:[{}],
+                HideFlags:1
+              }"
+            }
+          ],
+          "weight": 0,
+          "quality": 200
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "scalinghealth:heartcontainer",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:medikitenchanted",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketbezoar",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketapple",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketvitamins",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:brokenblackdragonscale",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketobsidianskull",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:amuletsinempty",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketbrokenheart",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:amuletcross",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:disintegrationtablet",
+          "weight": 0,
+          "quality": 2
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketballoon",
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_epic",
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}
+

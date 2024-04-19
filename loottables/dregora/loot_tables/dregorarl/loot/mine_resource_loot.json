@@ -1,0 +1,121 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "mine_resource_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/mine_resource_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "mine_resource_loot",
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"xat:dwarf\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"xat:extended_dwarf\"}",
+              "conditions": [{"condition": "random_chance","chance": 0.1}]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"xat:dwarf\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"xat:extended_dwarf\"}",
+              "conditions": [{"condition": "random_chance","chance": 0.1}]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "armorunder:goopak_cool",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:umbrium_nugget",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:silver_nugget",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "levelup2:surfaceore",
+          "weight": 10,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 0,"conditions": [{"condition": "random_chance","chance": 0.9}]},
+            {"function": "minecraft:set_data","data": 5,"conditions": [{"condition": "random_chance","chance": 0.7}]},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.5}]},
+            {"function": "minecraft:set_data","data": 6,"conditions": [{"condition": "random_chance","chance": 0.4}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

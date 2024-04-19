@@ -1,0 +1,309 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "shipfloat",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Generations have passed since the landing of the Dregorian Voyager and despite breathing in fresh air, growing our food under the stars and having a world to explore, it has not been easy on us. The corrupted which remained from The Blight\\\"}]\",
+                  \"[{\\\"text\\\":\\\"have a strong foothold making exploration and reclaiming not as easy as we initially thought. Yet thanks to the Great Divide, which is the wall that separates us from them, nowadays we can move around more freely than ever. And so I\\\"}]\",
+                  \"[{\\\"text\\\":\\\"find myself in this ship on a great journey to reclaim our lands beyond the point we thought possible. Being part of this ship full of building materials I feel like a Dregorian anew. On our way to create one of many strongholds with great\\\"}]\",
+                  \"[{\\\"text\\\":\\\"defenses. \u0027Cities of Origin\u0027 is what we will name them and there will be more than just one, created to support us in our future voyages.\n \\\"}]\"
+                ],
+                title:\"Reclaiming the World\",
+                author:\"Unknown\",
+                display:{Lore:[\"A very old book.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"We have arrived at our destination, which is currently nothing more than a rock, nevertheless a foundation on which we will build prosperity. A rock which will carry the weight of all future voyages and help Dregora emerge from the ashes that\\\"}]\",
+                  \"[{\\\"text\\\":\\\"were once called Earth. Slowly we lower the beams and fix them with heavy stones. Ship by ship, stone by stone, I see towers and walls emerge while waves hit and storms rage. This is not just the creation of a city. This is hope.\n \\\"}]\"
+                ],
+                title:\"City of Origin\",
+                author:\"Unknown\",
+                display:{Lore:[\"A very old book.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Having witnessed the creation of the cities a long time ago, plans are now being made to create a grand capital. A plan that has little to no chance of failing now as ships are already being charted and lands have been claimed. Not for long we will\\\"}]\",
+                  \"[{\\\"text\\\":\\\"set sail for one more time in the name of this great century, a prosperous one where there\u0027s little to no suffering. A century which has given birth to hope, a lot of hope.\n \\\"}]\"
+                ],
+                title:\"Kingdom\u0027s Creation\",
+                author:\"Unknown\",
+                display:{Lore:[\"A very old book.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Row, row and row without end. What were they thinking to not bring a reserve? I can still see it happening, that bloody storm and some nut job of a sailor who didn\u0027t properly secure the sails. Now all we can do is row as we have lost\\\"}]\",
+                  \"[{\\\"text\\\":\\\"our sail and don\u0027t have anything to replace it with. It will take weeks before we arrive back at port, if we even make it. Pirates are known to hunt these waters which makes me even angrier at the captain. First for not having anything in\\\"}]\",
+                  \"[{\\\"text\\\":\\\"reserve, second for hiring nut jobs. \u0027Says the newbie\u0027 I think to myself. Anyway, we\u0027re in this situation and complaining can\u0027t do shit about it so let\u0027s just row and row without end, trying to escape a monstrosity of a storm which seems to\\\"}]\",
+                  \"[{\\\"text\\\":\\\"come closer every day.\n\nOut of the luckiest and weirdest experiences in all of Dregora, this last one must deserve a spot among the top ten, as well as a fitting name for this journal, A Sighting, Pirates, and Hope.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Yes hope to return to port despite the circumstances we\u0027re in. You see, we have a sail now despite being ripped apart and a mix up of crew members. The night before yesterday we got hit by the storm despite our efforts. In all its rage we lost a few\\\"}]\",
+                  \"[{\\\"text\\\":\\\"members of our crew and were eventually stuck on a reef. I guess you could say we were lucky since we would\u0027ve surely died if we were to continue, but unlucky too. Let\u0027s start with the lucky part. We managed to get away, not on our own ship,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"but another one with iron plating under it\u0027s hull protecting it against the reef. Full of panicking pirates though. Pirates which where very willing to cooperate to escape \u0027the monstrosity\u0027, even risk jail time for it.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"What I couldn\u0027t have guessed in that moment is that they didn\u0027t exactly mean the storm...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"What \u0027it\u0027 was became awfully clear to me as most of the crew arrived at the pirate\u0027s ship where the pirates were desperately trying to get loose from the reef. A loud cracking noise behind me, our ship was gone. Instead there was a black\\\"}]\",
+                  \"[{\\\"text\\\":\\\"beast on top of the reef glaring in our direction just as the ship got loose. The beast flew up, getting in position for another attack I assume, but we didn\u0027t see it again. And so I sit here waiting till we arrive at port which should be in a few hours.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The pirates and our crew made an agreement to leave the pirate part out of it. They, as I, are truly frightened and would rather spend their days on land from now on.\\\"}]\"
+                ],
+                title:\"A Sighting, Pirates, and Hope\",
+                author:\"Lucky Fred\",
+                display:{Lore:[\"A small story of luck, chance and hope.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s been several months since we ventured out with the goal of exploring the distant lands. We have seen the wall, the great divide, and the nuclear wastelands beyond and I survived. I, as the only remaining member of what you could call a fleet.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I\u0027m nothing more than a simple mercenary lucky enough to say he saw dragons, giant flesh eating worms, and even worse. Whoever thinks the corrupted within the walls are bad should be spared of what is beyond as there are no mutations there.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"There are no corrupted. It\u0027s gotten beyond that point and can only be described as pure evil. Evil with an awareness, fortresses and kingdoms. Evil dark kingdoms found far into the wastelands.\n\n \\\"}]\"
+                ],
+                title:\"From the Edge\",
+                author:\"Unknown\",
+                display:{Lore:[\"A note from an explorer who saw it all.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "shipfloat_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 13
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}
+

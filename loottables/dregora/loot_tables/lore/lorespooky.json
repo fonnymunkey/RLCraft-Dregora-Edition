@@ -1,0 +1,368 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "lorespooky",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\u00A7l  A Hunter\u0027s Story\u00A7r\n\n\u0027Hello\u0027, I suppose I should write. A long time passed since I sharpened my charcoal and opened up a blank page, but today seems fitting facing yet another trial.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It all started a long time ago after I did terrible things and rightfully so lost my standing in my community. As a result I got exiled and traveled the lands towards the East.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The first season was unforgiving but with the skills of a Hunter I knew where to go and how to build myself a shelter. Countless seasons and many, many moons passed as I lived from what the forest had to offer.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"I guess i could\u0027ve counted myself lucky.. Given the terrible things I did.\n\nI had a roof, a fire and a good meal on my plate by sun set.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"To top it off I even had the music of the forest to wake me up and soothe me into sleep every single night.\n\nAt least until it suddently stopped.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It started with unfamilair noises which slowly grew louder and closer with every passing night until finally the scratching started. I feared of what was outside but was not about to give up on my home. Or so I thought...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Another season passed and by spring only silence remained. Not the monsters, not the wildlife... Nothing remained. This eventually force me to pack up my gear in an attempt to head North. Nothing however would have prepared me for the encounter I had.. have?\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It was a dark night void of stars that marked my third in these lifeless woods. A blanket of thick grey fog rolled in over the moonlit forest. In the distance flickering lights acompanied by foul shadows moving in between the tall trees.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Silently with my back against the trunk of a tree I sat in my ditch hoping it would not become my grave. Leaves and branches covered the top in a attempt to hide myself from whatever roamed these woods.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It was late in the night when I heard a noise that even I with all my experience couldn\u0027t place yet it sounded familiar. Moments passed until i saw a glimpse of it through the web of branches and leaves.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Its big hollowed out eyesockets stared right back at me as it stomped it\u0027s feet on the ground and made a neighing sound. It was clear to me it knew I was there and as foul as it looked without skin or flesh it did not make a move.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"That was when I noticed the undead it carried on its back shifting it\u0027s look right and left while it made this terrible sound.\n\nNight after night it appeared again since that first encounter.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Sometimes far away, sometimes up close and sometimes even during day.\\\"}]\"
+                ],
+                title:\"The Moonlit Trap.\",
+                author:\"Krandir the Hunter\",
+                display:{Lore:[\"A Hunter\u0027s encounter with the Legend of the Trap.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\nUnder the grey sky across the Forest lays a lake with a tear-shaped island. An island of haunted beasts and a gothic church of undead cult.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Beneath it lies the catacombs to which only its wither priest holds the button. Beware of screaming horses and daylight zombies for they will eat your flesh long before you enter the halls.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Can you withstand the corruption of the pumpkin cult or will you become the next wither priest that guards its doors?\\\"}]\"
+                ],
+                title:\"The Lone Church\",
+                author:\"The First Priest\",
+                display:{Lore:[\"The trial of the Wither Priest.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Tall the trees of christmas eve,\n\nRed as is the flood on santa\u0027s path,\n\nHanging cages of steel upon which sight you may very well flee.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nWelcome to my forest of grey in which treasures lay but be warned for those who trespass will pay.\\\"}]\"
+                ],
+                title:\"The Hanging Cages of Greywoods\",
+                author:\"The Beast that Lurks\",
+                display:{Lore:[\"Christmas Trees, Red floods and Steel Cages.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A74Trapped under\u00A7lneath it\u0027s\u00A70 su\u00A78rface\u00A70 of grey tall tre\u00A7r\u00A70es lay the catacombs of fl\u00A7l\u00A74esh and blood.\n\nMonsters reside within and a \u00A70monster \u00A7cit is on its \u00A7r\u00A74own with i\u00A78ts fle\u00A7l\u00A78shy teeth\u00A74 and\u00A7c bloody mouth it de\u00A7r\u00A7cvour\u00A7rs all \u00A7cthat dare enter its ja\u00A7l\u00A74ws.\\\"}]\"
+                ],
+                title:\"GreyWood Crimson Bellows\",
+                author:\"The Devourer\",
+                display:{Lore:[\"A book written with teeth and blood.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Day 23, Th\u00A74e end d\u00A7l\u00A74raws ne\u00A7r\u00A74ar.\u00A7r\n\nTrapped d\u00A7ceep w\u00A7l\u00A7cithin the \u00A7r\u00A7cbelly \u00A7l\u00A7cof the mon\u00A7r\u00A7cster\u00A7r we fear the worst. Some of the \u00A7cmen that\u00A7r tried a taste of\u00A74 wh\u00A7l\u00A74at \u00A7r\u00A74mak\u00A7res up the innard\u00A7cs of\u00A7r this monster started \u00A7l\u00A74wan\u00A7r\u00A74de\u00A7rring off.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Never had\u00A7c I \u00A7rexpected to end up\u00A7r\u00A74 in\u00A7r\u00A7l\u00A74 such a dreadful place w\u00A7r\u00A74he\u00A7rn we ventured into the Greywoods searching fo\u00A7r\u00A74r tre\u00A7r\u00A7l\u00A74asu\u00A7r\u00A74re.\u00A7r 23 days have passed since we entered th\u00A7r\u00A7ce\u00A7r\u00A7l\u00A7c woo\u00A7r\u00A7cds\u00A7r and the hunger is starting to \u00A7r\u00A74set in. \u00A7r\u00A7l\u00A74I wish I kept hold o\u00A7r\u00A74f at \u00A7rleast one bag of provisions\\\"}]\",
+                  \"[{\\\"text\\\":\\\"whilst running for the horro\u00A7r\u00A7l\u00A7crs tha\u00A7rt chased us down deeper. This place d\u00A7r\u00A74oes \u00A7rsome weird things. A couple o\u00A7r\u00A7l\u00A74f days my \u00A7rmost trusted officer B\u00A7r\u00A7castf\u00A7rer went missing but I swear I could see him standing ac\u00A7r\u00A7l\u00A74ross the  blood-red lake just this afternoon\u00A7r.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I called out for him but no re\u00A7r\u00A7l\u00A74ply was given... He just stared\u00A7r back at me... Did he became one of them\u00A7r\u00A7l\u00A7c? Is that the faith that aw\u00A7r\u00A74aits me too?\\\"}]\"
+                ],
+                title:\"Whispers of treasure and blood\",
+                author:\"Captain Kjetill\",
+                display:{Lore:[\"A blood stained journal. One entry remains readable..\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "lorespooky_bonus",
+      "rolls": 1,
+      "entries": [ 
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "weight": 0,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cleaver\",Lore:[\"A cursed hoe\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse"
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": 0.4,
+                    "max": 1.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "Less Health",
+                  "amount": {
+                    "min": -4.0,
+                    "max": -10.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attackSpeed",
+                  "name": "More Attack Speed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.06
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "More Movement Speed",
+                  "amount": {
+                    "min": 0.02,
+                    "max": 0.06
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lorespooky_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.8
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "vanishing_curse",
+                "binding_curse"
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

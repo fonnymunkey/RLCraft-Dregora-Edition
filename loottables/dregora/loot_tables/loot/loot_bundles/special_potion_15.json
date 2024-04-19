@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Effects Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Dregorian\u0027s Ale\",Lore:[\"\",\"\u00A7lSigned:\u00A7r The Community\",\"\u00A7lType:\u00A7r Standard Supply Dregorian Vial\",\"\u00A7lBatch Number:\u00A7r Y-2078 A-F\",\"\u00A7lSerial Number:\u00A7r -unreadable-\",\"\",\"Few words inscribed on the bottom say:\",\"-For those who wander the worlds-\"]},
+                CustomPotionEffects:[{Id:22,Duration:150},{Id:12,Duration:150},{Id:21,Duration:150},{Id:26,Duration:150},{Id:16,Duration:150},{Id:10,Duration:150},{Id:11,Duration:150},{Id:1,Duration:150},{Id:5,Duration:150},{Id:13,Duration:150}],
+                CustomPotionColor:13707957
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+
+
+
+            

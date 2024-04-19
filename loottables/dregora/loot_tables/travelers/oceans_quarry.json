@@ -1,0 +1,114 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_quarry_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Quarry\",Lore:[\"x:-16254 z:-4887\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-16254,z:-4887}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_quarry_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-16254 z:-4887\",Lore:[\"Once a brimming area full of wealth now overtaken by something else...\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_quarry_special_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 0,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Ancient Pickaxe\",Lore:[\"Inscribed in the handle it says \u0027Merlin\u0027s touch\u0027\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:20,lvl:1},{id:19,lvl:2},{id:34,lvl:3},{id:35,lvl:3},{id:71,lvl:1},{id:32,lvl:5}]}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "More Knockback",
+                  "amount": {
+                    "min": -10.0,
+                    "max": -15.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armorToughness ",
+                  "name": "Less Attack Speed",
+                  "amount": {
+                    "min": -5.0,
+                    "max": -10.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

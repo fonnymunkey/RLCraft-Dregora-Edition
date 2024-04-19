@@ -1,0 +1,462 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "quarry_1",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s pilot day, testing whether this location has either a bad or good deposit. The surface composition and the way the trees grow differently at this particular area is odd to say the least. With some luck it's a sign of riches deep below, such as coal which is exactly what we\u0027re looking for.\n \\\"}]\"
+                ],
+                title:\"The Prospector\",
+                author:\"Unknown\",
+                display:{Lore:[\"Black Trees is where the Black Gold awaits.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Standing at the edge I feel lucky, lucky not to be swallowed by this hole that doesn\u0027t seem to have a bottom. That is, until I realize the corrupted come from below the ground. On the other hand there may be a large deposit of valuables, and that\\\"}]\",
+                  \"[{\\\"text\\\":\\\"would save us months of digging. On top of that, no matter how slim the chance is there may still be someone to have survived the fall. I quickly scramble everyone and tell them to grab their climbing gear. Half an hour passed as we started\\\"}]\",
+                  \"[{\\\"text\\\":\\\"going down and down. First meters, then hundred of meters until my workers started complaining just as we neared a clearing. What is this? Our curiosity overtook as we descended further. A gigantic chasm, an underground world, what is this place?\\\"}]\",
+                  \"[{\\\"text\\\":\\\"However, our admiration lasted mere moments as we became aware of the bottom. The first thought that went through my head was a magma or lava river but I couldn\u0027t feel the heat. Upon closer inspection I saw monsters, countless of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"them, and I wasn\u0027t the only one. I could see it in the way my team members behaved so I calmly said, Don\u0027t make a sound and lets get the hell out of here. As we ascended we could hear noises from below, screaming from the corrupted?\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Or maybe from the ones that fell and somehow survived. Once back at the surface we started sealing up the hole, first beams then plates and eventually dirt and stone so that nobody would ever come here and dig it up again.\n\n \\\"}]\"
+                ],
+                title:\"Sinkhole\",
+                author:\"Unknown\",
+                display:{Lore:[\"A world beneath?\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"As we dug for days on end, each one of us with our own motives like family or wealth, we find ancient treasures. The finder receives 10% of the wealth it contains. Imagine finding an ancient magical sword or a book\\\"}]\",
+                  \"[{\\\"text\\\":\\\"full of secrets. Yet none of that matters to me. With the amount I\u0027ve gathered I could go some place and spend my old days without a worry ever again. If it hadn\u0027t been for that traveler I probably would be sitting in my mighty chair\\\"}]\",
+                  \"[{\\\"text\\\":\\\"enjoying some good whiskey right now. It started at the Grimstone Quarry where a traveler met me just after I found a book with strange markings. He told me to bury it somewhere and never look back or face the Redcloaks. First I thought\\\"}]\",
+                  \"[{\\\"text\\\":\\\"he was mad but soon after these so called Redcloaks started appearing from thin air in search of a book. So I made up my mind and buried the book. Moments later I was approached by the traveler once again. We talked for hours about the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"origin, what happened in the far past and most importantly what is to come.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Part of this involves a skeleton key I must find, somewhere beyond the wastelands. That was the moment I started my quest in search of this key that may mean our salvation or our demise.\n\n\n \\\"}]\"
+                ],
+                title:\"Pandora\u0027s Key\",
+                author:\"Unknown\",
+                display:{Lore:[\"The second Traveler.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The ground started shaking as we quickly ran to safety in fear of the falling rocks. It was the seventh time this had happened within the month, yet we still worked every day. In fact within 5 minutes we started digging again.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Every day more and more workers left the quarry. Something I couldn\u0027t do just yet. This was my last chance to pay my debts, taking a run wasn\u0027t among the possibilities, or so I thought. Since here I stand, with my family, after escaping the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"massacre in the village. A horde accompanied by what we thought to be an earthquake. Something we disturbed as we dug deeper and deeper until we opened an ancient chasm from which it flew: a dragon! I leave this letter here for others to find.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"If you feel the ground moving do not hesitate and run for your lives as this earthquake is not just like any other, it\u0027s alive.\n\n \\\"}]\"
+                ],
+                title:\"Beware of Earthquakes\",
+                author:\"Unknown\",
+                display:{Lore:[\"From above...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"This report has been written up by the headmaster of the Kazungi Quarry and contains the following: Productivity chart, Reasoning, Current holdings. The charts have been updated each moon.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lProductivity Chart: Moon 1\u00A7r\n\nTotal Extracted: 6019 LBS Raw Ore\n\nExtract - 890 LBS Pure Coal\n\nExtract - 70 LBS Pure Gold\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nExtract - 0.2 LBS Diamond\n\nExtract - 170 LBS RStone\n\nExtract - 0.1 LBS Emerald\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lProductivity Chart: Moon 2\u00A7r\n\nTotal Extracted: 8190 LBS Raw Ore\n\nExtract - 989 LBS Pure Coal\n\nExtract - 128 LBS Pure Gold\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nExtract - 0.1 LBS Diamond\n\nExtract - 320 LBS RStone\n\nExtract - 0.09 LBS Emerald\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lProductivity Chart: Moon 3\u00A7r\n\nTotal Extracted: 10290 LBS Raw Ore\n\nExtract - 1829 LBS Pure Coal\n\nExtract - 144 LBS Pure Gold\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nExtract - 0.5 LBS Diamond\n\nExtract - 158 LBS RStone\n\nExtract - 0.2 LBS Emerald\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lProductivity Chart: Moon 5\u00A7r\n\nTotal Extracted: 7881 LBS Raw Ore\n\nExtract - 1789 LBS Pure Coal\n\nExtract - 189 LBS Pure Gold\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nExtract - 0.3 LBS Diamond\n\nExtract - 111 LBS RStone\n\nExtract - 0.4 LBS Emerald\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lReasoning Moon 1: \u00A7r\nSetting up Equipment, digging initial quarries, removing top layer caused a lower than normal extraction.\n\n\u00A7lReasoning Moon 2:\u00A7r\nRain caused the pit to fill delaying the mining operation for 2 days.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7lReasoning Moon 3:\u00A7r\nNo problems to report, crew was especially motivated as things were going fine now.\n\n\u00A7lReasoning Moon 4: \u00A7rLarge concentration of corrupted were passing by, enforcing safety protocol.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Current Holdings:\n32380 LBS Raw Ore Extracted *\n5497 LBS Pure Coal Extracted - SOLD 80%\n531 LBS Pure Gold Extracted - SOLD 30%\n1.1 LBS Diamonds Extracted - SOLD 60%\n759 LBS RStone Extracted - SOLD 10%\n1.6 LBS Emerald Extracted - SOLD 5%\\\"}]\"
+                ],
+                title:\"Productivity Report\",
+                author:\"Quarry Headmaster\",
+                display:{Lore:[\"A productivity report written by a quarry headmaster.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "quarry_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobblestone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              },
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}
+

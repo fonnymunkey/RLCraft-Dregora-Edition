@@ -1,0 +1,105 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 8,
+        "max": 20
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fireworks",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_sword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Training Sword\",Lore:[\"This sword belongs to either a trainee or a very unlucky pirate.\"]}}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.10,
+                "max": 0.505
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Blunt Sword\",Lore:[\"A Pirate sword, all battered up.\"]}}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.10,
+                "max": 0.505
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

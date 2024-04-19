@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "warp home warps to random spot troll with bad luck, slowness and regeneration troll (let that sink in description or it weighs on you)",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:strong_teleport\",
+                display:{Name:\"Recall Potion\",Lore:[\"§9Bountiful Baubles\",\"§9Teleports you to swap point.\",\"§0\u2620 Trolololol\"]},
+                CustomPotionEffects:[{Id:27,Duration:600},{Id:15,Duration:600},{Id:9,Duration:600},{Id:10,Duration:600}],
+                CustomPotionColor:16777215,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:strong_teleport\",
+                display:{Name:\"Recall Potion\",Lore:[\"§9Bountiful Baubles\",\"§9Teleports you to your swap point.\",\"§0\u2639 Trolololol\"]},
+                CustomPotionEffects:[{Id:27,Duration:600},{Id:15,Duration:600},{Id:9,Duration:600},{Id:10,Duration:600}],
+                CustomPotionColor:16777215,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "food_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/food_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "food_loot",
+      "rolls": {
+        "min": 1,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "quark:root",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "quark:crab_leg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "quark:cooked_crab_leg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "charm:suspicious_soup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:wildberries",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:grapes",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:tomato",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:chili_pepper",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itembacon",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemfriedegg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcarrotseedsoup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcompressedflesh",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemchocolatebar",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemspidersoup",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcactusfruit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemhorsemeat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itembatwing",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemparrotmeat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itempolarbearmeat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itembeetrootnoodles",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemjelly",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

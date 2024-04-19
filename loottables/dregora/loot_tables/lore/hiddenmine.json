@@ -1,0 +1,343 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "hiddenmine",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"My friend once told me of tall mountains with on top abandoned mineshafts leading to riches deep below where he found diamonds, emerald and precious metals per bulk all ready to be digged up. He dreamt of going back there some day as he grew older and stronger.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Capable of extracting the ores... Just a dream had many told him as those who walked away from the convines of the villages and mining outposts were rarely seen again... As did he himself as he went to look for these treasures. I still hope to see his face once\\\"}]\",
+                  \"[{\\\"text\\\":\\\"again but it has been years already... Years after he went and chased dreams.\\\"}]\"
+                ],
+                title:\"Mountains of wealth\",
+                author:\"Unknown\",
+                display:{Lore:[\"A dusty old book containing drawnings, maps and a few words at the end...\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Beyond the convines of our settlement there are tunnels, endless tunnels leading in all directions, sometimes breaking open in huge chasms or fiery pits with rivers of lava but even bigger then that had to be the mysterious construction of rock and metal leading\\\"}]\",
+                  \"[{\\\"text\\\":\\\"down to the abbys. I once followed the countless steps and was met by a strong draft that pulled me towards this huge tunnel going on for miles and miles... A mysterious place indeed\\\"}]\"
+                ],
+                title:\"Hidden Tunnels\",
+                author:\"Unknown\",
+                display:{Lore:[\"Notes on findings within the community, it contains a interesting entry.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"This book pays tribute to those who ventured too deep and were swallowed by beings that lurk, mechanisms which trap and pitfalls that kill.\n\nTo Jonny and Cloé, David and Gerald. To Naomi, Albert, Wilson.... and the list goes on.\\\"}]\"
+                ],
+                title:\"The Endless Book\",
+                author:\"Unknown\",
+                display:{Lore:[\"A book of names on those who got lost in the darkness.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Beasts dislodged rocks in the caverns behind us blocking our way back. We managed to escape by running forward catching a glimpse of more beasts lurking in a branching tunnel. Moments later rocks fell down behind us, had we been seconds slower we\\\"}]\",
+                  \"[{\\\"text\\\":\\\"would have been trapped. These beasts are getting more and more aggressive as the weeks pass. It started with sabotaging our equipment left behind in the tunnels, then appearances. People started missing and now this.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"These beings... I wonder where they came from and I have my suspicions... One of them looked like one of the missing persons but deformed.. A lot.\\\"}]\"
+                ],
+                title:\"Book of Calamities\",
+                author:\"Unknown\",
+                display:{Lore:[\"This old book contains a collection of disasters that befell this community, one of them goes as following;\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"For these lands lie in the abbys of maps unfound and unexplored by many and hidden for even the keenest of eyes beyond this book no traces remain and all attempts finding these lands end in vain for there shall only be a few who will venture beyond the real.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Thou shall find the books; \u00A7l\u00A74Valhalla \u00A7rin viking realm and The \u00A7l\u00A74Pirate\u0027s Treasure\u00A7r in ships or tropical harbors afloat.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"For these treasures you would need to look in the unexplored lands for viking tales and the seas in southern ends where the pirates hide and jungle thrives.\\\"}]\"
+                ],
+                title:\"The Hidden Map\",
+                author:\"Librarian\",
+                display:{Lore:[\"One of the three books needed to find the Hidden Library\nWhere the coordinate of Z is negative X is positive.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "hiddenmine_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_night_vision\"}"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lever",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:piston",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:activator_rail",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_torch",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_rail",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 1
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

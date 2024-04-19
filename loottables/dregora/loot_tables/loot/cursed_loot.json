@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_tools",
+          "weight": 15
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_weapons",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potions",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_armor",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_regular",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

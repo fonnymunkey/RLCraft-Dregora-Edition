@@ -1,0 +1,500 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "pirate",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\nHi sunt scriptae litterae ex decorum octo iterum rubrum.\n\n\n\n           ▄█\n        ▄███▄\n     ▄███████▄\n  ▄▄█████████▄\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nLatine scriptum est non Ordinarius oculus parium suorum, per multa arcana sapientiae lucrata est liber tam magnis animis in diebus praeteritis E \u003d MC2 quarum una patet solutio ad industria.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nDeinde, dum hominum genus incassum cognitione formarum simul inferre. Tandem tamen ad ultimum gradum quo nulla induxit prope hominem cadere.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nAnnorum fuit cum patribus familias ac fundavit eam tueri iuramentum ut invicem diligatis qui nunc contra communem hostem invicem pacifice viventes peccaverunt.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nSi suus \u0027fere ut si vivere in a venereum poema medii aevi in saecula saeculorum. A era sed quamdiu quis in oblivione coram nobis et octo Providerant conditores ex diversitate Rubrum.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\nDigni estis in fide scripturam legere, satis fidum super isto vitio ferre hostis iudicatus esset rubri.\n\n\nSit tibi anni vitare.\n \\\"}]\"
+                ],
+                title:\"Book of Red\",
+                author:\"The Eight\",
+                display:{Lore:[\"This book seems to be very old and nicely decorated.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"For these lands lie in the abbys of maps unfound and unexplored by many and hidden for even the keenest of eyes beyond this book no traces remain and all attempts finding these lands end in vain for there shall only be a few who will venture beyond the real.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Thou shall find the books; \u00A74Valhalla\u00A7r in viking realm and The \u00A74Hidden Map\u00A7r in north-western lands.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"For these treasures you would need to look in the unexplored lands for Viking tales and underneath the tallest mountains of north-western highlands in the hidden village mines.\\\"}]\"
+                ],
+                title:\"The Pirate\u0027s Treasure\",
+                author:\"Librarian\",
+                display:{Lore:[\"One of the three books needed to find the Hidden Library\n\nX is like Z as the vikings tell.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"۩▤▤۩▤▤▤۩▤▤▤۩▤▤▤۩▤▤۩\nGuide of Easter Trials\n۩▤▤۩▤▤▤۩▤▤▤۩▤▤▤۩▤▤۩\n\n\n  ┼┼┼┼┼┼┼┼┼┼┼┼\n    ▃▅▆▇▇▇▇▆▅▃\n     ▐              ▐\n     ▐              ▐\n     ▐              ▐\n     ▐              ▐\n     ▐              ▐\n  ┼┼┼┼┼┼┼┼┼┼┼┼\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\u00A7oThe first place you will\n     visit is the Archaeologist\u0027s Hoard\n   in which you will\n search till you find a\n   sacred book. This\n  sacred book will be\n   used to find a\n   sacred place.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\u00A7o   In namely sacred\n   place you will find\n       the book\n  that rules over all\n  other books. In this\n  book you will find a\n clue that brings you\nto a hidden spot with\na hidden room within a\n     hidden room.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\n\u00A7oWithin this hidden room\nyou will find directions\n   towards a hidden\n   library that is not\nentirely a library. This\n     library will be\ncorrupted but not as\n      a whole.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\n\u00A7o Here after cleansing\nthe corruption you will\n find the end that will\n  bear the fruits of\n      knowledge.\\\"}]\"
+                ],
+                title:\"Guide of Easter Trials\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book is one of two and a translation for the other.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\u00A77▓▓▓▓▓▓▓▓▓▓▓▓\u00A7r\n〰\u00A7l\u00A77⊏⊐\u00A7r▶                 ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶ \u00A7l\u00A74RatBeards\u00A7r ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶   \u00A7l\u00A74Journal\u00A7r   ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶                 ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶                 ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶   \u00A7o\u00A78A story\u00A7r     ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶  \u00A7o\u00A78dedicated\u00A7r   ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶   \u00A7o\u00A78to Natsu\u00A7r    ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶   \u00A7o\u00A78The Rat\u00A7r     ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n〰\u00A7l\u00A77⊏⊐\u00A7r▶                 ◀\u00A7l\u00A77⊏⊐\u00A7r〰\n\u00A77▓▓▓▓▓▓▓▓▓▓▓▓\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Rats, rats everywhere, always. On the sea, on the shore.. While we\u0027re sleeping or awake. I uses to hate the pesky little things and I kind of still do but not entirely. They would still swarm around, eat our food or end up as. But not my Natsu, no.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The brave little screamer as he is wouldn\u0027t end up in the pot. You see, there are rats and well.. rats. This one wasn\u0027t like the other fatty little biters. He would scream, jump and run around but never bite me.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"This all didn\u0027t just happened overnight though. It was a night of horrors in which our ship flipped itself around as if it was a coin flipped by the gods themselves. The same night or the next I woke up on a beach and started searching for other survivors.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Not even a dead body. All I could find were some loose boards. To make matters even worse I couldn\u0027t use my right arm. Broken was my guess.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"And so I started searching for a sign of life up ahead the shoreline only to be met by not only sheer cliffs at front but at back and land inwards too. I would need my arm to heal properly before I\ncould go any further.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Days passed until my little Natsu made his first appearance as he tried to steal some of my fish. I attempted to catch him as he would make a nice change for dinner but I failed. In the following weeks he\nstarted returning on regular basis,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"noticeably losing weight with every return.\n\nFor his endurance I applauded him and tossed him a piece of fish. The next day I grabbed my coconut filled with water, my bag full of smoked fish and embarked on my journey.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Hours passed as i climbed the steep cliffs until i reached the top where I was faced with a most dreadful sight. Appears I stranded on a island. Knowing however we sailed close to the shore I know mainland shouldn\u0027t be far.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"In fact after close inspection of the horizon I saw mountains in the distance and thus regained hope.\nOn my way down I realized it was going to take a long, long time as I would need to make a raft and for a raft I would need to make rope and so on.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Back at where I left I was met with a curious sight. The little Rat, little as he lost a lot of weight was standing right there on two legs with one of his paws directed towards me and the other hanging next to his lean body.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"This was the moment I decided I could use some company for the journey ahead and threw him a piece of my smoked fish.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Another week passed and the rat which I now named Natsu for his weird energetic, loud but tender behavior had gained some weight back. After cleaning him under a lot of protest his fur revealed\nto not just be a brownish color but instead a mix with white flanks.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"In the following weeks I was again and again surprised on how clean and smart the little creature actually was. he would wash himself completely up to 3 times a day. Haven\u0027t seen anyone take a bath more then 2 times a day.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Being as clean as that is just one thing when it comes to Natsu as like the little jumper he is he managed to catch a bloody seagull. It tasted like shit but is definitely commendable!\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Since the day I had stranded a lot of moons have passed the nightly sky but at last we were ready to embark on our journey which ironically enough lasted us only 2 days before we stranded at the other side\nwere we magically met with our fellow pirates building our new ship.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It is Natsu who helped me through the rough times on that beach and still is of immeasurable worth to me as Natsu the rat is more of a friend then any treasure could ever be.\\\"}]\"
+                ],
+                title:\"RatBeards Journal\",
+                author:\"RatBeards\",
+                display:{Lore:[\"A book dedicated to a very special rat named Natsu.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Down south from the center and beyond the reef lies an oasis of parrots and dense leaves. Corrupted roam these lands and dungeons are a common sight.\n\nDungeons and their inhabitants guarding books of wisdom and fiery swords.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Down south you go over land and sea.\\\"}]\"
+                ],
+                title:\"Oasis of Gold and Magical Books.\",
+                author:\"Southern Pirate\",
+                display:{Lore:[\"A book that contains notes on a treasure.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "pirate_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 4
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fireworks",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:birch_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:trapdoor",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:acacia_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_boat",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_fish",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

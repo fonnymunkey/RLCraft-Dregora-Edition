@@ -1,0 +1,357 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglelore",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s been several months since I passed the gates of this village and have been accepted by its residents. As an explorer from distant places I wouldn\u0027t have thought to find civilizations beyond the great sea, yet here I am in a lush forest with all kind\\\"}]\",
+                  \"[{\\\"text\\\":\\\"of exotic trees and animals the people back home wouldn\u0027t believe. At first when we arrived at the shores of this new land I wouldn\u0027t have imagined such a village would exist in these forests as simply being here would require all sort of materials\\\"}]\",
+                  \"[{\\\"text\\\":\\\"to survive. These people, however, have very simple solutions to the problems caused by the environment. They also seem to live in harmony with their surroundings, using it to their advantage rather than fighting it. It\u0027s truly admirable,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"making me think we have much to learn should we ever create a grand settlement here.\\\"}]\"
+                ],
+                title:\"Tai Bwo Bwarg - A Simple Village\",
+                author:\"Emor, the Explorer\",
+                display:{Lore:[\"An Explorer\u0027s Note\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Under these mighty trees there\u0027s a whole other world to discover. Big chasms with possibly huge treasures. I and a group of explorers have made friendly contact with the tribesman of this village and set out to explore this new world until we found floating\\\"}]\",
+                  \"[{\\\"text\\\":\\\"islands with a rather interesting combination of resources underneath. While digging we found out there\u0027s a huge world buried underneath. Today marks the day we will set out and explore these massive caverns. I wonder what secrets they hide...\\\"}]\"
+                ],
+                title:\"Under the Mighty Trees\",
+                author:\"Unknown\",
+                display:{Lore:[\"A note of exploration.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The explorers came to our town many, many suns ago when I still was a child. They learned and explained us the power of writing. Once we understood and learned these feats they gave out books for us to write in. Telling us these books are\\\"}]\",
+                  \"[{\\\"text\\\":\\\"hard to get by we should only write about the important things and so I start this book telling about my encounter during my first real hunt.\n\nAs the sun was setting I saw a wild pig running away from me.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"At first I thought it had smelled me while being riddled as to how since I made sure to stay out of the wind and definitely didn\u0027t made a sound. Running after it I slowly but surely came into the close proximity of the Kun Drak, where the dead live.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Too busy with the pig and riddled over how it got scared I forgot to think about the Kun Drak. A mistake no tribe member should ever make.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"So, as I approached the clearing in the jungle, the name the explorers gave the forests, I suddenly realized my mistake. The sun was setting and I could see the demons climbing out of their grave to seek for flesh during the night. Eyes were staring at me...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Not from the grave but from behind. So it was not me who scared the pig? It was that thing... I turned around, switched my arrows for the poison one and shot a couple in the direction of the demon, all within one breath.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It screamed and fell down as I ran past and away from it back to the village. As I approached the gates I warned the guards I may have been followed as I didn\u0027t have time to mask my scent. While being very lucky to live I do feel regret and swore to never make this mistake again.\\\"}]\"
+                ],
+                title:\"Eyes at the Kun Drak\",
+                author:\"Jukoi\",
+                display:{Lore:[\"A hunter\u0027s story about an encounter at the dungeons.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"While paper and a pen is to be considered rare, and time to write or being able to write even more so, I find myself being the exception as the son of the village chief. That said, I have my obligations to the residents of this tribe.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Like reporting notable experiences during my trials. One such is my experiences during the great hunt where we leave for 2 months and explore distant regions for mapping purposes and making contact with undiscovered tribes.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"During my trial we had not found such tribes which may be explained by the demons we encountered at night. While they can show up from time to time and we are quite capable of neutralizing the threat, that time around it was different.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"It was the 18th day of the yearly great hunt, and at the same time was my trial which every future chief should undertake. We had just hunted down a wild pig and sat at the campfire while night was setting in. As usual we would save some of the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"glowing charcoal for later use and bury the existing fire pot under a pile of dirt making sure we leave no traces behind. However, as we did this we heard the call of a bird, but smothered midway through. This call was from one of the scouts we sent\\\"}]\",
+                  \"[{\\\"text\\\":\\\"out to secure the perimeter before we would go to sleep. It meant perimeter secured... Or at least it should\u0027ve meant that. Knowing how capable the scouts were, always on high alert, knowing, seeing, and even feeling their surroundings.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"They were selected for their keen eyes, great hearing and the speed they use to travel throughout the jungle without making a single noise.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"As the group sent another scout to investigate what had happened, I snuck away, trying to follow the scout as my curiosity got the better of me. I was discovered soon after though, by the scout herself. She told me to follow closely behind\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and to not make a sound. I could tell she was angry but knew there was no time to scold me for my mistake. As I tried to make as little sound as possible she would slowly walk forward knowing that I couldn\u0027t match her speed. Later she told\\\"}]\",
+                  \"[{\\\"text\\\":\\\"me if I wasn\u0027t around at that time she would\u0027ve probably died at that moment. Mere moments later she turned around, signaling me to be very wary of my surroundings and be as silent as possible. A few seconds had passed until I heard the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"bushes moving up ahead. Nothing but the shadow of trees... Until I saw one of those shadows moving towards us, closer and closer until it had passed us.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"We waited until it went out of sight, then waited more and more until the scout asked me: Have you ever heard of such a thing? Like in the old chief\u0027s trial books or from stories? I answered her telling there were some ancient myths speaking\\\"}]\",
+                  \"[{\\\"text\\\":\\\"about an Elite group of demons. She nodded, stood up and snuck back from where we came into the same direction the demon went. A while later we found the camp except there was nobody around as we watched from a distance.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We\u0027ve waited till the signing of birds announced the coming of a new day. This was the moment we saw it in the distance. The Demon stood there, waiting... Looking around for something... For us? The scout told me it was hunting for us\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and that we were lucky it hasn\u0027t noticed us yet.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"We slowly snuck further and further away from the demon while constantly keeping it in our sights until it wasn\u0027t there anymore... A blink of the eye and it was gone. For a second we stayed there until the scout said:\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Run, it\u0027s on the hunt and it knows we are here. So I stood up and I ran and ran until I found a river and jumped in. For hours I clamped myself onto a piece of driftwood making sure it couldn\u0027t follow me through tracking my scent.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"At the shore of the river I applied mud on my skin to leave nothing to chance and walked for hours once again.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Days had passed, starved to death as I refrained from making a fire. Insects are all I had eaten during my 6 day trip back towards the village following the stars at night and sun by day. But finally... I recognize these trees, the rivers...\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Everything. I\u0027m close to my village again and I will make it. I will definitely make it.\\\"}]\"
+                ],
+                title:\"Demons in the Shadows\",
+                author:\"Urm\",
+                display:{Lore:[\"The Written Trials of Urm, The Chieftain\u0027s Son.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"How I am capable of writing these words still riddles me. Just a day ago I could not possibly grasp the knowledge I find in my possession today. I am nothing but a simple native from the jungle. Hunting for food and taking care of my cattle.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Remembering my own life is as looking over the shoulders of a fellow native. Yesterday while hunting I came across a clearing in the jungle and saw a man sitting there. As I approached him I fainted and woke up like this.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"There\u0027s a voice within my mind though. To go to the ancient dungeon and kill every corrupted which reside within. It\u0027s a very important task as I will be able to find out more. I wonder if I am up to the task though,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"some natives have lost their lives to the foul beasts they call the corrupted.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"After I complete this task I also feel like going to the Highlands, the northern regions from my location and seek within the mountains for clues regarding some survivors of a disaster which is called the Blight.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Apparently some may have survived in their mighty bunkers deep below the mountains.\n\n \\\"}]\"
+                ],
+                title:\"The Traveler\u0027s Mission\",
+                author:\"Kun Dosa\",
+                display:{Lore:[\"An encounter with the Traveler.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglelore_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stained_hardened_clay",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 15
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:boat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ladder",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:double_plant",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:vine",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_pane",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_glazed_terracotta",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_glazed_terracotta",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}
+

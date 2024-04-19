@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Infested Milk\",Lore:[\"There are bugs crawling in the milk!!!\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Spoiled Milk\",Lore:[\"The milk looks spoiled... Yugh.\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Eyeball Milk\",Lore:[\"There are Eyes in the milk!!!?\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Syrup Milk\",Lore:[\"Brrr Uhhll That is Disgusting!!!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Poisoned Milk\",Lore:[\"This milk seems poisoned!!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Moldy Milk\",Lore:[\"A green layer covers the milk.... Yeah... NOPE!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Spotted Milk\",Lore:[\"Black.. Brown and Green spots in the milk?\",\"Not Drinking That!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Bucket of White stuff\",Lore:[\"This can\u0027t be milk.. Can it?\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+

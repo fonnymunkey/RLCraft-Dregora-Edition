@@ -1,0 +1,254 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Epic Chest",
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_moderncity/epic_old_tools",
+          "weight": 15
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_moderncity/epic_old_arrows",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "name": "rare Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "name": "common_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carpet",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Torn Carpet\",Lore:[\"Ancient Carpet, masterfully crafted yet very damaged.\"]}}"
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.8,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 13
+            },
+            {"function": "minecraft:set_data","data": 0,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 5,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 6,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 7,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 10,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 11,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 12,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 14,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 15,"conditions": [{"condition": "random_chance","chance": 0.2}]}
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Small Golden Disk\",Lore:[\"There\u0027s a number written on the small disk, it says 10\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Small Golden Disk\",Lore:[\"There\u0027s a number written on the small disk, it says 20\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Small Golden Disk\",Lore:[\"There\u0027s a number written on the small disk, it says 50\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Small Golden Disk\",Lore:[\"There\u0027s a number written on the small disk, it says 100\"]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heavy_weighted_pressure_plate",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_weighted_pressure_plate",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_hide",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:quartz",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fireworks",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gunpowder",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bookshelf",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:painting",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_blocks",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

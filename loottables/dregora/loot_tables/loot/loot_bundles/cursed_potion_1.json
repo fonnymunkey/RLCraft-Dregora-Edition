@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Lingering Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Lingering Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Splash Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Splash Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Apple Juice\",Lore:[\"Definitely apple juice!\",\"\u00A70\u2639\"]},
+                CustomPotionEffects:[{Id:20,Duration:300,Amplifier:20,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:7838766,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+
+
+            

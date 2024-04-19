@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "Common Chest",
+      "rolls": {
+        "min": 3,
+        "max": 7
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

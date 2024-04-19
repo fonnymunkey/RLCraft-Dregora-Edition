@@ -1,0 +1,971 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "dungeonone",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It has been days since my companions and I entered the depths of this dungeon to find ourselves trapped soon after. We just ate our last portion of food and the exit is guarded by foul beasts. Although, exploring other relatively safe parts of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"the dungeon made us wonder, even if we manage to defeat the beasts, will we find the exit? There is only one way to know, and I hope this won\u0027t be my last entry. May we be blessed by those who call themselves the RedClan in our attempt to escape.\n \\\"}]\"
+                ],
+                title:\"Explorer\u0027s Log\",
+                author:\"Jude Koorn\",
+                display:{Lore:[\"A lost note from Jude Koorn\u0027s Log.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s widely known that the Corrupted Ancients have no way of communicating with one another, and always seem to hunger for fresh meat. However, recent discoveries within the depths of this dungeon prove otherwise. There seems to be some sort of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"entity which controls it all. It makes me wonder if this is the case for all the dungeons throughout the land of Dregora. Nevertheless, we will continue our research and possibly try to communicate with this leader by luring it to the upper\\\"}]\",
+                  \"[{\\\"text\\\":\\\"layers of the dungeon. Our hopes for succeeding are high but we will need to be patient.\\\"}]\"
+                ],
+                title:\"Historian\u0027s Log\",
+                author:\"Mark Dragor\",
+                display:{Lore:[\"A lost note from Mark Dragor\u0027s Log.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I feel something within myself changing... What\u0027s happening? Don\u0027t tell me I\u0027m turning into one of those, no that\u0027s not possible! How can this happen? Other worldly thoughts are filling my mind but not only.. No not only! I Feel anger,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"sorrow and change... I like change yes. I\u0027m hungry and craving. No! I Can\u0027t let this happen, I need to write to focus on my own being. Hahahahaha! I\u0027m Thorin Gunthar from the depths of despair. It\u0027s over...\n\n \\\"}]\"
+                ],
+                title:\"Wanderer\u0027s Log\",
+                author:\"Philip Austin\",
+                display:{Lore:[\"A lost note from Philip Austin\u0027s Log.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"We live by ambushing those who manage to return from the dungeons, a place I would never visit. Great treasures can be found unknown to all of Dregora. This is how I obtained Lunae packed with the power of a thousand strings. I rarely\\\"}]\",
+                  \"[{\\\"text\\\":\\\"even write anymore. My companions say that\u0027s something for adventurers and explorers, but I found myself being inspired by those. I could\u0027ve never thought I would regret what I had done, but it\u0027s too late now and I gots to make a living.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"So we walk and walk towards the next dungeon in wait for the returning souls. Who knows what we may encounter.\\\"}]\"
+                ],
+                title:\"Outlaw\",
+                author:\"Outlaw\",
+                display:{Lore:[\"Notes from an Outlaw.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Entry 1: These weird structures have been popping up lately, buried under the sand now being revealed. One appeared next to our town! Can you imagine? We only explored the entrance but were scared off by weird noises and moving shadows.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We have boarded the entrance to make sure whatever is in it never comes out.\n\nEntry 2: Somehow the boarding disappeared over night and people went missing... What in Dregora\u0027s name is going on? We may be better off re-burying the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"dungeon before more people start going missing.\n\nEntry 3: We buried it with rocks, sand, and dirt... It didn\u0027t help. One night later people disappeared again and now I am left with but\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"a handful of people moving away from the village. I lost my wife... I can\u0027t leave her so I will go and find her, whatever it takes.\\\"}]\"
+                ],
+                title:\"A Dark Encounter\",
+                author:\"Elithr\",
+                display:{Lore:[\"Notes from Elithr.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I lost my journal. Oh well, it just contained a couple of lines. Now I\u0027ve found my wife, although in bad shape, I\u0027m glad. Now we will have to find a way out and escape these hallways of death and terror. Monsters lurk around every corner so we will only have one shot\\\"}]\",
+                  \"[{\\\"text\\\":\\\"at this. I really hope we will make it.\\\"}]\"
+                ],
+                title:\"A Dark Encounter Part 2\",
+                author:\"Elithr\",
+                display:{Lore:[\"Notes from Elithr.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"After extended research on the Dungeons and their inhabitants, these structures seem to have served as tombs later to be reformed by those whom we refer to as the Ancients or Corrupted. We think they\u0027re beings that were once just like us,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"or the wildlife in general, but corrupted by powers which are rumored to be caused by The Blight, a disaster that destroyed the world as we formerly knew it. These powers also caused rocks to float and magic to appear. We have yet to discover the full\\\"}]\",
+                  \"[{\\\"text\\\":\\\"potential of these magical powers. This progresses extremely slowly as everyone is afraid of catching The Blight, which would mean becoming corrupted.\n \\\"}]\"
+                ],
+                title:\"The Origin Part 1\",
+                author:\"Luthor\",
+                display:{Lore:[\"Luthor\u0027s research\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u0027Dregorian\u0027, an honorable title which we do not deserve. Yes we came back to grow trees, raise livestock and make a living just like our ancestors did. Not only did they do that, they devoured the livestock, cut down all trees, and ruined this planet.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We are not much better than the myths of the corrupted. Tales travel from afar about these beings, mythical creatures you would find in historical books. This is a short telling of what I think of the current era we live in, the Era of The Blight,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"trying to resist against its foul offspring. A true battle, and at the same time something humanity needs so as not to fight each other again like we did in \u0027The War Which None May Forget\u0027. Ironically, a war which has already been forgotten by most.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"But to those who keep on living, to those of The Red Clan... May the monsters never die, as we need them to be truly human.\\\"}]\"
+                ],
+                title:\"Lost Book of Thalnir\",
+                author:\"Thalnir\",
+                display:{Lore:[\"Our own Enemies.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I am nothing but a humble farmer trapped within these hallways of death, together with my friends, townsmen, and some strangers. Yet not anymore as months passed and they turned at each other, there is no one here... or so we\\\"}]\",
+                  \"[{\\\"text\\\":\\\"think. There may be something hiding in the shadows which explains the moving walls, doors where there were no doors and vice versa. Pigs, sheep, cabbage... yes I miss my cabbage as I do not long for meat anymore, not after what I\u0027ve\\\"}]\",
+                  \"[{\\\"text\\\":\\\"seen happening to what were once my friends, the townsmen, and the strangers. I am one of the few left, families are gone forever. The humanity in us is slowly fading away... What are we about to become?\n \\\"}]\"
+                ],
+                title:\"Night is Falling\",
+                author:\"A Farmer\",
+                display:{Lore:[\"The Night is falling by a unknown farmer.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Treasures hidden deep within, we found them but we also lost our way out. Day in, day out, we fight the monsters while trying to haul the loot outside, but every stairwell seems to lead to another new dungeon with even more treasures.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"We have a close group of adventurers so there won\u0027t be anything to stop us, especially now that we\u0027ve acquired a heavenly sword from what we think was the guardian of this dungeon. There\u0027s a lot of bad tales going around but if you\\\"}]\",
+                  \"[{\\\"text\\\":\\\"find yourself in here and find this letter, do not despair as that is what they want, to overmaster you. Be strong and find the light.\n \\\"}]\"
+                ],
+                title:\"Cursed Treasure\",
+                author:\"Unknown\",
+                display:{Lore:[\"A note by a fool of a treasure hunter.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "dungeonone_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:invisibility\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water_breathing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:harming\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:healing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_night_vision\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:mundane\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_strength\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:fire_resistance\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_swiftness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:strong_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:weakness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_horse_armor",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shield",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Corrupted Shield\",Lore:[\"With this shield you will deal significant more damage but at a cost...\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Base:15,Patterns:[{Color:0,Pattern:\"gru\"},{Color:1,Pattern:\"moj\"},{Color:0,Pattern:\"sku\"},{Color:8,Pattern:\"tts\"},{Color:0,Pattern:\"bts\"},{Color:0,Pattern:\"gra\"}]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Base:0,Patterns:[{Color:1,Pattern:\"bts\"},{Color:1,Pattern:\"tts\"},{Color:1,Pattern:\"ss\"},{Color:0,Pattern:\"cbo\"},{Color:0,Pattern:\"cr\"},{Color:0,Pattern:\"bt\"}]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Base:7,Patterns:[{Color:1,Pattern:\"bri\"},{Color:7,Pattern:\"rd\"},{Color:7,Pattern:\"cs\"},{Color:7,Pattern:\"flo\"},{Color:7,Pattern:\"bt\"}]}}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "More Damage",
+                  "amount": 20,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "More Damage",
+                  "amount": -5,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "Less Health",
+                  "amount": -15.0,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 9
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glass_bottle",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_ward",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mall",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_far",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_chirp",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_cat",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_13",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_11",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_blocks",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mellohi",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_wait",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_stal",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_strad",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:writable_book",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

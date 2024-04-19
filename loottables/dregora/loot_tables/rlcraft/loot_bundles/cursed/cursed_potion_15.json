@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Curse break with hidden slowness, bad luck, invisibility, glowing, mining fatigue and all other negative stuff",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"rlmixins:curse_break\",
+                display:{Name:\"Potion of Curse Break\",Lore:[\"§9Curse Break\",\"§5When Applied:\",\"§9Sardonic +1\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:27,Duration:600,Amplifier:9},{Id:15,Duration:600,Amplifier:9},{Id:24,Duration:600,Amplifier:9},{Id:17,Duration:600,Amplifier:9},{Id:7,Duration:600},{Id:14,Duration:600},{Id:4,Duration:600,Amplifier:9},{Id:9,Duration:600,Amplifier:9},{Id:19,Duration:600,Amplifier:9},{Id:11,Duration:0},{Id:2,Duration:600,Amplifier:4},{Id:18,Duration:1200,Amplifier:9}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"rlmixins:curse_break\",
+                display:{Name:\"Potion of Curse Break\",Lore:[\"§9Curse Break\",\"§5When Applied:\",\"§9Sardonic +1\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:27,Duration:600,Amplifier:9},{Id:15,Duration:600,Amplifier:9},{Id:24,Duration:600,Amplifier:9},{Id:17,Duration:600,Amplifier:9},{Id:7,Duration:600},{Id:14,Duration:600},{Id:4,Duration:600,Amplifier:9},{Id:9,Duration:600,Amplifier:9},{Id:19,Duration:600,Amplifier:9},{Id:11,Duration:0},{Id:2,Duration:600,Amplifier:4},{Id:18,Duration:1200,Amplifier:9}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

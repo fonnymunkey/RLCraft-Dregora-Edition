@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Haste\",Lore:[\"\u00A7r\u00A79Haste V (1:30)\",\"\u00A70\u2620\",\"\u00A75When Applied:\",\"\u00A79+100% Dig Speed\",\"\u00A79+50% Attack Speed\"]},
+                CustomPotionEffects:[{Id:3,Duration:1800},{Id:17,Duration:1800,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:1800,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:1,Duration:1800,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:1800,Amplifier:4,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:15584622,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Haste\",Lore:[\"\u00A7r\u00A79Haste V (1:30)\",\"\u00A70\u2639\",\"\u00A75When Applied:\",\"\u00A79+100% Dig Speed\",\"\u00A79+50% Attack Speed\"]},
+                CustomPotionEffects:[{Id:3,Duration:1800},{Id:17,Duration:1800,Amplifier:100,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:1800,Amplifier:4,ShowParticles:0b,ShowIcon:0b},{Id:1,Duration:1800,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:1800,Amplifier:4,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:15584622,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

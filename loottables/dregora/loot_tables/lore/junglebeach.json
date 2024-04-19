@@ -1,0 +1,351 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "junglebeach",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Silently I stood, looking at what I would carry with me till the end of time. Light breaking through the roof of leaves that served many purposes.\nOne of which  is to protect it\u0027s roots from drowning and secondly to quench it\u0027s thirst.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"That day it however had yet another purpose as it stood witness to a beautiful yet horrific sight.\n\nSurrounded by silence and within that silence the cries of a baby lama being born or parrots looking for a partner.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A cycle of life which both has a start as it has a end.\nBeautiful as she laid between the flowers and grass that wore the same colors as her eyes. Eyes that were beautiful but corrupted as the legends says.\n\nIt\u0027s the Grok that wears green eyes.\\\"}]\"
+                ],
+                title:\"Her green eyes\",
+                author:\"Unknown Villager\",
+                display:{Lore:[\"A story written by a previous or current resident.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It\u0027s been the second moon in my trial of Grok and I can slowly feel my senses coming back to me. If not what I wrote would have been gibberish. Or has it been the third moon?\nI think i lost track of time 4 moons ago. But i am getting my sense of time back.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The urge to eat raw fish diminishes too. Cooked are how I like them now.\n\nWith some moons I might be able to return home, back to my family and maybe we can sail out on the ships that will build the new world to the west.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"City of origins is what they are going to call it... Weirdly a stranger visited me 9 moons ago. He said it was already created.\n\n\n\nHow long have I been here?\n\n \\\"}]\"
+                ],
+                title:\"Trial of Grok\",
+                author:\"Nameless Exile\",
+                display:{Lore:[\"A story on how one experiences the trial of Grok.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Hello book! they told me to write, write much about all the raw meat that is so delicious. And easy too! Who needs a cooking pot? Raw legs, raw fish raw heads... Hmm.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"I don\u0027t understand those idiots back in the village and I am glad they send me away.\n\nMuch better like this anyway! Now, where is my precious rawwrr fishy meat? Yum!\\\"}]\"
+                ],
+                title:\"Rawr is the way!\",
+                author:\"Loegi Khun\",
+                display:{Lore:[\"This book seems to have been written by a special person...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"If you find yourself in this house you should not leave.\n\nIf you find yourself not alone in this house you should be cautious as corruption may reside here.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"You should eat cooked fish or meat during evenings. Good will come to those who wont eat raw.\n\nYou should not return to where you came from or you will be pieced by arrows and be set ablaze.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"You should conquer the GROK and never give up as your family awaits you.\\\"}]\"
+                ],
+                title:\"Book of Grok\",
+                author:\"Village Chief\",
+                display:{Lore:[\"A book to guide those who undergo the trial of Grok.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Having been here 11 moons I know to have conquered the GROK. On my journeys to regain the light that reside in all of us I found this book deep below. I do not know what it means, what story it tells but it\u0027s illustrations and mighty words helped me through my journey.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Even though I can\u0027t seem to read them anymore, perhaps because I have been healed... They were a sight to behold though. Almost as if they were memories from a different age.\\\"}]\"
+                ],
+                title:\"Noted Encyclopedia\",
+                author:\"Rediem Lougu\",
+                display:{Lore:[\"A Dusty, blank book which title says Encyclopedia,\nthere\u0027s also a note written on the first two pages.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "junglebeach_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:potion\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 6,
+                "max": 12
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_boat",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

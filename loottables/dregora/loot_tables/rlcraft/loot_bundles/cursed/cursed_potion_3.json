@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Fire with Waterbreathing troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:strong_fire\",
+                display:{Name:\"Potion of Fire Breathing\",Lore:[\"§9Water Breathing (0:30)\",\"§9Fire Breathing (0:30)\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:24,Duration:600}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:strong_fire\",
+                display:{Name:\"Potion of Fire Breathing\",Lore:[\"§9Water Breathing (0:30)\",\"§9Fire Breathing (0:30)\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:24,Duration:600}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

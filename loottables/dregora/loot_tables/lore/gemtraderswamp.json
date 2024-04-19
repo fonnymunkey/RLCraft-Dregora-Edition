@@ -1,0 +1,149 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "gemtraderswamp_1",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Quinn, It's safe.\n\nI stashed it nearby the only thing you need to do is get it before it rusts or gets damaged.\n\nIt's in the regular spot. This will be our last job.\n\nDo not try to contact me again,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Be aware there is something prowling down there.\n\nIt reeks of rot.\n\nI hope you red the whole letter instead of letting your greed take over again.\n\nDamian.\n \\\"}]\"
+                ],
+                title:\"Letter\",
+                author:\"Damian\",
+                display:{Lore:[\"This seems to be a smuggler\u0027s note.\"]}
+              }"
+            }
+          ],
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "name": "gemtraderswamp_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+            "type": "item",
+            "name": "minecraft:book",
+            "weight": 1,
+            "functions": [
+                {
+                    "function": "enchant_with_levels",
+                    "levels": 15,
+                    "conditions": [
+                      {
+                        "condition": "random_chance",
+                        "chance": 0.1
+                      }
+                    ]
+                }
+            ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_flower",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:item_frame",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:vine",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

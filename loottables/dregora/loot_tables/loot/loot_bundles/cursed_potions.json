@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Chest",
+  "pools": [
+    {
+      "name": "Cursed Effects Chest",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_1",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_2",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_3",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_4",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_5",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_6",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_7",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_8",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_9",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_10",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_11",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_12",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_13",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_14",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_15",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/cursed_potion_16",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+
+
+
+            

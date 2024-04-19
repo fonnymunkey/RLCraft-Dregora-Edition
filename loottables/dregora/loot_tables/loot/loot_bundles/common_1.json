@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "Common Food Chest",
+      "rolls": {
+        "min": 3,
+        "max": 8
+      },
+"bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 3,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mushroom_stew",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_mutton",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_rabbit",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_porkchop",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_beef",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_fish",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}
+

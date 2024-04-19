@@ -1,0 +1,118 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "always_spawn",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Travelers Compass\",Lore:[\"The compass has a inscription on the back\nFollow the pointed path and wonders await.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_castle",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_castle",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_church",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_daeroc",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_farmstead",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_greendungeon",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_iceships",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_icetemple",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_legacyspawn",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_mineshafts",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_mountains",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_origin",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_pirate",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_quarry",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_spook",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:travelers/travelers_tribal",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

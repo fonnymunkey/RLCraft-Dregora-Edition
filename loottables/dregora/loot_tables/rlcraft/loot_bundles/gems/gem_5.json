@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "BOP Gems, Dregora Economy",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "biomesoplenty:gem",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

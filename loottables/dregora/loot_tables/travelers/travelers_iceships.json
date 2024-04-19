@@ -1,0 +1,86 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_iceships_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Frozen Ships\",Lore:[\"Area Around x:7576 z:12204\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:7576,z:12204}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_iceships_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:7576 z:12204\",Lore:[\"Ocasionally along the shore frozen death awaits.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_iceships_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:snowball",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:snow_layer",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ice",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:packed_ice",
+          "weight": 3
+        }
+      ]
+    }
+  ]
+}
+

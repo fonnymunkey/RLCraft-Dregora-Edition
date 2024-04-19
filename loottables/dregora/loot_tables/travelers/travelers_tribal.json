@@ -1,0 +1,111 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_tribal_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Tribal Village\",Lore:[\"x:-2813 z:16534\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-2813,z:16534}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 1
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_tribal_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-2813 z:16534\",Lore:[\"Tribal village of ancient cultures.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_tribal_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:banner",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 0
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Tribe of Khadr Kryk\"}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{Patterns:[{Color:11,Pattern:\"mr\"},{Color:1,Pattern:\"mc\"},{Color:0,Pattern:\"cr\"},{Color:1,Pattern:\"bts\"},{Color:1,Pattern:\"tts\"},{Color:11,Pattern:\"cbo\"}]}}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leaves",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 3
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:jungle_boat",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "RLCraft Music",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {"type": "item","name": "charm:record_calm1","weight": 5},
+        {"type": "item","name": "charm:record_calm2","weight": 5},
+        {"type": "item","name": "charm:record_calm3","weight": 5},
+        {"type": "item","name": "charm:record_hal1","weight": 5},
+        {"type": "item","name": "charm:record_hal2","weight": 5},
+        {"type": "item","name": "charm:record_hal3","weight": 5},
+        {"type": "item","name": "charm:record_hal4","weight": 5},
+        {"type": "item","name": "charm:record_nuance1","weight": 5},
+        {"type": "item","name": "charm:record_nuance2","weight": 5},
+        {"type": "item","name": "charm:record_piano1","weight": 5},
+        {"type": "item","name": "charm:record_piano2","weight": 5},
+        {"type": "item","name": "charm:record_piano3","weight": 5},
+        {"type": "item","name": "charm:record_creative1","weight": 5},
+        {"type": "item","name": "charm:record_creative2","weight": 5},
+        {"type": "item","name": "charm:record_creative3","weight": 5},
+        {"type": "item","name": "charm:record_creative4","weight": 5},
+        {"type": "item","name": "charm:record_creative5","weight": 5},
+        {"type": "item","name": "charm:record_creative6","weight": 5},
+        {"type": "item","name": "charm:record_nether1","weight": 5},
+        {"type": "item","name": "charm:record_nether2","weight": 5},
+        {"type": "item","name": "charm:record_nether3","weight": 5},
+        {"type": "item","name": "charm:record_nether4","weight": 5},
+        {"type": "item","name": "charm:record_menu1","weight": 5},
+        {"type": "item","name": "charm:record_menu2","weight": 5},
+        {"type": "item","name": "charm:record_menu3","weight": 5},
+        {"type": "item","name": "biomesoplenty:record_wanderer","weight": 1},
+        {"type": "item","name": "pigstep:pigstep","weight": 1},
+        {"type": "item","name": "trumpetskeleton:trumpet","weight": 1}
+      ]
+    }
+  ]
+}
+

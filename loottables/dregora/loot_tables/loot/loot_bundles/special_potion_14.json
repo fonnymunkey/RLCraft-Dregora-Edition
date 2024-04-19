@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Effects Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Shivvy\u0027s Ale\",Lore:[\"\",\"\u00A7lSigned:\u00A7r Shivaxi, the creator\",\"\u00A7lType:\u00A7r Standard Supply Dregorian Vial\",\"\u00A7lBatch Number:\u00A7r Y-2078 A-F\",\"\u00A7lSerial Number:\u00A7r -unreadable-\",\"\",\"Few words inscribed on the bottom say:\",\"-Bottled RL-\"]},
+                CustomPotionEffects:[{Id:27,Duration:300},{Id:15,Duration:60},{Id:24,Duration:300},{Id:21,Duration:900,Amplifier:1},{Id:17,Duration:900},{Id:7,Duration:40},{Id:6,Duration:40},{Id:8,Duration:600,Amplifier:5},{Id:25,Duration:50},{Id:26,Duration:300},{Id:9,Duration:600},{Id:16,Duration:600},{Id:10,Duration:300,Amplifier:1},{Id:23,Duration:700},{Id:2,Duration:500},{Id:1,Duration:800,Amplifier:5},{Id:5,Duration:300,Amplifier:1},{Id:18,Duration:200}],
+                CustomPotionColor:259565
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+
+
+
+            

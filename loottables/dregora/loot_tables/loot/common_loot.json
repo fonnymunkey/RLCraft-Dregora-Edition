@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Common Chest",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_tools",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_chaos",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_potions",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_arrows",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_web",
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "name": "Common Chest",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_1",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_2",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_3",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/loot_bundles/common_4",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

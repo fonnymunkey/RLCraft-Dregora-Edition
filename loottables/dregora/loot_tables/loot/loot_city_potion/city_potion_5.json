@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:water\"
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.5}],
+              "tag": "
+              {
+                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:10,Duration:900}]
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.1}],
+              "tag": "
+              {
+                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:15,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:17,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:4,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:19,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:2,Duration:600,ShowParticles:0b,ShowIcon:0b},{Id:18,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2053119,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:mundane\"
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                Potion:\"minecraft:thick\"
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.2}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

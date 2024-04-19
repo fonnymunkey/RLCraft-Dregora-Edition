@@ -1,0 +1,1511 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Epic Chest",
+  "pools": [
+    {
+      "name": "Epic Tool Chest",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Sword\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": -1,
+                    "max": -2
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 2,
+                    "max": 3
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attackSpeed",
+                  "name": "attackSpeed",
+                  "amount": {
+                    "min": -2.4,
+                    "max": -2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.03
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 3,
+                    "max": 3
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attackSpeed",
+                  "name": "attackSpeed",
+                  "amount": {
+                    "min": -2.4,
+                    "max": -2.4
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.05
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.attackDamage",
+                  "name": "attackDamage",
+                  "amount": {
+                    "min": 3,
+                    "max": 3
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.attackSpeed",
+                  "name": "attackSpeed",
+                  "amount": {
+                    "min": -2.4,
+                    "max": -2.4
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Shovel\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.02
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Pickaxe\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.02
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Axe\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.02
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand",
+                    "offhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Helmet\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": 0.5,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.005,
+                    "max": 0.01
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.knockbackResistance",
+                  "name": "knockbackResistance",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": 2,
+                    "max": 3.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "head"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Chestplate\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": 0.5,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.005,
+                    "max": 0.01
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.knockbackResistance",
+                  "name": "knockbackResistance",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": 5,
+                    "max": 6.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "chest"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Leggings\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": 0.5,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.005,
+                    "max": 0.01
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.knockbackResistance",
+                  "name": "knockbackResistance",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": 3,
+                    "max": 4.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "legs"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Damascus Gold Boots\",Lore:[\"Made of reinforced gold, a technique lost to ancient times.\"]}}"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armorToughness",
+                  "name": "armorToughness",
+                  "amount": {
+                    "min": 0.5,
+                    "max": 1
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.movementSpeed",
+                  "name": "movementSpeed",
+                  "amount": {
+                    "min": 0.005,
+                    "max": 0.01
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.knockbackResistance",
+                  "name": "knockbackResistance",
+                  "amount": {
+                    "min": 0.01,
+                    "max": 0.025
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ],
+              "modifiers": [
+                {
+                  "attribute": "generic.armor",
+                  "name": "armor",
+                  "amount": {
+                    "min": 1,
+                    "max": 2.5
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "feet"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 1,
+              "treasure": false
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "treasure": false,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "enchant_randomly",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

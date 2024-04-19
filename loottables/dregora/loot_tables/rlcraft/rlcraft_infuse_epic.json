@@ -1,0 +1,195 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Special Resources",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/rlcraft_potion",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/rlcraft_music",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/diamond_weapons",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/silver_weapons",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/silver_tools",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/silver_armor",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "xpbook:xp_book",
+          "weight": 1,
+          "functions": [
+            {"function": "minecraft:set_nbt","tag": "{xp:250}","conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_nbt","tag": "{xp:500}","conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_nbt","tag": "{xp:1000}","conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "wearablebackpacks:backpack",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:potionrecall",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:potionwormhole",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "xat:glowing_powder",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "xat:glowing_gem",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:essence_mourner",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:essence_destroyer",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:ravaging_ingot",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:spectralsilt",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "xat:glowing_ingot",
+          "weight": 10,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 2}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "potionfingers:ring",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "mujmajnkraftsbettersurvival:itembigshield",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "baubles:ring",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "armorunder:auto_chestplate_liner",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "armorunder:auto_leggings_liner",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:medikit",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "qualitytools:emerald_ring",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "qualitytools:emerald_amulet",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:dynamite",
+          "weight": 10,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 3}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:silver_ingot",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "waystones:return_scroll",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "waystones:bound_scroll",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "waystones:warp_scroll",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "titan potion causes dwarf troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"xat:extended_dwarf\",
+                display:{Name:\"Potion of Titan Transformation\",Lore:[\"§9Titan (3:00)\",\"\",\"§5When Applied:\",\"§9+1 Enhanced Race\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:4,Duration:3600,Amplifier:1}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"xat:extended_dwarf\",
+                display:{Name:\"Potion of Titan Transformation\",Lore:[\"§9Titan (3:00)\",\"\",\"§5When Applied:\",\"§9+1 Enhanced Race\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:4,Duration:3600,Amplifier:1}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

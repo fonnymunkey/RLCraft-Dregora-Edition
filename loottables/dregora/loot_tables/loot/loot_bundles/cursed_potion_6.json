@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Regeneration \u00A70\u2620\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Regeneration \u00A70\u2639\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Regeneration \u00A70\u2620\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Regeneration \u00A70\u2639\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Regeneration \u00A70\u2620\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Regeneration \u00A70\u2639\",Lore:[\"\u00A7r\u00A79Regeneration III (0:15)\"]},
+                CustomPotionEffects:[{Id:19,Duration:300,Amplifier:1,ShowParticles:0b,ShowIcon:0b},{Id:10,Duration:300,Amplifier:2,},{Id:2,Duration:300,Amplifier:10,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:13721262,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "farmland",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"The moon stands high in the nightly sky. A white moon. It\u0027s one of those nights where I barely get any rest before starting my daily routine which consists of breakfast, work in the fields, and maintaining the boundaries of my land.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Sometimes I can see shadows moving at night which makes me hide and tremble in fear. They have never noticed me as I trained myself to do my work as silently as possible. However, this time I can see its glowing eyes staring\\\"}]\",
+                  \"[{\\\"text\\\":\\\"in my direction. There\u0027s no red moon so I should be safe... It shouldn\u0027t come after me or even be able to notice me. I think of my past experiences and what the elders said about these beasts. They rarely move during the night and during the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"day they reside underground in their strongholds. But lately I\u0027ve seen more and more of them moving around above ground. I exhale heavily as the monster resumes its journey toward the horizon. I would swear it must\u0027ve seen me...\\\"}]\"
+                ],
+                title:\"Staring Eyes\",
+                author:\"An unknown farmer.\",
+                display:{Lore:[\"An encounter with the corrupted.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"It was night when it happened, a pitch black night with soaring winds, or so I thought. It woke me during a sweet dream of spending time with my wife after a hard day of work. I stood up and noticed the ground was shaking. A small\\\"}]\",
+                  \"[{\\\"text\\\":\\\"earthquake? As I opened the window I came to the conclusion that was not entirely the case. Monsters, countless of them, walking across my land. Overcoming my fear, I quietly walked back to the bedroom and woke my wife, then our\\\"}]\",
+                  \"[{\\\"text\\\":\\\"children, and gave them instructions to hide and be as quiet as possible. I feel like hours had passed due to the time it took me to quietly move around, but eventually I found myself back at the window while trying to get my equipment to defend\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ourselves. Then, a shadow soaring through the sky with wings as big as the house we live in. It resembled the bones buried deep beneath my land in the dungeon I once explored as a kid. So they\u0027re real, the old tales are true. Hours passed as I\\\"}]\",
+                  \"[{\\\"text\\\":\\\"watched them pass the hills in the distance till dawn came. Not until a couple hours later did I finally find the courage to see what happened to my lands, to my cattle, so I walked downstairs and opened the front doors.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"A couple of miles out I found the cause of that small earthquake. Big footprints of the beast and no sign of the cattle... So I really saw it, a flying monster, a dragon from ancient tales. \\\"}]\"
+                ],
+                title:\"Encounter on the Farm\",
+                author:\"An unknown farmer.\",
+                display:{Lore:[\"Times are changing, as proven by this note.\nWho knows how long ago this was and\nwhere the corrupted stand now.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"A day like any other while working in the field, I busted my hoe on a rock I must have missed earlier. I dug and found something rather interesting, a sword which could have been placed there moments ago, as once I unburied\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and grabbed the sword, the dirt slid off without a speck of rust on its blade. It seemed like a regular blade but light as a feather, making me wonder if the old tales about luminous treasures within the dungeons where true after all.\n \\\"}]\"
+                ],
+                title:\"A Lumious Sword\",
+                author:\"An unknown farmer.\",
+                display:{Lore:[\"A rare find.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Just like any other day, I got out of bed, had my breakfast, and started my work in the field. The birds were singing. Nothing indicated what was to come but then it happened. As I was swinging my scythe something stopped its movement,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"leaving me surprised beyond reason as nothing was there to stop it. With a frown on my face I resumed swinging my scythe. Again, it happened, and again, so I stood there staring at the ground. After contemplating a moment, I started digging.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A magical item? I\u0027d heard of them spontaneously appearing in all kinds of locations but nothing was there. Nothing could\u0027ve prepared me for the next moment though. Not a mighty sword or a divine shield but a bench appeared right in front of me.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"A sturdy steel bench with pillows on it made from some kind of leather as it seemed. It appeared \u0027Shiny\u0027 as if it was being lit by sunlight but at this time of day there is not enough sun to actually make it appear like it does.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"The bench, however, was just part of the scene as there was a man sitting on it, a man with a very long red beard. He asked: \u0027You were looking for a sword?\u0027 which I failed to answer, still being frozen by the sight of this extremely weird event\\\"}]\",
+                  \"[{\\\"text\\\":\\\"happening on my lands in the fields I work every single day. The man asked me to sit next to him and I did so unconciously. He introduced himself as a harmless traveler.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"He said he was from neither the future, nor the past, but left no question unanswered. \u0027Twas as if he knew what was going through my mind. Eventually he gave me a book to read and told me nobody but I could read it.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"As I woke up I found myself in the field, what a strange thing just happened, a dream? Did I faint? I searched the land for the book but couldn\u0027t find it. It must\u0027ve been a dream even though it appeared so real... But when I arrived\\\"}]\",
+                  \"[{\\\"text\\\":\\\"back home and started reading my favorite book, I couldn\u0027t recognize it anymore. Strange markings and a weird story about the end? I asked my wife where my book was. She told me I was holding it... She couldn\u0027t see the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"markings, she couldn\u0027t see the story. And so I end my story here, as I will leave this place with the knowledge I have gathered to save whom I love. To become a traveler myself.\n\n \\\"}]\"
+                ],
+                title:\"The Traveler\",
+                author:\"Duke the Farmer\",
+                display:{Lore:[\"Another encounter with the mysterious traveler.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\n\n                  \u00A74\u00A7lSEEK THE END\u00A7r\u00A7r\n                 \u00A7o- A TRAVELER -\\\"}]\"
+                ],
+                title:\"The Book\",
+                author:\"The Traveler\",
+                display:{Lore:[\"A weird, empty book... except...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "farmland_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:thick\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:water\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.4
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_hoe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_hoe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_axe",
+          "functions": [
+
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.50,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cake",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chicken",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cooked_beef",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wool",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_pie",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sapling",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_block",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:reeds",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:baked_potato",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_stew",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lead",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_soup",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}
+

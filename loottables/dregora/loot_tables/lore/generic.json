@@ -1,0 +1,856 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "generic",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A74     Chapter 1  \u00A7r\n\nThe year is 2116 and the world is at peace, not because we took a better path, as there are daily riots and looting, but because the nations\u0027 fuel reserves reached a point where they could no longer fuel the war machines. This was the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"moment where the world leaders came together to initiate Project Arcturus. The goal was to solve the global energy shortage by extracting zero point energy from our own universe, a source of power potentially dozens of times more potent\\\"}]\",
+                  \"[{\\\"text\\\":\\\"than a Zero Point Module. However, the project suffered from a fatal flaw. By extracting zero point energy from its own space-time it resulted in the destabilizing of space within the vicinity of the zero point reactor. No longer obeying the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"normal laws of physics, exotic particles were formed. They interacted in ways impossible to predict resulting in a runaway reaction in the containment chamber...\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Without a lot of information to go on, people came to the conclusion space-time had been bent and dimensions had melted together causing the effects of this catastrophe. First the electromagnetic shock wave, powerful enough to destroy the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"infrastructure as we knew it. Ships dead in the water, planes with complete system failures and earthquakes destroying our means of transportation on the ground. Months later, just as humanity started to find a grip, the mutations came.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"They were called The Corrupted. It started with a few but they quickly became a common occurrence from which even the inhabitants buried deep underground in their mighty concrete bunkers were not safe. Driven back to our last standing\\\"}]\",
+                  \"[{\\\"text\\\":\\\"strongholds, we foresaw the future with grim eyes. Far away, behind the horde our advanced nuclear saviors of old times stood, slowly ticking away our remaining time as there was nobody left to fix any damage.  Before long we retreated\\\"}]\",
+                  \"[{\\\"text\\\":\\\"to our deepest bunkers, ironically powered by nuclear reactors, and waited for the world to heal again.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Meanwhile, a distant hope was approaching this broken, nuclear world, one that would earn the world\u0027s name and its history as if they where twins. The Dregorian Voyager, a mighty ship with but one goal, colonize distant stars. A dream\\\"}]\",
+                  \"[{\\\"text\\\":\\\"shattered by a simple malfunction within the hyperdrive mainframe that required the passengers to live a thousand years in stasis until they finally arrived back at Earth.\n\n- To be continued in -\n \u0027lThe Dregorian\u0027s Demise\u0027r\n    ( Chapter 2 )\\\"}]\"
+                ],
+                title:\"The Blight - Chapter 1\",
+                author:\"Dregorian\",
+                display:{Lore:[\"From before the world was named Dregora, the ancient times.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A74     Chapter 2  \u00A7r\\\\n\nAs the staff crew launched into orbit on board a much smaller vessel towards the Dregorian Voyager, all of humanity applauded them. A decade would pass until they would return with what everyone hoped to be good news about one\\\"}]\",
+                  \"[{\\\"text\\\":\\\"or more distant planets suitable to host human life. A place where they could prosper without the atmosphere being polluted beyond saving. However, among all these good hopes and wishes there was a tiny little object they did not anticipate. Far\\\"}]\",
+                  \"[{\\\"text\\\":\\\"away, light years in fact, an asteroid was traveling for many million years headed on a collision course with a much larger asteroid. With a chaotic collision they merged, but not completely, as tiny rocks flew off in all\\\"}]\",
+                  \"[{\\\"text\\\":\\\"directions. One of them headed towards a little moon orbiting a far, far away planet in an unknown system which was currently being visited by the Dregorian Voyager.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Nothing special happened, a tiny rock flew at near the speed of light and hit the hull, leaving a tiny hissing gap which was immediately fixed by the autonomous robots with the task to keep the ship in sublime condition. But it was not just the hull\\\"}]\",
+                  \"[{\\\"text\\\":\\\"that got penetrated. By mere chance this tiny rock meant the death of two crew members. As it was moving so fast it could penetrate anything within the ship, as it did the navigational unit of the hyperdrive mainframe. A senior\\\"}]\",
+                  \"[{\\\"text\\\":\\\"mechanic could have quickly fixed it, but the longer this chip was not working the more the Dregorian Voyager would drift off towards unknown space.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Many years later the Dregorian Voyager reached its destination, or so the crew thought. But after waking they quickly realized something was wrong. Two of the designated mechanics were dead, hit by a tiny rock while in stasis. A tragedy\\\"}]\",
+                  \"[{\\\"text\\\":\\\"they thought, until they took a look outside and everything was not as it should have been. Unknown stars and planets. Nothing they could recognize from their extended training. Nothing the computer could recognize in its current state as the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"shutdown sequence was interrupted by a malfunction in the navigational chip. To sum things up, the hyperdrive would primarily need two replacements, a navigational chip and a new Crontonium Crystal which unintentionally functioned as a fuse\\\"}]\",
+                  \"[{\\\"text\\\":\\\"and got hit by a surge caused by skipping the shutdown sequence. The navigational chip replacement was nothing to worry about, the same goes for the Crontonium Crystal if it wasn\u0027t a one of a kind crystal. Of course there were\\\"}]\",
+                  \"[{\\\"text\\\":\\\"replacements, but not as good as the initial one.\n\n\nA couple days passed, systems were running again and they knew exactly where they were. In sublime condition their\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"destination would have been 5 years ahead. A simple dream away in stasis. Yet the ship could only travel at a mere fraction of its former speed. If the Dregorian Voyager set course for its original destination it would take 987 years to reach while earth was close to a\\\"}]\",
+                  \"[{\\\"text\\\":\\\"1000 years away. With both destinations nearly equally as bad they voted to return home.\n\n- To be continued in -\n \u0027lThe Arrival\u0027s Demise\u0027r\n    ( Chapter 3 )\\\"}]\"
+                ],
+                title:\"Dregorian\u0027s Demise - Chapter 2\",
+                author:\"Dregorian\",
+                display:{Lore:[\"A Distant Hope...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A74     Chapter 3  \u00A7r\n\nYears passed while the crew of the Dregorian voyager slept in stasis. As the Dregorian Voyager approached the solar system the crew was awakened to make long-distance contact with Earth which seemed so blue the last time they saw it,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"around 800 years ago when they left their home. However, upon looking towards the Earth they saw nothing but a planet covered in red dust. Has Earth vanished, somehow replaced by a red ball of dust like Mars? Uncertain of their findings\\\"}]\",
+                  \"[{\\\"text\\\":\\\"they tried all methods of contact longing for any answer. Weeks passed while hope declined. Earth as they knew it was gone. Only a small speck of vegetation remained, somehow spared by whatever happened on earth. And so, with mixed\\\"}]\",
+                  \"[{\\\"text\\\":\\\"feelings they went to their stasis pods once again to sleep for the remaining 20 years as they slowly approached Earth.\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"20 years passed in a second. Vomiting and feeling incredibly sick, the crew\u0027s captain stumbled out of his pod and dragged himself to the infirmary to climb back into another pod and activate it. A day passed while the pod healed him from his\\\"}]\",
+                  \"[{\\\"text\\\":\\\"extended hibernation while his other crew members woke up as well. As was second nature, once capable everyone started checking all systems and did a full ship diagnostic. Everything worked fine, including the substitute Crontonium Crystal. As\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"the crew arrived on deck they could see the captain standing in the center of the room. Behind him there was a red ball, almost like an eye as there was a green iris looking in their direction. What they saw is what remained of Earth. So it was\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\ntrue, the world as they knew it was forever gone, buried under a thick layer of red dust.\n\n- To be continued in -\n\u00A7l    A Dead World\u00A7r\n    ( Chapter 4 )\\\"}]\"
+                ],
+                title:\"The Arrival - Chapter 3\",
+                author:\"Dregorian\",
+                display:{Lore:[\"Red, like the evening sun.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A74     Chapter 4  \u00A7r\n\nAs the corrupted burned to a crisp, the landing gears of the Dregorian Voyager touched the ground after a thousand years. This was also the moment we woke the scientist department to assess the damage and see what could be done\\\"}]\",
+                  \"[{\\\"text\\\":\\\"while a small team of marines will attempt to find any survivors to tell us what happened to the Earth. Not much later, the scientists came with a report urging us to visit a known mountain range due north and take some specimens.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"What we didn\u0027t tell them is that we\u0027d not only assemble a team to get the specimens but also visit a special bunker in those mountains. If humanity needed a refuge from an apocalyptic event, that is where they would go.\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"Only one person returned from this expedition with a sample of the mountain. His last words struck the crew with fear and had they not listened I wouldn\u0027t be here to tell this story. \u0027Beasts, corrupted... Evil. Close the gates, NOW! You MUST\u0027 As the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"scientist did their test we closed up the ship. No one out, no one in. And as night fell we heard the noises against the hull. Dawn arrived as the wind blew over a desolate wasteland and a scientist found the truth. Today marks the year 6156,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"4076 years since the departure of the Dregorian Voyager. Knowing this and the fact that finding any survivors is very slim, the leaders of the departments came together to talk about the future. Would they remain on Earth and use terraforming\\\"}]\",
+                  \"[{\\\"text\\\":\\\"equipment to slowly return the Earth to its former beauty or would they embark on their journey to distant stars as was the original plan? As the vote resulted in a unanimous decision to remain on Earth, they started up the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\nzero-point module, their primary source of energy on the Dregorian Voyager.\n\n\n- To be continued in -\n\u00A7l    A New World\u00A7r\n    ( Chapter 5 )\\\"}]\"
+                ],
+                title:\"A Dead World - Chapter 4\",
+                author:\"Dregorian\",
+                display:{Lore:[\"The sound of nothing as the true king of what once was our Earth.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A74     Chapter 5  \u00A7r\n\nGenerations passed as the land slowly became fertile again. Seeds were spread and trees were popping out of the ground. First there was a river, later came life in the form of forests, animals and birds. The passengers of the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Dregorian Voyager woke up to this new world. Being told this actually was Earth, they were pained but their will to live was greater than their despair. A huge enclosing wall was constructed to keep out the corrupted so we could sleep in our houses at\\\"}]\",
+                  \"[{\\\"text\\\":\\\"night instead of within the ship. This was also the time of exploration, to see what happened to the world, so towns were created further and further away from the Dregorian Voyager, which slowly but surely began to sink into the ground\\\"}]\",
+                  \"[{\\\"text\\\":\\\"until nothing remained and an era had passed.\n\nThis is the new world in which we prosper, we the descendants of the Dregorians who once flew among the stars.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\n\n\n  Welcome to Dregora\n\n\u00A7l\u00A74     THE END AND       THE BEGINNING\\\"}]\"
+                ],
+                title:\"A New World - Chapter 5\",
+                author:\"Dregorian\",
+                display:{Lore:[\"Welcome to Dregora\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "generic_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 8
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_regeneration\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_night_vision\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.3
+                }
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:fire_resistance\"}"
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:slowness\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:luck\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:long_water_breathing\"}",
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shield",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.75,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.9
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.2
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wooden_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 5,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.6
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_axe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_pickaxe",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_sword",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.5
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_block",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:reeds",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

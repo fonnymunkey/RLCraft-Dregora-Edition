@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "empty_loot",
+      "rolls": 0,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

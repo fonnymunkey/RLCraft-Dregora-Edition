@@ -1,0 +1,116 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "gilded_bone_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/gilded_bone_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "oceanruin_big_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 5
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/gilded_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/golden_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "gilded_bone_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "contenttweaker:bone_pile",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:goldpile",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:knife/gold",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:mattock/gold",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "spartanshields:shield_basic_gold",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:coin_bronze",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+

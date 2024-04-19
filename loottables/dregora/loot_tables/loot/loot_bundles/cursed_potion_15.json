@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Luck\",Lore:[\"\u00A7r\u00A79Good Luck IV (9:00)\",\"\u00A75When Applied:\",\"\u00A79500% Good Luck\"]},
+                CustomPotionEffects:[{Id:15,Duration:20,Amplifier:10,ShowParticles:0b,ShowIcon:0b},{Id:25,Duration:20,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:26,Duration:100}],
+                CustomPotionColor:3447808,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2620\u2b06\",\"\u00A75When Applied:\",\"\u00A79+80% Speed\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Lingering Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2639\u2b06\",\"\u00A75When Applied:\",\"\u00A79+7.5 Jump Height\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2620\u2b06\",\"\u00A75When Applied:\",\"\u00A79+80% Speed\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Splash Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2639\u2b06\",\"\u00A75When Applied:\",\"\u00A79+7.5 Jump Height\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2620\u2b06\",\"\u00A75When Applied:\",\"\u00A79+80% Speed\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                display:{Name:\"Potion of Leaping\",Lore:[\"\u00A7r\u00A79Jump Boost X (0:10)\",\"\u00A70\u2639\u2b06\",\"\u00A75When Applied:\",\"\u00A79+7.5 Jump Height\"]},
+                CustomPotionEffects:[{Id:8,Duration:100,Amplifier:9},{Id:25,Duration:10,Amplifier:25,ShowParticles:0b,ShowIcon:0b},{Id:9,Duration:600,ShowParticles:0b,ShowIcon:0b}],
+                CustomPotionColor:2358349,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

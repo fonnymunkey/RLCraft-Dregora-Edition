@@ -1,0 +1,308 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "simpledungeon",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"New revelations have occurred while researching the corrupted and their habitats. It\u0027s almost as if the former person still resides within these beasts desperately trying to escape. Sometimes this can be seen in the form of delusional chatter,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"easily mistaken for attempts to communicate. Although, I have to say that whenever there is chatter the other corrupted seem to react. Some more than others, and in very rare cases they all respond equally as if they have a discussion.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"The latter only occurs when they face an event that requires above average effort to overcome.\n\n \\\"}]\"
+                ],
+                title:\"The Origin Part 2\",
+                author:\"Luthor\",
+                display:{Lore:[\"Luthor\u0027s research - Part 2\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"As a scientist I feel we are on the verge of discovering something huge, something important. It\u0027s as if the corrupted have acquired a way of thinking like we do. It\u0027s nothing much just yet, but observing these mysterious grooves carved by the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"corrupted it proves they are capable of communication which implies having a memory and cognitive ability. It\u0027s something that frightens me as these findings do not appear in any of the history books. On top of that, more and more seem to\\\"}]\",
+                  \"[{\\\"text\\\":\\\"show aberrant behavior, grouping together and moving as if they were on a journey. They all seem to move towards the outer edges of Dregora like a grand migration toward some place they\u0027re attracted to.\n \\\"}]\"
+                ],
+                title:\"Aberrant Behavior\",
+                author:\"Unknown\",
+                display:{Lore:[\"A research note, regarding the corrupted.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A7l\u00A7o\u00A74      Secrets of\n   the ancient world\n\n\n\n\u00A7l\u00A7oA basic explaination on\nwhat electricity is and\n     how it works.\n\n\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oElectricity is a type of\nenergy that can build\nup in one place or flow\nfrom one place to\nanother. When\nelectricity gathers in\none place it is known\nas static electricity\n(the word static means\nsomething that does\nnot move); electricity\nthat moves\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7ofrom one place to\nanother is called\ncurrent electricity.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oStatic electricity often\nhappens when you rub\nthings together. If you\nrub a balloon against\nyour pullover 20 or 30\ntimes, you\u0027ll find the\nballoon sticks to you.\nThis happens because\nrubbing the balloon\ngives it an electric\ncharge (a small amount\nof\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oelectricity). The\ncharge makes it stick\nto your pullover like a\nmagnet, because your\npullover gains an\nopposite electric\ncharge. So your\npullover and the\nballoon attract one\nanother like the\nopposite ends of two\nmagnets.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oHave you ever walked\nacross a nylon rug or\ncarpet and felt a\nslight tingling\nsensation? Then\ntouched something\nmetal, like a door knob\nor a faucet (tap), and\nfelt a sharp pain in\nyour hand? That is an\nexample of an electric\nshock. When you walk\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oacross the rug, your\nfeet are rubbing\nagainst it. Your body\ngradually builds up an\nelectric charge, which\nis the tingling you can\nsense. When you touch\nmetal, the charge runs\ninstantly to Earth—and\nthat\u0027s the shock you\nfeel.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oLightning is also\ncaused by static\nelectricity. As rain\nclouds move through\nthe sky, they rub\nagainst the air around\nthem. This makes them\nbuild up a huge\nelectric charge.\nEventually, when the\ncharge is big enough, it\nleaps to Earth as a\nbolt of\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7olightning. You can\noften feel the tingling\nin the air when a storm\nis brewing nearby. This\nis the electricity in the\nair around you. Read\nmore about this in our\narticle on capacitors.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oElectricity is caused\nby electrons, the tiny\nparticles that \u0027orbit\u0027\naround the edges of\natoms, from which\neverything is made.\nEach electron has a\nsmall negative charge.\nAn atom normally has\nan equal number of\nelectrons and protons\n(positively\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7ocharged particles in\nits nucleus or center),\nso atoms have no\noverall electrical\ncharge. A piece of\nrubber is made from\nlarge collections of\natoms called molecules.\nSince the atoms have\nno electrical charge,\nthe molecules have no\ncharge\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oeither—and nor does\nthe rubber.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oSuppose you rub a\nballoon on your\npullover over and\nover again. As you\nmove the balloon back\nand forward, you give\nit energy. The energy\nfrom your hand makes\nthe balloon move. As it\nrubs against the wool\nin your pullover, some\nof the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oelectrons in the\nrubber molecules are\nknocked free and\ngather on your body.\nThis leaves the balloon\nwith slightly too few\nelectrons. Since\nelectrons are\nnegatively charged,\nhaving too few\nelectrons makes the\nballoon slightly\npositively charged.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oYour pullover\nmeanwhile gains these\nextra electrons and\nbecomes negatively\ncharged. Your pullover\nis negatively charged,\nand the balloon is\npositively charged.\nOpposite charges\nattract, so your\npullover sticks to the\nballoon.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oFor an electric\ncurrent to happen,\nthere must be a circuit.\nA circuit is a closed\npath or loop around\nwhich an electric\ncurrent flows. A circuit\nis usually made by\nlinking electrical\ncomponents together\nwith pieces of wire\ncable. Thus, in a\nflashlight,\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7othere is a simple\ncircuit with a switch, a\nlamp, and a battery\nlinked together by a\nfew short pieces of\ncopper wire. When you\nturn the switch on,\nelectricity flows\naround the circuit. If\nthere is a break\nanywhere in the circuit,\nelectricity cannot flow.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oIf one of the wires is\nbroken, for example,\nthe lamp will not light.\nSimilarly, if the switch\nis turned off, no\nelectricity can flow.\nThis is why a switch is\nsometimes called a\ncircuit breaker.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oYou don\u0027t always need\nwires to make a circuit,\nhowever. There is a\ncircuit formed between\na storm cloud and the\nEarth by the air in\nbetween. Normally air\ndoes not conduct\nelectricity. However, if\nthere is a big enough\nelectrical charge in\nthe\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7ocloud, it can create\ncharged particles in\nthe air called ions\n(atoms that have lost\nor gained some\nelectrons). The ions\nwork like an invisible\ncable linking the cloud\nabove and the air\nbelow. Lightning flows\nthrough the air\nbetween the ions.\\\"}]\"
+                ],
+                title:\"Basics of Electricity\",
+                author:\"Unknown\",
+                display:{Lore:[\"The entire book \nseems to be written in gibberish. Or does it tell the truth?\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Project Icarus is a theoretical engineering design study aimed at designing a credible, mainly nuclear fusion-based, unmanned interstellar space probe. Project Icarus was an initiative of members of the British Interplanetary Society and the Tau\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Zero Foundation (TZF) started in 2010. It was later managed by the members as a separate division of the umbrella organization of the nonprofit organization Icarus Interstellar. It was motivated by the British Interplanetary Society\u0027s Project\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Daedalus, a similar study that was conducted between 1973 and 1978.\n\nThe summary continues, explaining how the first real tests were a success initiating the design of the Dregorian Voyager.\n\n \\\"}]\"
+                ],
+                title:\"Project Icarus\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book contains information regarding project Icarus,\n the predecessor of the Dregorian Voyager. \nThe summary gives a some explanation on it\u0027s origin\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"This book contains information regarding maintenance of the Dregorian Voyager. It speaks of mechanical systems and the proper tools for each piece of equipment. The Dregorian Voyager was equipped with some state of the art\\\"}]\",
+                  \"[{\\\"text\\\":\\\"technology including advanced use of crystals to store and transfer a lot of data at lightning fast speeds. There are several chapters named Crystallization, Tool Maintenance, Basic Engineering, Safety Regulations and Basic Electronics. You figure\\\"}]\",
+                  \"[{\\\"text\\\":\\\"this may be of use later on.\\\"}]\"
+                ],
+                title:\"Maintenance Book\",
+                author:\"Unknown\",
+                display:{Lore:[\"A Ancient Mechanic\u0027s Guide\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "simpledungeon_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:feather",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 9
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 1,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.8
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rabbit_hide",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_wait",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}
+

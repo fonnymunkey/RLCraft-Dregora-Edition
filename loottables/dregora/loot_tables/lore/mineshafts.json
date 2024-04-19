@@ -1,0 +1,377 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "mineshafts",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"My hands feel rough, there\u0027s dirt under my nails and my cheeks are black. This is what it is to work in the mines, day after day. It surely does pay good but as I go day by day my muscles grow stronger yet I grow weaker and today might be my\\\"}]\",
+                  \"[{\\\"text\\\":\\\"last day as the entrance collapsed. At the same time the shifting rocks also opened up an ancient cave, a cave with weird straight beams made from a material I have never seen before. I heard the stories about ancient structures in the\\\"}]\",
+                  \"[{\\\"text\\\":\\\"wastelands yet this is here, in the middle of the mountains. A big cave with beams and lights, doors... Maybe these will grant us a way out of this maze of mines.\n\n \\\"}]\"
+                ],
+                title:\"The Stronghold\",
+                author:\"Unknown\",
+                display:{Lore:[\"Ancient structures, deep underground.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"As the operational officer of the Z1-3, Z2-3 and Z1-15 mines, I discovered there is a variation in mineral deposits depending on the location. Usually rivers and such should accumulate a larger then average gold deposit, however the ancient\\\"}]\",
+                  \"[{\\\"text\\\":\\\"records seem to be failing at this point as we have not found any trace of gold in the rivers just yet. Instead they are mainly buried deep under the ground. In particular, the mountains contain a large quantity of valuables.\\\"}]\"
+                ],
+                title:\"Mineral Deposits\",
+                author:\"Unknown\",
+                display:{Lore:[\"Useful information regarding mineral deposits.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Buried deep underground in chasms we found bones, mainly underneath the plains. I can still hear the historians talk about this with great admiration. Something I can\u0027t fathom as there are stories of these beasts walking, running or even flying\\\"}]\",
+                  \"[{\\\"text\\\":\\\"around. Stories go that there are even those who dig tunnels, gigantic worms in the wastelands... It truly gives me the creeps while chopping away rock after rock in search of gold, emerald, diamonds and more.\n \\\"}]\"
+                ],
+                title:\"Bones & Beasts\",
+                author:\"Unknown\",
+                display:{Lore:[\"A not so ancient discovery in the mines\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I hear rumors about the beasts and their dungeons, both underground. It\u0027s scary but well paid. They say the deeper you go the more dangerous it becomes, and the more frequent these encounters will be. So I mine and mine, now equipped\\\"}]\",
+                  \"[{\\\"text\\\":\\\"with a sword and armor for safety. Yet they roam in these tunnels waiting for a moment in which I let down my guard. They won\u0027t get me, though.  No, definitely not.\n \\\"}]\"
+                ],
+                title:\"Encounters in the Mines\",
+                author:\"Unknown\",
+                display:{Lore:[\"Rumors, or truth?\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I am but a John Doe trapped underneath dirt and rock. Water is slowly rising as they have broken through the ceiling and the lake came falling down. We, our crew are all here experiencing our final moments. These mines are dangerous, not to\\\"}]\",
+                  \"[{\\\"text\\\":\\\"be underestimated. Corrupted roaming around, surrounded by ancient relics striking those who witness with everlasting fear for something they may or may not ever encounter. Stories about ancient structures, paths leading to the surface. The\\\"}]\",
+                  \"[{\\\"text\\\":\\\"last as a sliver of hope. Not here though... Here is darkness, here is the place where life decays slowly while the water is rising and rising while we close our eyes and imagine. We are not here, we are bathing in a bathhouse, washing the dirt\\\"}]\",
+                  \"[{\\\"text\\\":\\\"off while enjoying the moment with a glass of beer...\n\nAs we keep talking about our past experiences I turn around and see the door, an exit. I stand up, slowly walk over only to find myself falling into the void.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\nThis is it, farewell cruel world.\\\"}]\"
+                ],
+                title:\"Trapped\",
+                author:\"Unknown\",
+                display:{Lore:[\"The Demise of a John Doe.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "mineshafts_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:furnace",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tnt",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chest_minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hopper_minecart",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_carrot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:saddle",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flint_and_steel",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ore",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:emerald_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_ore",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_ore",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal_ore",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
+

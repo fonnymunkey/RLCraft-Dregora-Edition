@@ -1,0 +1,261 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Why I took this pencil and paper evades me in these last moments I have. The exit has been cut off and these beings kept streaming in, it\u0027s only a matter of time before they\u0027ll find me so I guess writing helps me calm down..\n\nPerhaps some unlucky soul manages to.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"distract these... Former humans. That\u0027ll be my only shot at escaping these tunnels.\\\"}]\"
+                ],
+                title:\"No Escape\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book barely holds together, it must be very old.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Blasted tunnels, one would expect more then a singular entry and exit point but no they had to subsidize again. Why am I even writing this down...? Perhaps in a brighter future then mine they\u0027ll learn to not subsidize!\\\"}]\",
+                  \"[{\\\"text\\\":\\\"And while I am at it, if only that slowpoke of a Luigi would\u0027ve been faster we wouldn\u0027t have had to hide here and could've gone to the shelters instead!\\\"}]\"
+                ],
+                title:\"Evacuation\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book barely holds together, it must be very old.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Breathing my last breaths, mistaking these maintenance shafts for the shelters will be my end... I think i lost them for now bu\n\n- the writing abrubtly stops.\\\"}]\"
+                ],
+                title:\"Shelter\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book barely holds together, it must be very old.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"147 moons passed since my departure from the remnants into the wastelands and today I stumbled upon a odd structure, unlike the smooth stone decaying towers these seem to go deep below.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"I\u0027ve only taken a peek and it seems safe except for the climb down during which I have to be very careful. With some luck I\u0027ll be able to find some of those artifacts mentioned by those folks at the outpost.\\\"}]\"
+                ],
+                title:\"Explorer\u0027s Note\",
+                author:\"Unknown\",
+                display:{Lore:[\"Some scribbles, not too old from the looks of it.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"I\u0027ve barricated myself in with only few supplies, my companions failed to make it. They fell victim to those beasts on the other side, they hadn\u0027t noticed me yet but it\u0027s probably only a matter of time.\\\"}]\"
+                ],
+                title:\"Barricade\",
+                author:\"Unknown\",
+                display:{Lore:[\"This book barely holds together, it must be very old.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "ancient_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:awkward\"}"
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 8
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mellohi",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mall",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_13",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_ward",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_blocks",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

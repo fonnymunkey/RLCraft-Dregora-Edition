@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "traveler_castle_map",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:filled_map",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Castle Ruins\",Lore:[\"x:-14202 z:-6004\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14202,z:-6004}}"
+            },
+            {
+              "function": "minecraft:set_data",
+              "data": 2
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "traveler_castle_book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"x:-14202 z:-6004\",Lore:[\"Ruins undisturbed and lands undiscovered.\"]}}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

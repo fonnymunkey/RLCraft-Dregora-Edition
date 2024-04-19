@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Common Chest",
+  "pools": [
+    {
+      "name": "RLCraft Potions",
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"potioncore:strong_klutz\"}"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

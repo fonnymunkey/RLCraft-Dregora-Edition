@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Cursed Potion Chest",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "simpledifficulty:purified_water_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                display:{Name:\"Bottled Bubble Tea\",Lore:[\"\u00A70\u2620\"]}
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "tag": "
+              {
+                display:{Name:\"Bottled Bubble Tea\",Lore:[\"\u00A70\u2620\"]},
+                CustomPotionEffects:[{Id:9,Duration:300,Amplifier:0}],
+                CustomPotionColor:2053119,
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Special Resources",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/common_weapons",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/iron_weapons",
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/rlcraft_music",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 5
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "notreepunching:pottery/large_vessel",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:pottery/small_vessel",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:pottery/bucket",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:pottery/flower_pot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:purified_water_bottle",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:charcoal_filter",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:juice",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.2}]
+            },
+            {
+              "function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.2}]
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/gems/main_gem",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

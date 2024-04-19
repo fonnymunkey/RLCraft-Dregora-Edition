@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:chest",
+  "CustomName": "Cursed Potion Chest",
+  "pools": [
+    {
+      "name": "Levitation + Surface Teleport Troll",
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "
+              {
+                Potion:\"potioncore:teleport_surface\",
+                display:{Name:\"Potion of Cloud Mining\",Lore:[\"§9Cloud Mining (1:00)\",\"\",\"§5When Applied:\",\"§9Dig Speed: +500%\",\"§0\u2620\"]},
+                CustomPotionEffects:[{Id:25,Duration:1200,Amplifier:5}],
+                HideFlags:32
+              }"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [{"condition": "random_chance","chance": 0.4}],
+              "tag": "
+              {
+                Potion:\"potioncore:teleport_surface\",
+                display:{Name:\"Potion of Cloud Mining\",Lore:[\"§9Cloud Mining (1:00)\",\"\",\"§5When Applied:\",\"§9Dig Speed: +500%\",\"§0\u2639\"]},
+                CustomPotionEffects:[{Id:25,Duration:1200,Amplifier:5}],
+                HideFlags:32
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

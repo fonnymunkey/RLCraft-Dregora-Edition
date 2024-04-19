@@ -1,0 +1,377 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "mayanlore",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"    ▦▲█◀▣▞➡▃▒▶▚◆▦\n\n  ◨█◀◧➡◧▃⬘⬚⬅▂∎▃▤\n     ▆◀◪⬛▣⬤⬚⬚➡∎▃\n◩◩▚▲∎▁█◧⬗▶▒⬘▃⬛\n  ▣⬗⬖⬆➡▞⬟◩▦\n    ∎▣⬇⬗⬙☐➡▶◩▆➡⬜⬇▁\n   ⬟▤▆◪➡⬆➡▶▶◀\n    ◨█◆∎⬚▚▦⬖⬖\n  ◨▃▤∎◆◆⬖▤▚▃⬆▤⬤⬚\n⬇⬤▚⬟▤▁▣⬆◪⬗█⬟⬇◀\n       ▂⬅⬖∎█➡⬖◧\\\"}]\",
+                  \"[{\\\"text\\\":\\\"       ▆⬤\n ▲◆▁\nSummarizing the End of Times have been set at \n     ▲◆▁⬟◀⬟◪☐⬤⬗⬤\n     ⬚⬖▆⬤⬇▁    ∎⬙☐\n∎◧▶     █⬗     ⬗\n   ➡∎⬙☐\n old calendar, yet a recent discovery\n⬇⬘▆☐▚▁⬗∎◧▶▁▦▶▦\\\"}]\",
+                  \"[{\\\"text\\\":\\\"       ▆⬤\n\n   ▲◆▁⬟◀⬟◪☐⬤⬗⬤\n⬚⬖▆⬤⬇▁\n   another year\n         █⬗\n      ➡∎⬙☐\n∎⬙➡⬅⬖⬚◧⬛◪▶▃☐⬅◪▶\n   corrupted    ▶▞▣◧▲▚⬟∎▶▶➡∎◧▚⬇\n     ▚◀▤⬗\n    ▃▚◧◀⬖⬚▞☐▞⬆\n \\\"}]\"
+                ],
+                title:\"▆⬤  ▲◆▁⬟◀⬟\",
+                author:\"⬚▚▦⬖⬖\",
+                display:{Lore:[\"An extremely old book containing symbols.\nA small portion has been translated.\"]}
+              }"
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"Ŧ๏гєรєєภ ๒א ค l๏ภﻮ tเ๓є, ฬє tђє гє๓ภคภtร ๏Ŧ tђє คภςเєภt ςยltยгє קгє๔เςt tђє ς๏๓เภﻮ ๏Ŧ ร๏๓єtђเภﻮ tђคt เร ฬ๏гรє tђєภ tђє єภ๔. ฬє คгє คקקг๏คςђเภﻮ คภ єгค เภ ฬђเςђ ђย๓คภเtא ฬเll ๒є ๒г๏ยﻮђt t๏ เt\u0027ร кภєєร ๒א tђє ς๏ггยקtє๔ ๒єเภﻮร ฬђเςђ ฬเll гยlє ๏ภςє ฬ๏гl๔\u0027ร ς๏llเ๔є. รเץ tђ๏ยรคภ๔ אєคгร คŦtєг tђเร єשєภt ђคร\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ђคקקєภє๔ tђєгє ฬเll ๒є ค ๓คภ ﻮเשєภ tђє ק๏ฬєг t๏ รt๏ק เt คll, א๏ย ฬเll кภ๏ฬ ђเ๓ คร tђє tгคשєlєг t๏ tгคשєl ค๓๏ภﻮ ๒๏tђ ๒єครtร คร ฬђคt คгє tђє гє๓ภคภtร ๏Ŧ ђย๓คภร. ฬє Ŧ๏гєรєє tђเร Ŧยtยгє เภ ฬђเςђ ђย๓คภเtא ฬเll ๒є tєรtє๔ ๏ภςє คﻮคเภ คภ๔ ๓คא เt รยгשเשє เt ฬเll รtгเשє Ŧ๏г ๒єttєг ๔คאร เภ ฬђเςђ ค Ŧєฬ ฬเll รยςςєє๔.\\\"}]\"
+                ],
+                title:\"Ʈɦƹ ρřƹȡɨȼƮɨǿɲ\",
+                author:\"Ʈɦƹ ąɲȼɨƹɲƮȿ\",
+                display:{Lore:[\"A prediction by the Ancients, despite being hard to read it\u0027s still somehow possible to\nmake out what the words mean.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"тнє ∂αу σf тнє яє∂ ѕυи нαѕ αяяινє∂. тσ∂αу мαякѕ тнє єи∂ ιи ωнι¢н ωσяℓ∂\u0027ѕ ωιℓℓ вє яιρρє∂ ωнιℓє нυмαиιту fℓє∂ тσ ιт\u0027ѕ ѕнєℓтєя ι αм ѕιттιиg нєяє ωяιтιиg ωнαт нαρρєиѕ ιи ѕтσиє ѕσ ιт мαу ѕυяνινє тнє єяσѕισи σf тιмє. αѕ єαятнqυαкєѕ ѕнαкє\\\"}]\",
+                  \"[{\\\"text\\\":\\\"тнє єαятн αи∂ тнє gяσυи∂ gєтѕ яιρρє∂ αραят ι ѕιт нєяє σи тσρ σf тнιѕ αи¢ιєит ѕтяυ¢тυяє ωαт¢нιиg тнє яσ¢кѕ fαℓℓιиg υρ αи∂ тяєєѕ ѕιикιиg ιи тнє gяσυи∂. ι\u0027м αfℓσαт яιgнт иσω, αѕ ιf тнє ραятι¢ℓєѕ σf тнє ωσяℓ∂ gσт ιиνєятє∂.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ѕσмєнσω ι\u0027м ѕтιℓℓ αℓινє, вυт тнαт ωσит тαкє мυ¢н ℓσиgєя αѕ тнє єαятн ιѕ ѕριииιиg αи∂ ωσяℓ∂ѕ αяє ¢σℓℓι∂ιиg. ¢σяяυρтє∂ ℓєαρ тняσυgн тнє яιρѕ σf тιмє ιиνєѕтιиg тнσѕє ωнσ fℓєє αи∂ тяємвℓє ιи fєαя. тнє вℓιgнт ιѕ ραѕѕιиg αѕ ιт ∂єνσυяѕ єνєяутнιиg ιи ιт\u0027ѕ ραтн.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"тнιѕ ιѕ тнє єи∂ σf συя єяα ωєℓ¢σмιиg тнє ¢σяяυρтє∂ тσ fєαѕт σи ιт\u0027ѕ вσиєѕ.\\\"}]\"
+                ],
+                title:\"тнe day oғ тнe red ѕυn\",
+                author:\"Ʈɦƹ ąɲȼɨƹɲƮȿ\",
+                display:{Lore:[\"This book describes the Blight as viewed from a witness.\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\u00A77 τζɯɤμɮξψφɤγκμδɭηπεɠενɥιɳε\nɶɻɦɨζɶι\u00A70  █\u00A74██\u00A70█   \u00A77ɲηɸɹν\nɳιɶκɨιικ\u00A7r  \u00A74█\u00A70██\u00A74█\u00A7r   \u00A77ωρρɸ\n βμοɻλɨɱονɦɠλɹιωɻɽɮχηɯδɻλ\nɭɸψɠɭɨσηγσɹβψɯξɶɮɭɹεɤɶγ\n ɮψɹɲɫμυɹψφνγɹɨαψζ ɤɭɨβɨ\n ɣγɭɱɩζɤξλοɮɤβδξɠɭ δɫɦɣκ\n ηɸιɹφɷɩτɹψɭɩɽɲητɮλɶμɱτɨ\n ζ ɭɶɳɦβɤ ɭɽɱɱσɩɠηɮɠɥζɻɮ\n ɤιθχɳζɲɠιɱɣɹφακ ωπɫεαɶɹ\n  τυξονɦɩɸνɫρξννεɠωɩθɠλɽπ\n ξλβνψɫδɶοτσθψρατιɠηπγδα\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A77φɯɭκαδζψɤιωψψɲɸɹτεθμγκτβο\nɭɨɶɷφπɭɯτɠɻɮɸɣ οɭɽοωɫη γζ\nɦɶητɹɹτɥφ λɷɦζωεοɱθɠ υɽɱω\nφɫε ɠαɠβρɸββ ɤɣɷηɣξɭ ωɣɮθ\nɽɲψɥε κɷɦɯωɤɷɥɹψɸɱωσθνερβ\nɭɷωɥφɭθθρβɱπεφμɹɨκβηξɻψɱɨ\nιρɫɫɠθɭɯɽɣɠɲηɱατɽσɯɷδμγɣɱ\nμερψɣορψηɶɦɽκοχωɫβαɩɨɳζɳσ\nξɽβζψκγλχκ χɠσπβɮɮɨɸοθɤισ\nɥɦɤθοɣ ξɨχβυψɭμοɻɸπτμχστα\nɯκɤɮɻεωɶɦφɣνμνκχɱɹυɫɠεξɶδ\nɸɱɸɯɷɱιηζɽεοɷɹβɹεωɦρɮɹηζα\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A77θɫνγσɲɻɹμɩπɷυɸλπρτφɦχρρɳξ\nωλεαɹɻβɤσυɻρɸλνɩɤɳνξɤαγωɲ\nɦγσιɯɶοξɹχζφφɫɲεμɶɠɭξξɻɽο\nɲθɫɱδψɻɣβσɫɮυμɭψενɳεθɸɦλλ\nβγɹɸɤνɣɨωυɱɲɹɳɽɯηοɦβδπɸɣη\nπɷμψιοɠκɻυλɸ βɦɷɤɱτεχεσνɫ\nφɳɷɣδɩɠξɹιταɱɻɠɷɳθɩɸ εθυɱ\nεɣɳɫοɱɶɮλɣαχɶραψɷτωɸɸ σδ\nγɯɶισɣɻɣνɷξπιθɫκɹθνχευɫɠɷ\nɳɣɯɠɻζɱαɻιαɽιυɻαɲɲɨτɲψɤσθ\nυθγɽρδɶχδɸɶε ɸυυορɣɦυɦκηβ\nɻɻξɯχγαɦχχυθαɯχωψνσμɯɭγμɶ\n\n \\\"}]\"
+                ],
+                title:\"χɶραψɷτωɸɸ\",
+                author:\"ɹχζφ\",
+                display:{Lore:[\"An extremely old book you can't make sense of...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"╔════════════╗\n ⬛                 ⬛\n\u00A74 \u00A7l\u00A74 Book of Knowledge\u00A7r\n ⬛                 ⬛\n╠════════════╣\n     ⬛  ⬛ ⬛  ⬛\n    ⬛  ⬛⬛⬛⬛  ⬛\n    ⬛  ⬛⬛⬛⬛  ⬛\n    ⬛  ⬛⬛⬛⬛  ⬛\n    ⬛  ⬛⬛⬛⬛  ⬛\n    ⬛  ⬛⬛⬛⬛  ⬛\n\n╚════════════╝\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ΞΕΑΕΥΛΓΠΤΥΣΡΜΣΩΖΘΞΞΞ\nΤΨΓΨΖΙΜΥΝΔΒΨΩΥΒΜΦΕΝΨ\nΜΕΟΒΚΚΨΚΩΒΚΧΚΜΞΖΩΓΖΡ\nΧΦΘΝΨΚΗΥΑΜΗΥΗΨΟΝΝΛΛΔ\nΛΕΔΔΟΗΥΝΡΩΨΧΚΞΙΟΨΗΜΠ\nΚΣΒΧΦΝΞΥΛΓΑΧΧΡΦΨΞΗΔΗ\nΩΥΧΗΤΟΚΕΜΘΤΛΥΧΝΖΣΖΤΝ\nΟΣΕΟΦΟΡΕΝΔΣΝΥΑΩΙΣΩΥΘ\nΞΑΝΗΚΕΛΡΤΙΨΠΚΤΨΕΩΛΧΗ\nΦΔΜΙΠΡΨΠΟΖΤΒΘΦΡΞΞΜΓΝ\nΙΣΑΠΚΜΩΑΔΚΛΠΘΨΦΔΩΒΕΕ\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ΙΓΓΗΜΨΚΑΧΩΙΗΟΨΙΕΧΝΤΞ\nΨΑΒΩΔΖΤΘΖΗΟΨΥΣΜΟΚΓΡΙ\nΠΦΧΗΨΔΧΒΩΚΗΡΒΘΞΧΞΟΘΡ\nΛΛΛΛΗΙΔΞΘΞΙΘΔΛΒΕΒΙΩΡ\nΤΥΒΤΕΣΡΑΩΩΒΖΨΨΘΞΩΒΗΨ\nΜΜΨΟΒΨΤΡΖΨΥΧΙΕΙΤΑΝΓΡ\nΩΣΧΦΨΩΤΕΘΘΠΞΝΜΑΟΨΒΓΩ\nΡΖΧΗΣΨΓΕΣΡΗΦΑΜΒΞΚΟΞΧ\nΚΝΨΥΣΝΨΩΒΕΤΚΜΚΗΤΧΥΝΙ\nΟΝΓΟΝΥΒΔΔΘΙΝΚΟΩΟΟΑΝΔ\nΨΡΩΒΚΞΟΜΠΘΖΡΧΛΙΓΤΧΙΧ\\\"}]\",
+                  \"[{\\\"text\\\":\\\"ΨΥΙΚΖΒΕΘΔΒΞΛΠΑΘΓΣΗΨΥ\nΛΕΨΓΑΡΘΛΑΖΠΨΜΛΩΦΖΜΓΞ\nΤΛΚΖΟΥΣΚΠΜΥΗΦΞΒΞΑΠΘΠ\nΠΒΒΠΞΡΔΓΦΓΝΒΔΚΘΤΚΧΙΛ\nΔΨΨΧΧΠΣΟΞΜΝΝΗΑΔΓΔΤΞΨ\nΚΗΣΥΕΞΩΡΔΞΙΘΦΨΘΔΘΩΛΖ\nΠΞΨΦΓΖΤΟΜΘΒΙΧΒΚΣΧΝΥΨ\nΦΖΨΡΔΦΤΑΨΘΣΛΕΩΣΟΝΕΑΠ\nΟΗΚΒΟΦΤΡΨΤΧΘΣΚΜΠΖΠΣΚ\nΚΔΓΞΓΛΚΖΚΣΦΡΥΣΦΔΗΤΤΚ\nΤΥΕΦΑΠΣΥΣΟΠΡΞΛΟΝΨΓΟΚ\\\"}]\"
+                ],
+                title:\"ΩӁԬѼ\",
+                author:\"ΣΖΛΤ\",
+                display:{Lore:[\"The title written in an understandable\nlanguage reveals the potential knowledge\nhidden within this book...\"]}
+              }",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "lucky_totem",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:totem_of_undying",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Totem of \u00A7l\u00A76Legendary\u00A7r Luck\",Lore:[\"Noice!\"]}}"
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "generic.luck",
+                  "name": "Luck",
+                  "amount": 0.69,
+                  "operation": "addition",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.maxHealth",
+                  "name": "maxHealth",
+                  "amount": {
+                    "min": -0.5,
+                    "max": -0.9
+                  },
+                  "operation": "multiply_total",
+                  "slot": [
+                    "offhand",
+                    "mainhand"
+                  ]
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 20
+        }
+      ]
+    },
+    {
+      "name": "mayanlore_loot",
+      "rolls": {
+        "min": 5,
+        "max": 15
+      },
+      "bonus_rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{Potion:\"minecraft:poison\"}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Gold Tipped Arrow\",Lore:[\"These arrows seem to be extremely old yet sturdy\n and flexible where required.\"]}}"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 5
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 10,
+              "treasure": false
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_leggings",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_chestplate",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_boots",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_horse_armor",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.1
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.30,
+                "max": 0.95
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_button",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tripwire_hook",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cauldron",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:item_frame",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:web",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
+

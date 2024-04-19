@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "piratejunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/piratejunk_loot",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "piratejunk_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "quark:pirate_hat",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.10,
+                "max": 0.35
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dynamictrees:dirtbucket",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Jar of Dirt\",Lore:[\"You have a jar of dirt!\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:saber_wood",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.10,
+                "max": 0.65
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:saber_stone",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0.10,
+                "max": 0.25
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "contenttweaker:bone_pile",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:dynamite",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:violin",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:barrel",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcompressedflesh",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itembatwing",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "comforts:rope",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcookedbatwing",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cooked Bat Wing\",Lore:[\"Let\u0027s not start a pandemic should we?\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:jar_empty",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:blindfold",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:loot",
+          "weight": 1,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}
+
