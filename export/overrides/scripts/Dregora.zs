@@ -35,6 +35,9 @@ import crafttweaker.event.EntityLivingUseItemEvent.Finish;
 
 print("Dregora Script starting!");
 
+//Debug lines true/false
+var Logging = false;
+
 // Tell people where to get a biome purifier.
 <srparasites:biomepurifier>.addTooltip(format.gold("Obtainable at most Herbalists, rarely found at their overgrown cabin in plains and flower fields."));
 
@@ -182,48 +185,52 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
             if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
                 var entityBase as IEntityLivingBase = event.entity;
-                var entityName = event.entity.definition.name;
-                var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name
+                var entityName = (event.entity.definition.name);
+                var EntityBiome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing") || !((EntityBiome) == "Abyssal Rift") || (entityName has "beckon") || (entityName has "dispatcher")) {
+                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing") || !((EntityBiome) == "Abyssal Rift")){
 
                     if ((entityName has "beckon") || (entityName has "dispatcher")) {
 
-                        if entityBase.health > 100 {
-                            entityBase.health = entityBase.health / 25;
-                        } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
-                            entityBase.health = entityBase.health / 10;
-                        } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
-                            entityBase.health = entityBase.health - 10;
-                        } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
-                            entityBase.health = entityBase.health - 1;
-                        } else if (entityBase.health < 1){
-                            entityBase.health = entityBase.health - 1;
-                        } else {
-                            event.entity.setDead();
-                        }
-                    } else {
+                        if(Logging){print("EntityBiome = " + EntityBiome);}
 
-                        if entityBase.health > 1000 {
-                            entityBase.health = entityBase.health / 50;
-                        } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
-                            entityBase.health = entityBase.health / 10;
-                        } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
-                            entityBase.health = entityBase.health - 10;
-                        } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
-                            entityBase.health = entityBase.health - 1;
-                        } else if (entityBase.health < 1){
-                            entityBase.health = entityBase.health - 1;
+                        if ((entityName has "beckon") || (entityName has "dispatcher")) {
+
+                            if entityBase.health > 100 {
+                                entityBase.health = entityBase.health / 25;
+                            } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
+                                entityBase.health = entityBase.health / 10;
+                            } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
+                                entityBase.health = entityBase.health - 10;
+                            } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                                entityBase.health = entityBase.health - 1;
+                            } else if (entityBase.health < 1){
+                                entityBase.health = entityBase.health - 1;
+                            } else {
+                                event.entity.setDead();
+                            }
                         } else {
-                            event.entity.setDead();
+
+                            if entityBase.health > 1000 {
+                                entityBase.health = entityBase.health / 50;
+                            } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
+                                entityBase.health = entityBase.health / 10;
+                            } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
+                                entityBase.health = entityBase.health - 10;
+                            } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                                entityBase.health = entityBase.health - 1;
+                            } else if (entityBase.health < 1){
+                                entityBase.health = entityBase.health - 1;
+                            } else {
+                                event.entity.setDead();
+                            }
+
                         }
 
+                        entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
+                        entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
+                        entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
                     }
-
-                    entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
-                    entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
-                    entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
-
                 }
             }
         }
@@ -265,8 +272,13 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 
             if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
+                var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+
+                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing")) {
+
                     event.cancel();
 
+                }
             }
         }
     }
@@ -537,7 +549,7 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 
 // Give the Orb for Eta barrier a better name.
 <variedcommodities:orb:0>.clearTooltip();
-<variedcommodities:orb:0>.addTooltip("Brutal " + <variedcommodities:orb>.displayName + " (#" + "7304" + "0)");
+<variedcommodities:orb:0>.addTooltip("Brutal " + <variedcommodities:orb>.displayName + " (#" + "7304" + "/0)");
 <variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
 <variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers."));
@@ -554,17 +566,17 @@ recipes.addShaped("dregora20",<variedcommodities:pendant>,
 <variedcommodities:orb:5>.clearTooltip();
 <variedcommodities:orb:6>.clearTooltip();
 
-<variedcommodities:orb:1>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7277" + "1)");
+<variedcommodities:orb:1>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/1)");
 <variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
 <variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:5>.addTooltip("Aberrant " + <variedcommodities:orb>.displayName + " (#" + "7277" + "5)");
+<variedcommodities:orb:5>.addTooltip("Aberrant " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/5)");
 <variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
 <variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:6>.addTooltip("Shadow " + <variedcommodities:orb>.displayName + " (#" + "7277" + "6)");
+<variedcommodities:orb:6>.addTooltip("Shadow " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/6)");
 <variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));

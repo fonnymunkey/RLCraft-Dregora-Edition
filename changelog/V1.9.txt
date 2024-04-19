@@ -245,6 +245,27 @@ Fixed/Changed/Added:
 - fixed typo's in maintenance_shaft_top_offset & maintenance_shaft_top Heightoffset being ""
 - AddED Parasite Blood to lowest block in grey abyss biomes
 - made memorial for puffik 2022-2024 in Battletower
+- Added The Entities to the city biomes (rarely with altered droptable)
+- Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
+- Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
+- Added amulets to epic loottables
+- Fixed a typo causing loot to not generate in chests. (consumable.nbt to consumables.nbt)
+- added variedcommodities:element_fire to brutal merchant (10 golden coins)
+- adjusted bog biome spawns to contain less mushroom cows and also hostile entities
+- made weightedbranches for additional dragon stages & scales (except for ashenblood peaks stages)
+- fixed otg entity double spawn for gorgon temple
+- added frozen oceans and frozen beach biomes.
+
+boss 1: 2x Spider Boss (huge trite)
+boss 2: 1x Lightning Dragon
+boss 3: 1x humanoid Boss with OP gear
+boss 4: 1x crux
+boss 5: Tower Golem with OP gear
+boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle
+boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy,
+Boss 8: Shivaxi & Parasite Dragon
+
+
 
 
 Underneath Done:
@@ -257,30 +278,22 @@ Underneath todo:
 
 
 Dregora todo:
-+ Add The Entities to the city biomes (rarely with altered droptable)
-+ make mineshafts in canyons more common?
-+ add big frozen oceans?
-+ AdvancedShelterC0R0 contained empty chest
-+ add variedcommodities:element_fire to brutal merchant (10 golden coins)
-+ fix otg entity double spawn if customstructure
-+ Sealed crate auto spawns spawn eggs (make randomizer)
-+ Dregora_DeadSwampBorder has regular trees
-+ Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
-+ Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
+
+
 + randomized lightning swords
-+ Add amulets to epic loottables
 + Check Brutal Tower Loottable with heaven
 + Add flying entities to DregoraRL (10 for each biome group)
-+ make weightedbranches for additional dragon stages & scales
-+ check if bog biomes have good mob spawns
-+ Check Boreal Forest no Bushes
-
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
 + Make mini-bosses always champions
 + Check OTG Errors at startup
 
+Optional todo:
++ Remove big tree from recurrent complex and add it floating under balloons in sky above beach, ocean and plains biomes
+
 Backlog:
++ make mineshafts in canyons more common?
++ Sealed crate auto spawns spawn eggs (make randomizer)
 + add srparasites death counter to stats screen?
 + Sealed crate auto spawns spawn eggs (make randomizer)
 + Shrouds coffee potion
@@ -432,11 +445,7 @@ RLCraft Done:
 - configured familiar fauna biomes (deer,dragonfly,pixie,snail and turkey)
 - Added Underneath Quest
 - added -2x multiplier to incontrol special entities overworld
-
-Primitive Vermin
-Flying Carrier
-Adapted Yelloweye
-Yelloweye
+- Configured IceAndFire Troll variant biomes
 
 
 RLCraft todo:
@@ -446,12 +455,14 @@ RLCraft todo:
 + Fix github issues
 + Check Underneath Quest Line
 + C&L Hydra needs to be configured per biome
++ shivaxi turns into srparasite dragon once 10% health
++ variedcommodities:coin_stone x 4 = 1x brutal coin
 
 Optional:
 + Update SRParasites Mod to newest .19 release once it comes out
 + crafttweaker wake up player in night (multiplier check and wake morning)
 + thunder script crafttweaker lignting with armor (isMaterial)
-
++ Villager Enchantment Book nerf (Add Item X to dungeons and change villager trades on interact)
 
 
 RLCraft Backlog:
@@ -482,6 +493,82 @@ OTG Backlog:
 OTG Done: (awaiting public release)
 - Fix An Unknown error occured while attempting to perform this command
 - Fix Crash LayerMixing for OTG
+
+
+Boss Loot:
+boss 1: 2x Spider Boss (huge trite)
+(1 stone coin each)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_common"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/gilded_tools"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/silver_weapons"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_tools"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
+
+boss 2: 1x Lightning Dragon
+(1 brutal coin)
+boss 3: 1x humanoid Boss with OP gear
+(1 brutal coin)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_common"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+
+boss 4: 1x crux
+(1 brutal coin)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/silver_armor"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"}
+
+boss 5: Tower Golem with OP gear
+(1 brutal coin)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"}
+
+boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle
+(1 stone coin each)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_arrows"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"} (only Bogle)
+
+boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy
+(1 stone coin each)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+
+Boss 8: Shivaxi & Parasite Dragon
+1 brutal coin +  enchantment book (treasure)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_epic"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"}
+
+Tier 1 (Begin to Spiders)
+Rare Loot
+
+Tier 2 (Stairway & Dragon)
+Rare Loot + Silver + Coins
+
+Tier 3 (Maze)
+Cursed Items & Epic loot + Potions
+20% Epic loot 60% Cursed
+
+Tier 4 (End Maze Tower Golem)
+40% Epic loot 60% Rare
+
+Tier 5 (Hive room & Developers)
+60% Epic loot 40% Rare loot
+
+Tier 6 (Shivaxi Room)
+80% Epic Loot 20% cursed
+
+Placeholder:9 = Random Enchant
+Quark Chests = Junk
+Quark Chest (BIRCH) = Treasure
+Regular Chest (non locked = Tier 5)
+Locked Chest = outside Junk
+
 
 List of Structure Blacklist Configs:
 
