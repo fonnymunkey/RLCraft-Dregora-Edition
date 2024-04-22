@@ -108,8 +108,19 @@
                   },
                   "operation": "addition",
                   "slot": [
-                    "mainhand",
                     "offhand"
+                  ]
+                },
+                {
+                  "attribute": "generic.luck",
+                  "name": "luck",
+                  "amount": {
+                    "min": -0,
+                    "max": -100
+                  },
+                  "operation": "addition",
+                  "slot": [
+                    "mainhand"
                   ]
                 }
               ]

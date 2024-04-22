@@ -130,29 +130,10 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.luck",
-                  "name": "Luck",
-                  "amount": 0.69,
-                  "operation": "addition",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": -0.5,
-                    "max": -0.9
-                  },
-                  "operation": "multiply_total",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.luck", "name": "Luck", "amount": 0.69, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": -0.5, "max": -0.9}, "operation": "multiply_total", "slot": ["offhand"]},
+                {"attribute": "generic.luck", "name": "Luck", "amount": 0.69, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": -0.5, "max": -0.9}, "operation": "multiply_total", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -212,54 +193,10 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "More Knockback",
-                  "amount": {
-                    "min": 0.4,
-                    "max": 1.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "Less Health",
-                  "amount": {
-                    "min": -4.0,
-                    "max": -10.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "More Attack Speed",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.06
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "More Movement Speed",
-                  "amount": {
-                    "min": 0.02,
-                    "max": 0.06
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.attackDamage", "name": "More Knockback", "amount": {"min": 0.4, "max": 1.0}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "Less Health", "amount": {"min": -4.0, "max": -10.0}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "More Attack Speed", "amount": {"min": 0.01, "max": 0.06}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed", "name": "More Movement Speed", "amount": {"min": 0.02, "max": 0.06}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ]

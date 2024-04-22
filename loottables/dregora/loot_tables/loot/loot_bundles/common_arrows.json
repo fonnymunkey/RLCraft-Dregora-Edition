@@ -51,13 +51,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:fire_resistance\"}",
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.2
-                }
-              ]
+              "tag": "{Potion:\"minecraft:fire_resistance\"}"
             },
             {
               "function": "set_nbt",

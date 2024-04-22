@@ -64,45 +64,12 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.luck",
-                  "name": "Luck",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.05
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "More Knockback",
-                  "amount": {
-                    "min": -10.0,
-                    "max": -15.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.armorToughness ",
-                  "name": "Less Attack Speed",
-                  "amount": {
-                    "min": -5.0,
-                    "max": -10.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                }
+                {"attribute": "generic.luck", "name": "Luck", "amount": {"min": 0.01, "max": 0.05}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.maxHealth", "name": "More Knockback", "amount": {"min": -10.0, "max": -15.0}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.armorToughness ", "name": "Less Attack Speed", "amount": {"min": -5.0, "max": -10.0}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.luck", "name": "Luck", "amount": {"min": 0.01, "max": 0.05}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "More Knockback", "amount": {"min": -10.0, "max": -15.0}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.armorToughness ", "name": "Less Attack Speed", "amount": {"min": -5.0, "max": -10.0}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ]

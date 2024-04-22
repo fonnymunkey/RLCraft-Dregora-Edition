@@ -124,29 +124,10 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.luck",
-                  "name": "Luck",
-                  "amount": 0.69,
-                  "operation": "addition",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": -0.5,
-                    "max": -0.9
-                  },
-                  "operation": "multiply_total",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.luck", "name": "Luck", "amount": 0.69, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": -0.5, "max": -0.9}, "operation": "multiply_total", "slot": ["offhand"]},
+                {"attribute": "generic.luck", "name": "Luck", "amount": 0.69, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": -0.5, "max": -0.9}, "operation": "multiply_total", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -193,58 +174,14 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "More Knockback",
-                  "amount": {
-                    "min": 0.2,
-                    "max": 0.8
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackKnockback",
-                  "name": "More Knockback",
-                  "amount": {
-                    "min": 0.1,
-                    "max": 0.2
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "Less Attack Speed",
-                  "amount": {
-                    "min": -4.0,
-                    "max": -4.6
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "Less Movement Speed",
-                  "amount": {
-                    "min": -0.1,
-                    "max": -0.2
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                }
+                {"attribute": "generic.attackDamage", "name": "More Knockback", "amount": {"min": 0.2, "max": 0.8}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackKnockback", "name": "More Knockback", "amount": {"min": 0.1, "max": 0.2}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackSpeed", "name": "Less Attack Speed", "amount": {"min": -4.0, "max": -4.6}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "Less Movement Speed", "amount": {"min": -0.1, "max": -0.2}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackDamage", "name": "More Knockback", "amount": {"min": 0.2, "max": 0.8}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackKnockback", "name": "More Knockback", "amount": {"min": 0.1, "max": 0.2}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "Less Attack Speed", "amount": {"min": -4.0, "max": -4.6}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed", "name": "Less Movement Speed", "amount": {"min": -0.1, "max": -0.2}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ]

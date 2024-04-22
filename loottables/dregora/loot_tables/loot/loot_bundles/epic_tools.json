@@ -40,31 +40,9 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "movementSpeed",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.05
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.armorToughness",
-                  "name": "movementSpeed",
-                  "amount": {
-                    "min": -1,
-                    "max": -2
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.movementSpeed", "name": "movementSpeed", "amount": {"min": 0.01, "max": 0.05}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "movementSpeed", "amount": {"min": 0.01, "max": 0.05}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.armorToughness", "name": "movementSpeed", "amount": {"min": -1, "max": -2}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -76,44 +54,11 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "attackDamage",
-                  "amount": {
-                    "min": 2,
-                    "max": 3
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "attackSpeed",
-                  "amount": {
-                    "min": -2.4,
-                    "max": -2.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "movementSpeed",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.03
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 2, "max": 3}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.0}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 2, "max": 3}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.0}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed", "name": "movementSpeed", "amount": {"min": 0.01, "max": 0.03}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -125,44 +70,11 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "attackDamage",
-                  "amount": {
-                    "min": 3,
-                    "max": 3
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "attackSpeed",
-                  "amount": {
-                    "min": -2.4,
-                    "max": -2.4
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.luck",
-                  "name": "movementSpeed",
-                  "amount": {
-                    "min": 0.5,
-                    "max": 0.1
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 3, "max": 3}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.4}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 3, "max": 3}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.4}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.luck", "name": "movementSpeed", "amount": {"min": 0.5, "max": 0.1}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -174,44 +86,11 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "attackDamage",
-                  "amount": {
-                    "min": 3,
-                    "max": 3
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "attackSpeed",
-                  "amount": {
-                    "min": -2.4,
-                    "max": -2.4
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "movementSpeed",
-                  "amount": {
-                    "min": 1.0,
-                    "max": 2.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 3, "max": 3}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.4}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": {"min": 3, "max": 3}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": {"min": -2.4, "max": -2.4}, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "movementSpeed", "amount": {"min": 1.0, "max": 2.0}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -247,18 +126,7 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 1.0,
-                    "max": 2.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": 1.0, "max": 2.0}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -270,19 +138,8 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.02
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                }
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -330,18 +187,7 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 1.0,
-                    "max": 2.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": 1.0, "max": 2.0}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -353,19 +199,8 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.02
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                }
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -413,18 +248,7 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 1.0,
-                    "max": 2.0
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": {"min": 1.0, "max": 2.0}, "operation": "addition", "slot": ["mainhand"]}
               ]
             },
             {
@@ -436,19 +260,8 @@
                 }
               ],
               "modifiers": [
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "maxHealth",
-                  "amount": {
-                    "min": 0.01,
-                    "max": 0.02
-                  },
-                  "operation": "addition",
-                  "slot": [
-                    "mainhand",
-                    "offhand"
-                  ]
-                }
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "maxHealth", "amount": {"min": 0.01, "max": 0.02}, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ],
@@ -506,8 +319,7 @@
                   "operation": "addition",
                   "slot": [
                     "head"
-                  ]
-                }
+                  ]}
               ]
             },
             {

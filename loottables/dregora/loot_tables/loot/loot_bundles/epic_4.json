@@ -110,46 +110,14 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "generic.maxHealth",
-                  "name": "armorToughness",
-                  "amount": -0.85,
-                  "operation": "multiply_base",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackSpeed",
-                  "name": "attackSpeed",
-                  "amount": 0.05,
-                  "operation": "addition",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.movementSpeed",
-                  "name": "attackDamage",
-                  "amount": 0.05,
-                  "operation": "multiply_base",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                },
-                {
-                  "attribute": "generic.attackDamage",
-                  "name": "attackDamage",
-                  "amount": 5,
-                  "operation": "addition",
-                  "slot": [
-                    "offhand",
-                    "mainhand"
-                  ]
-                }
+                {"attribute": "generic.maxHealth", "name": "armorToughness", "amount": -0.85, "operation": "multiply_base", "slot": ["offhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": 0.05, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.movementSpeed", "name": "attackDamage", "amount": 0.05, "operation": "multiply_base", "slot": ["offhand"]},
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": 5, "operation": "addition", "slot": ["offhand"]},
+                {"attribute": "generic.maxHealth", "name": "armorToughness", "amount": -0.85, "operation": "multiply_base", "slot": ["mainhand"]},
+                {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": 0.05, "operation": "addition", "slot": ["mainhand"]},
+                {"attribute": "generic.movementSpeed", "name": "attackDamage", "amount": 0.05, "operation": "multiply_base", "slot": ["mainhand"]},
+                {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": 5, "operation": "addition", "slot": ["mainhand"]}
               ]
             }
           ]

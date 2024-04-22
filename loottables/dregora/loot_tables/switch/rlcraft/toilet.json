@@ -88,6 +88,22 @@
         },
         {
           "type": "item",
+          "name": "biomesoplenty:mudball",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Poop \u2622\",Lore:[\"Rancid!!\"]}}"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Shitty Mud Ball \u203c\u2716\",Lore:[\"Shit! That is no mud ball!!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
           "name": "charm:suspicious_soup",
           "functions": [
             {
