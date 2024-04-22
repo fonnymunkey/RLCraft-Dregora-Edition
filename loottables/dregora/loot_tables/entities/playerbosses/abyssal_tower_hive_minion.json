@@ -31,7 +31,7 @@
         },
         {
           "type": "loot_table",
-          "name": "dregora:rlcraft/rlcraft_infuse_coins_rare",
+          "name": "dregora:loot/loot_bundles/epic_arrows",
           "weight": 1
         },
         {
@@ -47,8 +47,8 @@
             {
               "function": "set_count",
               "count": {
-                "min": 4,
-                "max": 6
+                "min": 3,
+                "max": 5
               }
             }
           ]

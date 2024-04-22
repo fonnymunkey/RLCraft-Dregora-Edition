@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Special Resources",
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/stone_weapons",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:flint_shard",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/stone",
+          "weight": 50
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/rlcraft_music",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "Regular Loot",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/junk_weapons",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:fleshchunk",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:flint_shard",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/stone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/andesite",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/granite",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/diorite",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/sandstone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/red_sandstone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:mudball",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:mud_brick",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:ash",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:brown_dye",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:jar_empty",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}
+

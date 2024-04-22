@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Books",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_enchanted_low",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_enchanted_med",
+          "weight": 50
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_enchanted_high",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}
+

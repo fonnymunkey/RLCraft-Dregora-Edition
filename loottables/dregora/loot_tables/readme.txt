@@ -1,4 +1,5 @@
-In DregoraRL there's a 3 main loot categories which can be found in assets/dregora/dregorarl/ which are a combination of vanilla dregora loot & rlcraft infused loot so the loottables can be used for both vanilla as rlcraft with minimal adjusting.
+In DregoraRL there's 3 main loot categories which can be found in assets/dregora/dregorarl/ which are a combination of vanilla dregora loot & rlcraft infused loot so the loottables can be used for both vanilla as rlcraft with minimal adjusting.
+
 
 1. There's the regular loot category with the following loot tables:
 
@@ -142,6 +143,47 @@ Loottable Test Strings:
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot_test"}
 
 Todo: RLC potions maybe use splash some?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+      DregoraRL Ruins Loot Chests - Works: V
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:ruins/consumable"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:ruins/industrial"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:ruins/nuclear"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:ruins/rubble"}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+      DregoraRL Battletower Loot Chests - Works: V
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_1"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_2"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_3"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_4"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_5"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_6"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_7"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_8"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_9"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_10"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/brutal"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:playerbosses/abyssal_tower_playerboss"}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+      DregoraRL Special Loot Chests - Works: V
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/setblock ~ ~-1 ~ minecraft:dispenser 0 false {LootTable:"dregora:special/arrow_dispenser"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:special/trapped_loot"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:dregorarl/loot/cocoa"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:dregorarl/loot/herbalist_loot"}
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|

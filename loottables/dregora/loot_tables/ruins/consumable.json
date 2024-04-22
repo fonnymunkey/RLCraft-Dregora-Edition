@@ -1,0 +1,181 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "ancient and old consumables",
+      "rolls": {
+        "min": 1,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/city_switch",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "inspirations:potato_soup",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "charm:suspicious_soup",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_soup",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:rotten_egg",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "charm:rotten_flesh_block",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "betternether:gray_mold",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:deathstalk_mushroom",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rustic:tomato",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "rustic:olives",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "rustic:tallow",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "rustic:wildberries",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "advanced-fishing:fish",
+          "weight": 10,
+          "functions": [
+            {"function": "minecraft:set_data","data": 40}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rustic:chili_pepper",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:fleshchunk",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcompressedflesh",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:chamomile",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "rustic:wind_thistle",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "firstaid:morphine",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemcookedbatwing",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemjelly",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:loot",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 4},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:charcoal_filter",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:juice",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
+

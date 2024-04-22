@@ -1,0 +1,237 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Rubble",
+      "rolls": {
+        "min": 1,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "quark:candle",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_button",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lever",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_bars",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobblestone_wall",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:concrete",
+          "weight": 10,
+          "functions": [
+            {"function": "minecraft:set_data","data": 7},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clay_ball",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:flower_pot",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:loot",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.5}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:mud_brick",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:mudball",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:clay_wall_cross",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:clay_wall",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "rustic:iron_lattice",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "realistictorches:torch_unlit",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "advanced-fishing:fish",
+          "weight": 10,
+          "functions": [
+            {"function": "minecraft:set_data","data": 40}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "quark:colored_flowerpot_silver",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "quark:colored_flowerpot_brown",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "quark:colored_flowerpot_orange",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "quark:dark_oak_button",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:tallow",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:iron_button",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "inspirations:materials",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 3},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.5}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "armorunder:goopak_spent",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/stone",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/andesite",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/granite",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/diorite",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/sandstone",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:rock/red_sandstone",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:clay_brick",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:arrow_wood",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:salve",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "srparasites:srpweb",
+          "weight": 20,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.5}]}
+          ]
+        }
+      ]
+    }
+  ]
+}

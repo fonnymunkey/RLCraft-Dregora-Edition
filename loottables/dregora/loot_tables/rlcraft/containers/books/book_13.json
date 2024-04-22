@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Books",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "inspirations:books",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_data","data": 13}
+          ]
+        }
+      ]
+    }
+  ]
+}
+

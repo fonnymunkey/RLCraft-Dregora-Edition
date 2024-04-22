@@ -255,6 +255,10 @@ Fixed/Changed/Added:
 - made weightedbranches for additional dragon stages & scales (except for ashenblood peaks stages)
 - fixed otg entity double spawn for gorgon temple
 - added frozen oceans and frozen beach biomes.
+- Changed spawns to biome_parasite in Underneath
+- Respawndim for Underneath is now be Underneath
+- Lowered amount of portals in Underneath
+- Added Bedrock layer at bottom Underneath
 
 boss 1: 2x Spider Boss (huge trite)
 boss 2: 1x Lightning Dragon
@@ -266,20 +270,8 @@ boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy,
 Boss 8: Shivaxi & Parasite Dragon
 
 
-
-
-Underneath Done:
-- Changed spawns to biome_parasite.
-- Respawndim for Underneath is now be Underneath
-- Lowered amount of portals in Underneath
-- Added Bedrock layer at bottom
-
-Underneath todo:
-
-
-Dregora todo:
-
-
+Dregora todo
++ make and add entities to brutal tower (spawners & armor stands)
 + randomized lightning swords
 + Check Brutal Tower Loottable with heaven
 + Add flying entities to DregoraRL (10 for each biome group)
@@ -446,17 +438,17 @@ RLCraft Done:
 - Added Underneath Quest
 - added -2x multiplier to incontrol special entities overworld
 - Configured IceAndFire Troll variant biomes
-
+- add loot tables to all boss entities in abyssal tower
+- variedcommodities:coin_stone x 4 = 1x brutal coin (recipe added)
 
 RLCraft todo:
-+ add loot tables to all boss entities in abyssal tower
++ add loottables for tiered loot in brutal towers
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + Fix github issues
-+ Check Underneath Quest Line
 + C&L Hydra needs to be configured per biome
 + shivaxi turns into srparasite dragon once 10% health
-+ variedcommodities:coin_stone x 4 = 1x brutal coin
+
 
 Optional:
 + Update SRParasites Mod to newest .19 release once it comes out
@@ -496,49 +488,53 @@ OTG Done: (awaiting public release)
 
 
 Boss Loot:
-boss 1: 2x Spider Boss (huge trite)
-(1 stone coin each)
+boss 1: 2x Spider Boss (huge trite) [Arachno & Arachna]
+1-2 stone coin (each) + 1-3 experience bottles (each) (0.25 - 0.5 brutal coins
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_common"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/gilded_tools"}
-/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/silver_weapons"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_tools"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
 
-boss 2: 1x Lightning Dragon
-(1 brutal coin)
-boss 3: 1x humanoid Boss with OP gear
-(1 brutal coin)
-/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_common"}
+boss 2: 1x Lightning Dragon [GateKeeper]
+(1 brutal coin) + 3-7 experience bottles
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/gems/main_gem"} (x10-15)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/silver_weapons"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
 
-boss 4: 1x crux
-(1 brutal coin)
+boss 3: 1x humanoid Boss with OP gear [Corrupted Warden]
+(2-5 stone coins) + 7-10 experience bottles   0.125 - 0.625 brutal coins
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/diamond_weapons"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
+
+boss 4: 1x crux [ Sentient Horror ]
+(1 brutal coin) + 10-13 experience bottles
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/loot_bundles/silver_armor"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"}
 
-boss 5: Tower Golem with OP gear
-(1 brutal coin)
+boss 5: Tower Golem with OP gear [Necrotic Golem]
+(1 brutal coin) + 13-15 experience bottles
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"}
 
-boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle
-(1 stone coin each)
+boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle [Corrupt Carrier | Spoiled Observer | Degrading Overseer | Necrotic Blight]
+(1-3 stone coin each ) + 3-5 experience bottles each ( 0.5 - 1.5 brutal coins
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_arrows"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
-/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"} (only Bogle)
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_legendary"} (only Necrotizer)
 
-boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy
-(1 stone coin each)
+boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy, Zero [Corrupted <name>   (1 - 3 brutal coins
+(1-3 stone coin each) + 4-6 experience bottles each
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_rare"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
 
-Boss 8: Shivaxi & Parasite Dragon
-1 brutal coin +  enchantment book (treasure)
+Boss 8: Shivaxi & Parasite Dragon [Corrupted Shivaxi] - [Corrupted Remnants]
+1 brutal coin +  enchantment book (treasure) (lvl 30) + 48 - 64 enchantment bottles
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_coins_epic"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:rlcraft/rlcraft_infuse_epic"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:loot/loot_bundles/epic_potions"}

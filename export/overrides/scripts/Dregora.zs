@@ -502,6 +502,8 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <biomesoplenty:terrarium:8>.displayName = "Gleamshroom Terrarium";
 
 //Add New trading system items description & lore
+<variedcommodities:coin_stone>.displayName = "Brutal Fragment";
+<variedcommodities:coin_stone>.addTooltip(format.gold("Fragments of a brutal coins found in brutal towers, can be repaired "));
 <biomesoplenty:terrestrial_artifact>.addTooltip(format.gold("Brimming with the essence of life & purity, can be traded with most Herbalist to craft biome purifiers."));
 <variedcommodities:coin_gold>.displayName = "Ancient Coins";
 <variedcommodities:coin_gold>.addTooltip(format.gold("Treasure among Topographers in Outposts & the odd villager, usually found in ancient structures such as maintenance shafts and cities."));
@@ -554,11 +556,19 @@ recipes.remove(<biomesoplenty:terrestrial_artifact>);
 <variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
 <variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers."));
 
-// Crafting recipe
+// Crafting recipe Pendant
 recipes.addShaped("dregora20",<variedcommodities:pendant>,
  [[<variedcommodities:orb:0>,<variedcommodities:element_fire>,<variedcommodities:orb:0>],
   [<variedcommodities:element_fire>,<variedcommodities:gem_ruby>,<variedcommodities:element_fire>],
   [<variedcommodities:orb:0>,<variedcommodities:element_fire>,<variedcommodities:orb:0>]]);
+
+val mendingPot = <minecraft:potion>.withTag({Potion: "potioncore:repair"});
+
+// Crafting recipe Brutal Coin Fragments
+recipes.addShaped("dregora32",<variedcommodities:ancient_coin>,
+ [[<variedcommodities:coin_stone>,<variedcommodities:coin_stone>,<variedcommodities:coin_stone>],
+  [<variedcommodities:coin_stone>,mendingPot,<variedcommodities:coin_stone>],
+  [<variedcommodities:coin_stone>,<variedcommodities:coin_stone>,<variedcommodities:coin_stone>]]);
 
 
 // Give the Orbs for Lycanites Summons a better name.

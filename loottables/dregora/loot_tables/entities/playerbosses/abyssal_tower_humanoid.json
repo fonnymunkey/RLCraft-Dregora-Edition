@@ -1,53 +1,57 @@
 {
   "pools": [
     {
-      "name": "cursed_pool",
+      "name": "Brutal Coins",
       "rolls": 1.0,
       "entries": [
         {
-          "type": "loot_table",
-          "name": "dregora:loot/cursed_loot",
-          "weight": 1
-        },
-        {
-          "type": "loot_table",
-          "name": "dregora:loot/empty_loot",
-          "weight": 25
+          "type": "item",
+          "name": "variedcommodities:coin_stone",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
         }
       ]
     },
     {
       "name": "main",
-      "rolls": 1.0,
+      "rolls": 3.0,
       "entries": [
         {
           "type": "loot_table",
-          "name": "dregora:loot/epic_loot",
-          "weight": 25
+          "name": "dregora:rlcraft/loot_bundles/diamond_weapons",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_coins_rare",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_epic",
+          "weight": 1
         },
         {
           "type": "item",
-          "name": "variedcommodities:coin_gold",
+          "name": "minecraft:experience_bottle",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 5,
+                "min": 7,
                 "max": 10
               }
             }
-          ],
-          "weight": 10
-        },
-        {
-          "type": "loot_table",
-          "name": "dregora:rlcraft/rlcraft_infuse_legendary",
-          "weight": 5
-        },
-        {
-          "weight": 1,
-          "type": "item",
-          "name": "variedcommodities:ancient_coin"
+          ]
         }
       ]
     }

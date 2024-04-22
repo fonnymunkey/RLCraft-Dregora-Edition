@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "name": "Toilet Spawns for in the City",
+      "name": "Potion Spawns for in the City",
       "rolls": 1,
       "entries": [
         {

@@ -1,0 +1,97 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Books",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_0",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_1",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_2",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_3",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_4",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_5",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_6",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_7",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_8",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_9",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_10",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_11",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_12",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_13",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_14",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_15",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/containers/books/book_16",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}
+

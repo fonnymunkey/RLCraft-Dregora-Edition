@@ -1,0 +1,481 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "Industrial Chest",
+      "rolls": {
+        "min": 1,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "craftablechainmail:chainmail_plate",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_bars",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:anvil",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 2}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:activator_rail",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:heavy_weighted_pressure_plate",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:observer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_shovel",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Protective Clothing\",Lore:[\"Very, very old...\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Protective Clothing\",Lore:[\"Very, very old...\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Protective Clothing\",Lore:[\"Very, very old...\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_helmet",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Protective Clothing\",Lore:[\"Very, very old...\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:soldier_head",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"RAD-Helmet\",Lore:[\"Lined with lead, must be heavy...\"]}}"},
+            {"function": "minecraft:set_attributes","modifiers": [{"attribute": "generic.movementSpeed","name": "movementSpeed","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["head"]}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:soldier_chest",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"RAD-Chest\",Lore:[\"Lined with lead, must be heavy...\"]}}"},
+            {"function": "minecraft:set_attributes","modifiers": [{"attribute": "generic.movementSpeed","name": "movementSpeed","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["chest"]}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:soldier_bottom",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"RAD-Bottom\",Lore:[\"Lined with lead, must be heavy...\"]}}"},
+            {"function": "minecraft:set_attributes","modifiers": [{"attribute": "generic.movementSpeed","name": "movementSpeed","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["feet"]}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:soldier_legs",
+          "weight": 5,
+          "functions": [
+            {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"RAD-Legs\",Lore:[\"Lined with lead, must be heavy...\"]}}"},
+            {"function": "minecraft:set_attributes","modifiers": [{"attribute": "generic.movementSpeed","name": "movementSpeed","amount": {"min": -0.05,"max": -0.2},"operation": "multiply_total","slot": ["legs"]}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"Hazmat Helmet\",Lore:[\"Smooth to the touch, high quality leather.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"Hazmat Pants\",Lore:[\"Smooth to the touch, high quality leather.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"Hazmat Boots\",Lore:[\"Smooth to the touch, high quality leather.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"Hazmat Body\",Lore:[\"Smooth to the touch, high quality leather.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bucket",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:minecart",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:pudge_hook",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:prototype_launcher",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:pudge_launcher",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:spear_hook",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:spear_launcher",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:web_hook",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "adhooks:web_launcher",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:jar_empty",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:iron_lattice",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:iron_ladder",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:chain",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:redstone_randomizer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "quark:redstone_inductor",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:jar_empty",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "inspirations:rope",
+          "weight": 5,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "inspirations:barometer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "inspirations:photometer",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "inspirations:redstone_charger",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "levelup2:respecbook",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:flaregun",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:flare_red",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "locks:iron_lock_mechanism",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "locks:wood_lock_mechanism",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "locks:spring",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "locks:steel_lock_mechanism",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "locks:key",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "locks:steel_lock_pick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "locks:iron_lock_pick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:wrench",
+          "weight": 1,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Ancient Artifact\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:crowbar",
+          "weight": 1,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Ancient Artifact\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:pipe_wrench",
+          "weight": 1,
+          "functions": [
+            {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"Ancient Artifact\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]}}"}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:rain_collector",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:hammer_stone",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:hammer_iron",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:charcoal_filter",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:mattock/iron",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:saw/iron",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "notreepunching:knife/iron",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "armorunder:goopak_cool",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "armorunder:goopak_heat",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "charm:iron_lantern",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:hammer_gold",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_helmet",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_leggings",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_boots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "variedcommodities:coin_gold",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Ancient Coins\",Lore:[\"These may be of interest to the Topographers in villager outposts\"]}}"
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}
+

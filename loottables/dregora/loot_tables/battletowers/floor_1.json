@@ -1,0 +1,366 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "battletower_loot_floor_1",
+      "rolls": {
+        "min": 1,
+        "max": 6
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:dagger_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:longsword_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:katana_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:saber_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:rapier_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:greatsword_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:hammer_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:warhammer_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:spear_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:halberd_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:planks",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:reeds",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:experience_bottle",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "scalinghealth:heartcontainer",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "battletower_loot_floor_2_mix",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "spartanweaponry:pike_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:lance_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:longbow_leather",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:crossbow_leather",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:throwing_knife_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:throwing_axe_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:javelin_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:boomerang_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:battleaxe_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "spartanweaponry:mace_stone",
+          "weight": 2,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "weight": 20,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wool",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 2,"max": 8}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_sword",
+          "weight": 50,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_pickaxe",
+          "weight": 50,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_axe",
+          "weight": 50,
+          "functions": [{"function": "enchant_with_levels","levels": 3,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 3,"max": 3}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stone_button",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 2,"max": 2}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cobblestone",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 2,"max": 20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "scalinghealth:heartdust",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

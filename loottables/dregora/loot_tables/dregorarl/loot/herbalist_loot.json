@@ -1,0 +1,615 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "name": "herbalist_loot",
+      "rolls": {
+        "min": 6,
+        "max": 22
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "simpledifficulty:charcoal_filter",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cookie",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fermented_spider_eye",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:spider_eye",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_data","data": 15}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat_seeds",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:wheat",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:reeds",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potato",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:carrot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "rustic:rope",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemroastedseed",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "dynamictrees:dendropotion",
+          "weight": 100,
+          "functions": [
+            {"function": "minecraft:set_data","data": 2}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:apple",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:baked_potato",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:mushroom_stew",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sugar",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:jar_empty",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:ricebowl",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_soup",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "rustic:tomato",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "rustic:chili_pepper",
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_helmet",
+          "weight": 80,
+          "functions": [{"function": "enchant_with_levels","levels": 8,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_chestplate",
+          "weight": 80,
+          "functions": [{"function": "enchant_with_levels","levels": 8,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_leggings",
+          "weight": 80,
+          "functions": [{"function": "enchant_with_levels","levels": 8,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "weight": 80,
+          "functions": [{"function": "enchant_with_levels","levels": 8,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:hay_block",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:egg",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:shears",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:salve",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:plaster",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "armorunder:liner_snips",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:slime_ball",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "aquaculture:food",
+          "weight": 50,
+          "functions": [
+            {"function": "minecraft:set_data","data": 0},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_pie",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:jar_empty",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_mushroom",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_mushroom",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "rustic:mooncap_mushroom",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "inspirations:edibles",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itemmelonsalad",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "foodexpansion:itembeetrootnoodles",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "inspirations:potato_soup",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_seeds",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_hoe",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_seeds",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "rustic:wildberries",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:plant_1",
+          "weight": 40,
+          "functions": [
+            {"function": "minecraft:set_data","data": 9},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:bamboo",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:seaweed",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "rustic:wind_thistle",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:shroompowder",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_axe",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_shovel",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_helmet",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_leggings",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:chainmail_boots",
+          "weight": 40,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:milk_bucket",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:frost_stew",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:lightning_stew",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "iceandfire:fire_stew",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "rustic:oliveseed",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:juice",
+          "weight": 30,
+          "functions": [
+            {"function": "minecraft:set_data","data": 8},
+            {"function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_data","data": 0,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "simpledifficulty:purified_water_bottle",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "rustic:apple_seeds",
+          "weight": 30
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:dregorarl/loot/cocoa",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "rustic:tomato_seeds",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "rustic:grape_stem",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "rustic:chili_pepper_seeds",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:terrarium",
+          "weight": 15,
+          "functions": [
+            {"function": "minecraft:set_data","data": 6},
+            {"function": "minecraft:set_data","data": 8,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 7,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 9,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 15,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 14,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 13,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 12,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 11,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 10,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 5,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 4,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 3,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 2,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 1,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "minecraft:set_data","data": 0,"conditions": [{"condition": "random_chance","chance": 0.2}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 15,
+          "functions": [
+            {"function": "set_nbt", "tag": "{Potion:\"minecraft:fire_resistance\"}"},
+            {"function": "set_nbt", "tag": "{Potion:\"minecraft:night_vision\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"minecraft:water_breathing\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"minecraft:regeneration\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"minecraft:weakness\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:saturation\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:absorption\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:mining_fatigue\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:launch\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "weight": 15,
+          "functions": [
+            {"function": "set_nbt", "tag": "{Potion:\"mujmajnkraftsbettersurvival:blindness\"}"},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:step_up\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:spin\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]},
+            {"function": "set_nbt", "tag": "{Potion:\"potioncore:launch\"}", "conditions": [{"condition": "random_chance", "chance": 0.3}]}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rustic:grapes",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_block",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "rustic:book",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:speckled_melon",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:ironwoodseed",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:peach",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:persimmon",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:pear",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:berries",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:horsetail",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:cloudsbluff",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:core_root",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:ginseng",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:marsh_mallow",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:cohosh",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:chamomile",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:blood_orchid",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:aloe_vera",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "rustic:deathstalk_mushroom",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 5,
+          "functions": [{"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.05}]}]
+        }
+      ]
+    }
+  ]
+}
+

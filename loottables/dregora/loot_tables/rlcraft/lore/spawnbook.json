@@ -1,0 +1,147 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "spawn book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n  \u00A7l\u00A74B\u00A7l\u00A7n\u00A74⬡⬡\u00A7l\u00A74k \u00A7l\u00A7n\u00A74⬡\u00A7l\u00A74f\u00A7l\u00A74 Dreg\u00A7l\u00A7n\u00A74⬡\u00A7l\u00A74ra\u00A7r\n\n\u00A7l    Welcome to a\n decade old world\n made with passion\n      and love\u00A7r\n\n ████\u00A74████\u00A7r████\n ████\u00A74████\u00A7r████\n ████\u00A74████\u00A7r████\n\u00A74 ████\u00A7r████\u00A74████\n ████\u00A7r████\u00A74████\u00A7r\n\u00A74 ████\u00A7r████\u00A74████\\\"}]\",
+                  \"[{\\\"text\\\":\\\"     \u00A76☀\u00A78           \n               \u00A7r\n\u00A7n\u00A72▁\u00A7n\u00A78▲\u00A7n\u00A72▁\u00A7n\u00A78◢◣\u00A7n\u00A72▁▁\u00A7l\u00A78╱╲\u00A7n\u00A72▁\u00A7n\u00A7r▊\u00A7n\u00A72▁\u00A7n\u00A70▅\u00A7n\u00A72▁\u00A7n\u00A7r \n\n\nPage 3-5 Prolugue\nPage 6-9 Secrets\nPage 10 Realms\nPage 14 Thank you\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\u00A7oOur Earth, stuck by a catastrophic event known as the Blight happened a few thousand years ago.\n\n\u00A7oRuined cities had been long overtaken by the sands of the wastelands and the green of corruption feasted on the remains of the unfortunate. ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\u00A7oFew places are suitable for those seeking shelter from the corruption but dreams had shown you far away lands beyond canyons of molten rock where this world, now known as Dregora seemed to be healing. ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"\n\u00A7oHowever, as the dream concluded warmly and softly and the sun rose you did not notice the darkness lurking from behind, slowly creeping closer and closer.\u00A7r\n\n###################\n#   Information ➡    #\n###################\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Having read the Prologue you should have noticed the sentence of canyons and molten rock.\n\nThe keen eye may have deduced the meaning behind this as your travels through dregora should lead to these, and more importantly... ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"the lands beyond riddled with kingdoms, waterfalls, lush oceans, grand mountain ranges and overall beautifull, resource rich places to visit.\n\nThese secrets just as mostly everything within the realms of Dregora have been... ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"written in a immersive way without any links leading you away from what makes up these worlds.\n\nSo seeking the secrets are to be done within the boundaries of these worlds where you may find libraries of lore filled with magical... ➡\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"swords, stones, and their guardians.\n\nSo on your travels, if you are willing to read the lore make sure to do so keenly as you may uncover secrets, hidden passages and inform you about the shadows yet to come.\\\"}]\",
+                  \"[{\\\"text\\\":\\\"Dregora exists out of 4 parts:\n\n\u00A7lThe Fromimage Center\u00A7r\n\nWith the hexagonal structure in it\u0027s center you\u0027ll find it closely resembles a compass from above.\n\n\u00A7lThe Wastelands ... ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"These lands make up the majority of Dregora and are entirely randomly generated. These biomes mostly resemble a wasteland but upon your travels you will find lush, frozen and corrupted biomes as well.\n\n\u00A7lThe Farlands... ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"These far away, hidden lands are protected from the wastification by great fiery chasms of molten rock and contain lush biomes full of wonders. These are truly the most beutifull places to visit.\n\n\u00A7lThe Depths... ➡\\\"}]\",
+                  \"[{\\\"text\\\":\\\"These are what make up the subterrainian part of Dregora. Not to be found in all biomes but commonly present in the world as a whole, where some may pose dangers others will house full civilizations.\n\n\n\n \\\"}]\",
+                  \"[{\\\"text\\\":\\\"And with that, \u00A7l\u00A7ca world\u00A7r not just created by me, NLBlackEagle but you as well as I value \u00A7l\u00A7cyour opinion\u00A7r and without it Dregora wouldn\u0027t have been possible. So I would like to \u00A7l\u00A7cthank you greatly\u00A7r and welcome you to open a chat with me on our discord any time!\n\n \\\"}]\"
+                ],
+                title:\"The Realms of Dregora\",
+                author:\"The Founder\",
+                display:{Lore:[\"Dregora, The Blight and you in your adventure through a bountiful world\"]}
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "spawn book",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag":"
+              {
+                pages:
+                [
+                  \"[{\\\"text\\\":\\\"\n\nTake a sip and thou shalt be revealed a riddle of luck and loot\n\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"         \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"▌▌▌\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"        \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"white\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"       \\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█▌▌▌█\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"      █\\\"},{\\\"color\\\":\\\"dark_green\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"██▌██\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"█\\\"},{\\\"color\\\":\\\"reset\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"\n\\\"},{\\\"color\\\":\\\"gray\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\"       ██▌███\\\"},{\\\"color\\\":\\\"blue\\\",\\\"hoverEvent\\\":{\\\"action\\\":\\\"show_text\\\",\\\"value\\\":{\\\"text\\\":\\\"The path to Legendary loot lay before you. you.\\\"}},\\\"text\\\":\\\" \\\"}]\"
+                ],
+                title:\"Book of Legendary Loot\",
+                author:\"The Founder\",
+                display:{Lore:[\"Let there be luck to assist your in your spoils\"]}
+              }"
+            }
+          ],
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "name": "spawn skull",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:skull",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Skull of Secrets\",Lore:[\"The answer to the secret of closed doors.\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:71,lvl:1}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "spawn clock",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:clock",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Ancient Clock\",Lore:[\"a mystical clock.\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:10,lvl:1},{id:100,lvl:1}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Ancient Compass\",Lore:[\"The North star at pocket size!\"]}}"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{ench:[{id:10,lvl:1},{id:100,lvl:1}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bonus_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 20,
+              "treasure": false
+            }
+          ],
+          "weight": 0,
+          "quality": 2
+        }
+      ]
+    }
+  ]
+}
+
