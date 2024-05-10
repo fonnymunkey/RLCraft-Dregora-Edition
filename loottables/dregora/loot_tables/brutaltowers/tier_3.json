@@ -1,0 +1,51 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_coins_common",
+          "weight": 20
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/rlcraft_potion",
+          "weight": 20
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 60
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 60
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_epic",
+          "weight": 20
+        }
+      ]
+    }
+  ]
+}
+

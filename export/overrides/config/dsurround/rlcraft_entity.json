@@ -93,6 +93,9 @@
     },
     "iceandfire:lightningdragon": {
       "effects": "chat"
+    },
+    "battletowers:golem": {
+      "effects": "chat"
     }
   }
 }

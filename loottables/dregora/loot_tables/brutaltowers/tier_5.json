@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "main",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:brutaltowers/rare_no_junk",
+          "weight": 4
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:brutaltowers/epic_no_junk",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}
+

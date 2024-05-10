@@ -171,30 +171,6 @@
         },
         {
           "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
-          "sound": "charm:record.nether1",
-          "volume": 1.0,
-          "soundType": "spot"
-        },
-        {
-          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
-          "sound": "charm:record.nether2",
-          "volume": 1.0,
-          "soundType": "spot"
-        },
-        {
-          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
-          "sound": "charm:record.nether3",
-          "volume": 1.0,
-          "soundType": "spot"
-        },
-        {
-          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
-          "sound": "charm:record.nether4",
-          "volume": 1.0,
-          "soundType": "spot"
-        },
-        {
-          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
           "sound": "charm:above_stronghold",
           "volume": 1.5,
           "soundType": "spot"

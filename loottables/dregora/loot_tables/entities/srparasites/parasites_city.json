@@ -1,57 +1,51 @@
 {
+  "type": "minecraft:chest",
   "pools": [
     {
-      "name": "extra_pool",
-      "rolls": 1.0,
+      "name": "parasite_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
-          "name": "parasite_loot",
-          "rolls": {
-            "min": 1,
-            "max": 2
-          },
-          "bonus_rolls": 1,
-          "entries": [
+          "type": "item",
+          "name": "variedcommodities:coin_gold",
+          "functions": [
             {
-              "type": "item",
-              "name": "variedcommodities:coin_gold",
-              "functions": [
-                {
-                  "function": "set_count",
-                  "count": {
-                    "min": 1,
-                    "max": 8
-                  }
-                }
-              ],
-              "weight": 5
-            },
-            {
-              "type": "item",
-              "name": "srparasites:assimilated_flesh",
-              "weight": 10
-            },
-            {
-              "type": "item",
-              "name": "scalinghealth:crystalshard",
-              "weight": 10
-            },
-            {
-              "type": "item",
-              "name": "biomesoplenty:fleshchunk",
-              "weight": 50
-            },
-            {
-              "type": "item",
-              "name": "minecraft:bone",
-              "weight": 50
-            },
-            {
-              "type": "loot_table",
-              "name": "dregora:loot/empty_loot",
-              "weight": 100
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
             }
-          ]
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "srparasites:assimilated_flesh",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "scalinghealth:crystalshard",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:fleshchunk",
+          "weight": 50
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 50
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 100
         }
       ]
     }

@@ -30,6 +30,14 @@ import crafttweaker.event.EntityLivingExtendedSpawnEvent;
 import crafttweaker.event.ProjectileImpactThrowableEvent;
 import crafttweaker.event.EntityLivingUseItemEvent.All;
 import crafttweaker.event.EntityLivingUseItemEvent.Finish;
+import crafttweaker.tileentity.IMobSpawnerBaseLogic;
+import crafttweaker.event.EntityLivingDeathEvent;
+import crafttweaker.data.IData;
+import crafttweaker.entity.IEntityEquipmentSlot;
+import mods.ctintegration.baubles.IBaubleInventory;
+import crafttweaker.entity.AttributeInstance;
+import crafttweaker.world.IBiomeType;
+import crafttweaker.world.IBiome;
 
 // use /ct syntax to validate scripts
 
@@ -103,19 +111,200 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
-//Function to dismount players if hit by vex in biome "Abyssal Rift"
+//Script to make deserts cold at night
+//Biometag DESERT counts as desert.
+//Dregora_DryDunes
+
+
+
+//events.onPlayerTick(function(event as PlayerTickEvent){
+//
+//    if !(event.player.world.isDayTime()){
+//
+//        if (event.entity.world.time % 100 != 0) {return;}
+//        var playerBiome = event.player.world.getBiome(event.player.getPosition3f());
+//        event.player.setNBT({DesertTags: 0});
+//
+//        for biomeType in playerBiome.types {
+//
+//
+//            if ((biomeType.name == "SANDY") || (biomeType.name == "HOT") || (biomeType.name == "DRY")) {
+//
+//                print(biomeType.name);
+//                var DesertTagsInt = event.player.nbt.ForgeData.DesertTags + 1;
+//                event.player.setNBT({DesertTags: DesertTagsInt});
+//
+//            }
+//
+//            if (event.player.nbt.ForgeData.DesertTags as int == 3) {
+//
+//                event.player.addPotionEffect(<potion:simpledifficulty:hypothermia>.makePotionEffect(205, 0));
+//                print("worked");
+//                event.player.setNBT({DesertTags: 0});
+//            }
+//        }
+//    }
+//});
+
+
+//summon playerbosses:player_boss ~ ~1 ~ {ActiveEffects:[{Id:115,Amplifier:0,Duration:2147483647}]}
+//Function to dismount players if hit by vex named Dismounter && Function giving Shivaxi a phase 2 below 10 health if in Abyssal Rift
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
     if (!isNull(event.damageSource.getTrueSource())){
-          if(!isNull(event.damageSource.getTrueSource().getCustomName())){
-                if(event.damageSource.getTrueSource().getCustomName() == "Dismounter"){
-                    if(event.entity.isRiding) {
-                        print(event.entity.id);
-                        event.entity.dismountRidingEntity();
-                        event.entity.removePassengers();
+        if(!isNull(event.damageSource.getTrueSource().getCustomName())){
+            if(event.damageSource.getTrueSource().getCustomName() == "Dismounter"){
+                if(event.entity.isRiding) {
+                    event.entity.dismountRidingEntity();
+                    event.entity.removePassengers();
+                }
+            }
+        }
+    }
+
+    if (isNull(event.entity)||!isNull(event.entity.uuid)){return;}
+
+    if ((event.entity.definition.id) == "playerbosses:player_boss"){
+
+        var Phase03 = event.entityLivingBase.maxHealth /4;
+        var Phase02 = event.entityLivingBase.maxHealth /2;
+        var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+
+        if ((EntityBiome) == "Abyssal Rift") {
+
+            if ((Phase02 >= event.entityLivingBase.health) && (Phase03 <= event.entityLivingBase.health)){
+
+                var buglin = <entity:srparasites:buglin>.createEntity(event.entityLivingBase.world);
+                var adventurerhead = <entity:srparasites:sim_adventurerhead>.createEntity(event.entityLivingBase.world);
+                var rupter = <entity:srparasites:rupter>.createEntity(event.entityLivingBase.world);
+                var mediumform = <entity:srparasites:incompleteform_medium>.createEntity(event.entityLivingBase.world);
+                var yelloweye = <entity:srparasites:pri_yelloweye>.createEntity(event.entityLivingBase.world);
+                var EntityArray = [buglin, buglin, buglin, buglin, buglin, buglin, adventurerhead, adventurerhead, adventurerhead, rupter, rupter, rupter, mediumform, mediumform, yelloweye] as IEntity[];
+
+                for i in 0 to event.entity.world.random.nextFloat(1, 6) {
+
+                    var RandomEntity = event.entity.world.random.nextFloat(0, 14);
+                    var EntitySelected = EntityArray[RandomEntity] as IEntity;
+                    var RandomNum = event.entity.world.random.nextFloat(5, 10);
+
+
+                    var pos1 = Position3f.create(event.entity.position.x, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+                    var pos2 = Position3f.create(event.entity.position.x, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos3 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z).asBlockPos();
+                    var pos4 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z).asBlockPos();
+
+                    var pos5 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+                    var pos6 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos7 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos8 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+
+                    var PosArray = [pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8] as Position3f[];
+                    var RandomPos = event.entity.world.random.nextFloat(0, 7);
+
+                    for i in 0 to 10 {
+
+                        var position = PosArray[RandomPos] as Position3f;
+                        if (event.entity.world.isAirBlock(position)) {
+
+                            EntitySelected.setPosition(position);
+                            event.entityLivingBase.world.spawnEntity(EntitySelected);
+                            break;
+
+                        }
                     }
                 }
-          }
+            }
+
+            if (Phase03 >= event.entityLivingBase.health){
+
+                var villager = <entity:srparasites:sim_villager>.createEntity(event.entityLivingBase.world);
+                var human = <entity:srparasites:sim_human>.createEntity(event.entityLivingBase.world);
+                var spider = <entity:srparasites:sim_bigspider>.createEntity(event.entityLivingBase.world);
+                var arachnida = <entity:srparasites:pri_arachnida>.createEntity(event.entityLivingBase.world);
+                var ada_arachnida = <entity:srparasites:ada_arachnida>.createEntity(event.entityLivingBase.world);
+                var EntityArrayNew = [villager, villager, villager, villager, villager, human, human, human, human, spider, spider, spider, arachnida, arachnida, ada_arachnida] as IEntity[];
+
+                for i in 0 to event.entity.world.random.nextFloat(1, 3) {
+
+                    var RandomEntity = event.entity.world.random.nextFloat(0, 14);
+                    var EntitySelected = EntityArrayNew[RandomEntity] as IEntity;
+                    var RandomNum = event.entity.world.random.nextFloat(5, 10);
+
+
+                    var pos1 = Position3f.create(event.entity.position.x, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+                    var pos2 = Position3f.create(event.entity.position.x, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos3 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z).asBlockPos();
+                    var pos4 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z).asBlockPos();
+
+                    var pos5 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+                    var pos6 = Position3f.create(event.entity.position.x - RandomNum, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos7 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z + RandomNum).asBlockPos();
+                    var pos8 = Position3f.create(event.entity.position.x + RandomNum, event.entity.position.y + 3, event.entity.position.z - RandomNum).asBlockPos();
+
+                    var PosArray = [pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8] as Position3f[];
+                    var RandomPos = event.entity.world.random.nextFloat(0, 7);
+
+                    for i in 0 to 10 {
+
+                        var position = PosArray[RandomPos] as Position3f;
+                        if (event.entity.world.isAirBlock(position)) {
+
+                            EntitySelected.setPosition(position);
+                            event.entityLivingBase.world.spawnEntity(EntitySelected);
+                            break;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+});
+
+
+//Shivaxi turns into corrupted dragon
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
+
+    if (!isNull(event.entity.definition)) {
+
+        if (!isNull(event.entity.definition.name)) {
+
+            if (!isNull(event.entity.customName)) {
+
+                if (!isNull(event.entity.definition.id)) {
+
+                    if (((event.entity.definition.id) has "playerbosses:player_boss") && ((event.entity.world.getDimension()) == 0) && ((event.entity.customName) has "Shivaxi")) {
+
+                        var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+
+                        if ((EntityBiome) == "Abyssal Rift") {
+
+                            if (event.entity.getNBT().asString() has "CorruptedSpawn:1") {
+
+                                if !event.entity.world.isRemote(){
+
+
+                                    var double_x = event.entity.position.x;
+                                    var double_y = event.entity.position.y;
+                                    var double_z = event.entity.position.z;
+
+                                    event.entity.world.performExplosion(event.entity, double_x, double_y, double_z, 4, false, false);
+                                    var shivaxi = <entity:srparasites:sim_dragone>.createEntity(event.entityLivingBase.world);
+                                    shivaxi.setPosition(event.entity.position);
+                                    shivaxi.updateNBT({CustomName: "§6☢ §4§lBlighted Boomer§r §6☢"});
+                                    shivaxi.updateNBT({PersistenceRequired:1});
+                                    shivaxi.updateNBT({parasitedespawn:0});
+                                    shivaxi.updateNBT({ForgeCaps:{"champions:championship":{tier:1}}});
+                                    shivaxi.updateNBT({DeathLootTable: "dregora:entities/playerbosses/abyssal_tower_shivaxi"});
+                                    event.entityLivingBase.world.spawnEntity(shivaxi);
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 });
 
@@ -129,7 +318,11 @@ events.onProjectileImpactThrowable(function(event as ProjectileImpactThrowableEv
               if (!isNull(entityBase)) {
                   if (((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift") || ((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Parasite Biome")){
 
-                      if(!isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+                      if(isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+
+                          entityBase.setNBT({PotionCooldown: entityBase.world.getWorldTime()});
+
+                      } else {
 
                           if !(entityBase.world.getWorldTime() > entityBase.nbt.ForgeData.PotionCooldown){return;}
 
@@ -156,7 +349,11 @@ events.onEntityLivingUseItemFinish(function(event as Finish){
 
               if (((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Abyssal Rift") || ((entityBase.world.getBiome(event.entity.getPosition3f()).name) == "Parasite Biome")){
 
-                  if(!isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+                  if(isNull(entityBase.nbt.ForgeData.PotionCooldown)){
+
+                      entityBase.setNBT({PotionCooldown: entityBase.world.getWorldTime()});
+
+                  } else {
 
                       if !(entityBase.world.getWorldTime() > entityBase.nbt.ForgeData.PotionCooldown){return;}
 
@@ -188,50 +385,47 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
                 var entityName = (event.entity.definition.name);
                 var EntityBiome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing") || !((EntityBiome) == "Abyssal Rift")){
+                if(Logging){print("EntityBiome = " + EntityBiome);}
 
-                    if ((entityName has "beckon") || (entityName has "dispatcher")) {
+                if ((entityName has "beckon") || (entityName has "dispatcher")) {
 
-                        if(Logging){print("EntityBiome = " + EntityBiome);}
-
-                        if ((entityName has "beckon") || (entityName has "dispatcher")) {
-
-                            if entityBase.health > 100 {
-                                entityBase.health = entityBase.health / 25;
-                            } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
-                                entityBase.health = entityBase.health / 10;
-                            } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
-                                entityBase.health = entityBase.health - 10;
-                            } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
-                                entityBase.health = entityBase.health - 1;
-                            } else if (entityBase.health < 1){
-                                entityBase.health = entityBase.health - 1;
-                            } else {
-                                event.entity.setDead();
-                            }
-                        } else {
-
-                            if entityBase.health > 1000 {
-                                entityBase.health = entityBase.health / 50;
-                            } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
-                                entityBase.health = entityBase.health / 10;
-                            } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
-                                entityBase.health = entityBase.health - 10;
-                            } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
-                                entityBase.health = entityBase.health - 1;
-                            } else if (entityBase.health < 1){
-                                entityBase.health = entityBase.health - 1;
-                            } else {
-                                event.entity.setDead();
-                            }
-
-                        }
-
-                        entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
-                        entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
-                        entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
+                    if entityBase.health > 100 {
+                        entityBase.health = entityBase.health / 25;
+                    } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
+                        entityBase.health = entityBase.health / 10;
+                    } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
+                        entityBase.health = entityBase.health - 10;
+                    } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                        entityBase.health = entityBase.health - 1;
+                    } else if (entityBase.health < 1){
+                        entityBase.health = entityBase.health - 1;
+                    } else {
+                        event.entity.setDead();
                     }
+
                 }
+
+                if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing") || ((EntityBiome) == "Abyssal Rift")){return;}
+
+
+                if entityBase.health > 1000 {
+                    entityBase.health = entityBase.health / 50;
+                } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
+                    entityBase.health = entityBase.health / 10;
+                } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
+                    entityBase.health = entityBase.health - 10;
+                } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                    entityBase.health = entityBase.health - 1;
+                } else if (entityBase.health < 1){
+                    entityBase.health = entityBase.health - 1;
+                } else {
+                    event.entity.setDead();
+                }
+
+
+                entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
+                entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
+                entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
             }
         }
     }
@@ -240,7 +434,6 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
 // SRParasites in overworld Cancel Spawns if not in Whitelisted Biome and From spawner
 events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
-
     if (!isNull(event.spawner)){
          if (event.spawner){
               if (!isNull(event.entity.definition)) {
@@ -251,11 +444,10 @@ events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
                           var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                          if (!((Biome) == "Abyssal Rift") || !((Biome) == "Parasite Biome") || !((Biome) == "Lair of the Thing") || !((Biome) == "Nuclear Ruins") || !((Biome) == "Ruins of Blight")){
+                          if (((Biome) == "Abyssal Rift") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
 
-                              event.deny();
+                          event.deny();
 
-                          }
                       }
                   }
               }
@@ -270,14 +462,25 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 
         if (!isNull(event.entity.definition.name)) {
 
-            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+            if (!isNull(event.entity.definition.id)) {
 
-                var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+                if ((event.entity.definition.id) == "playerbosses:player_boss") {
 
-                if (!((EntityBiome) == "Ruins of Blight") || !((EntityBiome) == "Nuclear Ruins") || !((EntityBiome) == "Lair of the Thing")) {
+                    var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+
+                    if ((EntityBiome) == "Abyssal Rift") {
+                        event.cancel();
+                    }
+
+                }
+
+                if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0) && !((event.entity.definition.id) has "srparasites:sim_dragone")) {
+
+                    var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
+
+                    if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {return;}
 
                     event.cancel();
-
                 }
             }
         }
@@ -311,15 +514,11 @@ function addPotionEffectBopBlood(player as IPlayer){
 
 	if (player.activePotionEffects.length == 0) {
     player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
-    player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 0));
     player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
 	} else {
 		for p in player.activePotionEffects {
        if !(p.effectName.matches("elenaidodge:sluggish")) {
 				player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
-			}
-      if !(p.effectName.matches("lycanitesmobs:instability")) {
-				player.addPotionEffect(<potion:lycanitesmobs:instability>.makePotionEffect(200, 0));
 			}
       if !(p.effectName.matches("lycanitesmobs:aphagia")) {
         player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
@@ -355,10 +554,108 @@ function addPotionEffectHotSpring(player as IPlayer){
 	}
 }
 
-//Listener for player in SRP deadblood / BOP Hot Spring Water
+
+
+
+
+
+//Listener for player in SRP deadblood / BOP Hot Spring Water / Bauble listener
 events.onPlayerTick(function(event as PlayerTickEvent){
 
     if (event.player.world.time % 10 != 0) {return;}
+
+    if(isNull(event.player.nbt.ForgeData.SkippedSilverDebuffs)){
+
+        event.player.setNBT({SkippedSilverDebuffs: 0});
+
+    }
+
+
+    if(isNull(event.player.nbt.ForgeData.SilverSicknessCooldown)){
+        event.player.setNBT({SilverSicknessCooldown: event.player.world.getWorldTime()});
+    }
+
+    if (!isNull(event.entity.armorInventory[0])) && (!isNull(event.entity.armorInventory[1])) && (!isNull(event.entity.armorInventory[2])) && (!isNull(event.entity.armorInventory[3])) {
+
+
+        if ((event.entity.armorInventory[0].name == "item.iceandfire.silver_boots") && (event.entity.armorInventory[1].name == "item.iceandfire.silver_leggings") && (event.entity.armorInventory[2].name == "item.iceandfire.silver_chestplate") && (event.entity.armorInventory[3].name == "item.iceandfire.silver_helmet")){
+
+
+            if ((event.player.isBaubleEquipped(<bountifulbaubles:trinketmixeddragonscale>)) != -1) {return;}
+
+            for p in event.player.activePotionEffects {
+                if (p.duration <= 0){
+                    event.player.removePotionEffect(p.potion);
+                }
+            }
+
+            if !(event.player.world.getWorldTime() > event.player.nbt.ForgeData.SilverSicknessCooldown){return;}
+
+            var currentTime = event.player.world.getWorldTime() + event.entity.world.random.nextFloat(1200, 3600);
+            var RandomInt = event.entity.world.random.nextFloat(0, 100);
+            event.player.setNBT({SilverSicknessCooldown: currentTime});
+
+            if RandomInt <= 5 {
+
+                event.player.addPotionEffect(<potion:potioncore:bless>.makePotionEffect(200, 1));
+
+            }
+
+            if RandomInt <= 15 {
+
+                if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 0) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(100, 0));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 1) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 0));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 2) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(300, 0));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 3) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(400, 0));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 4) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 1));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 5) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(400, 1));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 6) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(400, 2));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+
+                } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 7) {
+
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(600, 3));
+                    event.player.setNBT({SkippedSilverDebuffs: 0});
+                }
+
+            } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 7) {
+
+                event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(600, 3));
+                event.player.setNBT({SkippedSilverDebuffs: 0});
+
+            } else {
+                var addSkip = event.player.nbt.ForgeData.SkippedSilverDebuffs + 1;
+                event.player.setNBT({SkippedSilverDebuffs: addSkip});
+            }
+        }
+    }
+
     if (event.phase == "START") {
 
         //removes potion ghost moodals if their duration is 0
@@ -447,11 +744,6 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
-//events.onBlockBreak(function(blockBreaks as BlockBreakEvent){
-//    if ( blockBreaks.block has <dimstack:bedrock:7>.asBlock() ){
-//        Particle effect?
-//    }
-//});
 
 // Add description to ancient sets:
 
@@ -459,15 +751,30 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 <variedcommodities:tuxedo_pants>.addTooltip("Fancy Pants, extremely old yet in near pristine state.");
 <variedcommodities:tuxedo_bottom>.addTooltip("Aged yet Fancy Trenchcoat, extremely old yet in near pristine state.");
 
-<variedcommodities:soldier_head>.addTooltip("Sturdy Helmet, roughed up through the ages but still in near perfect condition.");
-<variedcommodities:soldier_chest>.addTooltip("Sturdy ChestPlate, roughed up through the ages but still in near perfect condition.");
-<variedcommodities:soldier_legs>.addTooltip("Sturdy Leggings, roughed up through the ages but still in near perfect condition.");
-<variedcommodities:soldier_bottom>.addTooltip("Sturdy Trenchcoat, roughed up through the ages but still in near perfect condition.");
+<variedcommodities:soldier_head>.displayName = "§6☢ §8§lProtective Helmet";
+<variedcommodities:soldier_chest>.displayName = "§6☢ §8§lProtective ChestPlate";
+<variedcommodities:soldier_legs>.displayName = "§6☢ §8§lProtective Leggings";
+<variedcommodities:soldier_bottom>.displayName = "§6☢ §8§lProtective Bottoms";
 
-//<variedcommodities:x407_head>.addTooltip("Aged Carbon Lined Helmet, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
-//<variedcommodities:x407_chest>.addTooltip("Aged Carbon Lined ChestPlate,, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
-//<variedcommodities:x407_legs>.addTooltip("Aged Carbon Lined Leggings, One was near indestructible whilst wearing the complete set, that is until the blight happened.");
-//<variedcommodities:x407_boots>.addTooltip("Aged Carbon Lined  Boots, One was near indestructible whilst wearing the complete set., that is until the blight happened.");
+<variedcommodities:soldier_head>.addTooltip("Woven from a unknown ancient material, There's more to this armor then the eye meets.");
+<variedcommodities:soldier_chest>.addTooltip("Woven from a unknown ancient material, There's more to this armor then the eye meets.");
+<variedcommodities:soldier_legs>.addTooltip("Woven from a unknown ancient material, There's more to this armor then the eye meets.");
+<variedcommodities:soldier_bottom>.addTooltip("Woven from a unknown ancient material, There's more to this armor then the eye meets.");
+
+<variedcommodities:x407_head>.displayName = "§8§lX407 Prototype Helmet";
+<variedcommodities:x407_chest>.displayName = "§8§lX407 Prototype ChestPlate";
+<variedcommodities:x407_legs>.displayName = "§8§lX407 Prototype Leggings";
+<variedcommodities:x407_boots>.displayName = "§8§lX407 Prototype Boots";
+
+<variedcommodities:x407_head>.addTooltip("The Pinnacle of engineering from a time before the Blight.");
+<variedcommodities:x407_chest>.addTooltip("The Pinnacle of engineering from a time before the Blight.");
+<variedcommodities:x407_legs>.addTooltip("The Pinnacle of engineering from a time before the Blight.");
+<variedcommodities:x407_boots>.addTooltip("The Pinnacle of engineering from a time before the Blight.");
+
+<variedcommodities:commissar_head>.displayName = "§8§lCommissar's Cap";
+<variedcommodities:commissar_chest>.displayName = "§8§lCommissar's Torso";
+<variedcommodities:commissar_legs>.displayName = "§8§lCommissar's Leggings";
+<variedcommodities:commissar_bottom>.displayName = "§8§lCommissar's Bottoms";
 
 <variedcommodities:commissar_head>.addTooltip("Aged decorative Cap, a leather cap lined with fine cloth.");
 <variedcommodities:commissar_chest>.addTooltip("Aged decorative Chestpiece, a leather jack, lined with fine cloth complete with decorative elements.");
@@ -478,6 +785,11 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 <variedcommodities:officer_chest>.addTooltip("Old yet sturdy Chestplate, decorated with various emblems and signs.");
 <variedcommodities:tactical_chest>.addTooltip("Aged Equipment, still provides decent protection.");
 <variedcommodities:tactical_head>.addTooltip("Aged Equipment, still provides decent protection.");
+
+<variedcommodities:nanorum_head>.displayName = "§8§lHeavy Industries Helmet";
+<variedcommodities:nanorum_chest>.displayName = "§8§lHeavy Industries Torso";
+<variedcommodities:nanorum_legs>.displayName = "§8§lHeavy Industries Leggings";
+<variedcommodities:nanorum_boots>.displayName = "§8§lHeavy Industries Boots";
 
 <variedcommodities:nanorum_head>.addTooltip("Aged Helmet, made of advanced alloys. Provides excellent protection.");
 <variedcommodities:nanorum_chest>.addTooltip("Aged Chestplate, made of advanced alloys. Provides excellent protection.");
@@ -648,77 +960,77 @@ recipes.addShaped("dregora01",<biomesoplenty:sacred_oak_door>*2,
  [[<biomesoplenty:planks_0:0>,<biomesoplenty:planks_0:0>,null],
   [<biomesoplenty:planks_0:0>,<biomesoplenty:planks_0:0>,null],
   [<biomesoplenty:planks_0:0>,<biomesoplenty:planks_0:0>,null]]);
-  
+
 recipes.addShaped("dregora02",<biomesoplenty:cherry_door>*2,
  [[<biomesoplenty:planks_0:1>,<biomesoplenty:planks_0:1>,null],
   [<biomesoplenty:planks_0:1>,<biomesoplenty:planks_0:1>,null],
   [<biomesoplenty:planks_0:1>,<biomesoplenty:planks_0:1>,null]]);
-  
+
 recipes.addShaped("dregora03",<biomesoplenty:umbran_door>*2,
  [[<biomesoplenty:planks_0:2>,<biomesoplenty:planks_0:2>,null],
   [<biomesoplenty:planks_0:2>,<biomesoplenty:planks_0:2>,null],
   [<biomesoplenty:planks_0:2>,<biomesoplenty:planks_0:2>,null]]);
-  
+
 recipes.addShaped("dregora04",<biomesoplenty:fir_door>*2,
  [[<biomesoplenty:planks_0:3>,<biomesoplenty:planks_0:3>,null],
   [<biomesoplenty:planks_0:3>,<biomesoplenty:planks_0:3>,null],
   [<biomesoplenty:planks_0:3>,<biomesoplenty:planks_0:3>,null]]);
-  
+
 recipes.addShaped("dregora05",<biomesoplenty:ethereal_door>*2,
  [[<biomesoplenty:planks_0:4>,<biomesoplenty:planks_0:4>,null],
   [<biomesoplenty:planks_0:4>,<biomesoplenty:planks_0:4>,null],
   [<biomesoplenty:planks_0:4>,<biomesoplenty:planks_0:4>,null]]);
-  
+
 recipes.addShaped("dregora06",<biomesoplenty:magic_door>*2,
  [[<biomesoplenty:planks_0:5>,<biomesoplenty:planks_0:5>,null],
   [<biomesoplenty:planks_0:5>,<biomesoplenty:planks_0:5>,null],
   [<biomesoplenty:planks_0:5>,<biomesoplenty:planks_0:5>,null]]);
-  
+
 recipes.addShaped("dregora07",<biomesoplenty:mangrove_door>*2,
  [[<biomesoplenty:planks_0:6>,<biomesoplenty:planks_0:6>,null],
   [<biomesoplenty:planks_0:6>,<biomesoplenty:planks_0:6>,null],
   [<biomesoplenty:planks_0:6>,<biomesoplenty:planks_0:6>,null]]);
-  
+
 recipes.addShaped("dregora08",<biomesoplenty:palm_door>*2,
  [[<biomesoplenty:planks_0:7>,<biomesoplenty:planks_0:7>,null],
   [<biomesoplenty:planks_0:7>,<biomesoplenty:planks_0:7>,null],
   [<biomesoplenty:planks_0:7>,<biomesoplenty:planks_0:7>,null]]);
-  
+
 recipes.addShaped("dregora09",<biomesoplenty:redwood_door>*2,
  [[<biomesoplenty:planks_0:8>,<biomesoplenty:planks_0:8>,null],
   [<biomesoplenty:planks_0:8>,<biomesoplenty:planks_0:8>,null],
   [<biomesoplenty:planks_0:8>,<biomesoplenty:planks_0:8>,null]]);
-  
+
 recipes.addShaped("dregora10",<biomesoplenty:willow_door>*2,
  [[<biomesoplenty:planks_0:9>,<biomesoplenty:planks_0:9>,null],
   [<biomesoplenty:planks_0:9>,<biomesoplenty:planks_0:9>,null],
   [<biomesoplenty:planks_0:9>,<biomesoplenty:planks_0:9>,null]]);
-  
+
 recipes.addShaped("dregora11",<biomesoplenty:pine_door>*2,
  [[<biomesoplenty:planks_0:10>,<biomesoplenty:planks_0:10>,null],
   [<biomesoplenty:planks_0:10>,<biomesoplenty:planks_0:10>,null],
   [<biomesoplenty:planks_0:10>,<biomesoplenty:planks_0:10>,null]]);
-  
+
 recipes.addShaped("dregora12",<biomesoplenty:hellbark_door>*2,
  [[<biomesoplenty:planks_0:11>,<biomesoplenty:planks_0:11>,null],
   [<biomesoplenty:planks_0:11>,<biomesoplenty:planks_0:11>,null],
-  [<biomesoplenty:planks_0:11>,<biomesoplenty:planks_0:11>,null]]); 
-  
+  [<biomesoplenty:planks_0:11>,<biomesoplenty:planks_0:11>,null]]);
+
 recipes.addShaped("dregora13",<biomesoplenty:jacaranda_door>*2,
  [[<biomesoplenty:planks_0:12>,<biomesoplenty:planks_0:12>,null],
   [<biomesoplenty:planks_0:12>,<biomesoplenty:planks_0:12>,null],
   [<biomesoplenty:planks_0:12>,<biomesoplenty:planks_0:12>,null]]);
-  
+
 recipes.addShaped("dregora14",<biomesoplenty:mahogany_door>*2,
  [[<biomesoplenty:planks_0:13>,<biomesoplenty:planks_0:13>,null],
   [<biomesoplenty:planks_0:13>,<biomesoplenty:planks_0:13>,null],
   [<biomesoplenty:planks_0:13>,<biomesoplenty:planks_0:13>,null]]);
-  
+
 recipes.addShaped("dregora15",<biomesoplenty:ebony_door>*2,
  [[<biomesoplenty:planks_0:14>,<biomesoplenty:planks_0:14>,null],
   [<biomesoplenty:planks_0:14>,<biomesoplenty:planks_0:14>,null],
   [<biomesoplenty:planks_0:14>,<biomesoplenty:planks_0:14>,null]]);
-  
+
 recipes.addShaped("dregora16",<biomesoplenty:eucalyptus_door>*2,
  [[<biomesoplenty:planks_0:15>,<biomesoplenty:planks_0:15>,null],
   [<biomesoplenty:planks_0:15>,<biomesoplenty:planks_0:15>,null],

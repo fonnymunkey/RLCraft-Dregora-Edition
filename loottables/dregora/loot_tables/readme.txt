@@ -146,6 +146,43 @@ Todo: RLC potions maybe use splash some?
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+      DregoraRL Brutal Entities Loot - Works:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_1"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_2"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_3"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_4"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_5"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/tier_6"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/treasure_chest"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/special_pot"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/stairwell_dispenser"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/randomized_battletower"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/epic_no_junk"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:brutaltowers/rare_no_junk"}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+      DregoraRL Brutal Tower Lootchests - Works:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/srparasites/parasites_city"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_spider"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_dragon"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_humanoid"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_crux"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_golem"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_hive_minion"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_hive_boss"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_developers"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_shivaxi"}
+/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:entities/playerbosses/abyssal_tower_shivaxi_dev"}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
       DregoraRL Ruins Loot Chests - Works: V
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -171,7 +208,6 @@ Todo: RLC potions maybe use splash some?
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_8"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_9"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/floor_10"}
-/setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:battletowers/brutal"}
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:playerbosses/abyssal_tower_playerboss"}
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

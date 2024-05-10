@@ -1,0 +1,234 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Spawns with -1 Luck",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:switch/milk_switch",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "name": "baubles",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "bountifulbaubles:shieldcobalt",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:shieldobsidian",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketobsidianskull",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketballoon",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:amuletcross",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "potionfingers:ring",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "qualitytools:emerald_amulet",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "qualitytools:emerald_ring",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:trinketmagiclenses",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "baubles:ring",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "name": "cursed_loot",
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/rlcraft_infuse_cursed",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/cursed_loot",
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "name": "battletower_loot_floor_10",
+      "rolls": {
+        "min": 5,
+        "max": 13
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:essence_mourner",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:essence_destroyer",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "defiledlands:ravaging_ingot",
+          "weight": 5,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "bountifulbaubles:spectralsilt",
+          "weight": 1,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 4}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "xat:glowing_ingot",
+          "weight": 15,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 2}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "xpbook:xp_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0,
+                "max": 1.0
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:nether_star",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lapis_block",
+          "weight": 70,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 2}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:experience_bottle",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 20}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "weight": 50,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 2}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 40,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 3}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_block",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 70,
+          "functions": [
+            {"function": "set_count","count": {"min": 1,"max": 3}}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "scalinghealth:heartcontainer",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
+

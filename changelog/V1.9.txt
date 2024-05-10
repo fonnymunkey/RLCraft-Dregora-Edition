@@ -259,25 +259,56 @@ Fixed/Changed/Added:
 - Respawndim for Underneath is now be Underneath
 - Lowered amount of portals in Underneath
 - Added Bedrock layer at bottom Underneath
-
-boss 1: 2x Spider Boss (huge trite)
-boss 2: 1x Lightning Dragon
-boss 3: 1x humanoid Boss with OP gear
-boss 4: 1x crux
-boss 5: Tower Golem with OP gear
-boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle
-boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy,
-Boss 8: Shivaxi & Parasite Dragon
-
+- designed Brutal Tower Loottable with heaven
+- added loottables for tiered loot in brutal towers
+- randomized lightning swords
+- mass edit armorstand to armor_stand in bo3's and bo4's
+- Added DESERT tag to all relevant biomes
+- replace web for air brutal tower
+- replace concrete powder for something else that doesnt turn concrete brutal tower
+- changed IRON_BLOCK to vex spawn
+- made and added entities to brutal tower (spawners & armor stands)
 
 Dregora todo
-+ make and add entities to brutal tower (spawners & armor stands)
-+ randomized lightning swords
-+ Check Brutal Tower Loottable with heaven
++ brutal spawner needs to have more effects on entities + troll needs 2x health
++ lesser need damage buff & infernal
++ increase arachnit spawn
++ Spider Arachno & Arachna 3x damage buff
++ Staircase infernal pulling entities Skeletons with Fishing rods Lured Ya
++ staircase need 3x knockback
++ need faster spawning from staircase lesser entities
++ lightning dragon remove armor & buff damage
++ brutal spawner above 90 needs always infernal and champion
++ AbyssTowerC3R4 West side needs hole punctured (otherwise you can not continue)
++ spawners with experiment spawn should be entities instead with persistent spawn
++ Spawners need to be much faster in maze (no delay)
++ Kobolt in spawners need to be always aggresive
++ Adventurehead does not attack
++ Where spawners add quark plate slab
++ Sarevok needs 4x damage 3x health also needs sticky
++ kyphosis & sentry needs damage / 2
++ Sentient Horror wont destroy blocks
++ Sentient Horror needs double health
++ remove chains at sentient horror (replace by x block)
++ crux only needs 1 star and /2 damage
++ Golem Minion has bug that causes a lot of explosions
++ Add Fallen to golem battle instead of brutal entities
++ GOlem minions need to spawn way faster
++ srparasites in hive room need /6 health Silver Armor Test required for hive before adjustment
++ developer need to be slower / have 4x more health 4x more damage and need infernal abilities
++ shivaxi developers need continious spawn
++ Spawners in shivaxi room need their spawn radius for players to be tripled
++ shivaxi developers need to be as strong as the developers in previous room
++ all brutal spawners above y150 need to be even stronger with 2x health 2x damage and be infernal and be champion
+
++ Lower than 40 needs to be all infernals (sticky & more) on brutal spawners
++ collector needs new weapon (dragon skull maybe issue?)
++ Change cyclops into playerbosses:player_boss in spawner shivaxi
++ QA check loot tables for brutal towers
 + Add flying entities to DregoraRL (10 for each biome group)
++ test brutal tower with heaven (each a tower & one together, 3 total)
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
-+ Make mini-bosses always champions
 + Check OTG Errors at startup
 
 Optional todo:
@@ -440,17 +471,34 @@ RLCraft Done:
 - Configured IceAndFire Troll variant biomes
 - add loot tables to all boss entities in abyssal tower
 - variedcommodities:coin_stone x 4 = 1x brutal coin (recipe added)
+- increased dragon den underground rarity
+- added plague to underneath
+- give prototype poison resist (underneath) & rename desc + fancy title
+- give soldier poison resist (underneath) & rename desc + fancy title
+- give nanorum poison resist (underneath) + mining buff & rename desc + fancy title
+- give commissar buffs that amount to bravery and chad status & rename desc + fancy title
+- Added https://www.curseforge.com/minecraft/mc-mods/zenutil (NBT Data support)
+- Added https://www.curseforge.com/minecraft/mc-mods/mixin-booter (For ZenUtil)
+- Added https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration (Bauble Integration)
+- Adjusted yung mineshafts for Abyssal Rift
+- Fixed Recurrent Complex spawning in Abyssal Rift
+
 
 RLCraft todo:
-+ add loottables for tiered loot in brutal towers
++ P_TreeDungeon (X) Remove (And Later re-add + balloons)
++ Fix github issues
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
-+ Fix github issues
-+ C&L Hydra needs to be configured per biome
-+ shivaxi turns into srparasite dragon once 10% health
+
++ Update to new C&F and add special spawners for the Dragon & Shivaxi
++ fork spawnercontrol and fix the spawnpotential issue ( + find out nbtdata pos and assign on spawn through crafttweaker? )
+
 
 
 Optional:
++ Make Desert cold at night
++ Attack on RLCraft Event
++ NotKotlin = Kobalt (add custom lines)
 + Update SRParasites Mod to newest .19 release once it comes out
 + crafttweaker wake up player in night (multiplier check and wake morning)
 + thunder script crafttweaker lignting with armor (isMaterial)
@@ -458,6 +506,7 @@ Optional:
 
 
 RLCraft Backlog:
++ remove or retain better biome blend?
 + tiny cactus harvestable with shears
 + honeycomb empty honey needs same recipies as HoneyComb
 + blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
@@ -485,6 +534,30 @@ OTG Backlog:
 OTG Done: (awaiting public release)
 - Fix An Unknown error occured while attempting to perform this command
 - Fix Crash LayerMixing for OTG
+
+boss 1: 2x Spider Boss (huge trite)
+boss 2: 1x Lightning Dragon
+boss 3: 1x humanoid Boss with OP gear
+boss 4: 1x crux
+boss 5: Tower Golem with OP gear
+boss 6: Flying Carrier + Adapted Yelloweye + overseer + bogle
+boss 7: Heaven, Fonny, Eagle, Kotlin, Ray, Meldexum, Artsy,
+Boss 8: Shivaxi & Parasite Dragon
+
+
+lycanitesmobs:kobold on horse head
+lycanitesmobs:calpod on lycanitesmobs:darkling
+
+
+/summon minecraft:cave_spider ~ ~1 ~ {Passengers:[{id:"minecraft:slime",Size:3}]}
+
+/summon lycanitesmobs:acidglob ~ ~1 ~ {Size:0.1,Passengers:[{id:"minecraft:slime",Size:3}]}
+/summon lycanitesmobs:tarantula ~ ~1 ~ {Size:0.1,Passengers:[{id:"minecraft:slime",Size:3}]}
+/summon minecraft:spider ~ ~1 ~ {Size:0.2,Passengers:[{id:"minecraft:slime",Size:3}]}
+
+/setblock ~ ~-1 ~ mob_spawner 0 replace {SpawnCount:1,MaxNearbyEntities:6,SpawnRange:4,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:20,RequiredPlayerRange:18,SpawnData:{id:"defiledlands:slime_defiled"}}
+
+Proactive snare flee
 
 
 Boss Loot:
@@ -559,12 +632,14 @@ Tier 5 (Hive room & Developers)
 Tier 6 (Shivaxi Room)
 80% Epic Loot 20% cursed
 
-Placeholder:9 = Random Enchant
+Placeholder:9 = Random Enchant & gold coins
 Quark Chests = Junk
 Quark Chest (BIRCH) = Treasure
-Regular Chest (non locked = Tier 5)
+Regular Chest (non locked = random battletower lootchest)
 Locked Chest = outside Junk
-
+bookccase = random bookccase (nbt)
+sealed crate = rubble
+dispenser = randomized knockback & weight
 
 List of Structure Blacklist Configs:
 
