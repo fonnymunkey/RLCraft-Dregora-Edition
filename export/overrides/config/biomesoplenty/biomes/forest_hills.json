@@ -121,10 +121,7 @@
     },
     "berry_bushes": {
       "with": {
-        "block": "rustic:wildberry_bush",
-        "properties": {
-          "variant": "berrybush"
-        }
+        "block": "rustic:wildberry_bush"
       },
       "generationAttempts": 32,
       "amountPerChunk": 0.1,

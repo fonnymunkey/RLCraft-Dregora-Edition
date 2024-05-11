@@ -268,18 +268,29 @@ Fixed/Changed/Added:
 - replace concrete powder for something else that doesnt turn concrete brutal tower
 - changed IRON_BLOCK to vex spawn
 - made and added entities to brutal tower (spawners & armor stands)
+- Corrupted Forest Border, Fixed warning posts typo
+- Decreased seeker infant Speed
+- BOP regular variant bushes replaced for rustic bushes.
+- removed some chains at sentient horror due to pathing issues
+- Added more maze spawners
+- Added 2 additional paths to the maze, before there where none connecting to the end of the maze.
+- increased arachnit spawn
+
+
+
+Needs Testing:
+- Spider Arachno & Arachna 3x damage buff
+- need faster spawning from staircase lesser entities
+
 
 Dregora todo
 + brutal spawner needs to have more effects on entities + troll needs 2x health
 + lesser need damage buff & infernal
-+ increase arachnit spawn
-+ Spider Arachno & Arachna 3x damage buff
 + Staircase infernal pulling entities Skeletons with Fishing rods Lured Ya
 + staircase need 3x knockback
-+ need faster spawning from staircase lesser entities
+
 + lightning dragon remove armor & buff damage
 + brutal spawner above 90 needs always infernal and champion
-+ AbyssTowerC3R4 West side needs hole punctured (otherwise you can not continue)
 + spawners with experiment spawn should be entities instead with persistent spawn
 + Spawners need to be much faster in maze (no delay)
 + Kobolt in spawners need to be always aggresive
@@ -289,7 +300,6 @@ Dregora todo
 + kyphosis & sentry needs damage / 2
 + Sentient Horror wont destroy blocks
 + Sentient Horror needs double health
-+ remove chains at sentient horror (replace by x block)
 + crux only needs 1 star and /2 damage
 + Golem Minion has bug that causes a lot of explosions
 + Add Fallen to golem battle instead of brutal entities
@@ -300,10 +310,10 @@ Dregora todo
 + Spawners in shivaxi room need their spawn radius for players to be tripled
 + shivaxi developers need to be as strong as the developers in previous room
 + all brutal spawners above y150 need to be even stronger with 2x health 2x damage and be infernal and be champion
-
 + Lower than 40 needs to be all infernals (sticky & more) on brutal spawners
 + collector needs new weapon (dragon skull maybe issue?)
 + Change cyclops into playerbosses:player_boss in spawner shivaxi
+
 + QA check loot tables for brutal towers
 + Add flying entities to DregoraRL (10 for each biome group)
 + test brutal tower with heaven (each a tower & one together, 3 total)
@@ -311,10 +321,12 @@ Dregora todo
 + File cleanup, remove .zip files
 + Check OTG Errors at startup
 
+
 Optional todo:
 + Remove big tree from recurrent complex and add it floating under balloons in sky above beach, ocean and plains biomes
 
 Backlog:
++ per enchantment on armor = - 10% armor max (on hit player) (total enchantments armor)
 + make mineshafts in canyons more common?
 + Sealed crate auto spawns spawn eggs (make randomizer)
 + add srparasites death counter to stats screen?
@@ -489,7 +501,6 @@ RLCraft todo:
 + Fix github issues
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
-
 + Update to new C&F and add special spawners for the Dragon & Shivaxi
 + fork spawnercontrol and fix the spawnpotential issue ( + find out nbtdata pos and assign on spawn through crafttweaker? )
 
