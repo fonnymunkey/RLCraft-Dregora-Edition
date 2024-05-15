@@ -38,6 +38,7 @@ import mods.ctintegration.baubles.IBaubleInventory;
 import crafttweaker.entity.AttributeInstance;
 import crafttweaker.world.IBiomeType;
 import crafttweaker.world.IBiome;
+import crafttweaker.block.IBlockDefinition;
 
 // use /ct syntax to validate scripts
 
@@ -111,10 +112,32 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
     }
 });
 
+
+//Change blockhardness Blocks in relation to SRParasites
+var AshenStoneHard as IItemStack = <lycanitesmobs:ashenstone>;
+AshenStoneHard.hardness = 30;
+
+var LatticeHard as IItemStack = <rustic:iron_lattice>;
+LatticeHard.hardness = 20;
+
+var GrateHard as IItemStack = <quark:grate>;
+GrateHard.hardness = 10;
+
+var IronLadderHard as IItemStack = <quark:iron_ladder>;
+IronLadderHard.hardness = 5;
+
+var LushPolishedHard as IItemStack = <lycanitesmobs:lushstonepolished>;
+LushPolishedHard.hardness = 30;
+
+var IronPlateHard as IItemStack = <quark:iron_plate>;
+IronPlateHard.hardness = 30;
+
+var BasaltHard as IItemStack = <quark:basalt_wall>;
+BasaltHard.hardness = 10;
+
 //Script to make deserts cold at night
 //Biometag DESERT counts as desert.
 //Dregora_DryDunes
-
 
 
 //events.onPlayerTick(function(event as PlayerTickEvent){
@@ -147,8 +170,9 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 //});
 
 
+
 //summon playerbosses:player_boss ~ ~1 ~ {ActiveEffects:[{Id:115,Amplifier:0,Duration:2147483647}]}
-//Function to dismount players if hit by vex named Dismounter && Function giving Shivaxi a phase 2 below 10 health if in Abyssal Rift
+//Function to dismount players if hit by entity named Dismounter && Function giving Shivaxi a phase 2 below 10 health if in Abyssal Rift
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
     if (!isNull(event.damageSource.getTrueSource())){
@@ -476,11 +500,14 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 
                 if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0) && !((event.entity.definition.id) has "srparasites:sim_dragone")) {
 
+                    if (((event.entity.customName) has "Sentient Horror") || ((event.entity.customName) has "Degrading Overseer") || ((event.entity.customName) has "Malformed Observer") || ((event.entity.customName) has "Corrupted Carrier") || ((event.entity.customName) has "Necrotic Blight")) {return;}
+
                     var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
                     if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {return;}
 
                     event.cancel();
+
                 }
             }
         }
@@ -491,19 +518,19 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 function addPotionEffectDeadBlood(player as IPlayer){
 
 	if (player.activePotionEffects.length == 0) {
-    player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(200, 1));
-    player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 0));
-    player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 0));
+    player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(100, 0));
+    player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(100, 0));
+    player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(100, 0));
 	} else {
 		for p in player.activePotionEffects {
       if !(p.effectName.matches("potioncore:weight")) {
-				player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(200, 1));
+				player.addPotionEffect(<potion:potioncore:weight>.makePotionEffect(100, 0));
 			}
       if !(p.effectName.matches("minecraft:slowness")) {
-				player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(200, 0));
+				player.addPotionEffect(<potion:minecraft:slowness>.makePotionEffect(100, 0));
 			}
       if !(p.effectName.matches("srparasites:corrosive")) {
-				player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(200, 0));
+				player.addPotionEffect(<potion:srparasites:corrosive>.makePotionEffect(100, 0));
 			}
 		}
 	}
@@ -513,15 +540,15 @@ function addPotionEffectDeadBlood(player as IPlayer){
 function addPotionEffectBopBlood(player as IPlayer){
 
 	if (player.activePotionEffects.length == 0) {
-    player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
-    player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
+    player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(100, 0));
+    player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(100, 0));
 	} else {
 		for p in player.activePotionEffects {
        if !(p.effectName.matches("elenaidodge:sluggish")) {
-				player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(200, 0));
+				player.addPotionEffect(<potion:elenaidodge:sluggish>.makePotionEffect(100, 0));
 			}
       if !(p.effectName.matches("lycanitesmobs:aphagia")) {
-        player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(200, 0));
+        player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(100, 0));
       }
 		}
 	}

@@ -275,45 +275,69 @@ Fixed/Changed/Added:
 - Added more maze spawners
 - Added 2 additional paths to the maze, before there where none connecting to the end of the maze.
 - increased arachnit spawn
-
-
-
-Needs Testing:
+- staircase entities has 3x knockback now
+- changed blockhardness of inspirations:rope:1 (chains) to 4
 - Spider Arachno & Arachna 3x damage buff
 - need faster spawning from staircase lesser entities
+- Staircase infernal Gravity entities (+ added one entity with fishing rod)
+- lesser added damage buff
+- lightning dragon removed armor & buffed damage (30 to 50)
+- brutal spawner troll now has 2x health
+- added infernal to higher tier brutal spawner spawns
+- Spawners in maze spawn faster and more entities now at a bigger range
+- Kobolds are always aggresive now and have 60 health instead of 25 health.
+- added quark iron plate blocks where there are spawners
+- Sarevok now has 4x damage, 3x health and is of infernal type sticky but has base speed buff removed
+- kyphosis & sentry now have damage / 2, Health lowered and armor lowered.
+- crux now has 1 star, 2x health and /2 damage
+- fixed golem Minion lag caused by potion sword explosions
+- replaced brutal entities for fallen entities on layer 227 and above
+- made golem minions spawn faster
+- Hive room bosses health & attack lowered dynamically
+- Shivaxi Revenant Spawners spawn each 120-240 ticks now
+- Shiv room spawners increased from 16 to 20 radius and normalized spawndelay
+- shivaxi developers now have same damage as lower floors but low health.
+- made developers slow and have 4x more health, more damage + infernal abilities
+- brutal spawner above 90 always infernal, more health and more damage
+- collector weapon changed to sword
+- brutal spawners lower than 40 are now all infernal
+- spawners with experiment spawn should be entities instead with persistent spawn
+- removed pipe in entryway maze
+- removed doors in maze (most, not all)
+- Excluded bosses from non-drop list
+- adjusted bosses health
+- Raised crux attackDamage from 40 to 90
+- Raised maze boss room to 3 blocks
+- turned Concrete:13 into levitation dispensers
 
+Underneath todo
+- Reupload Underneath (movement factor changed from 4 to 1)
 
 Dregora todo
-+ brutal spawner needs to have more effects on entities + troll needs 2x health
-+ lesser need damage buff & infernal
-+ Staircase infernal pulling entities Skeletons with Fishing rods Lured Ya
-+ staircase need 3x knockback
++ Boss Spider Decrease speed /3 DMG /2
++ Small Trite DMG up
++ Lesser Fallen now have 10-15 DMG
++ Fallen (Regular) need + 10 DMG
++ Added Wither & Storm to Fallen
++ AbyssTowerC2r4 has 2 half doors on 125
++ Fixed maze_boss not spawning
++ set weight from 10 seconds in parasite blood to 5 seconds
++ Kotlin needs to be much faster or have much more damage
++ Added Dismounters to spawnpotential hive room bosses.
++ Developers x 2 health and damage
++ Revenant Developers need to spawn faster
++ Added parasites at Sub Levels
++ Spawners between 150 160 needs to have decreased spawnrange (8)
++ Dispeller, Ruster, Etc needs 3x health and normal speed
++ Add Parasites Human & Villager
++ Crux needs webber, 1000 hp and 2x armor
++ Kysosis needs 2x more damage
++ overseer decrease spawnrange
 
-+ lightning dragon remove armor & buff damage
-+ brutal spawner above 90 needs always infernal and champion
-+ spawners with experiment spawn should be entities instead with persistent spawn
-+ Spawners need to be much faster in maze (no delay)
-+ Kobolt in spawners need to be always aggresive
-+ Adventurehead does not attack
-+ Where spawners add quark plate slab
-+ Sarevok needs 4x damage 3x health also needs sticky
-+ kyphosis & sentry needs damage / 2
-+ Sentient Horror wont destroy blocks
-+ Sentient Horror needs double health
-+ crux only needs 1 star and /2 damage
-+ Golem Minion has bug that causes a lot of explosions
-+ Add Fallen to golem battle instead of brutal entities
-+ GOlem minions need to spawn way faster
-+ srparasites in hive room need /6 health Silver Armor Test required for hive before adjustment
-+ developer need to be slower / have 4x more health 4x more damage and need infernal abilities
-+ shivaxi developers need continious spawn
-+ Spawners in shivaxi room need their spawn radius for players to be tripled
-+ shivaxi developers need to be as strong as the developers in previous room
-+ all brutal spawners above y150 need to be even stronger with 2x health 2x damage and be infernal and be champion
-+ Lower than 40 needs to be all infernals (sticky & more) on brutal spawners
-+ collector needs new weapon (dragon skull maybe issue?)
++ Ferals at developer
+
+
 + Change cyclops into playerbosses:player_boss in spawner shivaxi
-
 + QA check loot tables for brutal towers
 + Add flying entities to DregoraRL (10 for each biome group)
 + test brutal tower with heaven (each a tower & one together, 3 total)
