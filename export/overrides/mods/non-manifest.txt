@@ -1,5 +1,6 @@
 antiquecities-1.2.1.jar
-better_survival-1.5.3_infedit.jar #From Kotlin Pack 1.2.5
-iceandfire-2.0.0-1.12.2_myrmex.jar #From Kotlin Pack 1.2.5
-RLTweaker-1.12.2-0.5.13_infedit.jar #From Kotlin Pack 1.2.5
-Trinkets and Baubles-32.4_infedit.jar #From Kotlin Pack 1.2.5
+better_survival-1.5.3_infedit.jar #From Kotlin Pack 1.3.1
+iceandfire-2.0.0-1.12.2_myrmex.jar #From Kotlin Pack 1.3.1
+RLTweaker-1.12.2-0.5.13_infedit.jar #From Kotlin Pack 1.3.1
+Trinkets and Baubles-32.4_infedit.jar #From Kotlin Pack 1.3.1
+SpartanWeaponry-1.12.2-1.5.3_infedit.jar #From Kotlin Pack 1.3.1
