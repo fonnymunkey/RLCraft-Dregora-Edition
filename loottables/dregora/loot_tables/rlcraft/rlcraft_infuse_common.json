@@ -62,6 +62,11 @@
         },
         {
           "type": "item",
+          "name": "notreepunching:pottery/large_vessel",
+          "weight": 100
+        },
+        {
+          "type": "item",
           "name": "simpledifficulty:juice",
           "weight": 10,
           "functions": [
@@ -86,6 +91,17 @@
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/gems/main_gem",
           "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"rlmixins:curse_break\",display:{Name:\"Potion of Untainted Curse Break\"}}"
+            }
+          ],
+          "weight": 5
         }
       ]
     }

@@ -309,44 +309,58 @@ Fixed/Changed/Added:
 - Raised crux attackDamage from 40 to 90
 - Raised maze boss room to 3 blocks
 - turned Concrete:13 into levitation dispensers
+- Boss Spider Decrease speed /3 DMG /2
+- Small Trite DMG up
+- Lesser Fallen now have 10-15 DMG
+- Fallen (Regular) need + 10 DMG
+- Added Wither & Storm to Fallen
+- AbyssTowerC2r4 has 2 half doors on 125
+- Fixed maze_boss not spawning
+- set weight from 10 seconds in parasite blood to 5 seconds
+- Kotlin needs to be much faster or have much more damage
+- Added Dismounters to spawnpotential hive room bosses.
+- Developers x 2 health and damage
+- Revenant Developers need to spawn faster
+- Added parasites at Sub Levels
+- Spawners between 150 160 needs to have decreased spawnrange (8)
+- Dispeller, Ruster, Etc needs 3x health and normal speed
+- Add Parasites Human & Villager
+- Crux needs webber, 1000 hp and 2x armor
+- Kysosis needs 2x more damage
+- overseer decrease spawnrange
+- Ferals at developer
 
 Underneath todo
 - Reupload Underneath (movement factor changed from 4 to 1)
+- Moved low chests from 55-65 to 45-60
 
 Dregora todo
-+ Boss Spider Decrease speed /3 DMG /2
-+ Small Trite DMG up
-+ Lesser Fallen now have 10-15 DMG
-+ Fallen (Regular) need + 10 DMG
-+ Added Wither & Storm to Fallen
-+ AbyssTowerC2r4 has 2 half doors on 125
-+ Fixed maze_boss not spawning
-+ set weight from 10 seconds in parasite blood to 5 seconds
-+ Kotlin needs to be much faster or have much more damage
-+ Added Dismounters to spawnpotential hive room bosses.
-+ Developers x 2 health and damage
-+ Revenant Developers need to spawn faster
-+ Added parasites at Sub Levels
-+ Spawners between 150 160 needs to have decreased spawnrange (8)
-+ Dispeller, Ruster, Etc needs 3x health and normal speed
-+ Add Parasites Human & Villager
-+ Crux needs webber, 1000 hp and 2x armor
-+ Kysosis needs 2x more damage
-+ overseer decrease spawnrange
-
-+ Ferals at developer
-
-
-+ Change cyclops into playerbosses:player_boss in spawner shivaxi
-+ QA check loot tables for brutal towers
 + Add flying entities to DregoraRL (10 for each biome group)
-+ test brutal tower with heaven (each a tower & one together, 3 total)
+- Ice/Cold
+- Jungle
+- Ocean
+- Swamp
+- Desert
+- Wastelands
+- Fungal
+- Vikings
+- Bruh
+- Temperate
+- Mountains (Desert)
+- Mountains (Cold/Ice)
+- Mountains (Jungle)
+- Mountains (Temperate)
+
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
++ make tower rare
 + Check OTG Errors at startup
++ Remove C&F removed items, change vanilla spawners into C&F spawners (shivaxi & gatekeeper)
++ test brutal tower after C&F update
 
 
 Optional todo:
++ Add a Jungle Biome
 + Remove big tree from recurrent complex and add it floating under balloons in sky above beach, ocean and plains biomes
 
 Backlog:
@@ -518,23 +532,28 @@ RLCraft Done:
 - Added https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration (Bauble Integration)
 - Adjusted yung mineshafts for Abyssal Rift
 - Fixed Recurrent Complex spawning in Abyssal Rift
-
+- cleaned up Dregora.zs (better readability)
+- Remove SRParasite sentient weapons from crafting
+- Updated SRParasites Mod to 1.9.20
+- Bow equipped entities have a 5% chance to spawn with one of 91 tipped arrows and keeps rotating arrows after each shot.
+- Added curse break potions to rare, common and epic loottables
+- Fixed a bug with shivaxi boss in relation to the tipped arrow script
 
 RLCraft todo:
++ Add Underneath v1.1 to Manifest.json
 + P_TreeDungeon (X) Remove (And Later re-add + balloons)
 + Fix github issues
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + Update to new C&F and add special spawners for the Dragon & Shivaxi
-+ fork spawnercontrol and fix the spawnpotential issue ( + find out nbtdata pos and assign on spawn through crafttweaker? )
-
++ printjars executable
++ Dregora Versioning Change:   DregoraRL 1.12.2 Release v2.9.3 - DRL 1.9
 
 
 Optional:
 + Make Desert cold at night
 + Attack on RLCraft Event
 + NotKotlin = Kobalt (add custom lines)
-+ Update SRParasites Mod to newest .19 release once it comes out
 + crafttweaker wake up player in night (multiplier check and wake morning)
 + thunder script crafttweaker lignting with armor (isMaterial)
 + Villager Enchantment Book nerf (Add Item X to dungeons and change villager trades on interact)

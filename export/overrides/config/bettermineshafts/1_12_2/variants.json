@@ -39,7 +39,7 @@
         },
         "defaultBlock": "minecraft:cobblestone"
       },
-      "mainBlock": "quark:iron_plate:1",
+      "mainBlock": "quark:iron_plate",
       "supportBlock": "rustic:iron_lattice",
       "slabBlock": "minecraft:iron_plate_slab[half=bottom]",
       "gravelBlock": "iceandfire:ash",

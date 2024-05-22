@@ -192,6 +192,17 @@
           "type": "item",
           "name": "waystones:warp_scroll",
           "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"rlmixins:curse_break\",display:{Name:\"Potion of Untainted Curse Break\"}}"
+            }
+          ],
+          "weight": 15
         }
       ]
     }

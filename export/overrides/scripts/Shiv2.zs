@@ -750,11 +750,11 @@ recipes.addShapeless("lolsrsarmor2",<srparasites:armor_chest_sentient>,[<srparas
 recipes.addShapeless("lolsrsarmor3",<srparasites:armor_pants_sentient>,[<srparasites:armor_pants>,<contenttweaker:sentient_core>]);
 recipes.addShapeless("lolsrsarmor4",<srparasites:armor_boots_sentient>,[<srparasites:armor_boots>,<contenttweaker:sentient_core>]);
 
-recipes.addShapeless("lolsrsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
-recipes.addShapeless("lolsrsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("lolsrsweapon1",<srparasites:weapon_scythe_sentient>,[<srparasites:weapon_scythe>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("lolsrsweapon2",<srparasites:weapon_axe_sentient>,[<srparasites:weapon_axe>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("lolsrsweapon3",<srparasites:weapon_sword_sentient>,[<srparasites:weapon_sword>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("lolsrsweapon4",<srparasites:weapon_cleaver_sentient>,[<srparasites:weapon_cleaver>,<contenttweaker:sentient_core>]);
+//recipes.addShapeless("lolsrsweapon5",<srparasites:weapon_bow_sentient>,[<srparasites:weapon_bow>,<contenttweaker:sentient_core>]);
 
 recipes.addShaped("lolsrsentientcore",<contenttweaker:sentient_core>,
  [[<contenttweaker:blood_tear>,<contenttweaker:blood_tear>,<contenttweaker:blood_tear>],

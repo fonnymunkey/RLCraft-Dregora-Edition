@@ -37,6 +37,6 @@
     "affixes": 5,
     "growthFactor": 15,
     "chance": 0.2,
-    "potions": ["minecraft:speed;4"]
+    "potions": ["srparasites:rage;3","minecraft:speed;1"]
   }
 ]
