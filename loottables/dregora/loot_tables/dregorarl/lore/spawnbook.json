@@ -10,8 +10,8 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "dregora:rlrcraft/lore/spawnbook",
-          "weight": 1
+          "name": "dregora:rlcraft/lore/spawnbook",
+          "weight": 100
         }
       ]
     },

@@ -335,6 +335,7 @@ Underneath todo
 - Moved low chests from 55-65 to 45-60
 
 Dregora todo
++ Underworld Biome could use some dirt patched with red trees on them
 + Add flying entities to DregoraRL (10 for each biome group)
 - Ice/Cold
 - Jungle
@@ -350,7 +351,70 @@ Dregora todo
 - Mountains (Cold/Ice)
 - Mountains (Jungle)
 - Mountains (Temperate)
++ CHEFVAXITON (do hunger arrow) all glitter gold set
 
+Flying Entities Mounts:
+Hippo
+Amphi
+Roc
+Raiko
+Morock
+Quetzo
+Ignibus
+
+Stymp (AirGang Squad)
+Cockatrice (Squad of Cocks)
+Vespid (Swarm)
+Argus (Chaos Squad?)
+
+FDragon (small)
+IDragon (small)
+LDragon (small)
+
+Argus
+Wraith
+Vespid
+
+Banshee
+Spectre
+Balayang
+
+        "armorboots": ["iceandfire:armor_silver_metal_boots"],
+        "armorlegs": ["iceandfire:forest_troll_leather_leggings"],
+        "armorchest": ["iceandfire:armor_white_chestplate"],
+        "armorhelmet": ["iceandfire:armor_silver_metal_helmet"],
+        "helditem": ["iceandfire:dragonbone_bow"],
+
+
+
+
+
+
+
+        {Health:263.0f,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.085f,0.085f],Age:0,ForcedAge:0,Hunger:50,AgeTicks:697369,Gender:1b,Variant:3,Sleeping:0b,Hovering:0b,Flying:0b,ArmorHead:0,ArmorNeck:0,ArmorBody:0,ArmorTail:0,DeathStage:0,HasHomePosition:0b,AgingDisabled:1b,Passengers:[{id:"minecraft:wither_skeleton",CustomName:"Ice King",CustomNameVisible:1,HandItems:[{id:"minecraft:bow",Count:1},{id:"minecraft:tipped_arrow",tag:{Potion:"potioncore:strong_potion_sickness"},Count:1}],ArmorItems:[{id:"minecraft:diamond_boots",Count:1},{id:"minecraft:diamond_leggings",Count:1},{id:"minecraft:diamond_chestplate",Count:1},{id:"minecraft:diamond_helmet",Count:1}]}]}
+
+
+
+
+
+
+          {
+    "mob": "minecraft:wither_skeleton",
+    "result": "default",
+    "onjoin": true,
+    "healthmultiply": 200,
+    "seesky": true,
+    "customname": "Ice King",
+    "armorboots": ["iceandfire:armor_silver_metal_boots"],
+    "armorlegs": ["iceandfire:forest_troll_leather_leggings"],
+    "armorchest": ["iceandfire:armor_white_chestplate"],
+    "armorhelmet": ["iceandfire:armor_silver_metal_helmet"],
+    "helditem": ["iceandfire:dragonbone_bow"],
+    "nbt": {CustomNameVisible:1,HandItems:[{id:"iceandfire:dragonbone_bow",Count:1},{id:"minecraft:tipped_arrow",tag:{Potion:"potioncore:strong_potion_sickness"},Count:1}]}
+  },
+
+
++ If curse break potion on entity, does entity drop sentient gear?
 + Fix some of the Dregora performance issues (remove resources from biomes)
 + File cleanup, remove .zip files
 + make tower rare
@@ -363,7 +427,13 @@ Optional todo:
 + Add a Jungle Biome
 + Remove big tree from recurrent complex and add it floating under balloons in sky above beach, ocean and plains biomes
 
+Potentially Add mods Backlog:
++ Special Mobs
++ Spice of Life
++ Food Funk
+
 Backlog:
++ distrance traveled divided by time traveled = xp multiplier (more you travel, more you gain xp)
 + per enchantment on armor = - 10% armor max (on hit player) (total enchantments armor)
 + make mineshafts in canyons more common?
 + Sealed crate auto spawns spawn eggs (make randomizer)
@@ -422,10 +492,6 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Display percentage unpacking Dregora so people do not force quit any more.
 + Add smoke particle effect to barrier block being destroyed
 
-
-Potentially Add mods Backlog:
-+ Spice of Life
-+ Food Funk
 
 RLCraft Done:
 - Make Battletowers slightly less rare by changing min-distance from 800 to 700.
@@ -538,11 +604,27 @@ RLCraft Done:
 - Bow equipped entities have a 5% chance to spawn with one of 91 tipped arrows and keeps rotating arrows after each shot.
 - Added curse break potions to rare, common and epic loottables
 - Fixed a bug with shivaxi boss in relation to the tipped arrow script
+- Entity with name Jester switch arrow after every time it damages an entity
+- Entities that have NoArrowSwitch in ForgeData NBT are excluded from random arrow switch after doing damage.
+- turn off skeleton walking animation that borks legs
+- made infernals drop /2 silver
+- Added Copper to more loottables
 
 RLCraft todo:
++ Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings once it gets uploaded to curse)
++ Armor rebalance:
+ArmorSets:
+Copper: lvl 4 ( 25% speed + xat:lightning_resistance ) Storm Rush
+Chain: lvl 6 ( arrow prot: boot: 5%, leg: 10%, chest: 15%, head 5% )
+Iron: lvl 8 ( none )
+
+Weapons:
+Copper: lvl 4 ( none )
+Bronze: lvl 4 ( none but slightly more dmg )
+Iron: lvl 10 ( none )
+
 + Add Underneath v1.1 to Manifest.json
 + P_TreeDungeon (X) Remove (And Later re-add + balloons)
-+ Fix github issues
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + Update to new C&F and add special spawners for the Dragon & Shivaxi
@@ -551,6 +633,7 @@ RLCraft todo:
 
 
 Optional:
++ Ragnarok Event
 + Make Desert cold at night
 + Attack on RLCraft Event
 + NotKotlin = Kobalt (add custom lines)

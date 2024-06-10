@@ -42,6 +42,9 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.event.ProjectileImpactArrowEvent;
 import crafttweaker.potions.IPotionType;
 import crafttweaker.event.PlayerRespawnEvent;
+import crafttweaker.event.CommandEvent;
+import crafttweaker.event.PlayerRightClickItemEvent;
+import crafttweaker.entity.IEntityDefinition;
 
 // use /ct syntax to validate scripts
 
@@ -470,6 +473,78 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 //DREGORARL SCRIPTS AND EVENTS
 //=================================
 
+
+// Script to test simple scripts with
+
+static stick as IItemStack = <variedcommodities:stone_staff>;
+static speed as double = 1.5;
+var ProjectileItterations = -10 as int;
+
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent) {
+    if (!event.player.world.isRemote()) { return; }
+    if (event.item.definition.id.matches(stick.definition.id)) {
+
+        // Get player lookingDirection vectors and normalize them
+        var pX = event.player.lookingDirection.normalized.x;
+        var pY = event.player.lookingDirection.normalized.y;
+        var pZ = event.player.lookingDirection.normalized.z;
+
+        // Offset player shooting position by where they're looking
+        // Projectiles spawn directly inside of the player normally
+        var fX = event.player.x + (pX * 2);
+        var fY = event.player.y + (pY + 2);
+        var fZ = event.player.z + (pZ * 2);
+        var pos = crafttweaker.util.Position3f.create(fX, fY, fZ);
+
+        // Multiply the projectile by speed value
+        var sX = pX * speed;
+        var sY = pY * speed;
+        var sZ = pZ * speed;
+
+
+        var ProjectileArrayCount = 0;
+        var ProjectileArray = [
+
+            <entity:srparasites:bomb>,
+            <entity:minecraft:arrow>
+
+            ] as IEntityDefinition[];
+
+        for item in ProjectileArray {
+
+            var ProjectileArrayCount = ProjectileArrayCount + 1;
+        }
+
+
+        if (ProjectileItterations == -10) {
+
+            var ProjectileItterations = ProjectileArrayCount as int;
+
+        } else if (ProjectileItterations > -1) {
+
+            var ProjectileItterations = ProjectileItterations - 1;
+
+        } else {
+
+            var ProjectileItterations = ProjectileArrayCount as int;
+
+        }
+
+
+
+        var entityobject = ProjectileArray[ProjectileItterations].createEntity(event.player.world);
+
+        entityobject.setPosition(pos);
+        entityobject.motionX = sX;
+        entityobject.motionY = sY;
+        entityobject.motionZ = sZ;
+
+        event.player.world.spawnEntity(entityobject);
+
+    }
+});
+
+
 // Entities spawned with bow have a 5% chance to randomly get a tipped arrow in offhand slot
 events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
@@ -478,6 +553,7 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
     if (isNull(event.entity.definition)) {return;}
     if (isNull(event.entity.definition.id)) {return;}
     if (event.entity.definition.id == "playerbosses:player_boss") {return;}
+
 
     if(isNull(event.entity.nbt.ForgeData.ArrowCheck)){
 
@@ -488,10 +564,17 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
     if (event.entity.nbt.ForgeData.ArrowCheck == 0){
 
         var entityBase as IEntityLivingBase = event.entity;
-        event.entity.setNBT({ArrowCheck: 1});
+
+        if (!isNull(entityBase.offHandHeldItem)){
+
+            if ((entityBase.offHandHeldItem.name) has "tipped_arrow") {event.entity.setNBT({NoArrowSwitch: 1});}
+            return;
+
+        }
 
         if (isNull(entityBase.mainHandHeldItem)) {return;}
         if (isNull(entityBase.mainHandHeldItem.name)) {return;}
+
 
         if (entityBase.mainHandHeldItem.name has "bow") {
 
@@ -587,19 +670,25 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
             <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_magic_shield"}),
             <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_blindness"}),
             <minecraft:tipped_arrow>.withTag({Potion: "potioncore:blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"})
-
+            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "xat:extended_goblin"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "xat:goblin"})
 
             ] as IItemStack[];
-            var randomArrow = entityBase.world.random.nextFloat(0, 89);
+            var randomArrow = entityBase.world.random.nextFloat(0, 90);
             var selectedArrow = ArrowArray[randomArrow];
 
             if (randomInt <= 5) {
 
                 entityBase.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
                 event.entity.setNBT({ArrowEntity: 1});
-
             }
+
+            event.entity.setNBT({ArrowCheck: 1});
+
+        } else {
+
+            event.entity.setNBT({ArrowCheck: 1});
 
         }
 
@@ -608,15 +697,17 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 });
 
 // Entities with tipped arrow in offhand apply potion effect on target hit
+// Use ForgeData: NoArrowSwitch: 1 to exclude entities from changing arrows
+
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
     if event.entity.world.isRemote() {return;}
     if (isNull(event.damageSource)) {return;}
     if (isNull(event.damageSource.getTrueSource())) {return;}
     if (isNull(event.damageSource.getTrueSource().heldEquipment)) {return;}
-    if (isNull(event.damageSource.getTrueSource().heldEquipment[1])) {return;}
+    if ((event.damageSource.getTrueSource().heldEquipment.length ) == 0) {return;}
     if (isNull(event.damageSource.getTrueSource().heldEquipment[0])) {return;}
-
+    if (isNull(event.damageSource.getTrueSource().heldEquipment[1])) {return;}
 
     if (isNull(event.damageSource.getTrueSource().heldEquipment[1].tag)) {return;}
     if (isNull(event.damageSource.getTrueSource().heldEquipment[1].tag.Potion)) {return;}
@@ -640,6 +731,8 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         if (isNull(event.damageSource.getTrueSource().nbt.ForgeData)) {return;}
         if (isNull(event.damageSource.getTrueSource().nbt.ForgeData.ArrowEntity)) {return;}
         if (event.damageSource.getTrueSource().nbt.ForgeData.ArrowEntity != 1) {return;}
+
+        if (!isNull(event.damageSource.getTrueSource().nbt.ForgeData.NoArrowSwitch)){return;}
 
         var entityShooter as IEntityLivingBase = event.damageSource.getTrueSource();
         var randomInt = entityShooter.world.random.nextFloat(0, 100);
@@ -735,16 +828,33 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_magic_shield"}),
         <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_blindness"}),
         <minecraft:tipped_arrow>.withTag({Potion: "potioncore:blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"})
+        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"}),
+        <minecraft:tipped_arrow>.withTag({Potion: "xat:extended_goblin"}),
+        <minecraft:tipped_arrow>.withTag({Potion: "xat:goblin"})
 
 
         ] as IItemStack[];
-        var randomArrow = entityShooter.world.random.nextFloat(0, 89);
+        var randomArrow = entityShooter.world.random.nextFloat(0, 90);
         var selectedArrow = ArrowArray[randomArrow];
 
-        if (randomInt <= 20) {
+        if (isNull(entityShooter.customName)) {
 
-            entityShooter.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
+            if (randomInt <= 20) {
+
+                entityShooter.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
+            }
+
+        } else {
+
+            if (entityShooter.customName has "Jester") {
+
+                entityShooter.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
+
+            } else if (randomInt <= 20) {
+
+                entityShooter.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
+
+            }
 
         }
 

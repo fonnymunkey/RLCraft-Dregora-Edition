@@ -1,0 +1,311 @@
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
+import loottweaker.vanilla.loot.Conditions;
+import loottweaker.vanilla.loot.Functions;
+
+
+//minecraft:chests/village_blacksmith
+//minecraft:chests/simple_dungeon
+//minecraft:chests/abandoned_mineshaft
+//charm:village/butcher
+//charm:village/carpenter
+//charm:village/farmer
+//charm:village/fisherman
+//charm:village/librarian
+//charm:village/priest
+//charm:village/shepherd
+//charm:village/smith
+//charm:treasure/common
+//quark:chests/pirate_chest
+
+val BlacksmithTable = LootTweaker.getTable("minecraft:chests/village_blacksmith");
+val DungeonTable = LootTweaker.getTable("minecraft:chests/simple_dungeon");
+val MineshaftTable = LootTweaker.getTable("minecraft:chests/abandoned_mineshaft");
+val ButcherTable = LootTweaker.getTable("charm:village/butcher");
+val CarpenterTable = LootTweaker.getTable("charm:village/carpenter");
+val FarmerTable = LootTweaker.getTable("charm:village/farmer");
+val FishermanTable = LootTweaker.getTable("charm:village/fisherman");
+val LibrarianTable = LootTweaker.getTable("charm:village/librarian");
+val PriestTable = LootTweaker.getTable("charm:village/priest");
+val ShepherdTable = LootTweaker.getTable("charm:village/shepherd");
+val SmithTable = LootTweaker.getTable("charm:village/smith");
+val CommonTable = LootTweaker.getTable("charm:treasure/common");
+val PirateTable = LootTweaker.getTable("quark:chests/pirate_chest");
+
+
+val BlacksmithCopper = BlacksmithTable.addPool("CopperPool", 1, 2, 0, 0);
+val DungeonCopper = DungeonTable.addPool("CopperPool", 0, 1, 0, 0);
+val MineshaftCopper = MineshaftTable.addPool("CopperPool", 0, 1, 0, 0);
+val ButcherCopper = ButcherTable.addPool("CopperPool", 0, 1, 0, 0);
+val CarpenterCopper = CarpenterTable.addPool("CopperPool", 0, 1, 0, 0);
+val FarmerCopper = FarmerTable.addPool("CopperPool", 0, 1, 0, 0);
+val SmithCopper = SmithTable.addPool("CopperPool", 1, 2, 0, 0);
+val CommonCopper = CommonTable.addPool("CopperPool", 0, 1, 0, 0);
+val PirateCopper = PirateTable.addPool("CopperPool", 0, 1, 0, 0);
+
+
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 25);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 25);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 25);
+DungeonCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 25);
+
+DungeonCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:javelin_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:mace_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:glaive_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:staff_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:dagger_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:longsword_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:katana_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:saber_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:rapier_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 75);
+DungeonCopper.addItemEntry(<spartanshields:shield_tower_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:hammer_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:spear_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:halberd_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:pike_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:lance_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:longbow_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 75);
+DungeonCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 75);
+
+DungeonCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:javelin_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:mace_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:glaive_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:staff_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:dagger_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:longsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:katana_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:saber_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:rapier_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanshields:shield_tower_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:hammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:spear_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:halberd_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:pike_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:lance_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:longbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+DungeonCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+
+MineshaftCopperr.addItemEntry(<iceandfire:copper_pickaxe>, 65);
+MineshaftCopperr.addItemEntry(<iceandfire:copper_shovel>, 65);
+MineshaftCopperr.addItemEntry(<iceandfire:copper_axe>, 65);
+MineshaftCopperr.addItemEntry(<iceandfire:copper_pickaxe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+MineshaftCopperr.addItemEntry(<iceandfire:copper_shovel>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+MineshaftCopperr.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+MineshaftCopper.addItemEntry(<iceandfire:copper_nugget>, 100);
+MineshaftCopper.addItemEntry(<iceandfire:copper_ingot>, 100);
+
+CarpenterCopper.addItemEntry(<iceandfire:copper_axe>, 65);
+CarpenterCopper.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+CarpenterCopper.addItemEntry(<iceandfire:copper_axe>, 65);
+CarpenterCopper.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+CarpenterCopper.addItemEntry(<iceandfire:copper_nugget>, 100);
+CarpenterCopper.addItemEntry(<iceandfire:copper_ingot>, 100);
+
+FarmerCopper.addItemEntry(<iceandfire:copper_shovel>, 65);
+FarmerCopper.addItemEntry(<iceandfire:copper_axe>, 65);
+FarmerCopper.addItemEntry(<iceandfire:copper_hoe>, 65);
+FarmerCopper.addItemEntry(<iceandfire:copper_shovel>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+FarmerCopper.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+FarmerCopper.addItemEntry(<iceandfire:copper_hoe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+
+CommonCopper.addItemEntry(<iceandfire:copper_nugget>, 100);
+CommonCopper.addItemEntry(<iceandfire:copper_ingot>, 100);
+
+PirateCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:javelin_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:mace_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:glaive_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:staff_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:dagger_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:longsword_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:katana_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:saber_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:rapier_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 75);
+PirateCopper.addItemEntry(<spartanshields:shield_tower_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:hammer_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:spear_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:halberd_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:pike_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:lance_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:longbow_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 75);
+PirateCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:javelin_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:mace_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:glaive_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:staff_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:dagger_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:longsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:katana_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:saber_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:rapier_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanshields:shield_tower_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:hammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:spear_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:halberd_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:pike_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:lance_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:longbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+PirateCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+
+SmithCopper.addItemEntry(<iceandfire:copper_pickaxe>, 65);
+SmithCopper.addItemEntry(<iceandfire:copper_shovel>, 65);
+SmithCopper.addItemEntry(<iceandfire:copper_sword>, 65);
+SmithCopper.addItemEntry(<iceandfire:copper_axe>, 65);
+SmithCopper.addItemEntry(<iceandfire:copper_hoe>, 65);
+SmithCopper.addItemEntry(<iceandfire:copper_pickaxe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:copper_shovel>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:copper_sword>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:copper_hoe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:copper_nugget>, 100);
+SmithCopper.addItemEntry(<iceandfire:copper_ingot>, 100);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 25);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 25);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 25);
+SmithCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 25);
+SmithCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:javelin_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:mace_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:glaive_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:staff_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:dagger_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:longsword_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:katana_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:saber_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:rapier_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 75);
+SmithCopper.addItemEntry(<spartanshields:shield_tower_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:hammer_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:spear_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:halberd_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:pike_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:lance_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:longbow_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 75);
+SmithCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:javelin_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:mace_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:glaive_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:staff_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:dagger_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:longsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:katana_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:saber_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:rapier_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanshields:shield_tower_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:hammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:spear_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:halberd_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:pike_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:lance_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:longbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+SmithCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+
+BlacksmithCopper.addItemEntry(<iceandfire:copper_pickaxe>, 65);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_shovel>, 65);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_sword>, 65);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_axe>, 65);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_hoe>, 65);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_pickaxe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_shovel>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_sword>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_axe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_hoe>, 40 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_nugget>, 100);
+BlacksmithCopper.addItemEntry(<iceandfire:copper_ingot>, 100);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 10, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_chestplate>, 25);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_leggings>, 25);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_boots>, 25);
+BlacksmithCopper.addItemEntry(<iceandfire:armor_copper_metal_helmet>, 25);
+BlacksmithCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:javelin_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:mace_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:glaive_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:staff_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:dagger_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:longsword_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:katana_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:saber_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:rapier_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanshields:shield_tower_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:hammer_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:spear_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:halberd_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:pike_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:lance_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:longbow_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 75);
+BlacksmithCopper.addItemEntry(<spartanweaponry:throwing_axe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:javelin_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:boomerang_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:battleaxe_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:mace_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:glaive_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:staff_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:dagger_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:longsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:katana_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:saber_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:rapier_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:greatsword_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanshields:shield_tower_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:hammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:warhammer_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:spear_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:halberd_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:pike_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:lance_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:longbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:crossbow_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
+BlacksmithCopper.addItemEntry(<spartanweaponry:throwing_knife_copper>, 30, 0, [Functions.enchantWithLevels(0, 10, false)]);
