@@ -108,3 +108,5 @@ levelup.respec.lowlevel=§eLevel too low, must be %s §r
 
 sneak.attack=Sneak attack for %d x damage!
 level.invalid=§e§l[Level Up!]§r§e You must reach level 5 before choosing a specialization.§r
+
+key.categories.gui=LevelUp2

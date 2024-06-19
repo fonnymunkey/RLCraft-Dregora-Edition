@@ -30,7 +30,7 @@
     "content": "minecraft:iron_sword",
     "unitWorth": 750,
     "weight": 5,
-    "nbt_data": "{display:{Lore:[\"Sharper than Usual.\"]},ench:[{id:16,lvl:1}]}",
+    "nbt_data": "{display:{LocLore:[\"reward.bountiful.sharper.lore\"]},ench:[{id:16,lvl:1}]}",
     "amount": {
       "min": 1,
       "max": 1
@@ -554,7 +554,7 @@
     },
     "unitWorth": 3000,
     "weight": 5,
-	"nbt_data": "{ench:[{lvl:10,id:34}],display:{Name:\"The Eternal Dooter\"}}"
+    "nbt_data": "{ench:[{lvl:10,id:34}],display:{LocName:\"reward.bountiful.eternaldooter.name\"}}"
   },
   {
     "content": "corpsecomplex:scroll",
