@@ -17,46 +17,47 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent) {
   }
 });
 
-<simpledifficulty:wool_helmet:*>.addTooltip(format.darkRed("+2 Warmth"));
-<simpledifficulty:wool_chestplate:*>.addTooltip(format.darkRed("+2 Warmth"));
-<simpledifficulty:wool_leggings:*>.addTooltip(format.darkRed("+2 Warmth"));
-<simpledifficulty:wool_boots:*>.addTooltip(format.darkRed("+2 Warmth"));
-<simpledifficulty:ice_helmet:*>.addTooltip(format.darkAqua("+2 Cooling"));
-<simpledifficulty:ice_chestplate:*>.addTooltip(format.darkAqua("+2 Cooling"));
-<simpledifficulty:ice_leggings:*>.addTooltip(format.darkAqua("+2 Cooling"));
-<simpledifficulty:ice_boots:*>.addTooltip(format.darkAqua("+2 Cooling"));
+// Each piece has its own text, in case some values change in the future.
+<simpledifficulty:wool_helmet:*>.addTooltip(game.localize("tooltip.simpledifficulty:wool_helmet", "en_us"));
+<simpledifficulty:wool_chestplate:*>.addTooltip(game.localize("tooltip.simpledifficulty:wool_chestplate", "en_us"));
+<simpledifficulty:wool_leggings:*>.addTooltip(game.localize("tooltip.simpledifficulty:wool_leggings", "en_us"));
+<simpledifficulty:wool_boots:*>.addTooltip(game.localize("tooltip.simpledifficulty:wool_boots", "en_us"));
+<simpledifficulty:ice_helmet:*>.addTooltip(game.localize("tooltip.simpledifficulty:ice_helmet", "en_us"));
+<simpledifficulty:ice_chestplate:*>.addTooltip(game.localize("tooltip.simpledifficulty:ice_chestplate", "en_us"));
+<simpledifficulty:ice_leggings:*>.addTooltip(game.localize("tooltip.simpledifficulty:ice_leggings", "en_us"));
+<simpledifficulty:ice_boots:*>.addTooltip(game.localize("tooltip.simpledifficulty:ice_boots", "en_us"));
 
-<rlmixins:scarlite_helmet:*>.displayName = "\u00A74\u00A7kScarlite\u00A7r\u00A74 Helmet";
-<rlmixins:scarlite_chestplate:*>.displayName = "\u00A74\u00A7kScarlite\u00A7r\u00A74 Chestplate";
-<rlmixins:scarlite_leggings:*>.displayName = "\u00A74\u00A7kScarlite\u00A7r\u00A74 Leggings";
-<rlmixins:scarlite_boots:*>.displayName = "\u00A74\u00A7kScarlite\u00A7r\u00A74 Boots";
+<rlmixins:scarlite_helmet:*>.displayName = game.localize("item.scarlite_helmet.name", "en_us");
+<rlmixins:scarlite_chestplate:*>.displayName = game.localize("item.scarlite_chestplate.name", "en_us");
+<rlmixins:scarlite_leggings:*>.displayName = game.localize("item.scarlite_leggings.name", "en_us");
+<rlmixins:scarlite_boots:*>.displayName = game.localize("item.scarlite_boots.name", "en_us");
 
-<mujmajnkraftsbettersurvival:itemsteelhammer:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<mujmajnkraftsbettersurvival:itemsteelspear:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<mujmajnkraftsbettersurvival:itemsteeldagger:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<mujmajnkraftsbettersurvival:itemsteelbattleaxe:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<mujmajnkraftsbettersurvival:itemsteelnunchaku:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:dagger_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:longsword_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:katana_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:scythe_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:saber_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:rapier_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:greatsword_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:hammer_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:warhammer_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:spear_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:throwing_axe_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:halberd_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:pike_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:lance_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:throwing_knife_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:javelin_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:boomerang_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:battleaxe_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:mace_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:glaive_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
-<spartanweaponry:staff_steel:*>.addTooltip(format.gold("+2 damage against Nether mobs and Fire elementals"));
+<mujmajnkraftsbettersurvival:itemsteelhammer:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<mujmajnkraftsbettersurvival:itemsteelspear:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<mujmajnkraftsbettersurvival:itemsteeldagger:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<mujmajnkraftsbettersurvival:itemsteelbattleaxe:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<mujmajnkraftsbettersurvival:itemsteelnunchaku:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:dagger_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:longsword_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:katana_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:scythe_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:saber_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:rapier_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:greatsword_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:hammer_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:warhammer_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:spear_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:throwing_axe_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:halberd_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:pike_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:lance_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:throwing_knife_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:javelin_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:boomerang_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:battleaxe_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:mace_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:glaive_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
+<spartanweaponry:staff_steel:*>.addTooltip(game.localize("tooltip.scripts.weapon.steelbonus", "en_us"));
 
 //Potion Of Curse Break
 brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:thick"}), <rlmixins:cleansing_talisman>, <minecraft:potion>.withTag({Potion: "rlmixins:curse_break"}));
@@ -129,7 +130,7 @@ brewing.addBrew(<minecraft:splash_potion>.withTag({Potion: "rlmixins:curse_break
 
 <ore:charmCrate>.add(<charm:crate:0>, <charm:crate:1>, <charm:crate:2>, <charm:crate:3>, <charm:crate:4>, <charm:crate:5>);
 
-<sereneseasons:greenhouse_glass:*>.addTooltip(format.green("Allows crops up to 7 blocks directly beneath to grow in any season"));
+<sereneseasons:greenhouse_glass:*>.addTooltip(game.localize("tooltip.sereneseasons:greenhouse_glass", "en_us"));
 
 furnace.addRecipe(<minecraft:diamond> * 1, <spartanweaponry:longsword_diamond:*>, 99999);
 furnace.addRecipe(<variedcommodities:coin_diamond> * 4, <spartanweaponry:katana_diamond:*>, 99999);
