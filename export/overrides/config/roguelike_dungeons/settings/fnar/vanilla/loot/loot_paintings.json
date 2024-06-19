@@ -6,23 +6,23 @@
       "each": false,
       "quantity": 1,
       "loot": [
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"American Gothic\",Lore:[\"But what does it /mean/?.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Last Supper\",Lore:[\"Allegedly.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Creation of Adam\",Lore:[\"Two dudes touching tips.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Mona Lisa\",Lore:[\"She's smiling! Is that good?\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Scream\",Lore:[\"We all scream for ice cream.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Girl with a Pearl Earring\",Lore:[\"Absolutely stunning.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Starry Night\",Lore:[\"They say he was on drugs.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Portrait of a Man\",Lore:[\"He looks really lonely.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Piglet\",Lore:[\"It looks like a child painted this. How is this art?\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"!!??\",Lore:[\"It's a picture of your mum??\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Dogs Playing Poker\",Lore:[\"It is what it is.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Shivaxi's Baby Photo\",Lore:[\"Wasn't he cute as a hatchling? n_n\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Photograph of Fnar\",Lore:[\"What does Fnar mean anyway?\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.gothic.name\",Lore:[\"But what does it /mean/?.\"],rldLocLore:[\"json.roguelike.painting.gothic.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.supper.name\",Lore:[\"Allegedly.\"],rldLocLore:[\"json.roguelike.painting.supper.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.adam.name\",Lore:[\"Two dudes touching tips.\"],rldLocLore:[\"json.roguelike.painting.adam.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.monalisa.name\",Lore:[\"She's smiling! Is that good?\"],rldLocLore:[\"json.roguelike.painting.monalisa.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.scream.name\",Lore:[\"We all scream for ice cream.\"],rldLocLore:[\"json.roguelike.painting.scream.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.earring.name\",Lore:[\"Absolutely stunning.\"],rldLocLore:[\"json.roguelike.painting.earring.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.starry.name\",Lore:[\"They say he was on drugs.\"],rldLocLore:[\"json.roguelike.painting.starry.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.man.name\",Lore:[\"He looks really lonely.\"],rldLocLore:[\"json.roguelike.painting.man.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.xxx.name\",Lore:[\"You probably weren't meant to find this.\"],rldLocLore:[\"json.roguelike.painting.xxx.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.piglet.name\",Lore:[\"It looks like a child painted this. How is this art?\"],rldLocLore:[\"json.roguelike.painting.piglet.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.yourmum.name\",Lore:[\"It's a picture of your mum??\"],rldLocLore:[\"json.roguelike.painting.yourmum.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.dogspoker.name\",Lore:[\"It is what it is.\"],rldLocLore:[\"json.roguelike.painting.dogspoker.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.babyshiv.name\",Lore:[\"Wasn't he cute as a hatchling? n_n\"],rldLocLore:[\"json.roguelike.painting.babyshiv.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.fnar.name\",Lore:[\"What does Fnar mean anyway?\"],rldLocLore:[\"json.roguelike.painting.fnar.lore\"]}}"}, "weight": 1},
 
-        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"Streaming for beginners\",Lore:[\"A practical guide to getting famous on Twitch\"]}}"}, "weight": 1}
+        {"data": {"name": "minecraft:book", "nbt": "{display:{LocName:\"json.roguelike.book.xxx.name\",Lore:[\"You probably weren't meant to find this.\"],rldLocLore:[\"json.roguelike.book.xxx.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:book", "nbt": "{display:{LocName:\"json.roguelike.book.streaming.name\",Lore:[\"A practical guide to getting famous on Twitch\"],rldLocLore:[\"json.roguelike.book.streaming.lore\"]}}"}, "weight": 1}
       ]
     }
   ]

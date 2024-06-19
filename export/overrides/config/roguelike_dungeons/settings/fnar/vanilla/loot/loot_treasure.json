@@ -18,24 +18,24 @@
         {"data": {"type": "specialty", "level": 3}, "weight": 8},
         {"data": {"type": "specialty", "level": 4}, "weight": 4},
 
-        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 4, \"id\": \"protection\"}]}"}, "weight": 1},
-        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 5, \"id\": \"sharpness\"}]}"}, "weight": 1},
-        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 3, \"id\": \"looting\"}]}"}, "weight": 1},
-        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": \"silk_touch\"}]}"}, "weight": 1},
-        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 3, \"id\": \"fortune\"}]}"}, "weight": 1},
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 4, \"id\": 0}]}"}, "weight": 1}, // Protection
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 5, \"id\": 16}]}"}, "weight": 1}, // Sharpness
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 3, \"id\": 21}]}"}, "weight": 1}, // Looting
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 1, \"id\": 33}]}"}, "weight": 1}, // Silk Touch
+        {"data": {"name": "minecraft:enchanted_book", "nbt": "{\"StoredEnchantments\": [{\"lvl\": 3, \"id\": 35}]}"}, "weight": 1}, // Fortune
 
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"American Gothic\",Lore:[\"But what does it /mean/?.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Last Supper\",Lore:[\"Allegedly.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Creation of Adam\",Lore:[\"Two dudes touching tips.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Mona Lisa\",Lore:[\"She's smiling! Is that good?\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Scream\",Lore:[\"We all scream for ice cream.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Girl with a Pearl Earring\",Lore:[\"Absolutely stunning.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"The Starry Night\",Lore:[\"They say he was on drugs.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Portrait of a Man\",Lore:[\"He looks really lonely.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:painting", "nbt": "{display:{Name:\"Piglet\",Lore:[\"It looks like a child painted this. How is this art?\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"XXX\",Lore:[\"You probably weren't meant to find this.\"]}}"}, "weight": 1},
-        {"data": {"name": "minecraft:book", "nbt": "{display:{Name:\"Streaming for beginners\",Lore:[\"A practical guide to getting famous on Twitch\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.gothic.name\",Lore:[\"But what does it /mean/?.\"],rldLocLore:[\"json.roguelike.painting.gothic.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.supper.name\",Lore:[\"Allegedly.\"],rldLocLore:[\"json.roguelike.painting.supper.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.adam.name\",Lore:[\"Two dudes touching tips.\"],rldLocLore:[\"json.roguelike.painting.adam.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.monalisa.name\",Lore:[\"She's smiling! Is that good?\"],rldLocLore:[\"json.roguelike.painting.monalisa.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.scream.name\",Lore:[\"We all scream for ice cream.\"],rldLocLore:[\"json.roguelike.painting.scream.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.earring.name\",Lore:[\"Absolutely stunning.\"],rldLocLore:[\"json.roguelike.painting.earring.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.starry.name\",Lore:[\"They say he was on drugs.\"],rldLocLore:[\"json.roguelike.painting.starry.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.man.name\",Lore:[\"He looks really lonely.\"],rldLocLore:[\"json.roguelike.painting.man.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.xxx.name\",Lore:[\"You probably weren't meant to find this.\"],rldLocLore:[\"json.roguelike.painting.xxx.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:painting", "nbt": "{display:{LocName:\"json.roguelike.painting.piglet.name\",Lore:[\"It looks like a child painted this. How is this art?\"],rldLocLore:[\"json.roguelike.painting.piglet.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:book", "nbt": "{display:{LocName:\"json.roguelike.book.xxx.name\",Lore:[\"You probably weren't meant to find this.\"],rldLocLore:[\"json.roguelike.book.xxx.lore\"]}}"}, "weight": 1},
+        {"data": {"name": "minecraft:book", "nbt": "{display:{LocName:\"json.roguelike.book.streaming.name\",Lore:[\"A practical guide to getting famous on Twitch\"],rldLocLore:[\"json.roguelike.book.streaming.lore\"]}}"}, "weight": 1},
         {"data": {"name": "minecraft:nether_star"}, "weight": 2},
         {"data": {"name": "minecraft:elytra"}, "weight": 8}
       ],
