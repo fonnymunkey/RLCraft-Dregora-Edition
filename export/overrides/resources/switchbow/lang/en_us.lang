@@ -1,3 +1,43 @@
 enchantment.switchbow.pullspeed.desc=Increases pull speed on Switch Bow.
 enchantment.switchbow.activescope.desc=360...scope?
 enchantment.switchbow.cooldownreduce.desc=Reduces cooldown on Switch Crossbow.
+
+# Arrow entities
+entity.ArrowLightningBolt.name=Lightning-Arrow
+entity.ArrowTNT.name=TNT-Arrow
+entity.ArrowFrost.name=Frost-Arrow
+entity.ArrowAir.name=Air-Arrow
+entity.ArrowEnderperle.name=Teleport-Arrow
+entity.ArrowVampier.name=Vampire-Arrow
+entity.ArrowWither.name=Wither-Arrow
+entity.ArrowTorch.name=Torch-Arrow
+entity.ArrowSplit.name=Sliver-Arrow
+entity.ArrowUnderwater.name=Underwater-Arrow
+entity.ArrowDiamond.name=Reinforced Arrow
+entity.ArrowLove.name=Love-Arrow
+entity.ArrowFire.name=Fire-Arrow
+entity.ArrowBone.name=Bone-Arrow
+entity.ArrowFirework.name=Rocket-Arrow
+entity.ArrowSplitLove.name=Love-Arrow (AOE)
+entity.ArrowLuck.name=Luck-Arrow
+entity.ArrowRedstone.name=Redstone-Arrow
+entity.ArrowBurial.name=Burial-Arrow
+entity.ArrowChorus.name=Chorus-Arrow
+entity.ArrowSprinkler.name=Sprinkler-Arrow
+entity.ArrowDragonBreath.name=Dragon-Arrow
+entity.ArrowTriple.name=Triple-Arrow
+entity.ArrowProtector.name=Protector-Arrow
+entity.ArrowKnockback.name=Knockback-Arrow
+entity.ArrowBouncy.name=Bouncy-Arrow
+entity.ArrowoftheSearcher.name=Arrow of the Searcher
+entity.ArrowPiercing.name=Piercing-Arrow
+entity.LittleIronGolem.name=Little Iron Golem
+
+entity.ArrowLightningBoltStorm.name=Lightningstorm-Arrow
+entity.ArrowBoneAOE.name=Bone-Arrow(AOE)
+entity.ArrowSplitUpgrade.name=Transforming Sliver-Arrow
+entity.ArrowBurialAOE.name=Burial-Arrow(AOE)
+entity.ArrowFireUpgrade.name=FireStorm-Arrow
+entity.ArrowLuckUpgrade.name=Transforming Luck-Arrow
+entity.ArrowAirUpgrade.name=Air-Arrow(AOE)
+entity.ArrowSplitLoveUpgrade.name=Transforming Love-Arrow(AOE)

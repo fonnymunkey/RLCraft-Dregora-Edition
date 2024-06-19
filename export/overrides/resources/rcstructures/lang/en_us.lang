@@ -1,0 +1,440 @@
+#PARSE_ESCAPES
+## Signs, books, items with Name & Lore, and entities with CustomName inside Recurrent Complex structures
+
+# P_CathedralOfMadness
+sign.P_CathedralOfMadness.Jzahar.text1=Jzahar
+sign.P_CathedralOfMadness.Jzahar.text2=demands
+sign.P_CathedralOfMadness.Jzahar.text3=an animal
+sign.P_CathedralOfMadness.Jzahar.text4=sacrifice!
+
+# P_Crater
+sign.P_Crater.open_room.text1=This room open
+sign.P_Crater.open_room.text2=to be
+sign.P_Crater.open_room.text3=customized!
+sign.P_Crater.open_room.text4=
+sign.P_Crater.glass_mossstone.text1=
+sign.P_Crater.glass_mossstone.text2=GLASS
+sign.P_Crater.glass_mossstone.text3=&
+sign.P_Crater.glass_mossstone.text4=MOSS STONE
+sign.P_Crater.metal_wool.text1=METAL
+sign.P_Crater.metal_wool.text2=&
+sign.P_Crater.metal_wool.text3=WOOL
+sign.P_Crater.metal_wool.text4=DYES
+sign.P_Crater.netherrack.text1=NETHERRACK
+sign.P_Crater.netherrack.text2=SOUL SAND
+sign.P_Crater.netherrack.text3=&
+sign.P_Crater.netherrack.text4=GLOWSTONE
+sign.P_Crater.stone_stairs.text1=STONE STAIRS
+sign.P_Crater.stone_stairs.text2=&
+sign.P_Crater.stone_stairs.text3=STONE
+sign.P_Crater.stone_stairs.text4=STONE SLABS
+sign.P_Crater.abandoned_storage.text1=Abandoned
+sign.P_Crater.abandoned_storage.text2=storage behind
+sign.P_Crater.abandoned_storage.text3=this wall.
+sign.P_Crater.abandoned_storage.text4=
+sign.P_Crater.gravel.text1=
+sign.P_Crater.gravel.text2=GRAVEL
+sign.P_Crater.gravel.text3=
+sign.P_Crater.gravel.text4=
+sign.P_Crater.cobblestone.text1=
+sign.P_Crater.cobblestone.text2=COBBLESTONE
+sign.P_Crater.cobblestone.text3=
+sign.P_Crater.cobblestone.text4=
+sign.P_Crater.sandstone.text1=
+sign.P_Crater.sandstone.text2=SANDSTONE
+sign.P_Crater.sandstone.text3=
+sign.P_Crater.sandstone.text4=
+sign.P_Crater.sand.text1=
+sign.P_Crater.sand.text2=SAND
+sign.P_Crater.sand.text3=
+sign.P_Crater.sand.text4=
+sign.P_Crater.clay_bricks.text1=
+sign.P_Crater.clay_bricks.text2=CLAY
+sign.P_Crater.clay_bricks.text3=&
+sign.P_Crater.clay_bricks.text4=BRICKS
+sign.P_Crater.food.text1=
+sign.P_Crater.food.text2=FOOD
+sign.P_Crater.food.text3=
+sign.P_Crater.food.text4=
+sign.P_Crater.wood.text1=
+sign.P_Crater.wood.text2=WOOD
+sign.P_Crater.wood.text3=
+sign.P_Crater.wood.text4=I've got it.
+sign.P_Crater.rails.text1=
+sign.P_Crater.rails.text2=RAIL
+sign.P_Crater.rails.text3=&
+sign.P_Crater.rails.text4=POWERED RAIL
+sign.P_Crater.supplies_tools.text1=SUPPLIES
+sign.P_Crater.supplies_tools.text2=TOOLS
+sign.P_Crater.supplies_tools.text3=CHESTS
+sign.P_Crater.supplies_tools.text4=MAPS
+sign.P_Crater.cactus_pumpkins.text1=CACTUS
+sign.P_Crater.cactus_pumpkins.text2=PUMPKINS
+sign.P_Crater.cactus_pumpkins.text3=FENCES
+sign.P_Crater.cactus_pumpkins.text4=SIGNS
+sign.P_Crater.redstone.text1=REDSTONE
+sign.P_Crater.redstone.text2=PISTONS
+sign.P_Crater.redstone.text3=SWITCHES
+sign.P_Crater.redstone.text4=DOORS
+sign.P_Crater.sugar_canes.text1=
+sign.P_Crater.sugar_canes.text2=SUGAR CANES
+sign.P_Crater.sugar_canes.text3=&
+sign.P_Crater.sugar_canes.text4=PAPER
+sign.P_Crater.lava_diamonds.text1=LAVA
+sign.P_Crater.lava_diamonds.text2=FIRE & TNT
+sign.P_Crater.lava_diamonds.text3=DIAMONDS
+sign.P_Crater.lava_diamonds.text4=OBSIDIAN
+sign.P_Crater.coal.text1=
+sign.P_Crater.coal.text2=COAL
+sign.P_Crater.coal.text3=
+sign.P_Crater.coal.text4=
+
+# P_DesertDungeon
+sign.P_DesertDungeon.arrow_trap.text1=Arrow trap
+sign.P_DesertDungeon.arrow_trap.text2=
+sign.P_DesertDungeon.arrow_trap.text3=
+sign.P_DesertDungeon.arrow_trap.text4=
+sign.P_DesertDungeon.big_room.text1=Big room
+sign.P_DesertDungeon.big_room.text2=
+sign.P_DesertDungeon.big_room.text3=
+sign.P_DesertDungeon.big_room.text4=
+item.P_DesertDungeon.mr_choppy.name=§oMr choppy
+
+# P_IceCity
+sign.P_IceCity.council.text1=Counc'l Bizness
+sign.P_IceCity.council.text2=ONLY
+sign.P_IceCity.council.text3=Show License
+sign.P_IceCity.council.text4=-Sorry, Cirril-
+sign.P_IceCity.frozen_hearth.text1=---------
+sign.P_IceCity.frozen_hearth.text2=Frozen Hearth
+sign.P_IceCity.frozen_hearth.text3=Inn
+sign.P_IceCity.frozen_hearth.text4=---------
+sign.P_IceCity.1st_place.text1=---------
+sign.P_IceCity.1st_place.text2=1st Place Prize
+sign.P_IceCity.1st_place.text3=-some day-
+sign.P_IceCity.1st_place.text4=---------
+sign.P_IceCity.gordy.text1=
+sign.P_IceCity.gordy.text2=Gordy's
+sign.P_IceCity.gordy.text3=Place
+sign.P_IceCity.gordy.text4=
+book.P_IceCity.myth_legend2.page.1=The Long-Distance Duck\n\nOnce, there was a duck from a far-away land. He lived on Turtle Island, a place that is practially lost to the fog of history.\n\nOne day (and no one knows why) the duck set off into the sea and was left behind
+book.P_IceCity.myth_legend2.page.2=as the great turtle swam away.\n\n"I'm all alone!" it cried, and swam off in search of its home.\n\nFinally, it found land, but it was far too cold to be Turtle Island. "Oh well," the duck thought, and swam away.
+book.P_IceCity.myth_legend2.author=Anonymous
+book.P_IceCity.myth_legend2.title=Myth or Legend 2
+book.P_IceCity.note.page.1=    -------------\n\n    I Can't be here much longer, Block 36 is after me. I recieved a letter from one of them that said they would be coming soon. That means I'm leaving ... Unless they get to me first...\n\n     ------------
+book.P_IceCity.note.author=Unknown
+book.P_IceCity.note.title=Note
+book.P_IceCity.letter.page.1=---------o---------\n\n     You don't have\nmuch time left, thief. your crimes against Block 36 will be repaid, with death.\n\n\n\n\n\n               -Block 36
+book.P_IceCity.letter.author=Block36
+book.P_IceCity.letter.title=Letter
+item.P_IceCity.doot_eternal.name=§oDoot Eternal
+item.P_IceCity.my_doormat.name=§oMy Doormat - Place by door
+item.P_IceCity.my_doorbell.name=§oMy Doorbell - Place outside!
+item.P_IceCity.aqua_gear.name=§oAqua Gear
+item.P_IceCity.aqua_lungs.name=§oAqua Lungs
+item.P_IceCity.swim_gear.name=§oSwim Gear
+item.P_IceCity.swim_fins.name=§oSwim Fins
+item.P_IceCity.sky_token.name=§oSky Token
+
+# P_IslandCity
+item.P_IslandCity.leggings_luck.name=§oThe Forgotten Leggings of Luck
+sign.P_IslandCity.johns_bakery.text1=
+sign.P_IslandCity.johns_bakery.text2=John's
+sign.P_IslandCity.johns_bakery.text3=Bakery
+sign.P_IslandCity.johns_bakery.text4=
+sign.P_IslandCity.arthurs_bescheidenes.text1=Artur's
+sign.P_IslandCity.arthurs_bescheidenes.text2=Humble
+sign.P_IslandCity.arthurs_bescheidenes.text3=Home
+sign.P_IslandCity.arthurs_bescheidenes.text4=-Welcome-
+sign.P_IslandCity.help_wanted.text1=
+sign.P_IslandCity.help_wanted.text2=============
+sign.P_IslandCity.help_wanted.text3=HELP WANTED
+sign.P_IslandCity.help_wanted.text4=============
+
+# P_JungleVillage
+item.P_JungleVillage.rip_flower.name=§oR.I.P Mrs. Bobama
+book.P_JungleVillage.miss_hakon.name=Miss Hakon
+book.P_JungleVillage.miss_hakon.page.1=Oh... hello\n\nDo you have any spare Cocoa Beans?\n\nI have none left, not even in my chest, I  guess...
+book.P_JungleVillage.mr_cronok.name=Mr. Cronok
+book.P_JungleVillage.mr_cronok.page.1=I don't care what my wife tells me!\n\nI will go to the huge black rock that fell out of the sky!\n\nI know it's somewhere east of Mt. Konghaï but I don't know what direction that is!
+book.P_JungleVillage.chief_bobama.name=Chief Bobama
+book.P_JungleVillage.chief_bobama.page.1=Welcome outsider!\nWelcome in Florana Village!\n\nMy name is Mr. Bobama\nand I am the chief here!\n\nMake yourself at home, If you need anything, you can ask the villagers for help!
+book.P_JungleVillage.chief_bobama.page.2=oh... and if you see my long lost son,\nBobama Jr.\n\nPlease... bring him home\nHe is missing for over 7 full moon cycles now...\n\nI still miss him...
+book.P_JungleVillage.mrs_yomako.name=Mrs. Yomako
+book.P_JungleVillage.mrs_yomako.page.1=If you came here to look for my husband, he is still working at the mines in the north.\n\nWhy not mine here you say? Well... the ground under the village is too hard for caves to form, they only excist around Mt. Konghaï
+book.P_JungleVillage.mrs_yomako.page.2=But strangely enough...\nI keep hearing animal noices and flowing water from deep below the rock not far south of here...\n\nEveryone calls me crazy...\n\nI'm not crazy!
+book.P_JungleVillage.mr_giji.name=Mr. Giji
+book.P_JungleVillage.mr_giji.page.1=not another of those green creatures...\n\nNow I have to repair it... again!
+sign.P_JungleVillage.stay_out.text1=
+sign.P_JungleVillage.stay_out.text2=STAY
+sign.P_JungleVillage.stay_out.text3=OUT
+sign.P_JungleVillage.stay_out.text4=
+Chicken=Chicken
+Cow=Cow
+
+# P_LargeShip
+item.P_LargeShip.shoes_twilight.name=§oThe Lost Shoes of Twilight
+item.P_LargeShip.ono_wealth.name=§oThe Ono of Wealth
+item.P_LargeShip.ishai_armor.name=§oIshai, the Armour of Luck
+item.P_LargeShip.chainmail_beasts.name=§oThe Chainmail of Beasts
+item.P_LargeShip.shoes_perdition.name=§oThe Shoes of Perdition
+
+# P_MayanTemple2
+sign.P_MayanTemple2.itsa_temple.text1=It's a temple
+sign.P_MayanTemple2.itsa_temple.text2=not a dogg
+sign.P_MayanTemple2.itsa_temple.text3=i mean dock
+sign.P_MayanTemple2.itsa_temple.text4=~K
+
+# P_PlainsCity
+sign.P_PlainsCity.pub.text1=§1=============
+sign.P_PlainsCity.pub.text2=§6Pub
+sign.P_PlainsCity.pub.text3=
+sign.P_PlainsCity.pub.text4=§1=============
+sign.P_PlainsCity.apex_bakery.text1=§1=============
+sign.P_PlainsCity.apex_bakery.text2=§4Apex
+sign.P_PlainsCity.apex_bakery.text3=§6Bakery
+sign.P_PlainsCity.apex_bakery.text4=§1=============
+sign.P_PlainsCity.fresh_bread.text1================
+sign.P_PlainsCity.fresh_bread.text2=Fresh
+sign.P_PlainsCity.fresh_bread.text3=Bread
+sign.P_PlainsCity.fresh_bread.text4================
+sign.P_PlainsCity.buy_1bread2.text1=§1[Buy]
+sign.P_PlainsCity.buy_1bread2.text2=1
+sign.P_PlainsCity.buy_1bread2.text3=bread
+sign.P_PlainsCity.buy_1bread2.text4=$2
+sign.P_PlainsCity.buy_32bread54.text1=§1[Buy]
+sign.P_PlainsCity.buy_32bread54.text2=32
+sign.P_PlainsCity.buy_32bread54.text3=bread
+sign.P_PlainsCity.buy_32bread54.text4=$54
+sign.P_PlainsCity.cookies.text1================
+sign.P_PlainsCity.cookies.text2=Cookies
+sign.P_PlainsCity.cookies.text3=§2------------>
+sign.P_PlainsCity.cookies.text4================
+sign.P_PlainsCity.buy_1cookie1.text1=§1[Buy]
+sign.P_PlainsCity.buy_1cookie1.text2=1
+sign.P_PlainsCity.buy_1cookie1.text3=cookie
+sign.P_PlainsCity.buy_1cookie1.text4=$1
+sign.P_PlainsCity.buy_1cake10.text1=§1[Buy]
+sign.P_PlainsCity.buy_1cake10.text2=1
+sign.P_PlainsCity.buy_1cake10.text3=cake
+sign.P_PlainsCity.buy_1cake10.text4=$10
+sign.P_PlainsCity.cake.text1================
+sign.P_PlainsCity.cake.text2=Cake
+sign.P_PlainsCity.cake.text3=§2<------------
+sign.P_PlainsCity.cake.text4================
+sign.P_PlainsCity.military_only.text1=§4=============
+sign.P_PlainsCity.military_only.text2=Military Only
+sign.P_PlainsCity.military_only.text3=---------------
+sign.P_PlainsCity.military_only.text4=§4=============
+sign.P_PlainsCity.registry_office.text1=§1=============
+sign.P_PlainsCity.registry_office.text2=§2Registy
+sign.P_PlainsCity.registry_office.text3=§2office
+sign.P_PlainsCity.registry_office.text4=§1=============
+Boomer=Boomer
+
+# P_TownMeridor
+sign.P_TownMeridor.angebot.text1=Offer:
+sign.P_TownMeridor.angebot.text2=Overnight stay
+sign.P_TownMeridor.angebot.text3=with breakfast
+sign.P_TownMeridor.angebot.text4=10 Gold Ingots
+sign.P_TownMeridor.zum_wanderer.text1=
+sign.P_TownMeridor.zum_wanderer.text2=For the tired
+sign.P_TownMeridor.zum_wanderer.text3=travelers
+sign.P_TownMeridor.zum_wanderer.text4=
+sign.P_TownMeridor.privat.text1=
+sign.P_TownMeridor.privat.text2=Private
+sign.P_TownMeridor.privat.text3=
+sign.P_TownMeridor.privat.text4=
+sign.P_TownMeridor.schmiede.text1=
+sign.P_TownMeridor.schmiede.text2=Smith
+sign.P_TownMeridor.schmiede.text3=
+sign.P_TownMeridor.schmiede.text4=
+
+# RLCraft_Airtes
+sign.RLCraft_Airtes.collin.text1=Have you studied,
+sign.RLCraft_Airtes.collin.text2=Collin?
+sign.RLCraft_Airtes.collin.text3=
+sign.RLCraft_Airtes.collin.text4=
+book.RLCraft_Airtes.collin_diary.page.1=I've heard rumors of a Lost City, home to many different incredible ancient races that lived together in harmony.\n\nSomething happened long ago to the city, I'm not sure what, so much information has been lost to time, but there are supposedly untold
+book.RLCraft_Airtes.collin_diary.page.2=riches left behind by the many races.\n\nI believe there's a way to get there, but I'm not sure yet.  My search continues...\n\n-Collin
+
+# RLCraft_cryo_bit
+book.RLCraft_cryo_bit.collin_diary.page.1=I've made a discovery!  In my experiments with the realm of sleep, I tried many different materials, potions, herbs and artifacts, even alchemy, trying to make a connection to the Lost City based on what the shaman told me.  Last night something happened!
+book.RLCraft_cryo_bit.collin_diary.page.2=I surrounded my bed with skulls of the undead, knowing they have more than a few strange connections to things like the Underworld and Afterlife, so I hoped they would shed light on this Lost City mystery, and they did!  Putting myself into a deep sleep
+book.RLCraft_cryo_bit.collin_diary.page.3=trance, images flooded my mind, huge skyscrapers, vast treasures...something else too.  Something... dark... something unnatural.  I'm not sure what it meant, but when I awoke, I was still here.\n\nI wasn't able to pull myself through and didn't make it to
+book.RLCraft_cryo_bit.collin_diary.page.4=the Lost City, but I think I'm close!  I just need to find out what I'm missing...\n\n-Collin
+
+# RLCraft_Defiled_Cult
+sign.RLCraft_Defiled_Cult.authorized_personal.text1=Authorized
+sign.RLCraft_Defiled_Cult.authorized_personal.text2=Personal
+sign.RLCraft_Defiled_Cult.authorized_personal.text3=Only
+sign.RLCraft_Defiled_Cult.authorized_personal.text4=
+sign.RLCraft_Defiled_Cult.miners_dormitory.text1=Miners
+sign.RLCraft_Defiled_Cult.miners_dormitory.text2=Dormitory
+sign.RLCraft_Defiled_Cult.miners_dormitory.text3=
+sign.RLCraft_Defiled_Cult.miners_dormitory.text4=
+sign.RLCraft_Defiled_Cult.storage_room.text1=Storage
+sign.RLCraft_Defiled_Cult.storage_room.text2=Room
+sign.RLCraft_Defiled_Cult.storage_room.text3=
+sign.RLCraft_Defiled_Cult.storage_room.text4=
+sign.RLCraft_Defiled_Cult.boss_room.text1=Boss
+sign.RLCraft_Defiled_Cult.boss_room.text2=Room
+sign.RLCraft_Defiled_Cult.boss_room.text3=
+sign.RLCraft_Defiled_Cult.boss_room.text4=
+sign.RLCraft_Defiled_Cult.manager_room.text1=Manager
+sign.RLCraft_Defiled_Cult.manager_room.text2=Room
+sign.RLCraft_Defiled_Cult.manager_room.text3=
+sign.RLCraft_Defiled_Cult.manager_room.text4=
+book.RLCraft_Defiled_Cult.diary.page.1=Day 1\nNew job as manager for this place. The location is a little bit odd, but the payment is good.\n\nDay 5\nSo far so good. Everyone is so friendly...maybe too friendly?
+book.RLCraft_Defiled_Cult.diary.page.2=Day 15\nNew shipment of diamonds just arrived.  Aren't we supposed to be the ones mining them?  It's strange, but I'm getting paid either way.
+book.RLCraft_Defiled_Cult.diary.page.3=Day 21\nThe miners discovered some new type of jewel. They called it "scarlite". Never seen anything like it.  It's deep red, and kind of resembles a diamond? It makes me feel uneasy holding it for some reason.
+book.RLCraft_Defiled_Cult.diary.page.4=Day 28\nSome visitors came to visit the mine the other day.  Funny I'm not allowed down there but they were.  They still haven't returned yet. Also is it just me, or are the walls turning more...purple?  I think I need some fresh air.
+book.RLCraft_Defiled_Cult.diary.page.5=Day 31\nSomething's going on down in the mine. More visitors came and I swear I never see them leave. I saw them transporting diamonds to the mine, yet coming back with more of that scarlite, which makes no sense.  I'll try to investigate.
+book.RLCraft_Defiled_Cult.diary.page.6=Day 33\nI went to the mine while everyone was sleeping, but it's a dead end!  I don't get it, where are the diamonds going, and where is the scarlite coming from?  The walls also definitely look more purple down there.  What is going on?
+book.RLCraft_Defiled_Cult.diary.page.7=ohmygod im gonna die theyre trying to get in my room they saw me down there i found a lev-
+
+# RLCraft_Defiled_Cult_OG
+sign.RLCraft_Defiled_Cult_OG.authorized_personal.text1=Authorized
+sign.RLCraft_Defiled_Cult_OG.authorized_personal.text2=Personal
+sign.RLCraft_Defiled_Cult_OG.authorized_personal.text3=Only
+sign.RLCraft_Defiled_Cult_OG.authorized_personal.text4=
+sign.RLCraft_Defiled_Cult_OG.miners_dormitory.text1=Miners
+sign.RLCraft_Defiled_Cult_OG.miners_dormitory.text2=Dormitory
+sign.RLCraft_Defiled_Cult_OG.miners_dormitory.text3=
+sign.RLCraft_Defiled_Cult_OG.miners_dormitory.text4=
+sign.RLCraft_Defiled_Cult_OG.storage_room.text1=Storage
+sign.RLCraft_Defiled_Cult_OG.storage_room.text2=Room
+sign.RLCraft_Defiled_Cult_OG.storage_room.text3=
+sign.RLCraft_Defiled_Cult_OG.storage_room.text4=
+sign.RLCraft_Defiled_Cult_OG.boss_room.text1=Boss
+sign.RLCraft_Defiled_Cult_OG.boss_room.text2=Room
+sign.RLCraft_Defiled_Cult_OG.boss_room.text3=
+sign.RLCraft_Defiled_Cult_OG.boss_room.text4=
+sign.RLCraft_Defiled_Cult_OG.manager_room.text1=Manager
+sign.RLCraft_Defiled_Cult_OG.manager_room.text2=Room
+sign.RLCraft_Defiled_Cult_OG.manager_room.text3=
+sign.RLCraft_Defiled_Cult_OG.manager_room.text4=
+book.RLCraft_Defiled_Cult_OG.diary.page.1=Day 1\nNew job as manager for this place. The location is a little bit odd, but the payment is good.\n\nDay 5\nSo far so good. Everyone is so friendly (maybe too friendly).
+book.RLCraft_Defiled_Cult_OG.diary.page.2=Day 15\nNew shipment of diamonds just arrived (aren't we supposed to be the ones mining them?). It's strange, but I'm not payed to care about it.
+book.RLCraft_Defiled_Cult_OG.diary.page.3=Day 21\nThe miners discovered some new type of jewel. We called it "scarlite". Never seen anything like it.  It's bright red, and equivalnt to diamond, but somehow I feel feel uneasy when holding.
+book.RLCraft_Defiled_Cult_OG.diary.page.4=Day 28\nSome visitors came to see the mine the other day (even thought I'm not allowed to go there), but they haven't returned yet.
+book.RLCraft_Defiled_Cult_OG.diary.page.5=Day 31\nThere is something going on on that mine: more visitors came and I never see them leave. I saw them transporting diamonds to the mine (for some reason), and they came back with more scarlite. I need to investigate.
+book.RLCraft_Defiled_Cult_OG.diary.page.6=Day 33\nI went to the mine while everyone was sleeping, but it's a dead end! This doesn't make sense! I will try to follow the miners tomorrow and see what they do down there.
+book.RLCraft_Defiled_Cult_OG.diary.page.7=mygod im gonna die they are tryin toget in ma room tokill me theysaw me down there there is a lever they are (this part can't be read because of the blood stains)
+
+# RLCraft_End_Bunker_Large
+book.RLCraft_End_Bunker_Large.supreme_protectionx.title=§eMaster Ancient Tome
+book.RLCraft_End_Bunker_Large.supreme_protectionx.lore.1=§bSupreme Protection X
+book.RLCraft_End_Bunker_Large.supreme_protectionx.lore.2=§6Right-Click to apply to all worn armor.
+#These are the "Rick Roll" song lyrics
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.1=We're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.2=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.3=We've known each other for so long\nYour heart's been aching, but you're too shy to say it (say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nAnd if you ask me how I'm feeling\nDon't tell me you're too blind to see
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.4=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.5=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.6=We've known each other for so long\nYour heart's been aching, but you're too shy to say it (to say it)\nInside, we both know what's been going on (going on)\nWe know the game and we're gonna play it\nI just wanna tell you how I'm feeling\nGotta make you understand
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.7=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.8=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+book.RLCraft_End_Bunker_Large.supreme_protectionx.page.9=Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you
+
+# RLCraft_End_Crystal_Shrine
+item.RLCraft_End_Crystal_Shrine.target_skull.name=Target
+sign.RLCraft_End_Crystal_Shrine.twitch_prime.text1=
+sign.RLCraft_End_Crystal_Shrine.twitch_prime.text2=Have you heard of
+sign.RLCraft_End_Crystal_Shrine.twitch_prime.text3=Twitch Prime?
+sign.RLCraft_End_Crystal_Shrine.twitch_prime.text4=
+sign.RLCraft_End_Crystal_Shrine.get_rekt.text1=
+sign.RLCraft_End_Crystal_Shrine.get_rekt.text2=Get
+sign.RLCraft_End_Crystal_Shrine.get_rekt.text3=Rekt
+sign.RLCraft_End_Crystal_Shrine.get_rekt.text4=
+
+# RLCraft_End_Fisher
+item.RLCraft_End_Fisher.pearlfish.name=Pearlfish
+item.RLCraft_End_Fisher.pearlfish.lore.1=§7Weight: 2
+item.RLCraft_End_Fisher.pearlfish.lore.2=§9§lDead
+item.RLCraft_End_Fisher.pearlfish2.name=Pearlfish
+item.RLCraft_End_Fisher.pearlfish2.lore.1=§7Weight: 1
+item.RLCraft_End_Fisher.pearlfish2.lore.2=§9§lDead
+item.RLCraft_End_Fisher.ender_synaceia.name=Ender Synanceia
+item.RLCraft_End_Fisher.ender_synaceia.lore.1=§7Weight: 9
+item.RLCraft_End_Fisher.ender_synaceia.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.ender_synaceia.lore.3=§9§lDead
+item.RLCraft_End_Fisher.ender_synaceia2.name=Ender Synanceia
+item.RLCraft_End_Fisher.ender_synaceia2.lore.1=§7Weight: 5
+item.RLCraft_End_Fisher.ender_synaceia2.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.ender_synaceia2.lore.3=§9§lDead
+item.RLCraft_End_Fisher.ender_synaceia3.name=Ender Synanceia
+item.RLCraft_End_Fisher.ender_synaceia3.lore.1=§7Weight: 8
+item.RLCraft_End_Fisher.ender_synaceia3.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.ender_synaceia3.lore.3=§9§lDead
+item.RLCraft_End_Fisher.ender_synaceia4.name=Ender Synanceia
+item.RLCraft_End_Fisher.ender_synaceia4.lore.1=§7Weight: 7
+item.RLCraft_End_Fisher.ender_synaceia4.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.ender_synaceia4.lore.3=§9§lDead
+item.RLCraft_End_Fisher.ender_synaceia5.name=Ender Synanceia
+item.RLCraft_End_Fisher.ender_synaceia5.lore.1=§7Weight: 13
+item.RLCraft_End_Fisher.ender_synaceia5.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.ender_synaceia5.lore.3=§9§lDead
+item.RLCraft_End_Fisher.chorus_koi.name=Chorus Koi
+item.RLCraft_End_Fisher.chorus_koi.lore.1=§7Weight: 5
+item.RLCraft_End_Fisher.chorus_koi.lore.2=§7Scale: §lAttached
+item.RLCraft_End_Fisher.chorus_koi.lore.3=§9§lDead
+
+# RLCraft_End_Flipped_Castle
+book.RLCraft_End_Flipped_Castle.directives.title=Directives
+book.RLCraft_End_Flipped_Castle.directives.page.1=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+book.RLCraft_End_Flipped_Castle.directives.page.2=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+book.RLCraft_End_Flipped_Castle.directives.page.3=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+book.RLCraft_End_Flipped_Castle.directives.page.4=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+book.RLCraft_End_Flipped_Castle.directives.page.5=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+book.RLCraft_End_Flipped_Castle.directives.page.6=Keep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.\nKeep It sealed.\nKeep It secret.\nKeep It safe.
+
+# RLCraft_LargeUndergroundTown
+sign.RLCraft_LargeUndergroundTown.mines.text1=
+sign.RLCraft_LargeUndergroundTown.mines.text2=<====
+sign.RLCraft_LargeUndergroundTown.mines.text3=MINES
+sign.RLCraft_LargeUndergroundTown.mines.text4=
+sign.RLCraft_LargeUndergroundTown.town.text1=
+sign.RLCraft_LargeUndergroundTown.town.text2=TOWN
+sign.RLCraft_LargeUndergroundTown.town.text3=====>
+sign.RLCraft_LargeUndergroundTown.town.text4=
+
+# RLCraft_NetherCity_Church
+sign.RLCraft_NetherCity_Church.church_damien.text1=Church
+sign.RLCraft_NetherCity_Church.church_damien.text2=of
+sign.RLCraft_NetherCity_Church.church_damien.text3=Damien
+sign.RLCraft_NetherCity_Church.church_damien.text4=Thorn
+
+# RLCraft_PhilbosaurusRex
+sign.RLCraft_PhilbosaurusRex.push_button.text1=PUSH BUTTON
+sign.RLCraft_PhilbosaurusRex.push_button.text2=TO YELL AT
+sign.RLCraft_PhilbosaurusRex.push_button.text3=CHARLES
+sign.RLCraft_PhilbosaurusRex.push_button.text4=
+
+# RLCraft_RuinsParkour
+book.RLCraft_RuinsParkour.collin_diary.page.1=My search for the Lost City may finally have come to an end!  It seems Cincinnasite from the Nether has certain magical properties when fused into various blocks.\n\nI seem to connect much more strongly with the dream world around Cincinnasite.  Why, is
+book.RLCraft_RuinsParkour.collin_diary.page.2=unknown, but I know I am closer than ever before.\n\nGlowstone seems to combine with Cincinnasite, creating this type of magical lantern...I can feel the energy emanating from it!  This has to be the final component I was missing.\n\nI'll experiment tonight
+book.RLCraft_RuinsParkour.collin_diary.page.3=and see what happens.  Eager to report my findings in the morning!\n\n-Collin
+
+# RLCraft_Stranding_VikingMansion
+sign.RLCraft_Stranding_VikingMansion.no_loot.text1=You found a
+sign.RLCraft_Stranding_VikingMansion.no_loot.text2=secret area!
+sign.RLCraft_Stranding_VikingMansion.no_loot.text3=
+sign.RLCraft_Stranding_VikingMansion.no_loot.text4=But no loot :)
+book.RLCraft_Stranding_VikingMansion.ice_dragon.page.1=That ice dragon nearby really needs to go\n\nIt's been picking us off one by one!
+book.RLCraft_Stranding_VikingMansion.password.page.1=The password is explosions
+book.RLCraft_Stranding_VikingMansion.plotting.page.1=Dave won't give me his bread\n\nFortunately he doesn't know I'm plotting against him, unless he happens to read this or something\n\nMwahaha...wait...why am I writing this down?
+book.RLCraft_Stranding_VikingMansion.pillaging.page.1=pillaged some villagers yesterday\n\ngood loot, lots of emeralds
+book.RLCraft_Stranding_VikingMansion.hungry.page.1=winter cold\n\nmust find warmth\n\nme hungry
+
+# RLCraft_SwampHut
+sign.RLCraft_SwampHut.snoopachu.text1=
+sign.RLCraft_SwampHut.snoopachu.text2=snoopachu
+sign.RLCraft_SwampHut.snoopachu.text3=was here
+sign.RLCraft_SwampHut.snoopachu.text4=
+
+# RLCraft_xKOSMOS42
+book.RLCraft_xKOSMOS42.collin_diary.page.1=An old shaman living in the mountains was able to aid me in my quest for the Lost City.  He told me the city resides in another dimension, with the only connection left to our world being through the realm of sleep.\n\nI'm not sure what that means exactly, 
+book.RLCraft_xKOSMOS42.collin_diary.page.2=he wouldn't tell me more, and seemed to be afraid for some reason.\n\nI've experimented with the power of the dream state before, it's an incredible thing.  Some say the dream world is another dimension in itself...there may actually be a way to connect to
+book.RLCraft_xKOSMOS42.collin_diary.page.3=the Lost City and pull yourself through!  I will continue my search...\n\n-Collin
+

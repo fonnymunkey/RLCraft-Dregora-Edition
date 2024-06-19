@@ -1,0 +1,8 @@
+# Missing lang keys
+tile.dynamictrees:oakbranchx.name=Oak Branch
+tile.dynamictrees:sprucebranchx.name=Spruce Branch
+tile.dynamictrees:junglebranchx.name=Jungle Branch
+tile.dynamictrees:darkoakbranchx.name=Dark Oak Branch
+tile.rustic:ironwoodbranchx.name=Ironwood Branch
+species.rustic:ironwood.name=Ironwood
+species.rustic:olive.name=Olive

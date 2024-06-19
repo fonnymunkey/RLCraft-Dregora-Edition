@@ -1,0 +1,79 @@
+## From Shivaxi's scripts
+# === Used for multiple items ===
+tooltip.scripts.onlycrafting=§4Only used for crafting!
+tooltip.scripts.weapon.steelbonus=§6+2 damage against Nether mobs and Fire elementals
+
+# === Advanced Fishing ===
+item.advanced-fishing.blazing_fishing_pole.name=Ancient Lava Fishing Rod
+
+# === Armor Underwear ===
+tooltip.scripts.ozzyliner.destroys=§4 Destroyed upon removal!
+
+# === Better Nether ===
+tile.bone_block.name=Smooth Bone Block
+
+# === Better Survival ===
+item.smallshield.name=Round Shield
+item.bigshield.name=Big Shield
+
+# === Bountiful Baubles ===
+tile.bountifulbaubles.reforger.name=Baubles Reforging Station
+item.bountifulbaubles.ringIron.name=Holy Ring
+tooltip.bountifulbaubles:amuletsinwrath=§5A trophy lost to time, reminiscent of another world.
+
+# === Craft Tweaker ===
+tooltip.contenttweaker:sentient_core=§6The flame of life shines strongly in it, almost horribly. The Core that fuels Evolved armor and weapons.
+tooltip.contenttweaker:blood_tear=§6A horrible tear, dropped by a very powerful parasite. It almost feels alive.
+
+# === Ice and Fire ===
+item.iceandfire.fishing_spear.name=Ancient Fishing Spear
+
+# === Minecraft ===
+item.fish.cod.raw.name=River Fish
+item.fish.salmon.raw.name=Mountain Fish
+item.fish.clownfish.raw.name=Tropical Fish
+item.fish.pufferfish.raw.name=Ocean Fish
+item.fish.cod.cooked.name=Cooked River Fish
+item.fish.salmon.cooked.name=Cooked Mountain Fish
+item.fishingRod.name=Ancient Fishing Rod
+item.saddle.name=Basic Saddle
+tile.button.name=Stone Button
+
+# === No Tree Punching ===
+item.notreepunching:rock.basalt.name=Basalt Rock
+tile.notreepunching:cobblestone.basalt.name=Basalt Cobblestone
+
+# === Quark ===
+tooltip.quark:ancient_tome=§6Use in off-hand to apply to matching enchanted item
+
+# === RLMixins ===
+tooltip.rlmixins:cleansing_talisman=§6Craft with any enchanted book to convert the book's enchantment to Curse Break
+item.scarlite_helmet.name=§4§kScarlite§r§4 Helmet
+item.scarlite_chestplate.name=§4§kScarlite§r§4 Chestplate
+item.scarlite_leggings.name=§4§kScarlite§r§4 Leggings
+item.scarlite_boots.name=§4§kScarlite§r§4 Boots
+
+# === Serene Seasons ===
+tooltip.sereneseasons:greenhouse_glass=§aAllows crops up to 7 blocks directly beneath to grow in any season
+
+# === Simple Difficulty ===
+tile.simpledifficulty:heater.name=Heating Coil
+tile.simpledifficulty:chiller.name=Cooling Coil
+item.simpledifficulty:wool_helmet.name=Wool Hood
+item.simpledifficulty:wool_chestplate.name=Wool Coat
+item.simpledifficulty:wool_leggings.name=Wool Leggings
+item.simpledifficulty:wool_boots.name=Wool Boots
+tooltip.simpledifficulty:wool_helmet=§4+2 Warmth
+tooltip.simpledifficulty:wool_chestplate=§4+2 Warmth
+tooltip.simpledifficulty:wool_leggings=§4+2 Warmth
+tooltip.simpledifficulty:wool_boots=§4+2 Warmth
+tooltip.simpledifficulty:ice_helmet=§3+2 Cooling
+tooltip.simpledifficulty:ice_chestplate=§3+2 Cooling
+tooltip.simpledifficulty:ice_leggings=§3+2 Cooling
+tooltip.simpledifficulty:ice_boots=§3+2 Cooling
+
+# === Varied Commodities ===
+item.heart.name=Demonic Heart
+tooltip.variedcommodities:heart=§aOne of many hearts dropped by Rahovart, still beating with demonic energy.
+item.skull.name=Corrupted Skull
+tooltip.variedcommodities:skull=§aOne of many skulls dropped by Asmodeus, the lost souls inside can still be heard screaming.

@@ -1,0 +1,21 @@
+# Banner patterns
+item.banner.base.white=White Base
+item.banner.base.orange=Orange Base
+item.banner.base.magenta=Magenta Base
+item.banner.base.light_blue=Light Blue Base
+item.banner.base.yellow=Yellow Base
+item.banner.base.lime=Lime Base
+item.banner.base.pink=Pink Base
+item.banner.base.gray=Gray Base
+item.banner.base.silver=Silver Base
+item.banner.base.cyan=Cyan Base
+item.banner.base.purple=Purple Base
+item.banner.base.blue=Blue Base
+item.banner.base.brown=Brown Base
+item.banner.base.green=Green Base
+item.banner.base.red=Red Base
+item.banner.base.black=Black Base
+
+# Entities
+entity.SpectralArrow.name=Spectral Arrow
+entity.TippedArrow.name=Tipped Arrow
