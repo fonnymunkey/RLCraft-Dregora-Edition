@@ -62,11 +62,6 @@
         },
         {
           "type": "item",
-          "name": "notreepunching:pottery/large_vessel",
-          "weight": 100
-        },
-        {
-          "type": "item",
           "name": "simpledifficulty:juice",
           "weight": 10,
           "functions": [

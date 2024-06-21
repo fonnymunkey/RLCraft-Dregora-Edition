@@ -545,6 +545,35 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 });
 
 
+// Equip airborne entities with NBT data
+//events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
+//
+//    if event.entity.world.isRemote() {return;}
+//    if (isNull(event.entity)) {return;}
+//    if (isNull(event.entity.definition)) {return;}
+//    if (isNull(event.entity.definition.id)) {return;}
+//    if (isNull(event.entity.definition.name)) {return;}
+//    if (isNull(event.entity.customName)) {return;}
+//    if (isNull(event.entity.nbt.ForgeData.SpawnedCheck)){event.entity.setNBT({SpawnedCheck: 0});}
+//
+//    if (event.entity.nbt.ForgeData.SpawnedCheck == 0){
+//
+//        print(event.entity.definition.name);
+//        if ((event.entity.customName == "iceking") && (event.entity.definition.name == "roc")) {
+//
+//            var iceking = <entity:lycanitesmobs:raiko>.createEntity(event.entityLivingBase.world);
+//            iceking.setPosition(event.entity.position);
+//            iceking.updateNBT({Age:10,AgeTicks:960357,Flying:1,Gender:1,Variant:3,ArmorHead:1,ArmorNeck:1,ArmorBody:1,ArmorTail:1,HasHomePosition:0,AgingDisabled:1});
+//            iceking.updateNBT({Passengers:[{id:"minecraft:wither_skeleton"}]});
+//            event.entityLivingBase.world.spawnEntity(iceking);
+//            event.entity.setDead();
+//        }
+//
+//        event.entity.setNBT({SpawnedCheck: 1});
+//    }
+//});
+
+
 // Entities spawned with bow have a 5% chance to randomly get a tipped arrow in offhand slot
 events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
@@ -917,7 +946,7 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
     if (!isNull(event.damageSource.getTrueSource())){
         if(!isNull(event.damageSource.getTrueSource().getCustomName())){
-            if(event.damageSource.getTrueSource().getCustomName() has "Dismounter"){
+            if((event.damageSource.getTrueSource().getCustomName() has "Dismounter") || (event.damageSource.getTrueSource().getCustomName() has "Dismounting")) {
                 if(event.entity.isRiding) {
                     event.entity.dismountRidingEntity();
                     event.entity.removePassengers();

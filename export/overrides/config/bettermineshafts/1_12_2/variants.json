@@ -65,6 +65,11 @@
           "HOT",
           "MESA",
           "SPARSE"
+        ],
+        [
+          "CANYON",
+          "HOT",
+          "DEAD"
         ]
       ],
       "mainSelector": {

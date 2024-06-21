@@ -1,0 +1,535 @@
+{
+  "pools": [
+    {
+      "name": "Health Potion",
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "firstaid:morphine",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Ibuprofen\",Lore:[\"Helps against back pain!\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:healing\",display:{Name:\"Joint Lube!\",Lore:[\"Helps against joint pain!\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "roughtweaks:salve",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:healing\",display:{Name:\"Anti Aging Creme\",Lore:[\"Not just a cosmetic!\"]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Vinyl",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:record_13",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - 13 Vinyl!!!!!\",Lore:[\"When night falls and you are in the city biome...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_cat",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - cat Vinyl!!!!!\",Lore:[\"With the Sun worshippers in the mines!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_blocks",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - blocks Vinyl!!!!!\",Lore:[\"An uninterrupted mining adventure!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_chirp",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - chirp Vinyl!!!!!\",Lore:[\"Rave in the City of Origins!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_far",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - far Vinyl!!!!!\",Lore:[\"When you finally find the stronghold!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mall",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - mall Vinyl!!!!!\",Lore:[\"After you've completed RLCraft - Dregora.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_mellohi",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - mellohi Vinyl!!!!!\",Lore:[\"Some random Dregora encounter creeping up on you.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_stal",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - stal Vinyl!!!!!\",Lore:[\"After you've gotten killed by a villager... Yeah you know which one.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_strad",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Strad Vinyl!!!!!\",Lore:[\"When things finally go well and you found a gem trader!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_ward",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Ward Vinyl!!!!!\",Lore:[\"A new chance after getting defeated by the Corruption!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_11",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - 11 Vinyl!!!!!\",Lore:[\"In the Brutal Tower...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:record_wait",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Wait Vinyl!!!!!\",Lore:[\"Stumbling upon the cool structure at the center of the world!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "biomesoplenty:record_wanderer",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Tim Rurkowski - Wanderer Vinyl!!!!!\",Lore:[\"Finding the Spring dunes below the desert.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_calm1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Minecraft Vinyl!!!!!\",Lore:[\"The start of it all.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_calm2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Clark Vinyl!!!!!\",Lore:[\"Morning comes as you wander through the plains barely alive from last night's encounters.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_calm3",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Sweden Vinyl!!!!!\",Lore:[\"After having traveled a thousand and by the power of 5 blocks.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_hal1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Subwoofer Lullaby Vinyl!!!!!\",Lore:[\"As the sun sets and you are within your base.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_hal2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Living Mice Vinyl!!!!!\",Lore:[\"Sunrise after you have beaten the new medusa temple early stage.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_hal3",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Haggstrom Vinyl!!!!!\",Lore:[\"Warm at the fire while dragons roam about.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_hal4",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Danny Vinyl!!!!!\",Lore:[\"As you discover the new lands beyond 10.000 blocks.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nuance1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Key Vinyl!!!!!\",Lore:[\"For the Legendary loot you need a luck poison.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nuance2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Oxygéne Vinyl!!!!!\",Lore:[\"Lands of Tranquility.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_piano1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Dry Hands Vinyl!!!!!\",Lore:[\"Nostalgia RL-2020 and Dregora-2014\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_piano2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Wet Hands Vinyl!!!!!\",Lore:[\"That moment where you decide your 20th playthrough for this version is enough.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_piano3",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Mice on Venus Vinyl!!!!!\",Lore:[\"There's a mice on venus and Shiv decides to throw him a Cheese-it <3\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Biome Fest Vinyl!!!!!\",Lore:[\"Eight-Hundred-and-Twenty-Six and counting biomes!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Blind Spots Vinyl!!!!!\",Lore:[\"As you venture below the ground and realize what you've missed.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative3",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Haunt Muskie Vinyl!!!!!\",Lore:[\"Above the clouds on your Dragon Mount.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative4",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Aria math Vinyl!!!!!\",Lore:[\"Discovering the new post-apocalyptic ruins.\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative5",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Dreiton Vinyl!!!!!\",Lore:[\"Below the Underworld and the Quarries\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_creative6",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Taswell Vinyl!!!!!\",Lore:[\"Below the Flower Plains...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nether1",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Concrete Halls Vinyl!!!!!\",Lore:[\"Another Dimension...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nether2",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Dead Voxel Vinyl!!!!!\",Lore:[\"At the edge of the Abyssal Rift\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nether3",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Warmth Vinyl!!!!!\",Lore:[\"The moment in which you realize you need more hearts and have to mine for them...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_nether4",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Ballad of the Cats Vinyl!!!!!\",Lore:[\"Underneath\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_menu1",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Mutation Vinyl!!!!!\",Lore:[\"As you embark on your adventure!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_menu2",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Moog City 2 Vinyl!!!!!\",Lore:[\"When you realize the cities with streets contain wealth beyond your dreams!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_menu3",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - Beginning 2 Vinyl!!!!!\",Lore:[\"As you piece together Dregora's lore from the books you find...\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "charm:record_menu4",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"C418 - FLoating Trees Vinyl!!!!!\",Lore:[\"When you finally start noting book coordinates and find the kingdom of Dearoc!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "pigstep:pigstep",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Lena Raine - Pigstep Vinyl!!!!!\",Lore:[\"Yeah, this one is VERY rare, you lucker!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 5}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "pools": [
+    {
+      "name": "Steel Armor",
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "lycanitesmobs:battle_burrito",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Cheese-it Wrap\",Lore:[\"Totally Delicious Cheese-it Wrap!\"]}}"
+            },
+            {"function": "enchant_with_levels","levels": 10}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shivaxi Golden Sneakers",
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_boots",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Shiv's Golden Disco Boots\",Lore:[\"Aww... The battery is depleted ☹\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10}
+          ]
+        }
+      ]
+    }
+  ]
+}

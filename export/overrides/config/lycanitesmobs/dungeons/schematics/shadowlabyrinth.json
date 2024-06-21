@@ -12,11 +12,17 @@
         0
       ],
       "dimensionListType": "whitelist",
+      "biomeIds": [
+        "openterraingenerator:overworld_abyssal_rift"
+      ],
+      "biomeIdListType": "blacklist",
       "biomeTags": [
         "spooky",
         "mountain",
         "swamp",
-        "-canyon"
+        "-canyon",
+        "-parasite",
+        "-void"
       ],
       "biomeTagListType": "whitelist"
     }

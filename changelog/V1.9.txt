@@ -329,110 +329,60 @@ Fixed/Changed/Added:
 - Kysosis needs 2x more damage
 - overseer decrease spawnrange
 - Ferals at developer
+- Add flying entities to DregoraRL
+- Add spawneggs to charm crate loottables
+- Updated Underworld biome to have more foilage and mud+bop dirt instead of sand for top layers
+- Added Entities: SussyBerian & EyeNuts & Dragon Steel Knight (drops Dregora Steel) to Random Encounters
+- Changed normal to I&F RLC spawners for shivaxi and gatekeeper
+- Removed big tree from recurrent complex and added it floating under balloons in sky above forest and swamp biomes
+- Added Not Kotlin (OP & big sized kobalt) to random spawns
+- fixed numerous smaller issues causing some resources to not spawn.
+- added missing stone_weapons loot table
 
 Underneath todo
+- fixed fog and shader issue
+- fixed citydestructor eating away stone
 - Reupload Underneath (movement factor changed from 4 to 1)
 - Moved low chests from 55-65 to 45-60
+- added biomes: Ancient Rainforest RM, Ancient Rainforest Border RM, Ancient Rainforest Isle RM
 
 Dregora todo
-+ Underworld Biome could use some dirt patched with red trees on them
-+ Add flying entities to DregoraRL (10 for each biome group)
-- Ice/Cold
-- Jungle
-- Ocean
-- Swamp
-- Desert
-- Wastelands
-- Fungal
-- Vikings
-- Bruh
-- Temperate
-- Mountains (Desert)
-- Mountains (Cold/Ice)
-- Mountains (Jungle)
-- Mountains (Temperate)
-+ CHEFVAXITON (do hunger arrow) all glitter gold set
-
-Flying Entities Mounts:
-Hippo
-Amphi
-Roc
-Raiko
-Morock
-Quetzo
-Ignibus
-
-Stymp (AirGang Squad)
-Cockatrice (Squad of Cocks)
-Vespid (Swarm)
-Argus (Chaos Squad?)
-
-FDragon (small)
-IDragon (small)
-LDragon (small)
-
-Argus
-Wraith
-Vespid
-
-Banshee
-Spectre
-Balayang
-
-        "armorboots": ["iceandfire:armor_silver_metal_boots"],
-        "armorlegs": ["iceandfire:forest_troll_leather_leggings"],
-        "armorchest": ["iceandfire:armor_white_chestplate"],
-        "armorhelmet": ["iceandfire:armor_silver_metal_helmet"],
-        "helditem": ["iceandfire:dragonbone_bow"],
-
-
-
-
-
-
-
-        {Health:263.0f,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.085f,0.085f],Age:0,ForcedAge:0,Hunger:50,AgeTicks:697369,Gender:1b,Variant:3,Sleeping:0b,Hovering:0b,Flying:0b,ArmorHead:0,ArmorNeck:0,ArmorBody:0,ArmorTail:0,DeathStage:0,HasHomePosition:0b,AgingDisabled:1b,Passengers:[{id:"minecraft:wither_skeleton",CustomName:"Ice King",CustomNameVisible:1,HandItems:[{id:"minecraft:bow",Count:1},{id:"minecraft:tipped_arrow",tag:{Potion:"potioncore:strong_potion_sickness"},Count:1}],ArmorItems:[{id:"minecraft:diamond_boots",Count:1},{id:"minecraft:diamond_leggings",Count:1},{id:"minecraft:diamond_chestplate",Count:1},{id:"minecraft:diamond_helmet",Count:1}]}]}
-
-
-
-
-
-
-          {
-    "mob": "minecraft:wither_skeleton",
-    "result": "default",
-    "onjoin": true,
-    "healthmultiply": 200,
-    "seesky": true,
-    "customname": "Ice King",
-    "armorboots": ["iceandfire:armor_silver_metal_boots"],
-    "armorlegs": ["iceandfire:forest_troll_leather_leggings"],
-    "armorchest": ["iceandfire:armor_white_chestplate"],
-    "armorhelmet": ["iceandfire:armor_silver_metal_helmet"],
-    "helditem": ["iceandfire:dragonbone_bow"],
-    "nbt": {CustomNameVisible:1,HandItems:[{id:"iceandfire:dragonbone_bow",Count:1},{id:"minecraft:tipped_arrow",tag:{Potion:"potioncore:strong_potion_sickness"},Count:1}]}
-  },
-
-
-+ If curse break potion on entity, does entity drop sentient gear?
-+ Fix some of the Dregora performance issues (remove resources from biomes)
++ Add deadloottables to op flying entities
 + File cleanup, remove .zip files
 + make tower rare
-+ Check OTG Errors at startup
-+ Remove C&F removed items, change vanilla spawners into C&F spawners (shivaxi & gatekeeper)
 + test brutal tower after C&F update
 
+Dregora Potential todo:
+P_SmallShip (X) update to bo4 and add to recurrent spawngroup
 
-Optional todo:
-+ Add a Jungle Biome
-+ Remove big tree from recurrent complex and add it floating under balloons in sky above beach, ocean and plains biomes
++ Fish's Undead Rising
+- blacklist neat Mimicrab
+- mod_lavacow:bonesword needs dragon bone as hilt
+- mod_lavacow:bonesword needs 8 attack and 4 magic
+- mod_lavacow:frozenthigh needs 6 gathering and 8 attack
+- mod_lavacow:bonesword change damage cap from 10000 to 5
+- mod_lavacow:bonesword change % cap from from 5 to 10
+- change drop rate of intestine from 4 to 2
+- ban mod_lavacow:goldenheart
+- ban mod_lavacow:mootenheart
+- ban mod_lavacow:potion_of_mooten_lava
+- mod_lavacow:moltenaxe 8 attack 4 magic
+- mod_lavacow:moltenhammer 16 attack 8 magic
+- add swine potion effect: always hunger 3
+- mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
+- mod_lavacow:sludge_wand needs 4 magic
+- mod_lavacow:war needs 24 attack, 12 agility
+- change crafting recipes, everything that contains molten meat should also contain fire dragon blood potion
+- remove golden heart
 
 Potentially Add mods Backlog:
-+ Special Mobs
 + Spice of Life
 + Food Funk
 
 Backlog:
++ add hopper trap at zombie farm
++ Fix vines in Ancient Rainforest RM
++ Add Shame Effect to entity in the underground club
 + distrance traveled divided by time traveled = xp multiplier (more you travel, more you gain xp)
 + per enchantment on armor = - 10% armor max (on hit player) (total enchantments armor)
 + make mineshafts in canyons more common?
@@ -609,8 +559,13 @@ RLCraft Done:
 - turn off skeleton walking animation that borks legs
 - made infernals drop /2 silver
 - Added Copper to more loottables
+- added additional spawncrate spawn egg loottable for DregoraRL ruins structures
+- Fixed some dynamictrees falling without their leaves attached
 
 RLCraft todo:
++ Add Kotlin Clue Script & other fun script locked behind a on/off switch for each developer.
++ Fishing spawns 1 size sea serpent with lycanite spawn event
++ Add charm crates with spawnegg to fishing loot table?
 + Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings once it gets uploaded to curse)
 + Armor rebalance:
 ArmorSets:
@@ -624,12 +579,14 @@ Bronze: lvl 4 ( none but slightly more dmg )
 Iron: lvl 10 ( none )
 
 + Add Underneath v1.1 to Manifest.json
-+ P_TreeDungeon (X) Remove (And Later re-add + balloons)
+
+
+
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + Update to new C&F and add special spawners for the Dragon & Shivaxi
 + printjars executable
-+ Dregora Versioning Change:   DregoraRL 1.12.2 Release v2.9.3 - DRL 1.9
++ Dregora Versioning Change:   DregoraRL v1.9 - MC 1.12.2 - RLC v2.9.3
 
 
 Optional:
@@ -640,7 +597,6 @@ Optional:
 + crafttweaker wake up player in night (multiplier check and wake morning)
 + thunder script crafttweaker lignting with armor (isMaterial)
 + Villager Enchantment Book nerf (Add Item X to dungeons and change villager trades on interact)
-
 
 RLCraft Backlog:
 + remove or retain better biome blend?
@@ -668,9 +624,15 @@ OTG todo:
 OTG Backlog:
 + backport 50ms check from 1.16.5 to 1.12.2 for easier performance optimization on 1.12.2
 
-OTG Done: (awaiting public release)
-- Fix An Unknown error occured while attempting to perform this command
+OTG Done:
+- Fix An Unknown error occured while attempting to perform any command in some cases
 - Fix Crash LayerMixing for OTG
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                     SAFEKEEPING STUFF BELOW                     | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
 
 boss 1: 2x Spider Boss (huge trite)
 boss 2: 1x Lightning Dragon
@@ -687,11 +649,9 @@ lycanitesmobs:calpod on lycanitesmobs:darkling
 
 
 /summon minecraft:cave_spider ~ ~1 ~ {Passengers:[{id:"minecraft:slime",Size:3}]}
-
 /summon lycanitesmobs:acidglob ~ ~1 ~ {Size:0.1,Passengers:[{id:"minecraft:slime",Size:3}]}
 /summon lycanitesmobs:tarantula ~ ~1 ~ {Size:0.1,Passengers:[{id:"minecraft:slime",Size:3}]}
 /summon minecraft:spider ~ ~1 ~ {Size:0.2,Passengers:[{id:"minecraft:slime",Size:3}]}
-
 /setblock ~ ~-1 ~ mob_spawner 0 replace {SpawnCount:1,MaxNearbyEntities:6,SpawnRange:4,Delay:20,MinSpawnDelay:20,MaxSpawnDelay:20,RequiredPlayerRange:18,SpawnData:{id:"defiledlands:slime_defiled"}}
 
 Proactive snare flee
@@ -974,3 +934,82 @@ List of CANYON biomes:
             overworld_dregora_waterfall_verrylowborder
             overworld_dregora_drysavannaplainscompat
             overworld_dregora_drysavannaplainsbordercompat
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            Encounters                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+#Wastelands Encounters
+CustomStructure(Asher,100.0,Dust_Scrapper,100.0,Launcher,100.0,Piercing_Duster,100.0,Scrapper,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#City Encounters
+CustomStructure(Banisher,100.0,Corroder,100.0,Decayer,100.0,Dislocator,100.0,Dismounting_Raider,100.0,Relocator,100.0)
+
+#Defiled Encounters
+CustomStructure(Defiled_King,100.0,Detonator,100.0,Executioner,100.0,Morbid_Skeleton,100.0,Umbrium_Knight,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Desert Encounters
+CustomStructure(Duster,100.0,Red_Assassin,Ruster,100.0,Sampler,100.0,Wanderer,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Ice Encounters
+CustomStructure(Aerial_Dismounter,100.0,Frigid_Warper,100.0,Ice_King,100.0,NumbingTon,100.0,Piercing_Stray,100.0,Unfroster,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Jungle Encounters
+CustomStructure(Aerial_Templar,100.0,Crocodile_Skelly,100.0,Decaying_Veteran,100.0,Flying_Rags,100.0,Knightly_Dismounter,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Ocean Encounters
+CustomStructure(Capiton,100.0,Dismounting_Commotone,100.0,LuffyTon,100.0,QuartermasTon,100.0,Skelemate,100.0,Skeleswain,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Parasite Encounters
+CustomStructure(Dismisser,100.0,Dismounter,100.0,Grounder,100.0,Inflicter,100.0,Perplexer,100.0)
+
+#Swamp Encounters
+CustomStructure(Crone,100.0,HagTon,100.0,PlagueTon,100.0,Rancid_Skeleton,100.0,Sackhead,100.0,Swampton,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Temperate Encounters
+CustomStructure(Down_Caster,100.0,Fumbler,100.0,Impaler,100.0,Impeder,100.0,Spinner,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+#Vikings Encounters
+CustomStructure(Jotunn,100.0,LokiTon,100.0,Surt,100.0,ThorTon,100.0,Tyr,100.0)
+
+#Wastelands Encounters
+CustomStructure(Asher,100.0,Dust_Scrapper,100.0,Launcher,100.0,Piercing_Duster,100.0,Scrapper,100.0)
+CustomStructure(Aimton,100.0,Al_Capone,100.0,Bufffaton_Bill,100.0,ChevaxiTon,100.0,GokuTon,100.0,JesterTon,100.0,OldMan,100.0,Tax_Collector,100.0)
+
+Flying Entities Mounts:
+iceandfire:hippogryph
+iceandfire:amphithere
+lycanitesmobs:roc
+lycanitesmobs:raiko
+lycanitesmobs:morock
+lycanitesmobs:quetzodracl
+lycanitesmobs:ignibus
+lycanitesmobs:cockatrice
+
+iceandfire:stymphalianbird (AirGang Squad)
+lycanitesmobs:cockatrice (Squad of Cocks)
+lycanitesmobs:vespid (Swarm)
+lycanitesmobs:argus (Chaos Squad?)
+
+iceandfire:firedragon (small)
+iceandfire:icedragon (small)
+iceandfire:lightningdragon (small)
+
+lycanitesmobs:argus
+lycanitesmobs:wraith
+lycanitesmobs:vespid
+
+lycanitesmobs:banshee
+lycanitesmobs:spectre
+lycanitesmobs:balayang

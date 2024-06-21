@@ -184,14 +184,6 @@
       ]
     }
   ],
-  "dimensions": [
-    {
-      "dimId": 3,
-      "weather": true,
-      "fog": true,
-      "haze": true
-    }
-  ],
   "items": {
     "TOOL": [
       "variedcommodities:pendant",

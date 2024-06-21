@@ -1,0 +1,178 @@
+{
+  "pools": [
+    {
+      "name": "Steel Armor",
+      "rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_helmet",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Degraded Dragon Iron Helmet\",Lore:[\"Dragon Iron with added Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 1.0,"operation": "addition","slot": ["head"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_chestplate",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Degraded Dragon Iron Helmet\",Lore:[\"Dragon Iron with added Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 1.0,"operation": "addition","slot": ["chest"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_leggings",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Degraded Dragon Iron Helmet\",Lore:[\"Dragon Iron with added Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 1.0,"operation": "addition","slot": ["legs"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_boots",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Degraded Dragon Iron Boots\",Lore:[\"Dragon Iron with added Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 1.0,"operation": "addition","slot": ["feet"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_helmet",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Dregora Steel Helmet\",Lore:[\"Fancy Epic Dregora Steel with added Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 2.0,"operation": "addition","slot": ["head"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_chestplate",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Dregora Steel Chestplate\",Lore:[\"Fancy Epic Dregora Steel with high Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 2.0,"operation": "addition","slot": ["chest"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_leggings",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Dregora Steel Leggings\",Lore:[\"Fancy Epic Dregora Steel with high Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 2.0,"operation": "addition","slot": ["legs"]}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "rlmixins:steel_boots",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Dregora Steel Boots\",Lore:[\"Fancy Epic Dregora Steel with high Armor! §mToughness\"]}}"
+            },
+            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {"attribute": "generic.armorToughness","name": "armorToughness","amount": 2.0,"operation": "addition","slot": ["feet"]}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
