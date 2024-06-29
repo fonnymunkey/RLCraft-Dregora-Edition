@@ -1987,7 +1987,7 @@ recipes.addShaped("lolarecipe137",<bountifulbaubles:amuletsingluttony>,
 
 recipes.addShaped("lolarecipe138",<variedcommodities:holyhandgrenade>,
  [[<minecraft:gold_ingot>,<bountifulbaubles:ringiron>,<minecraft:gold_ingot>],
-  [<minecraft:quartz_block>,<bountifulbaubles:amuletcross>,<minecraft:quartz_block>],
+  [<minecraft:quartz_block>,<mod_lavacow:holy_grenade>,<minecraft:quartz_block>],
   [<minecraft:gold_ingot>,<minecraft:quartz_block>,<minecraft:gold_ingot>]]);
 
 recipes.addShaped("lolarecipe139",<defiledlands:stone_defiled_stairs>*4,

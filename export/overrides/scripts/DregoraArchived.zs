@@ -1,3 +1,22 @@
+//import loottweaker.LootTweaker;
+//import loottweaker.vanilla.loot.LootTable;
+//import loottweaker.vanilla.loot.LootPool;
+//import loottweaker.vanilla.loot.Conditions;
+//import loottweaker.vanilla.loot.Functions;
+
+//val fmbFishingTable = LootTweaker.getTable("fishingmadebetter:fishing_combined");
+//val rlcraftFishingRoulette = fmbFishingTable.addPool("rlcraftfishingroulette", 1, 1, 0, 0);
+//
+//rlcraftFishingRoulette.addItemEntry(
+//    <minecraft:spawn_egg>, 100, 0,
+//    [
+//        // Makes item unbreakable via NBT
+//        Functions.setNBT({EntityTag:{id:"minecraft:skeleton"}})
+//    ],
+//    [] // Arbitrary value for example purposes
+//);
+
+
 //=================================
 //DREGORARL DISCARDED SCRIPTS AND EVENTS, FOR REFERENCE & FUTURE USE
 //=================================

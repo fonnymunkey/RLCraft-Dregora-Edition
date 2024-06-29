@@ -338,6 +338,65 @@ Fixed/Changed/Added:
 - Added Not Kotlin (OP & big sized kobalt) to random spawns
 - fixed numerous smaller issues causing some resources to not spawn.
 - added missing stone_weapons loot table
+- Added the spoiled effect to dev by adding a entity and also equipped entity with ban hammer
+- Fish's Undead Rising tasks:
+    - blacklisted neat mimicrab
+    - mod_lavacow:bonesword needs 8 attack and 4 magic
+    - mod_lavacow:frozenthigh needs 6 gathering and 8 attack
+    - mod_lavacow:moltenaxe 8 attack 4 magic
+    - mod_lavacow:moltenhammer 16 attack 8 magic
+    - mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
+    - mod_lavacow:famine needs 16 attack and 8 gathering
+    - mod_lavacow:sludge_wand needs 4 magic
+    - mod_lavacow:war needs 24 attack, 12 agility
+    - mod_lavacow:vespa_dagger needs 6 attack
+    - swine armor set needs 8 defence & 2 gathering
+    - molten armor needs 16 defence and 8 magic
+    - give mod_lavacow:beast_claw 16 attack
+    - mod_lavacow:undertaker_shovel 16 magic, 8 attack, gathering 8
+    - give weta set 8 defense 4 agility
+    - mod_lavacow:vespa_shield 8 defense
+    - mod_lavacow:frozen_dagger needs 8 attack
+    - mod_lavacow:spectral_dagger needs 8 magic
+    - mod_lavacow:skeletonking_crown needs 16 defence and 16 magic
+    - Famine set defence 16 + 8 magic + 4 gathering
+    - mod_lavacow:bonesword change damage cap from 10000 to 5
+    - mod_lavacow:bonesword change % cap from from 5 to 10
+    - change drop rate of intestine from 4 to 2
+    - set bowl stack to false
+    - mod_lavacow:bonesword needs dragon bone as hilt
+    - mod_lavacow:frozen_dagger wither bone recipe instead of stick
+    - mod_lavacow:spectral_dagger wither bone recipe instead of stick
+    - molten frying pan, hammer and axe needs firelily in recipe
+    - change crafting recipe holy handgrenade and switch cross necklace for inferior holy handgrenade
+    - Rename holy grenade to Inferior Holy Grenade + add recipe 24 quartz 16 gunpowder 8 holy sludge 1 cross necklace = 16 inferior holy grenades
+    - add recipe to craft halo necklace into spectral silt
+    - add recipe to craft golden heart into spectral silt
+    - Sonic Bomb needs Assimilated Heart, soul powder, chitin and shriek cord
+    - Bone stew change into Dragon Bone Stew and change recipe to contain Dragon Bone
+    - add extra description to mod_lavacow:raven_whistle (Ravens can be tamed using fermented spider eye or parasites)
+    - change tooltip mod_lavacow:mootenheart
+    - Ghost jelly added 1/4 spectral silt to crafting
+    - Famine set (any 2) debuff 50% health + hunger
+    - add swine armor effect: always hunger 3
+    - Molten frying pan added to blacklist disenchanter
+    - mod_lavacow:vespa_dagger added disenchanter blacklist
+    - blacklist mimicrab from stoning
+    - blacklist raven from stoning
+    - decreased mimicrab spawnrate at player death from 250 to 100
+    - added mod_lavacow:zombiepiranha & mod_lavacow:mimic to blight/champion/infernal blacklists
+    - ban mod_lavacow:thorn_shooter
+    - ban mod_lavacow:potion_of_mooten_lava
+    - blacklist mod_lavacow:piranhalauncher
+    - blacklist mod_lavacow:cursed_bandage
+    - blacklist mod_lavacow:skeletonking_mace
+    - blacklist mod_lavacow:weta_hoe
+    - adjusted skeleton king loottable (add on spawn?)
+    - add missing tooltips for fish undead items
+    - added entities ghost, mimic and vindicator to dreamcatcher
+    - remove Deathtouch Potion
+    - Customized the loottable for skeleton king
+- added mod Potion Descriptions (Forge)
 
 Underneath todo
 - fixed fog and shader issue
@@ -346,40 +405,39 @@ Underneath todo
 - Moved low chests from 55-65 to 45-60
 - added biomes: Ancient Rainforest RM, Ancient Rainforest Border RM, Ancient Rainforest Isle RM
 
+Fish's Undead Rising todo:
+
+
 Dregora todo
-+ Add deadloottables to op flying entities
++ make golden bookwyrms less rare (about 1/4)
 + File cleanup, remove .zip files
 + make tower rare
 + test brutal tower after C&F update
++ add spectral moss & spectral fern somehow in end
 
 Dregora Potential todo:
 P_SmallShip (X) update to bo4 and add to recurrent spawngroup
 
-+ Fish's Undead Rising
-- blacklist neat Mimicrab
-- mod_lavacow:bonesword needs dragon bone as hilt
-- mod_lavacow:bonesword needs 8 attack and 4 magic
-- mod_lavacow:frozenthigh needs 6 gathering and 8 attack
-- mod_lavacow:bonesword change damage cap from 10000 to 5
-- mod_lavacow:bonesword change % cap from from 5 to 10
-- change drop rate of intestine from 4 to 2
-- ban mod_lavacow:goldenheart
-- ban mod_lavacow:mootenheart
-- ban mod_lavacow:potion_of_mooten_lava
-- mod_lavacow:moltenaxe 8 attack 4 magic
-- mod_lavacow:moltenhammer 16 attack 8 magic
-- add swine potion effect: always hunger 3
-- mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
-- mod_lavacow:sludge_wand needs 4 magic
-- mod_lavacow:war needs 24 attack, 12 agility
-- change crafting recipes, everything that contains molten meat should also contain fire dragon blood potion
-- remove golden heart
-
 Potentially Add mods Backlog:
+
 + Spice of Life
 + Food Funk
 
 Backlog:
++ Ore redistribution:
+Oceans: 3x more lapis
+Mountains: 2x more emerald
+Birch Forests: 2x more iron
+Deserts: 3x more redstone
+Savanna: 2x more gold
+Mesa: 3x more gold
+Temperate Forest:
+Swamps: 3x more coal
+Jungle: 1.5x more gems
+plains: default
+
+
++ Add deadloottables to op flying entities
 + add hopper trap at zombie farm
 + Fix vines in Ancient Rainforest RM
 + Add Shame Effect to entity in the underground club
@@ -561,27 +619,17 @@ RLCraft Done:
 - Added Copper to more loottables
 - added additional spawncrate spawn egg loottable for DregoraRL ruins structures
 - Fixed some dynamictrees falling without their leaves attached
+- Fishing spawns a sea serpent with lycanite spawn event
+- Armor rebalance: Copper: lvl 4 ( 25% speed + xat:lightning_resistance ) Storm Rush
+- Added fish undead to legendary tooltips
+- added mod Potion Descriptions (Forge) to manifest
 
 RLCraft todo:
++ artifacts:mimic and mod_lavacow:mimic need to be added to lycanites blacklist
 + Add Kotlin Clue Script & other fun script locked behind a on/off switch for each developer.
-+ Fishing spawns 1 size sea serpent with lycanite spawn event
-+ Add charm crates with spawnegg to fishing loot table?
++ Add charm crates with spawn egg to fishing loot table?
 + Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings once it gets uploaded to curse)
-+ Armor rebalance:
-ArmorSets:
-Copper: lvl 4 ( 25% speed + xat:lightning_resistance ) Storm Rush
-Chain: lvl 6 ( arrow prot: boot: 5%, leg: 10%, chest: 15%, head 5% )
-Iron: lvl 8 ( none )
-
-Weapons:
-Copper: lvl 4 ( none )
-Bronze: lvl 4 ( none but slightly more dmg )
-Iron: lvl 10 ( none )
-
 + Add Underneath v1.1 to Manifest.json
-
-
-
 + add screens in menu
 + add screen in loading screen (shiv but at dregora landscape)
 + Update to new C&F and add special spawners for the Dragon & Shivaxi
@@ -590,6 +638,7 @@ Iron: lvl 10 ( none )
 
 
 Optional:
++ Remake minecart recipe and possibly increase speed rails (add another mod?) & make ice melt in the nether
 + Ragnarok Event
 + Make Desert cold at night
 + Attack on RLCraft Event

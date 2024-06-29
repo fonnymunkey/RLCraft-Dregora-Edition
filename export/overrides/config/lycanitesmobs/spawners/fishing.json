@@ -52,10 +52,14 @@
     },
     {
       "mobId": "lycanitesmobs:roa",
-      "weight": 1
+      "weight": 2
     },
     {
       "mobId": "lycanitesmobs:skylus",
+      "weight": 2
+    },
+    {
+      "mobId": "iceandfire:seaserpent",
       "weight": 1
     }
   ]

@@ -12,7 +12,7 @@
   "manifestVersion": 1,
   "name": "RLCraft Dv1.8",
   "version": "2.9.3",
-  "author": "Shivaxi",
+  "author": "Shivaxi & Eagle",
   "files": [
     {
       "projectID": 286382,
@@ -692,6 +692,11 @@
     {
       "projectID": 971247,
       "fileID": 5346789,
+      "required": true
+    },
+    {
+      "projectID": 321139,
+      "fileID": 5107583,
       "required": true
     },
     {

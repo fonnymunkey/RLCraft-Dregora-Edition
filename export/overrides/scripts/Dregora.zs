@@ -93,6 +93,150 @@ var BasaltHard as IItemStack = <quark:basalt_wall>;
 BasaltHard.hardness = 10;
 
 //=================================
+//FISH UNDEAD RECIPES & NAME CHANGES
+//=================================
+
+val Deathtouch = <minecraft:potion>.withTag({Potion: "potioncore:repair"});
+
+// Removed Items
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
+recipes.remove(<mod_lavacow:cactus_thorn>);
+recipes.remove(<mod_lavacow:thorn_shooter>);
+recipes.remove(<mod_lavacow:potion_of_mooten_lava>);
+recipes.remove(<mod_lavacow:cursed_bandage>);
+recipes.remove(<mod_lavacow:weta_hoe>);
+
+//recipes.remove(<mod_lavacow:skeletonking_mace>); - Does not have a recipe blacklisted through JEI
+//recipes.remove(<mod_lavacow:emblem_of_king>); - Does not have a recipe blacklisted through JEI
+
+// Name Changes
+<mod_lavacow:skeletonking_mace>.displayName = "Ban Hammer";
+<mod_lavacow:holy_grenade>.displayName = "Inferior Holy Grenade";
+<mod_lavacow:bonestew>.displayName = "Dragon Bone Stew";
+<mod_lavacow:dreamcatcher>.displayName = "Cursed Dream Catcher";
+
+// Obtained from tooltips & names
+<mod_lavacow:acidicheart>.displayName = "Acidic Osvermis/Mummy Heart";
+<mod_lavacow:feather_black>.displayName = "Black Raven/Penghoul Feathers";
+<mod_lavacow:burntovipositor>.displayName = "Burnt Salamander Ovipositor";
+<mod_lavacow:burntovipositor>.displayName = "Foul Foglet/Ithaqua Bristles";
+<mod_lavacow:hyphae>.displayName = "Mycosis Hyphae";
+<mod_lavacow:kings_crown>.addTooltip("The True Desert's Treasure");
+<mod_lavacow:hatred_shard>.addTooltip("The memory of a King and all those who were slain in his name.");
+<mod_lavacow:moltenbeef>.displayName = "Molten Salamander Meat";
+<mod_lavacow:mossy_stick>.displayName = "Sludge Stick";
+<mod_lavacow:pigboarhide>.displayName = "Undead Swine Hide";
+<mod_lavacow:plagued_porkchop>.displayName = "Undead Swine Meat";
+<mod_lavacow:poisonspore>.displayName = "Poisonous Mycosis Spores";
+<mod_lavacow:scythe_claw>.displayName = "Ithaqua Claw";
+<mod_lavacow:banshee_vocal_cord>.displayName = "Banshee Shriek Cord";
+<mod_lavacow:cactus_fruit>.displayName = "Cactyrant/Cactoid Fruit";
+<mod_lavacow:sharptooth>.addTooltip("Obtained from Foglet, Swarmer, Undead Swine, Wolf and Polar bears");
+<mod_lavacow:chitin>.displayName = "Weta Chitin";
+<mod_lavacow:frozenthigh>.displayName = "Frigid Thigh";
+<mod_lavacow:poisonstinger>.displayName = "Poisonous Vespa Stinger";
+
+// Description Changes
+<mod_lavacow:raven_whistle>.addTooltip("§eRavens can be tamed using fermented spider eye or parasites.");
+<mod_lavacow:ghostjelly>.addTooltip("§eGives 6 seconds Resistance IV & 3 seconds Levitation III");
+<mod_lavacow:vespa_dagger>.addTooltip("§eInflicts Poison II");
+<mod_lavacow:dreamcatcher>.clearTooltip(true);
+<mod_lavacow:dreamcatcher>.addTooltip("§eThe Dead roam nearby as you wake from your deep slumber...");
+<mod_lavacow:dreamcatcher>.addTooltip(" ");
+<mod_lavacow:dreamcatcher>.addTooltip("§8Foglet, Undead Swine, Ithaqua, Sludge lord, Vespa, Scarecrow, Osvermis");
+<mod_lavacow:dreamcatcher>.addTooltip("§8Pinghoul, Undertaker, Banshee, Avaton, Vindicator, Ghost or a Chest!?");
+
+// Completely rename "Death" hammer
+<mod_lavacow:skeletonking_mace>.clearTooltip(true);
+<mod_lavacow:skeletonking_mace>.addTooltip("§eInstantly kills if the victim falls under 25% health for 10 seconds after each hit.");
+<mod_lavacow:skeletonking_mace>.addTooltip("§4This item is banned for obvious reasons.");
+
+// Completely rename Molten Heart Description
+<mod_lavacow:mootenheart>.clearTooltip(true);
+<mod_lavacow:mootenheart>.addTooltip("§9Fish's Undead Rising");
+<mod_lavacow:mootenheart>.addTooltip("§eFire Damage Protection: -20%");
+
+// Remove fish undead recipes
+recipes.remove(<mod_lavacow:bonesword>);
+recipes.remove(<mod_lavacow:frozen_dagger>);
+recipes.remove(<mod_lavacow:spectral_dagger>);
+recipes.remove(<mod_lavacow:moltenpan>);
+recipes.remove(<mod_lavacow:moltenhammer>);
+recipes.remove(<mod_lavacow:moltenaxe>);
+recipes.remove(<mod_lavacow:holy_grenade>);
+recipes.remove(<mod_lavacow:sonicbomb>);
+recipes.remove(<mod_lavacow:bonestew>);
+recipes.remove(<mod_lavacow:ghostjelly>);
+
+// Re-add fish undead bonesword recipe
+recipes.addShaped("dregora35",<mod_lavacow:bonesword>,
+ [[<mod_lavacow:sharptooth>,<minecraft:bone_block>,<mod_lavacow:sharptooth>],
+  [<mod_lavacow:sharptooth>,<minecraft:bone_block>,<mod_lavacow:sharptooth>],
+  [null,<iceandfire:dragonbone>,null]]);
+
+// Re-add fish undead frozen_dagger recipe
+recipes.addShaped("dregora36",<mod_lavacow:frozen_dagger>,
+ [[null,<mod_lavacow:shattered_ice>,null],
+  [null,<mod_lavacow:shattered_ice>,null],
+  [null,<iceandfire:witherbone>,null]]);
+
+// Re-add fish undead spectral_dagger recipe
+recipes.addShaped("dregora37",<mod_lavacow:spectral_dagger>,
+ [[null,<mod_lavacow:ectoplasm_ingot>,null],
+  [null,<iceandfire:witherbone>,null],
+  [null,null,null]]);
+
+// Re-add fish undead moltenpan recipe
+recipes.addShaped("dregora38",<mod_lavacow:moltenpan>,
+ [[<mod_lavacow:moltenbeef>,<mod_lavacow:moltenbeef>,<mod_lavacow:moltenbeef>],
+  [<mod_lavacow:moltenbeef>,<iceandfire:fire_lily>,<mod_lavacow:moltenbeef>],
+  [null,<minecraft:blaze_rod>,null]]);
+
+// Re-add fish undead moltenhammer recipe
+recipes.addShaped("dregora39",<mod_lavacow:moltenhammer>,
+ [[<mod_lavacow:moltenbeef>,<mod_lavacow:moltenbeef>,<mod_lavacow:moltenbeef>],
+  [null,<iceandfire:fire_lily>,null],
+  [null,<minecraft:blaze_rod>,null]]);
+
+// Re-add fish undead moltenaxe recipe
+recipes.addShaped("dregora40",<mod_lavacow:moltenaxe>,
+ [[<mod_lavacow:moltenbeef>,<mod_lavacow:moltenbeef>,null],
+  [<mod_lavacow:moltenbeef>,<iceandfire:fire_lily>,null],
+  [null,<minecraft:blaze_rod>,null]]);
+
+// Re-add fish undead holy_grenade recipe
+recipes.addShaped("dregora41",<mod_lavacow:holy_grenade> * 16,
+ [[<minecraft:gunpowder>*16,<bountifulbaubles:amuletcross>,<minecraft:gunpowder>*16],
+  [<minecraft:quartz>*8,<mod_lavacow:holy_sludge>*16,<minecraft:quartz>*8],
+  [<minecraft:gunpowder>*16,<minecraft:quartz>*8,<minecraft:gunpowder>*16]]);
+
+// Halo necklace into spectral silt
+recipes.addShapeless("dregora42",<bountifulbaubles:spectralsilt>,[<mod_lavacow:halo_necklace>]);
+
+// Golden Heart into spectral silt
+recipes.addShapeless("dregora43",<bountifulbaubles:spectralsilt>,[<mod_lavacow:goldenheart>]);
+
+// Re-add fish undead sonicbomb recipe
+recipes.addShaped("dregora44",<mod_lavacow:sonicbomb>,
+ [[<quark:soul_powder>,<mod_lavacow:banshee_vocal_cord>,<quark:soul_powder>],
+  [<mod_lavacow:chitin>,<srparasites:lurecomponent2>,<mod_lavacow:chitin>],
+  [<quark:soul_powder>,<mod_lavacow:chitin>,<quark:soul_powder>]]);
+
+// Re-add fish undead Dragon Bone Stew recipe
+recipes.addShaped("dregora45",<mod_lavacow:bonestew>,
+ [[<minecraft:bowl>,<mod_lavacow:moltenpan>.transformDamage(8),null],
+  [<iceandfire:dragonbone>,<mod_lavacow:bloodtooth_shroom>,null],
+  [null,null,null]]);
+
+// Re-add fish undead ghostjelly recipe
+recipes.addShaped("dregora46",<mod_lavacow:ghostjelly> * 4,
+ [[<minecraft:bowl>*4,<mod_lavacow:moltenpan>.transformDamage(32),null],
+  [<mod_lavacow:ectoplasm>*4,<bountifulbaubles:spectralsilt>,null],
+  [null,null,null]]);
+
+//=================================
 //DREGORARL NEW ITEM SETS FROM VARIEDCOMMODITIES
 //=================================
 
@@ -189,22 +333,22 @@ BasaltHard.hardness = 10;
 <variedcommodities:pendant>.addTooltip(format.gold("Gain the ability to destroy Eta barrier blocks when equipped in off-hand."));
 
 // Give Fire Element a better name
-<variedcommodities:element_fire>.clearTooltip();
-<variedcommodities:element_fire>.addTooltip("Auric Essence (#7295)");
+<variedcommodities:element_fire>.clearTooltip(true);
+<variedcommodities:element_fire>.displayName = "Auric Essence";
 <variedcommodities:element_fire>.addTooltip(format.darkGray("variedcommodities:element_fire"));
 <variedcommodities:element_fire>.addTooltip(format.green("Essence abstracted from the purest of gold."));
 <variedcommodities:element_fire>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
 // Give The Ruby Gem a better name
-<variedcommodities:gem_ruby>.clearTooltip();
-<variedcommodities:gem_ruby>.addTooltip("Blood Gem (#7279)");
+<variedcommodities:gem_ruby>.clearTooltip(true);
+<variedcommodities:gem_ruby>.displayName = "Blood Gem";
 <variedcommodities:gem_ruby>.addTooltip(format.darkGray("variedcommodities:gem_ruby"));
 <variedcommodities:gem_ruby>.addTooltip(format.green("This gem, magical to those who not know it's secrets feels heavy and somehow alive..."));
 <variedcommodities:gem_ruby>.addTooltip(format.gold("Extracted from Amalgalich remains."));
 
 // Give the Orb for Eta barrier a better name.
-<variedcommodities:orb:0>.clearTooltip();
-<variedcommodities:orb:0>.addTooltip("Brutal " + <variedcommodities:orb>.displayName + " (#" + "7304" + "/0)");
+<variedcommodities:orb:0>.clearTooltip(true);
+<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
 <variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
 <variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers."));
@@ -230,21 +374,21 @@ recipes.addShaped("dregora32",<variedcommodities:ancient_coin>,
 
 
 // Give the Orbs for Lycanites Summons a better name.
-<variedcommodities:orb:1>.clearTooltip();
-<variedcommodities:orb:5>.clearTooltip();
-<variedcommodities:orb:6>.clearTooltip();
+<variedcommodities:orb:1>.clearTooltip(true);
+<variedcommodities:orb:5>.clearTooltip(true);
+<variedcommodities:orb:6>.clearTooltip(true);
 
-<variedcommodities:orb:1>.addTooltip("Demon " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/1)");
+<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
 <variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
 <variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:5>.addTooltip("Aberrant " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/5)");
+<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
 <variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
 <variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:6>.addTooltip("Shadow " + <variedcommodities:orb>.displayName + " (#" + "7277" + "/6)");
+<variedcommodities:gem_ruby>.displayName = "Shadow Orb";
 <variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
@@ -460,12 +604,28 @@ recipes.addShaped("dregora16",<biomesoplenty:eucalyptus_door>*2,
 
 
 // Aquaculture seaweed dropped from kelp, can be baked to become kelp and kelp can be used as a fuel source to smelt 2 items. (Same-ish as 1.16.5)
+// Drop Shattered Ice from ice blocks
 furnace.setFuel(<biomesoplenty:seaweed>, 400);
 <biomesoplenty:seaweed>.displayName = "Dried Seaweed";
 furnace.addRecipe(<biomesoplenty:seaweed>, <aquaculture:food:0>, 99999);
+
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
+
+    if !blockDrops.isPlayer {return;}
+
     if ( blockDrops.block has <biomesoplenty:seaweed>.asBlock() ){
+
         blockDrops.drops = [<aquaculture:food:0>.weight(1.0)] as WeightedItemStack[];
+
+    }
+
+    if (blockDrops.block has <minecraft:ice>.asBlock() ) || (blockDrops.block has <iceandfire:dragon_ice>.asBlock() ) || (blockDrops.block has <biomesoplenty:hard_ice>.asBlock() ) || (blockDrops.block has <minecraft:packed_ice>.asBlock() ){
+
+        for i in 0 to blockDrops.player.world.random.nextFloat(1, 2) {
+
+            blockDrops.drops = [<mod_lavacow:shattered_ice>.weight(1.0)] as WeightedItemStack[];
+
+        }
     }
 });
 
@@ -1062,9 +1222,15 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
 
         if (!isNull(event.entity.definition.name)) {
 
-            if (!isNull(event.entity.customName)) {
+            if (!isNull(event.entity.definition.id)) {
 
-                if (!isNull(event.entity.definition.id)) {
+                if ((event.entity.definition.id) == "mod_lavacow:skeletonking") {
+
+                    event.entity.updateNBT({DeathLootTable: "dregora:entities/regular/fish_undead_skeleton_king"});
+
+                }
+
+                if (!isNull(event.entity.customName)) {
 
                     if (((event.entity.definition.id) has "playerbosses:player_boss") && ((event.entity.world.getDimension()) == 0) && ((event.entity.customName) has "Shivaxi")) {
 
@@ -1229,23 +1395,25 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
     if (!isNull(event.spawner)){
-         if (event.spawner){
-              if (!isNull(event.entity.definition)) {
 
-                  if (!isNull(event.entity.definition.name)) {
+        if (event.spawner){
 
-                      if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+            if (!isNull(event.entity.definition)) {
 
-                          var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
+                if (!isNull(event.entity.definition.name)) {
 
-                          if (((Biome) == "Abyssal Rift") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
+                    if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
-                          event.deny();
+                        var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                      }
-                  }
-              }
-         }
+                    if (((Biome) == "Abyssal Rift") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
+
+                        event.deny();
+
+                    }
+                }
+            }
+        }
     }
 });
 
