@@ -86,11 +86,24 @@ IronLadderHard.hardness = 5;
 var LushPolishedHard as IItemStack = <lycanitesmobs:lushstonepolished>;
 LushPolishedHard.hardness = 30;
 
-var IronPlateHard as IItemStack = <quark:iron_plate>;
-IronPlateHard.hardness = 30;
-
 var BasaltHard as IItemStack = <quark:basalt_wall>;
 BasaltHard.hardness = 10;
+
+//=================================
+//DREGORARL ContentTweaker new item recipes
+//=================================
+
+// Add a recipe for the reinforced iron plates
+recipes.addShaped("dregora48",<contenttweaker:iron_plate_reinforced> * 8,
+ [[<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>],
+  [<minecraft:iron_bars>,<quark:iron_plate>*8,<minecraft:iron_bars>],
+  [<minecraft:iron_bars>,<minecraft:iron_bars>,<minecraft:iron_bars>]]);
+
+// Add a recipe for the reinforced rusty iron plates
+recipes.addShaped("dregora47",<contenttweaker:iron_plate_rust_reinforced> * 8,
+ [[<quark:iron_plate>,<quark:iron_plate>,<quark:iron_plate>],
+  [<quark:iron_plate>,<minecraft:water_bucket>,<quark:iron_plate>],
+  [<quark:iron_plate>,<quark:iron_plate>,<quark:iron_plate>]]);
 
 //=================================
 //FISH UNDEAD RECIPES & NAME CHANGES
@@ -99,9 +112,22 @@ BasaltHard.hardness = 10;
 val Deathtouch = <minecraft:potion>.withTag({Potion: "potioncore:repair"});
 
 // Removed Items
-brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
-brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
-brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "minecraft:water"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:glowstone>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:gunpowder>); //Removes DeathTouch
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:gunpowder>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:glowstone>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mod_lavacow:strong_fragile"}), <minecraft:gunpowder>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:redstone>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "mod_lavacow:long_fragile"}), <minecraft:gunpowder>); //Removes DeathTouch Splash
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch Lingering 2
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:dragon_breath>); //Removes DeathTouch Lingering 2
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:glowstone>); //Removes DeathTouch Lingering
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "mod_lavacow:strong_fragile"}), <minecraft:dragon_breath>); //Removes DeathTouch Lingering
+brewing.removeRecipe(<minecraft:lingering_potion>.withTag({Potion: "mod_lavacow:fragile"}), <minecraft:redstone>); //Removes DeathTouch Lingering 1
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "mod_lavacow:long_fragile"}), <minecraft:dragon_breath>); //Removes DeathTouch Lingering 1
+
 recipes.remove(<mod_lavacow:cactus_thorn>);
 recipes.remove(<mod_lavacow:thorn_shooter>);
 recipes.remove(<mod_lavacow:potion_of_mooten_lava>);
@@ -169,6 +195,7 @@ recipes.remove(<mod_lavacow:holy_grenade>);
 recipes.remove(<mod_lavacow:sonicbomb>);
 recipes.remove(<mod_lavacow:bonestew>);
 recipes.remove(<mod_lavacow:ghostjelly>);
+recipes.remove(<mod_lavacow:goldenheart>);
 
 // Re-add fish undead bonesword recipe
 recipes.addShaped("dregora35",<mod_lavacow:bonesword>,
@@ -213,10 +240,10 @@ recipes.addShaped("dregora41",<mod_lavacow:holy_grenade> * 16,
   [<minecraft:gunpowder>*16,<minecraft:quartz>*8,<minecraft:gunpowder>*16]]);
 
 // Halo necklace into spectral silt
-recipes.addShapeless("dregora42",<bountifulbaubles:spectralsilt>,[<mod_lavacow:halo_necklace>]);
+recipes.addShapeless("dregora42",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<mod_lavacow:halo_necklace>]);
 
 // Golden Heart into spectral silt
-recipes.addShapeless("dregora43",<bountifulbaubles:spectralsilt>,[<mod_lavacow:goldenheart>]);
+//recipes.addShapeless("dregora43",<bountifulbaubles:spectralsilt>,[<bountifulbaubles:disintegrationtablet>,<mod_lavacow:goldenheart>]);
 
 // Re-add fish undead sonicbomb recipe
 recipes.addShaped("dregora44",<mod_lavacow:sonicbomb>,
@@ -226,14 +253,14 @@ recipes.addShaped("dregora44",<mod_lavacow:sonicbomb>,
 
 // Re-add fish undead Dragon Bone Stew recipe
 recipes.addShaped("dregora45",<mod_lavacow:bonestew>,
- [[<minecraft:bowl>,<mod_lavacow:moltenpan>.transformDamage(8),null],
+ [[<minecraft:bowl>,<mod_lavacow:moltenpan>.anyDamage().transformDamage(8),null],
   [<iceandfire:dragonbone>,<mod_lavacow:bloodtooth_shroom>,null],
   [null,null,null]]);
 
 // Re-add fish undead ghostjelly recipe
-recipes.addShaped("dregora46",<mod_lavacow:ghostjelly> * 4,
- [[<minecraft:bowl>*4,<mod_lavacow:moltenpan>.transformDamage(32),null],
-  [<mod_lavacow:ectoplasm>*4,<bountifulbaubles:spectralsilt>,null],
+recipes.addShaped("dregora46",<mod_lavacow:ghostjelly>,
+ [[<minecraft:bowl>,<mod_lavacow:moltenpan>.anyDamage().transformDamage(8),null],
+  [<mod_lavacow:ectoplasm>,<bountifulbaubles:spectralsilt>,null],
   [null,null,null]]);
 
 //=================================
@@ -705,185 +732,101 @@ events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightCl
 });
 
 
-// Equip airborne entities with NBT data
-//events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
-//
-//    if event.entity.world.isRemote() {return;}
-//    if (isNull(event.entity)) {return;}
-//    if (isNull(event.entity.definition)) {return;}
-//    if (isNull(event.entity.definition.id)) {return;}
-//    if (isNull(event.entity.definition.name)) {return;}
-//    if (isNull(event.entity.customName)) {return;}
-//    if (isNull(event.entity.nbt.ForgeData.SpawnedCheck)){event.entity.setNBT({SpawnedCheck: 0});}
-//
-//    if (event.entity.nbt.ForgeData.SpawnedCheck == 0){
-//
-//        print(event.entity.definition.name);
-//        if ((event.entity.customName == "iceking") && (event.entity.definition.name == "roc")) {
-//
-//            var iceking = <entity:lycanitesmobs:raiko>.createEntity(event.entityLivingBase.world);
-//            iceking.setPosition(event.entity.position);
-//            iceking.updateNBT({Age:10,AgeTicks:960357,Flying:1,Gender:1,Variant:3,ArmorHead:1,ArmorNeck:1,ArmorBody:1,ArmorTail:1,HasHomePosition:0,AgingDisabled:1});
-//            iceking.updateNBT({Passengers:[{id:"minecraft:wither_skeleton"}]});
-//            event.entityLivingBase.world.spawnEntity(iceking);
-//            event.entity.setDead();
-//        }
-//
-//        event.entity.setNBT({SpawnedCheck: 1});
-//    }
-//});
+var ArrowArray = [
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_armor"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_armor"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_klutz"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_klutz"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:klutz"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:dispel"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_launch"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:launch"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_weight"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_armor"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:spin"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_spin"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_spin"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:curse"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_curse"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "quark:mining_fatigue"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "quark:long_mining_fatigue"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "quark:strong_mining_fatigue"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:disorganization"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:foster"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:coth"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:fear"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:res"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:corro"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:vira"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:rage"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "srparasites:debar"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:magic_inhibition"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:weight"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:lightning"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_explode"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_magic_inhibition"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_teleport"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_surface"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:drown"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_drown"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_spawn"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_vulnerable"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_vulnerable"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:vulnerable"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_rust"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_rust"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:rust"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_perplexity"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:perplexity"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_slowness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:slowness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:milk"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_antiwarp"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:antiwarp"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:strong_decay"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_decay"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:decay"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_blindness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_blindness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:nausea"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_nausea"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:levitation"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_levitation"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_levitation"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:unluck"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_hunger"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_hunger"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:hunger"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_wither"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_wither"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:wither"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_sluggish"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:sluggish"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:strong_feeble"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:harming"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_harming"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:poison"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_poison"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_poison"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_weakness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:blindness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:feeble"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_feeble"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_magic_inhibition"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_weight"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:fire"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:invert"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_magic_shield"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_magic_shield"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_magic_shield"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_blindness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:blindness"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "xat:extended_goblin"}),
+	<minecraft:tipped_arrow>.withTag({Potion: "xat:goblin"})
+	] as IItemStack[];
 
-
-// Entities spawned with bow have a 5% chance to randomly get a tipped arrow in offhand slot
-events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
-
-    if event.entity.world.isRemote() {return;}
-    if (isNull(event.entity)) {return;}
-    if (isNull(event.entity.definition)) {return;}
-    if (isNull(event.entity.definition.id)) {return;}
-    if (event.entity.definition.id == "playerbosses:player_boss") {return;}
-
-
-    if(isNull(event.entity.nbt.ForgeData.ArrowCheck)){
-
-        event.entity.setNBT({ArrowCheck: 0});
-
-    }
-
-    if (event.entity.nbt.ForgeData.ArrowCheck == 0){
-
-        var entityBase as IEntityLivingBase = event.entity;
-
-        if (!isNull(entityBase.offHandHeldItem)){
-
-            if ((entityBase.offHandHeldItem.name) has "tipped_arrow") {event.entity.setNBT({NoArrowSwitch: 1});}
-            return;
-
-        }
-
-        if (isNull(entityBase.mainHandHeldItem)) {return;}
-        if (isNull(entityBase.mainHandHeldItem.name)) {return;}
-
-
-        if (entityBase.mainHandHeldItem.name has "bow") {
-
-            var randomInt = entityBase.world.random.nextFloat(0, 100);
-            var ArrowArray = [
-
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_armor"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_armor"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_klutz"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_klutz"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:klutz"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:dispel"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_launch"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:launch"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_weight"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_armor"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:spin"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_spin"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_spin"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:curse"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_curse"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "quark:mining_fatigue"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "quark:long_mining_fatigue"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "quark:strong_mining_fatigue"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:disorganization"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:foster"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:coth"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:fear"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:res"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:corro"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:vira"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:rage"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "srparasites:debar"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:magic_inhibition"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:weight"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:lightning"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_explode"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_magic_inhibition"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_teleport"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_surface"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:drown"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_drown"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_spawn"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_vulnerable"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_vulnerable"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:vulnerable"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_rust"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_rust"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:rust"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_perplexity"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:perplexity"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_slowness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:slowness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:milk"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_antiwarp"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:antiwarp"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:strong_decay"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_decay"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:decay"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:nausea"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_nausea"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:levitation"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_levitation"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_levitation"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:unluck"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_hunger"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_hunger"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:hunger"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_wither"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_wither"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:wither"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_sluggish"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:sluggish"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:strong_feeble"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:harming"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_harming"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:poison"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_poison"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_poison"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_weakness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:feeble"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_feeble"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_magic_inhibition"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_weight"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:fire"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:invert"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_magic_shield"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_magic_shield"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_magic_shield"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:blindness"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "xat:extended_goblin"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "xat:goblin"})
-
-            ] as IItemStack[];
-            var randomArrow = entityBase.world.random.nextFloat(0, 90);
-            var selectedArrow = ArrowArray[randomArrow];
-
-            if (randomInt <= 5) {
-
-                entityBase.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.offhand(), selectedArrow);
-                event.entity.setNBT({ArrowEntity: 1});
-            }
-
-            event.entity.setNBT({ArrowCheck: 1});
-
-        } else {
-
-            event.entity.setNBT({ArrowCheck: 1});
-
-        }
-
-    }
-
-});
 
 // Entities with tipped arrow in offhand apply potion effect on target hit
 // Use ForgeData: NoArrowSwitch: 1 to exclude entities from changing arrows
@@ -925,104 +868,6 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
         var entityShooter as IEntityLivingBase = event.damageSource.getTrueSource();
         var randomInt = entityShooter.world.random.nextFloat(0, 100);
-
-        var ArrowArray = [
-
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_armor"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_armor"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_klutz"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_klutz"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:klutz"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:dispel"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_launch"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:launch"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_weight"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_armor"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:spin"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_spin"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_spin"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:curse"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_curse"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "quark:mining_fatigue"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "quark:long_mining_fatigue"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "quark:strong_mining_fatigue"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:disorganization"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:foster"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:coth"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:fear"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:res"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:corro"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:vira"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:rage"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "srparasites:debar"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:magic_inhibition"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:weight"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:lightning"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_explode"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_magic_inhibition"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_teleport"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_surface"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:drown"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_drown"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:teleport_spawn"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_vulnerable"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_vulnerable"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:vulnerable"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_rust"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_rust"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:rust"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_perplexity"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:perplexity"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_slowness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:slowness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:milk"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_antiwarp"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:antiwarp"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:strong_decay"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_decay"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:decay"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:long_blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:nausea"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_nausea"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:levitation"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_levitation"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_levitation"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:unluck"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_hunger"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_hunger"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:hunger"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_wither"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_wither"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:wither"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_sluggish"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:sluggish"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:strong_feeble"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:harming"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_harming"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:poison"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_poison"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:strong_poison"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_weakness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "mujmajnkraftsbettersurvival:blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:feeble"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "elenaidodge:long_feeble"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_magic_inhibition"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_weight"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:fire"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:invert"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_broken_magic_shield"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:broken_magic_shield"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_broken_magic_shield"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:strong_blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:blindness"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "potioncore:explode"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "xat:extended_goblin"}),
-        <minecraft:tipped_arrow>.withTag({Potion: "xat:goblin"})
-
-
-        ] as IItemStack[];
         var randomArrow = entityShooter.world.random.nextFloat(0, 90);
         var selectedArrow = ArrowArray[randomArrow];
 
@@ -1100,7 +945,7 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
 
 
 
-//summon playerbosses:player_boss ~ ~1 ~ {ActiveEffects:[{Id:115,Amplifier:0,Duration:2147483647}]}
+//summon playerbosses:player_boss ~ ~1 ~ {CustomName:"§4☢ §5§lBlighted Shivaxi§r §4☢"}
 //Function to dismount players if hit by entity named Dismounter && Function giving Shivaxi a phase 2 below 10 health if in Abyssal Rift
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
@@ -1115,8 +960,9 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         }
     }
 
-    if (isNull(event.entity)||!isNull(event.entity.uuid)){return;}
-
+    if (isNull(event.entity)){return;}
+    if (isNull(event.entity.definition)){return;}
+    if (isNull(event.entity.definition.id)){return;}
     if ((event.entity.definition.id) == "playerbosses:player_boss"){
 
         var Phase03 = event.entityLivingBase.maxHealth /4;
@@ -1124,6 +970,7 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
         if ((EntityBiome) == "Abyssal Rift") {
+
 
             if ((Phase02 >= event.entityLivingBase.health) && (Phase03 <= event.entityLivingBase.health)){
 
@@ -1214,58 +1061,6 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
     }
 });
 
-
-//Shivaxi turns into corrupted dragon
-events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
-
-    if (!isNull(event.entity.definition)) {
-
-        if (!isNull(event.entity.definition.name)) {
-
-            if (!isNull(event.entity.definition.id)) {
-
-                if ((event.entity.definition.id) == "mod_lavacow:skeletonking") {
-
-                    event.entity.updateNBT({DeathLootTable: "dregora:entities/regular/fish_undead_skeleton_king"});
-
-                }
-
-                if (!isNull(event.entity.customName)) {
-
-                    if (((event.entity.definition.id) has "playerbosses:player_boss") && ((event.entity.world.getDimension()) == 0) && ((event.entity.customName) has "Shivaxi")) {
-
-                        var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
-
-                        if ((EntityBiome) == "Abyssal Rift") {
-
-                            if (event.entity.getNBT().asString() has "CorruptedSpawn:1") {
-
-                                if event.entity.world.isRemote(){
-
-
-                                    var double_x = event.entity.position.x;
-                                    var double_y = event.entity.position.y;
-                                    var double_z = event.entity.position.z;
-
-                                    event.entity.world.performExplosion(event.entity, double_x, double_y, double_z, 4, false, false);
-                                    var shivaxi = <entity:srparasites:sim_dragone>.createEntity(event.entityLivingBase.world);
-                                    shivaxi.setPosition(event.entity.position);
-                                    shivaxi.updateNBT({CustomName: "§6☢ §4§lBlighted Boomer§r §6☢"});
-                                    shivaxi.updateNBT({PersistenceRequired:1});
-                                    shivaxi.updateNBT({parasitedespawn:0});
-                                    shivaxi.updateNBT({ForgeCaps:{"champions:championship":{tier:1}}});
-                                    shivaxi.updateNBT({DeathLootTable: "dregora:entities/playerbosses/abyssal_tower_shivaxi"});
-                                    event.entityLivingBase.world.spawnEntity(shivaxi);
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-});
 
 
 //Function to give chorus fruit & teleportation potions a different effect on use
@@ -1555,32 +1350,26 @@ events.onPlayerTick(function(event as PlayerTickEvent){
             var RandomInt = event.entity.world.random.nextFloat(0, 100);
             event.player.setNBT({SilverSicknessCooldown: currentTime});
 
-            if RandomInt <= 5 {
-
-                event.player.addPotionEffect(<potion:potioncore:bless>.makePotionEffect(200, 1));
-
-            }
-
             if RandomInt <= 15 {
 
                 if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 0) {
 
-                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(100, 0));
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 0));
                     event.player.setNBT({SkippedSilverDebuffs: 0});
 
                 } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 1) {
 
-                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 0));
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(300, 0));
                     event.player.setNBT({SkippedSilverDebuffs: 0});
 
                 } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 2) {
 
-                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(300, 0));
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(400, 0));
                     event.player.setNBT({SkippedSilverDebuffs: 0});
 
                 } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 3) {
 
-                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(400, 0));
+                    event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(500, 0));
                     event.player.setNBT({SkippedSilverDebuffs: 0});
 
                 } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 4) {
@@ -1606,7 +1395,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
             } else if (event.player.nbt.ForgeData.SkippedSilverDebuffs == 7) {
 
-                event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(600, 3));
+                event.player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(900, 3));
                 event.player.setNBT({SkippedSilverDebuffs: 0});
 
             } else {
@@ -1703,5 +1492,3 @@ events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
         ] as WeightedItemStack[];
     }
 });
-
-print("Dregora Script ending!");

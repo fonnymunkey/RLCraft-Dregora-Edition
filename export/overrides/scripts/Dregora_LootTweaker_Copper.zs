@@ -20,6 +20,11 @@ import loottweaker.vanilla.loot.Functions;
 //charm:treasure/common
 //quark:chests/pirate_chest
 
+val mod_lavacow_skeleton_king = LootTweaker.getTable("mod_lavacow:entities/bosses/skeleton_king");
+mod_lavacow_skeleton_king.clear();
+val mod_lavacow_skeleton_king_new = mod_lavacow_skeleton_king.addPool("dregora_skeleton_king", 1, 1, 0, 0);
+mod_lavacow_skeleton_king_new.addLootTableEntry("dregora:entities/regular/fish_undead_skeleton_king", 100);
+
 val BlacksmithTable = LootTweaker.getTable("minecraft:chests/village_blacksmith");
 val DungeonTable = LootTweaker.getTable("minecraft:chests/simple_dungeon");
 val MineshaftTable = LootTweaker.getTable("minecraft:chests/abandoned_mineshaft");

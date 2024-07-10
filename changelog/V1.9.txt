@@ -1,9 +1,14 @@
-Possible false/positives:
+#Possible false/positives:
 - Entities suffocate in trench biomes? ( Could not find, already fixed? )
 - Cactus land lag cause not found, perhaps this was due to falling sand?
 - fixed frost trolls & pixies (FF Mod) spawning in biomes they should not (inheritbiomename for mobs)
 
-Fixed/Changed/Added:
+
+//======================================================//
+//              All Fixed/Changes/Additions             //
+//======================================================//
+
+#Fixed/Changed/Added [DregoraRL]
 - Fixed Outposts spawn with players (Fixed WeightedBranches being regular Branches causing the outposts to be more common then intended.)
 - Removed corrupted biome group and placed all biomes in simmilar groups
 - Outposts fixed minable waystones
@@ -178,7 +183,6 @@ Fixed/Changed/Added:
 - Write 3 remaining lore books & check all lore + maintenance lore is good + chest contents in underground villages
 - added underground villages to random mode biomes & remove the possibility to spawn in CANYON type biomes
 - added corruption failsafe (people exiting whilst unpacking) it now should just re-unpack if someone has a corrupted installation.
-- added dimension Underneath
 - added additional rarity variable to village bunkers
 - fixed file structure overwrite mayhem (big internal mistake)
 - Made defiled land biomes less rare.
@@ -233,9 +237,6 @@ Fixed/Changed/Added:
 - Additional optimization tasks for UW (decrease spawn attempts & lower amount of blockchecks)
 - Blacklisted doomlikedungeon from beach biomes where gorgon spawns
 - changed drl to dregorarl (MODID in both MODINFO as worldpacker.java)
-- uploaded Underneath to curseforge.
-- Added DregoraRL as required dependency to Underneath
-- Adjusted underneath fog as to fix a shader bug
 - added ghosts to spawners (ruins)
 - added I&F dread entities to various cold biomes
 - Removed Gorgon spawns from Origin, Viking, White and Volcanic beaches.
@@ -255,10 +256,6 @@ Fixed/Changed/Added:
 - made weightedbranches for additional dragon stages & scales (except for ashenblood peaks stages)
 - fixed otg entity double spawn for gorgon temple
 - added frozen oceans and frozen beach biomes.
-- Changed spawns to biome_parasite in Underneath
-- Respawndim for Underneath is now be Underneath
-- Lowered amount of portals in Underneath
-- Added Bedrock layer at bottom Underneath
 - designed Brutal Tower Loottable with heaven
 - added loottables for tiered loot in brutal towers
 - randomized lightning swords
@@ -339,169 +336,15 @@ Fixed/Changed/Added:
 - fixed numerous smaller issues causing some resources to not spawn.
 - added missing stone_weapons loot table
 - Added the spoiled effect to dev by adding a entity and also equipped entity with ban hammer
-- Fish's Undead Rising tasks:
-    - blacklisted neat mimicrab
-    - mod_lavacow:bonesword needs 8 attack and 4 magic
-    - mod_lavacow:frozenthigh needs 6 gathering and 8 attack
-    - mod_lavacow:moltenaxe 8 attack 4 magic
-    - mod_lavacow:moltenhammer 16 attack 8 magic
-    - mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
-    - mod_lavacow:famine needs 16 attack and 8 gathering
-    - mod_lavacow:sludge_wand needs 4 magic
-    - mod_lavacow:war needs 24 attack, 12 agility
-    - mod_lavacow:vespa_dagger needs 6 attack
-    - swine armor set needs 8 defence & 2 gathering
-    - molten armor needs 16 defence and 8 magic
-    - give mod_lavacow:beast_claw 16 attack
-    - mod_lavacow:undertaker_shovel 16 magic, 8 attack, gathering 8
-    - give weta set 8 defense 4 agility
-    - mod_lavacow:vespa_shield 8 defense
-    - mod_lavacow:frozen_dagger needs 8 attack
-    - mod_lavacow:spectral_dagger needs 8 magic
-    - mod_lavacow:skeletonking_crown needs 16 defence and 16 magic
-    - Famine set defence 16 + 8 magic + 4 gathering
-    - mod_lavacow:bonesword change damage cap from 10000 to 5
-    - mod_lavacow:bonesword change % cap from from 5 to 10
-    - change drop rate of intestine from 4 to 2
-    - set bowl stack to false
-    - mod_lavacow:bonesword needs dragon bone as hilt
-    - mod_lavacow:frozen_dagger wither bone recipe instead of stick
-    - mod_lavacow:spectral_dagger wither bone recipe instead of stick
-    - molten frying pan, hammer and axe needs firelily in recipe
-    - change crafting recipe holy handgrenade and switch cross necklace for inferior holy handgrenade
-    - Rename holy grenade to Inferior Holy Grenade + add recipe 24 quartz 16 gunpowder 8 holy sludge 1 cross necklace = 16 inferior holy grenades
-    - add recipe to craft halo necklace into spectral silt
-    - add recipe to craft golden heart into spectral silt
-    - Sonic Bomb needs Assimilated Heart, soul powder, chitin and shriek cord
-    - Bone stew change into Dragon Bone Stew and change recipe to contain Dragon Bone
-    - add extra description to mod_lavacow:raven_whistle (Ravens can be tamed using fermented spider eye or parasites)
-    - change tooltip mod_lavacow:mootenheart
-    - Ghost jelly added 1/4 spectral silt to crafting
-    - Famine set (any 2) debuff 50% health + hunger
-    - add swine armor effect: always hunger 3
-    - Molten frying pan added to blacklist disenchanter
-    - mod_lavacow:vespa_dagger added disenchanter blacklist
-    - blacklist mimicrab from stoning
-    - blacklist raven from stoning
-    - decreased mimicrab spawnrate at player death from 250 to 100
-    - added mod_lavacow:zombiepiranha & mod_lavacow:mimic to blight/champion/infernal blacklists
-    - ban mod_lavacow:thorn_shooter
-    - ban mod_lavacow:potion_of_mooten_lava
-    - blacklist mod_lavacow:piranhalauncher
-    - blacklist mod_lavacow:cursed_bandage
-    - blacklist mod_lavacow:skeletonking_mace
-    - blacklist mod_lavacow:weta_hoe
-    - adjusted skeleton king loottable (add on spawn?)
-    - add missing tooltips for fish undead items
-    - added entities ghost, mimic and vindicator to dreamcatcher
-    - remove Deathtouch Potion
-    - Customized the loottable for skeleton king
-- added mod Potion Descriptions (Forge)
-
-Underneath todo
-- fixed fog and shader issue
-- fixed citydestructor eating away stone
-- Reupload Underneath (movement factor changed from 4 to 1)
-- Moved low chests from 55-65 to 45-60
+- made the easter egg entities more rare
+- made dragon mounts in general more rare
 - added biomes: Ancient Rainforest RM, Ancient Rainforest Border RM, Ancient Rainforest Isle RM
+- Changed wool:2 on structure PirateShip to quark:pirates
+- tweaked Salt plains lime mountains
+- fixed errir for: brutal_pipebig_01_D1C2R0 brutal_pipebig_01_D2C2R0 (Check Server for files)
+#DregoraRL ^
 
-Fish's Undead Rising todo:
-
-
-Dregora todo
-+ make golden bookwyrms less rare (about 1/4)
-+ File cleanup, remove .zip files
-+ make tower rare
-+ test brutal tower after C&F update
-+ add spectral moss & spectral fern somehow in end
-
-Dregora Potential todo:
-P_SmallShip (X) update to bo4 and add to recurrent spawngroup
-
-Potentially Add mods Backlog:
-
-+ Spice of Life
-+ Food Funk
-
-Backlog:
-+ Ore redistribution:
-Oceans: 3x more lapis
-Mountains: 2x more emerald
-Birch Forests: 2x more iron
-Deserts: 3x more redstone
-Savanna: 2x more gold
-Mesa: 3x more gold
-Temperate Forest:
-Swamps: 3x more coal
-Jungle: 1.5x more gems
-plains: default
-
-
-+ Add deadloottables to op flying entities
-+ add hopper trap at zombie farm
-+ Fix vines in Ancient Rainforest RM
-+ Add Shame Effect to entity in the underground club
-+ distrance traveled divided by time traveled = xp multiplier (more you travel, more you gain xp)
-+ per enchantment on armor = - 10% armor max (on hit player) (total enchantments armor)
-+ make mineshafts in canyons more common?
-+ Sealed crate auto spawns spawn eggs (make randomizer)
-+ add srparasites death counter to stats screen?
-+ Sealed crate auto spawns spawn eggs (make randomizer)
-+ Shrouds coffee potion
-+ Patriot potion
-+ Better Bas Pot
-+ Frauk potion
-+ Backrooms biome (Brutal huge maze-like dungeon, perhaps links to another dim?)
-+ fix greathall, remove lava remove fire
-+ Trollander Tree with yoda at bottom
-+ Potion of eagle eyes
-+ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
-down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
-+ Katsu's sword
-+ Soka's Sword
-+ Brutal biome dracula's castle add kruimel in basement tunnels
-+ add lore to underneath ( 5 books )
-+ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
-+ Lattice as Iron Spikes (Brutal Biome )
-+ Add dracula castle with 25 village houses and add to bruh biome with wine cellars (Brutal Biome )
-+ make slate mine layer in bruh biomes(and make it harder to mine) (Brutal Biome )
-+ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons) (Brutal Biome )
-+ Dark Fog in Bruh Biomes (Brutal Biome )
-+ Frozen Bruh biome type angry wolf & angry bear (Brutal Biome )
-+ Remake Mistlands In minecraft (Brutal Biome )
-+ Spiders Den Brutal Biome with only spiders in all sizes. (Brutal Biome )
-+ Bruh Biome with pretty purple water & black fog (See if I can remove a non-virtual biome somewhere) (Brutal Biome)
-+ Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
-  the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
-  all sorts of dragons flying around (Brutal Biome)
-+ Add brutal coins to Underneath in specially designed structures
-+ make ac heaters in future bunkers with special bedrock blocks which require a late game key
-+ Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
-+ Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
-+ Add hexagonal cities when more skyscrapers are in the game
-+ Add gold deposits in rivers
-+ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
-+ Add dragon den to special dragon biome guaranteed bo4.
-+ Add Bridgepilings for river biomes
-+ Fix crystals breaking through bedrock
-+ Add Drunken Villager Boss to Bruh Biome
-+ Cyclops Colonies (underground biome with blood n stuff in prairie?).
-+ make tunnel break in underworld biome
-+ make tunnel longer
-+ Add DregoraRL (pre-packed to github)
-+ make tunnel bunker dungeon
-+ Add Nether portals
-+ re-check trench broken by canyon issue
-+ Parasite biome spooky forest?
-+ Make dungeon entity Remnant of Blight, Witness of Blight
-+ Ornamental pillars with loot in center
-+ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
-+ Miningtown & JungleCaves lore have no structure to spawn in
-+ Display percentage unpacking Dregora so people do not force quit any more.
-+ Add smoke particle effect to barrier block being destroyed
-
-
-RLCraft Done:
+#Fixed/Changed/Added [RLCraft]:
 - Make Battletowers slightly less rare by changing min-distance from 800 to 700.
 - Added blockdrop on eta barrier destroyed
 - Removed gem_ruby, orb:0, element_fire and pendant (variedcommodities) from jei blacklist
@@ -623,32 +466,296 @@ RLCraft Done:
 - Armor rebalance: Copper: lvl 4 ( 25% speed + xat:lightning_resistance ) Storm Rush
 - Added fish undead to legendary tooltips
 - added mod Potion Descriptions (Forge) to manifest
+- added spectral garden in end using recurrent complex (spectral fern & moss)
+- replaced scale blocks in brutal tower with dragon bone blocks
+- removed mixinbooter and zenutilis from manifest.json
+- Removed ZenUtilis & MixinBooter.
+- Menu reworked by RLMixins
+- Boss script added by RLMixins
+- Arrowscript added by RLMixins
+- Skeleton king script deathloottable added by RLMixins (need to try loottweaker)
+- added new blocks through contenttweaker & their recipes, reinforced iron block & reinforced rusty iron block
+#RLCraft ^
+
+#Fixed/Changed/Added [Underneath]
+- added dimension Underneath
+- uploaded Underneath to curseforge.
+- Added DregoraRL as required dependency to Underneath
+- Adjusted underneath fog as to fix a shader bug
+- Changed spawns to biome_parasite in Underneath
+- Respawndim for Underneath is now be Underneath
+- Lowered amount of portals in Underneath
+- Added Bedrock layer at bottom Underneath
+- fixed fog and shader issue
+- fixed citydestructor eating away stone
+- Reupload Underneath (movement factor changed from 4 to 1)
+- Moved low chests from 55-65 to 45-60
+- fixedd ruinscraper nbt by setting to skyscraper nbt
+- made cities spawn in spiked biome too
+- Fixed shader issues
+- Added a chest check for rooftops
+#Underneath ^
+
+#Fixed/Changed/Added [Fish's Undead Rising]
+- Fish's Undead Rising tasks:
+    - blacklisted neat mimicrab
+    - mod_lavacow:bonesword needs 8 attack and 4 magic
+    - mod_lavacow:frozenthigh needs 6 gathering and 8 attack
+    - mod_lavacow:moltenaxe 8 attack 4 magic
+    - mod_lavacow:moltenhammer 16 attack 8 magic
+    - mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
+    - mod_lavacow:famine needs 16 attack and 8 gathering
+    - mod_lavacow:sludge_wand needs 4 magic
+    - mod_lavacow:war needs 24 attack, 12 agility
+    - mod_lavacow:vespa_dagger needs 6 attack
+    - swine armor set needs 8 defence & 2 gathering
+    - molten armor needs 16 defence and 8 magic
+    - give mod_lavacow:beast_claw 16 attack
+    - mod_lavacow:undertaker_shovel 16 magic, 8 gathering, 4 attack
+    - give weta set 8 defense 4 agility
+    - mod_lavacow:vespa_shield 8 defense
+    - mod_lavacow:frozen_dagger needs 8 attack
+    - mod_lavacow:spectral_dagger needs 8 magic
+    - mod_lavacow:skeletonking_crown needs 16 defence and 16 magic
+    - Famine set defence 16 + 8 magic + 4 gathering
+    - mod_lavacow:bonesword change damage cap from 10000 to 5
+    - mod_lavacow:bonesword change % cap from from 5 to 10
+    - change drop rate of intestine from 4 to 2
+    - set bowl stack to false
+    - mod_lavacow:bonesword needs dragon bone as hilt
+    - mod_lavacow:frozen_dagger wither bone recipe instead of stick
+    - mod_lavacow:spectral_dagger wither bone recipe instead of stick
+    - molten frying pan, hammer and axe needs firelily in recipe
+    - change crafting recipe holy handgrenade and switch cross necklace for inferior holy handgrenade
+    - Rename holy grenade to Inferior Holy Grenade + add recipe 24 quartz 16 gunpowder 8 holy sludge 1 cross necklace = 16 inferior holy grenades
+    - add recipe to craft halo necklace into spectral sil
+    - Blacklist golden heart
+    - Sonic Bomb needs Assimilated Heart, soul powder, chitin and shriek cord
+    - Bone stew change into Dragon Bone Stew and change recipe to contain Dragon Bone
+    - add extra description to mod_lavacow:raven_whistle (Ravens can be tamed using fermented spider eye or parasites)
+    - change tooltip mod_lavacow:mootenheart
+    - Ghost jelly added 1 spectral silt to crafting
+    - Famine set (any 2) debuff 50% health + hunger
+    - add swine armor effect: always hunger 3
+    - Molten frying pan added to blacklist disenchanter
+    - mod_lavacow:vespa_dagger added disenchanter blacklist
+    - blacklist mimicrab from stoning
+    - blacklist raven from stoning
+    - decreased mimicrab spawnrate at player death from 250 to 100
+    - added mod_lavacow:zombiepiranha & mod_lavacow:mimic to blight/champion/infernal blacklists
+    - ban mod_lavacow:thorn_shooter
+    - ban mod_lavacow:potion_of_mooten_lava
+    - blacklist mod_lavacow:cursed_bandage
+    - blacklist mod_lavacow:skeletonking_mace
+    - blacklist mod_lavacow:weta_hoe
+    - adjusted skeleton king loottable (add on spawn?)
+    - add missing tooltips for fish undead items
+    - added entities ghost, mimic and vindicator to dreamcatcher
+    - remove Deathtouch Potion
+    - Customized the loottable for skeleton king
+- added mod Potion Descriptions (Forge)
+#Fish's Undead Rising ^
+
+#Fixed/Changed/Added [OTG]
+- Fix An Unknown error occured while attempting to perform any command in some cases
+- Fix Crash LayerMixing for OTG
+#OTG ^
+
+//======================================================//
+//                Remaining Tasks                       //
+//======================================================//
+
+Underneath todo:
++ fix skyscraper_2x2 (eats air away)
++ fix skyscraper_3x3 (needs air)
++ Adjust description to be "Special addition, does not work without DregoraRL"
++ Add items to underneath (solely) (and add desc to tooltip)
+    + famine set
+    + frying pan
+    + Halo necklace
+    + Azraeal's Scythe
+    + Sonic Bomb
+    + War
+    + Raven Whistle
+    + Cursed Dream Catcher
+    + Holy Hand Grenade
+    + Midnight Mourne
+    + Brutal Coins (Rarely)
+    + dragon bone stew
+    + make ban hammer unenchantable / give decay / give 100% armor reduction
+
+
+Dregora todo:
++ fix Pigs overspawning
++ Dregora Versioning Change:   DregoraRL v1.9 - MC 1.12.2 - RLC v2.9.3 (or simpler?)
+
+Awaiting I&F Update todo:
++ enable lightning dragon spawning during storm
++ mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
++ add special spawners for the gatekeeper & corruption
++ test brutal tower after C&F update
++ raise brutal tower rarity (minimal chunks apart)
++ File cleanup, remove .zip files
 
 RLCraft todo:
-+ artifacts:mimic and mod_lavacow:mimic need to be added to lycanites blacklist
-+ Add Kotlin Clue Script & other fun script locked behind a on/off switch for each developer.
-+ Add charm crates with spawn egg to fishing loot table?
-+ Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings once it gets uploaded to curse)
-+ Add Underneath v1.1 to Manifest.json
-+ add screens in menu
-+ add screen in loading screen (shiv but at dregora landscape)
-+ Update to new C&F and add special spawners for the Dragon & Shivaxi
++ add ladders, quark stairs & quark plate,  to contenttweaker and make then reinforced variants
++ check if parasite beckon still spawns in overworld
+Add descriptions:
+    + witch hat makes witches friendly & negates charm spectre curses
+    + pirate hat has looting (setbonus)
+    + archeology hat gives an additional 25% chance to drop ores.
++ Lightning Dismount (random lightning chance when storm is occurring)
++ update RLCombat
++ Check all that can be updated
+
+
++ configure new loading screen mod with DregoraRL screenshots
++ Add secret fun script (no spoilers)
++ Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings fileID once it gets uploaded to curse)
++ Upload Underneath v1.1 and add to Manifest.json
 + printjars executable
-+ Dregora Versioning Change:   DregoraRL v1.9 - MC 1.12.2 - RLC v2.9.3
++ Lycanitesmobs new version by Fonny?
 
 
-Optional:
-+ Remake minecart recipe and possibly increase speed rails (add another mod?) & make ice melt in the nether
+Menu Loading Screen:
+#Brutal Tower
+
+Gif loading screen:
+#Herbalist
+#Medusa Temple
+#Brutal Tower
+#Gem Traders
+#Big Tunnels
+#Dungeons (the 3 ancient dungeons)
+#Origin
+#Daeroc
+#Underneath (Include information on portals)
+
+Trailer todo:
+POI's:
+/tp -13439 200 -7949 (wicked plains)
+/tp -14912 200 -3549 (kingdom of dearoc)
+
+#Structures
+Gemtrader
+
+#Biomes
+/otg tp Defiled Snow Plains
+/otg tp Dregora_WastelandPlateauBorder
+/otg tp Abyssal Rift
+/otg tp
+/otg tp
+/otg tp
+/otg tp
+/otg tp
+/otg tp
+
+
+Last todo:
++ re-write this changelog for CF, don't add any spoilers.
+
+Optional Dregora todo:
+Add huge glowshrooms to bog biome?
+P_SmallShip (X) update to bo4 and add to recurrent spawngroup
+
+Optional add mods todo:
++ Spice of Life
++ Food Funk
+
+Optional RLCraft todo:
++ Make enchantment effect list (same the status effect list but with book icon)
++ Rework Fish Undead entities to work with lycanites summons
++ Trollvolution event
 + Ragnarok Event
-+ Make Desert cold at night
 + Attack on RLCraft Event
-+ NotKotlin = Kobalt (add custom lines)
++ Boombastic Boomers!
 + crafttweaker wake up player in night (multiplier check and wake morning)
 + thunder script crafttweaker lignting with armor (isMaterial)
 + Villager Enchantment Book nerf (Add Item X to dungeons and change villager trades on interact)
 
-RLCraft Backlog:
-+ remove or retain better biome blend?
+//======================================================//
+//                   Backlogs                           //
+//======================================================//
+
+#Expanse
++ add new dimension mod for the end
+
+#DregoraRL Backlog
++ Ore redistribution:
+Oceans: 3x more lapis
+Mountains: 2x more emerald
+Birch Forests: 2x more iron
+Deserts: 3x more redstone
+Savanna: 2x more gold
+Mesa: 3x more gold
+Temperate Forest:
+Swamps: 3x more coal
+Jungle: 1.5x more gems
+plains: default
++ Add deadloottables to op flying entities
++ add hopper trap at zombie farm
++ Fix vines in Ancient Rainforest RM
++ Add Shame Effect to entity in the underground club
++ distrance traveled divided by time traveled = xp multiplier (more you travel, more you gain xp)
++ per enchantment on armor = - 10% armor max (on hit player) (total enchantments armor)
++ make mineshafts in canyons more common?
++ Sealed crate auto spawns spawn eggs (make randomizer)
++ add srparasites death counter to stats screen?
++ Sealed crate auto spawns spawn eggs (make randomizer)
++ Shrouds coffee potion
++ Patriot potion
++ Better Bas Pot
++ Frauk potion
++ Backrooms biome (Brutal huge maze-like dungeon, perhaps links to another dim?)
++ fix greathall, remove lava remove fire
++ Trollander Tree with yoda at bottom
++ Potion of eagle eyes
++ Warden entity, strong entities wandering the ashlands, wither skeleton base with soldier outfits?
+down just before the blight occured and the fabric of space and time collapsed in the vicinity of experimental plants.
++ Katsu's sword
++ Soka's Sword
++ Brutal biome dracula's castle add kruimel in basement tunnels
++ add lore to underneath ( 5 books )
++ add lore to bruh biome ( 5 books ) experimental data on extrtaction energy and emergency communications ordering everything to be shut
++ Lattice as Iron Spikes (Brutal Biome )
++ Add dracula castle with 25 village houses and add to bruh biome with wine cellars (Brutal Biome )
++ make slate mine layer in bruh biomes(and make it harder to mine) (Brutal Biome )
++ Special Battle Tower Chests with got to defeat golem for loot! & Vexes name: Cheenators & Pedestal Loottables (The Unseen Blade, and more Epic Weapons) (Brutal Biome )
++ Dark Fog in Bruh Biomes (Brutal Biome )
++ Frozen Bruh biome type angry wolf & angry bear (Brutal Biome )
++ Remake Mistlands In minecraft (Brutal Biome )
++ Spiders Den Brutal Biome with only spiders in all sizes. (Brutal Biome )
++ Bruh Biome with pretty purple water & black fog (See if I can remove a non-virtual biome somewhere) (Brutal Biome)
++ Ashen City, have most of buildings be ash, dragons flying around and have a isle biome with the bruh tower in the center cutting away at
+  the city with an angle going up and outwards from the tower slicing skyscrapers off. Make the city also have parasite plants and fog with
+  all sorts of dragons flying around (Brutal Biome)
++ Add brutal coins to Underneath in specially designed structures
++ make ac heaters in future bunkers with special bedrock blocks which require a late game key
++ Definitely not Kotlin Tower, boss and drops plane tickets, hints etc
++ Add Wild Bog Biome (Brutal) tall canopy blocking out sunlight replace to biomename Ancient Swamp
++ Add hexagonal cities when more skyscrapers are in the game
++ Add gold deposits in rivers
++ Add crossbow entity and cat dinnerbone in house with Nickol Dickson name and a chair in the center
++ Add dragon den to special dragon biome guaranteed bo4.
++ Add Bridgepilings for river biomes
++ Fix crystals breaking through bedrock
++ Add Drunken Villager Boss to Bruh Biome
++ Cyclops Colonies (underground biome with blood n stuff in prairie?).
++ make tunnel break in underworld biome
++ make tunnel longer
++ Add DregoraRL (pre-packed to github)
++ make tunnel bunker dungeon
++ Add Nether portals
++ re-check trench broken by canyon issue
++ Parasite biome spooky forest?
++ Make dungeon entity Remnant of Blight, Witness of Blight
++ Ornamental pillars with loot in center
++ suggestion for underground biomes using the myrmex vines as substitution for glowberry vines that 1.18+ has (Perhaps medium sized underground chasms?)
++ Miningtown & JungleCaves lore have no structure to spawn in
++ Display percentage unpacking Dregora so people do not force quit any more.
++ Add smoke particle effect to barrier block being destroyed
+
+#RLCraft Backlog:
 + tiny cactus harvestable with shears
 + honeycomb empty honey needs same recipies as HoneyComb
 + blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire
@@ -667,15 +774,13 @@ RLCraft Backlog:
 - Curious bear event
 - It's boomer time!
 + add end battle towers (crystals inside + guardian spawner)
++ artifacts:mimic and mod_lavacow:mimic need to be added to lycanites blacklist (Doesn't exists?)
 
-OTG todo:
-
-OTG Backlog:
+#OTG Backlog
 + backport 50ms check from 1.16.5 to 1.12.2 for easier performance optimization on 1.12.2
 
-OTG Done:
-- Fix An Unknown error occured while attempting to perform any command in some cases
-- Fix Crash LayerMixing for OTG
+
+
 
 #######################################################################
 # +-----------------------------------------------------------------+ #

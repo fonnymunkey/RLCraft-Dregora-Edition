@@ -1,2 +1,2 @@
-background = addStretchedTexture("top_left", "loadingscreen:options_background.png")
+background = addAnimatedTexture("top_left", "loadingscreen:loading_screen.gif")
 background.setRelRender(1, 1)

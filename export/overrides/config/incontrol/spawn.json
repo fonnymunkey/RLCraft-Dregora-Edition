@@ -44,6 +44,12 @@
   },
   {
     "dimension": 0,
+    "mob": ["srparasites:beckon_si", "srparasites:beckon_sii", "srparasites:beckon_siii", "srparasites:beckon_siv"],
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
+    "result": "deny"
+  },
+  {
+    "dimension": 0,
     "mod": "srparasites",
     "spawner": true,
     "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
