@@ -24,7 +24,7 @@
           ],
           "weight": 1
         }
-      ]
+      ]o                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    yy
     },
     {
       "name": "traveler_legacyspawn_book",
@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:written_book",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_nbt",

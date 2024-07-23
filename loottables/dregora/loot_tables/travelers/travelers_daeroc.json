@@ -32,11 +32,11 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:written_book",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"x:-14697 z:-3491\",Lore:[\"Capital on the hill.\"]}}"
+              "tag": "{display:{Name:\"x:-14900 z:-3800\",Lore:[\"Capital on the hill.\"]}}"
             }
           ],
           "weight": 1

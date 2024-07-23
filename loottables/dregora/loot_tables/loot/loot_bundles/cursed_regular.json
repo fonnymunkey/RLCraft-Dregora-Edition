@@ -20,12 +20,12 @@
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {"attribute": "generic.armorToughness","name": "armorToughness","amount": -0.85,"operation": "multiply_total","slot": ["offhand"]},
-                {"attribute": "generic.maxHealth", "name": "armorToughness", "amount": -0.25, "operation": "multiply_total", "slot": ["offhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": -0.25, "operation": "multiply_total", "slot": ["offhand"]},
                 {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": -0.05, "operation": "multiply_total", "slot": ["offhand"]},
                 {"attribute": "generic.movementSpeed", "name": "attackDamage", "amount": -0.05, "operation": "multiply_total", "slot": ["offhand"]},
                 {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": -0.9, "operation": "multiply_total", "slot": ["offhand"]},
                 {"attribute": "generic.armorToughness","name": "armorToughness","amount": -0.85,"operation": "multiply_total","slot": ["mainhand"]},
-                {"attribute": "generic.maxHealth", "name": "armorToughness", "amount": -0.25, "operation": "multiply_total", "slot": ["mainhand"]},
+                {"attribute": "generic.maxHealth", "name": "maxHealth", "amount": -0.25, "operation": "multiply_total", "slot": ["mainhand"]},
                 {"attribute": "generic.attackSpeed", "name": "attackSpeed", "amount": -0.05, "operation": "multiply_total", "slot": ["mainhand"]},
                 {"attribute": "generic.movementSpeed", "name": "attackDamage", "amount": -0.05, "operation": "multiply_total", "slot": ["mainhand"]},
                 {"attribute": "generic.attackDamage", "name": "attackDamage", "amount": -0.9, "operation": "multiply_total", "slot": ["mainhand"]}

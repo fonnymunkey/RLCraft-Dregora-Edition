@@ -1,2 +1,3 @@
-background = addAnimatedTexture("top_left", "loadingscreen:loading_screen.gif")
+background = addAnimatedTexture("top_left", "loadingscreen:loading_animation.gif")
 background.setRelRender(1, 1)
+background.setUpdateTime(60)

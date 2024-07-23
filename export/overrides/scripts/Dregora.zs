@@ -57,6 +57,9 @@ var Logging = false;
 //Normal recipe adjustments
 //=================================
 
+// Remove Bread recipe with 3 wheat = 1 bread.
+recipes.removeShapeless(<minecraft:bread>, [<minecraft:wheat>,<minecraft:wheat>,<minecraft:wheat>]);
+
 // Remove Enchantment table & add wither skulls to it:
 recipes.remove(<minecraft:enchanting_table>);
 
@@ -83,6 +86,15 @@ GrateHard.hardness = 10;
 var IronLadderHard as IItemStack = <quark:iron_ladder>;
 IronLadderHard.hardness = 5;
 
+var ContentCreatorSlab as IItemStack = <contentcreator:iron_plate_slab_reinforced>;
+ContentCreatorSlab.hardness = 30;
+
+var ContentCreatorStairs as IItemStack = <contentcreator:iron_plate_stairs_reinforced>;
+ContentCreatorStairs.hardness = 30;
+
+var ContentTweakersDoubleSlab as IItemStack = <contenttweaker:iron_plate_slab_reinforced>;
+ContentTweakersDoubleSlab.hardness = 30;
+
 var LushPolishedHard as IItemStack = <lycanitesmobs:lushstonepolished>;
 LushPolishedHard.hardness = 30;
 
@@ -105,11 +117,43 @@ recipes.addShaped("dregora47",<contenttweaker:iron_plate_rust_reinforced> * 8,
   [<quark:iron_plate>,<minecraft:water_bucket>,<quark:iron_plate>],
   [<quark:iron_plate>,<quark:iron_plate>,<quark:iron_plate>]]);
 
+// Add a recipe for the reinforced slabs
+recipes.addShaped("dregora49",<contentcreator:iron_plate_slab_reinforced> * 6,
+ [[null,null,null],
+  [<contenttweaker:iron_plate_reinforced>,<contenttweaker:iron_plate_reinforced>,<contenttweaker:iron_plate_reinforced>],
+  [null,null,null]]);
+
+// Add a recipe for the reinforced stairs
+recipes.addShaped("dregora50",<contentcreator:iron_plate_stairs_reinforced> * 8,
+ [[<contenttweaker:iron_plate_reinforced>,null,null],
+  [<contenttweaker:iron_plate_reinforced>,<contenttweaker:iron_plate_reinforced>,null],
+  [<contenttweaker:iron_plate_reinforced>,<contenttweaker:iron_plate_reinforced>,<contenttweaker:iron_plate_reinforced>]]);
+
+//=================================
+//QUARK HAT ADD TOOLTIPS
+//=================================
+
+<quark:witch_hat>.addTooltip("§8Makes witches friendly and negates charm spectre curses");
+//<quark:pirate_hat>.addTooltip("§8Grants permanent looting I");
+<quark:archaeologist_hat>.addTooltip("§8Grants 25% additional chance to drop ores.");
+
 //=================================
 //FISH UNDEAD RECIPES & NAME CHANGES
 //=================================
 
-val Deathtouch = <minecraft:potion>.withTag({Potion: "potioncore:repair"});
+
+// Removed Recipes
+
+recipes.remove(<mod_lavacow:reapers_scythe>);
+recipes.remove(<mod_lavacow:war>);
+recipes.remove(<mod_lavacow:halo_necklace>);
+recipes.remove(<mod_lavacow:dreamcatcher>);
+recipes.remove(<mod_lavacow:raven_whistle>);
+recipes.remove(<mod_lavacow:famine>);
+recipes.remove(<mod_lavacow:faminearmor_helmet>);
+recipes.remove(<mod_lavacow:faminearmor_chestplate>);
+recipes.remove(<mod_lavacow:faminearmor_leggings>);
+recipes.remove(<mod_lavacow:faminearmor_boots>);
 
 // Removed Items
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <mod_lavacow:hatred_shard>); //Removes DeathTouch
@@ -143,6 +187,9 @@ recipes.remove(<mod_lavacow:weta_hoe>);
 <mod_lavacow:bonestew>.displayName = "Dragon Bone Stew";
 <mod_lavacow:dreamcatcher>.displayName = "Cursed Dream Catcher";
 
+// Ban Hammer Tooltip
+<mod_lavacow:skeletonking_mace>.addTooltip("§9Effects not applied on bosses.");
+
 // Obtained from tooltips & names
 <mod_lavacow:acidicheart>.displayName = "Acidic Osvermis/Mummy Heart";
 <mod_lavacow:feather_black>.displayName = "Black Raven/Penghoul Feathers";
@@ -170,18 +217,20 @@ recipes.remove(<mod_lavacow:weta_hoe>);
 <mod_lavacow:vespa_dagger>.addTooltip("§eInflicts Poison II");
 <mod_lavacow:dreamcatcher>.clearTooltip(true);
 <mod_lavacow:dreamcatcher>.addTooltip("§eThe Dead roam nearby as you wake from your deep slumber...");
-<mod_lavacow:dreamcatcher>.addTooltip(" ");
+<mod_lavacow:dreamcatcher>.addTooltip("§8mod_lavacow:dreamcatcher");
 <mod_lavacow:dreamcatcher>.addTooltip("§8Foglet, Undead Swine, Ithaqua, Sludge lord, Vespa, Scarecrow, Osvermis");
 <mod_lavacow:dreamcatcher>.addTooltip("§8Pinghoul, Undertaker, Banshee, Avaton, Vindicator, Ghost or a Chest!?");
 
 // Completely rename "Death" hammer
 <mod_lavacow:skeletonking_mace>.clearTooltip(true);
 <mod_lavacow:skeletonking_mace>.addTooltip("§eInstantly kills if the victim falls under 25% health for 10 seconds after each hit.");
+<mod_lavacow:skeletonking_mace>.addTooltip("§8mod_lavacow:skeletonking_mace");
 <mod_lavacow:skeletonking_mace>.addTooltip("§4This item is banned for obvious reasons.");
 
 // Completely rename Molten Heart Description
 <mod_lavacow:mootenheart>.clearTooltip(true);
 <mod_lavacow:mootenheart>.addTooltip("§9Fish's Undead Rising");
+<mod_lavacow:mootenheart>.addTooltip("§8mod_lavacow:mootenheart");
 <mod_lavacow:mootenheart>.addTooltip("§eFire Damage Protection: -20%");
 
 // Remove fish undead recipes
@@ -638,17 +687,31 @@ furnace.addRecipe(<biomesoplenty:seaweed>, <aquaculture:food:0>, 99999);
 
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
 
-    if !blockDrops.isPlayer {return;}
+    if (( blockDrops.block has <biomesoplenty:seaweed>.asBlock() ) || ( blockDrops.block has <biomesoplenty:coral:*>.asBlock() ) || ( blockDrops.block has <coralreef:coral:*>.asBlock() )) {
 
-    if ( blockDrops.block has <biomesoplenty:seaweed>.asBlock() ){
+        if !blockDrops.isPlayer {
+            blockDrops.drops = [] as WeightedItemStack[];
+            return;
+        }
 
-        blockDrops.drops = [<aquaculture:food:0>.weight(1.0)] as WeightedItemStack[];
+        var blocktop = Position3f.create(blockDrops.position.x, blockDrops.position.y, blockDrops.position.z).asBlockPos();
+        //print(blockDrops.world.getBlockState(blocktop).block.definition.id);
 
+        while (( blockDrops.world.getBlockState(blocktop).block.definition.id has "biomesoplenty:seaweed" ) || ( blockDrops.world.getBlockState(blocktop).block.definition.id has "biomesoplenty:coral" ) || ( blockDrops.world.getBlockState(blocktop).block.definition.id has "coralreef:coral" )) {
+            var blockY = blockDrops.position.y + 1;
+            var blocktop = Position3f.create(blockDrops.position.x, blockY, blockDrops.position.z).asBlockPos();
+        }
+
+
+        if ( blockDrops.block has <biomesoplenty:seaweed>.asBlock() ) {
+            blockDrops.drops = [<aquaculture:food:0>.weight(1.0)] as WeightedItemStack[];
+        }
     }
 
     if (blockDrops.block has <minecraft:ice>.asBlock() ) || (blockDrops.block has <iceandfire:dragon_ice>.asBlock() ) || (blockDrops.block has <biomesoplenty:hard_ice>.asBlock() ) || (blockDrops.block has <minecraft:packed_ice>.asBlock() ){
 
-        for i in 0 to blockDrops.player.world.random.nextFloat(1, 2) {
+        if !blockDrops.isPlayer {return;}
+        for i in 1 to blockDrops.world.random.nextFloat(1, 2) {
 
             blockDrops.drops = [<mod_lavacow:shattered_ice>.weight(1.0)] as WeightedItemStack[];
 
@@ -1159,7 +1222,7 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
                 }
 
-                if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing") || ((EntityBiome) == "Abyssal Rift")){return;}
+                if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing") || ((EntityBiome) == "Grey Abyss") || ((EntityBiome) == "Abyssal Rift")){return;}
 
 
                 if entityBase.health > 1000 {
@@ -1201,7 +1264,7 @@ events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
                         var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                    if (((Biome) == "Abyssal Rift") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
+                    if (((Biome) == "Abyssal Rift") || ((Biome) == "Grey Abyss") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
 
                         event.deny();
 
@@ -1226,9 +1289,8 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
                     var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
                     if ((EntityBiome) == "Abyssal Rift") {
-                        event.cancel();
+                        event.cancel(); //Shivaxi drops nothing at this stage
                     }
-
                 }
 
                 if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0) && !((event.entity.definition.id) has "srparasites:sim_dragone")) {
@@ -1237,10 +1299,9 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
 
                     var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
-                    if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {return;}
+                    if (((EntityBiome) == "Grey Abyss") || ((EntityBiome) == "Abyssal Rift") || ((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {return;}
 
                     event.cancel();
-
                 }
             }
         }

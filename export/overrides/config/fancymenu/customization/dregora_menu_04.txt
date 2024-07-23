@@ -1,0 +1,371 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = true
+  randomonlyfirsttime = false
+}
+
+customization {
+  restart_on_load = false
+  name = dregora_menu_04
+  action = animatebackground
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  action = movebutton
+  y = 96
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = setbuttonlabel
+  value = &fOptions...
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_01.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  action = sethoverlabel
+  label = §fOptions...
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 101
+  action = movebutton
+  y = 96
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_02.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  action = sethoverlabel
+  label = §fEmbrace Cowardice?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  action = movebutton
+  y = 47
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_03.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  action = sethoverlabel
+  label = §fMods
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 346
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = d2edb3b8-d52f-4240-8db9-57a4c923f9941720103697478
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = 97c7e9db-3efe-4eea-a7e6-86f92f575bde1720103697497
+  y = 447
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 731
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = e40524ea-f3db-4044-8594-35cd4a4ae9811720103697497
+  y = 489
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = d9d25d90-fcdb-4b7d-b318-133c56804eaa1720103697497
+  y = 227
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 11b88072-4e36-4979-bae2-42bf38a156d01720103697497
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = b646a403-b9f3-4d89-8084-5aab234b71451720103697497
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = top-left
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://rlcraft.fandom.com/wiki/RLCraft_Wiki%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  label = RLCraft Wiki
+  loopbackgroundanimations = true
+  hoverlabel = &7RLCraft Wiki
+  x = 2
+  width = 61
+  action = addbutton
+  actionid = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
+  y = 11
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  height = 10
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://bisecthosting.com/shivaxi%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_04.png
+  label = Host your own server!
+  loopbackgroundanimations = true
+  hoverlabel = &fBy BisectHosting, use code Shivaxi
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = 0
+  width = 200
+  action = addbutton
+  actionid = 4b6038fd-e13c-4927-9a95-728506c74e7e1720107213251
+  y = 71
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+  height = 20
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://speedrun.com/RLCraft%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  label = RLCraft Speedrun
+  loopbackgroundanimations = true
+  hoverlabel = &7RLCraft Speedrun
+  orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
+  x = 1
+  width = 93
+  action = addbutton
+  actionid = d4cfd6a9-49eb-4828-b4dd-d03a13d112e81720107737852
+  y = 22
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  height = 10
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://www.reddit.com/r/RLCraft%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  label = RLCraft Reddit
+  loopbackgroundanimations = true
+  hoverlabel = &7RLCraft Reddit
+  orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
+  x = 1
+  width = 74
+  action = addbutton
+  actionid = 285e5c6d-055e-458d-a8fa-5a1bcca152bb1720107742500
+  y = 11
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  height = 10
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/QURkzuQ%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  label = Shivaxi's Discord
+  loopbackgroundanimations = true
+  hoverlabel = &7Shivaxi's Discord
+  orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
+  x = 1
+  width = 87
+  action = addbutton
+  actionid = 648363cd-7fe6-4017-a17f-0adb391e6dc81720107747951
+  y = 33
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  height = 10
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/kyzax24d59%btnaction_splitter_fm%
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  label = Dregora's Discord
+  loopbackgroundanimations = true
+  hoverlabel = &7Dregora's Discord
+  orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
+  x = 1
+  width = 95
+  action = addbutton
+  actionid = bcf8b171-f781-4b3a-9880-6e72b80614391720107812551
+  y = 44
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
+  height = 10
+}
+
+customization {
+  orientation = bottom-left
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = RLCraft Dregora Edition v1.9%n%{"placeholder":"totalmods"} Mods Loaded
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 12
+  width = 157
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = db5a64d3-1584-460f-807f-d3cd66d1eadb1720108374802
+  y = -59
+  alignment = left
+  height = 23
+}
+
+customization {
+  orientation = bottom-right
+  enable_scrolling = true
+  shadow = true
+  scale = 1.0
+  source = {"placeholder":"realtimehour"}:{"placeholder":"realtimeminute"} {"placeholder":"realtimemonth"}/{"placeholder":"realtimeday"}/{"placeholder":"realtimeyear"}
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = -113
+  width = 106
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 07890ad6-f2c8-4cd4-88eb-c9ec7ee40a3d1720109088701
+  y = -59
+  alignment = left
+  height = 40
+}
+
+customization {
+  path = fancymenu_data/DregoraRL/rlcraft_dregora_logo_full_01.png
+  orientation = element
+  orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
+  x = -88
+  width = 345
+  actionid = e29c72c7-4197-44a5-98f2-e1af0948917e1720137589897
+  action = addtexture
+  y = -141
+  height = 159
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_02.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  action = sethoverlabel
+  label = §fMultiplayer
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_01.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  action = sethoverlabel
+  label = §fSingleplayer
+}
+

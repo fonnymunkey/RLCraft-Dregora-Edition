@@ -46,7 +46,7 @@
         {
           "type": "item",
           "name": "minecraft:web",
-          "weight": 100
+          "weight": 80
         },
         {
           "type": "item",
@@ -122,12 +122,12 @@
               ]
             }
           ],
-          "weight": 2
+          "weight": 3
         },
         {
           "type": "item",
           "name": "minecraft:paper",
-          "weight": 1,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -138,7 +138,7 @@
         {
           "type": "item",
           "name": "minecraft:book",
-          "weight": 1,
+          "weight": 10,
           "functions": [
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"Slow Cook Recipes with -yyon-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"The Joy of Cooking with -XzeroAir-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
@@ -146,7 +146,7 @@
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"-Snownee\u0027s- Cookbook\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"Competent Cuisine with -Lycanite-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"Tasty Table -Star Artsy-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "minecraft:set_nbt","tag": "{display:{Name:\"How to Cook Without -RayQuazaFallout-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
+            {"function": "minecraft:set_nbt","tag": "{display:{Name:\"How to Cook Without -RayquazaFallout-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"Cooking with -Fonny Munkeys-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"-Paulevs- Cookbook\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "minecraft:set_nbt","tag": "{display:{Name:\"Against All -Hoonts-\",Lore:[\"Unlike other ancient books this one\",\"mostly remains intact\"]}}","conditions": [{"condition": "random_chance","chance": 0.1}]},

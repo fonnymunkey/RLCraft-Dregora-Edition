@@ -25,7 +25,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"Travelers Compass\",Lore:[\"The compass has a inscription on the back\nFollow the pointed path and wonders await.\"]}}"
+              "tag": "{display:{Name:\"Travelers Compass\",Lore:[\"The compass has a inscription on the back\",\"Follow the pointed path and wonders await.\"]}}"
             }
           ],
           "weight": 1

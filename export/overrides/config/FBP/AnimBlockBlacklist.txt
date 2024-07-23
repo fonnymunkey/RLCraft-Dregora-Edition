@@ -76,3 +76,5 @@ forgottenitems:rune_reader
 disenchanter:disenchantmenttable
 iceandfire:podium
 iceandfire:lectern
+iceandfire:desert_myrmex_cocoon
+iceandfire:jungle_myrmex_cocoon

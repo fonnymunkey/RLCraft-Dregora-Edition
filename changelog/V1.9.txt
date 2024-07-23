@@ -341,7 +341,12 @@
 - added biomes: Ancient Rainforest RM, Ancient Rainforest Border RM, Ancient Rainforest Isle RM
 - Changed wool:2 on structure PirateShip to quark:pirates
 - tweaked Salt plains lime mountains
-- fixed errir for: brutal_pipebig_01_D1C2R0 brutal_pipebig_01_D2C2R0 (Check Server for files)
+- fixed error for: brutal_pipebig_01_D1C2R0 brutal_pipebig_01_D2C2R0 (Check Server for files)
+- removed spawn egg loottable from rustic cabinets in ruins & made sealed crates spawn better loot by a little amount
+- fixed invalid book tags for all traveler books
+- fixed Dearoc villager & horse overspawn
+- fixed CastleOcean Ruins (C1R0) candles are reversed
+- fixed spruce chest not containing any loot in the brutal tower treasure room
 #DregoraRL ^
 
 #Fixed/Changed/Added [RLCraft]:
@@ -474,7 +479,13 @@
 - Boss script added by RLMixins
 - Arrowscript added by RLMixins
 - Skeleton king script deathloottable added by RLMixins (need to try loottweaker)
-- added new blocks through contenttweaker & their recipes, reinforced iron block & reinforced rusty iron block
+- added new blocks through contenttweaker/contentcreator & their recipes, reinforced iron block normal/rusty & stairs/slabs/doubleslab blocks.
+- Add descriptions:
+    - witch hat makes witches friendly & negates charm spectre curses
+    - archeology hat gives an additional 25% chance to drop ores.
+- configure new loading screen mod with DregoraRL screenshots
+- Changed medusa temple to gorgon temple in gif
+- removed lightning resist & speed from copper but added immunization
 #RLCraft ^
 
 #Fixed/Changed/Added [Underneath]
@@ -494,6 +505,9 @@
 - made cities spawn in spiked biome too
 - Fixed shader issues
 - Added a chest check for rooftops
+- Bump up temp in Underneath.
+- fixed skyscraper_2x2 (eats air away)
+- fixed skyscraper_3x3 (needs air)
 #Underneath ^
 
 #Fixed/Changed/Added [Fish's Undead Rising]
@@ -554,6 +568,20 @@
     - remove Deathtouch Potion
     - Customized the loottable for skeleton king
 - added mod Potion Descriptions (Forge)
+- Add items to underneath (and remove some recipes from items)
+    - famine set + knife
+    - frying pan
+    - Halo necklace
+    - Azraeal's Scythe
+    - Sonic Bomb
+    - War
+    - Raven Whistle
+    - Cursed Dream Catcher
+    - Holy Hand Grenade
+    - Midnight Mourne
+    - Brutal Coins (Rarely)
+    - dragon bone stew
+    - make ban hammer unenchantable / give decay / give 100% armor reduction / destroy on use / give levitation or launch 1000 / cursed edge
 #Fish's Undead Rising ^
 
 #Fixed/Changed/Added [OTG]
@@ -566,50 +594,52 @@
 //======================================================//
 
 Underneath todo:
-+ fix skyscraper_2x2 (eats air away)
-+ fix skyscraper_3x3 (needs air)
 + Adjust description to be "Special addition, does not work without DregoraRL"
-+ Add items to underneath (solely) (and add desc to tooltip)
-    + famine set
-    + frying pan
-    + Halo necklace
-    + Azraeal's Scythe
-    + Sonic Bomb
-    + War
-    + Raven Whistle
-    + Cursed Dream Catcher
-    + Holy Hand Grenade
-    + Midnight Mourne
-    + Brutal Coins (Rarely)
-    + dragon bone stew
-    + make ban hammer unenchantable / give decay / give 100% armor reduction
-
 
 Dregora todo:
-+ fix Pigs overspawning
-+ Dregora Versioning Change:   DregoraRL v1.9 - MC 1.12.2 - RLC v2.9.3 (or simpler?)
+- Check waystones properly spawning and not having the same name and not being breakable for gem traders.
+- Make chests in cities better (less discarded junk chests)
+- Adjust loottable banhammer to be 1 weight
+- banhammer remove 50% health
+- Decrease loot in church of the cult
+- fix /n in lore desc, make ","
+- make milk switch thingy unluck work (just add a lot of junk)
+- give dragons more health in encounters and fix formatting for shivaxi's entity
+- armorstands in brutal tower don't always spawn
+- check if herblorist is fixed
+- adjusted gemtrader minimal distance from 100 to 60loa
+
+
++ Adjust description to include some basic information on DregoraRL
++ turn off logging
 
 Awaiting I&F Update todo:
 + enable lightning dragon spawning during storm
++ Disable stage 5 dragon skeletons
 + mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
 + add special spawners for the gatekeeper & corruption
 + test brutal tower after C&F update
-+ raise brutal tower rarity (minimal chunks apart)
++ raise brutal tower rarity (10 minimal chunks apart)
 + File cleanup, remove .zip files
 
 RLCraft todo:
-+ add ladders, quark stairs & quark plate,  to contenttweaker and make then reinforced variants
-+ check if parasite beckon still spawns in overworld
-Add descriptions:
-    + witch hat makes witches friendly & negates charm spectre curses
-    + pirate hat has looting (setbonus)
-    + archeology hat gives an additional 25% chance to drop ores.
-+ Lightning Dismount (random lightning chance when storm is occurring)
+- Remove bread recipe because there is dough
+- Coral needs metadata for not dropping the items
+- Lowered graveyard spawning
+- Made wither always be infernal
+- Removed Magical from banshee lycanites config
+- Fixed lag with item drops, coral and kelp but removed multiple kelp drops from plant (just gives one)
+- add mobs to investigate AI (RLTweaker + Undead Fish + SRParasites New Mobs + BiomesOPlenty Wasp)
+
++ Alter the RL Logo for starting up
++ lower size of the animation frames ( try 20 frames and lower quality to 85, possibly 80)
+- added new armor types to levelup & underarmor liners
+- adjusted parasite drop system to drop in allowed biomes
++ adjust parasite drops to exclude some special items from drops in overworld and replace them for other items
+
++ add content creator mod to manifest
 + update RLCombat
 + Check all that can be updated
-
-
-+ configure new loading screen mod with DregoraRL screenshots
 + Add secret fun script (no spoilers)
 + Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings fileID once it gets uploaded to curse)
 + Upload Underneath v1.1 and add to Manifest.json
@@ -620,36 +650,38 @@ Add descriptions:
 Menu Loading Screen:
 #Brutal Tower
 
-Gif loading screen:
-#Herbalist
-#Medusa Temple
-#Brutal Tower
-#Gem Traders
-#Big Tunnels
-#Dungeons (the 3 ancient dungeons)
-#Origin
-#Daeroc
-#Underneath (Include information on portals)
 
 Trailer todo:
-POI's:
-/tp -13439 200 -7949 (wicked plains)
+
+#Must See:
+GemTraders
+Brutal Tower
+Underneath
+
+Fromimage:
+/tp -17041 200 2929 (wicked plains & church)
 /tp -14912 200 -3549 (kingdom of dearoc)
+/tp -15350 200 -3189 (kingdom of dearoc farms)
+/tp -17016 200 5590 (city of origins)
+/tp 6728 200 -14854 (Rainforest Canyons)
+/tp 7500 200 13188 (Polar Volcano)
+/tp -12495 200 -8872 (mountainous region)
+/tp -922 200 16562 (waterfalls)
 
 #Structures
 Gemtrader
+Brutal Tower
+Herbalist
+Happy Industries Mining
+Dungeon  #1, #2 and #3
+/otg tp Deep Polluted Ocean (shipwrecks and structures)
 
 #Biomes
 /otg tp Defiled Snow Plains
-/otg tp Dregora_WastelandPlateauBorder
+/otg tp YellowStone Mountain
 /otg tp Abyssal Rift
-/otg tp
-/otg tp
-/otg tp
-/otg tp
-/otg tp
-/otg tp
-
+/otg tp Caniverous Forest
+/otg tp Corrupted Scarlet Grove
 
 Last todo:
 + re-write this changelog for CF, don't add any spoilers.
@@ -663,6 +695,10 @@ Optional add mods todo:
 + Food Funk
 
 Optional RLCraft todo:
++ Add vaults from 1.21 to RLCraft
++ If player sets off damaged fireworks "if contains damage" then 75% it blows it up in their face
++ Lightning Dismount (random lightning chance when storm is occurring)
++ Ancient curse sealed on entities
 + Make enchantment effect list (same the status effect list but with book icon)
 + Rework Fish Undead entities to work with lycanites summons
 + Trollvolution event
@@ -681,6 +717,7 @@ Optional RLCraft todo:
 + add new dimension mod for the end
 
 #DregoraRL Backlog
++ Re-make the ancient trees using customstructures and create a big forest out of them
 + Ore redistribution:
 Oceans: 3x more lapis
 Mountains: 2x more emerald
@@ -756,6 +793,7 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Add smoke particle effect to barrier block being destroyed
 
 #RLCraft Backlog:
++ Add quark pirate hat description after looting has been added
 + tiny cactus harvestable with shears
 + honeycomb empty honey needs same recipies as HoneyComb
 + blacklist lycanitesmobs effect from potion effect curse zipzap teleportation blue fire

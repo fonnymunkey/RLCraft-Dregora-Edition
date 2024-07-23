@@ -13,7 +13,18 @@
       "horizontalOffsetBase": 0.0,
       "horizontalOffsetScale": 0.25,
       "horizontalOffsetMax": 20.0,
-      "callForHelpEntries": []
+      "callForHelpEntries": [
+        {
+          "entityNames": [
+            "minecraft:creeper"
+          ],
+          "verticalRange": 4.0,
+          "horizontalRange": 8.0,
+          "requiresVision": true,
+          "ignoreParentInCombat": true,
+          "ignoreParentChanceTestFailed": false
+        }
+      ]
     }
   ]
 }

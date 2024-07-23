@@ -1,0 +1,28 @@
+{
+  "executeOnAttacked": true,
+  "executeOnCalled": false,
+  "healthThreshold": 1.0,
+  "executionChance": 0.5,
+  "movementSpeed": 1.25,
+  "verticalOffsetBase": 0.0,
+  "verticalOffsetScale": 0.0,
+  "verticalOffsetMax": 0.0,
+  "horizontalOffsetBase": 0.0,
+  "horizontalOffsetScale": 0.25,
+  "horizontalOffsetMax": 20.0,
+  "callForHelpEntries": [
+    {
+      "entityNames": [
+        "minecraft:zombie_villager",
+        "minecraft:skeleton",
+        "minecraft:stray",
+        "mod_lavacow:raven"
+      ],
+      "verticalRange": 4.0,
+      "horizontalRange": 8.0,
+      "requiresVision": true,
+      "ignoreParentInCombat": true,
+      "ignoreParentChanceTestFailed": true
+    }
+  ]
+}

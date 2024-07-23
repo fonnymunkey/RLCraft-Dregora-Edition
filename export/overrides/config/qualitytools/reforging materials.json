@@ -13,6 +13,30 @@
   },
   {
     "tool": {
+      "item": "mod_lavacow:mootenheart"
+    },
+    "material": {
+      "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+      "item": "mod_lavacow:halo_necklace"
+    },
+    "material": {
+      "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
+      "item": "mod_lavacow:dreamcatcher"
+    },
+    "material": {
+      "item": "bountifulbaubles:spectralsilt"
+    }
+  },
+  {
+    "tool": {
         "item": "baubles:ring"
     },
     "material": {

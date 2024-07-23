@@ -47,7 +47,7 @@
                 ],
                 title:\"Book of the Mechanic\",
                 author:\"Baldy Blabbers\",
-                display:{Lore:[\"This book contains various illustrations on basic,\nspring powered mechanics.\"]}
+                display:{Lore:[\"This book contains various illustrations on basic\",\"spring powered mechanics.\"]}
               }",
               "conditions": [{"condition": "random_chance","chance": 0.3}]
             },

@@ -32,11 +32,11 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:written_book",
+          "name": "minecraft:book",
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"x:-723 z:17155\",Lore:[\"Three dungeons clad in green reside with treasure and foe.\nOne a pyramid, two a hole, three a offering.\"]}}"
+              "tag": "{display:{Name:\"x:-723 z:17155\",Lore:[\"Three dungeons clad in green reside with treasure and foe.\",\"One a pyramid, two a hole, three a offering.\"]}}"
             }
           ],
           "weight": 1

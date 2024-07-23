@@ -16,9 +16,14 @@ ReinforcedBlockDefault.register();
 // Reinforced Rusty Iron Plate Block
 val ReinforcedBlockRust = VanillaFactory.createBlock("iron_plate_rust_reinforced", <blockmaterial:iron>);
 ReinforcedBlockRust.blockSoundType = <soundtype:metal>;
-ReinforcedBlockDefault.blockHardness = 30.0; //default 5.0
-ReinforcedBlockDefault.blockResistance = 20.0; //default 10
+ReinforcedBlockRust.blockHardness = 30.0; //default 5.0
+ReinforcedBlockRust.blockResistance = 20.0; //default 10
 ReinforcedBlockRust.register();
 
-//val ReinforcedSlab = VanillaFactory.createBlock("iron_plate_slab_reinforced", <blockmaterial:iron>);
-//val ReinforcedStair = VanillaFactory.createBlock("iron_plate_stair_reinforced", <blockmaterial:iron>);
+
+// Reinforced Iron Slab Double
+val ReinforcedBlockSlab = VanillaFactory.createBlock("iron_plate_slab_reinforced", <blockmaterial:iron>);
+ReinforcedBlockSlab.blockSoundType = <soundtype:metal>;
+ReinforcedBlockSlab.blockHardness = 30.0; //default 5.0
+ReinforcedBlockSlab.blockResistance = 20.0; //default 10
+ReinforcedBlockSlab.register();

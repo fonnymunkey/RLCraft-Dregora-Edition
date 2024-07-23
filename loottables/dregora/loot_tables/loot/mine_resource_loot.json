@@ -119,7 +119,7 @@
           "weight": 5,
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "function": "enchant_with_levels",
               "levels": 20,
               "conditions": [
                 {

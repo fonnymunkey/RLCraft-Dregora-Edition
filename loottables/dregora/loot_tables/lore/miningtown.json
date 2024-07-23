@@ -180,7 +180,7 @@
               "tag": "{display:{Name:\"The Earthern Rose\",Lore:[\"The stone bears teeth yet somehow you feel safer holding it in your off-hand.\"]}}"
             },
             {
-              "function": "minecraft:enchant_with_levels",
+              "function": "enchant_with_levels",
               "levels": 30,
               "treasure": false
             },

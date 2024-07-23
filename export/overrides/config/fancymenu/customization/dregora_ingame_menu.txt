@@ -1,0 +1,120 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiIngameMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_03.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
+  action = sethoverlabel
+  label = §fSave and... (Rage) Quit?
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_01.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
+  action = sethoverlabel
+  label = §fBack to Pain
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_02.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/buttonlong.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_lan_button%
+  action = sethoverlabel
+  label = §fSuffer Together
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_01.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  action = sethoverlabel
+  label = §fOptions...
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_01.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  action = sethoverlabel
+  label = §fAdvancements
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_pausescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_02.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_pausescreen_mods_button%
+  action = sethoverlabel
+  label = §fMod Options...
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = fancymenu_data/DregoraRL/buttons/button_overgrown_02.png
+  backgroundnormal = fancymenu_data/DregoraRL/buttons/button.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  action = sethoverlabel
+  label = §fStatistics
+}
+
