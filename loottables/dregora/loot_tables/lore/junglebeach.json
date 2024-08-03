@@ -166,16 +166,6 @@
             {
               "function": "set_nbt",
               "tag": "{Potion:\"minecraft:water\"}"
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{Potion:\"minecraft:potion\"}",
-              "conditions": [
-                {
-                  "condition": "random_chance",
-                  "chance": 0.6
-                }
-              ]
             }
           ],
           "weight": 4

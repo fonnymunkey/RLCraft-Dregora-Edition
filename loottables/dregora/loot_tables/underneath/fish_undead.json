@@ -50,19 +50,7 @@
             },
             {
               "function": "set_nbt",
-              "tag": "{ench:[{id:19,lvl:100}],HideFlags:2}"
-            },
-            {
-              "function": "enchant_randomly",
-              "enchantments": [
-                "somanyenchantments:cursededge"
-              ]
-            },
-            {
-              "function": "enchant_randomly",
-              "enchantments": [
-                "somanyenchantments:pandora"
-              ]
+              "tag": "{ench:[{id:19,lvl:50}],HideFlags:2}"
             }
           ]
         },

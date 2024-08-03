@@ -1,6 +1,6 @@
 {
   "name": "shadowlabyrinth",
-  "loadDefault": true,
+  "loadDefault": false,
   "sectorCountMin": 20,
   "sectorCountMax": 30,
   "corridorToCorridorChance": 0.5,
@@ -13,7 +13,10 @@
       ],
       "dimensionListType": "whitelist",
       "biomeIds": [
-        "openterraingenerator:overworld_abyssal_rift"
+        "openterraingenerator:overworld_abyssal_rift",
+        "Abyssal Rift",
+        "srparasites:biome_parasite",
+        "Parasite Biome"
       ],
       "biomeIdListType": "blacklist",
       "biomeTags": [

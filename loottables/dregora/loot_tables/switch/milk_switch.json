@@ -8,20 +8,8 @@
         {
           "type": "loot_table",
           "name": "dregora:switch/rlcraft/milk",
-          "weight": 1000,
-          "quality": -200
-        }
-      ]
-    },
-    {
-      "name": "Spawns with -1 Luck",
-      "rolls": 15,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:air",
-          "weight": 1000,
-          "quality": -200
+          "weight": 0,
+          "quality": -400
         }
       ]
     }

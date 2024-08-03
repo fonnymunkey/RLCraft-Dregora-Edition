@@ -64,7 +64,7 @@
                   \"[{\\\"text\\\":\\\"Beyond the edge of the wastelands lay the realms of no return in which few brave, some desperate but all foolish go in search of unclaimed treasure or glory.\n\nThose lands shrouded in heavy fog and silent whispers should not\\\"}]\",
                   \"[{\\\"text\\\":\\\"be taken at face value as though dread may fill your mind upon staring into the void if one enters a worse fate awaits.\n\nIt is rumored that even till this day those who venture close can hear the screams of their predecessors.\\\"}]\"
                 ],
-                title:\"The Abbys\",
+                title:\"The Abyss\",
                 author:\"Unknown\",
                 generation: 1,
                 display:{Lore:[\"This book warns for a place one should avoid at all cost.\"]}
@@ -185,61 +185,51 @@
         {
           "type": "item",
           "name": "minecraft:clock",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:compass",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:flint_and_steel",
-
           "weight": 3
         },
         {
           "type": "item",
           "name": "minecraft:feather",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:record_mall",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:painting",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:book",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:milk_bucket",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:name_tag",
-
           "weight": 1
         },
         {
           "type": "item",
           "name": "minecraft:bucket",
-
           "weight": 1
         }
       ]

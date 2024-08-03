@@ -92,11 +92,16 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"Poop \u2622\",Lore:[\"Rancid!!\"]}}"
+              "tag": "{display:{Name:\"Poop \u2622\",Lore:[\"Shite!!\"]}}"
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"Shitty Mud Ball \u203c\u2716\",Lore:[\"Shit! That is no mud ball!!\"]}}",
+              "tag": "{display:{Name:\"Poop \u2622\",Lore:[\"Rancid!!\"]}}",
+              "conditions": [{"condition": "random_chance","chance": 0.3}]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"Crappy Mud Ball \u203c\u2716\",Lore:[\"Crap! That is no mud ball!!\"]}}",
               "conditions": [{"condition": "random_chance","chance": 0.3}]
             }
           ],
@@ -166,47 +171,22 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "conditions": [{"condition": "random_chance","chance": 0.3}],
-              "tag": "
-              {
-                display:{Name:\"Potion of Mystery Content\",Lore:[\"Probably not Apple Juice...\"]},
-                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
-                Hideflags:32,
-                CustomPotionColor:11122688
-              }"
+              "tag": "{display:{Name:\"Potion of Mystery Content\",Lore:[\"Probably not Apple Juice...\"]},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
             },
             {
               "function": "minecraft:set_nbt",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
-              "tag": "
-              {
-                display:{Name:\"Potion of Apple Juice?\",Lore:[\"Looks like apple juice right?\"]},
-                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
-                Hideflags:32,
-                CustomPotionColor:11122688
-              }"
+              "tag": "{display:{Name:\"Potion of Apple Juice?\",Lore:[\"Looks like apple juice right?\"]},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
             },
             {
               "function": "minecraft:set_nbt",
               "conditions": [{"condition": "random_chance","chance": 0.2}],
-              "tag": "
-              {
-                display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\"]},
-                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
-                Hideflags:32,
-                CustomPotionColor:11122688
-              }"
+              "tag": "{display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\"]},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
             },
             {
               "function": "minecraft:set_nbt",
               "conditions": [{"condition": "random_chance","chance": 0.1}],
-              "tag": "
-              {
-                display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\",\"This one is signed by Kekistani?\"]},
-                CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],
-                Hideflags:32,
-                CustomPotionColor:11122688
-              }"
+              "tag": "{display:{Name:\"Rebranded Apple Juice\",Lore:[\"The attached note says it is\",\"Rebranded Apple Juice...\",\"This one is signed by Kekistani?\"]},CustomPotionEffects:[{Id:9,Duration:900},{Id:19,Duration:900}],Hideflags:32,CustomPotionColor:11122688}"
             }
           ],
           "weight": 5

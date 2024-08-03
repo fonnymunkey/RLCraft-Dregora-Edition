@@ -4,6 +4,8 @@ allow-flight=true
 difficulty=3
 max-tick-time=-1
 enable-command-block=true
+level-type=OTG
+level-name=DregoraRL
 
 =========================
 

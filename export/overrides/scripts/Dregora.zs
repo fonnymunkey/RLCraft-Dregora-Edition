@@ -45,6 +45,8 @@ import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.CommandEvent;
 import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.util.IAxisAlignedBB;
+
 
 // use /ct syntax to validate scripts
 
@@ -57,8 +59,8 @@ var Logging = false;
 //Normal recipe adjustments
 //=================================
 
-// Remove Bread recipe with 3 wheat = 1 bread.
-recipes.removeShapeless(<minecraft:bread>, [<minecraft:wheat>,<minecraft:wheat>,<minecraft:wheat>]);
+// Remove Bread recipe
+recipes.removeByRecipeName("minecraft:bread");
 
 // Remove Enchantment table & add wither skulls to it:
 recipes.remove(<minecraft:enchanting_table>);
@@ -68,6 +70,13 @@ recipes.addShaped("dregora24",<minecraft:enchanting_table>,
  [[null,<minecraft:book>,null],
   [<minecraft:diamond>,<minecraft:skull:1>,<minecraft:diamond>],
   [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
+
+// add reinforced block item tooltip
+<contenttweaker:iron_plate_reinforced>.addTooltip("§eCorruption Resistant");
+<contenttweaker:iron_plate_slab_reinforced>.addTooltip("§eCorruption Resistant");
+<contentcreator:iron_plate_slab_reinforced>.addTooltip("§eCorruption Resistant");
+<contentcreator:iron_plate_stairs_reinforced>.addTooltip("§eCorruption Resistant");
+<contenttweaker:iron_plate_rust_reinforced>.addTooltip("§eCorruption Resistant");
 
 //=================================
 //BLOCK HARDNESS ADJUSTERS
@@ -140,7 +149,6 @@ recipes.addShaped("dregora50",<contentcreator:iron_plate_stairs_reinforced> * 8,
 //=================================
 //FISH UNDEAD RECIPES & NAME CHANGES
 //=================================
-
 
 // Removed Recipes
 
@@ -217,20 +225,18 @@ recipes.remove(<mod_lavacow:weta_hoe>);
 <mod_lavacow:vespa_dagger>.addTooltip("§eInflicts Poison II");
 <mod_lavacow:dreamcatcher>.clearTooltip(true);
 <mod_lavacow:dreamcatcher>.addTooltip("§eThe Dead roam nearby as you wake from your deep slumber...");
-<mod_lavacow:dreamcatcher>.addTooltip("§8mod_lavacow:dreamcatcher");
+<mod_lavacow:dreamcatcher>.addTooltip(" ");
 <mod_lavacow:dreamcatcher>.addTooltip("§8Foglet, Undead Swine, Ithaqua, Sludge lord, Vespa, Scarecrow, Osvermis");
 <mod_lavacow:dreamcatcher>.addTooltip("§8Pinghoul, Undertaker, Banshee, Avaton, Vindicator, Ghost or a Chest!?");
 
 // Completely rename "Death" hammer
 <mod_lavacow:skeletonking_mace>.clearTooltip(true);
 <mod_lavacow:skeletonking_mace>.addTooltip("§eInstantly kills if the victim falls under 25% health for 10 seconds after each hit.");
-<mod_lavacow:skeletonking_mace>.addTooltip("§8mod_lavacow:skeletonking_mace");
 <mod_lavacow:skeletonking_mace>.addTooltip("§4This item is banned for obvious reasons.");
 
 // Completely rename Molten Heart Description
 <mod_lavacow:mootenheart>.clearTooltip(true);
 <mod_lavacow:mootenheart>.addTooltip("§9Fish's Undead Rising");
-<mod_lavacow:mootenheart>.addTooltip("§8mod_lavacow:mootenheart");
 <mod_lavacow:mootenheart>.addTooltip("§eFire Damage Protection: -20%");
 
 // Remove fish undead recipes
@@ -1187,6 +1193,8 @@ events.onEntityLivingUseItemFinish(function(event as Finish){
 
 
 
+var beckonarray = [];
+
 // SRParasites in overworld Script Biome Whitelist
 events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
@@ -1196,21 +1204,72 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
 
         if (!isNull(event.entity.definition.name)) {
 
-            if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
+            if ((event.entity.definition.name) has "srparasites") {
 
-                var entityBase as IEntityLivingBase = event.entity;
-                var entityName = (event.entity.definition.name);
-                var EntityBiome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
+                if ((event.entity.world.getDimension()) == 0) || ((event.entity.world.getDimension()) == 3) {
 
-                if(Logging){print("EntityBiome = " + EntityBiome);}
 
-                if ((entityName has "beckon") || (entityName has "dispatcher")) {
+                    var entityBase as IEntityLivingBase = event.entity;
+                    var entityName = (event.entity.definition.name);
+                    var EntityBiome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                    if entityBase.health > 100 {
-                        entityBase.health = entityBase.health / 25;
-                    } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
+                    if(Logging){print("EntityBiome = " + EntityBiome);}
+
+                    if (entityName has "beckon") {
+
+                        val minY = 1;
+                        val maxY = 255;
+                        val minX = event.entity.position.x - 32;
+                        val maxX = event.entity.position.x + 32;
+                        val minZ = event.entity.position.z - 32;
+                        val maxZ = event.entity.position.z + 32;
+
+                        val radius = IAxisAlignedBB.create(minX, minY, minZ, maxX, maxY, maxZ);
+                        for i in event.entity.world.getEntitiesWithinAABBExcludingEntity(radius, event.entity) {
+
+                            if (!isNull(i.definition)) {
+                                if (!isNull(i.definition.name)) {
+
+                                    var EntityDetected = (i.definition.name);
+
+                                    if EntityDetected has "beckon" {
+
+                                        i.setDead();
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    if ((event.entity.world.getDimension()) == 3) {return;}
+
+                    if (((EntityBiome) == "Steppe") || ((EntityBiome) == "Wasteland") || ((EntityBiome) == "Frozen City Creek") || ((EntityBiome) == "Desert City Creek") || ((EntityBiome) == "Jungle City Creek") || ((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing") || ((EntityBiome) == "Parasite Biome") || ((EntityBiome) == "Abyssal Rift")){return;}
+
+                    if ((entityName has "beckon") || (entityName has "dispatcher")) {
+
+                        if entityBase.health > 100 {
+                            entityBase.health = entityBase.health / 25;
+                        } else if ((entityBase.health > 50) && (entityBase.health < 100)) {
+                            entityBase.health = entityBase.health / 10;
+                        } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
+                            entityBase.health = entityBase.health - 10;
+                        } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
+                            entityBase.health = entityBase.health - 1;
+                        } else if (entityBase.health < 1){
+                            entityBase.health = entityBase.health - 1;
+                        } else {
+                            event.entity.setDead();
+                        }
+
+                    }
+
+
+                    if entityBase.health > 1000 {
+                        entityBase.health = entityBase.health / 50;
+                    } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
                         entityBase.health = entityBase.health / 10;
-                    } else if ((entityBase.health > 10) && (entityBase.health < 50)) {
+                    } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
                         entityBase.health = entityBase.health - 10;
                     } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
                         entityBase.health = entityBase.health - 1;
@@ -1220,29 +1279,11 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
                         event.entity.setDead();
                     }
 
+
+                    entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
+                    entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
+                    entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
                 }
-
-                if (((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing") || ((EntityBiome) == "Grey Abyss") || ((EntityBiome) == "Abyssal Rift")){return;}
-
-
-                if entityBase.health > 1000 {
-                    entityBase.health = entityBase.health / 50;
-                } else if ((entityBase.health > 100) && (entityBase.health < 1000)) {
-                    entityBase.health = entityBase.health / 10;
-                } else if ((entityBase.health > 10) && (entityBase.health < 100)) {
-                    entityBase.health = entityBase.health - 10;
-                } else if ((entityBase.health > 1) && (entityBase.health < 10)) {
-                    entityBase.health = entityBase.health - 1;
-                } else if (entityBase.health < 1){
-                    entityBase.health = entityBase.health - 1;
-                } else {
-                    event.entity.setDead();
-                }
-
-
-                entityBase.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(2000, 0));
-                entityBase.addPotionEffect(<potion:srparasites:bleed>.makePotionEffect(2000, 0));
-                entityBase.addPotionEffect(<potion:minecraft:instant_damage>.makePotionEffect(2000, 0));
             }
         }
     }
@@ -1264,7 +1305,7 @@ events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
                         var Biome = (event.entity.world.getBiome(event.entity.getPosition3f()).name);
 
-                    if (((Biome) == "Abyssal Rift") || ((Biome) == "Grey Abyss") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")){return;}
+                        if (((Biome) == "Steppe") || ((Biome) == "Wasteland") || ((Biome) == "Abyssal Rift") || ((Biome) == "Parasite Biome") || ((Biome) == "Lair of the Thing") || ((Biome) == "Nuclear Ruins") || ((Biome) == "Ruins of Blight")) {return;}
 
                         event.deny();
 
@@ -1293,14 +1334,72 @@ events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
                     }
                 }
 
-                if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0) && !((event.entity.definition.id) has "srparasites:sim_dragone")) {
+                if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
-                    if (((event.entity.customName) has "Sentient Horror") || ((event.entity.customName) has "Degrading Overseer") || ((event.entity.customName) has "Malformed Observer") || ((event.entity.customName) has "Corrupted Carrier") || ((event.entity.customName) has "Necrotic Blight")) {return;}
+                    if (((event.entity.customName) has "Sentient Horror") || ((event.entity.customName) has "Degrading Overseer") || ((event.entity.customName) has "Malformed Observer") || ((event.entity.customName) has "Shivaxi") || ((event.entity.customName) has "Corrupted Carrier") || ((event.entity.customName) has "Necrotic Blight")) {return;}
 
                     var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
-                    if (((EntityBiome) == "Grey Abyss") || ((EntityBiome) == "Abyssal Rift") || ((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {return;}
 
+                    if (((EntityBiome) == "Steppe") || ((EntityBiome) == "Wasteland") || ((EntityBiome) == "Parasite Biome") || ((EntityBiome) == "Abyssal Rift") || ((EntityBiome) == "Ruins of Blight") || ((EntityBiome) == "Nuclear Ruins") || ((EntityBiome) == "Lair of the Thing")) {
+
+                        if(event.drops.length > 0){
+
+                            var drops = event.drops;
+
+                            event.drops = [];
+
+                            for i in drops {
+
+                                if i.item.definition.id has "srparasites" {
+
+                                    //Randomize the chance of the drop, make it drop less because parasites are weaker
+                                    //event.addItem(<srparasites:assimilated_flesh>);
+
+                                    var RandomInt = event.entity.world.random.nextFloat(0, 100);
+                                    if RandomInt <= 62 { event.addItem(i); } else { event.addItem(<biomesoplenty:ash>); } //Based of healthmultiply 0.5 & damagemultiply 0.25 averaged out on 0.625 the overall strength of parasites in the overworld compared to lost cities parasites.
+
+
+                                } else {
+
+                                    event.addItem(i);
+
+                                }
+
+                                /*
+                                <srparasites:dispatcher_drop>     ->    ?
+                                <srparasites:beckon_drop>         ->    ?
+                                <srparasites:bone>                ->    ?
+                                <contenttweaker:sentient_core>    ->    ?
+                                <srparasites:assimilated_flesh>   ->    ?
+
+                                <srparasites:ada_devourer_drop>   ->    ?
+                                <srparasites:ada_arachnida_drop>  ->    ?
+                                <srparasites:ada_bolster_drop>    ->    ?
+                                <srparasites:ada_longarms_drop>   ->    ?
+                                <srparasites:ada_reeker_drop>     ->    ?
+                                <srparasites:ada_manducater_drop> ->    ?
+                                <srparasites:ada_summoner_drop>   ->    ?
+                                <srparasites:ada_yelloweye_drop>  ->    ?
+
+                                <srparasites:lurecomponent1>      ->    ?
+                                <srparasites:lurecomponent2>      ->    ?
+                                <srparasites:lurecomponent3>      ->    ?
+                                <srparasites:lurecomponent4>      ->    ?
+                                <srparasites:lurecomponent5>      ->    ?
+                                <srparasites:lurecomponent6>      ->    ?
+
+
+                                */
+
+                            }
+
+                            return;
+
+                        }
+                    }
+
+                    event.drops = [];
                     event.cancel();
                 }
             }

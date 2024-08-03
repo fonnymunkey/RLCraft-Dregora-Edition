@@ -20,11 +20,11 @@
   "twilightforest:twilight_swamp",
   "twilightforest:fire_swamp",
   "twilightforest:twilight_stream",
-  "openterraingenerator:ancient_rainforest",
-  "openterraingenerator:rainforest_beach",
-  "openterraingenerator:ancient_swamp",
-  "openterraingenerator:caniverous_forest",
-  "openterraingenerator:ravenous_jungle",
-  "openterraingenerator:toxic_swamp",
-  "openterraingenerator:nuclear_swamp"
+  "openterraingenerator:overworld_ancient_rainforest",
+  "openterraingenerator:overworld_rainforest_beach",
+  "openterraingenerator:overworld_ancient_swamp",
+  "openterraingenerator:overworld_caniverous_forest",
+  "openterraingenerator:overworld_ravenous_jungle",
+  "openterraingenerator:overworld_toxic_swamp",
+  "openterraingenerator:overworld_nuclear_swamp"
 ]

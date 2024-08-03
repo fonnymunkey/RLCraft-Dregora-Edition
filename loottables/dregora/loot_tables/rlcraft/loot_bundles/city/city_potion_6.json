@@ -9,7 +9,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "simpledifficulty:purified_water_bottle",
+          "name": "minecraft:potion",
           "functions": [
             {
               "function": "minecraft:set_nbt",

@@ -15,13 +15,13 @@
               "function": "minecraft:set_nbt",
               "tag": "
               {
-                display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},
+                display:{Name:\"Bottled Spritu\",Lore:[\" "]},
                 Potion:\"minecraft:water\"
               }"
             },
             {
               "function": "minecraft:set_nbt",
-              "conditions": [{"condition": "random_chance","chance": 0.3}],
+              "conditions": [{"condition": "random_chance","chance": 0.7}],
               "tag": "
               {
                 display:{Name:\"Bottled Spritu\",Lore:[\"\u00A70\u2620\"]},

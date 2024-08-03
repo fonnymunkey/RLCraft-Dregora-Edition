@@ -15,13 +15,13 @@
               "function": "minecraft:set_nbt",
               "tag": "
               {
-                display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
+                display:{Name:\"Bottled Shivvy\",Lore:[\" "]},
                 Potion:\"minecraft:water\"
               }"
             },
             {
               "function": "minecraft:set_nbt",
-              "conditions": [{"condition": "random_chance","chance": 0.5}],
+              "conditions": [{"condition": "random_chance","chance": 0.7}],
               "tag": "
               {
                 display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},
@@ -30,7 +30,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "conditions": [{"condition": "random_chance","chance": 0.1}],
+              "conditions": [{"condition": "random_chance","chance": 0.2}],
               "tag": "
               {
                 display:{Name:\"Bottled Shivvy\",Lore:[\"\u00A70\u2620\"]},

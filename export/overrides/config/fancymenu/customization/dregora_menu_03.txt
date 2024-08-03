@@ -117,7 +117,7 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 346
+  x = 122
   width = 268
   action = deep_customization_element:title_screen_forge_top
   actionid = d2edb3b8-d52f-4240-8db9-57a4c923f9941720103697478
@@ -139,11 +139,11 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 731
+  x = 283
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
   actionid = e40524ea-f3db-4044-8594-35cd4a4ae9811720103697497
-  y = 489
+  y = 364
   height = 9
 }
 

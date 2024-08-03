@@ -115,13 +115,6 @@
               "tag": "{display:{Name:\"Torn Carpet\",Lore:[\"Ancient Carpet, masterfully crafted yet very damaged.\"]}}"
             },
             {
-              "function": "set_damage",
-              "damage": {
-                "min": 0.8,
-                "max": 0.95
-              }
-            },
-            {
               "function": "minecraft:set_data",
               "data": 13
             },

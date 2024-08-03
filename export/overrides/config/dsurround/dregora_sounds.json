@@ -3,7 +3,7 @@
     {
       "conditions":"TRUE",
       "_comment": "Abyssal Ambience Nether Ambience",
-      "soundReset": true,
+      "soundReset": false,
       "aurora": false,
       "spotSoundChance": 400,
       "sounds": [

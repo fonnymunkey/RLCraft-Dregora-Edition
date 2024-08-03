@@ -30,7 +30,6 @@
               "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"Gilded Spear\",Lore:[\"This ancient weapon is infused with corrupted energy\"]}}"
             },
-            {"function": "set_damage","damage": {"min": 0.60,"max": 0.95}},
             {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
             {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]}

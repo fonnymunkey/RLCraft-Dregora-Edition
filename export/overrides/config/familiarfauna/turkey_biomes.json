@@ -53,11 +53,11 @@
   "twilightforest:dense_twilight_forest",
   "twilightforest:snowy_forest",
   "twilightforest:twilight_highlands",
-  "openterraingenerator:green_peaks",
-  "openterraingenerator:viking_realm",
-  "openterraingenerator:land_of_pillars",
-  "openterraingenerator:cracked_mountain",
-  "openterraingenerator:forged_lands_of_tranquillity",
-  "openterraingenerator:ancient_redwood_forest",
-  "openterraingenerator:rocky_forests"
+  "openterraingenerator:overworld_green_peaks",
+  "openterraingenerator:overworld_viking_realm",
+  "openterraingenerator:overworld_land_of_pillars",
+  "openterraingenerator:overworld_cracked_mountain",
+  "openterraingenerator:overworld_forged_lands_of_tranquillity",
+  "openterraingenerator:overworld_ancient_redwood_forest",
+  "openterraingenerator:overworld_rocky_forests"
 ]

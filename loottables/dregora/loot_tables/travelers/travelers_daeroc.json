@@ -11,11 +11,11 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"Kingdom of Daeroc\",Lore:[\"Area Around x:-14697 z:-3491\"]}}"
+              "tag": "{display:{Name:\"Kingdom of Daeroc\",Lore:[\"Area Around x:-14900 z:-3800\"]}}"
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14697,z:-3491}}"
+              "tag": "{Decorations:{id:+,rot:180,type:26,x:-14900,z:-3800}}"
             },
             {
               "function": "minecraft:set_data",

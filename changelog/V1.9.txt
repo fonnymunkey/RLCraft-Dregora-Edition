@@ -347,6 +347,40 @@
 - fixed Dearoc villager & horse overspawn
 - fixed CastleOcean Ruins (C1R0) candles are reversed
 - fixed spruce chest not containing any loot in the brutal tower treasure room
+v1.9 alpha 1.2:
+- Check waystones properly spawning and not having the same name and not being breakable for gem traders.
+- Make chests in cities better (less discarded junk chests)
+- Adjust loottable banhammer to be 1 weight
+- banhammer remove 50% health
+- Decrease loot in church of the cult
+- fix /n in lore desc, make ","
+- make milk switch thingy unluck work (just add a lot of junk)
+- give dragons more health in encounters and fix formatting for shivaxi's entity
+- armorstands in brutal tower don't always spawn
+- check if herblorist is fixed
+- adjusted gemtrader minimal distance from 100 to 60
+v1.9 alpha 1.3:
+- increased dungeon rarity ( dungeon02 )
+- searched and fixed all bone_loot chests.
+- should have fixed powerlinesmall
+- added the new loottables
+- fixed potions loottables
+- Fix the water in the quark boat on lowest level (should be air)
+- fixed cabinet not spawning loot in UnderwaterHouse
+v1.9 alpha 1.6:
+- give not_kotlin a special loottable through loottables and add: "I&F Upcoming Kotlin Port", "Make kotlin drop 15-30 pieces of player feedback" give more health (250)
+v1.9 alpha 2.0:
+- Nymph House needs error with NBT data (no written book upstairs) and spawned in canyon (needs min height level)
+- adjusted center structure
+- tone down gemtraders down again a bit
+- Dungeon01 02 and 03 need to have less mobs
+- fixed custom heads
+- add mod_lavacow:scarecrow to blood plains and prairie
+- add mod_lavacow:ithaqua to corrupted roofed forest
+- Remove Tunnelstructure from defiled Snow Plains
+- fix dispenser breaking in cities
+- increase chance of floating castle spawning
+- improved city lag & city spawn rate & city spawn areas (now properly cut off at biome edge)
 #DregoraRL ^
 
 #Fixed/Changed/Added [RLCraft]:
@@ -486,6 +520,36 @@
 - configure new loading screen mod with DregoraRL screenshots
 - Changed medusa temple to gorgon temple in gif
 - removed lightning resist & speed from copper but added immunization
+v1.9 alpha 1.2:
+- Remove bread recipe because there is dough
+- Coral needs metadata for not dropping the items
+- Lowered graveyard spawning
+- Made wither always be infernal
+- Removed Magical from banshee lycanites config
+- Fixed lag with item drops, coral and kelp but removed multiple kelp drops from plant (just gives one)
+- add mobs to investigate AI (RLTweaker + Undead Fish + SRParasites New Mobs + BiomesOPlenty Wasp)
+- lower size of the animation frames ( try 20 frames and lower quality to 85, possibly 80)
+- added new armor types to levelup & underarmor liners
+- adjusted parasite drop system to drop in allowed biomes
+- adjusted parasite drops and making them a more rare in the overworld
+- adjusted srparasites to spawn in city biomes
+- whitelisted beckons for parasite biomes
+- enabled node & colony creation for overworld
+v1.9 alpha 1.3:
+- change caniverous to carnivorous in loading screens & herblorist to herbalist
+- enabled RLMixins1.3.4 corruption check for bushes
+- checked underwater spawners 1.3.4 rlmixins for the minefield spawners.
+- renamed loading screen Herblorist to Herbalist.
+- 854px frames for menu animations
+v1.9 alpha 1.7
+- ender eye ores add bop
+v1.9 alpha 2.0
+- Spartanweaponry copper was in the jei blacklist
+- Make bulletpoint list for trailer (features)
+- disable the I&F block conversion
+- Make Not Kotlin spawn way less 10%
+- add other parasite biomes to script (steppe, heath, wastelands)
+- added special spawners for the gatekeeper & corruption
 #RLCraft ^
 
 #Fixed/Changed/Added [Underneath]
@@ -508,6 +572,11 @@
 - Bump up temp in Underneath.
 - fixed skyscraper_2x2 (eats air away)
 - fixed skyscraper_3x3 (needs air)
+v1.9 alpha 1.3:
+- made cities more frequent
+- make flint and steel more common in underneath & add rare chance of chest next to portal
+v1.9 alpha 1.4:
+- fixed flint chest error causing underneath crash
 #Underneath ^
 
 #Fixed/Changed/Added [Fish's Undead Rising]
@@ -593,70 +662,135 @@
 //                Remaining Tasks                       //
 //======================================================//
 
+
 Underneath todo:
 + Adjust description to be "Special addition, does not work without DregoraRL"
 
 Dregora todo:
-- Check waystones properly spawning and not having the same name and not being breakable for gem traders.
-- Make chests in cities better (less discarded junk chests)
-- Adjust loottable banhammer to be 1 weight
-- banhammer remove 50% health
-- Decrease loot in church of the cult
-- fix /n in lore desc, make ","
-- make milk switch thingy unluck work (just add a lot of junk)
-- give dragons more health in encounters and fix formatting for shivaxi's entity
-- armorstands in brutal tower don't always spawn
-- check if herblorist is fixed
-- adjusted gemtrader minimal distance from 100 to 60loa
-
-
++ make secret entrance with crafting table cobblestone stairs
++ fix major heaven dropper wrong side door mechanism
++ figure out why pistons don't work in dearoc and apply fix to all objects in dregora
 + Adjust description to include some basic information on DregoraRL
++ rename biomes to have a nice name
++ make sure the bank spawns in overworld & underneath
++ count number of biomes
+- count number of structures in BiomeObjects 329
 + turn off logging
++ Fix double cube in center spawn
++ add random mines with leave block on it
++ add random ambush script
+
 
 Awaiting I&F Update todo:
 + enable lightning dragon spawning during storm
 + Disable stage 5 dragon skeletons
 + mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
-+ add special spawners for the gatekeeper & corruption
 + test brutal tower after C&F update
 + raise brutal tower rarity (10 minimal chunks apart)
 + File cleanup, remove .zip files
 
 RLCraft todo:
-- Remove bread recipe because there is dough
-- Coral needs metadata for not dropping the items
-- Lowered graveyard spawning
-- Made wither always be infernal
-- Removed Magical from banshee lycanites config
-- Fixed lag with item drops, coral and kelp but removed multiple kelp drops from plant (just gives one)
-- add mobs to investigate AI (RLTweaker + Undead Fish + SRParasites New Mobs + BiomesOPlenty Wasp)
-
-+ Alter the RL Logo for starting up
-+ lower size of the animation frames ( try 20 frames and lower quality to 85, possibly 80)
-- added new armor types to levelup & underarmor liners
-- adjusted parasite drop system to drop in allowed biomes
-+ adjust parasite drops to exclude some special items from drops in overworld and replace them for other items
-
-+ add content creator mod to manifest
++ check if stone layer medusa lags with ray
++ add content creator mod to manifest (remove all dev mods and write manifest)
 + update RLCombat
++ remove wiki to OTG in create dimension menu (Can't do that because it's not detected)
 + Check all that can be updated
-+ Add secret fun script (no spoilers)
 + Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings fileID once it gets uploaded to curse)
 + Upload Underneath v1.1 and add to Manifest.json
 + printjars executable
-+ Lycanitesmobs new version by Fonny?
++ perhaps make events a little bit more common?
++ config update (copy new settings from config to intellij source)
 
 
-Menu Loading Screen:
-#Brutal Tower
+Mods Information:
+
+Added:
+BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar
+CD4017BE_lib-1.12.2-6.5.1.jar
+ContentCreator-1.3.7-fix2.jar
+ctintegration-1.8.0.jar
+DregoraRL-1.9.jar
+DynamicTreesBOP-1.12.2-1.5.2.jar
+fancymenu_forge_2.14.9_MC_1.12-1.12.2.jar
+fermiumasm-5.23.jar
+Fish's Undead Rising-1.4.2.jar
+konkrete_forge_1.6.1_MC_1.12-1.12.2.jar
+lagbgonrevived-1.1.0.jar
+OpenTerrainGenerator-1.12.2-v9.5-R2.jar
+OptiFine_1.12.2_HD_U_G5.jar
+PhosphorCrashFix-1.12.2-1.0.0.jar
+potiondescriptions-1.12.2-1.2.4.jar
+PotionFingers-r1.0-8.jar
+Underneath-1.0.jar
+VerticallyStackedDimensions-1.12.2-0.1.9.jar
+`FermiumBooter-1.1.0.jar
+
+Updated:
+better_survival-1.5.3_infedit.jar
+Born In A Barn 1.8-1.12-1.2.jar
+CraftTweaker2-1.12-4.1.20.700.jar
+CreativeCore_v1.10.71_mc1.12.2.jar
+EntityCulling-1.12.2-6.4.3_indev.jar
+jei_1.12.2-4.16.1.1004.jar
+LegendaryTooltips-1.12.2-1.1.10.jar
+Placebo-1.12.2-1.6.1.jar
+randompatches-1.12.2-1.22.1.10.jar
+ReachFix-1.12.2-1.0.9.jar
+RecurrentComplex-1.4.8.5.jar
+RenderLib-1.12.2-1.3.4.jar
+RLCombat-1.12.2-2.1.0.jar
+RLMixins-1.3.4.jar
+RLTweaker-1.12.2-0.6.3-rc1
+spark-unforged-1.11.1-forge.jar
+spartanfire_rlcraft-1.2.0.jar
+SRParasites-1.12.2v1.9.20.jar
+Trinkets and Baubles-32.4_infedit.jar
+[___MixinCompat-1.1-1.12.2___].jar
+lycanitesmobs-1.12.2-2.0.8.10
+SpartanWeaponry-1.12.2-1.6.0.jar
+Ice and Fire-2.0.0.jar
+
+Removed:
+BetterFoliage-MC1.12-2.3.3.jar
+CustomMainMenu-MC1.12.2-2.0.9.1.jar
+ISeeDragons-1.2.1.jar
+MainMenuScale-1.3.2.jar
+PotionFingers-r1.0-8.jar
+RLFoliage-MC1.12-2.4.1.jar
+RTG-1.12.2-6.1.0.0-snapshot.1.jar
+Ruins-1.12.2.jar
+theimpossiblelibrary-1.12.2-0.3.0.jar
+
+Should be removed:
+CMDCam_v1.4.12_mc1.12.2.jar
+WorldEdit-CUI-FE3-1.12.2-3.0.9.jar
+worldedit-forge-mc1.12.2-6.1.10-dist.jar
+!Red-Core-MC-1.8-1.12-0.6-Dev-3.jar
+
+Should Be Updated:
+LycanitesMobs (shiv needs to upload!)
 
 
 Trailer todo:
+
+Dregora Features:
+- 800+ different biomes
+- Thousands of new & updated Structures of various sizes.
+- Procedural Generation & Lore rich static Provinces
+- Random Encounter Entity system.
+- New Bosses
+- Expanded & Altered game loop.
+- New items, weapons, loot tables and villager trades (Herbalist, Gemtrader & Brutal Trader)
+- 100+ additional lore focused books.
+- New Dimension featuring special loot & increased difficulty
+
 
 #Must See:
 GemTraders
 Brutal Tower
 Underneath
+
+/otg tp grove
 
 Fromimage:
 /tp -17041 200 2929 (wicked plains & church)
@@ -717,6 +851,7 @@ Optional RLCraft todo:
 + add new dimension mod for the end
 
 #DregoraRL Backlog
++ typo in caniverous mountain (needs to be carniverous)
 + Re-make the ancient trees using customstructures and create a big forest out of them
 + Ore redistribution:
 Oceans: 3x more lapis

@@ -30,7 +30,13 @@
         {
           "type": "item",
           "name": "advanced-fishing:fish",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_data",
+              "data": 40
+            }
+          ]
         },
         {
           "type": "item",

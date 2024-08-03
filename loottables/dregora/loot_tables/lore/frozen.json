@@ -272,16 +272,6 @@
         {
           "type": "item",
           "name": "minecraft:iron_horse_armor",
-          "functions": [
-
-            {
-              "function": "set_damage",
-              "damage": {
-                "min": 0.30,
-                "max": 0.95
-              }
-            }
-          ],
           "weight": 1
         },
         {

@@ -33,7 +33,7 @@ S:copyrightcolor = '#ffffff';
 B:allowgameintroskip = 'true';
 B:showanimationloadingstatus = 'true';
 S:gameintroanimation = '';
-B:preloadanimations = 'true';
+B:preloadanimations = 'false';
 S:customgameintroskiptext = '';
 
 

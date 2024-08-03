@@ -29,7 +29,7 @@
         },
         {
           "type": "loot_table",
-          "name": "dregora:rlcraft/loot_bundles/gilded_loot",
+          "name": "dregora:rlcraft/loot_bundles/gilded_tools",
           "weight": 1
         },
         {

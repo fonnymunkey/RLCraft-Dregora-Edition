@@ -36,16 +36,14 @@
   {
     "dimension": 0,
     "mod": ["lycanitesmobs", "iceandfire", "quark", "battletowers", "minecraft", "defiledlands", "familiarfauna", "charm"],
-    "biome": ["Abyssal Rift", "Parasite Biome"],
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Parasite Biome"],
     "spawner": true,
-    "healthmultiply": 2,
-    "damagemultiply": 2,
     "result": "default"
   },
   {
     "dimension": 0,
     "mob": ["srparasites:beckon_si", "srparasites:beckon_sii", "srparasites:beckon_siii", "srparasites:beckon_siv"],
-    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight"],
+    "biome": ["Abyssal Rift", "Lair of the Thing", "Nuclear Ruins", "Ruins of Blight", "Parasite Biome"],
     "result": "deny"
   },
   {

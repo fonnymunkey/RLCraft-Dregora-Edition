@@ -9,6 +9,11 @@
 			"elusive": true
 		},
 		{
+			"name": "herobrine",
+			"weight": 2,
+			"elusive": true
+		},
+		{
 			"name": "angrymask",
 			"weight": 2,
 			"elusive": true
