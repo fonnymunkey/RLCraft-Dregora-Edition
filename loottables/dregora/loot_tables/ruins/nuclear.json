@@ -2122,7 +2122,6 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],

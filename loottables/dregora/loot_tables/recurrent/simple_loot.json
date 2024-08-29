@@ -11,7 +11,7 @@
         {
           "type": "loot_table",
           "name": "dregora:dregorarl/loot/rare_loot",
-          "weight": 30
+          "weight": 10
         },
         {
           "type": "loot_table",

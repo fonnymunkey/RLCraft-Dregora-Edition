@@ -16,7 +16,11 @@
 	"blocks": [
 		{
 			"blocks": [
-				"minecraft:waterlily"
+				"minecraft:waterlily",
+				"biomesoplenty:waterlily",
+				"biomesoplenty:waterlily:1",
+				"biomesoplenty:waterlily:2",
+				"biomesoplenty:waterlily:3"
 			],
 			"effects": [
 				{
@@ -52,7 +56,15 @@
 			"srparasites:armor_helm_sentient",
 			"srparasites:armor_chest_sentient",
 			"srparasites:armor_pants_sentient",
-			"srparasites:armor_boots_sentient"
+			"srparasites:armor_boots_sentient",
+			"mod_lavacow:swinemask",
+			"mod_lavacow:swinearmor_chestplate",
+			"mod_lavacow:swinearmor_leggings",
+			"mod_lavacow:swinearmor_boots",
+			"mod_lavacow:faminearmor_helmet",
+			"mod_lavacow:faminearmor_chestplate",
+			"mod_lavacow:faminearmor_leggings",
+			"mod_lavacow:faminearmor_boots"
 		],
 		"CHAIN": [
 			"defiledlands:scale_helmet",
@@ -120,7 +132,15 @@
 			"forgottenitems:golem_helmet",
 			"forgottenitems:golem_chestplate",
 			"forgottenitems:golem_leggings",
-			"forgottenitems:golem_boots"
+			"forgottenitems:golem_boots",
+			"mod_lavacow:felarmor_helmet",
+			"mod_lavacow:felarmor_chestplate",
+			"mod_lavacow:felarmor_leggings",
+			"mod_lavacow:felarmor_boots",
+			"mod_lavacow:chitinarmor_helmet",
+			"mod_lavacow:chitinarmor_chestplate",
+			"mod_lavacow:chitinarmor_leggings",
+			"mod_lavacow:chitinarmor_boots"
 		],
 		"CRYSTAL": [
 			"simpledifficulty:ice_helmet",

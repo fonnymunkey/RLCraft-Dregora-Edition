@@ -51,7 +51,7 @@
     },
     "leaf_piles": {
       "with": {
-        "block": "rustic:wildberry_bush",
+        "block": "biomesoplenty:plant_0",
         "properties": {
           "variant": "leafpile"
         }
@@ -94,14 +94,14 @@
     },
     "bushes": {
       "with": {
-        "block": "rustic:wildberry_bush",
+        "block": "biomesoplenty:plant_0",
         "properties": {
           "variant": "bush"
         }
       },
       "generationAttempts": 32,
       "amountPerChunk": 0.5,
-      "enable": true
+      "enable": false
     },
     "topaz": {
       "minHeight": 4,

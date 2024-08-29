@@ -20,6 +20,18 @@ import loottweaker.vanilla.loot.Functions;
 //charm:treasure/common
 //quark:chests/pirate_chest
 
+//val SkeletonTable = LootTweaker.getTable("minecraft:entities/skeleton");
+//val mod_lavacow = SkeletonTable.addPool("mod_lavacow", 1, 1, 0, 0);
+//mod_lavacow.addItemEntry(<minecraft:air>, 100, 0, [], [Conditions.killedByPlayer(), Conditions.parse({"condition": "entity_properties","entity": "this"})]);
+//mod_lavacow.addItemEntry(<mod_lavacow:hatred_shard>, 25, 0, [], [Conditions.killedByPlayer(), Conditions.parse({"condition": "entity_properties","entity": "this"})]);
+//mod_lavacow.addItemEntry(<mod_lavacow:kings_crown>, 1, 0, [], [Conditions.killedByPlayer(), Conditions.parse({"condition": "entity_properties","entity": "this"})]);
+
+val skeleton_regular = LootTweaker.getTable("minecraft:entities/skeleton");
+skeleton_regular.clear();
+
+val skeleton_regular_new = skeleton_regular.addPool("skeleton_regular_new", 1, 1, 0, 0);
+skeleton_regular_new.addLootTableEntry("dregora:entities/regular/skeleton", 100);
+
 val mod_lavacow_skeleton_king = LootTweaker.getTable("mod_lavacow:entities/bosses/skeleton_king");
 mod_lavacow_skeleton_king.clear();
 val mod_lavacow_skeleton_king_new = mod_lavacow_skeleton_king.addPool("dregora_skeleton_king", 1, 1, 0, 0);

@@ -1,3 +1,22 @@
+Credits:
+
+Foremost we, NLBlackEagle & NLBlackHeavenNL wanted to thank the entire team, the modders & community around RLCraft & Dregora for without them RLCraft Dregora would not
+have existed and special thanks to the following for their dedication and time into the development of RLCraft Dregora.
+
+- Shivaxi, for the awesome trailer, the song and his advice/guidance in creating RLCraft Dregora.
+- FonnyMunkey, for fixing numerous performance/bug issues, his advice on performance fixing and his effort into creating custom mechanics for RLCraft Dregora.
+- Kotlin, for specialized additions to RLCraft Dregora such as the spawners, the dragon riders, providing a beta-test server for bug hunting, playtesting and his feedback.
+- Rayquazafallout, for the numerous hours into playtesting, bug hunting and finding an exponential greater number of bugs as well as providing idea's on how to fix these.
+- Meldexun, for fixing GUI/menu related issues specifically for RLCraft Dregora and the numerous fixes consolidated into RLTweaker over the years which inherently benefitted RLCraft Dregora
+- Emerald, for making the awesome logo for RLCraft Dregora & Shivaxi for arranging this.
+- Eclipse, Nischi, KekPriest_Of_Kek, and cdstk_ALT for their invaluable feedback during development.
+
+And at last, special thanks to NLBlackHeavenNL for he may not have been seen many times he was definitely there actively participating in the development of Dregora
+since it's conception in 2013. Since then there's been the close to weekly calls on Skype, then Teamspeak and now Discord during which we progressed Dregora
+to higher levels of refinement until the day came where Heaven showcased me a particular trailer explaining how to play this modpack "RLCraft" 4 years ago.
+
+
+
 #Possible false/positives:
 - Entities suffocate in trench biomes? ( Could not find, already fixed? )
 - Cactus land lag cause not found, perhaps this was due to falling sand?
@@ -381,6 +400,57 @@ v1.9 alpha 2.0:
 - fix dispenser breaking in cities
 - increase chance of floating castle spawning
 - improved city lag & city spawn rate & city spawn areas (now properly cut off at biome edge)
+v1.9 2.1:
+- Adjust border biome City of Blight Border needs to be Ruins of Blight Border
+- fix the dregora bank structure
+- updated .nbt files skullowner
+- made sure the bank spawns in overworld & underneath
+- make secret entrance with crafting table cobblestone stairs /tp -15210 100 -3510
+- lower chest amount in cities of origin (upper part)
+- fix major heaven dropper wrong side door mechanism /tp -17050 100 5419
+- decrease villagers in origins
+- stopped recurrent from destroying the origin city
+- count number of biomes + Underneath: 3 biomes
+- count number of structures in BiomeObjects 329
+- rename biomes to have a nice name
+v1.9 alpha 2.3:
+- test loot dregora:recurrent/simple_loot /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:recurrent/simple_loot"}
+- dregora floating tree has too much loot! tone done on epic
+- reduce ruins spawning
+- increase spawning of entities
+- Added PersistenceRequired:1b to entities where required.
+- decrease flying entities by 75%
+- decrease temp in frozen plains edge 0.3 decrease + viking village 0.2 decrease + all deserts by 0.1
+- Increase spawn of structures: Mining Village, Viking Village Structure Biome.
+- increase spawn-rate of ruins (35/65 to 45/55)
+- add spawners under chests instead of seperate (overworld)
+- fix heath spawns (Srparasites)
+- Unluck loottable should kick in with more unluck.
+- add more coordinates of jungle tribal villagers in book
+- nerf medusa arrow traps
+- Bump up gem trader spawn
+- fix wiki entry in dregora menu
+- blacklist myrmex in nether
+- structure from recurrent complex spawns way too often
+- make silver sickness be curable by ahnk charm
+- make sure dregora waystones are renameable
+- Shattered ice is eatable?! Let's get rid of that. (fx control)
+- Double check lightning dragons spawning
+- fixed crux not spawning
+- Savarok should apply dispel & curse on attack
+- parasite bosses should get more armor (+10)
+- gatekeeper minion vex dismounters need to be banshees and spawndistance need to be larger
+- Banshee spawn in brutal tower staircase that do dismount & dispel effects
+- removed damage reduction from abyssal rift biome
+- skeleton with lich staff needs to have a quarterstaff instead
+- make fly potion not work in stairwell
+- gatekeeper, savaroth amd developers multiplied armor x2
+- Disallow people eating the ectoplasm thing (causes crash)
+- Fix fromimage stuff biome issue
+- raised abyssal rift biome rarity
+- fixed herbalist trade cunning charlie, max lucky clover = 1 & add 44 clovers (not grass)
+- Shrunk the lakes in abyssal rift biome
+- Adjust loottables for: Medusa, City, reactor (replace lowest tier for new "useful tier" healing items, tipped arrows, potions, & mod lavacow crafting items.
 #DregoraRL ^
 
 #Fixed/Changed/Added [RLCraft]:
@@ -550,6 +620,50 @@ v1.9 alpha 2.0
 - Make Not Kotlin spawn way less 10%
 - add other parasite biomes to script (steppe, heath, wastelands)
 - added special spawners for the gatekeeper & corruption
+v1.9 alpha 2.1
+- fancymenu issue github link
+- added wiki for RLCraft Dregora (unpopulated)
+- add pandora's curse on shiv's sword & curse of vanishing
+- add scythes furnace recipe
+v1.9 alpha 2.3
+- mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
+- finish the abyssal rift arrow blacklist
+- Blacklist right clicking soul keys in abyssal rift (fxcontrol) "A powerfull presence prevents you from summoning minibosses here." - default lycanite message
+- blacklist fish undead enchants
+- blacklist fish undead potions
+- lower battletowers spawn
+- add lightning does dismount script (make lightning resist cancel the dismount)
+- add high damage value does dismount
+- dread knight and dread thrall dont have lvl requirements
+- make all entities within abyssal rift immune to teleportation arrows and potions
+- make self-hit random teleportation arrow activate script
+- make shiv spawn entity script have a max count
+- adjust all the names to match the new naming system for biomes
+- RLCraft Dregora Wiki (Ask Ray if copying the RLCraft wiki is possible)
+- add biome srparasites:biome_parasite & openterraingenerator:overworld_abyssal_rift to recurrent complex structure P_Crater
+- add scythes skill requirement
+- added scythes to jei (blacklisted ones)
+- added legendary tooltips to copper & scythes
+- check if dsurround sounds still work with metadata for bop lilypads
+- entities have a 50% chance to drop infernal ashes instead of a enchanted book in Abyssal Tower
+- Change loading screen province to region (and Dearoc needs to be Daeroc)
+- fixed crash in LC after x minutes (thanks Nischi & Kotlin)
+- Made node spread take more breaks hopefully decreasing generation lag.
+- Living bow does not count towards the sentient weapon counter
+- make the counter not work on vanilla mobs
+- Shocked Weapon Paralysis nerfed
+- The "Parasite Indirect Damage Adaption Fix" is not on (RLMixin config)
+- The vs Parasite 4x lightning bonus needs to be moved from "Mobs Additional Weakness" to -> "Damage Additional Weakness Else" (SRParasites config)
+- Succors nerfed to do 0.03 damage (hopefully this works on explosions!)
+- add a piston and dragon egg placement block for abyssal biome
+- right click entities with nametag needs to be cancelled on certain entities
+- Sussyberian needs to just always explode upon open trade and remove spawning from trenches!
+- Change famine armor tooltip to say these are lost to the underneath
+- updated iceandfire from dev chat
+- Stage 5 skeletons don't spawn any longer
+- fixed Fish Undead Rising parasite bug by removing parasites
+- Give Shivaxi a non op sword, diamond?
+
 #RLCraft ^
 
 #Fixed/Changed/Added [Underneath]
@@ -577,6 +691,11 @@ v1.9 alpha 1.3:
 - make flint and steel more common in underneath & add rare chance of chest next to portal
 v1.9 alpha 1.4:
 - fixed flint chest error causing underneath crash
+v1.9 2.1:
+- Adjusted description to be "Special RLCraft Dregora addition, does not work without the RLCraft Dregora modpack."
+v1.9 alpha 2.3:
+- add spawners under chests instead of seperate (underneath)
+
 #Underneath ^
 
 #Fixed/Changed/Added [Fish's Undead Rising]
@@ -651,6 +770,9 @@ v1.9 alpha 1.4:
     - Brutal Coins (Rarely)
     - dragon bone stew
     - make ban hammer unenchantable / give decay / give 100% armor reduction / destroy on use / give levitation or launch 1000 / cursed edge
+v1.9 alpha 2.3
+- fixed falling through void bug
+- stupid pig spawners in underneath
 #Fish's Undead Rising ^
 
 #Fixed/Changed/Added [OTG]
@@ -664,33 +786,57 @@ v1.9 alpha 1.4:
 
 
 Underneath todo:
-+ Adjust description to be "Special addition, does not work without DregoraRL"
 
 Dregora todo:
-+ make secret entrance with crafting table cobblestone stairs
-+ fix major heaven dropper wrong side door mechanism
-+ figure out why pistons don't work in dearoc and apply fix to all objects in dregora
+- fixed #Branch(7,17,8,true,branchName,NORTH,100,0) in Exotic_Pillager-ship
++ test spawner with fireballs: Spawner(x,y,z,entityName,nbtFileName,groupSize,interval,spawnChance,maxCount,despawnTime,velocityX,velocityY,velocityZ,yaw,pitch)
++ Fix ray issues & install new spartanfire mod
++ balance the hidden village loot, make less good/less chests
++ Make barrier items a bit cheaper
++ . nbt invalid tag in Corrupted Viking Realm & Snowy coniferous forest, Frozen mud plains
++ skeleton king doesn't spawn in desert
++ clean out CO- stuff from bog biomes
++ New biome idea, add grove to the desert in some areas
 + Adjust description to include some basic information on DregoraRL
-+ rename biomes to have a nice name
-+ make sure the bank spawns in overworld & underneath
-+ count number of biomes
-- count number of structures in BiomeObjects 329
 + turn off logging
 + Fix double cube in center spawn
-+ add random mines with leave block on it
-+ add random ambush script
++ add random mines with leaf block on it
 
 
 Awaiting I&F Update todo:
+- test brutal tower after C&F update
 + enable lightning dragon spawning during storm
-+ Disable stage 5 dragon skeletons
-+ mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
-+ test brutal tower after C&F update
-+ raise brutal tower rarity (10 minimal chunks apart)
-+ File cleanup, remove .zip files
+- Disable stage 5 dragon skeletons
+
+Fonny todo:
++ remove wiki entry on otg menu's (2 instances)
++ mixin otg virtual biomes to work with compass hud
++ test optifine auto mod download
+
+Kotlin todo:
++ Spawners Unbreakable
 
 RLCraft todo:
-+ check if stone layer medusa lags with ray
++ switch back to custommainmenu
+- maul sweep deletes item if target so blacklisted item from crafting
+- king crown needs better description on how to spawn
+- remove all loot from forsaken entities and add crown + reminisence drops to skeletons
+- geonach spawn destroys blocks in abyssal (blacklist geonack from abyssal) - same for ent/treant/calpod
+- vespids hive creation destroys blocks in abyssal
+- give fish undead damage and health buff
+- Banshees & Avaton dispell
+- give entities dispell on stairwell & disallow flight in lower area
+- can pull enchantments from fish undead hearts, and poison spores onto nuggets making them exploitable
+- 1. potion_of_mooten_lava is still brewable from brewing stand 2. DeathTouch Potions are still brewable with the cauldron
+- add weapon counter on inventory placed player to bow
++ Reference all files in config with generated files in live environment
++ check if B:patchSRPAI=true in rltweaker makes parasites weaker
++ srparasite items give new recipes if none is using
++ add skeletons with crown equipped and drop the special crown upon death?
+
++ Adjust button colors
++ add RLCraft Dregora Reddit
++ Enable Swing through grass? RLCombat
 + add content creator mod to manifest (remove all dev mods and write manifest)
 + update RLCombat
 + remove wiki to OTG in create dimension menu (Can't do that because it's not detected)
@@ -700,6 +846,34 @@ RLCraft todo:
 + printjars executable
 + perhaps make events a little bit more common?
 + config update (copy new settings from config to intellij source)
+
+
+Modpack Page todo:
++ Bisect Hosting Custom Link
++ Public Server?
++ Add Logo
++ Official Discord?
++ source files of the #important #summary #Installation #features #tips & starting #reporting isssues #future changes #mods included
++ Shader Pack?
++ Go over the page in general once it's done.
+
+Ask Shivaxi:
+Banner links for curseforge
+wiki.gg username so he has admin access to the page
+reporting issues done through github
+bisecthosting image source
+
+Finalization todo:
++ This page contains info:
++ Mimic RLCraft important bits? Which are required and which are not?
++ Modpack page description (In summary) & Features
++ Installation guide
++ Wiki, Speedrun, Reddit DregoraRL variants?
++ Dregora Discord background banner on join + issue channel + more channels in general for DregoraRL?
++ Public server info?
++ Tips & Starting
++ Future changes
++ Reporting Issues
 
 
 Mods Information:
@@ -851,6 +1025,22 @@ Optional RLCraft todo:
 + add new dimension mod for the end
 
 #DregoraRL Backlog
+Expansion:
++ add dim portal to next dim at 0,0 location & block access by blocks only removable by artifacts.
++ add hadron collider dungeon at 0,0
++ add boss to hadron collider
++ add random dungeons in world that you can gain access to if you have the first key (these will give you more brutal coins) (main structure is made out of beta blocks)
++ random dungeons spawn in each of the fromimage areas
++ make beta key after defeating x random dungeons ^
++ remove the orbs from brutal tower and replace it with brutal coins, then place the orbs in the specialty areas described above ^
++ Hadron collider is only accessible with the alpha key
+WaveSystem:
++ Introduce a wave system, perhaps use https://www.curseforge.com/minecraft/mc-mods/potion-shrines from SilentStranger?
++ lock living weapons after wave system (defeat the hardest wave to gain living core)
+Normal:
++ take a look at https://www.curseforge.com/minecraft/mc-mods/castle-dungeons
++ take a look at https://www.curseforge.com/minecraft/mc-mods/beast-slayer
++ add random ambush script
 + typo in caniverous mountain (needs to be carniverous)
 + Re-make the ancient trees using customstructures and create a big forest out of them
 + Ore redistribution:
@@ -928,6 +1118,8 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Add smoke particle effect to barrier block being destroyed
 
 #RLCraft Backlog:
++ Add mininuke arrows to random arrow script for entities
++ Add more structures to end (ruins replacements)
 + Add quark pirate hat description after looting has been added
 + tiny cactus harvestable with shears
 + honeycomb empty honey needs same recipies as HoneyComb
@@ -935,7 +1127,6 @@ down just before the blight occured and the fabric of space and time collapsed i
 + Thunderstorm chance to hit player with lightning and dismount
 + check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
 + hotspring bucket can be enabled but needs magic level 48 (increase) and needs weakness + slowness potion effects
-+ memefy the grand tree
 + Transform all floating things into crashed things on the ground when applicable or remove.
 + Make Ethereal Tree/spectral garden patches for within the END
 + Add flower teleportation circles to Flower Field

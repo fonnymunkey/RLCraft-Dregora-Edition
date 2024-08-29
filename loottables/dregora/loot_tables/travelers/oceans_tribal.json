@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"x:-2813 z:16534\",Lore:[\"Tribal village of ancient cultures.\"]}}"
+              "tag": "{display:{Name:\"Tribal Village Coordinates\",Lore:[\"x:-2690 z:17124\",\"x:-2851 z:16557\",\"x:-2065 z:16821\",\"x:-2983 z:15678\",\"x:-2309 z:15097\",\"x:-1772 z:15473\",\"x:-1054 z:14414\",\"x:-302 z:15649\"]}}"
             }
           ],
           "weight": 1

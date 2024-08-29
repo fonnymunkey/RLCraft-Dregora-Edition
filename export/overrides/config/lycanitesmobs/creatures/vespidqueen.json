@@ -17,10 +17,15 @@
     "disableSubspecies": false,
     "dimensionIds": [
       -1,
-      1
+      1,
+      3
     ],
     "dimensionListType": "blacklist",
     "ignoreBiome": false,
+    "biomes": [
+      "Abyssal Rift"
+    ],
+    "biomeIdListType": "blacklist",
     "biomeTags": [
       "jungle"
     ],

@@ -16,7 +16,7 @@
               "tag": "
               {
                 Potion:\"potioncore:disorganization\",
-                display:{Name:\"Potion of Blessed Sun\",Lore:[\"\",\"§5When Applied:\",\"§9+1 live if used outside\",\"§c-1 live if used inside.\",\"§0\u2620\"]},
+                display:{Name:\"Potion of Blessed Sun\",Lore:[\"\",\"§5When Applied:\",\"§9+1 liffe if used outside\",\"§c-1 live if used inside.\",\"§0\u2620\"]},
                 CustomPotionEffects:[{Id:15,Duration:100},{Id:25,Duration:20,Amplifier:100},{Id:11,Duration:200,Amplifier:4}],
                 HideFlags:32
               }"
@@ -27,7 +27,7 @@
               "tag": "
               {
                 Potion:\"potioncore:disorganization\",
-                display:{Name:\"Potion of Blessed Sun\",Lore:[\"\",\"§5When Applied:\",\"§9+1 live if used outside\",\"§c-1 live if used inside.\",\"§0\u2639\"]},
+                display:{Name:\"Potion of Blessed Sun\",Lore:[\"\",\"§5When Applied:\",\"§9+1 life if used outside\",\"§c-1 live if used inside.\",\"§0\u2639\"]},
                 CustomPotionEffects:[{Id:15,Duration:100},{Id:25,Duration:20,Amplifier:100},{Id:11,Duration:200,Amplifier:4}],
                 HideFlags:32
               }"

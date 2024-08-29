@@ -10,6 +10,76 @@
 
 /*
 
+// Script to test simple scripts with
+static stick as IItemStack = <variedcommodities:stone_staff>;
+static speed as double = 1.5;
+var ProjectileItterations = -10 as int;
+
+events.onPlayerRightClickItem(function(event as crafttweaker.event.PlayerRightClickItemEvent) {
+    if (!event.player.world.isRemote()) { return; }
+    if (event.item.definition.id.matches(stick.definition.id)) {
+
+        // Get player lookingDirection vectors and normalize them
+        var pX = event.player.lookingDirection.normalized.x;
+        var pY = event.player.lookingDirection.normalized.y;
+        var pZ = event.player.lookingDirection.normalized.z;
+
+        // Offset player shooting position by where they're looking
+        // Projectiles spawn directly inside of the player normally
+        var fX = event.player.x + (pX * 2);
+        var fY = event.player.y + (pY + 2);
+        var fZ = event.player.z + (pZ * 2);
+        var pos = crafttweaker.util.Position3f.create(fX, fY, fZ);
+
+        // Multiply the projectile by speed value
+        var sX = pX * speed;
+        var sY = pY * speed;
+        var sZ = pZ * speed;
+
+
+        var ProjectileArrayCount = 0;
+        var ProjectileArray = [
+
+            <entity:srparasites:bomb>,
+            <entity:minecraft:arrow>
+
+            ] as IEntityDefinition[];
+
+        for item in ProjectileArray {
+
+            var ProjectileArrayCount = ProjectileArrayCount + 1;
+        }
+
+
+        if (ProjectileItterations == -10) {
+
+            var ProjectileItterations = ProjectileArrayCount as int;
+
+        } else if (ProjectileItterations > -1) {
+
+            var ProjectileItterations = ProjectileItterations - 1;
+
+        } else {
+
+            var ProjectileItterations = ProjectileArrayCount as int;
+
+        }
+
+
+
+        var entityobject = ProjectileArray[ProjectileItterations].createEntity(event.player.world);
+
+        entityobject.setPosition(pos);
+        entityobject.motionX = sX;
+        entityobject.motionY = sY;
+        entityobject.motionZ = sZ;
+
+        event.player.world.spawnEntity(entityobject);
+
+    }
+});
+
+
 val fmbFishingTable = LootTweaker.getTable("fishingmadebetter:fishing_combined");
 val rlcraftFishingRoulette = fmbFishingTable.addPool("rlcraftfishingroulette", 1, 1, 0, 0);
 

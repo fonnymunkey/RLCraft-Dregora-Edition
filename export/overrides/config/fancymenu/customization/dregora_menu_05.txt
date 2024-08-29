@@ -185,16 +185,16 @@ customization {
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink;https://rlcraft.fandom.com/wiki/RLCraft_Wiki%btnaction_splitter_fm%
+  buttonaction = openlink;https://rlcraft.wiki.gg/wiki/RLCraft_Dregora%btnaction_splitter_fm%
   backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
-  label = RLCraft Wiki
+  label = RLCraft Dregora Wiki
   loopbackgroundanimations = true
-  hoverlabel = &7RLCraft Wiki
-  x = 2
+  hoverlabel = &7RLCraft Dregora Wiki
+  x = 26
   width = 61
   action = addbutton
   actionid = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
-  y = 11
+  y = 13
   backgroundnormal = fancymenu_data/DregoraRL/buttons/invisible_button.png
   height = 10
 }
@@ -220,13 +220,13 @@ customization {
 customization {
   orientation = element
   restartbackgroundanimations = true
-  buttonaction = openlink;https://speedrun.com/RLCraft%btnaction_splitter_fm%
+  buttonaction = openlink;https://github.com/fonnymunkey/RLCraft-Dregora-Edition/issues%btnaction_splitter_fm%
   backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
-  label = RLCraft Speedrun
+  label = Report issues here!
   loopbackgroundanimations = true
-  hoverlabel = &7RLCraft Speedrun
+  hoverlabel = &7Report issues here!
   orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
-  x = 1
+  x = -18
   width = 93
   action = addbutton
   actionid = d4cfd6a9-49eb-4828-b4dd-d03a13d112e81720107737852
@@ -244,7 +244,7 @@ customization {
   loopbackgroundanimations = true
   hoverlabel = &7RLCraft Reddit
   orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
-  x = 1
+  x = -22
   width = 74
   action = addbutton
   actionid = 285e5c6d-055e-458d-a8fa-5a1bcca152bb1720107742500
@@ -262,7 +262,7 @@ customization {
   loopbackgroundanimations = true
   hoverlabel = &7Shivaxi's Discord
   orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
-  x = 1
+  x = -22
   width = 87
   action = addbutton
   actionid = 648363cd-7fe6-4017-a17f-0adb391e6dc81720107747951
@@ -280,7 +280,7 @@ customization {
   loopbackgroundanimations = true
   hoverlabel = &7Dregora's Discord
   orientation_element = d16eeefe-fc5c-4a02-b163-a40d54d0b7b11720107679798
-  x = 1
+  x = -22
   width = 95
   action = addbutton
   actionid = bcf8b171-f781-4b3a-9880-6e72b80614391720107812551

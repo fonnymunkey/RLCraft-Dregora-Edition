@@ -3,7 +3,7 @@
     {
         "title":
         {
-            "image" : "mainmenu:rlcraft_Logo_1_edit.png",
+            "image" : "mainmenu:rlcraft_dregora_logo_full_01.png",
             "posX" : -200,
             "posY" : -35,
             "width" : 400,
@@ -27,7 +27,7 @@
             "height" : 20,
             "imageWidth" : 1000,
             "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
+			"texture" : "mainmenu:buttons/buttonlong_overgrown_01.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -46,7 +46,7 @@
             "height" : 20,
             "imageWidth" : 1000,
             "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
+			"texture" : "mainmenu:buttons/buttonlong_overgrown_02.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -65,7 +65,7 @@
             "height" : 20,
             "imageWidth" : 1000,
             "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
+			"texture" : "mainmenu:buttons/buttonlong_overgrown_03.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -84,7 +84,7 @@
             "height" : 20,
             "imageWidth" : 1000,
             "imageHeight" : 125,
-			"texture" : "mainmenu:buttonlong.png",
+			"texture" : "mainmenu:buttons/buttonlong_overgrown_04.png",
 			"hoverText" : "By BisectHosting, use code Shivaxi",
             "action" : 
             {
@@ -104,7 +104,7 @@
             "height" : 20,
             "imageWidth" : 500,
             "imageHeight" : 125,
-			"texture" : "mainmenu:button.png",
+			"texture" : "mainmenu:buttons/button_overgrown_01.png",
             "action" : 
             {
                 "type" : "openGui",
@@ -123,7 +123,7 @@
             "imageWidth" : 500,
             "imageHeight" : 125,
             "height" : 20,
-			"texture" : "mainmenu:button.png",
+			"texture" : "mainmenu:buttons/button_overgrown_02.png",
 			"hoverText" : "Embrace Cowardice?",
             "action" : 
             {
@@ -137,7 +137,7 @@
         "mojang":
         {
             "text" : "Copyright Mojang AB. Do not distribute!",
-            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
+            "hoverText" : "ï¿½nCopyright Mojang AB. Do not distribute!",
             "posX" : 5,
             "posY" : 5,
             "color" : 9561599,
@@ -152,7 +152,7 @@
         "wiki":
         {
             "text" : "RLCraft Wiki",
-            "hoverText" : "§nRLCraft Wiki",
+            "hoverText" : "ï¿½nRLCraft Wiki",
             "posX" : 5,
             "posY" : 16,
             "color" : 9561599,
@@ -167,7 +167,7 @@
         "reddit":
         {
             "text" : "RLCraft Reddit",
-            "hoverText" : "§nRLCraft Reddit",
+            "hoverText" : "ï¿½nRLCraft Reddit",
             "posX" : 5,
             "posY" : 27,
             "color" : 9561599,
@@ -182,7 +182,7 @@
 		"discord":
         {
             "text" : "Shivaxi's Discord",
-            "hoverText" : "§nShivaxi's Discord",
+            "hoverText" : "ï¿½nShivaxi's Discord",
             "posX" : 5,
             "posY" : 49,
             "color" : 9561599,
@@ -197,7 +197,7 @@
 		"discord 2":
         {
             "text" : "RLCraft Speedrun",
-            "hoverText" : "§nRLCraft Speedrun",
+            "hoverText" : "ï¿½nRLCraft Speedrun",
             "posX" : 5,
             "posY" : 38,
             "color" : 9561599,

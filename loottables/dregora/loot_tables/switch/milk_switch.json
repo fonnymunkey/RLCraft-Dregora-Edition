@@ -9,7 +9,7 @@
           "type": "loot_table",
           "name": "dregora:switch/rlcraft/milk",
           "weight": 0,
-          "quality": -400
+          "quality": -1000
         }
       ]
     }

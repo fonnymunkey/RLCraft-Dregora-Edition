@@ -512,7 +512,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"C418 - FLoating Trees Vinyl!!!!!\",Lore:[\"When you finally start noting book coordinates and find the kingdom of Dearoc!\"]}}"
+              "tag": "{display:{Name:\"C418 - FLoating Trees Vinyl!!!!!\",Lore:[\"When you finally start noting book coordinates and find the kingdom of Daeroc!\"]}}"
             },
             {"function": "enchant_with_levels","levels": 5}
           ]
