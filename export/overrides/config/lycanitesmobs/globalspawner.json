@@ -1,12 +1,4 @@
 {
-  "loadDefault": false,
-  "conditions": [
-    {
-      "type": "world",
-      "biomes": [
-        "Abyssal Rift"
-      ],
-      "biomeIdListType": "blacklist"
-    }
-  ]
+  "loadDefault": true,
+  "conditions": []
 }

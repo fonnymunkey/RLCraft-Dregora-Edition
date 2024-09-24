@@ -10,6 +10,32 @@
 
 /*
 
+// Villager to Mental/Sussyberian conversion
+if ((event.entity.definition.id) == "minecraft:villager") {
+
+    print(event.entity.nbt.ProfessionName);
+
+    if (event.entity.nbt.ProfessionName == "minecraft:librarian") {
+
+        var randomNum = event.entity.world.random.nextFloat(0, 100);
+
+        if (randomNum <= 100) {
+
+            var randomNum = event.entity.world.random.nextFloat(0, 100);
+
+            if (randomNum <= 50) {
+
+                event.entity.setCustomName("Sussyberian");
+
+            } else {
+
+                event.entity.setCustomName("Mentalberian");
+
+            }
+        }
+    }
+}
+
 // Script to test simple scripts with
 static stick as IItemStack = <variedcommodities:stone_staff>;
 static speed as double = 1.5;

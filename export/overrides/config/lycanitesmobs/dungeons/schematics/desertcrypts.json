@@ -17,7 +17,8 @@
         "wasteland",
         "mesa",
         "-cold",
-        "-canyon"
+        "-canyon",
+        "-abyssal"
       ],
       "biomeTagListType": "whitelist"
     }

@@ -453,7 +453,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.6}]},
+            {"function": "enchant_with_levels","levels": 20,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.6}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -482,7 +482,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -538,7 +538,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -567,7 +567,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -596,7 +596,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -625,7 +625,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -654,7 +654,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -684,7 +684,7 @@
           "functions": [
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated RAD-H§4§lelmet §e☢§r\",Lore:[\"Lined with lead, must be heavy...\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
@@ -716,7 +716,7 @@
           "functions": [
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated RAD-C§4§lhest §e☢§r\",Lore:[\"Lined with lead, must be heavy...\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
@@ -748,7 +748,7 @@
           "functions": [
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated RAD-B§4§lottom §e☢§r\",Lore:[\"Lined with lead, must be heavy...\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
@@ -780,7 +780,7 @@
           "functions": [
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated RAD-L§4§legs §e☢§r\",Lore:[\"Lined with lead, must be heavy...\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
@@ -811,7 +811,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Ha§4§lzmat H§e§lelmet §e☢§r\",Lore:[\"Smooth to the touch, high quality leather.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -840,7 +840,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Ha§4§lzmat P§e§lants §e☢§r\",Lore:[\"Smooth to the touch, high quality leather.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -869,7 +869,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Ha§4§lzmat B§e§loots §e☢§r\",Lore:[\"Smooth to the touch, high quality leather.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -898,7 +898,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{color:16701501,Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Ha§4§lzmat B§e§lody §e☢§r\",Lore:[\"Smooth to the touch, high quality leather.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1008,7 +1008,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
@@ -1036,7 +1036,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
@@ -1064,7 +1064,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1093,7 +1093,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
@@ -1121,7 +1121,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1150,7 +1150,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
@@ -1178,7 +1178,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1725,7 +1725,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1754,7 +1754,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {
               "function": "minecraft:set_attributes",
               "conditions": [{"condition": "random_chance","chance": 0.3}],
@@ -1782,7 +1782,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Anci§4§lent Arti§e§lfact §e☢§r\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1811,7 +1811,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Anci§4§lent Arti§e§lfact §e☢§r\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1840,7 +1840,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Anci§4§lent Arti§e§lfact §e☢§r\",Lore:[\"This may be of interest to the Topographers in villager outposts.\"]},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1896,7 +1896,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1925,7 +1925,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -1981,7 +1981,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2010,7 +2010,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2039,7 +2039,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2149,7 +2149,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated T§4§lool §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2178,7 +2178,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2207,7 +2207,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2236,7 +2236,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2265,7 +2265,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.95}},
             {
               "function": "minecraft:set_attributes",
@@ -2379,7 +2379,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2408,7 +2408,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2437,7 +2437,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2466,7 +2466,7 @@
           "weight": 5,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2495,7 +2495,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2534,7 +2534,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2573,7 +2573,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",
@@ -2612,7 +2612,7 @@
           "weight": 1,
           "functions": [
             {"function": "minecraft:set_nbt", "tag": "{display:{Name:\"§e☢§r §4§lCon§e§lta§4§lmin§e§lated Equip§4§lment §e☢§r\"},HideFlags:2}"},
-            {"function": "enchant_with_levels","levels": 10,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
+            {"function": "enchant_with_levels","levels": 40,"treasure": false,"conditions": [{"condition": "random_chance","chance": 0.2}]},
             {"function": "set_damage","damage": {"min": 0.1,"max": 0.9}},
             {
               "function": "minecraft:set_attributes",

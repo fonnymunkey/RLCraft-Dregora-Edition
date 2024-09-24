@@ -26,6 +26,16 @@ import loottweaker.vanilla.loot.Functions;
 //mod_lavacow.addItemEntry(<mod_lavacow:hatred_shard>, 25, 0, [], [Conditions.killedByPlayer(), Conditions.parse({"condition": "entity_properties","entity": "this"})]);
 //mod_lavacow.addItemEntry(<mod_lavacow:kings_crown>, 1, 0, [], [Conditions.killedByPlayer(), Conditions.parse({"condition": "entity_properties","entity": "this"})]);
 
+
+val mod_lavacow_mimic = LootTweaker.getTable("mod_lavacow:entities/mimic");
+mod_lavacow_mimic.clear();
+
+val mod_lavacow = mod_lavacow_mimic.addPool("claw", 1, 1, 0, 0);
+mod_lavacow.addItemEntry(<mod_lavacow:mimic_claw>, 75);
+
+val forsaken_regular = LootTweaker.getTable("mod_lavacow:entities/forsaken");
+forsaken_regular.clear();
+
 val skeleton_regular = LootTweaker.getTable("minecraft:entities/skeleton");
 skeleton_regular.clear();
 

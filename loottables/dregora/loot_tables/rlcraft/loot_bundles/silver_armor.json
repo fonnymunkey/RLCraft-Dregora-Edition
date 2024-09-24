@@ -12,9 +12,9 @@
           "weight": 5,
           "functions": [
             {"function": "set_damage","damage": {"min": 0.20,"max": 0.95}},
-            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 40,"conditions": [{"condition": "random_chance","chance": 0.1}]}
           ]
         },
         {
@@ -23,9 +23,9 @@
           "weight": 5,
           "functions": [
             {"function": "set_damage","damage": {"min": 0.20,"max": 0.95}},
-            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 40,"conditions": [{"condition": "random_chance","chance": 0.1}]}
           ]
         },
         {
@@ -34,9 +34,9 @@
           "weight": 5,
           "functions": [
             {"function": "set_damage","damage": {"min": 0.20,"max": 0.95}},
-            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 40,"conditions": [{"condition": "random_chance","chance": 0.1}]}
           ]
         },
         {
@@ -45,9 +45,9 @@
           "weight": 5,
           "functions": [
             {"function": "set_damage","damage": {"min": 0.20,"max": 0.95}},
-            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.1}]},
-            {"function": "enchant_with_levels","levels": 30,"conditions": [{"condition": "random_chance","chance": 0.1}]}
+            {"function": "enchant_with_levels","levels": 10,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 20,"conditions": [{"condition": "random_chance","chance": 0.3}]},
+            {"function": "enchant_with_levels","levels": 40,"conditions": [{"condition": "random_chance","chance": 0.1}]}
           ]
         }
       ]

@@ -32,13 +32,6 @@
     "result": "deny"
   },
   {
-    "bothhandsitem": ["potioncore:flight", "potioncore:long_flight"],
-    "biome": [ "Abyssal Rift" ],
-    "maxheight": 70,
-    "message": "A Mysterious force prevents you from drinking this potion on the lower levels of this region.",
-    "result": "deny"
-  },
-  {
     "bothhandsitem": "minecraft:redstone_torch",
     "block": [ "mcwbridges:oak_rail_bridge" ],
     "message": "www.twitch.tv/shivaxi",

@@ -15,7 +15,8 @@
       "biomeTags": [
         "jungle",
         "swamp",
-        "-canyon"
+        "-canyon",
+        "-abyssal"
       ],
       "biomeTagListType": "whitelist"
     }

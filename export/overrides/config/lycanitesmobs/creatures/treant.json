@@ -22,7 +22,8 @@
     "dimensionListType": "blacklist",
     "ignoreBiome": false,
     "biomeTags": [
-      "forest"
+      "forest",
+      "-abyssal"
     ],
     "spawnWeight": 2,
     "dungeonWeight": 0,

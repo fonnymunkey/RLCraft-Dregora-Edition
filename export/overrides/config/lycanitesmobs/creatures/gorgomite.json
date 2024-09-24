@@ -28,7 +28,8 @@
       "wasteland",
       "mesa",
       "-cold",
-      "-snowy"
+      "-snowy",
+      "-abyssal"
     ],
     "spawnWeight": 6,
     "dungeonWeight": 200,

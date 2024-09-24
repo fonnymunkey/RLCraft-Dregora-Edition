@@ -101,7 +101,7 @@
       },
       "generationAttempts": 32,
       "amountPerChunk": 0.5,
-      "enable": false
+      "enable": true
     },
     "topaz": {
       "minHeight": 4,

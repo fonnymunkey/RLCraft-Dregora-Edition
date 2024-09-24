@@ -90,7 +90,7 @@
         {
           "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
           "sound": "charm:homing",
-          "volume": 0.004,
+          "volume": 0.008,
           "soundType": "periodic"
         },
         {
@@ -148,6 +148,12 @@
           "soundType": "spot"
         },
         {
+          "conditions":"player.isInside && MATCH('(?i)(.*Abyssal Rift.*)', biome.name)",
+          "sound": "srparasites:host.growl",
+          "volume": 0.7,
+          "soundType": "spot"
+        },
+        {
           "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
           "sound": "dsurround:theend",
           "volume": 0.1
@@ -178,6 +184,18 @@
         {
           "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
           "sound": "dsurround:rockfall",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "srparasites:host.em",
+          "volume": 1.0,
+          "soundType": "spot"
+        },
+        {
+          "conditions":"MATCH('(?i)(.*3.*)', dim.id)",
+          "sound": "srparasites:host.growl",
           "volume": 1.0,
           "soundType": "spot"
         }

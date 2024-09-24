@@ -23,7 +23,8 @@
     "ignoreBiome": false,
     "biomeTags": [
       "forest",
-      "-mountain"
+      "-mountain",
+      "-abyssal"
     ],
     "spawnWeight": 8,
     "dungeonWeight": 200,

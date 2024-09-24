@@ -45,6 +45,51 @@
           "weight": 20
         }
       ]
+    },
+    {
+      "name": "Enchants",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 15,
+              "treasure": true
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.02
+                }
+              ]
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": 40,
+              "treasure": true,
+              "conditions": [
+                {
+                  "condition": "random_chance",
+                  "chance": 0.01
+                }
+              ]
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:loot/empty_loot",
+          "weight": 3
+        }
+      ]
     }
   ]
 }

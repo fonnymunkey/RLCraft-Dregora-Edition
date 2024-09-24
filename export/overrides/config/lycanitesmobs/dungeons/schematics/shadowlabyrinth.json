@@ -26,7 +26,8 @@
         "swamp",
         "-canyon",
         "-parasite",
-        "-void"
+        "-void",
+        "-abyssal"
       ],
       "biomeTagListType": "whitelist"
     }

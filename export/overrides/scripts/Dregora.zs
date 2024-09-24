@@ -52,6 +52,8 @@ import crafttweaker.event.PlayerInteractEntityEvent;
 import crafttweaker.util.Math;
 import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.item.IItemTransformer;
+import crafttweaker.world.IRayTraceResult;
+import crafttweaker.event.EntityMountEvent;
 
 // use /ct syntax to validate scripts
 
@@ -59,6 +61,159 @@ print("Dregora Script starting!");
 
 //Debug lines true/false
 var Logging = false;
+
+// Berries nerf
+events.onEntityLivingUseItemFinish(function(event as Finish){
+
+    if (event.item.definition.id == "biomesoplenty:berries") {
+
+        var randomDuration = event.player.world.random.nextFloat(60, 200);
+        var randomAmp = event.player.world.random.nextFloat(0, 3);
+        var randomNum = event.player.world.random.nextFloat(0, 100);
+
+        if (randomNum >= 10 ) { return; }
+
+        event.player.addPotionEffect(<potion:minecraft:nausea>.makePotionEffect(randomDuration, randomAmp));
+
+        if (randomNum >= 7 ) { return; }
+
+        event.player.addPotionEffect(<potion:lycanitesmobs:aphagia>.makePotionEffect(randomDuration, randomAmp));
+
+        if (randomNum >= 5 ) { return; }
+
+        event.player.addPotionEffect(<potion:simpledifficulty:parasites>.makePotionEffect(randomDuration, randomAmp));
+
+        if (randomNum >= 3 ) { return; }
+
+        event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(randomDuration, randomAmp));
+
+        if (randomNum >= 1 ) { return; }
+
+        event.player.addPotionEffect(<potion:potioncore:vulnerable>.makePotionEffect(randomDuration, randomAmp));
+
+    }
+
+});
+
+//Global damage modifier
+events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
+
+    if (!isNull(event.damageSource.damageType)) {
+
+        if (event.damageSource.damageType) == "player" {
+
+            if (event.amount >= 20) {
+
+                if (event.amount <= 50) {
+
+                    var new_amount = (event.amount / 1.15);
+                    event.amount = new_amount;
+
+                } else if (event.amount <= 100) {
+
+                    var new_amount = (event.amount / 1.6);
+                    event.amount = new_amount;
+
+                } else if (event.amount <= 200) {
+
+                    var new_amount = (event.amount / 2.0);
+                    event.amount = new_amount;
+
+                } else if (event.amount <= 300) {
+
+                    var new_amount = (event.amount / 2.25);
+                    event.amount = new_amount;
+
+                } else {
+
+                    var new_amount = (event.amount / 3.0);
+                    event.amount = new_amount;
+
+                }
+            }
+
+            if (isNull(event.entity.definition.id)) {return;}
+
+            if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
+
+            if (!isNull(event.entityLivingBase.mainHandHeldItem)) && (isNull(event.entityLivingBase.mainHandHeldItem.tag.disarm)) {
+
+                	event.entityLivingBase.mainHandHeldItem.mutable().updateTag({disarm:1,display:{Lore:["You sense a strange opposing aura from this weapon, as if it wants to cut you..."]}});
+
+            }
+
+            // If player hits entity with a weapon that has been disarmed it has a chance to reflect dmg
+
+            if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
+            if (isNull(event.damageSource.trueSource.heldEquipment[0].tag)) {return;}
+            if (isNull(event.damageSource.trueSource.heldEquipment[0].tag.disarm)) {return;}
+
+
+            var randomNum = event.damageSource.trueSource.world.random.nextFloat(0, 100);
+            if (randomNum >= 5 ) { return; }
+
+            event.damageSource.trueSource.attackEntityFrom(MAGIC, event.amount);
+            event.cancel();
+
+        }
+    }
+});
+
+// Right clicking the crown in any biome that has the SANDY but not BEACH biometag
+// Does not account for SANDY being first in the /
+events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent){
+
+    if event.player.world.isRemote() {return;}
+
+    if (event.player.world.getBiome(event.player.getPosition3f()).name == "Abyssal Rift") {
+        if ((event.item.definition.id == "minecraft:potion") || (event.item.definition.id == "minecraft:splash_potion") || (event.item.definition.id == "minecraft:lingering_potion")) {
+            if (!isNull(event.item.tag.Potion)) {
+                if ((event.item.tag.Potion == "potioncore:flight") || (event.item.tag.Potion == "potioncore:long_flight")) {
+                    if (event.player.y <= 70) {
+
+                        event.player.dropItem(true);
+                        event.player.sendStatusMessage("You sense a mysterious force from below coming up at you as it yanks the potion from your hands", true);
+                        event.cancel();
+                    }
+                }
+            }
+        } else if ((event.item.definition.id == "bountifulbaubles:magicmirror") || (event.item.definition.id == "bountifulbaubles:wormholemirror")) {
+            if (event.player.y <= 70) {
+
+                event.player.sendStatusMessage("You sense a mysterious force from below coming up at you as it yanks the mirror from your hands", true);
+                event.player.dropItem(true);
+                event.cancel();
+            }
+        }
+    }
+
+    if (isNull(event.item)) { return; }
+    if (isNull(event.item.definition)) { return; }
+    if (isNull(event.item.definition.id)) { return; }
+
+
+    if (event.item.definition.id == "mod_lavacow:skeletonking_crown") {
+
+        var SpawnPosRay = event.player.getRayTrace(10, 1, false, true, true);
+
+        if (isNull(SpawnPosRay.blockPos)) { return; }
+
+        var BiomeName = event.world.getBiome(event.player.getPosition3f()).name;
+        var SpawnPos = Position3f.create(SpawnPosRay.blockPos.x, SpawnPosRay.blockPos.y + 1, SpawnPosRay.blockPos.z).asBlockPos();
+
+
+        if ((BiomeName has "Desert") || (BiomeName has "Dune")) {
+
+            val skeleton_king = <entity:mod_lavacow:skeletonking>.createEntity(event.player.world) as IEntity;
+            skeleton_king.setPosition(SpawnPos);
+            event.world.spawnEntity(skeleton_king);
+
+        }
+    }
+
+});
+
+
 
 // Aquaculture seaweed dropped from kelp, can be baked to become kelp and kelp can be used as a fuel source to smelt 2 items. (Same-ish as 1.16.5)
 events.onBlockHarvestDrops(function(blockDrops as BlockHarvestDropsEvent){
@@ -236,9 +391,10 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
         var entityShooter as IEntityLivingBase = event.damageSource.getTrueSource();
         var randomInt = entityShooter.world.random.nextFloat(0, 100);
-        var randomArrow = entityShooter.world.random.nextFloat(0, 90);
+        var randomArrow = entityShooter.world.random.nextFloat(0, 66);
+        var randomArrowLong = entityShooter.world.random.nextFloat(0, 22);
         var RandomArrowScript = ArrowArray[randomArrow];
-        var RandomArrowScriptLong = ArrowArrayLong[randomArrow];
+        var RandomArrowScriptLong = ArrowArrayLong[randomArrowLong];
 
         if (isNull(entityShooter.customName)) {
 
@@ -308,6 +464,16 @@ var MentalPotions = [
 var SussyPotions = [
     <potion:potioncore:lightning>,
     <potion:potioncore:explode>,
+    <potion:potioncore:launch>,
+    <potion:potioncore:explode>,
+    <potion:potioncore:launch>,
+    <potion:potioncore:explode>,
+    <potion:potioncore:launch>,
+    <potion:potioncore:explode>,
+    <potion:potioncore:launch>,
+    <potion:potioncore:explode>,
+    <potion:potioncore:launch>,
+    <potion:potioncore:explode>,
     <potion:potioncore:launch>
 	] as IPotion[];
 
@@ -336,6 +502,9 @@ var BlackListEntitiesNameChangeParasite = [
     "Corrupted Carrier",
     "Necrotic Blight"
 	] as string[];
+
+
+
 
 //Trading with entity named Sussyberian makes you explode
 //Trading with entity named mentalberian makes you nausiated, fear, etc
@@ -400,7 +569,7 @@ events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent){
     }
     if ((event.target.customName == "Sussyberian") && (event.target.definition.id == "minecraft:villager")) {
 
-        var randomPotion = event.target.world.random.nextFloat(0, 1);
+        var randomPotion = event.target.world.random.nextFloat(0, 12);
         var RandomSussyPotion = SussyPotions[randomPotion];
         event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
         event.player.addPotionEffect(RandomSussyPotion.makePotionEffect(1, 2));
@@ -472,6 +641,13 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
         if ((event.entity.definition.id) has "srparasites") {
 
             if (HeldWeapon == "item.srparasites.weapon_bow") {
+
+                // Checks if the item was disarmed and cancells tag update if it is.
+                if (!isNull(HeldEquipment[0].tag)) {
+
+                    if (!isNull(HeldEquipment[0].tag.disarm)) {return;}
+
+                }
 
                 var totalHealth = Math.floor(event.entityLivingBase.maxHealth);
 
@@ -609,7 +785,33 @@ events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
     }
 });
 
+//Dismounts player if they get hit by a dragon and do not have dragon armor on
+events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
+    if !(event.entity.isRiding) {return;}
+
+    if(!isNull(event.damageSource.getDamageType())){
+        if ((event.damageSource.getDamageType() == "dragon_ice") || (event.damageSource.getDamageType() == "dragon_fire") || (event.damageSource.getDamageType() == "dragon_lightning")) {
+
+            if ((isNull(event.entityLivingBase.getItemInSlot(feet))) || (isNull(event.entityLivingBase.getItemInSlot(legs))) || (isNull(event.entityLivingBase.getItemInSlot(chest))) || (isNull(event.entityLivingBase.getItemInSlot(head)))) { return; }
+
+            var feet = (event.entityLivingBase.getItemInSlot(feet).definition.id);
+            var legs = (event.entityLivingBase.getItemInSlot(legs).definition.id);
+            var chest = (event.entityLivingBase.getItemInSlot(chest).definition.id);
+            var head = (event.entityLivingBase.getItemInSlot(head).definition.id);
+
+            if (!(feet has "iceandfire:armor_") || !(legs has "iceandfire:armor_") || !(chest has "iceandfire:armor_") || !(head has "iceandfire:armor_")) {
+                event.entity.dismountRidingEntity();
+                event.entity.removePassengers();
+            }
+
+            if ((feet has "metal") || (legs has "metal") || (chest has "metal") || (head has "metal")) {
+                event.entity.dismountRidingEntity();
+                event.entity.removePassengers();
+            }
+        }
+    }
+});
 
 //summon playerbosses:player_boss ~ ~1 ~ {CustomName:"§4☢ §5§lBlighted Shivaxi§r §4☢"}
 //Function to dismount players if hit by entity named Dismounter && Function giving Shivaxi a phase 2 below 10 health if in Abyssal Rift
@@ -620,16 +822,14 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         if(event.entity.isRiding) {
             event.entity.dismountRidingEntity();
             event.entity.removePassengers();
-
         }
     }
 
     if(!isNull(event.damageSource.getDamageType())){
-        if (event.damageSource.getDamageType() == "lightningBolt") {
+        if ((event.damageSource.getDamageType() == "lightningBolt") || (event.damageSource.getDamageType() == "inWall")) {
             if(event.entity.isRiding) {
                 event.entity.dismountRidingEntity();
                 event.entity.removePassengers();
-
             }
         }
     }
@@ -654,23 +854,31 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
     }
 
     if (!isNull(event.damageSource.getTrueSource())){
-            if(!isNull(event.damageSource.getTrueSource().getCustomName())){
-                if(event.damageSource.getTrueSource().getCustomName() has "Sarevok") {
-                    event.entityLivingBase.addPotionEffect(<potion:potioncore:dispel>.makePotionEffect(100, 0));
-                    event.entityLivingBase.addPotionEffect(<potion:biomesoplenty:curse>.makePotionEffect(100, 0));
-                }
+        if(!isNull(event.damageSource.getTrueSource().getCustomName())){
+            if(event.damageSource.getTrueSource().getCustomName() has "Sarevok") {
+                event.entityLivingBase.addPotionEffect(<potion:potioncore:dispel>.makePotionEffect(100, 0));
+                event.entityLivingBase.addPotionEffect(<potion:biomesoplenty:curse>.makePotionEffect(100, 0));
             }
         }
-
+    }
+    
+    var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
 
     if (isNull(event.entity)){return;}
     if (isNull(event.entity.definition)){return;}
     if (isNull(event.entity.definition.id)){return;}
-    if ((event.entity.definition.id) == "playerbosses:player_boss"){
-
-        var EntityBiome = event.entity.world.getBiome(event.entity.getPosition3f()).name;
-
-        if ((EntityBiome) == "Abyssal Rift") {
+    if ((EntityBiome) == "Abyssal Rift") {
+        
+        //Damage cap set at 100 per hit on abyssal rift bosses
+        if (event.amount >= 100) {
+            if (!isNull(event.entity.nbt.SpawnedAsBoss)) {
+                if ((event.entity.nbt.SpawnedAsBoss) == 1) {
+                    event.amount = 100;
+                }
+            }
+        }
+        
+        if ((event.entity.definition.id) == "playerbosses:player_boss"){
 
             var Phase03 = event.entityLivingBase.maxHealth /4;
             var Phase02 = event.entityLivingBase.maxHealth /2;
@@ -787,7 +995,7 @@ events.onEntityLivingAttacked(function(event as EntityLivingAttackedEvent){
 
         //todo: needs tipped arrows
         if !(isNull(event.damageSource.immediateSource.nbt.Potion)) {
-            if (((event.damageSource.immediateSource.nbt.Potion) == "potioncore:teleport") || ((event.damageSource.immediateSource.nbt.Potion) == "mujmajnkraftsbettersurvival:warp") || ((event.damageSource.immediateSource.nbt.Potion) == "potioncore:strong_teleport") || ((event.damageSource.immediateSource.nbt.Potion) == "potioncore:teleport_surface")) {
+            if (((event.damageSource.immediateSource.nbt.Potion) == "potioncore:teleport") || ((event.damageSource.immediateSource.nbt.Potion) == "mujmajnkraftsbettersurvival:warp") || ((event.damageSource.immediateSource.nbt.Potion) == "potioncore:strong_teleport") || ((event.damageSource.immediateSource.nbt.Potion) == "potioncore:teleport_surface") || ((event.damageSource.immediateSource.nbt.Potion) == "bountifulbaubles:potionrecall")) {
 
                 event.cancel();
 
@@ -805,7 +1013,7 @@ events.onEntityLivingAttacked(function(event as EntityLivingAttackedEvent){
 //Function to give chorus fruit & teleportation potions a different effect on use
 events.onProjectileImpactThrowable(function(event as ProjectileImpactThrowableEvent){
 
-      if ((event.throwable.getNBT().asString() == "potioncore:teleport") || (event.throwable.getNBT().asString() == "mujmajnkraftsbettersurvival:warp") || (event.throwable.getNBT().asString() == "potioncore:strong_teleport") || (event.throwable.getNBT().asString() == "potioncore:teleport_surface")) {
+      if ((event.throwable.getNBT().asString() == "potioncore:teleport") || (event.throwable.getNBT().asString() == "mujmajnkraftsbettersurvival:warp") || (event.throwable.getNBT().asString() == "potioncore:strong_teleport") || (event.throwable.getNBT().asString() == "potioncore:teleport_surface") || (event.throwable.getNBT().asString() == "bountifulbaubles:potionrecall")) {
 
           var entityBase as IEntityLivingBase = event.thrower;
 
@@ -826,7 +1034,7 @@ events.onProjectileImpactThrowable(function(event as ProjectileImpactThrowableEv
 
 //Function to give chorus fruit & teleportation potions a different effect on use
 events.onEntityLivingUseItemFinish(function(event as Finish){
-      if ((event.item.tag.asString() has "potioncore:teleport") || (event.item.tag.asString() has "potioncore:strong_teleport") || (event.item.definition.id has "minecraft:chorus_fruit")){
+      if ((event.item.tag.asString() has "potioncore:teleport") || (event.item.tag.asString() has "potioncore:strong_teleport") || (event.item.definition.id has "minecraft:chorus_fruit") || (event.item.definition.id has "bountifulbaubles:potionrecall")) {
           if (!(event.item.tag.asString() has "potioncore:teleport_spawn") || !(event.item.tag.asString() has "potioncore:teleport_surface")) {
               var entityBase as IEntityLivingBase = event.entity;
 
@@ -852,6 +1060,29 @@ events.onEntityLivingUseItemFinish(function(event as Finish){
 });
 
 
+events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
+
+    if (event.entity.world.time % 10 != 0) {return;}
+    if (isNull(event.entity.definition)) { return; }
+    if (isNull(event.entity.definition)) { return; }
+    if ((event.entity.definition.id) != "minecraft:villager") { return; }
+    if(!isNull(event.entity.nbt.ForgeData.SussyBerianNaming)) { return; }
+
+    if((event.entity.customName == "") && (event.entity.nbt.Profession == 1)) {
+        event.entity.setNBT({SussyBerianNaming: 0});
+        var RandomNum = event.entity.world.random.nextFloat(0, 100);
+        
+        if RandomNum <= 10 {
+            
+            if RandomNum <= 7 {
+                event.entity.setCustomName("Sussyberian");
+            } else {
+                event.entity.setCustomName("Mentalberian");
+            }
+        }
+    }
+});
+
 
 var beckonarray = [];
 
@@ -861,9 +1092,7 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
     if (event.entity.world.time % 50 != 0) {return;}
 
     if (!isNull(event.entity.definition)) {
-
         if (!isNull(event.entity.definition.name)) {
-
             if ((event.entity.definition.name) has "srparasites") {
 
                 if ((event.entity.world.getDimension()) == 0) || ((event.entity.world.getDimension()) == 3) {
@@ -935,11 +1164,11 @@ events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
 
     if (!isNull(event.spawner)){
 
-        if (event.spawner){
+        if (!isNull(event.entity.definition)) {
 
-            if (!isNull(event.entity.definition)) {
+            if (!isNull(event.entity.definition.name)) {
 
-                if (!isNull(event.entity.definition.name)) {
+                if (event.spawner){
 
                     if (((event.entity.definition.name) has "srparasites") && ((event.entity.world.getDimension()) == 0)) {
 
@@ -1107,10 +1336,81 @@ function addPotionEffectHotSpring(player as IPlayer){
 	}
 }
 
+//Listener for thunder & player on mount
+//Listener for player on mount in Abyssal Rift
 //Listener for player in SRP deadblood / BOP Hot Spring Water / Bauble listener / Teleportation on hit by skeleton with Teleport arrow
 events.onPlayerTick(function(event as PlayerTickEvent){
 
-    if (event.player.world.time % 10 != 0) {return;}
+    if event.player.world.isRemote() {return;}
+    if (event.player.world.time % 20 != 0) {return;}
+
+    if (event.player.world.getWorldInfo().isThundering()) {
+
+        var block =  event.player.world.getBlock(event.player.position.x, event.player.position.y - 1, event.player.position.z);
+
+        if ((!isNull(event.player.getRidingEntity())) || (block.definition.id) == "minecraft:air") {
+
+            if (event.player.world.time % 100 == 0) {
+
+                var RandomInt = event.entity.world.random.nextFloat(0, 100);
+
+                if (event.player.world.getBrightness(event.player.position)) == 15 {
+
+                    var EquipmentList = event.player.armorInventory as IItemStack[];
+                    var silvercount as int = 0;
+                    for item in EquipmentList {
+
+                        if (!isNull(item)) {
+
+                            if ((item.definition.id) has "silver") {
+                                silvercount += 4;
+                            } else if ((item.definition.id) has "copper") {
+                                silvercount += 3;
+                            } else if ((item.definition.id) has "gold") && !((item.definition.id) has "scale") {
+                                silvercount += 2;
+                            } else if ((item.definition.id) has "steel") {
+                                silvercount += 1;
+                            } else if ((item.definition.id) has "iron") {
+                                silvercount += 1;
+                            } else if (((item.definition.id) has "chainmail") || ((item.definition.id) has "chain_skirt")) {
+                                silvercount += 1;
+                            }
+                        }
+                    }
+
+                    var RandomInt = event.entity.world.random.nextFloat(0, 100);
+
+                    if RandomInt <= silvercount {
+
+                        event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+
+                    }
+                }
+            }
+        }
+    }
+
+    if (event.player.world.getBiome(event.player.getPosition3f()).name == "Abyssal Rift") {
+
+        if (!isNull(event.player.getRidingEntity())) {
+
+            event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+            event.player.removePassengers();
+            event.player.dismountRidingEntity();
+
+        }
+    }
+
+    if (event.player.world.getBiome(event.player.getPosition3f()).name == "Abyssal Rift") {
+
+        if (!isNull(event.player.getRidingEntity())) {
+
+            event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+            event.player.removePassengers();
+            event.player.dismountRidingEntity();
+
+        }
+    }
 
 
     if(isNull(event.player.nbt.ForgeData.SkippedSilverDebuffs)){

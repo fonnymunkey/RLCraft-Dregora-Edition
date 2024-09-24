@@ -15,6 +15,8 @@ And at last, special thanks to NLBlackHeavenNL for he may not have been seen man
 since it's conception in 2013. Since then there's been the close to weekly calls on Skype, then Teamspeak and now Discord during which we progressed Dregora
 to higher levels of refinement until the day came where Heaven showcased me a particular trailer explaining how to play this modpack "RLCraft" 4 years ago.
 
+Description:
+
 
 
 #Possible false/positives:
@@ -451,6 +453,22 @@ v1.9 alpha 2.3:
 - fixed herbalist trade cunning charlie, max lucky clover = 1 & add 44 clovers (not grass)
 - Shrunk the lakes in abyssal rift biome
 - Adjust loottables for: Medusa, City, reactor (replace lowest tier for new "useful tier" healing items, tipped arrows, potions, & mod lavacow crafting items.
+v1.9 alpha 2.4:
+- fixed #Branch(7,17,8,true,branchName,NORTH,100,0) in Exotic_Pillager-ship
+- Fix ray issues & install new spartanfire mod
+- balance the hidden village loot, make less good/less chests
+- Make barrier items a bit cheaper
+- fixed skeleton king doesn't spawn in desert
+- made sussyberian, mentalberian and not kotlin rarer
+- remove loot from forsaken
+- Find a way to increase mob cap limit for underneath & LC
+- removed mimic loottable except for claw
+- clean out CO- stuff from bog biomes
+- Fix double cube in center spawn
+v1.9 alpha 2.5:
+- increase brutal tower loot to 30-40 ( make special loottable)
+- increase brutal tower boss loot to 30-70
+- remove vexes from walls in brutal tower
 #DregoraRL ^
 
 #Fixed/Changed/Added [RLCraft]:
@@ -663,7 +681,46 @@ v1.9 alpha 2.3
 - Stage 5 skeletons don't spawn any longer
 - fixed Fish Undead Rising parasite bug by removing parasites
 - Give Shivaxi a non op sword, diamond?
-
+V1.9 alpha 2.4:
+- maul sweep deletes item if target so blacklisted item from crafting
+- king crown needs better description on how to spawn
+- remove all loot from forsaken entities and add crown + reminisence drops to skeletons
+- geonach spawn destroys blocks in abyssal (blacklist geonack from abyssal) - same for ent/treant/calpod
+- vespids hive creation destroys blocks in abyssal
+- give fish undead damage and health buff
+- Banshees & Avaton dispell
+- give entities dispell on stairwell & disallow flight in lower area
+- can pull enchantments from fish undead hearts, and poison spores onto nuggets making them exploitable
+- 1. potion_of_mooten_lava is still brewable from brewing stand 2. DeathTouch Potions are still brewable with the cauldron
+- add weapon counter on inventory placed player to bow
+- Reference all files in config with generated files in live environment
+- check if B:patchSRPAI=true in rltweaker makes parasites weaker
+- Spawners Unbreakable (Thanks Kotlin!)
+- make recurrent complex work on canyon, parasite and biomnes o plenty (remove the openterraingenerator lines)
+- Disabled stage 5 dragon skeletons (Thanks Kotlin!)
+- remove wiki entry on otg menu's (2 instances) (thanks to fonny!)
+v1.9 alpha 2.5:
+- max hit = 100 per brutal tower boss
+- add immunities to dismount on dragon chainmail
+- shivaxi doesn't spawn any longer? Update RLMixins to latest
+- incontrol villager spawning make custom name "Sussyberian & Mentalberian"
+- added recall potion to potion block list for abyssal rift & mirror bauble
+- added dismount on dragon_lightning, dragon_fire, dragon_ice, in_wall and on_fire (lightningBolt was already added)
+- check cart/pig/horse etc mount (disable if possible in abyssal rift)
+- add conductive +4|+3|+2|+1 to all conductive items
+- Disallow flying entities in abyssal rift (strike players on entry with lightning?)
+- geonach still breaking through wall in abyssal rift
+- spawners not spawning srparasite entities in brutal tower
+- wipe config & add new rlmixins
+- enable passive entity attacking & creeper ai
+- made disarmed weapons come with a twist
+- test the new RLMixins with fancymenu set to true
+- give metadata to blocklist epicsiege & disable enderman teleportation + see if AI can be disabled
+- fixed piston and dragon egg aggressive placement denial
+- update RLCombat
+- removed berry bush instances
+- nerfed berry bush instances (in case they still spawn)
+- Enable Swing through grass? RLCombat
 #RLCraft ^
 
 #Fixed/Changed/Added [Underneath]
@@ -788,64 +845,53 @@ v1.9 alpha 2.3
 Underneath todo:
 
 Dregora todo:
-- fixed #Branch(7,17,8,true,branchName,NORTH,100,0) in Exotic_Pillager-ship
-+ test spawner with fireballs: Spawner(x,y,z,entityName,nbtFileName,groupSize,interval,spawnChance,maxCount,despawnTime,velocityX,velocityY,velocityZ,yaw,pitch)
-+ Fix ray issues & install new spartanfire mod
-+ balance the hidden village loot, make less good/less chests
-+ Make barrier items a bit cheaper
-+ . nbt invalid tag in Corrupted Viking Realm & Snowy coniferous forest, Frozen mud plains
-+ skeleton king doesn't spawn in desert
-+ clean out CO- stuff from bog biomes
-+ New biome idea, add grove to the desert in some areas
-+ Adjust description to include some basic information on DregoraRL
+- finish up the cancel potion effect if potion of flight
++ highlands region dearoc has white stripe in screen again
+- Adjust description to include some basic information on DregoraRL
 + turn off logging
-+ Fix double cube in center spawn
-+ add random mines with leaf block on it
-
 
 Awaiting I&F Update todo:
-- test brutal tower after C&F update
 + enable lightning dragon spawning during storm
-- Disable stage 5 dragon skeletons
 
 Fonny todo:
-+ remove wiki entry on otg menu's (2 instances)
 + mixin otg virtual biomes to work with compass hud
-+ test optifine auto mod download
++ optifine auto mod download?
 
 Kotlin todo:
-+ Spawners Unbreakable
+? keep player chunks loaded for 60 seconds after log-out
 
 RLCraft todo:
-+ switch back to custommainmenu
-- maul sweep deletes item if target so blacklisted item from crafting
-- king crown needs better description on how to spawn
-- remove all loot from forsaken entities and add crown + reminisence drops to skeletons
-- geonach spawn destroys blocks in abyssal (blacklist geonack from abyssal) - same for ent/treant/calpod
-- vespids hive creation destroys blocks in abyssal
-- give fish undead damage and health buff
-- Banshees & Avaton dispell
-- give entities dispell on stairwell & disallow flight in lower area
-- can pull enchantments from fish undead hearts, and poison spores onto nuggets making them exploitable
-- 1. potion_of_mooten_lava is still brewable from brewing stand 2. DeathTouch Potions are still brewable with the cauldron
-- add weapon counter on inventory placed player to bow
-+ Reference all files in config with generated files in live environment
-+ check if B:patchSRPAI=true in rltweaker makes parasites weaker
-+ srparasite items give new recipes if none is using
-+ add skeletons with crown equipped and drop the special crown upon death?
++ Limit amount of enchantment slots on silver.
 
-+ Adjust button colors
+Base enchantments = 0 enchantments per gear except for gold/silver which have 1 base enchantment slot
+Magic lvl 3 = 3 enchantments per gear
+Use curve to decide level rewards
+
+Golem armor = 30 enchantments
+Gold = 30 enchantments
+Dragon Chain = 20 enchantments
+copper = 10 enchantments
+steel = 10 enchantments
+Iron = 10 enchantments
+chain_mail = 10 enchantments
+silver = 10 enchantments
+Leather = 5 enchantments
+
++ balance enchantments by blocking any output with enchantment book as ingredient in anvils according to a array (level 1 to 20) and give each tier a designated level
+using a new tier "enchantments" in reskillable through gamestages
++ Add insomnia (10%) and fear (10%) if you sleep under open sky
+
+
++ bring back DON'T SLEEP IN THE OPEN - Due to the new sleeping mechanics, you won't sleep properly if your bed is just out in the open,
+and risk being attacked in your sleep.
+Make sure it's sheltered and your surroundings lit up properly.  (This was for 1.11.2 RLCraft only)
++ Make armor specific set bonuses based on enchantments
 + add RLCraft Dregora Reddit
-+ Enable Swing through grass? RLCombat
 + add content creator mod to manifest (remove all dev mods and write manifest)
-+ update RLCombat
-+ remove wiki to OTG in create dimension menu (Can't do that because it's not detected)
 + Check all that can be updated
 + Reference manifest with mods and see what needs to be added to manifest (e.g. RLMixings fileID once it gets uploaded to curse)
 + Upload Underneath v1.1 and add to Manifest.json
 + printjars executable
-+ perhaps make events a little bit more common?
-+ config update (copy new settings from config to intellij source)
 
 
 Modpack Page todo:
@@ -874,7 +920,6 @@ Finalization todo:
 + Tips & Starting
 + Future changes
 + Reporting Issues
-
 
 Mods Information:
 
@@ -1001,6 +1046,9 @@ P_SmallShip (X) update to bo4 and add to recurrent spawngroup
 Optional add mods todo:
 + Spice of Life
 + Food Funk
++ Nuclear Craft (radiation and some items, block the rest)
++ Epic Siege Mod
++ LC Expanded (Self-made LC expansion mod)
 
 Optional RLCraft todo:
 + Add vaults from 1.21 to RLCraft
