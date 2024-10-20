@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "name": "Simple Loot Spawns",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/pixie",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/bat",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/chicken",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/rabbit",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/silverfish",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/spider",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/firefly",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/butterfly",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/dragonfly",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/f_pixie",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/turkey",
+          "weight": 100
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:entities/spawn_eggs/weta",
+          "weight": 100
+        }
+      ]
+    }
+  ]
+}
+

@@ -31,6 +31,8 @@ recipes.addShapeless("dregora52",<variedcommodities:coin_gold> * 64,[<variedcomm
 // Remove Bread recipe
 recipes.removeByRecipeName("minecraft:bread");
 
+
+
 // Remove Enchantment table & add wither skulls to it:
 recipes.remove(<minecraft:enchanting_table>);
 
@@ -603,6 +605,10 @@ recipes.addShapeless("dregora28",<minecraft:wheat>,[<ore:toolKnife>.transformDam
 //Lower Bamboo Fuel time & add dried leaves as fuel.
 furnace.setFuel(<biomesoplenty:bamboo>, 100);
 furnace.setFuel(<biomesoplenty:plant_0:0>, 100);
+
+//Remove ceramic vessel from furnace crafting
+furnace.remove(<notreepunching:ceramic_small_vessel>);
+recipes.remove(<notreepunching:ceramic_small_vessel>);
 
 //Removed biome finder from BOP for it causes lag spikes.
 recipes.remove(<biomesoplenty:biome_finder>);

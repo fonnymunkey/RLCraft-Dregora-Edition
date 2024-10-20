@@ -1,0 +1,18 @@
+{
+  "rlmusic_blight": {
+    "sounds": [
+      {
+        "name": "contenttweaker:rlmusic_blight",
+        "stream": true
+      }
+    ]
+  },
+  "rlmusic_bliss": {
+    "sounds": [
+      {
+        "name": "contenttweaker:rlmusic_bliss",
+        "stream": true
+      }
+    ]
+  }
+}

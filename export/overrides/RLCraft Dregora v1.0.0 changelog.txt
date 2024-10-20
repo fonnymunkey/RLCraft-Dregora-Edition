@@ -1,0 +1,1013 @@
+After being over 2 years in the makings using RLCraft as it's foundation RLCraft Dregora is finally here to involve you with a world of creativity and wonder for which we have to thank those contributed to the effort. This includes those who helped test, create and modified elements now found in the complete pack we call RLCraft Dregora and beyond that the community that surrounds it since it's origins by which I mean those who helped either RLCraft or Dregora in the early days.
+
+We are really looking forward to hearing about your experiences hoping the accumulated experience will be one to remember for years to come and with that I think I have said enough as true laughter and fun does not lay with this scribble of text but what waits ahead!
+
+==========================================================
+Contributors: https://dregorarl.wiki.gg/wiki/Contributors
+==========================================================
+
+===============
+IMPORTANT INFO:
+===============
+
+- To get the most out of the RLCraft Dregora modpack we recommend using 6GB of ram.
+- RLCraft Dregora v1.0.0 is a first release so there are bound to be bugs that are yet to be found & fixed. If you find any, please contact us through the issue tracker.
+
+
+//===========================================================================================================================//
+//              All Fixed/Changes/Additions - Recommended to avoid reading these if you do not wish to be spoiled            //
+//================================================================================================ ==========================//
+
+Internal: v1.5
+- decreased amount of daylight sensors in cities by adding 50% air randomblock
+- decreased city chest rarity from 80 to 65 (less chests)
+- removed additional #inheritmobs from all biomes o plenty biomes causing entity overspawn
+- removed {"mob": "iceandfire:myrmex_queen", "weight":4, "min":1, "max":1} from traverse red desert border
+- restored wasteland rarity from 160 to 155 (original setting)
+- added NotBorderNear: Dregora_FrozenMudForest, Dregora_FrozenMudMountainSummit, Dregora_FrozenMudSpikes, Dregora_FrozenPlainsHills, Dregora_FrozenTaigaForest, Dregora_VikingIsle, Dregora_VikingIsle_F, Defiled Snow Spikes, Traverse Glacier Spikes
+- removed Traverse Glacier Spikes, from Frozen Plains Edge BiomeIsBorder (fixed a crash as it was duplicate in not border near)
+- decreased amount of trapdoors (iron & wood) in cities by 80 to 90% for improved optimization
+- decreased size of Frozen Plains Edge from 3 to 5 (bigger numbers = smaller
+- removed Branch(0,0,-16,true,L4-M-Straigth-3CC0R2,NORTH,100.0,0) from bank city structure
+- Added defiled lands tenebra trees to Lair of the Thing and it's border biome
+- added cactus to underworld biome
+- added jungle & cactus to Atomic City and it's border biome
+- Increased generationdepth making biomes much larger & finetuned this by decreasing the biome sizes themselves so that the biomes are bigger then before but not too big.
+
+Internal v1.6:
+- Fixed underworld appearing too frequently as a result of a error within the Dregora_VikingLand_F Main, Isle and Border biomes.
+- adjusted the bank structure spawning to fit steppe & wasteland biomes
+- Adjusted Border & Isle biomes to conform the generationdepth.
+- Fixed Dregora_CorruptedBloodForest & All other non-virtual biomes not spawning any mobs
+- Gave LushMesaCompat a size of 5 to fix underworld biome issue
+- Woodland set to size 5 fixing a default ocean issue
+- Fen from BiomeSize: 8 to 4 fixing a default ocean issue
+- adjusted viking biomes fixing a default ocean issue
+- double checked biome distribution
+
+Internal v1.7:
+- Fixed BOP biomes not spawning any entities.
+
+Fixed/Changed/Added (v1.8 internal)
+- add compass & loot to center
+- Hatchet log->planks compat for dead logs & giant flower stem
+- Berry - give thirst (simpledifficulty)
+- Doors crafting needs to be 2 doors, not 3 (bop) - ADDED TO DREGORA.ZS
+- extend day from 10 to 20 minutes (Already Set?) - increased to 25 minutes.
+- add bop and dynamic trees bop blocks to goblin climbable blocks
+- make sure skill requirements are correct (example: saplings)
+- made kelp drop aquaculture:food:0 & made aquaculture:food:0 cookable -> kelp & made kelp a fuel source
+- tested portal mob spawning (they don't)
+- Entity spawn in bop:blue_fire
+- check vein mining (titan, vein pick, tunneling, lycanites tool) for new blocks (mostly to make sure it doesn't crash)
+- lilypads break with boat
+- lycanites now spawn from blocks
+- nymph spawn from flowers
+- Fixed mob spawning in Dregora_CorruptedBloodForest, City of Blight, Atomic City, Lair of the Thing
+- fixed up the hexagonal slices to properly represent the areas
+- Ships dont spawn on beach any longer ( CustomStructure(Exotic_Pillager-Ship_Random,0.0) )
+- decreased amount of defiled trees in Lair of the Thing border biome
+- Removed the city biomegroup & placed each type of city in their designated temperature zone biome groups. (Minimized chance of ice next to jungle or desert cities)
+- Fixed random spawnpoint (for OTG V9.5 R1)
+- rename biomesoplenty kelp to dried seaweed
+- lower bamboo burn time to 200 ticks & added dead leaves as fuel for 100 ticks.
+- added blocks in mineshaft bottom area under floating rails.
+- add cursed fire to viking village corrupted
+- add fire substitute to viking village friendly (prevent spreading, perhaps remove fire & keep magma)
+- Fixed Viking Biome odd spawn, missing viking structures, fire issues and size issues.
+- DT trees don't always fall with leaves (FM2 fixed in mixing and pr to DT)
+- Increase city hostility (added spawns)
+- Fixed Mobs issues for Tundra, Lair of the Thing, crimson peak biomes & bloodforest biomes.
+- removed village spawn in corrupted flower plains
+- added missing Dregora_DryDunesBorderCompat to the biome list
+- Fix deathworm spawns, remove deserts with solid blocks.
+- add content to dispensers & droppers in cities
+- Still need to click through options to enable Dregora on world creation (Should be default/only option)
+- Fixed river next to Rainforest Edge causing water artifacts.
+- nerf sleeper sword to be worse then dragon sword & decrease durability to -9999
+- add ruins additional structures
+- white tear red background grave is empty (mostly)
+- helm of resentment should not be as fast
+- Decrease heart crystals (easier accessible due to Dregora's generation)
+- increased RavineMinAltitude from 20 to 33
+- Replaced cauldron air to stone:6
+- fixed Dregora_OceanClear spawning in trench due to color issue
+- test if ice and fire mobs and stonelings (and probably other mobs) spawn in bop and dragora biomes
+- fixed random encounters
+- Fixed Small ship float water block
+- Fixed Defiled_Altar_Big BO4 stairs inside bugged rotation
+- Overgrown cliffs spawns mobs now
+- Fixed Small ships having only captains & spawning on beach?
+- replaced silverfish spawns for cave spider spawns
+- Removed Guardians from most natural spawns
+- Replaced BOP berry bushes with rustic berry bushes.
+- Blocked stronghold spawns in some biomes.
+- increased amount of desert type biomes by adding a new biomegroup consisting of only desert type biomes.
+- removed iron_block & diamond_block & gold_block from additional ruins and fixed them overall
+- Remove 80% of beds in city structures (was already done)
+- adjust loot in bank, add pyramid, blacksmith and more loottables with each 5 to 10 percent chance.
+- made bank structures rarer in lone skyscraper biomes
+- Dregora Mineshafts hub need 15 more foundation blocks
+- Add chests with loot to cyclops den
+- Changed wither skeletons in the mineshafts with ghouls from lycanitesmobs
+- decrease amount of cyclops in plains/savanna biomes to at least 1/3 current spawnrate.
+- fix trolls in trench spawn issue
+- fix dragon chasm in trench issue
+- Fix Deathworm spawns (Cold Desert etc)
+- remove iron_blocks from additional ruin structures and replace them by iron_plate
+- Remove Poison Ivy in Boreal Forest
+- Cold Desert biome could occasionally use a dead tree custom object
+- check issue: https://github.com/NLBlackEagle/Dregora/issues/45#issuecomment-1563331377 (saw planks issue with crafttweaker)
+- Make TNT lvl 4 building skill and check desync
+- remove oiled berry recipe & berry bush from BOP
+- exclusion zone around 0,0 (colission issues)
+- remove recipes added by bop (the ones that don't need to exist)
+- add reskillable lvl 6 mining to all bop gems
+- remove bop sapphire recipes and re-create the terrestrial artifact recipe
+- replace bop sapphire with iceandfire sapphire
+- Fixed some tree branches floating randomly in air
+- Fix Netherrack bank AIR export
+- traverse mountainous deserts make holes bigger to create nicer looking canyons
+- Using OTG V9.5 R1 should fix random spawn points.
+- double check corrupted biomes for spawns (e.g. toxic spawn too)
+- Multiple performance issues (maybe fixing the rubberband issues?)
+- Removed bop resources should not spawn any longer.
+- add villagers (gem traders)
+- added fire lilies to the trench biomes
+- removed amphithere from city jungle biome
+- look at bop issues page for bugs and dupes (All either fixed or non-discovered for 1.12.2)
+- Checked for BOP poison occurrences and have not found any, should be gone.
+- Check if required: decrease loot, like everywhere (esspecially in cities!)
+- Lowered Doomlike Dungeons a bit as this fits dregora's generation better.
+- add biomesoplenty:gem to fromimage biomes
+- double checked cyclops, good spawnrate now (from 20 to 5 in flower forest) spawns 1-2 cyclops at bloodmoon test.
+- add 10 spawnrate cyclops to redwood, pasture and prairie biomes
+- Fix chests in traders
+- remove x villagers from ships and decrease loot
+- make easter entities harder
+- make encounters persistent
+- Fixed issue with mountain & moor biome.
+- check the end + nether, BOP alters these in some ways.
+- check for level up xp dupes with new recipes
+- add temperate wasteland group entities
+- added a few villager lines to rlmixing.
+
+Internal v1.9:
+#Fixed/Changed/Added [DregoraRL]
+- Fixed Outposts spawn with players (Fixed WeightedBranches being regular Branches causing the outposts to be more common then intended.)
+- Removed corrupted biome group and placed all biomes in similar groups
+- Outposts fixed minable waystones
+- Fix missing dispenser loottable links in skyscrapers
+- Further increase rarity of village structures
+- remove most to all diamonds from chest loot
+- remove mushroom cows from most biomes
+- verify each chest is working
+- remove most to all diamond_ore blocks from structures
+- Loottables make gold tools mostly improved versions
+- Add emerald to all mountain biomes
+- Remove Wastelands Oasis
+- removed river biomes mirroring themselves
+- Fixed nullpointer crash LayerMixRiver & Generating stronghold feature
+- Removed 14 biomes, Wasteland Oasis, Wasteland Oasis Edge and Wasteland Oasis Dungeon, Dregora_RFHotSpotMountain, Dregora_RFHotSpotMountainTOP, Dregora_RFBigMountainSlope, Dregora_RFMountainOceanBorder, Dregora_ForestBirchDungeon, Dregora_ForestDenseDungeon, Dregora_ForestFantasyDungeon, Dregora_ForestMixedDungeon, Dregora_ForestPineDungeon, Mystic Moor Grove, Dregora_ShrublandFen
+- Changed Atomic City Skycolor to 420e3e & replaced red sand for defiled sand
+- replaced biome names
+- Fixed Wicked Plains & green peaks spawning in random mode? (around Ashen Blood peaks?)
+- Fixed The Green Abbys (Surrounds Defiled Hills)
+- Fixed Rainforest Mountains (In or next to Mangrove)
+- Fixed Brushland (Surrounds Dregora_LushMesaCompat)
+- Fixed Corrupted Shadow Forest ( Carnivorous Forest spawns as river? )
+- Fixed Dead Shores (spawns in wasteland?)
+- Replaced STATIONARY_WATER for BIOMESOPLENTY:BLOOD in Shadow Forest
+- Fixed Sandy Fungal spawning instead of Xeric Shrubland
+- Updated flower island to be a bit more colorfull and contain more resources
+- improved the flat tropical island (make more rocky and bigger)
+- added beach boulders to white beach
+- added boulders to several rivers & beaches
+- Added Traps in biomes:
+    #MinesCrate Default CustomObject(RLD_Trap_Mine,RLD_Trap_MineCrate,RLD_Trap_MineProximity)
+    Wasteland, Quagmire, Heath, Hot Steppe, Defiled Rainforest, Defiled Snow Plains, Nuclear Ruins, Ruins of Blight, Lair of the Thing, JotunnHeim, Traverse Badlands, Traverse Rocky Plains, Dregora_DryDunesCompat, Corrupted Viking Realm, Lair of the Thing Border, Land of Pillars, Forged Lands of Tranquillity, Dead Wastelands, Blood Stained Plains, Traverse Desert Shrubland
+
+    #MinesCrate Ashen CustomObject(RLD_CGravelTrap_Quicksand,RLD_CGravelTrap_Spawner,RLD_CGravelTrap_Water)
+    Ashlands, Traverse Ashen Hills, Dregora_DrySavannaCompat
+
+    #MinesCrate Defiled CustomObject(RLD_DSandTrap_QuickSand,RLD_DSandTrap_Spawner,RLD_DSandTrap_Water)
+    Defiled Desert
+
+    #MinesCrate Gravel CustomObject(RLD_GravelTrap_QuickGravel,RLD_GravelTrap_Spawner,RLD_GravelTrap_Water)
+    Quagmire, Ruins of Blight, Traverse Badlands, Traverse Rocky Plains, Corrupted Shadow Forest, Land of Pillars
+
+    #MinesCrate Sand CustomObject(RLD_SandTrap_Quicksand,RLD_SandTrap_Spawner,RLD_SandTrap_Water)
+    Dregora_DryDunesCompat, Dead Wastelands
+
+    #MinesCrate Snowy CustomObject(RLD_SnowTrap_Quicksand,RLD_SnowTrap_Spawner,RLD_SnowTrap_Water)
+    Defiled Snow Plains, Lair of the Thing, JotunnHeim
+
+    #MinesCrate White Sand CustomObject(RLD_WSandTrap_Quicksand,RLD_WSandTrap_Spawner,RLD_WSandTrap_Water)
+    Dregora_SaltPlains, Traverse Desert Shrubland
+- Added Warning signs on biome edges:
+    Dregora_SaltPlainsBorder, Wasteland Edge, Steppe Edge, Traverse Badlands Edge, Dregora_DryDunesBorderCompat, Dregora_DrySavannaBorderCompat, Ashen Blood Peaks Edge, Traverse Ashen Hills Border, Ashlands Edge, Flower Field, Traverse Rocky Plains Border, Dregora_CorruptedFlowerPlainsBorder, Corrupted Forest Border, Dregora_CorruptedCherryBorder, Dregora_CorruptedPineForestBorder, Dregora_CorruptedBloodForestBorder, JotunnHeim Edge, Viking Border, Lair of the Thing Border, Quagmire Edge, Defiled Snow Plains Border
+- make dregora biome pretty names
+- fixed chests in skyscrapers being empty 30% of the time
+- Removed PHC objects from biomes
+- Fixed error unknown attribute generic.attackSpeed for random Encounters
+- Should have fixed blight surter being able to starve
+- fixed missing resource table dregora:rlcraft/loot_bundles/stone_weapons
+- fixed Invalid biome name Dregora_DeadSwampCompat Dregora_ShrublandCompat in biome group TemperateBiomes
+- fixed Dregora_FrozenTaiga and Dregora_FrozenTaigaForest having volatility differences
+- Could not reproduce Dregora_DryDunesBorder spawning ice trolls, perhaps this was due to the BiomeBit Error in OTG or something else already solved?
+- improved Special road end randomizers so they don't block interiors as often
+- Added Traps & Warnings to biomes: Dregora_SaltPlains, DregoraSaltPlainsBorder
+- Fixed OTG issue for OTG v9.5-R2 which caused some biomes to overwrite with other biomes & a few crashes.
+- Make Origin islands mimic more of alpha terrain
+- reworked encounter system to spawn on command for testing purposes
+- cyclops cave empty chests issue fixed
+- Sponge no longer generates through bedrock in ocean
+- Added biome Traverse Ashen Hills Border to smooth out the main biome (and offer a biome to put up danger warnings)
+- Fixed Traverse Rocky Plateau having water removed between layer 41 and 80
+- changed BiomeWetness: 0.0 to 0.8 for Dregora_DryAshBeach
+- changed BiomeTemperature: 0.6 to 0.8 for Dregora_DryDirtlands
+- Fixed Dregora_DrySavannaCompat not being added to worldconfig.ini and therefor not spawning.
+- removed river biome Dregora_DrySavannaCompat from biome Dregora_DryMesaBorderCompat
+- Increased size of Flower Field and added Flower Field Border
+- removed RLD_Trap_MineCrate and RLD_Trap_MineProximity from traps
+- Added Cyclops dens to Grasslands, increased sheep spawn & increased biome size from 4 to 2 (where 0 is biggest and 9 is smallest)
+- Added biome Flower Creek (to fix waterlevels in Flower Fields)
+- Replaced the no_loot chests for AIR
+- Added Dragons to FF
+- Fixed villager outposts spawning in water and made them rarer again
+- fixed entity issue: minecraft:minecraft:skeleton_horse
+- fixed Dregora_SaltPlainsBorder volatility issue with Dregora_SaltPlains
+- Changed PLAINS tag for Viking Realm and Corrupted Viking Realm to FOREST tag
+- Added biomes Viking Hills Border & Viking Hills Border F
+- Changed Viking Realm & Corrupted Viking Realm to be more volatile
+- Add Lightning Dragon roost to viking lands
+- Wasteland Summit River set to Wasteland Mountain to make sure river edges have a smooth slope.
+- Changed Deep Polluted Ocean to fully inherit from deep ocean
+- Fixed Volcanic Beach having air layer
+- Removed biomes Dregora_CorruptedJungleHillBorderIsle and Dregora_CorruptedJungleHillHole as they did not spawn and were not needed.
+- Add Herobrine to Alpha Island (Origin)
+- check heaven encounters too op in some cases (This did not require fixing)
+- redid lootchests (and add cursed branch loot table)
+- made herobrine harder (200% health & swapped axe for 10x totem of undying) It's a beast now.
+- swamp trader zombie needs water block not air
+- Adjusted Alpines & AlpsLow terrain generation to be cleaner.
+- fixed bop berry bushes, hot springs and liquid poison generating where it should not.
+- added rustic berry bushes to biome Orchard
+- Fixed all herbs: https://github.com/cadaverous-eris/Rustic/wiki/Herbs Except Aloe Vera, Core Root, Horsetail
+- Added all rustic herbs to their designated biome types.
+- Added Quark Glowshrooms to Fungal Biomes
+- added biomesoplenty:flower_0:0 to fungal biomes & quark:leaf_carpet:7
+- Overgrown Cliffs had water issue caused by enlarging Deep ocean isles, reverted deep ocean isles change to solve the issue.
+- Make Wasteland Singular Skyscraper biomes rarer
+- Add Dregora_DeadSwamp as isle to Lone Skyscraper Biomes
+- Make skyscraper single biomes different, add more destruction
+- Changed single skyscrapers into ruined skyscrapers, added block randomizers, holes in walls and removed all organic blocks.
+- Added lattices to skyscrapers in Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland + full city biomes and add more destruction.
+- Added additional blockcheck to warning signs so they don't spawn on top of trees any longer.
+- Fixed a image-to-map issue at x4451 z14717 where a wrong hexcolor was used.
+- Increased size of Cherry Blossom Grove from 5 to 1.
+- Added Mangrove as a isle to Grasslands biome with size 6 and rarity 98
+- Increased Mangrove size from 4 to 1
+- Increased biome Chaparral from size 5 to 2.
+- Added Chaparral as a isle to Cherry Blossom Grove with size 6 and rarity 98
+- Increased biome Lush Swamp from size 4 to 1.
+- Added Lush Swamp ad a isle to Mangrove with size 7 and Rarity 97
+- Changed Rainforest size from 4 to 1
+- Changed Toxic Swamp size 4 to
+- changed Rocky Seasonal Forest size from 5 to 1 and added Woodland as isle biome with size 5 and rarity 97
+- Changed Traverse Ashen Hills from size 4 to 1
+- Changed Biome YellowStone size from 4 to 1
+- Changed Biomes Dregora_DryForestBirchCompat and Dregora_DryForestBirch sizes from 4 to 1.
+- Added the Traverse Ashen Hills biome as isle to biomes: Dregora_DryForestBirchCompat and Dregora_DryForestBirch with size 6 and rarity 97
+- Lowered all biomegroups with rarity 200 (mostly wastelands & deserts) to 190 making all other biomegroups less rare.
+- Changed Bog size from 4 to 2.
+- Changed Shield (Biome) size from 4 to 1
+- Added biome Bog Low.
+- Changed Woodland size from 5 to 1
+- Changed Dregora_DeadSwampCompat size from 5 to 2
+- make lush (forest) biomes bigger (Fen, Bayou, Bog, Shield, etc)
+- Added Fen to Dead Forest as isle with size 7 and rarity 97 and removed normal spawning.
+- Completely redid the YellowStone biome.
+- Increased amount of Troll Caverns under forests & mountains by a significant amount
+- Grove changed size 4 to 2 and added Mystic Grove as issue to Grove
+- Made Dungeons generate SMOOTH_STONE underneath (so they arent floating in caverns)
+- Fixed Dungeon01BossSpawn (using Dungeon03BossSpawn as temp fix until dungeon redo)
+- Add Mycelium Caverns under several biomes (and populate with fungi including glowshrooms)
+- Increased Encounter ( Shadow Forest ) Spawns
+- Hot Steppe needs river go through (not under) - Already fixed
+- Tweaked Plateau biome Pillars and set biome to Nuclear Swamp on edges for color effect
+- Added Flower Forests
+- added temperate forest to cherry blossom biome
+- improved [DW] Wasteland Plateau
+- Find and fix AIR,50,CHEST:5,30,CHEST:5, (empty chests generating)
+- add new loottable for coin dungeons
+- write up 5 new lorebooks for coin dungeons
+- Add Dungeons for coins hint trader
+- add coins to skyscrapers (minimal in loot)
+- add new entities to coin dungeons & skyscrapers dropping coins
+- assign coin dungeons to all CHC biomes
+- made GemTrader & Topographer name non visible
+- villager hint trader (Trades books with locations)
+- changed book of artifacts to include information on cities also having coins in them
+- salt plains added silo bunker
+- Bruh Biomes ( ~1-2 weeks )
+- Add glowcelium to mushroom islands
+- removed floating ships from random oceans (these only appear in fromimage areas now)
+- decreased tnt entities in traps
+- Viking islands & villages
+- added quarry islands
+- Added trees to Quagmire Plains.
+- Checked all biomesoplenty biomes for tree resources and removed them were no required.
+- replaced 1843 instances of biomesoplenty:poison for lycanitesmobs:poison
+- Make Steppe Ruins, Steppe, Heath, Hot Steppe, Wasteland loot better
+- Added scuronotte to defiled land biomes & improved vilespine spawning
+- added armor stands to underground villages
+- updated loottables readme
+- fixed bone_only loottable typo (dregorarl: instead of dregora:)
+- added toilet contents to toilets in underground villages
+- Write 3 remaining lore books & check all lore + maintenance lore is good + chest contents in underground villages
+- added underground villages to random mode biomes & remove the possibility to spawn in CANYON type biomes
+- added corruption failsafe (people exiting whilst unpacking) it now should just re-unpack if someone has a corrupted installation.
+- added additional rarity variable to village bunkers
+- fixed file structure overwrite mayhem (big internal mistake)
+- Made defiled land biomes less rare.
+- Add big worm to bruh biome
+- make all bo3's into bo4's for ruins
+- Added Brutal Biome Grey Abyss
+- Made nuclear power plant spawn
+- changed charm crates to sealed charm crates
+- Fixed waystone pre-filled name in outposts
+- converted all ruins structures to OTG structures
+- fix all DoReplaceBlocks: false in ruins (check each structure)
+- add general contents to all inventories (crate, barrel, pots)
+- fixed chess texture issue in gorgon temple & increased chance for better loot.
+- decreased temperature in various biomes.
+- make rivers globally cool
+- changed all crates to 10% crate and if fail 100% sealed crate.
+- Made strongholds only generate at 10.000+ blocks from spawn
+- Fixed a crash caused by replaceblocks mechanism trying to replace stationary_water in a bo4 within the corrupted flower biome.
+- Remove fake leaves kelp from oceans
+- removed most nitwit villagers from tribal villages.
+- decreased amount of villagers in tribal villages.
+- Fixed waterlevel border issue in cherry blossom biomes
+- Made the Villager outposts rarer.
+- make librarians with cartographer trades (purely to troll people with texture packs) Libtographer
+- Added kotlin to easter egg village selling tickets, hints and stuff
+- added cartographer village with mayor SomeNutzGuy as underground village variant
+- added skeletons with different hats and if they die they drop a map among other cartographer items
+- Sussyberians in cartographer village
+- add new underground village types (simple bunker style) - Zombie village, SomeNutzGuy village, Regular Village
+- Decreases morock spawns in Grey Abyss biomes
+- added entity Brutal Merchant to Gemtrader outposts.
+- added NymphHouse as a rare structure to Lavender Fields
+- Changed 0,0 loottable items to have curse of possession along with curse of binding (binding does not work but fills the first slot)
+- Add skeletons to strip club (named Bony Guys) with rubber duck and big eyes
+- fixed and slightly tweaked the entities for dungeon 01,02,03 and fixed bugs causing chests to be empty.
+- Changed mine trap to not contain tnt minecarts
+- fixed typo in miner entity for mineshafts
+- Added the herbalist structure
+- Flower field below needs more dragons + better caves
+- Ball of mud = Bal of shit in toilet
+- all loottables mainhand/offhand added double entries for main & offhand slots
+- fixed loottable issues with spartanfire swords
+- remove sand spire from ruins spawn queue
+- removed trader double entries and swapped castle trader at ominous biomes for swamp trader
+- decreased amount of ruin spawns
+- made herbalist chest randomized loot
+- fixed bank in single_skyscraper spawning
+- made and added herbalist trader
+- made libraries spawn less in underground villages
+- adjust loot for UW, less chests + better loot
+- adjust entities spawning from spawners UW (don't spawn on white/yellow and black concrete)
+- Additional optimization tasks for UW (decrease spawn attempts & lower amount of blockchecks)
+- Blacklisted doomlikedungeon from beach biomes where gorgon spawns
+- changed drl to dregorarl (MODID in both MODINFO as worldpacker.java)
+- added ghosts to spawners (ruins)
+- added I&F dread entities to various cold biomes
+- Removed Gorgon spawns from Origin, Viking, White and Volcanic beaches.
+- fixed broking warning posts in biome JotunnHeim Edge (missing bottom 2 blocks)
+- Checked if legendary loot drops on entity death
+- fixed typo 0,8 in blood stained plains
+- fixed typo's in maintenance_shaft_top_offset & maintenance_shaft_top Heightoffset being ""
+- AddED Parasite Blood to lowest block in grey abyss biomes
+- made memorial for puffik 2022-2024 in Battletower
+- Added The Entities to the city biomes (rarely with altered droptable)
+- Brutal tower add hive with holes in walls and darklings + t-spiders and multiple lycanite bosses (4) (and if slow add more - 5 minutes )
+- Brutal tower dev team room (Fonny, Eagle, Kotlin, etc)
+- Added amulets to epic loottables
+- Fixed a typo causing loot to not generate in chests. (consumable.nbt to consumables.nbt)
+- added variedcommodities:element_fire to brutal merchant (10 golden coins)
+- adjusted bog biome spawns to contain less mushroom cows and also hostile entities
+- made weightedbranches for additional dragon stages & scales (except for ashenblood peaks stages)
+- fixed otg entity double spawn for gorgon temple
+- added frozen oceans and frozen beach biomes.
+- designed Brutal Tower Loottable with heaven
+- added loottables for tiered loot in brutal towers
+- randomized lightning swords
+- mass edit armorstand to armor_stand in bo3's and bo4's
+- Added DESERT tag to all relevant biomes
+- replace web for air brutal tower
+- replace concrete powder for something else that doesnt turn concrete brutal tower
+- changed IRON_BLOCK to vex spawn
+- made and added entities to brutal tower (spawners & armor stands)
+- Corrupted Forest Border, Fixed warning posts typo
+- Decreased seeker infant Speed
+- BOP regular variant bushes replaced for rustic bushes.
+- removed some chains at sentient horror due to pathing issues
+- Added more maze spawners
+- Added 2 additional paths to the maze, before there where none connecting to the end of the maze.
+- increased arachnit spawn
+- staircase entities has 3x knockback now
+- changed blockhardness of inspirations:rope:1 (chains) to 4
+- Spider Arachno & Arachna 3x damage buff
+- need faster spawning from staircase lesser entities
+- Staircase infernal Gravity entities (+ added one entity with fishing rod)
+- lesser added damage buff
+- lightning dragon removed armor & buffed damage (30 to 50)
+- brutal spawner troll now has 2x health
+- added infernal to higher tier brutal spawner spawns
+- Spawners in maze spawn faster and more entities now at a bigger range
+- Kobolds are always aggressive now and have 60 health instead of 25 health.
+- added quark iron plate blocks where there are spawners
+- Sarevok now has 4x damage, 3x health and is of infernal type sticky but has base speed buff removed
+- kyphosis & sentry now have damage / 2, Health lowered and armor lowered.
+- crux now has 1 star, 2x health and /2 damage
+- fixed golem Minion lag caused by potion sword explosions
+- replaced brutal entities for fallen entities on layer 227 and above
+- made golem minions spawn faster
+- Hive room bosses health & attack lowered dynamically
+- Shivaxi Revenant Spawners spawn each 120-240 ticks now
+- Shiv room spawners increased from 16 to 20 radius and normalized spawndelay
+- shivaxi developers now have same damage as lower floors but low health.
+- made developers slow and have 4x more health, more damage + infernal abilities
+- brutal spawner above 90 always infernal, more health and more damage
+- collector weapon changed to sword
+- brutal spawners lower than 40 are now all infernal
+- spawners with experiment spawn should be entities instead with persistent spawn
+- removed pipe in entryway maze
+- removed doors in maze (most, not all)
+- Excluded bosses from non-drop list
+- adjusted bosses health
+- Raised crux attackDamage from 40 to 90
+- Raised maze boss room to 3 blocks
+- turned Concrete:13 into levitation dispensers
+- Boss Spider Decrease speed /3 DMG /2
+- Small Trite DMG up
+- Lesser Fallen now have 10-15 DMG
+- Fallen (Regular) need + 10 DMG
+- Added Wither & Storm to Fallen
+- AbyssTowerC2r4 has 2 half doors on 125
+- Fixed maze_boss not spawning
+- set weight from 10 seconds in parasite blood to 5 seconds
+- Kotlin needs to be much faster or have much more damage
+- Added Dismounters to spawnpotential hive room bosses.
+- Developers x 2 health and damage
+- Revenant Developers need to spawn faster
+- Added parasites at Sub Levels
+- Spawners between 150 160 needs to have decreased spawnrange (8)
+- Dispeller, Ruster, Etc needs 3x health and normal speed
+- Add Parasites Human & Villager
+- Crux needs webber, 1000 hp and 2x armor
+- Kysosis needs 2x more damage
+- overseer decrease spawnrange
+- Ferals at developer
+- Add flying entities to DregoraRL
+- Add spawneggs to charm crate loottables
+- Updated Underworld biome to have more foilage and mud+bop dirt instead of sand for top layers
+- Added Entities: SussyBerian & EyeNuts & Dragon Steel Knight (drops Dregora Steel) to Random Encounters
+- Changed normal to I&F RLC spawners for shivaxi and gatekeeper
+- Removed big tree from recurrent complex and added it floating under balloons in sky above forest and swamp biomes
+- Added Not Kotlin (OP & big sized kobalt) to random spawns
+- fixed numerous smaller issues causing some resources to not spawn.
+- added missing stone_weapons loot table
+- Added the spoiled effect to dev by adding a entity and also equipped entity with ban hammer
+- made the easter egg entities more rare
+- made dragon mounts in general more rare
+- added biomes: Ancient Rainforest RM, Ancient Rainforest Border RM, Ancient Rainforest Isle RM
+- Changed wool:2 on structure PirateShip to quark:pirates
+- tweaked Salt plains lime mountains
+- fixed error for: brutal_pipebig_01_D1C2R0 brutal_pipebig_01_D2C2R0 (Check Server for files)
+- removed spawn egg loottable from rustic cabinets in ruins & made sealed crates spawn better loot by a little amount
+- fixed invalid book tags for all traveler books
+- fixed Dearoc villager & horse over spawn
+- fixed CastleOcean Ruins (C1R0) candles are reversed
+- fixed spruce chest not containing any loot in the brutal tower treasure room
+v1.9 alpha 1.2:
+- Check waystones properly spawning and not having the same name and not being breakable for gem traders.
+- Make chests in cities better (less discarded junk chests)
+- Adjust loottable banhammer to be 1 weight
+- banhammer remove 50% health
+- Decrease loot in church of the cult
+- fix /n in lore desc, make ","
+- make milk switch thingy unluck work (just add a lot of junk)
+- give dragons more health in encounters and fix formatting for shivaxi's entity
+- armorstands in brutal tower don't always spawn
+- check if herbalist is fixed
+- adjusted gemtrader minimal distance from 100 to 60
+v1.9 alpha 1.3:
+- increased dungeon rarity ( dungeon02 )
+- searched and fixed all bone_loot chests.
+- should have fixed powerlinesmall
+- added the new loottables
+- fixed potions loottables
+- Fix the water in the quark boat on lowest level (should be air)
+- fixed cabinet not spawning loot in UnderwaterHouse
+v1.9 alpha 1.6:
+- give not_kotlin a special loottable through loottables and add: "I&F Upcoming Kotlin Port", "Make kotlin drop 15-30 pieces of player feedback" give more health (250)
+v1.9 alpha 2.0:
+- Nymph House needs error with NBT data (no written book upstairs) and spawned in canyon (needs min height level)
+- adjusted center structure
+- tone down gemtraders down again a bit
+- Dungeon01 02 and 03 need to have less mobs
+- fixed custom heads
+- add mod_lavacow:scarecrow to blood plains and prairie
+- add mod_lavacow:ithaqua to corrupted roofed forest
+- Remove Tunnelstructure from defiled Snow Plains
+- fix dispenser breaking in cities
+- increase chance of floating castle spawning
+- improved city lag & city spawn rate & city spawn areas (now properly cut off at biome edge)
+v1.9 2.1:
+- Adjust border biome City of Blight Border needs to be Ruins of Blight Border
+- fix the dregora bank structure
+- updated .nbt files skullowner
+- made sure the bank spawns in overworld & underneath
+- make secret entrance with crafting table cobblestone stairs /tp -15210 100 -3510
+- lower chest amount in cities of origin (upper part)
+- fix major heaven dropper wrong side door mechanism /tp -17050 100 5419
+- decrease villagers in origins
+- stopped recurrent from destroying the origin city
+- count number of biomes + Underneath: 3 biomes
+- count number of structures in BiomeObjects 329
+- rename biomes to have a nice name
+v1.9 alpha 2.3:
+- test loot dregora:recurrent/simple_loot /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:recurrent/simple_loot"}
+- dregora floating tree has too much loot! tone done on epic
+- reduce ruins spawning
+- increase spawning of entities
+- Added PersistenceRequired:1b to entities where required.
+- decrease flying entities by 75%
+- decrease temp in frozen plains edge 0.3 decrease + viking village 0.2 decrease + all deserts by 0.1
+- Increase spawn of structures: Mining Village, Viking Village Structure Biome.
+- increase spawn-rate of ruins (35/65 to 45/55)
+- add spawners under chests instead of separate (overworld)
+- fix heath spawns (Srparasites)
+- Unluck loottable should kick in with more unluck.
+- add more coordinates of jungle tribal villagers in book
+- nerf medusa arrow traps
+- Bump up gem trader spawn
+- fix wiki entry in dregora menu
+- blacklist myrmex in nether
+- structure from recurrent complex spawns way too often
+- make silver sickness be curable by ahnk charm
+- make sure dregora waystones are renameable
+- Shattered ice is eatable?! Let's get rid of that. (fx control)
+- Double check lightning dragons spawning
+- fixed crux not spawning
+- Savarok should apply dispel & curse on attack
+- parasite bosses should get more armor (+10)
+- gatekeeper minion vex dismounters need to be banshees and spawndistance need to be larger
+- Banshee spawn in brutal tower staircase that do dismount & dispel effects
+- removed damage reduction from abyssal rift biome
+- skeleton with lich staff needs to have a quarterstaff instead
+- make fly potion not work in stairwell
+- gatekeeper, savaroth amd developers multiplied armor x2
+- Disallow people eating the ectoplasm thing (causes crash)
+- Fix fromimage stuff biome issue
+- raised abyssal rift biome rarity
+- fixed herbalist trade cunning charlie, max lucky clover = 1 & add 44 clovers (not grass)
+- Shrunk the lakes in abyssal rift biome
+- Adjust loottables for: Medusa, City, reactor (replace lowest tier for new "useful tier" healing items, tipped arrows, potions, & mod lavacow crafting items.
+v1.9 alpha 2.4:
+- fixed #Branch(7,17,8,true,branchName,NORTH,100,0) in Exotic_Pillager-ship
+- Fix ray issues & install new spartanfire mod
+- balance the hidden village loot, make less good/less chests
+- Make barrier items a bit cheaper
+- fixed skeleton king doesn't spawn in desert
+- made sussyberian, mentalberian and not kotlin rarer
+- remove loot from forsaken
+- Find a way to increase mob cap limit for underneath & LC
+- removed mimic loottable except for claw
+- clean out CO- stuff from bog biomes
+- Fix double cube in center spawn
+v1.9 alpha 2.5:
+- increase brutal tower loot to 30-40 ( make special loottable)
+- increase brutal tower boss loot to 30-70
+- remove vexes from walls in brutal tower
+v1.9 alpha 2.7:
+- finish up the cancel potion effect if potion of flight
+- highlands region dearoc has white stripe in screen again
+- Adjust description to include some basic information on DregoraRL
+- turn off logging
+- Upload DregoraRL v1.93
+#DregoraRL ^
+
+#Fixed/Changed/Added [RLCraft]:
+- Make Battletowers slightly less rare by changing min-distance from 800 to 700.
+- Added blockdrop on eta barrier destroyed
+- Removed gem_ruby, orb:0, element_fire and pendant (variedcommodities) from jei blacklist
+- Added gem_ruby to amalgalich drops
+- Added Recipe for Eta Artifact (pendant)
+- Added gem_ruby, orb:0 and element_fire from variedcommodities to tooltips
+- Villager texts add: Skill Issue & Procastinating is a virtue, says the creator.
+- Add tier "skill issue" to weapon tiers
+- Changed configs to properly reflect new biome names
+- Fixed Ruins error causing log spam
+- Increased Stymphalian Bird Flight height from 80 to 100
+- Increased Dragon Flight height from 128 to 156
+- Allowed vanilla tree resources to be spawned in biomesoplenty biomes through the Dynamictree mod.
+- updated srparasites to 1.9.12 as this version fixed parasite spawners not working whilst evolution is enabled
+- Configured SRParasites v1.12.2
+- Mirrored new settings for ice&fire lightning where needed
+- added dimension 3 to recomplex blacklist
+- Configured vertical stack dimensions
+- Disabled lycanite spawning in dimension 3 (Underneath)
+- Disabled dragon spawning in dimension 3
+- Disabled battletower spawning in dimension 3 through rltweaker
+- Removed environmental sounds being played in dimension 3
+- Updated manifest.json to include vertical stack dimensions
+- removed RTG from manifest & cleaned up config file
+- Made parasites spawn naturally in Underneath
+- added and configured vertical dimension stack mod
+- enabled evolution for spawner-less spawning in underneath
+- rebalanced srparasites for lost cities & underneath dimensions
+- rename variedcommodities:orb-4 -> Aberrant Orb
+- rename variedcommodities:orb-1 -> Demon Orb
+- rename variedcommodities:orb-2 -> Shadow Orb
+- Altered barrier block items dropped on mining.
+- blacklist barrier blocks (non-craftable, remove recipe)
+- Tooltips for BOP, DynamicTrees Bop & Unblocked Items such as the variedcommodities artifact
+- change blood tear description to mention: Remnants of Dreadnauts and Overlords
+- Removed hotsprings (again) they still spawned due to a typo
+- Add additional steps in boss battle recipes to make exploration more relevant (brutal coins/brutal towers)
+- Rebalanced the ruins loottables to not be as OP
+- CraftTweaker 2 add desc to biome purifier that it can bhe bought from herbalists
+- remove biomesoplenty:jar_filled (block recipe)
+- removed biome finder (block recipe)
+- biomesoplenty:plant_1:8 -> plant fiber
+- magic fire pot bop blu fire -> lvl 8 magic required
+- add biome essence description so people know what it does
+- remove poison ivy from recipes JEI
+- add new recipes for biomes o plenty biome finder ingredients
+- make bamboo smelt 1 item
+- Make macaw bridges use bamboo
+- Blacklisted Battletowers from trench biomes
+- Renames BOP Glowshrooms to Gleamshrooms (Both mushroom as terrarium)
+- Add description and legendary tooltip: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set
+- make enchantment table use wither skull
+- added recipe cactusfruit from tiny cactus
+- blocked dragon spawns from Lavender Fields
+- Config referenced I&F RLMixings, enabling DregoraRL options
+- updated ice & fire and made sure it works in the modpack.
+- blacklisted myrmex bases from cities?
+- Blacklisted Dragon Biomes: Ravenous Jungle
+- Added all Canyon tag biomes to iceandfire blacklist
+- blacklisted doomlike from gorgon beaches
+- Entities named Dismounter has dismount effect on players
+- Cascading chunk generation detected (remove log message) from OTG
+- Blacklisted iceandfire:ghost from srparasites config
+- added parasite death script for parasites outside parasite biomes
+- added Abyssal Rift to all structure blacklists
+- added BOP & Dimstack blocks to burial arrow blacklist
+- add parasite blacklist blocks dimstack blocks
+- added potion sickness as silver sickness to silver armor bonus set (as a debuff)
+- make it so chorus fruit and random teleportation potion does not work the way it is intended to work within the brutal biomes
+- added dynamic surroundings sound to underneath and abyssal biome
+- Disabled battletowers, ice and fire structures, recurrent complex, lycanite, doomlike dungeon and roguelike dungeons in grey abyss
+- set dread knight sword level to 14 attack
+- made crafting recipe 8 Dark Orbs + gem_ruby + gilded coins = pendant
+- Add pendant description & make it unlock ETA barriers.
+- added dsurround sounds to the Underneath dimension
+- made sure entities only spawn through spawners in Abyssal Rift biome (/setblock ~ ~-1 ~ minecraft:mob_spawner 0 replace {SpawnData:{id:"srparasites:crux"}})
+- Add durability skill issue
+- Add Varied Commodities Items to skill trees: Tuxedo set, Soldier Set, Infantry Helmet, Commissar Set, NanoRum Set, Crowbar, Hammer, Lead Pipe, Pipe Wrench, Wrench,
+- Increased .2 Health & Damage for all mobs on player in Brutal Biomes if they come from spawners  (overworld parasite biome)
+- renamed Herborist to Herbalist
+- Villager chat configured for Additional Entities.
+- crafttweaker make sure srparasites entities only spawn through spawner
+- decreased morocks spawns from parasite biomes
+- Added Trinkets and Baubles climable blocks for BOP and Dimstack
+- Blue Fire, Lillypads, mushrooms, corals, (basically anything that is not a solid and is from BOP) added to the grappling hook config
+- increased geonach spawn frequency by 0.005
+- added wicked plains to serene seasons effects blacklist
+- configured familiar fauna biomes (deer,dragonfly,pixie,snail and turkey)
+- Added Underneath Quest
+- added -2x multiplier to incontrol special entities overworld
+- Configured IceAndFire Troll variant biomes
+- add loot tables to all boss entities in abyssal tower
+- variedcommodities:coin_stone x 4 = 1x brutal coin (recipe added)
+- increased dragon den underground rarity
+- added plague to underneath
+- give prototype poison resist (underneath) & rename desc + fancy title
+- give soldier poison resist (underneath) & rename desc + fancy title
+- give nanorum poison resist (underneath) + mining buff & rename desc + fancy title
+- give commissar buffs that amount to bravery and chad status & rename desc + fancy title
+- Added https://www.curseforge.com/minecraft/mc-mods/zenutil (NBT Data support)
+- Added https://www.curseforge.com/minecraft/mc-mods/mixin-booter (For ZenUtil)
+- Added https://www.curseforge.com/minecraft/mc-mods/crafttweaker-integration (Bauble Integration)
+- Adjusted yung mineshafts for Abyssal Rift
+- Fixed Recurrent Complex spawning in Abyssal Rift
+- cleaned up Dregora.zs (better readability)
+- Remove SRParasite sentient weapons from crafting
+- Updated SRParasites Mod to 1.9.20
+- Bow equipped entities have a 5% chance to spawn with one of 91 tipped arrows and keeps rotating arrows after each shot.
+- Added curse break potions to rare, common and epic loottables
+- Fixed a bug with shivaxi boss in relation to the tipped arrow script
+- Entity with name Jester switch arrow after every time it damages an entity
+- Entities that have NoArrowSwitch in ForgeData NBT are excluded from random arrow switch after doing damage.
+- turn off skeleton walking animation that borks legs
+- made infernals drop /2 silver
+- Added Copper to more loottables
+- added additional spawncrate spawn egg loottable for DregoraRL ruins structures
+- Fixed some dynamictrees falling without their leaves attached
+- Fishing spawns a sea serpent with lycanite spawn event
+- Armor rebalance: Copper: lvl 4 ( 25% speed + xat:lightning_resistance ) Storm Rush
+- Added fish undead to legendary tooltips
+- added mod Potion Descriptions (Forge) to manifest
+- added spectral garden in end using recurrent complex (spectral fern & moss)
+- replaced scale blocks in brutal tower with dragon bone blocks
+- removed mixinbooter and zenutilis from manifest.json
+- Removed ZenUtilis & MixinBooter.
+- Menu reworked by RLMixins
+- Boss script added by RLMixins
+- Arrowscript added by RLMixins
+- Skeleton king script deathloottable added by RLMixins (need to try loottweaker)
+- added new blocks through contenttweaker/contentcreator & their recipes, reinforced iron block normal/rusty & stairs/slabs/doubleslab blocks.
+- Add descriptions:
+    - witch hat makes witches friendly & negates charm spectre curses
+    - archeology hat gives an additional 25% chance to drop ores.
+- configure new loading screen mod with DregoraRL screenshots
+- Changed medusa temple to gorgon temple in gif
+- removed lightning resist & speed from copper but added immunization
+v1.9 alpha 1.2:
+- Remove bread recipe because there is dough
+- Coral needs metadata for not dropping the items
+- Lowered graveyard spawning
+- Made wither always be infernal
+- Removed Magical from banshee lycanites config
+- Fixed lag with item drops, coral and kelp but removed multiple kelp drops from plant (just gives one)
+- add mobs to investigate AI (RLTweaker + Undead Fish + SRParasites New Mobs + BiomesOPlenty Wasp)
+- lower size of the animation frames ( try 20 frames and lower quality to 85, possibly 80)
+- added new armor types to levelup & underarmor liners
+- adjusted parasite drop system to drop in allowed biomes
+- adjusted parasite drops and making them a more rare in the overworld
+- adjusted srparasites to spawn in city biomes
+- whitelisted beckons for parasite biomes
+- enabled node & colony creation for overworld
+v1.9 alpha 1.3:
+- change caniverous to carnivorous in loading screens & herblorist to herbalist
+- enabled RLMixins1.3.4 corruption check for bushes
+- checked underwater spawners 1.3.4 rlmixins for the minefield spawners.
+- renamed loading screen Herblorist to Herbalist.
+- 854px frames for menu animations
+v1.9 alpha 1.7
+- ender eye ores add bop
+v1.9 alpha 2.0
+- Spartanweaponry copper was in the jei blacklist
+- Make bulletpoint list for trailer (features)
+- disable the I&F block conversion
+- Make Not Kotlin spawn way less 10%
+- add other parasite biomes to script (steppe, heath, wastelands)
+- added special spawners for the gatekeeper & corruption
+v1.9 alpha 2.1
+- fancymenu issue github link
+- added wiki for RLCraft Dregora (unpopulated)
+- add pandora's curse on shiv's sword & curse of vanishing
+- add scythes furnace recipe
+v1.9 alpha 2.3
+- mirror biometag whitelist for rlcraft lightning dragons to dregora & add yellowstone + vikings biome
+- finish the abyssal rift arrow blacklist
+- Blacklist right clicking soul keys in abyssal rift (fxcontrol) "A powerfull presence prevents you from summoning minibosses here." - default lycanite message
+- blacklist fish undead enchants
+- blacklist fish undead potions
+- lower battletowers spawn
+- add lightning does dismount script (make lightning resist cancel the dismount)
+- add high damage value does dismount
+- dread knight and dread thrall dont have lvl requirements
+- make all entities within abyssal rift immune to teleportation arrows and potions
+- make self-hit random teleportation arrow activate script
+- make shiv spawn entity script have a max count
+- adjust all the names to match the new naming system for biomes
+- RLCraft Dregora Wiki (Ask Ray if copying the RLCraft wiki is possible)
+- add biome srparasites:biome_parasite & openterraingenerator:overworld_abyssal_rift to recurrent complex structure P_Crater
+- add scythes skill requirement
+- added scythes to jei (blacklisted ones)
+- added legendary tooltips to copper & scythes
+- check if dsurround sounds still work with metadata for bop lilypads
+- entities have a 50% chance to drop infernal ashes instead of a enchanted book in Abyssal Tower
+- Change loading screen province to region (and Dearoc needs to be Daeroc)
+- fixed crash in LC after x minutes (thanks Nischi & Kotlin)
+- Made node spread take more breaks hopefully decreasing generation lag.
+- Living bow does not count towards the sentient weapon counter
+- make the counter not work on vanilla mobs
+- Shocked Weapon Paralysis nerfed
+- The "Parasite Indirect Damage Adaption Fix" is not on (RLMixin config)
+- The vs Parasite 4x lightning bonus needs to be moved from "Mobs Additional Weakness" to -> "Damage Additional Weakness Else" (SRParasites config)
+- Succors nerfed to do 0.03 damage (hopefully this works on explosions!)
+- add a piston and dragon egg placement block for abyssal biome
+- right click entities with nametag needs to be cancelled on certain entities
+- Sussyberian needs to just always explode upon open trade and remove spawning from trenches!
+- Change famine armor tooltip to say these are lost to the underneath
+- updated iceandfire from dev chat
+- Stage 5 skeletons don't spawn any longer
+- fixed Fish Undead Rising parasite bug by removing parasites
+- Give Shivaxi a non op sword, diamond?
+V1.9 alpha 2.4:
+- maul sweep deletes item if target so blacklisted item from crafting
+- king crown needs better description on how to spawn
+- remove all loot from forsaken entities and add crown + reminisence drops to skeletons
+- geonach spawn destroys blocks in abyssal (blacklist geonack from abyssal) - same for ent/treant/calpod
+- vespids hive creation destroys blocks in abyssal
+- give fish undead damage and health buff
+- Banshees & Avaton dispell
+- give entities dispell on stairwell & disallow flight in lower area
+- can pull enchantments from fish undead hearts, and poison spores onto nuggets making them exploitable
+- 1. potion_of_mooten_lava is still brewable from brewing stand 2. DeathTouch Potions are still brewable with the cauldron
+- add weapon counter on inventory placed player to bow
+- Reference all files in config with generated files in live environment
+- check if B:patchSRPAI=true in rltweaker makes parasites weaker
+- Spawners Unbreakable (Thanks Kotlin!)
+- make recurrent complex work on canyon, parasite and biomnes o plenty (remove the openterraingenerator lines)
+- Disabled stage 5 dragon skeletons (Thanks Kotlin!)
+- remove wiki entry on otg menu's (2 instances) (thanks to fonny!)
+v1.9 alpha 2.5:
+- max hit = 100 per brutal tower boss
+- add immunities to dismount on dragon chainmail
+- shivaxi doesn't spawn any longer? Update RLMixins to latest
+- incontrol villager spawning make custom name "Sussyberian & Mentalberian"
+- added recall potion to potion block list for abyssal rift & mirror bauble
+- added dismount on dragon_lightning, dragon_fire, dragon_ice, in_wall and on_fire (lightningBolt was already added)
+- check cart/pig/horse etc mount (disable if possible in abyssal rift)
+- add conductive +4|+3|+2|+1 to all conductive items
+- Disallow flying entities in abyssal rift (strike players on entry with lightning?)
+- geonach still breaking through wall in abyssal rift
+- spawners not spawning srparasite entities in brutal tower
+- wipe config & add new rlmixins
+- enable passive entity attacking & creeper ai
+- made disarmed weapons come with a twist
+- test the new RLMixins with fancymenu set to true
+- give metadata to blocklist epicsiege & disable enderman teleportation + see if AI can be disabled
+- fixed piston and dragon egg aggressive placement denial
+- update RLCombat
+- removed berry bush instances
+- nerfed berry bush instances (in case they still spawn)
+- Enable Swing through grass? RLCombat
+v1.9 alpha 2.7
+- optifine auto mod download (Thanks fonny for finding/testing this!)|
+- Fix Quest for underneath
+- B:removeErroringEntities=false
+- B:removeErroringTileEntities=false
+- Update DregoraRL (add to manifest) + rerun printjars
+- remove printjars.py and non-manifest.txt
+- suspended sleep script
+- remove Zenutils, configanytime and mixin booter.
+- remove Optifine
+- need to fix CD's (bliss/blight, forgot to fix a texture issue)
+- Shiv Shader (add to overrides) + Complementary Unbound add to manifest
+- change/remove the Epic Shaders.txt
+- update crafttweaker and manifest
+- fix contentweaker issues
+- make OTG not log cascading chunk gen
+- Test SRParasites
+- Fix portals not working in origins and dearoc
+- make dungeons and quarries always generate
+- Fast Underneath & Dregora QA
+- printjars executable
+- Update manifest
+- Bisect Hosting Custom Link
+#RLCraft ^
+
+#Fixed/Changed/Added [Fish's Undead Rising]
+- Fish's Undead Rising tasks:
+    - blacklisted neat mimicrab
+    - mod_lavacow:bonesword needs 8 attack and 4 magic
+    - mod_lavacow:frozenthigh needs 6 gathering and 8 attack
+    - mod_lavacow:moltenaxe 8 attack 4 magic
+    - mod_lavacow:moltenhammer 16 attack 8 magic
+    - mod_lavacow:reapers_scythe needs 24 attack 16 defence and 8 magic
+    - mod_lavacow:famine needs 16 attack and 8 gathering
+    - mod_lavacow:sludge_wand needs 4 magic
+    - mod_lavacow:war needs 24 attack, 12 agility
+    - mod_lavacow:vespa_dagger needs 6 attack
+    - swine armor set needs 8 defence & 2 gathering
+    - molten armor needs 16 defence and 8 magic
+    - give mod_lavacow:beast_claw 16 attack
+    - mod_lavacow:undertaker_shovel 16 magic, 8 gathering, 4 attack
+    - give weta set 8 defense 4 agility
+    - mod_lavacow:vespa_shield 8 defense
+    - mod_lavacow:frozen_dagger needs 8 attack
+    - mod_lavacow:spectral_dagger needs 8 magic
+    - mod_lavacow:skeletonking_crown needs 16 defence and 16 magic
+    - Famine set defence 16 + 8 magic + 4 gathering
+    - mod_lavacow:bonesword change damage cap from 10000 to 5
+    - mod_lavacow:bonesword change % cap from from 5 to 10
+    - change drop rate of intestine from 4 to 2
+    - set bowl stack to false
+    - mod_lavacow:bonesword needs dragon bone as hilt
+    - mod_lavacow:frozen_dagger wither bone recipe instead of stick
+    - mod_lavacow:spectral_dagger wither bone recipe instead of stick
+    - molten frying pan, hammer and axe needs firelily in recipe
+    - change crafting recipe holy handgrenade and switch cross necklace for inferior holy handgrenade
+    - Rename holy grenade to Inferior Holy Grenade + add recipe 24 quartz 16 gunpowder 8 holy sludge 1 cross necklace = 16 inferior holy grenades
+    - add recipe to craft halo necklace into spectral sil
+    - Blacklist golden heart
+    - Sonic Bomb needs Assimilated Heart, soul powder, chitin and shriek cord
+    - Bone stew change into Dragon Bone Stew and change recipe to contain Dragon Bone
+    - add extra description to mod_lavacow:raven_whistle (Ravens can be tamed using fermented spider eye or parasites)
+    - change tooltip mod_lavacow:mootenheart
+    - Ghost jelly added 1 spectral silt to crafting
+    - Famine set (any 2) debuff 50% health + hunger
+    - add swine armor effect: always hunger 3
+    - Molten frying pan added to blacklist disenchanter
+    - mod_lavacow:vespa_dagger added disenchanter blacklist
+    - blacklist mimicrab from stoning
+    - blacklist raven from stoning
+    - decreased mimicrab spawnrate at player death from 250 to 100
+    - added mod_lavacow:zombiepiranha & mod_lavacow:mimic to blight/champion/infernal blacklists
+    - ban mod_lavacow:thorn_shooter
+    - ban mod_lavacow:potion_of_mooten_lava
+    - blacklist mod_lavacow:cursed_bandage
+    - blacklist mod_lavacow:skeletonking_mace
+    - blacklist mod_lavacow:weta_hoe
+    - adjusted skeleton king loottable (add on spawn?)
+    - add missing tooltips for fish undead items
+    - added entities ghost, mimic and vindicator to dreamcatcher
+    - remove Deathtouch Potion
+    - Customized the loottable for skeleton king
+- added mod Potion Descriptions (Forge)
+- Add items to underneath (and remove some recipes from items)
+    - famine set + knife
+    - frying pan
+    - Halo necklace
+    - Azraeal's Scythe
+    - Sonic Bomb
+    - War
+    - Raven Whistle
+    - Cursed Dream Catcher
+    - Holy Hand Grenade
+    - Midnight Mourne
+    - Brutal Coins (Rarely)
+    - dragon bone stew
+    - make ban hammer unenchantable / give decay / give 100% armor reduction / destroy on use / give levitation or launch 1000 / cursed edge
+v1.9 alpha 2.3
+- fixed falling through void bug
+- stupid pig spawners in underneath
+#Fish's Undead Rising ^
+
+#Fixed/Changed/Added [Underneath]
+- uploaded Underneath to curseforge.
+- Added DregoraRL as required dependency to Underneath
+- Adjusted underneath fog as to fix a shader bug
+- Changed spawns to biome p in Underneath
+- Respawndim for Underneath is now be Underneath
+- Lowered amount of portals in Underneath
+- Added Bedrock layer at bottom Underneath
+- fixed fog and shader issue
+- fixed citydestructor eating away stone
+- Reupload Underneath (movement factor changed from 4 to 1)
+- Moved low chests from 55-65 to 45-60
+- fixed ruinscraper nbt by setting to skyscraper nbt
+- made cities spawn in spiked biome too
+- Fixed shader issues
+- Added a chest check for rooftops
+- Bump up temp in Underneath.
+- fixed skyscraper_2x2 (eats air away)
+- fixed skyscraper_3x3 (needs air)
+v1.9 alpha 1.3:
+- made cities more frequent
+- make flint and steel more common in underneath & add rare chance of chest next to portal
+v1.9 alpha 1.4:
+- fixed flint chest error causing underneath crash
+v1.9 2.1:
+- Adjusted description to be "Special RLCraft Dregora addition, does not work without the RLCraft Dregora modpack."
+v1.9 alpha 2.3:
+- add spawners under chests instead of seperate (underneath)
+- Upload Underneath v1.2
+#Underneath ^
+
+#Fixed/Changed/Added [OTG]
+- Fix An Unknown error occured while attempting to perform any command in some cases
+- Fix Crash LayerMixing for OTG
+#OTG ^
+
+// Release todo Checklist:
+//======================================================//
+//                Finished  Tasks                       //
+//======================================================//
+
+- Add insomnia and fear if you sleep under open sky (removed)
+- Add small shance of entity to spawn if you sleep under open sky or in dim lit area (make it drop nothing) (removed)
+- diversified crate charm crate spawns eggs
+- decrease amount of spawns at s boss  by a bit
+- Added EditableEdibles to pack
+- summon item for king spawn has infinite uses and is wrong item (should be mod_lavacow:kings_crown:1, not mod_lavacow:skeletonking_crown)
+- make village crate spawn bats n other passive animals
+- Destination path too long DT_ objects (remove as much nested files)
+- Test Chunk pregen mod
+- update JEI, ParticleCulling, FermiumBooter, LegendaryTooltips, RecurrentComplex, Controlling, I&F RLCraft & Remove old I&F
+- Quest recheck
+- Update RLMixins & add config options
+- Shiv Music Discs: ( RLCraft Dregora - Bliss, RLCraft Dregora - Blight )
+- Shiv Music Discs: ( Replace placeholder in: rlmusic_bliss.ogg resources/contenttweaker/sounds/rlmusic_bliss.ogg )
+- Shiv Music Discs: ( Replace placeholder in: resources/contenttweaker/textures/items/rlmusic_blight.png )
+- Shiv Music Discs: ( Replace placeholder in: resources/contenttweaker/textures/items/rlmusic_bliss.png )
+

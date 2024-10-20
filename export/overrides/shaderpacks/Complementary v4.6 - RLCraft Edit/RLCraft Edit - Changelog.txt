@@ -1,0 +1,13 @@
+RLCraft Edit v1.0
+
+-Specially tweaked settings to work with RLCraft and RLCraft Dregora
+-Added new slow waving effect to Lava
+-Lava will now wave even if underground
+-Reworked puddles effect
+-Added support for hundreds of custom blocks that RLCraft/Dregora uses for normals and specular
+-Custom emissive support for certain blocks like stalagnate and icenfire lily's
+-Added 2 new fluid types to support various custom fluids, 1 acts like water with full reflections but keeps liquid texture, 2 acts like a thick viscous liquid and moves slower with some reflections and keeps liquid texture
+-Added support for some entities and their emissives
+-Added blight fire to supported entity emissives
+-Added support for RLDregora's custom dimension
+-A bunch of other things I probably forgot

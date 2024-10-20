@@ -1,9 +1,0 @@
-antiquecities-1.2.1.jar
-EntityCulling-1.12.2-6.4.3_indev
-better_survival-1.5.3_infedit.jar #From Kotlin Pack 1.2.5
-iceandfire-2.0.0-1.12.2_myrmex.jar #From Kotlin Pack 1.2.5
-RLTweaker-1.12.2-0.5.13_infedit.jar #From Kotlin Pack 1.2.5
-Trinkets and Baubles-32.4_infedit.jar #From Kotlin Pack 1.2.5
-DregoraRL-v1.9 #From the DregoraRL Pack 1.9
-OpenTerrainGenerator-1.12.2-v9.5-R2 #From the DregoraRL pack 1.9
-spartanfire_rlcraft-1.2.0.jar #From Curseforge due to dependency issue: https://www.curseforge.com/minecraft/mc-mods/spartan-fire-rlcraft-edition (remove 676392 from manifest.json)

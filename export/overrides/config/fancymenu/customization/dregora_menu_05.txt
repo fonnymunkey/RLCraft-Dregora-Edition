@@ -185,7 +185,7 @@ customization {
 customization {
   orientation = top-left
   restartbackgroundanimations = true
-  buttonaction = openlink;https://rlcraft.wiki.gg/wiki/RLCraft_Dregora%btnaction_splitter_fm%
+  buttonaction = openlink;https://dregorarl.wiki.gg/wiki/RLCraft_Dregora_Wiki%btnaction_splitter_fm%
   backgroundhovered = fancymenu_data/DregoraRL/buttons/invisible_button.png
   label = RLCraft Dregora Wiki
   loopbackgroundanimations = true
@@ -202,11 +202,11 @@ customization {
 customization {
   orientation = element
   restartbackgroundanimations = true
-  buttonaction = openlink;https://bisecthosting.com/shivaxi%btnaction_splitter_fm%
+  buttonaction = openlink;https://bisecthosting.com/RLDregora%btnaction_splitter_fm%
   backgroundhovered = fancymenu_data/DregoraRL/buttons/buttonlong_overgrown_04.png
   label = Host your own server!
   loopbackgroundanimations = true
-  hoverlabel = &fBy BisectHosting, use code Shivaxi
+  hoverlabel = &fBy BisectHosting, use code RLDregora
   orientation_element = vanillabtn:button_compatibility_id:mc_titlescreen_singleplayer_button
   x = 0
   width = 200
@@ -294,7 +294,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = RLCraft Dregora Edition v1.0%n%{"placeholder":"totalmods"} Mods Loaded
+  source = RLCraft Dregora v1.0.0%n%{"placeholder":"totalmods"} Mods Loaded
   text_border = 0
   case_mode = normal
   source_mode = direct

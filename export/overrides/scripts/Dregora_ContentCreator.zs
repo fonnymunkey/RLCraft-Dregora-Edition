@@ -1,6 +1,7 @@
 #loader preinit
 import contentcreator.block.GenericBlock;
 import crafttweaker.block.IMaterial as Mat;
+import mods.contenttweaker.VanillaFactory;
 
 val iron = Mat.iron();
 

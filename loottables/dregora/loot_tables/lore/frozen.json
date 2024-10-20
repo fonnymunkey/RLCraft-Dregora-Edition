@@ -256,7 +256,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:fishing_rod",
+          "name": "fishingmadebetter:fishing_rod_wood",
           "functions": [
 
             {

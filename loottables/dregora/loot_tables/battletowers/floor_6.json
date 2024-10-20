@@ -111,7 +111,7 @@
         },
         {
           "type": "item",
-          "name": "minecraft:fishing_rod",
+          "name": "fishingmadebetter:fishing_rod_wood",
           "weight": 75,
           "functions": [{"function": "enchant_with_levels","levels": 6,"conditions": [{"condition": "random_chance","chance": 0.1}]}]
         },

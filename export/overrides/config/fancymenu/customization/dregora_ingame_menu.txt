@@ -74,7 +74,7 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  identifier = %id=400282%
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
@@ -83,9 +83,9 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_advancements_button%
+  identifier = %id=400282%
   action = sethoverlabel
-  label = §fAdvancements
+  label = §fQuests
 }
 
 customization {

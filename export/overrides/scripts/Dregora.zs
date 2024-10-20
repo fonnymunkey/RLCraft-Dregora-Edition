@@ -54,12 +54,17 @@ import crafttweaker.event.PlayerCraftedEvent;
 import crafttweaker.item.IItemTransformer;
 import crafttweaker.world.IRayTraceResult;
 import crafttweaker.event.EntityMountEvent;
+import crafttweaker.event.PlayerSleepInBedEvent;
+import mods.ctutils.world.World;
+import crafttweaker.event.PlayerInteractBlockEvent;
+import crafttweaker.event.LivingExperienceDropEvent;
 
 // use /ct syntax to validate scripts
 
 print("Dregora Script starting!");
 
 //Debug lines true/false
+
 var Logging = false;
 
 // Berries nerf
@@ -191,19 +196,21 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent){
     if (isNull(event.item.definition)) { return; }
     if (isNull(event.item.definition.id)) { return; }
 
+    if ((event.item.definition.id == "mod_lavacow:kings_crown") && (event.item.metadata == 1)) {
 
-    if (event.item.definition.id == "mod_lavacow:skeletonking_crown") {
 
         var SpawnPosRay = event.player.getRayTrace(10, 1, false, true, true);
 
+        if (isNull(SpawnPosRay)) { return; }
         if (isNull(SpawnPosRay.blockPos)) { return; }
 
         var BiomeName = event.world.getBiome(event.player.getPosition3f()).name;
         var SpawnPos = Position3f.create(SpawnPosRay.blockPos.x, SpawnPosRay.blockPos.y + 1, SpawnPosRay.blockPos.z).asBlockPos();
 
 
-        if ((BiomeName has "Desert") || (BiomeName has "Dune")) {
+        if ((BiomeName has "Desert") || (BiomeName has "Dune") || (BiomeName has "Wasteland")) {
 
+            event.player.heldEquipment[0].mutable().shrink(1);
             val skeleton_king = <entity:mod_lavacow:skeletonking>.createEntity(event.player.world) as IEntity;
             skeleton_king.setPosition(SpawnPos);
             event.world.spawnEntity(skeleton_king);
@@ -582,7 +589,7 @@ events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent){
 // give bow starting 0 kills when crafted
 events.onPlayerCrafted(function(event as PlayerCraftedEvent){
 
-   if (event.output.name == "item.srparasites.weapon_bow") {
+   if ((event.output.name == "item.srparasites.weapon_bow") || (event.output.name == "item.srparasites.armor_boots") || (event.output.name == "item.srparasites.armor_pants") || (event.output.name == "item.srparasites.armor_chest") || (event.output.name == "item.srparasites.armor_helm")) {
 
         var SRPKills = ("§r§9---> 0") as string;
         event.output.mutable().updateTag({display:{Lore:[SRPKills]}});
@@ -604,185 +611,441 @@ var Mod_LavacowParasites = [
     "mod_lavacow:mummy"
     ] as string[];
 
+
+//Killing entities gives living armor points
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
+
+    if event.entity.world.isRemote() {return;}
+    if (isNull(event.damageSource.getTrueSource())){return;}
+    if (isNull(event.entity.definition)) {return;}
+    if (isNull(event.entity.definition.id)) {return;}
+    if (isNull(event.damageSource.getTrueSource().armorInventory)) {return;}
+
+    var HeldArmor = event.damageSource.getTrueSource().armorInventory;
+
+    if (isNull(HeldArmor)) {return;}
+
+    var armorpieces = 0;
+
+    if (!isNull(HeldArmor[0])) {if (HeldArmor[0].name == "item.srparasites.armor_boots") {armorpieces += 1;}}
+    if (!isNull(HeldArmor[1])) {if (HeldArmor[1].name == "item.srparasites.armor_pants") {armorpieces += 1;}}
+    if (!isNull(HeldArmor[2])) {if (HeldArmor[2].name == "item.srparasites.armor_chest") {armorpieces += 1;}}
+    if (!isNull(HeldArmor[3])) {if (HeldArmor[3].name == "item.srparasites.armor_helm") {armorpieces += 1;}}
+
+    if (isNull(event.damageSource.getTrueSource().heldEquipment)) {
+        if (isNull(event.damageSource.getTrueSource().heldEquipment[0])) {
+            if (event.damageSource.getTrueSource().heldEquipment[0].name has "srparasites") {
+                armorpieces += 1;
+            }
+        }
+        if (isNull(event.damageSource.getTrueSource().heldEquipment[1])) {
+            if (event.damageSource.getTrueSource().heldEquipment[1].name has "srparasites") {
+                armorpieces += 1;
+            }
+        }
+    }
+
+    if (!isNull(HeldArmor[0])) {
+
+        if (HeldArmor[0].name == "item.srparasites.armor_boots") {
+
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
+
+            if (isNull(HeldArmor[0].tag.srpkills)) {
+
+                var SRPKills = ("§r§9---> " + totalHealth + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                HeldArmor[0].mutable().updateTag({display:{Lore:[SRPKills]}});
+                HeldArmor[0].mutable().updateTag({srpkills:totalHealth});
+
+            } else if ((event.entity.definition.id) has "srparasites") {
+
+                var CurrentKills = HeldArmor[0].tag.srpkills as int;
+                var TotalNewKills = CurrentKills + totalHealth;
+
+                if TotalNewKills >= 50000 {
+
+                    var SavedTag = HeldArmor[0].tag;
+
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+                    HeldArmor[0].mutable().updateTag({display:{Lore:[""]}});
+                    var SentientArmor = <srparasites:armor_boots_sentient>.withTag(SavedTag);
+                    event.entityLivingBase.dropItem(SentientArmor);
+
+                    val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
+                    bolt.setPosition(event.damageSource.getTrueSource().position);
+                    event.entity.world.spawnEntity(bolt);
+                    HeldArmor[0].mutable().shrink(1);
+
+                } else {
+
+                    HeldArmor[0].mutable().updateTag({srpkills:TotalNewKills});
+                    var SRPKills = ("§r§9---> " + TotalNewKills + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                    HeldArmor[0].mutable().updateTag({display:{Lore:[SRPKills]}});
+
+                }
+
+            }
+
+        }
+
+    }
+
+    if (!isNull(HeldArmor[1])) {
+
+        if (HeldArmor[1].name == "item.srparasites.armor_pants") {
+
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
+
+            if (isNull(HeldArmor[1].tag.srpkills)) {
+
+                var SRPKills = ("§r§9---> " + totalHealth + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                HeldArmor[1].mutable().updateTag({display:{Lore:[SRPKills]}});
+                HeldArmor[1].mutable().updateTag({srpkills:totalHealth});
+
+            } else if ((event.entity.definition.id) has "srparasites") {
+
+                var CurrentKills = HeldArmor[1].tag.srpkills as int;
+                var TotalNewKills = CurrentKills + totalHealth;
+
+                if TotalNewKills >= 50000 {
+
+                    var SavedTag = HeldArmor[1].tag;
+
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+                    HeldArmor[1].mutable().updateTag({display:{Lore:[""]}});
+                    var SentientArmor = <srparasites:armor_pants_sentient>.withTag(SavedTag);
+                    event.entityLivingBase.dropItem(SentientArmor);
+
+
+                    val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
+                    bolt.setPosition(event.damageSource.getTrueSource().position);
+                    event.entity.world.spawnEntity(bolt);
+                    HeldArmor[1].mutable().shrink(1);
+
+                } else {
+
+                    HeldArmor[1].mutable().updateTag({srpkills:TotalNewKills});
+                    var SRPKills = ("§r§9---> " + TotalNewKills + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                    HeldArmor[1].mutable().updateTag({display:{Lore:[SRPKills]}});
+
+                }
+
+            }
+        }
+
+    }
+
+    if (!isNull(HeldArmor[2])) {
+
+        if (HeldArmor[2].name == "item.srparasites.armor_chest") {
+
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
+
+            if (isNull(HeldArmor[2].tag.srpkills)) {
+
+                var SRPKills = ("§r§9---> " + totalHealth + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                HeldArmor[2].mutable().updateTag({display:{Lore:[SRPKills]}});
+                HeldArmor[2].mutable().updateTag({srpkills:totalHealth});
+
+            } else if ((event.entity.definition.id) has "srparasites") {
+
+                var CurrentKills = HeldArmor[2].tag.srpkills as int;
+                var TotalNewKills = CurrentKills + totalHealth;
+
+                if TotalNewKills >= 50000 {
+
+                    var SavedTag = HeldArmor[2].tag;
+
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+                    HeldArmor[2].mutable().updateTag({display:{Lore:[""]}});
+                    var SentientArmor = <srparasites:armor_chest_sentient>.withTag(SavedTag);
+                    event.entityLivingBase.dropItem(SentientArmor);
+
+                    val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
+                    bolt.setPosition(event.damageSource.getTrueSource().position);
+                    event.entity.world.spawnEntity(bolt);
+                    HeldArmor[2].mutable().shrink(1);
+
+                } else {
+
+                    HeldArmor[2].mutable().updateTag({srpkills:TotalNewKills});
+                    var SRPKills = ("§r§9---> " + TotalNewKills + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                    HeldArmor[2].mutable().updateTag({display:{Lore:[SRPKills]}});
+
+                }
+
+            }
+        }
+
+    }
+
+    if (!isNull(HeldArmor[3])) {
+
+        if (HeldArmor[3].name == "item.srparasites.armor_helm") {
+
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
+
+            if (isNull(HeldArmor[3].tag.srpkills)) {
+
+                var SRPKills = ("§r§9---> " + totalHealth + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                HeldArmor[3].mutable().updateTag({display:{Lore:[SRPKills]}});
+                HeldArmor[3].mutable().updateTag({srpkills:totalHealth});
+
+            } else if ((event.entity.definition.id) has "srparasites") {
+
+                var CurrentKills = HeldArmor[3].tag.srpkills as int;
+                var TotalNewKills = CurrentKills + totalHealth;
+
+                if TotalNewKills >= 50000 {
+
+                    var SavedTag = HeldArmor[3].tag;
+
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+                    HeldArmor[3].mutable().updateTag({display:{Lore:[""]}});
+                    var SentientArmor = <srparasites:armor_helm_sentient>.withTag(SavedTag);
+                    event.entityLivingBase.dropItem(SentientArmor);
+
+                    val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
+                    bolt.setPosition(event.damageSource.getTrueSource().position);
+                    event.entity.world.spawnEntity(bolt);
+                    HeldArmor[3].mutable().shrink(1);
+
+                } else {
+
+                    HeldArmor[3].mutable().updateTag({srpkills:TotalNewKills});
+                    var SRPKills = ("§r§9---> " + TotalNewKills + "§r§5§o Your weapon tasted blood, now it longs for Parasites...") as string;
+                    HeldArmor[3].mutable().updateTag({display:{Lore:[SRPKills]}});
+
+                }
+            }
+        }
+    }
+
+});
+
+events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
+
+    if event.entity.world.isRemote() {return;}
+    if (isNull(event.damageSource.getTrueSource())){return;}
+    if (isNull(event.entity.definition)) {return;}
+    if (isNull(event.entity.definition.id)) {return;}
+
+    for i in Mod_LavacowParasites {
+        if (event.entity.definition.id == i) {
+
+            //spawn parasites at location
+            var randomNum = event.entity.world.random.nextFloat(1, 100);
+
+            if randomNum <= 10 {
+                val lavacow_parasite = <entity:mod_lavacow:parasite>.createEntity(event.entity.world);
+                lavacow_parasite.setPosition(event.entity.position);
+                event.entity.world.spawnEntity(lavacow_parasite);
+            }
+        }
+    }
+});
+
+
 //Killing entities gives living bow points
 events.onEntityLivingDeath(function(event as EntityLivingDeathEvent){
 
     if event.entity.world.isRemote() {return;}
+    if event.entity.world.isRemote() {return;}
+    if (isNull(event.damageSource.getTrueSource())){return;}
+    if (isNull(event.entity.definition)) {return;}
+    if (isNull(event.entity.definition.id)) {return;}
+    if (isNull(event.damageSource.getTrueSource().heldEquipment)) {return;}
+    if (isNull(event.damageSource.getTrueSource().heldEquipment[0])) {return;}
+    if (isNull(event.damageSource.getTrueSource().heldEquipment[0].name)) {return;}
 
-    if (!isNull(event.damageSource.getTrueSource())){
+    var HeldEquipment = event.damageSource.getTrueSource().heldEquipment;
+    var HeldWeapon = HeldEquipment[0].name;
 
-        if (isNull(event.entity.definition)) {return;}
-        if (isNull(event.entity.definition.id)) {return;}
+    var armorpieces = 0;
 
+    if (!isNull(HeldEquipment[0])) {if (HeldEquipment[0].name has ".srparasites.weapon_") {armorpieces += 1;}}
+    if (!isNull(HeldEquipment[1])) {if (HeldEquipment[1].name has ".srparasites.weapon_") {armorpieces += 1;}}
 
-        for i in Mod_LavacowParasites {
-            if (event.entity.definition.id == i) {
-
-                //spawn parasites at location
-                var randomNum = event.entity.world.random.nextFloat(1, 100);
-
-                if randomNum <= 10 {
-                    val lavacow_parasite = <entity:mod_lavacow:parasite>.createEntity(event.entity.world);
-                    lavacow_parasite.setPosition(event.entity.position);
-                    event.entity.world.spawnEntity(lavacow_parasite);
-                }
+    if (!isNull(event.damageSource.getTrueSource().armorInventory)) {
+        if (!isNull(event.damageSource.getTrueSource().armorInventory[0])) {
+            if (event.damageSource.getTrueSource().armorInventory[0].name has "srparasites") {
+                armorpieces += 1;
             }
         }
+        if (!isNull(event.damageSource.getTrueSource().armorInventory[1])) {
+            if (event.damageSource.getTrueSource().armorInventory[1].name has "srparasites") {
+                armorpieces += 1;
+            }
+        }
+        if (!isNull(event.damageSource.getTrueSource().armorInventory[2])) {
+            if (event.damageSource.getTrueSource().armorInventory[2].name has "srparasites") {
+                armorpieces += 1;
+            }
+        }
+        if (!isNull(event.damageSource.getTrueSource().armorInventory[3])) {
+            if (event.damageSource.getTrueSource().armorInventory[3].name has "srparasites") {
+                armorpieces += 1;
+            }
+        }
+    }
 
-        if (isNull(event.damageSource.getTrueSource().heldEquipment)) {return;}
-        if (isNull(event.damageSource.getTrueSource().heldEquipment[0])) {return;}
-        if (isNull(event.damageSource.getTrueSource().heldEquipment[0].name)) {return;}
 
-        var HeldEquipment = event.damageSource.getTrueSource().heldEquipment;
+    if ((event.entity.definition.id) has "srparasites") {
+
+        if (HeldWeapon == "item.srparasites.weapon_bow") {
+
+            // Checks if the item was disarmed and cancells tag update if it is.
+            if (!isNull(HeldEquipment[0].tag)) {
+
+                if (!isNull(HeldEquipment[0].tag.disarm)) {return;}
+
+            }
+
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
+
+            if (!isNull(HeldEquipment[0].tag.srpkills)) {
 
 
-        var HeldWeapon = HeldEquipment[0].name;
+                var CurrentKills = HeldEquipment[0].tag.srpkills;
+                var TotalNewKills = CurrentKills + totalHealth;
+                HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
 
-        if ((event.entity.definition.id) has "srparasites") {
+                var SRPKills = ("§r§9---> " + TotalNewKills) as string;
+                HeldEquipment[0].mutable().updateTag({display:{Lore:[SRPKills]}});
 
-            if (HeldWeapon == "item.srparasites.weapon_bow") {
+                //Destroy item and drop a new sentient weapon with it's full NBT data on the ground + lightning strike
+                if TotalNewKills >= 50000 {
 
-                // Checks if the item was disarmed and cancells tag update if it is.
-                if (!isNull(HeldEquipment[0].tag)) {
+                    var SavedTag = HeldEquipment[0].tag;
+                    var NewWeapon = <srparasites:weapon_bow_sentient>.withTag(SavedTag);
+                    var NewBow = NewWeapon.createEntityItem(event.damageSource.getTrueSource().world, event.damageSource.getTrueSource().position);
 
-                    if (!isNull(HeldEquipment[0].tag.disarm)) {return;}
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+                    //var StrikeEntity = <entity:switchbow:arrowlightningboltstorm>.createEntity(event.entity.world);
+                    //StrikeEntity.setPosition(event.damageSource.getTrueSource().position);
+                    //event.entity.world.spawnEntity(StrikeEntity);
+
+
+                    //event.entity.world.performExplosion(null, posx, posy, posz, 3, false, false);
+                    HeldEquipment[0].mutable().shrink(1);
+                    event.entityLivingBase.dropItem(NewWeapon);
+
+                    val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
+                    bolt.setPosition(event.damageSource.getTrueSource().position);
+                    event.entity.world.spawnEntity(bolt);
+
 
                 }
 
-                var totalHealth = Math.floor(event.entityLivingBase.maxHealth);
+            } else {
 
-                if (!isNull(HeldEquipment[0].tag.srpkills)) {
+                HeldEquipment[0].mutable().updateTag({srpkills:totalHealth});
 
+                var SRPKills = ("§r§9---> " + totalHealth) as string;
+                HeldEquipment[0].mutable().updateTag({display:{Lore:[SRPKills]}});
 
-                    var CurrentKills = HeldEquipment[0].tag.srpkills;
-                    var TotalNewKills = CurrentKills + totalHealth;
-                    HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
+            }
 
-                    var SRPKills = ("§r§9---> " + TotalNewKills) as string;
-                    HeldEquipment[0].mutable().updateTag({display:{Lore:[SRPKills]}});
+        } else if ((HeldWeapon == "item.srparasites.weapon_scythe") || (HeldWeapon == "item.srparasites.weapon_axe") || (HeldWeapon == "item.srparasites.weapon_sword") || (HeldWeapon == "item.srparasites.weapon_cleaver") || (HeldWeapon == "item.srparasites.weapon_maul") || (HeldWeapon == "item.srparasites.weapon_lance")) {
 
-                    //Destroy item and drop a new sentient weapon with it's full NBT data on the ground + lightning strike
-                    if TotalNewKills >= 50000 {
+            var totalHealth = Math.floor(event.entityLivingBase.maxHealth) / armorpieces;
 
-                        var SavedTag = HeldEquipment[0].tag;
-                        var NewWeapon = <srparasites:weapon_bow_sentient>.withTag(SavedTag);
-                        var NewBow = NewWeapon.createEntityItem(event.damageSource.getTrueSource().world, event.damageSource.getTrueSource().position);
+            if (!isNull(HeldEquipment[0].tag.srpkills)) {
 
-                        var posx = event.damageSource.getTrueSource().position.x;
-                        var posy = event.damageSource.getTrueSource().position.y;
-                        var posz = event.damageSource.getTrueSource().position.z;
-
-                        //var StrikeEntity = <entity:switchbow:arrowlightningboltstorm>.createEntity(event.entity.world);
-                        //StrikeEntity.setPosition(event.damageSource.getTrueSource().position);
-                        //event.entity.world.spawnEntity(StrikeEntity);
+                var CurrentKills = HeldEquipment[0].tag.srpkills;
+                var TotalNewKills = CurrentKills + totalHealth;
+                HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
 
 
-                        //event.entity.world.performExplosion(null, posx, posy, posz, 3, false, false);
-                        HeldEquipment[0].mutable().shrink(1);
-                        event.entityLivingBase.dropItem(NewWeapon);
+                if TotalNewKills >= 50000 {
 
-                        val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
-                        bolt.setPosition(event.damageSource.getTrueSource().position);
-                        event.entity.world.spawnEntity(bolt);
+                    var SavedTag = HeldEquipment[0].tag;
+
+                    var posx = event.damageSource.getTrueSource().position.x;
+                    var posy = event.damageSource.getTrueSource().position.y;
+                    var posz = event.damageSource.getTrueSource().position.z;
+
+
+                    if (HeldEquipment[0].definition.id == "srparasites:weapon_scythe") {
+
+                        var SentientWeapon = <srparasites:weapon_scythe_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
+
+                    } else if (HeldEquipment[0].definition.id == "srparasites:weapon_axe") {
+
+                        var SentientWeapon = <srparasites:weapon_axe_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
+
+                    } else if (HeldEquipment[0].definition.id == "srparasites:weapon_sword") {
+
+                        var SentientWeapon = <srparasites:weapon_sword_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
+
+                    } else if (HeldEquipment[0].definition.id == "srparasites:weapon_cleaver") {
+
+                        var SentientWeapon = <srparasites:weapon_cleaver_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
+
+                    } else if (HeldEquipment[0].definition.id == "srparasites:weapon_maul") {
+
+                        var SentientWeapon = <srparasites:weapon_maul_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
+
+                    } else if (HeldEquipment[0].definition.id == "srparasites:weapon_lance") {
+
+                        var SentientWeapon = <srparasites:weapon_lance_sentient>.withTag(SavedTag);
+                        event.entityLivingBase.dropItem(SentientWeapon);
 
 
                     }
-
-                } else {
-
-                    HeldEquipment[0].mutable().updateTag({srpkills:totalHealth});
-
-                    var SRPKills = ("§r§9---> " + totalHealth) as string;
-                    HeldEquipment[0].mutable().updateTag({display:{Lore:[SRPKills]}});
-
-                }
-
-            } else if ((HeldWeapon == "item.srparasites.weapon_scythe") || (HeldWeapon == "item.srparasites.weapon_axe") || (HeldWeapon == "item.srparasites.weapon_sword") || (HeldWeapon == "item.srparasites.weapon_cleaver") || (HeldWeapon == "item.srparasites.weapon_maul") || (HeldWeapon == "item.srparasites.weapon_lance")) {
-
-                var totalHealth = Math.floor(event.entityLivingBase.maxHealth);
-
-                if (!isNull(HeldEquipment[0].tag.srpkills)) {
-
-                    var CurrentKills = HeldEquipment[0].tag.srpkills;
-                    var TotalNewKills = CurrentKills + totalHealth;
-                    HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
-
-
-                    if TotalNewKills >= 50000 {
-
-                        var SavedTag = HeldEquipment[0].tag;
-
-                        var posx = event.damageSource.getTrueSource().position.x;
-                        var posy = event.damageSource.getTrueSource().position.y;
-                        var posz = event.damageSource.getTrueSource().position.z;
-
-
-                        if (HeldEquipment[0].definition.id == "srparasites:weapon_scythe") {
-
-                            var SentientWeapon = <srparasites:weapon_scythe_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-                        } else if (HeldEquipment[0].definition.id == "srparasites:weapon_axe") {
-
-                            var SentientWeapon = <srparasites:weapon_axe_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-                        } else if (HeldEquipment[0].definition.id == "srparasites:weapon_sword") {
-
-                            var SentientWeapon = <srparasites:weapon_sword_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-                        } else if (HeldEquipment[0].definition.id == "srparasites:weapon_cleaver") {
-
-                            var SentientWeapon = <srparasites:weapon_cleaver_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-                        } else if (HeldEquipment[0].definition.id == "srparasites:weapon_maul") {
-
-                            var SentientWeapon = <srparasites:weapon_maul_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-                        } else if (HeldEquipment[0].definition.id == "srparasites:weapon_lance") {
-
-                            var SentientWeapon = <srparasites:weapon_lance_sentient>.withTag(SavedTag);
-                            event.entityLivingBase.dropItem(SentientWeapon);
-
-
-                        }
 
                     val bolt = <entity:charm:charged_emerald>.createEntity(event.entity.world);
                     bolt.setPosition(event.damageSource.getTrueSource().position);
                     event.entity.world.spawnEntity(bolt);
                     HeldEquipment[0].mutable().shrink(1);
 
-                    }
-
-                } else {
-
-                    HeldEquipment[0].mutable().updateTag({srpkills:totalHealth});
-
                 }
-
-            }
-
-        } else if ((HeldWeapon == "item.srparasites.weapon_scythe") || (HeldWeapon == "item.srparasites.weapon_axe") || (HeldWeapon == "item.srparasites.weapon_sword") || (HeldWeapon == "item.srparasites.weapon_cleaver") || (HeldWeapon == "item.srparasites.weapon_maul") || (HeldWeapon == "item.srparasites.weapon_lance") || (HeldWeapon == "item.srparasites.weapon_bow"))  {
-
-            var totalHealth = Math.floor(event.entityLivingBase.maxHealth);
-
-            if (!isNull(HeldEquipment[0].tag.srpkills)) {
-
-                var CurrentKills = HeldEquipment[0].tag.srpkills as int;
-                var TotalNewKills = CurrentKills - totalHealth;
-                HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
 
             } else {
 
-                HeldEquipment[0].mutable().updateTag({display:{Lore:["","Your weapon tasted blood, now it longs for Parasites..."]}});
-                HeldEquipment[0].mutable().updateTag({srpkills:0});
-                //give @a srparasites:weapon_cleaver 1 0 {Item:{tag:{srpkills:0}}}
+                HeldEquipment[0].mutable().updateTag({srpkills:totalHealth});
+
             }
+
+        }
+
+    } else if ((HeldWeapon == "item.srparasites.weapon_scythe") || (HeldWeapon == "item.srparasites.weapon_axe") || (HeldWeapon == "item.srparasites.weapon_sword") || (HeldWeapon == "item.srparasites.weapon_cleaver") || (HeldWeapon == "item.srparasites.weapon_maul") || (HeldWeapon == "item.srparasites.weapon_lance") || (HeldWeapon == "item.srparasites.weapon_bow"))  {
+
+        var totalHealth = Math.floor(event.entityLivingBase.maxHealth);
+
+        if (!isNull(HeldEquipment[0].tag.srpkills)) {
+
+            var CurrentKills = HeldEquipment[0].tag.srpkills as int;
+            var TotalNewKills = CurrentKills - totalHealth;
+            HeldEquipment[0].mutable().updateTag({srpkills:TotalNewKills});
+
+        } else {
+
+            HeldEquipment[0].mutable().updateTag({display:{Lore:["","Your weapon tasted blood, now it longs for Parasites..."]}});
+            HeldEquipment[0].mutable().updateTag({srpkills:0});
         }
     }
+
 });
 
 //Dismounts player if they get hit by a dragon and do not have dragon armor on
@@ -1069,7 +1332,7 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
     if(!isNull(event.entity.nbt.ForgeData.SussyBerianNaming)) { return; }
 
     if((event.entity.customName == "") && (event.entity.nbt.Profession == 1)) {
-        event.entity.setNBT({SussyBerianNaming: 0});
+        event.entity.setNBT({SussyBerianNaming: 1});
         var RandomNum = event.entity.world.random.nextFloat(0, 100);
         
         if RandomNum <= 10 {
@@ -1080,6 +1343,10 @@ events.onEntityLivingUpdate(function(event as EntityLivingUpdateEvent){
                 event.entity.setCustomName("Mentalberian");
             }
         }
+    } else if((event.entity.customName == "Mentalberian") && (event.entity.nbt.Profession == 1)) {
+        event.entity.setNBT({SussyBerianNaming: 1});
+    } else if((event.entity.customName == "Surryberian") && (event.entity.nbt.Profession == 1)) {
+        event.entity.setNBT({SussyBerianNaming: 1});
     }
 });
 
@@ -1184,6 +1451,8 @@ events.onCheckSpawn(function(event as EntityLivingExtendedSpawnEvent){
         }
     }
 });
+
+
 
 // SRParasites in overworld Cancel loot if not in Whitelisted Biome
 events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
@@ -1313,13 +1582,17 @@ function addPotionEffectBopBlood(player as IPlayer){
 function addPotionEffectHotSpring(player as IPlayer){
 
 	if (player.activePotionEffects.length == 0) {
-    player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
+    player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 0));
     player.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(1, 0));
+    player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
     player.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(100, 1));
     player.addPotionEffect(<potion:simpledifficulty:hyperthermia>.makePotionEffect(100, 2));
 
 	} else {
 		for p in player.activePotionEffects {
+      if !(p.effectName.matches("potioncore:potion_sickness")) {
+				player.addPotionEffect(<potion:potioncore:potion_sickness>.makePotionEffect(200, 0));
+			}
       if !(p.effectName.matches("potioncore:launch")) {
 				player.addPotionEffect(<potion:potioncore:launch>.makePotionEffect(1, 0));
 			}

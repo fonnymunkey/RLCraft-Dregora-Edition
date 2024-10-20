@@ -23,6 +23,17 @@
       ]
     },
     {
+      "name": "music_disk",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "weight": 1,
+          "type": "item",
+          "name": "contenttweaker:rlmusic_blight"
+        }
+      ]
+    },
+    {
       "name": "main",
       "bonus_rolls": 1,
       "rolls": 3.0,

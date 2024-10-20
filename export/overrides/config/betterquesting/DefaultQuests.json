@@ -6,7 +6,7 @@
       "home_anchor_y:5": 0.0,
       "livesmax:3": 10,
       "home_anchor_x:5": 0.5,
-      "editmode:1": 1,
+      "editmode:1": 0,
       "hardcore:1": 0,
       "home_image:8": "rlcraft:textures/gui/title_card.png",
       "party_enable:1": 1,
@@ -24768,9 +24768,9 @@
       "properties:10": {
         "betterquesting:10": {
           "name:8": "betterquesting.quest.name.351",
-          "desc:8": "betterquesting.quest.desc.351",
+          "desc:8": "betterquesting.quest.desc.356",
           "icon:10": {
-            "id:8": "minecraft:barrier",
+            "id:8": "srparasites:tunnel",
             "Count:3": 1,
             "Damage:2": 0,
             "OreDict:8": ""

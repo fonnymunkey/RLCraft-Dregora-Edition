@@ -16,3 +16,7 @@ block.contenttweaker.bone_pile.name=Bone Pile
 tile.contenttweaker.bone_pile.name=Bone Pile
 fluid.carrot_juice=Carrot Soup
 attribute.name.xat.entityMagic.regen=Mana Regeneration
+item.contenttweaker.rlmusic_blight.name=§5Blight
+item.record.rlmusic_blight.desc=Shivaxi - Blight
+item.contenttweaker.rlmusic_bliss.name=§dBliss
+item.record.rlmusic_bliss.desc=Shivaxi - Bliss

@@ -147,6 +147,8 @@ Todo: RLC potions maybe use splash some?
 
 /setblock ~ ~-1 ~ minecraft:chest 0 false {LootTable:"dregora:underneath/fish_undead"}
 
+/setblock ~ ~-1 ~ charm:crate_sealed 0 false {LootTable:"dregora:entities/spawn_eggs/behemoth"}
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++|
       DregoraRL Brutal Entities Loot - Works:

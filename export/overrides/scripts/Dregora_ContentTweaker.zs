@@ -27,3 +27,9 @@ ReinforcedBlockSlab.blockSoundType = <soundtype:metal>;
 ReinforcedBlockSlab.blockHardness = 30.0; //default 5.0
 ReinforcedBlockSlab.blockResistance = 20.0; //default 10
 ReinforcedBlockSlab.register();
+
+
+// RLCraft Bliss and Blight music disks
+VanillaFactory.createRecord("rlmusic_bliss");
+VanillaFactory.createRecord("rlmusic_blight");
+

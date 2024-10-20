@@ -10,6 +10,329 @@
 
 /*
 
+//Function containing potion effects for sleeping_nightmare
+function addPotionEffectSleeping(player as IPlayer, effectLevel as int){
+
+  player.world.catenation().sleep(2).then(function(world, context) {
+
+      if effectLevel >= 3 {
+          player.addPotionEffect(<potion:lycanitesmobs:fear>.makePotionEffect(200, 0));
+      }
+
+      if effectLevel >= 2 {
+          player.addPotionEffect(<potion:lycanitesmobs:insomnia>.makePotionEffect(200, 0));
+      }
+
+      if effectLevel >= 1  {
+        player.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(200, 0));
+      }
+
+  }).start();
+
+}
+
+// Sleeping script (spawn stuff and give debuff if player sleeps under open sky & in darkness
+events.onPlayerSleepInBed(function(event as PlayerSleepInBedEvent){
+
+    var sleeping_cavespider = <entity:minecraft:cave_spider>.createEntity(event.entityLivingBase.world);
+    var sleeping_ithaqua = <entity:mod_lavacow:ithaqua>.createEntity(event.entityLivingBase.world);
+    var sleeping_scarecrow = <entity:mod_lavacow:scarecrow>.createEntity(event.entityLivingBase.world);
+    var sleeping_weta = <entity:mod_lavacow:weta>.createEntity(event.entityLivingBase.world);
+    var sleeping_ghost = <entity:iceandfire:ghost>.createEntity(event.entityLivingBase.world);
+
+    var sleeping_banshee = <entity:mod_lavacow:banshee>.createEntity(event.entityLivingBase.world);
+    var sleeping_avaton = <entity:mod_lavacow:avaton>.createEntity(event.entityLivingBase.world);
+    var sleeping_reaper = <entity:lycanitesmobs:reaper>.createEntity(event.entityLivingBase.world);
+    var sleeping_lycanbanshee = <entity:lycanitesmobs:banshee>.createEntity(event.entityLivingBase.world);
+
+    var sleeping_terror = [sleeping_cavespider, sleeping_ithaqua, sleeping_scarecrow, sleeping_weta, sleeping_ghost] as IEntity[];
+    var sleeping_nightmare = [sleeping_banshee, sleeping_avaton, sleeping_reaper, sleeping_lycanbanshee] as IEntity[];
+    var sleeping_hard = [sleeping_banshee, sleeping_avaton, sleeping_reaper] as IEntity[];
+    var sleeping_easy = [sleeping_banshee, sleeping_reaper] as IEntity[];
+
+    if event.player.world.isDayTime() { return; }
+
+    var BadNightChance = 25; //25 default
+    var TerrorChance = 1;   //1 default
+    var NightmareChance = 10; //10 default
+    var PotionChance = 100;   //100 default
+
+
+    var intX = event.x as float + 0.5 as float;
+    var intY = event.y as float as float;
+    var intZ = event.z as float + 0.5 as float;
+
+    var posAll = Position3f.create(event.x, event.y, event.z).asBlockPos();
+    var posOne = Position3f.create(event.x, event.y + 1, event.z).asBlockPos();
+    var posHigh = Position3f.create(event.x, event.y + 3, event.z).asBlockPos();
+    var blockLight = (event.player.world.getBlockBrightness(posAll));
+    var randomNum = event.player.world.random.nextFloat(0, 100);
+
+    if ((event.player.world.canSeeSky(event.position)) && (blockLight <= 7)) {
+
+        if (event.player.world.random.nextFloat(0, 100) <= BadNightChance) {
+
+            if ((randomNum <= TerrorChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the dark they crawl and from the sky they see...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 4);
+                var EntitySelected = sleeping_terror[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Night Terror");
+
+                if ((EntitySelected.definition.id has "minecraft:cave_spider") || (EntitySelected.definition.id has "mod_lavacow:weta")) {
+
+                    var RandomEntityNum = event.player.world.random.nextFloat(3, 8) as int;
+
+
+                    for i in 0 to RandomEntityNum {
+
+                        if (EntitySelected.definition.id has "minecraft:cave_spider") {
+                            var EntitySelected = <entity:minecraft:cave_spider>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                        }
+
+                        if (EntitySelected.definition.id has "mod_lavacow:weta") {
+                            var EntitySelected = <entity:mod_lavacow:weta>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                        }
+
+                        EntitySelected.setCustomName("Night Terror");
+                        EntitySelected.addTag("DropTable: None");
+
+                    }
+
+                } else {
+
+                    event.player.world.spawnEntity(EntitySelected);
+                    EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                }
+
+                EntitySelected.addTag("DropTable: None");
+
+            } else if ((randomNum <= NightmareChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the dark they crawl and from the sky they see...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 3);
+                var EntitySelected = sleeping_nightmare[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Nightmare");
+                event.player.world.spawnEntity(EntitySelected);
+                EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+                EntitySelected.addTag("DropTable: None");
+
+
+
+            } else {
+
+                event.player.sendStatusMessage("An ominous aura creeps from the dark sky...", true);
+
+            }
+
+            event.result = "OTHER_PROBLEM";
+            var effectLevel = 3;
+            if (randomNum <= PotionChance) { addPotionEffectSleeping(event.player, effectLevel); }
+            return;
+
+        } else {
+
+            event.player.sendStatusMessage("You feel restless under the dark sky as you slowly fall asleep", true);
+
+        }
+
+    } else if (event.player.world.canSeeSky(event.position)) {
+
+        if (event.player.world.random.nextFloat(0, 100) <= BadNightChance) {
+
+            if ((randomNum <= TerrorChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the sky they come...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 4);
+                var EntitySelected = sleeping_terror[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Night Terror");
+
+
+                if ((EntitySelected.definition.id has "minecraft:cave_spider") || (EntitySelected.definition.id has "mod_lavacow:weta")) {
+
+                    var RandomEntityNum = event.player.world.random.nextFloat(3, 8) as int;
+
+                    for i in 0 to RandomEntityNum {
+
+                        if (EntitySelected.definition.id has "minecraft:cave_spider") {
+                            var EntitySelected = <entity:minecraft:cave_spider>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+                        }
+
+                        if (EntitySelected.definition.id has "mod_lavacow:weta") {
+                            var EntitySelected = <entity:mod_lavacow:weta>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                        }
+
+                        EntitySelected.setCustomName("Night Terror");
+                        EntitySelected.addTag("DropTable: None");
+
+                    }
+
+                } else {
+
+                    event.player.world.spawnEntity(EntitySelected);
+                    EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                }
+
+                EntitySelected.addTag("DropTable: None");
+
+            } else if ((randomNum <= NightmareChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the sky they come...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 3);
+                var EntitySelected = sleeping_hard[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Nightmare");
+                event.player.world.spawnEntity(EntitySelected);
+                EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+                EntitySelected.addTag("DropTable: None");
+
+
+            } else {
+
+                event.player.sendStatusMessage("You feel as if the sky gained eyes...", true);
+
+            }
+
+            event.result = "OTHER_PROBLEM";
+            var effectLevel = 2;
+            if (randomNum <= PotionChance) { addPotionEffectSleeping(event.player, effectLevel); }
+            return;
+
+        } else {
+
+            event.player.sendStatusMessage("You feel restless under the open sky but at least you have a lightsource nearby...", true);
+
+        }
+
+    } else if (blockLight <= 7) {
+
+        if (event.player.world.random.nextFloat(0, 100) <= BadNightChance) {
+
+            if ((randomNum <= TerrorChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the dark they come...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 4);
+                var EntitySelected = sleeping_terror[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Night Terror");
+
+
+                if ((EntitySelected.definition.id has "minecraft:cave_spider") || (EntitySelected.definition.id has "mod_lavacow:weta")) {
+
+                    var RandomEntityNum = event.player.world.random.nextFloat(3, 8) as int;
+
+                    for i in 0 to RandomEntityNum {
+
+                        if (EntitySelected.definition.id has "minecraft:cave_spider") {
+                            var EntitySelected = <entity:minecraft:cave_spider>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+                        }
+
+                        if (EntitySelected.definition.id has "mod_lavacow:weta") {
+                            var EntitySelected = <entity:mod_lavacow:weta>.createEntity(event.entityLivingBase.world);
+                            EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                            event.player.world.spawnEntity(EntitySelected);
+                            EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+                        }
+
+                        EntitySelected.setCustomName("Night Terror");
+                        EntitySelected.addTag("DropTable: None");
+
+                    }
+
+                } else {
+
+                    event.player.world.spawnEntity(EntitySelected);
+                    EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+                }
+
+                EntitySelected.addTag("DropTable: None");
+
+            } else if ((randomNum <= NightmareChance) && !(event.player.world.getBlockState(posOne).causesSuffocation)) {
+
+                event.player.sendStatusMessage("From the dark they come...", true);
+
+                var RandomEntity = event.player.world.random.nextFloat(0, 1);
+                var EntitySelected = sleeping_easy[RandomEntity] as IEntity;
+
+                EntitySelected.setPosition3f(Position3f.create(intX, intY, intZ));
+                EntitySelected.setCustomName("Nightmare");
+                event.player.world.spawnEntity(EntitySelected);
+                EntitySelected.addTag("DropTable: None");
+                EntitySelected.setNBT({ForgeCaps:{"champions:championship":{tier:0}}});
+
+
+            } else {
+
+                event.player.sendStatusMessage("Something watches you from the dark...", true);
+
+            }
+
+            event.result = "OTHER_PROBLEM";
+            var effectLevel = 1;
+            if (randomNum <= PotionChance) { addPotionEffectSleeping(event.player, effectLevel); }
+            return;
+
+        } else {
+
+            event.player.sendStatusMessage("It's dark, but better than out in the open", true);
+
+        }
+    }
+});
+
+events.onLivingExperienceDrop(function(event as LivingExperienceDropEvent){
+    if (!isNull(event.entity.definition)) {
+        // This is for the sleeping script to make sure night terrors don't not drop xp
+        if (!isNull(event.entity.nbt.Tags)) {
+            event.droppedExperience = event.droppedExperience / 2;
+        }
+    }
+});
+
+// SRParasites in overworld Cancel loot if not in Whitelisted Biome
+events.onEntityLivingDeathDrops(function(event as EntityLivingDeathDropsEvent){
+
+    if (!isNull(event.entity.definition)) {
+
+        // This is for the sleeping script to make sure night terrors don't not drop items
+        if (!isNull(event.entity.nbt.Tags)) {
+            event.drops = [];
+        }
+
 // Villager to Mental/Sussyberian conversion
 if ((event.entity.definition.id) == "minecraft:villager") {
 
