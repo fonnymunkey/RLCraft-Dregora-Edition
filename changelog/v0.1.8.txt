@@ -120,6 +120,7 @@ Removed from ToDo for various reasons, may be revisited later.
 + add recipes (bop gems) to swords
 + decrease amount of chests in corrupted graves
 + Defiled Lands Biome remove pixie villages replace with Vex Villages
++ hippogriph smelt recipe
 
 Future Todo:
 + Dregora_CorruptedJungleHillBorderIsle does not spawn

@@ -6,22 +6,6 @@ print("Dregora Recipe Script starting!");
 //Normal recipe adjustments
 //=================================
 
-//tooltips Conductivity
-for item in itemUtils.getItemsByRegexRegistryName(".*iron.*|.*chainmail.*|.*chain_skirt.*|.*steel.*") {
-    item.addTooltip("§e§oConductivity +1");
-}
-
-for item in itemUtils.getItemsByRegexRegistryName(".!scale|.*gold.*") {
-    item.addTooltip("§e§oConductivity +2");
-}
-
-for item in itemUtils.getItemsByRegexRegistryName(".*copper.*") {
-    item.addTooltip("§e§oConductivity +3");
-}
-
-for item in itemUtils.getItemsByRegexRegistryName(".*silver.*") {
-    item.addTooltip("§e§oConductivity +4");
-}
 
 <variedcommodities:satchel>.displayName = "Coin Purse";
 <mod_lavacow:dreamcatcher>.addTooltip("§6A purse filled with ancient coins!");
@@ -30,8 +14,6 @@ recipes.addShapeless("dregora52",<variedcommodities:coin_gold> * 64,[<variedcomm
 
 // Remove Bread recipe
 recipes.removeByRecipeName("minecraft:bread");
-
-
 
 // Remove Enchantment table & add wither skulls to it:
 recipes.remove(<minecraft:enchanting_table>);
@@ -477,7 +459,7 @@ recipes.addShaped("dregora46",<mod_lavacow:ghostjelly>,
 
 // Give the Orb for Eta barrier a better name.
 <variedcommodities:orb:0>.clearTooltip(true);
-<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
+<variedcommodities:orb:0>.displayName = "Brutal Orb";
 <variedcommodities:orb:0>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:0>.addTooltip(format.green("Within this orb resides a mighty power akin to lightning."));
 <variedcommodities:orb:0>.addTooltip(format.gold("Only to be obtained from the deepest chambers of Brutal Towers."));
@@ -507,17 +489,17 @@ recipes.addShaped("dregora32",<variedcommodities:ancient_coin>,
 <variedcommodities:orb:5>.clearTooltip(true);
 <variedcommodities:orb:6>.clearTooltip(true);
 
-<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
+<variedcommodities:orb:1>.displayName = "Demon Orb";
 <variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
 <variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:gem_ruby>.displayName = "Brutal Orb";
+<variedcommodities:orb:5>.displayName = "Aberrant Orb";
 <variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
 <variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:gem_ruby>.displayName = "Shadow Orb";
+<variedcommodities:orb:6>.displayName = "Shadow Orb";
 <variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));

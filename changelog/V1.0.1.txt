@@ -1,5 +1,10 @@
+RLCraft Done:
+- removed loading screens mod from manifest & modlist
+- normalasm set removeForgeSecurityManager to true
+
 RLCraft todo:
 - Fix shader for amd issue.
+- add loading screens replacement screen
 - fix Loadingscreens for amd issue (crash report: https://discord.com/channels/199155955206717440/622497879143219210/1296983547684327496 )
 - Nether Shader > Too high contrast or brightness?
 - add defiled plants to shader movement stuff
@@ -52,7 +57,7 @@ XzeroAir: When the Gun Explodes and kills you, it should give you an Quest, "I s
 - lower the dragon flight to 120
 - supress dimstack: the chunk generator com.pg85.otg.forge.generator.OTGCHunkGenerator did not trigger net.minecraftforge.event
 - saplings have the stone texture
-- multiplayer random spawn? (increase spawnradius as well to 5000)
+- multiplayer random spawn? (increase spawnradius as well to 10000)
 - CSetBonus3 (chad solid core in setbonuses)
 - mod_lavacow:burntovipositor.display double in Dregora_Recipes.zs
 - Death messages?
@@ -85,11 +90,24 @@ XzeroAir: When the Gun Explodes and kills you, it should give you an Quest, "I s
 - Ancient Rainforest Isle RM ID548 Trolls spawn outside in daylight under canopy
 - add Baublui (JB Redwards) to modpack to fix bauble dissapearing on death.
 - Banshee AOE explosion make all bodyparts take hits instead of one bodypart and destroy blocks option.
-
-
-
-
-
-
-
-
+- make disarm entities weapons take 90% of current health instead of 100% reflect damage
+- Corrupted viking realms have squids spawning in ooze
+- Fish undead disable enchants? Lifesteal seems to be in twice, remove them through ct?
+- turn ravines down
+- epic siege mod unable to read potion type minecraft:weakness:300:1 (and others)
+- spawnradius: 3000 needs to be put to 0 and otg's setspawn to false?
+- gorgon possible blacklist for aggro on mobs
+- jei earth blacklist (bop)
+- full copper set gives slight movement debuff (5%)
+- Temperature goo pack in loottable, check heat biome
+- lycanite boss in nether still goes through roof, lower with incontrol.
+- Better Survival config regenerated default enchant level configs. Config switched to Title Case setting names.
+referenced in mujmajnkraftsbettersurvival.cfg
+Disarm 3 -> 1
+Multishot 4 -> 3
+Rapid Fire 2 -> 5
+Vampirism 2 -> 1
+Vitality 0 -> 1 (idk if loaded into the game in 2.9.3)
+- remove health multipliers and damage multipliers from IC and add then to ZS
+- at CrafttweakerDregora7.handle(Dregora.zs:630)
+- at CrafttweakerDregora1.handle(Dregora.zs:140)
