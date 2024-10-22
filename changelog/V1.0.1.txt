@@ -54,6 +54,7 @@ at CrafttweakerDregora1.handle(Dregora.zs:140)
 - book and quil instead of book for enchant craft?
 
 [LOW PRIORITY]
+- make exception list for ground entities lightning strike
 - Golden coins bunker fallout shelter thingy has empty chests
 - add goopacks to loot
 - herbalist still has dangerous entities

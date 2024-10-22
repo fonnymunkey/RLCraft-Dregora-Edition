@@ -67,9 +67,12 @@ print("Dregora Script starting!");
 
 var Logging = false;
 
-//DMG and health multiplier script for spawning entities
+////DMG and health multiplier script for spawning entities
 events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
 
+    var EntityBase = event.entityLivingBase;
+
+    // nerf succors
     if (event.entity.definition.id == "srparasites:succor") {
 
         //DMGmultiply 0.03
@@ -78,18 +81,39 @@ events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
     //overworld
     if event.entity.world.dimension == 0 {
 
+        // Increase Health for mod_lavacow entities
+        if (event.entity.definition.id has "mod_lavacow") {
+
+
+            //HealthMultiply 1.5
+            EntityBase.health = EntityBase.health * 1.5;
+        }
+
         // Lower health of parasites in cities
         var BiomeName = event.world.getBiome(event.entity.getPosition3f()).name;
         for Biome in ParasiteBuffBiomes {
             if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+
                 //HealthMultiply 0.5
+                EntityBase.health = EntityBase.health * 0.5;
+
                 //DMGMultiply 0.25
             }
         }
     }
-
 });
 
+events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
+
+    if (isNull(event.damageSource.trueSource())) {return;}
+    if (isNull(event.damageSource.trueSource().definition.id)) {return;}
+
+    if ((event.damageSource.trueSource().definition.id) == "srparasites:succor") {
+
+
+
+    }
+});
 
 // Berries nerf
 events.onEntityLivingUseItemFinish(function(event as Finish){
@@ -1461,11 +1485,12 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     if (event.player.world.time % 100 != 0) {return;}
 
     // Only Thunder
-    if ((event.player.world.getWorldInfo().isThundering()) && ((event.player.world.getBrightness(event.player.position)) == 15)) {
+    if ((event.player.world.getWorldInfo().isThundering()) && (event.player.world.isRaining()) && ((event.player.world.getBrightness(event.player.position)) == 15)) {
+
 
         // Assign conductivity rating for player
         var EquipmentList = event.player.armorInventory as IItemStack[];
-        var silvercount as int = 10;
+        var silvercount as int = 0;
 
         for item in EquipmentList {
 
@@ -1513,6 +1538,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
                 var RandomInt = event.entity.world.random.nextFloat(0, 100);
                 if (RandomInt < silvercount) {
 
+                    print(silvercount);
                     // sets a cooldown for the warning (60 seconds)
                     event.player.setNBT({lightning_warning: warning});
 
@@ -1528,6 +1554,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
                 var RandomInt = event.entity.world.random.nextFloat(0, 100);
                 if (RandomInt < silvercount) {
 
+                    print(silvercount);
                     // sets a cooldown for the warning (60 seconds)
                     event.player.setNBT({lightning_warning: warning});
 

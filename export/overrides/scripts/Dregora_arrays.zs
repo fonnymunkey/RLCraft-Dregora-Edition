@@ -61,11 +61,6 @@ import mods.ctutils.world.World;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.LivingExperienceDropEvent;
 
-global ParasiteBuffBiomes as string[] = [
-  "Lair of the Thing",
-  "Nuclear Ruins",
-  "Ruins of Blight"
-];
 
 global ParasiteBuffBiomes as string[] = [
   "Lair of the Thing",
