@@ -24,23 +24,21 @@ RLCraft Fixed:
 - at CrafttweakerDregora1.handle(Dregora.zs:140)
 - fixed nullpointer at hitting other player
 - added new ice and fire to manifest
+- remove incontrol multipliers and put them into ct
+- at CrafttweakerDregora7.handle(Dregora.zs:630)
+- disarm weapons happen under normal circumstances, not just with disarm weapons (also check for weapon) > When mobs pickup items they get the changed ominous aura text too
+
+
 RLCraft todo:
 
 [HIGH PRIORITY]
-- remove incontrol multipliers and put them into ct
 - Smelt copper (also Some recipes for smelting copper weapons are broken > Silver ingot on return etc
 - copper scythe into diamond coin?
-- disarm weapons happen under normal circumstances, not just with disarm weapons (also check for weapon) > When mobs pickup items they get the changed ominous aura text too
 - nullpointer exception on hitting another player? (maybe broke pack)
-- nullpointer at java.lang.NullPointerException
-at CrafttweakerDregora1.handle(Dregora.zs:140)
 - lower dmg multiplier for fish undead
 - Fish undead disable enchants? Lifesteal seems to be in twice, remove them through ct?
 - remove health multipliers and damage multipliers from IC and add then to ZS
 - offhand skeleton king spawning issue
-- at CrafttweakerDregora7.handle(Dregora.zs:630)
-
-
 - full copper set gives slight movement debuff (5%)
 - epic siege mod unable to read potion type minecraft:weakness:300:1 (and others)
 - Dregora loottables are.. really shit... (even in the parasite biomes etc)

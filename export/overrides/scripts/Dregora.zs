@@ -72,12 +72,6 @@ events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
 
     var EntityBase = event.entityLivingBase;
 
-    // nerf succors
-    if (event.entity.definition.id == "srparasites:succor") {
-
-        //DMGmultiply 0.03
-    }
-
     //overworld
     if event.entity.world.dimension == 0 {
 
@@ -92,12 +86,13 @@ events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
         // Lower health of parasites in cities
         var BiomeName = event.world.getBiome(event.entity.getPosition3f()).name;
         for Biome in ParasiteBuffBiomes {
-            if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+            if (BiomeName == Biome) {
+                if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
 
-                //HealthMultiply 0.5
-                EntityBase.health = EntityBase.health * 0.5;
+                    //HealthMultiply 0.5
+                    EntityBase.health = EntityBase.health * 0.5;
 
-                //DMGMultiply 0.25
+                }
             }
         }
     }
@@ -105,14 +100,33 @@ events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
 
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
-    if (isNull(event.damageSource.trueSource())) {return;}
-    if (isNull(event.damageSource.trueSource().definition.id)) {return;}
+    if (isNull(event.damageSource.trueSource)) {return;}
+    if (isNull(event.damageSource.trueSource.definition)) {return;}
+    if (isNull(event.damageSource.trueSource.definition.id)) {return;}
 
-    if ((event.damageSource.trueSource().definition.id) == "srparasites:succor") {
+    // nerf succors
+    if ((event.damageSource.trueSource.definition.id) == "srparasites:succor") {
 
-
+        //DMGmultiply 0.03
+        event.amount = event.amount / 0.03;
 
     }
+
+    if event.damageSource.trueSource.world.dimension == 0 {
+
+        // Lower health of parasites in cities
+        var BiomeName = event.damageSource.trueSource.world.getBiome(event.entity.getPosition3f()).name;
+        for Biome in ParasiteBuffBiomes {
+            if (BiomeName == Biome) {
+                if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+
+                    //DMGMultiply 0.25
+                    event.amount = event.amount / 0.25;
+                }
+            }
+        }
+    }
+
 });
 
 // Berries nerf
@@ -209,8 +223,15 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
             var randomNum = event.damageSource.trueSource.world.random.nextFloat(0, 100);
             if (randomNum >= 5 ) { return; }
 
-            event.damageSource.trueSource.attackEntityFrom(MAGIC, event.amount);
-            event.cancel();
+            if event.amount > event.damageSource.trueSource.health {
+
+                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.damageSource.trueSource.health * 0.9 );
+                event.cancel();
+
+            } else {
+
+                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.amount );
+                event.cancel();
 
         }
     }
