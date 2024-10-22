@@ -232,7 +232,7 @@ recipes.remove(<mod_lavacow:weta_hoe>);
 <mod_lavacow:acidicheart>.displayName = "Acidic Osvermis/Mummy Heart";
 <mod_lavacow:feather_black>.displayName = "Black Raven/Penghoul Feathers";
 <mod_lavacow:burntovipositor>.displayName = "Burnt Salamander Ovipositor";
-<mod_lavacow:burntovipositor>.displayName = "Foul Foglet/Ithaqua Bristles";
+<mod_lavacow:foul_bristle>.displayName = "Foul Foglet/Ithaqua Bristles";
 <mod_lavacow:hyphae>.displayName = "Mycosis Hyphae";
 <mod_lavacow:kings_crown>.addTooltip("The True Desert's Treasure");
 <mod_lavacow:hatred_shard>.addTooltip("The memory of a King and all those who were slain in his name.");
