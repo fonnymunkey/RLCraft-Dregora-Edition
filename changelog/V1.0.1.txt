@@ -14,6 +14,7 @@ RLCraft Done:
 - made thirst go down a bit slower in some circumstances (balance for nomadic gameplay)
 - ruby and shadow orbs are two different items now (pending rlmixins upload)
 - Ice and Fire spartanweapons shocking weapons fix (pending iceandfire upload)
+- Added additional sadism
 
 RLCraft todo:
 - Golden coins bunker fallout shelter thingy has empty chests
