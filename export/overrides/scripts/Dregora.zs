@@ -356,7 +356,6 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent){
 
     if (isNull(event.target.customName)) {return;}
-    print(event.target.nbt);
 
     // Villager zombies can still be named MentalBerian or Sussyberian and converted back but I left it like such because I think that's a fun thing to have for players
     if (!isNull(event.item)) {
@@ -417,7 +416,6 @@ events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent){
     }
     if ((event.target.customName == "Sussyberian") && (event.target.definition.id == "minecraft:villager")) {
 
-        print("yep");
         var randomPotion = event.target.world.random.nextFloat(0, 12);
         var RandomSussyPotion = SussyPotions[randomPotion];
         event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
@@ -1437,8 +1435,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
     // Only Thunder
     if ((event.player.world.getWorldInfo().isThundering()) && ((event.player.world.getBrightness(event.player.position)) == 15)) {
 
-        print("WTF0");
-
         // Assign conductivity rating for player
         var EquipmentList = event.player.armorInventory as IItemStack[];
         var silvercount as int = 10;
@@ -1657,7 +1653,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
                 event.player.removePassengers();
                 event.player.dismountRidingEntity();
                 event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
-                print("WTF2");
 
             }
         }

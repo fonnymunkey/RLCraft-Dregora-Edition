@@ -51,7 +51,6 @@ RLCraft todo:
 - For some reason everything that is gold or silver colored has conductivity including the Teracotta blocks. Should check that out.
 - Make rain strike lightning on mounted entities
 - Make curse break with caveats more common
-- john creeper sound turn off < NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO Keep it in!
 - MUD TUNA should give mud ball instead of clay
 - need to hide dragon eye
 - change quest description on underneath
