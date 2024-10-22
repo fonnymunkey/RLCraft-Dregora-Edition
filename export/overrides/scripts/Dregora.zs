@@ -1464,7 +1464,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
             }
         }
 
-        var RandomLightningInt = event.entity.world.random.nextFloat(0, 5);
+        var RandomLightningInt = event.entity.world.random.nextFloat(0, 7);
         var RandomLightningMessage = RandomLightningMessageArray[RandomLightningInt];
 
         var warning = event.player.world.time + 60;
@@ -1561,7 +1561,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
             silvercount = silvercount / 2.0;
 
 
-            var RandomLightningInt = event.entity.world.random.nextFloat(0, 5);
+            var RandomLightningInt = event.entity.world.random.nextFloat(0, 7);
             var RandomLightningMessage = RandomLightningMessageArray[RandomLightningInt];
 
             var warning = event.player.world.time + 60;
