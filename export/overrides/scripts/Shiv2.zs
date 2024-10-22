@@ -200,16 +200,45 @@ furnace.addRecipe(<contenttweaker:steel_nugget> * 4, <spartanweaponry:longbow_st
 furnace.addRecipe(<contenttweaker:steel_nugget> * 4, <spartanweaponry:crossbow_steel:*>, 99999);
 furnace.addRecipe(<variedcommodities:coin_bronze> * 4, <spartanweaponry:longbow_bronze:*>, 99999);
 furnace.addRecipe(<variedcommodities:coin_bronze> * 4, <spartanweaponry:crossbow_bronze:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 4, <spartanweaponry:longbow_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 4, <spartanweaponry:crossbow_copper:*>, 99999);
 
 
 furnace.addRecipe(<defiledlands:umbrium_ingot> * 1, <spartandefiled:scythe_umbrium:*>, 99999);
 furnace.addRecipe(<minecraft:iron_ingot> * 1, <spartanweaponry:scythe_iron:*>, 99999);
 furnace.addRecipe(<minecraft:gold_ingot> * 1, <spartanweaponry:scythe_gold:*>, 99999);
 furnace.addRecipe(<minecraft:diamond> * 1, <spartanweaponry:scythe_diamond:*>, 99999);
-furnace.addRecipe(<variedcommodities:coin_diamond> * 1, <spartanweaponry:scythe_copper:*>, 99999);
-furnace.addRecipe(<contenttweaker:steel_alloy> * 1, <spartanweaponry:scythe_steel:*>, 99999);
-furnace.addRecipe(<iceandfire:silver_ingot> * 1, <spartanweaponry:scythe_bronze:*>, 99999);
+furnace.addRecipe(<iceandfire:silver_ingot> * 1, <spartanweaponry:scythe_silver:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:scythe_copper:*>, 99999);
+furnace.addRecipe(<variedcommodities:ingot_steel> * 1, <spartanweaponry:scythe_steel:*>, 99999);
+furnace.addRecipe(<variedcommodities:ingot_bronze> * 1, <spartanweaponry:scythe_bronze:*>, 99999);
 
+furnace.addRecipe(<iceandfire:copper_ingot> * 2, <mujmajnkraftsbettersurvival:itemcopperhammer:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 2, <mujmajnkraftsbettersurvival:itemcopperbattleaxe:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <mujmajnkraftsbettersurvival:itemcopperdagger:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 4, <mujmajnkraftsbettersurvival:itemcoppernunchaku:*>, 99999);
+
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:longsword_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 4, <spartanweaponry:katana_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:saber_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:rapier_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 2, <spartanweaponry:greatsword_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 2, <spartanweaponry:hammer_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:warhammer_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:halberd_copper:*>, 99999);
+//furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:throwing_axe_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 2, <spartanweaponry:battleaxe_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:mace_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanweaponry:glaive_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 4, <spartanweaponry:staff_copper:*>, 99999);
+
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:dagger_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:spear_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:pike_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_nugget> * 1, <spartanweaponry:lance_copper:*>, 99999);
+
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanshields:shield_basic_copper:*>, 99999);
+furnace.addRecipe(<iceandfire:copper_ingot> * 1, <spartanshields:shield_tower_copper:*>, 99999);
 
 recipes.remove(<inspirations:materials:2>);
 recipes.remove(<inspirations:materials:3>);
