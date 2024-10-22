@@ -465,27 +465,16 @@ global conductivity_3 as IItemStack[] = [
     <mod_lavacow:kings_crown>,
     <minecraft:clock>,
     <inspirations:redstone_charger>,
-    <spartanweaponry:staff_gold>,
-    <variedcommodities:golden_skirt>,
     <trumpetskeleton:trumpet>,
     <mod_lavacow:skeletonking_crown>,
     <mod_lavacow:kings_crown:1>,
-    <spartanweaponry:boomerang_gold>,
-    <spartanweaponry:pike_gold>,
-    <spartanweaponry:javelin_gold>,
-    <spartanweaponry:battleaxe_gold>,
-    <spartanweaponry:throwing_knife_gold>,
-    <spartanweaponry:throwing_axe_gold>,
-    <spartanweaponry:halberd_gold>,
     <lycanitesmobs:summoningstaff>,
     <betternether:cincinnasite_axe>,
     <locks:master_key>,
     <lycanitesmobs:bloodsummoningstaff>,
     <locks:key>,
     <armorunder:liner_snips>,
-    <betternether:cincinnasite_axe_diamond>,
-    <spartanweaponry:mace_gold>,
-    <spartanweaponry:glaive_gold>
+    <betternether:cincinnasite_axe_diamond>
 
 ];
 

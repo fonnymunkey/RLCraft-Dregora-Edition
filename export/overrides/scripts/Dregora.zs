@@ -207,12 +207,6 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
             if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
 
-            if (!isNull(event.entityLivingBase.mainHandHeldItem)) && (isNull(event.entityLivingBase.mainHandHeldItem.tag.disarm)) {
-
-                	event.entityLivingBase.mainHandHeldItem.mutable().updateTag({disarm:1,display:{Lore:["You sense a strange opposing aura from this weapon, as if it wants to cut you..."]}});
-
-            }
-
             // If player hits entity with a weapon that has been disarmed it has a chance to reflect dmg
 
             if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
@@ -221,18 +215,19 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
 
             var randomNum = event.damageSource.trueSource.world.random.nextFloat(0, 100);
+
             if (randomNum >= 5 ) { return; }
 
-            if event.amount > event.damageSource.trueSource.health {
+            if event.amount > event.entityLivingBase.health {
 
-                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.damageSource.trueSource.health * 0.9 );
+                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.entityLivingBase.health * 0.9 );
                 event.cancel();
 
             } else {
 
                 event.damageSource.trueSource.attackEntityFrom(MAGIC, event.amount );
                 event.cancel();
-
+            }
         }
     }
 });
