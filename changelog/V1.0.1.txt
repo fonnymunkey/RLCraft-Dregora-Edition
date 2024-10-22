@@ -1,9 +1,27 @@
 RLCraft Done:
 - removed loading screens mod from manifest & modlist
 - normalasm set removeForgeSecurityManager to true
+- fixed typo's for brutal orbs
+- Fix missing hit/crit sounds fonnymunkey 31 minutes ago
+- Remove EpicSiege digging fonnymunkey Yesterday 23:04
+- Add CIT FMB fonnymunkey Yesterday 22:26
+- Make player doll always visible fonnymunkey Yesterday 22:15
+- Remove carbon config fonnymunkey Yesterday 22:13
+- Lower banshee damage fonnymunkey Yesterday 21:26
+- Lower dragon flight height fonnymunkey Yesterday 21:00
+- Nerf epicseige crazy ai a little fonnymunkey Yesterday 20:38
+- Fix BetterSurvival config fonnymunkey Yesterday 20:28
+- made thirst go down a bit slower in some circumstances (balance for nomadic gameplay)
+- ruby and shadow orbs are two different items now (requires rlmixins)
 
 RLCraft todo:
+- Golden coins bunker fallout shelter thingy has empty chests
+- add goopacks to loot
+- herbalist still has dangerous entities
+- percentage of disarm instead of flat mirror damage
+- can't carryon quark quests
 - Fix shader for amd issue.
+- fix ruby gem:1 bop name
 - add loading screens replacement screen
 - fix Loadingscreens for amd issue (crash report: https://discord.com/channels/199155955206717440/622497879143219210/1296983547684327496 )
 - Nether Shader > Too high contrast or brightness?

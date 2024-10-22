@@ -62,6 +62,15 @@ import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.LivingExperienceDropEvent;
 
 
+global RandomLightningMessageArray as string[] = [
+  "Zzzrrt zzzap zskrt",
+  "You feel a tingling sensation...",
+  "What's that crackling sound...?",
+  "You feel a tingle in your Dingle Dong Woozhmadooh!",
+  "Brrzzz kaplow Zapper Zrrrktttt",
+  "Bliksement Blawargh Zrrrktt"
+];
+
 global ArrowArrayLong as IItemStack[] = [
 	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_klutz"}),
 	<minecraft:tipped_arrow>.withTag({Potion: "potioncore:long_weight"}),

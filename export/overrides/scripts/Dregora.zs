@@ -1427,25 +1427,116 @@ for item in conductivity_4 {item.addTooltip("§e§oConductivity +4");}
 for item in conductivity_5 {item.addTooltip("§e§oConductivity +5");}
 for item in conductivity_10 {item.addTooltip("§e§oConductivity +10");}
 
-//Listener for thunder & player on mount
+
+
 events.onPlayerTick(function(event as PlayerTickEvent){
 
     if event.player.world.isRemote() {return;}
     if (event.player.world.time % 100 != 0) {return;}
-    var RandomInt = event.entity.world.random.nextFloat(0, 100);
-    if (!(event.player.world.time > event.player.nbt.ForgeData.lightning_cooldown_global) && (RandomInt <= 80)) {return;}
+
+    // Only Thunder
+    if ((event.player.world.getWorldInfo().isThundering()) && ((event.player.world.getBrightness(event.player.position)) == 15)) {
+
+        print("WTF0");
+
+        // Assign conductivity rating for player
+        var EquipmentList = event.player.armorInventory as IItemStack[];
+        var silvercount as int = 10;
+
+        for item in EquipmentList {
+
+            if (!isNull(item)) {
+
+                for conductive_item in conductivity_1 {
+                    if (conductive_item.matches(item)) {silvercount += 1;}
+                }
+                for conductive_item in conductivity_2 {
+                    if (conductive_item.matches(item)) {silvercount += 2;}
+                }
+                for conductive_item in conductivity_3 {
+                    if (conductive_item.matches(item)) {silvercount += 3;}
+                }
+                for conductive_item in conductivity_4 {
+                    if (conductive_item.matches(item)) {silvercount += 4;}
+                }
+                for conductive_item in conductivity_5 {
+                    if (conductive_item.matches(item)) {silvercount += 5;}
+                }
+                for conductive_item in conductivity_10 {
+                    if (conductive_item.matches(item)) {silvercount += 5;}
+                }
+            }
+        }
+
+        var RandomLightningInt = event.entity.world.random.nextFloat(0, 5);
+        var RandomLightningMessage = RandomLightningMessageArray[RandomLightningInt];
+
+        var warning = event.player.world.time + 60;
+        var cooldown = event.player.world.time + 400;
+
+        if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_cooldown)  {
 
 
-    // when it rains people should get struck only on mount in air
-    // when it thunders people should get struck on ground too
+            if (isNull(event.player.nbt.ForgeData.lightning_warning)) {
 
-    if ((event.player.world.getWorldInfo().isThundering()) || (event.player.world.isRaining())) {
 
-        if (event.player.world.getBrightness(event.player.position)) == 15 {
+                var RandomInt = event.entity.world.random.nextFloat(0, 100);
+                if (RandomInt < silvercount) {
 
+                    // sets a cooldown for the warning (60 seconds)
+                    event.player.setNBT({lightning_warning: warning});
+
+                    // warns the player about impending lightning strike
+                    event.player.sendStatusMessage(RandomLightningMessage, true);
+
+                }
+            }
+
+            else if ((event.player.nbt.ForgeData.lightning_warning) == false) {
+
+                var RandomInt = event.entity.world.random.nextFloat(0, 100);
+                if (RandomInt < silvercount) {
+
+                    // sets a cooldown for the warning (60 seconds)
+                    event.player.setNBT({lightning_warning: warning});
+
+                    // warns the player about impending lightning strike
+                    event.player.sendStatusMessage(RandomLightningMessage, true);
+                }
+            }
+
+            else if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_warning)  {
+
+                // warning time cooldown is over, strike with lightning
+                event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+
+                // set cooldown before initiating the whole script again
+                event.player.setNBT({lightning_cooldown: cooldown});
+
+                // set warning to false so it skips the null check before and triggers the second check
+                event.player.setNBT({lightning_warning:false});
+
+            }
+        }
+    }
+
+});
+
+events.onPlayerTick(function(event as PlayerTickEvent){
+
+    if event.player.world.isRemote() {return;}
+    if (event.player.world.time % 100 != 0) {return;}
+
+    // Only Rain
+    if (!(event.player.world.getWorldInfo().isThundering()) && (event.player.world.isRaining()) && ((event.player.world.getBrightness(event.player.position)) == 15)) {
+
+        var block =  event.player.world.getBlock(event.player.position.x, event.player.position.y - 1, event.player.position.z);
+        if ((!isNull(event.player.getRidingEntity())) || (block.definition.id) == "minecraft:air") {
+
+            // Assign conductivity rating for player
             var EquipmentList = event.player.armorInventory as IItemStack[];
             var silvercount as int = 0;
-            var pass_check = "stop";
+
             for item in EquipmentList {
 
                 if (!isNull(item)) {
@@ -1471,73 +1562,65 @@ events.onPlayerTick(function(event as PlayerTickEvent){
                 }
             }
 
-            if (event.player.world.getWorldInfo().isThundering()) {
+            silvercount = silvercount / 2.0;
 
-                silvercount += 10;
-                pass_check = "true";
 
-            }
+            var RandomLightningInt = event.entity.world.random.nextFloat(0, 5);
+            var RandomLightningMessage = RandomLightningMessageArray[RandomLightningInt];
 
-            var block =  event.player.world.getBlock(event.player.position.x, event.player.position.y - 1, event.player.position.z);
-            if ((!isNull(event.player.getRidingEntity())) || (block.definition.id) == "minecraft:air") {
+            var warning = event.player.world.time + 60;
+            var cooldown = event.player.world.time + 1200;
 
-                pass_check = "true";
+            if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_cooldown)  {
 
-            }
+                if (isNull(event.player.nbt.ForgeData.lightning_warning)) {
 
-            if pass_check == "true" {
+                    var RandomInt = event.entity.world.random.nextFloat(0, 100);
+                    if (RandomInt < silvercount) {
 
-                var RandomInt = event.entity.world.random.nextFloat(0, 100);
-                var RandomLightningInt = event.entity.world.random.nextFloat(0, 5);
-                var RandomLightningMessageArray = [
-                  "Zzzrrt zzzap zskrt",
-                  "You feel a tingling sensation...",
-                  "What's that crackling sound...?",
-                  "You feel a tingle in your Dingle Dong Woozhmadooh!",
-                  "Brrzzz kaplow Zapper Zrrrktttt",
-                  "Bliksement Blawargh Zrrrktt"
-                ] as string[];
+                        // sets a cooldown for the warning (60 seconds)
+                        event.player.setNBT({lightning_warning: warning});
 
-                var RandomLightningMessage = RandomLightningMessageArray[RandomLightningInt];
-
-                if RandomInt <= silvercount {
-
-                    var newtime = event.player.world.time + 60;
-
-                    if (isNull(event.player.nbt.ForgeData.lightning_cooldown_global)) {
-
-                        event.player.setNBT({lightning_cooldown_global: newtime});
+                        // warns the player about impending lightning strike
                         event.player.sendStatusMessage(RandomLightningMessage, true);
 
                     }
 
-                    else if (event.player.nbt.ForgeData.lightning_cooldown_global == 0) {
+                }
 
-                        event.player.setNBT({lightning_cooldown_global: newtime});
+                else if ((event.player.nbt.ForgeData.lightning_warning) == false) {
+
+                    var RandomInt = event.entity.world.random.nextFloat(0, 100);
+                    if (RandomInt < silvercount) {
+
+                        // sets a cooldown for the warning (60 seconds)
+                        event.player.setNBT({lightning_warning: warning});
+
+                        // warns the player about impending lightning strike
                         event.player.sendStatusMessage(RandomLightningMessage, true);
 
                     }
+                }
 
-                    else if (event.player.world.time > event.player.nbt.ForgeData.lightning_cooldown_global) {
+                else if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_warning)  {
 
-                        event.player.setNBT({lightning_cooldown_global: 0});
+                    // warning time cooldown is over, strike with lightning
+                    event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
 
-                        if (event.player.world.getWorldInfo().isThundering()) {
+                    // set cooldown before initiating the whole script again
+                    event.player.setNBT({lightning_cooldown: cooldown});
 
-                            event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+                    // set warning to false so it skips the null check before and triggers the second check
+                    event.player.setNBT({lightning_warning:false});
 
-                        } else {
 
-                            event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
-
-                        }
-                    }
                 }
             }
         }
     }
 
 });
+
 
 //Listener for player on mount in Abyssal Rift
 //Listener for player in SRP deadblood / BOP Hot Spring Water / Bauble listener / Teleportation on hit by skeleton with Teleport arrow
@@ -1550,7 +1633,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
         if (!isNull(event.player.getRidingEntity())) {
 
-            var newtime = event.player.world.time + 600;
+            var newtime = event.player.world.time + 100;
 
             if (isNull(event.player.nbt.ForgeData.lightning_cooldown)) {
 
@@ -1574,6 +1657,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
                 event.player.removePassengers();
                 event.player.dismountRidingEntity();
                 event.player.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1, 0));
+                print("WTF2");
 
             }
         }
