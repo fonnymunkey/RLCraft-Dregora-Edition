@@ -61,7 +61,6 @@ traverse:red_autumnal_sapling
 traverse:brown_autumnal_sapling
 traverse:orange_autumnal_sapling
 traverse:yellow_autumnal_sapling
-quark:variant_sapling
 rustic:sapling
 rustic:sapling_apple
 minecraft:tallgrass
@@ -78,3 +77,9 @@ iceandfire:podium
 iceandfire:lectern
 iceandfire:desert_myrmex_cocoon
 iceandfire:jungle_myrmex_cocoon
+quark:variant_sapling
+biomesoplenty:sapling_0
+biomesoplenty:sapling_1
+biomesoplenty:sapling_2
+srparasites:parasitesapling
+defiledlands:tenebra_sapling
