@@ -1,3 +1,2 @@
-background = addAnimatedTexture("top_left", "loadingscreen:loading_animation.gif")
+background = addStretchedTexture("top_left", "loadingscreen:loading_screen.png")
 background.setRelRender(1, 1)
-background.setUpdateTime(60)
