@@ -67,6 +67,30 @@ print("Dregora Script starting!");
 
 var Logging = false;
 
+//DMG and health multiplier script for spawning entities
+events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
+
+    if (event.entity.definition.id == "srparasites:succor") {
+
+        //DMGmultiply 0.03
+    }
+
+    //overworld
+    if event.entity.world.dimension == 0 {
+
+        // Lower health of parasites in cities
+        var BiomeName = event.world.getBiome(event.entity.getPosition3f()).name;
+        for Biome in ParasiteBuffBiomes {
+            if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+                //HealthMultiply 0.5
+                //DMGMultiply 0.25
+            }
+        }
+    }
+
+});
+
+
 // Berries nerf
 events.onEntityLivingUseItemFinish(function(event as Finish){
 
@@ -136,6 +160,10 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
                 }
             }
+
+            if (!isNull(event.entity.uuid)) {return; print("isPlayer");}
+
+            print(event.entity.definition.id);
 
             if (isNull(event.entity.definition.id)) {return;}
 
@@ -1470,6 +1498,12 @@ events.onPlayerTick(function(event as PlayerTickEvent){
         var warning = event.player.world.time + 60;
         var cooldown = event.player.world.time + 400;
 
+        if (isNull(event.player.nbt.ForgeData.lightning_cooldown)) {
+
+             event.player.setNBT({lightning_cooldown: 0});
+
+        }
+
         if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_cooldown)  {
 
 
@@ -1484,6 +1518,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                     // warns the player about impending lightning strike
                     event.player.sendStatusMessage(RandomLightningMessage, true);
+                    event.player.sendStatusMessage(RandomLightningMessage, false);
 
                 }
             }
@@ -1498,6 +1533,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                     // warns the player about impending lightning strike
                     event.player.sendStatusMessage(RandomLightningMessage, true);
+                    event.player.sendStatusMessage(RandomLightningMessage, false);
                 }
             }
 
@@ -1567,7 +1603,13 @@ events.onPlayerTick(function(event as PlayerTickEvent){
             var warning = event.player.world.time + 60;
             var cooldown = event.player.world.time + 1200;
 
-            if (event.player.world.time) > (event.player.nbt.ForgeData.lightning_cooldown)  {
+            if (isNull(event.player.nbt.ForgeData.lightning_cooldown)) {
+
+                event.player.setNBT({lightning_cooldown: 0});
+
+            }
+
+            if ((event.player.world.time) > (event.player.nbt.ForgeData.lightning_cooldown))  {
 
                 if (isNull(event.player.nbt.ForgeData.lightning_warning)) {
 
@@ -1579,6 +1621,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                         // warns the player about impending lightning strike
                         event.player.sendStatusMessage(RandomLightningMessage, true);
+                        event.player.sendStatusMessage(RandomLightningMessage, false);
 
                     }
 
@@ -1594,6 +1637,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                         // warns the player about impending lightning strike
                         event.player.sendStatusMessage(RandomLightningMessage, true);
+                        event.player.sendStatusMessage(RandomLightningMessage, false);
 
                     }
                 }
@@ -1634,14 +1678,16 @@ events.onPlayerTick(function(event as PlayerTickEvent){
             if (isNull(event.player.nbt.ForgeData.lightning_cooldown)) {
 
                 event.player.setNBT({lightning_cooldown: newtime});
-                event.player.sendStatusMessage("There is a smell of danger in the skies... Perhaps it's best to proceed on foot", true);
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", true);
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", false);
 
             }
 
             else if (event.player.nbt.ForgeData.lightning_cooldown == 0) {
 
                 event.player.setNBT({lightning_cooldown: newtime});
-                event.player.sendStatusMessage("There is a smell of danger in the skies... Perhaps it's best to proceed on foot", true);
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", true);
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", false);
 
             }
 

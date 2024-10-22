@@ -1,22 +1,59 @@
-RLCraft Done:
+RLCraft Fixed:
 - removed loading screens mod from manifest & modlist
 - normalasm set removeForgeSecurityManager to true
 - fixed typo's for brutal orbs
-- Fix missing hit/crit sounds fonnymunkey 31 minutes ago
-- Remove EpicSiege digging fonnymunkey Yesterday 23:04
-- Add CIT FMB fonnymunkey Yesterday 22:26
-- Make player doll always visible fonnymunkey Yesterday 22:15
-- Remove carbon config fonnymunkey Yesterday 22:13
-- Lower banshee damage fonnymunkey Yesterday 21:26
-- Lower dragon flight height fonnymunkey Yesterday 21:00
-- Nerf epicseige crazy ai a little fonnymunkey Yesterday 20:38
-- Fix BetterSurvival config fonnymunkey Yesterday 20:28
+- Fix missing hit/crit sounds fonnymunkey
+- Remove EpicSiege digging fonnymunkey
+- Add CIT FMB fonnymunkey
+- Make player doll always visible fonnymunkey
+- Remove carbon config fonnymunkey
+- Lower banshee damage fonnymunkey
+- Lower dragon flight height fonnymunkey
+- Nerf epicseige crazy ai a little fonnymunkey
+- Fix BetterSurvival config fonnymunkey
 - made thirst go down a bit slower in some circumstances (balance for nomadic gameplay)
 - ruby and shadow orbs are two different items now (pending rlmixins upload)
 - Ice and Fire spartanweapons shocking weapons fix (pending iceandfire upload)
 - Added additional sadism
-
+- lower the dragon flight to 120
+- Lowered banshee damage
+- Nerf the conductivity stat a bit. Lightning strikes are too common when not storming.
+- Make lightning storms hit conductivity on ground
+- Make rain strike lightning on mounted entities
+- Sussyberian explode stuff (Trade sometimes still works and no block damage might be due to water)
+- at CrafttweakerDregora1.handle(Dregora.zs:140)
+- fixed nullpointer at hitting other player
+- added new ice and fire to manifest
 RLCraft todo:
+
+[HIGH PRIORITY]
+- remove incontrol multipliers and put them into ct
+- Smelt copper (also Some recipes for smelting copper weapons are broken > Silver ingot on return etc
+- copper scythe into diamond coin?
+- disarm weapons happen under normal circumstances, not just with disarm weapons (also check for weapon) > When mobs pickup items they get the changed ominous aura text too
+- nullpointer exception on hitting another player? (maybe broke pack)
+- nullpointer at java.lang.NullPointerException
+at CrafttweakerDregora1.handle(Dregora.zs:140)
+- lower dmg multiplier for fish undead
+- Fish undead disable enchants? Lifesteal seems to be in twice, remove them through ct?
+- remove health multipliers and damage multipliers from IC and add then to ZS
+- offhand skeleton king spawning issue
+- at CrafttweakerDregora7.handle(Dregora.zs:630)
+
+
+- full copper set gives slight movement debuff (5%)
+- epic siege mod unable to read potion type minecraft:weakness:300:1 (and others)
+- Dregora loottables are.. really shit... (even in the parasite biomes etc)
+- multiplayer random spawn? (increase spawnradius as well to 10000) (ask fonny?)
+- tone down ravines a bit (Especially plain like biomes.
+- 69k health issue due to incontrol, should move to ct.
+- change quest description on underneath
+- big floating tree that heaven hates leaves down pig spawners
+- pig spawner in mob tower in ruins (5 spawners on one level)
+- dynamictreesbop seeds are missing legendary tooltips
+- book and quil instead of book for enchant craft?
+
+[LOW PRIORITY]
 - Golden coins bunker fallout shelter thingy has empty chests
 - add goopacks to loot
 - herbalist still has dangerous entities
@@ -32,69 +69,42 @@ RLCraft todo:
 - fonny spawn check not in solid block rlmixins
 - Question for experts here. When I make a world in Dregora and and die (HC world) I try to create new world and I am getting Error Not enough biome id's available to add all dimensions
 - all entities are nerfed?
-- Sussyberian explode stuff (Trade sometimes still works and no block damage might be due to water)
 - lower regions have quark blocks, see to disaqble or lower y level
 - placing fairy jars on BoP mud disapear, test with other containers/non solid blocks edit: desyncs, item stays in inventory it seems
 - check plant reskillable stuff for double plants
 - Parkour dungeon double plants turn to half block sunflowers when trying to destroy the block.
-- put darklings, wraamons in chests / crates.
 - chests at dragon dens are broken.
 - Wiki link hitbox is too small in menu on dragon scene (possisbly others too).
-- offhand skeleton king spawning issue
 - Zombies are in broken epic siege? < Lower damage zombies and laggy ai - 1.5 dmg from 3.5 < EpicSiege
-- Smelt copper (also Some recipes for smelting copper weapons are broken > Silver ingot on return etc
-- copper scythe into diamond coin?
 - Bound tools anvil obsidian repair material
-- CIT Fishing Made Better
 - Remove Carbon config
-- Make lightning storms hit conductivity on ground
-- Nerf the conductivity stat a bit. Lightning strikes are too common when not storming.
-- For some reason everything that is gold or silver colored has conductivity including the Teracotta blocks. Should check that out.
-- Make rain strike lightning on mounted entities
 - Make curse break with caveats more common
 - MUD TUNA should give mud ball instead of clay
 - need to hide dragon eye
-- change quest description on underneath
-- tone down ravines a bit (Especially plain like biomes.
-- disarm weapons happen under normal circumstances, not just with disarm weapons (also check for weapon) > When mobs pickup items they get the changed ominous aura text too
 - squids spawn in ooze (Check all liquids from lycanites)
-- nullpointer exception on hitting another player? (maybe broke pack)
-- nullpointer at java.lang.NullPointerException
-                 at CrafttweakerDregora1.handle(Dregora.zs:140)
 - v_bunker with dilapitated rooms and ghoullified sections
 - bunkers and fallout shelters with entities in there called deathclaws with a 200 health and oneshotting you with 60dmg like blight darkling
 - add more waystones to Dregora villages and the fallout shelter outpost > specifically Trader_Silo (They sometimes refuse to spawn in vanilla villages as well)
 - keybinds shift/c
-- big floating tree that heaven hates leaves down pig spawners
-- zombies have 1400 health (Other entities aren't excluded flying mobs with 69000 hp is also an issue.
-- 69k health comes from scaling health possibly?
-- dynamictreesbop seeds are missing legendary tooltips
+
+
 - spawnegg make visible again
 - creepers blow up waystones?
 - XzeroAir: Find Broken Gun parts, Collect them all, Restore them, craft it into a new gun, and when you use it, It just explodes in your face killing you
 XzeroAir: When the Gun Explodes and kills you, it should give you an Quest, "I should have taken lessons"
-- lower the dragon flight to 120
 - supress dimstack: the chunk generator com.pg85.otg.forge.generator.OTGCHunkGenerator did not trigger net.minecraftforge.event
 - saplings have the stone texture
-- multiplayer random spawn? (increase spawnradius as well to 10000)
 - CSetBonus3 (chad solid core in setbonuses)
 - mod_lavacow:burntovipositor.display double in Dregora_Recipes.zs
 - Death messages?
 - https://github.com/PG85/OpenTerrainGenerator/blob/1.12-OTG%2B/common/src/main/java/com/pg85/otg/customobjects/structures/CustomStructureCache.java line 257 (needs cancel population instead of runtimeexception?
-- SurryBrerian (needs to become Sussybrarian
-- book and quil instead of book for enchant craft?
-- banshee lower dmg to 8 instead of 10
 - add increased Spriggan chance to bop plants (It feels low.. Might be cool to increase it for flower plants to a higher number if possible compared to just    grass and dead plants)
 - check potion skeleton chance (kinda low chance atm?)
 - Lycanite spawns feel quite low in comparison to vanilla rl (might be just me and this doesn't include the passive ones)
 - Add RNG to BOP Berries > Look at real food poisoning values as potion effects and add some low chance good effects (Berry Roulette)
-- Ruby from BOP seems to be called Shadow Orb > The mined ruby also gives the Varried commodities "Shadow Orb" item.
 - Custom Item weapons are broken sometimes (They Revert to pre spartanfire changes) Wrong damage values, attack speed etc. Sneezing Sword is an example
-- Underworld Biome spawns Sirens on land instead of the water caves.
-- Some Dread mobs do not attack other mobs but other mobs do attack the dread mobs. (Dread Thrall)
 - Leaves on atleast the shaders have an xray issue.
-- Traverse Badlands spawns the happy times mining company entrance way too high up.
-- Dregora loottables are.. really shit... (even in the parasite biomes etc)
+
 - Move back wizard tower to villages or atleast add a loottable to it. (feels out of place and is often incredibly useless except for having a bed)
 - Passive mobs spawn alot (Colonies of seagulls and crows of about 9 per group > It's the otg Donkey and Parrot all over again noooooooooooo)
 - Lycanite mobs kinda lost their identity. (it feels like they don't spawn in the right spot)
@@ -110,14 +120,8 @@ XzeroAir: When the Gun Explodes and kills you, it should give you an Quest, "I s
 - add Baublui (JB Redwards) to modpack to fix bauble dissapearing on death.
 - Banshee AOE explosion make all bodyparts take hits instead of one bodypart and destroy blocks option.
 - make disarm entities weapons take 90% of current health instead of 100% reflect damage
-- Corrupted viking realms have squids spawning in ooze
-- Fish undead disable enchants? Lifesteal seems to be in twice, remove them through ct?
-- turn ravines down
-- epic siege mod unable to read potion type minecraft:weakness:300:1 (and others)
-- spawnradius: 3000 needs to be put to 0 and otg's setspawn to false?
 - gorgon possible blacklist for aggro on mobs
 - jei earth blacklist (bop)
-- full copper set gives slight movement debuff (5%)
 - Temperature goo pack in loottable, check heat biome
 - lycanite boss in nether still goes through roof, lower with incontrol.
 - Better Survival config regenerated default enchant level configs. Config switched to Title Case setting names.
@@ -127,6 +131,3 @@ Multishot 4 -> 3
 Rapid Fire 2 -> 5
 Vampirism 2 -> 1
 Vitality 0 -> 1 (idk if loaded into the game in 2.9.3)
-- remove health multipliers and damage multipliers from IC and add then to ZS
-- at CrafttweakerDregora7.handle(Dregora.zs:630)
-- at CrafttweakerDregora1.handle(Dregora.zs:140)
