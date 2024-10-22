@@ -12,7 +12,8 @@ RLCraft Done:
 - Nerf epicseige crazy ai a little fonnymunkey Yesterday 20:38
 - Fix BetterSurvival config fonnymunkey Yesterday 20:28
 - made thirst go down a bit slower in some circumstances (balance for nomadic gameplay)
-- ruby and shadow orbs are two different items now (requires rlmixins)
+- ruby and shadow orbs are two different items now (pending rlmixins upload)
+- Ice and Fire spartanweapons shocking weapons fix (pending iceandfire upload)
 
 RLCraft todo:
 - Golden coins bunker fallout shelter thingy has empty chests
