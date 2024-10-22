@@ -15,7 +15,7 @@ difficulty:3
 fancyGraphics:true
 ao:2
 renderClouds:false
-resourcePacks:["RLHats.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RLTooltips.zip","DLD_Textures.zip","AnimEmis_ForgottenItems.zip","RLD_Textures.zip","LycanitesMobs32X.zip"]
+resourcePacks:["RLHats.zip","Lum.1.12.2.zip","AnimEmis_InF_SW_Blue.zip","AnimEmis_defiledlands.zip","AnimEmis_srparasites.zip","Emis_Rlcraft.zip","RLTooltips.zip","DLD_Textures.zip","AnimEmis_ForgottenItems.zip","RLD_Textures.zip","LycanitesMobs32X.zip","FMB_Textures.zip"]
 incompatibleResourcePacks:[]
 lastServer:fonny.mcserver.us
 lang:en_us
