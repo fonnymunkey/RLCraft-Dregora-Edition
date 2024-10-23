@@ -72,11 +72,11 @@ global RandomLightningMessageArray as string[] = [
   "Zzzrrt zzzap zskrt",
   "You feel a tingling sensation...",
   "What's that crackling sound...?",
-  "You feel a tingle in your Dingle Dong Woozhmadooh!",
-  "Brrzzz kaplow Zapper Zrrrktttt",
-  "Bliksement Blawargh Zrrrktt",
+  "Your hair suddenly stands on end",
+  "Brrzzz kerack zrpp zrrrktttt",
+  "Bliksement blawargh zrrrktt",
   "Did you know the chance of getting hit by lightning is 1 in 1,222,000?",
-  "Did you know the chance of getting hit by lightning twice is 1 in 9 million!"
+  "There's a hint of ozone in the air..."
 ];
 
 global ArrowArrayLong as IItemStack[] = [
