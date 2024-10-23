@@ -216,36 +216,34 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
                 }
             }
+			
+			if (isNull(event.damageSource.trueSource)) {return;}
+			if (!(event.damageSource.trueSource instanceof IEntityLivingBase)) {return;}
+			var player as IEntityLivingBase = event.damageSource.trueSource;
 
-            if (!isNull(event.entity.uuid)) {return; print("isPlayer");}
+			if (!isNull(player.uuid)) {
 
-            print(event.entity.definition.id);
+				if (isNull(player.heldEquipment[0])) {return;}
 
-            if (isNull(event.entity.definition.id)) {return;}
+				// If player hits entity with a weapon that has been disarmed it has a chance to reflect dmg
 
-            if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
+				if (isNull(player.heldEquipment[0].tag)) {return;}
+				if (isNull(player.heldEquipment[0].tag.disarm)) {return;}
 
-            // If player hits entity with a weapon that has been disarmed it has a chance to reflect dmg
+				var randomNum = player.world.random.nextFloat(0, 100);
 
-            if (isNull(event.damageSource.trueSource.heldEquipment[0])) {return;}
-            if (isNull(event.damageSource.trueSource.heldEquipment[0].tag)) {return;}
-            if (isNull(event.damageSource.trueSource.heldEquipment[0].tag.disarm)) {return;}
+				if (randomNum >= 5 ) {return;}
 
+				if event.amount > player.health {
+					player.attackEntityFrom(MAGIC, player.health * 0.9 );
+					event.cancel();
 
-            var randomNum = event.damageSource.trueSource.world.random.nextFloat(0, 100);
-
-            if (randomNum >= 5 ) { return; }
-
-            if event.amount > event.entityLivingBase.health {
-
-                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.entityLivingBase.health * 0.9 );
-                event.cancel();
-
-            } else {
-
-                event.damageSource.trueSource.attackEntityFrom(MAGIC, event.amount );
-                event.cancel();
-            }
+				} 
+				else {
+					player.attackEntityFrom(MAGIC, event.amount);
+					event.cancel();
+				}
+			}
         }
     }
 });
