@@ -514,7 +514,7 @@ global conductivity_4 as IItemStack[] = [
     <spartanweaponry:warhammer_copper>,
     <spartanweaponry:spear_copper>,
     <spartanweaponry:halberd_copper>,
-    <spartanweaponry:pike_copper>,
+    <spartanweaponry:katana_copper>,
     <spartanweaponry:mace_copper>,
     <spartanweaponry:glaive_copper>,
     <spartanweaponry:staff_copper>
