@@ -6,7 +6,7 @@ print("Dregora Recipe Script starting!");
 //Normal recipe adjustments
 //=================================
 
-recipes.remove(<biomesoplenty:gem:1>);
+recipes.remove(<biomesoplenty:gem_block:1>);
 
 // Re-add Diomesoplenty ruby
 recipes.addShaped("dregora53",<biomesoplenty:gem_block:1>,
