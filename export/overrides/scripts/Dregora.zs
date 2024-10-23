@@ -1539,7 +1539,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
 
         // Assign conductivity rating for player
-        var EquipmentList = event.player.armorInventory as IItemStack[];
+        var EquipmentList = event.player.equipmentAndArmor as IItemStack[];
         var silvercount as int = 0;
 
         for item in EquipmentList {
@@ -1594,7 +1594,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                     // warns the player about impending lightning strike
                     event.player.sendStatusMessage(RandomLightningMessage, true);
-                    event.player.sendStatusMessage(RandomLightningMessage, false);
 
                 }
             }
@@ -1610,7 +1609,6 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                     // warns the player about impending lightning strike
                     event.player.sendStatusMessage(RandomLightningMessage, true);
-                    event.player.sendStatusMessage(RandomLightningMessage, false);
                 }
             }
 
@@ -1643,7 +1641,7 @@ events.onPlayerTick(function(event as PlayerTickEvent){
         if ((!isNull(event.player.getRidingEntity())) || (block.definition.id) == "minecraft:air") {
 
             // Assign conductivity rating for player
-            var EquipmentList = event.player.armorInventory as IItemStack[];
+            var EquipmentList = event.player.equipmentAndArmor as IItemStack[];
             var silvercount as int = 0;
 
             for item in EquipmentList {
