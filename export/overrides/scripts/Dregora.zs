@@ -505,23 +505,25 @@ events.onPlayerInteractEntity(function(event as PlayerInteractEntityEvent){
         }
     }
 
-    if event.entity.world.isRemote() {return;}
-
     if ((event.target.customName == "Mentalberian") && (event.target.definition.id == "minecraft:villager")) {
-
-        var randomPotion = event.target.world.random.nextFloat(0, 13);
-        var RandomMentalPotion = MentalPotions[randomPotion];
-        event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
-        event.player.addPotionEffect(RandomMentalPotion.makePotionEffect(200, 1));
+		
+		if !event.entity.world.isRemote() {
+			var randomPotion = event.target.world.random.nextFloat(0, 13);
+			var RandomMentalPotion = MentalPotions[randomPotion];
+			event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
+			event.player.addPotionEffect(RandomMentalPotion.makePotionEffect(200, 1));
+		}
         event.cancel();
 
     }
     if ((event.target.customName == "Sussyberian") && (event.target.definition.id == "minecraft:villager")) {
 
-        var randomPotion = event.target.world.random.nextFloat(0, 12);
-        var RandomSussyPotion = SussyPotions[randomPotion];
-        event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
-        event.player.addPotionEffect(RandomSussyPotion.makePotionEffect(1, 2));
+		if !event.entity.world.isRemote() {
+			var randomPotion = event.target.world.random.nextFloat(0, 12);
+			var RandomSussyPotion = SussyPotions[randomPotion];
+			event.player.addPotionEffect(<potion:mod_lavacow:soiled>.makePotionEffect(200, 1));
+			event.player.addPotionEffect(RandomSussyPotion.makePotionEffect(1, 2));
+		}
         event.cancel();
 
     }
