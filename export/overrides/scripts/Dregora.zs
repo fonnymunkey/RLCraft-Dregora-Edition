@@ -1674,14 +1674,14 @@ events.onPlayerTick(function(event as PlayerTickEvent){
 
                 event.player.setNBT({lightning_cooldown_abyssal: newtime});
                 event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", true);
-
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", false);
             }
 
             else if (event.player.nbt.ForgeData.lightning_cooldown_abyssal == 0) {
 
                 event.player.setNBT({lightning_cooldown_abyssal: newtime});
                 event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", true);
-
+                event.player.sendStatusMessage("An ominous feeling overcomes you, as if you are being watched... Perhaps it's best to proceed on foot", false);
             }
 
             else if (event.player.world.time > event.player.nbt.ForgeData.lightning_cooldown_abyssal ){
