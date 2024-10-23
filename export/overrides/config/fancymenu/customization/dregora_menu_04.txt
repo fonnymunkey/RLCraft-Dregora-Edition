@@ -294,7 +294,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = RLCraft Dregora v1.0.0%n%{"placeholder":"totalmods"} Mods Loaded
+  source = RLCraft Dregora v1.0.1%n%{"placeholder":"totalmods"} Mods Loaded
   text_border = 0
   case_mode = normal
   source_mode = direct
