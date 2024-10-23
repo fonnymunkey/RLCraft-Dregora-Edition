@@ -9,7 +9,7 @@ print("Dregora Recipe Script starting!");
 recipes.remove(<biomesoplenty:gem:1>);
 
 // Re-add Diomesoplenty ruby
-recipes.addShaped("dregora53",<biomesoplenty:gem:1>,
+recipes.addShaped("dregora53",<biomesoplenty:gem_block:1>,
  [[<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>],
   [<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>],
   [<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>]]);
