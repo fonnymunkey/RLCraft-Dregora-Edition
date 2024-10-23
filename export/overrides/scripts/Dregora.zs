@@ -58,6 +58,10 @@ import crafttweaker.event.PlayerSleepInBedEvent;
 import mods.ctutils.world.World;
 import crafttweaker.event.PlayerInteractBlockEvent;
 import crafttweaker.event.LivingExperienceDropEvent;
+import crafttweaker.event.EntityJoinWorldEvent;
+import crafttweaker.entity.AttributeModifier;
+import crafttweaker.entity.Attribute;
+
 
 // use /ct syntax to validate scripts
 
@@ -67,31 +71,43 @@ print("Dregora Script starting!");
 
 var Logging = false;
 
-////DMG and health multiplier script for spawning entities
-events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
+//DMG and health multiplier script for spawning entities
+events.onEntityJoinWorld(function(event as EntityJoinWorldEvent){
 
-    var EntityBase = event.entityLivingBase;
+    if event.entity.world.isRemote() {return;}
 
-    //overworld
-    if event.entity.world.dimension == 0 {
+    if (event.entity instanceof IEntityLivingBase) {
 
-        // Increase Health for mod_lavacow entities
-        if (event.entity.definition.id has "mod_lavacow") {
+        var EntityBase as IEntityLivingBase = event.entity;
+        //overworld
 
+        if (event.world.dimension == 0) {
 
-            //HealthMultiply 1.5
-            EntityBase.health = EntityBase.health * 1.5;
-        }
+            // Increase Health for mod_lavacow entities
 
-        // Lower health of parasites in cities
-        var BiomeName = event.world.getBiome(event.entity.getPosition3f()).name;
-        for Biome in ParasiteBuffBiomes {
-            if (BiomeName == Biome) {
-                if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+            if (isNull(EntityBase)) {return;}
+            if (isNull(EntityBase.definition)) {return;}
+            if (isNull(EntityBase.definition.id)) {return;}
 
-                    //HealthMultiply 0.5
-                    EntityBase.health = EntityBase.health * 0.5;
+            if (EntityBase.definition.id has "mod_lavacow") {
 
+                EntityBase.getAttribute("generic.maxHealth").applyModifier(AttributeModifier.createModifier("DregoraHealth", 0.5, 1));
+                //EntityBase.health = EntityBase.health * 1.5;
+            }
+
+            // Lower health of parasites in cities
+            if (EntityBase.definition.id has "srparasites") {
+
+                var BiomeName = event.world.getBiome(EntityBase.getPosition3f()).name;
+                for Biome in ParasiteBuffBiomes {
+
+                    if (BiomeName == Biome) {
+
+                        //HealthMultiply 0.5
+                        EntityBase.getAttribute("generic.maxHealth").applyModifier(AttributeModifier.createModifier("DregoraHealth", -0.5, 1));
+                        //EntityBase.health = EntityBase.health * 0.5;
+
+                    }
                 }
             }
         }
@@ -99,6 +115,8 @@ events.onSpecialSpawn(function(event as EntityLivingSpawnEvent){
 });
 
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
+
+    if event.entity.world.isRemote() {return;}
 
     if (isNull(event.damageSource.trueSource)) {return;}
     if (isNull(event.damageSource.trueSource.definition)) {return;}
@@ -118,7 +136,7 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         var BiomeName = event.damageSource.trueSource.world.getBiome(event.entity.getPosition3f()).name;
         for Biome in ParasiteBuffBiomes {
             if (BiomeName == Biome) {
-                if !(event.entity.definition.id == "srparasites:succor") && (event.entity.definition.id has "srparasites") {
+                if !(event.damageSource.trueSource.definition.id == "srparasites:succor") && (event.damageSource.trueSource.definition.id has "srparasites") {
 
                     //DMGMultiply 0.25
                     event.amount = event.amount / 0.25;
@@ -278,11 +296,27 @@ events.onPlayerRightClickItem(function(event as PlayerRightClickItemEvent){
 
         if ((BiomeName has "Desert") || (BiomeName has "Dune") || (BiomeName has "Wasteland")) {
 
-            event.player.heldEquipment[0].mutable().shrink(1);
-            val skeleton_king = <entity:mod_lavacow:skeletonking>.createEntity(event.player.world) as IEntity;
-            skeleton_king.setPosition(SpawnPos);
-            event.world.spawnEntity(skeleton_king);
+            if (!isNull(event.player.heldEquipment[0])) {
 
+                if (event.player.heldEquipment[0].definition.id == "mod_lavacow:kings_crown") {
+
+                    event.player.heldEquipment[0].mutable().shrink(1);
+                    val skeleton_king = <entity:mod_lavacow:skeletonking>.createEntity(event.player.world) as IEntity;
+                    skeleton_king.setPosition(SpawnPos);
+                    event.world.spawnEntity(skeleton_king);
+
+                }
+
+            } else if (!isNull(event.player.heldEquipment[1])) {
+
+                if (event.player.heldEquipment[1].definition.id == "mod_lavacow:kings_crown") {
+
+                    event.player.heldEquipment[1].mutable().shrink(1);
+                    val skeleton_king = <entity:mod_lavacow:skeletonking>.createEntity(event.player.world) as IEntity;
+                    skeleton_king.setPosition(SpawnPos);
+                    event.world.spawnEntity(skeleton_king);
+                }
+            }
         }
     }
 
