@@ -6,6 +6,13 @@ print("Dregora Recipe Script starting!");
 //Normal recipe adjustments
 //=================================
 
+recipes.remove(<biomesoplenty:gem:1>);
+
+// Re-add Diomesoplenty ruby
+recipes.addShaped("dregora53",<biomesoplenty:gem:1>,
+ [[<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>],
+  [<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>],
+  [<biomesoplenty:gem:1>,<biomesoplenty:gem:1>,<biomesoplenty:gem:1>]]);
 
 <variedcommodities:satchel>.displayName = "Coin Purse";
 <mod_lavacow:dreamcatcher>.addTooltip("§6A purse filled with ancient coins!");
@@ -489,17 +496,17 @@ recipes.addShaped("dregora32",<variedcommodities:ancient_coin>,
 <variedcommodities:orb:5>.clearTooltip(true);
 <variedcommodities:orb:6>.clearTooltip(true);
 
-<variedcommodities:orb:1>.displayName = "Demon Orb";
+<variedcommodities:orb:1>.displayName = "Summon Orb";
 <variedcommodities:orb:1>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:1>.addTooltip(format.green("Through the Orb you can see suffering and fire."));
 <variedcommodities:orb:1>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:5>.displayName = "Aberrant Orb";
+<variedcommodities:orb:5>.displayName = "Summon Orb";
 <variedcommodities:orb:5>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:5>.addTooltip(format.green("Orbs of unknown, perhaps alien origin."));
 <variedcommodities:orb:5>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
 
-<variedcommodities:orb:6>.displayName = "Shadow Orb";
+<variedcommodities:orb:6>.displayName = "Summon Orb";
 <variedcommodities:orb:6>.addTooltip(format.darkGray("variedcommodities:orb"));
 <variedcommodities:orb:6>.addTooltip(format.green("A Dark fog resides within the orb."));
 <variedcommodities:orb:6>.addTooltip(format.gold("Can be obtained through Brutal Merchants in Outposts."));
