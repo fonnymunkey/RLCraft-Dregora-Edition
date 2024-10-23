@@ -415,6 +415,7 @@ global conductivity_3 as IItemStack[] = [
     <spartanweaponry:hammer_gold>,
     <spartanweaponry:warhammer_gold>,
     <spartanweaponry:spear_gold>,
+    <spartanweaponry:lance_gold>,
     <minecraft:golden_sword>,
     <minecraft:golden_shovel>,
     <minecraft:golden_pickaxe>,
