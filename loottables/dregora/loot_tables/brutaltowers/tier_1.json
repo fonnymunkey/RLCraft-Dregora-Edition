@@ -18,13 +18,13 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "dregora:rlcraft/loot_bundles/iron_weapons",
-          "weight": 10
+          "name": "dregora:brutaltowers/weapons/brutal_iron_weapons_lvl10",
+          "weight": 5
         },
         {
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/silver_weapons",
-          "weight": 1
+          "weight": 2
         },
         {
           "type": "loot_table",
@@ -34,7 +34,7 @@
         {
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/rlcraft_potion",
-          "weight": 10
+          "weight": 5
         }
       ]
     },
@@ -87,12 +87,12 @@
         {
           "type": "item",
           "name": "toolbelt:belt",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "item",
           "name": "toolbelt:pouch",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "item",
@@ -102,12 +102,12 @@
         {
           "type": "item",
           "name": "mujmajnkraftsbettersurvival:itemcrossbow",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "item",
           "name": "mujmajnkraftsbettersurvival:itemsmallshield",
-          "weight": 10
+          "weight": 1
         },
         {
           "type": "item",
@@ -118,7 +118,7 @@
     },
     {
       "name": "Enchants",
-      "rolls": 1.0,
+      "rolls": 1,
       "entries": [
         {
           "type": "item",

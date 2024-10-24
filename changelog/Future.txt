@@ -1,0 +1,68 @@
+
+Dregora todo:
+
+
+OTG todo:
++ Make dimension teleportation to any dimension work.
++ Bonus Chests do not spawn with radius spawn
++ Test all presets enmasse with the biomebits update (and possibly find a way to make biomegroupsbit smaller whilst adding a bit to biomebits
++ WriteWithoutComments does not work any more, perhaps due to the biomebits update?
++ Servers require naming the world DregoraRL (Should just default to dregora regardless of name)
++ Fix Issue with SpongeForge deleting chunks of villages and such on multiplayer only (not singleplayer)
+
+Removed from ToDo for various reasons, may be revisited later.
++ Add cliff boulder idea to ocean islands
++ add silverfish rocks & ores (Yeah, people just wont ever go underground any more if I did this)
++ Redo underground dragon bones, add gold n such.
++ BOP adds one entity (the wasp, spawns in nether & in steppe biomes in wasp nests attached to skyscrapers)
++ Remove 90% (GARDENS) Ruins and recurrent structures from Trench / Trench border
++ Structures generating in air Recurrent in Dregora_FrozenMudMountainSlope including villages
++ add lightning spawns to center (using lycanite?) to create a atmosphere - activate in a radius every x ticks & activate on pressure plate at random spot
++ replace some wither skeleton with swords for wither skeletons with bows (no withers anymore, ghouls now)
++ weird color blending is half(ish) intended, most is murky, the rest is default color for compatibility reasons with ocean stuff. Can improve this a bit down the line)
++ too many pixies in general biomes, (This is per default?)
++ Infernal mob in viking village always same type (non-issue)
++ Dregora_LushMesaCompat DLD spawn issue
++ Fix floating flesh blocks in water Atomic city / Desert City Creek biome
++ Preferably remove ravines in trench (lava flow bugs)
++ add recipes (bop gems) to swords
++ decrease amount of chests in corrupted graves
++ Defiled Lands Biome remove pixie villages replace with Vex Villages
+
+Future Todo:
++ Add lightning to spawn with charged emerald? (Can do with 0,0 structure revamp)
++ re-doing the 0,0 structure to be a dungeon with a portal at the end leading to a new dungeon with a portal at the end (and so on) with branching teleport areas connecting different areas together
++ Creeper spawner trap fast spawning
++ Ornamental pillars with loot in center
++ check if possible suggestion: in newer versions of ice and fire, those horse fish things can be tamed with kelp; if you can change that in configs, make bop kelp work
++ make boobytrap cave sections and generate them everywhere
++ Add Waystone custom structure to Villages / Outposts
++ Custom Dragon nests **FUTURE**
++ Add Creepers with speed boost to Dregora Mineshafts
++ Add Lycanite Battletowers **Future**
++ Add Parasite Battlehive? **Future**
++ Add Defiled Lands Battle tower **Future**
++ Add Nether Battletower **Future**
++ Add Nether Fortress **Future**
++ Add End Battletower **Future**
++ Add Biome Themed Battletowers **Future**
++ add biome shadow savanna (in a shadow update)
++ add viking village but with savanna blocks & a stingin tribe
++ add biome shadow swamp (in a shadow update)
++ add rotten down viking village with upwards vines, kind of like valheim
++ add biome shadow peaks (in a shadow update)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

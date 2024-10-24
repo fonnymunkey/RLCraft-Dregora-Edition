@@ -8,12 +8,17 @@
         {
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/iron_weapons",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/diamond_weapons",
-          "weight": 1
+          "weight": 2
+        },
+        {
+          "type": "loot_table",
+          "name": "dregora:rlcraft/loot_bundles/silver_weapons",
+          "weight": 3
         },
         {
           "type": "loot_table",
@@ -23,7 +28,7 @@
         {
           "type": "loot_table",
           "name": "dregora:rlcraft/loot_bundles/rlcraft_potion",
-          "weight": 10
+          "weight": 5
         }
       ]
     },
@@ -60,6 +65,16 @@
         },
         {
           "type": "item",
+          "name": "minecraft:ender_pearl",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blaze_powder",
+          "weight": 1
+        },
+        {
+          "type": "item",
           "name": "qualitytools:emerald_ring",
           "weight": 1
         },
@@ -75,28 +90,13 @@
         },
         {
           "type": "item",
-          "name": "toolbelt:belt",
-          "weight": 10
-        },
-        {
-          "type": "item",
-          "name": "toolbelt:pouch",
-          "weight": 10
-        },
-        {
-          "type": "item",
           "name": "antiqueatlas:empty_antique_atlas",
           "weight": 1
         },
         {
           "type": "item",
-          "name": "mujmajnkraftsbettersurvival:itemcrossbow",
-          "weight": 10
-        },
-        {
-          "type": "item",
-          "name": "mujmajnkraftsbettersurvival:itemsmallshield",
-          "weight": 10
+          "name": "scalinghealth:heartdust",
+          "weight": 5
         },
         {
           "type": "item",
